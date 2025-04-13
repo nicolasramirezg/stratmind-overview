@@ -1,0 +1,11 @@
+# Cliente oficial de OpenAI
+openai>=1.10.0
+
+# Para cargar variables de entorno desde archivos .env
+python-dotenv>=1.0.0
+
+# (Opcional) Utilidades adicionales recomendadas
+tqdm>=4.66.0          # Progreso en bucles (útil para depurar o mostrar tareas de agentes)
+requests>=2.31.0      # Llamadas HTTP (si usas APIs externas)
+orjson>=3.9.10        # Alternativa rápida a json (opcional)
+loguru>=0.7.2         # Para logs elegantes (opcional pero útil si el sistema crece)
