@@ -1,21 +1,27 @@
-import json
 import os
+import json
 from datetime import datetime
 
+def save_run(task_description: str, decomposition: dict, refined_tree: dict, log_dir: str = "log"):
+    # Asegurar que la carpeta existe
+    os.makedirs(log_dir, exist_ok=True)
 
-def save_run(log_data: dict, output_dir: str = "logs"):
-    """
-    Guarda los resultados de una ejecución en un archivo JSON con timestamp.
-
-    Args:
-        log_data: Diccionario con los datos a guardar.
-        output_dir: Carpeta donde guardar el archivo.
-    """
-    os.makedirs(output_dir, exist_ok=True)
+    # Crear nombre de archivo con timestamp
     timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-    filename = f"{output_dir}/run_{timestamp}.json"
+    filename = f"session_{timestamp}.json"
+    path = os.path.join(log_dir, filename)
 
-    with open(filename, "w", encoding="utf-8") as f:
-        json.dump(log_data, f, ensure_ascii=False, indent=2)
+    # Preparar el contenido a guardar
+    session = {
+        "task": task_description,
+        "decomposition": decomposition,
+        "refinement": refined_tree
+    }
 
-    print(f"\n Resultados guardados en: {filename}")
+    # Guardar en JSON
+    with open(path, "w", encoding="utf-8") as f:
+        json.dump(session, f, ensure_ascii=False, indent=2)
+
+    print(f"Session saved to: {path}")
+
+

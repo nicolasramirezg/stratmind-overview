@@ -1,16 +1,27 @@
-from datetime import datetime
-from src.refiner_ape import RefinerAPE
-from src.task_analyzer import TaskAnalyzer
-from src.decomposer import Decomposer
-from src.recursive_decomposer import RecursiveDecomposer
+from src.decomposer_agent import Decomposer
+from src.specialist_agent import SpecialistAgent
+from src.task_refiner_agent import TaskRefiner
+from src.recursive_refiner import refine_recursively
+
 from src.utils.run_logger import save_run
 
 from dotenv import load_dotenv
 
 load_dotenv()  # Solo esto, para cargar el .env
 
+def print_refined_tree(refined_tree: dict):
+    for area, subtasks in refined_tree.items():
+        print(f"\nArea: {area}")
+        for i, item in enumerate(subtasks, 1):
+            print(f"  {i}. {item['original']}")
+            if item["refined"]:
+                for j, refined in enumerate(item["refined"], 1):
+                    print(f"     {i}.{j} {refined}")
+            else:
+                print(f"     {i}.✓ No refinement needed")
+
 def main():
-    prompt = "prepara un viaje a cuenca de 3 días"
+    task_description = ("organiza un evento de charlas ted de 1 día")
 
     params = {
         "num_candidates_initial": 3,
@@ -24,61 +35,48 @@ def main():
         "debug_mode": True,  # --> Este no lo usa nadie todavía, pero no rompe nada
     }
 
-    refiner = RefinerAPE(model="gpt-3.5-turbo",params=params)
-    refined_prompt, rounds_log = refiner.refine(prompt)
+    # 1. Descomponer la tarea en áreas funcionales
+    decomposer = Decomposer()
 
-    print("Prompt refinado:")
-    print(refined_prompt)
+    area_divisions = decomposer.decompose(task_description)
 
-    # # Analizar la complejidad de la tarea
-    analyzer = TaskAnalyzer(model="gpt-3.5-turbo")
-    analysis = analyzer.analyze_task(refined_prompt)
-    print(analysis)
+    print("Intro:\n", area_divisions["intro"])
 
-    decomposer = Decomposer(model="gpt-3.5-turbo")
-    analyzer = TaskAnalyzer(model="gpt-3.5-turbo")
-    recursive_decomposer = RecursiveDecomposer(
-        analyzer=analyzer,
-        decomposer=decomposer,
-        max_depth=2,
-        verbose=True
-    )
+    # Mostrar cada subtarea de forma legible
+    for i, subtask in enumerate(area_divisions["subtasks"], 1):
+        print(f"\nSubtarea {i}:")
+        for key, value in subtask.items():
+            print(f"  {key}: {value}")
 
-    all_task_nodes  = recursive_decomposer.decompose(refined_prompt)
+    # 2. Generar subtareas concretas para cada área
+    specialist = SpecialistAgent()
+    subtasks_by_area = specialist.plan_subtasks(area_divisions, task_description)
 
-    # Subtareas finales (solo las 'simple')
-    final_subtasks = [
-        {"task": node["task"], "depth": node["depth"]}
-        for node in all_task_nodes
-        if node["type"] in ["simple", "max_depth"]
-    ]
+    for area, subtasks in subtasks_by_area.items():
+        print(f"\nArea: {area}")
+        for i, subtask in enumerate(subtasks, 1):
+            print(f"  {i}. {subtask}")
 
-    # Registro completo (todos los task_nodes)
-    generated_tasks = all_task_nodes
+    # 3. Subdividimos las tareas de manera recursiva
+    task_refiner = TaskRefiner()
+    refined_tree = {}
 
-    print("\n Subtareas generadas:")
-    for idx, subtask in enumerate(final_subtasks, 1):
-        print(f"{idx}. {subtask}")
+    for area_name, subtasks in subtasks_by_area.items():
+        refined_tree[area_name] = []
 
-    # ---- Construimos el log completo
-    log_data = {
-        "prompt_inicial": prompt,
-        "prompt_refinado": refined_prompt,
-        "refiner_intermedio": rounds_log,
-        "análisis": {
-            "complexity": analysis["complexity"],
-            "reasoning": analysis.get("reasoning", "")
-        },
-        "tareas_generadas": generated_tasks,
-        "subtareas_finales": final_subtasks,
-        "metadata": {
-            "modelo": "gpt-3.5-turbo",
-            "timestamp": datetime.now().isoformat()
-        }
-    }
+        for subtask in subtasks:
+            result = refine_recursively(
+                subtask=subtask,
+                area_name=area_name,
+                global_task=task_description,
+                refiner=task_refiner ,
+                max_depth=3
+            )
+            refined_tree[area_name].append(result)
 
-    # ---- Guardamos
-    save_run(log_data)
+    print_refined_tree(refined_tree)
+
+    save_run(task_description, area_divisions, refined_tree, "output")
 
 if __name__ == "__main__":
     main()
