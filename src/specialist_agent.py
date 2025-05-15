@@ -1,7 +1,7 @@
 from openai import OpenAI
-from typing import Any
+from typing import Dict, List
 import json
-
+import re
 
 
 class SpecialistAgent:
@@ -25,34 +25,45 @@ class SpecialistAgent:
         self.client = OpenAI()
 
     @staticmethod
-    def _parse_response(response: Any, area_name: str) -> list[str]:
-        content = response.choices[0].message.content.strip()
-
+    def _parse_specialist_output(text: str, debug: bool = False) -> Dict[str, List[str]]:
         try:
-            data = json.loads(content)
+            parts = re.split(r"###\s*SUBTASKS\s*###", text, maxsplit=1)
+            if len(parts) != 2:
+                if debug:
+                    print("❌ No se encontraron ambas secciones (AREA y SUBTASKS)")
+                return {"area": "", "subtasks": [text.strip()]}
 
-            if isinstance(data, dict) and "area" in data and "subtasks" in data:
-                subtasks_raw = data["subtasks"]
+            area_block = parts[0]
+            subtasks_block = parts[1]
 
-                if isinstance(subtasks_raw, list):
-                    valid_subtasks = []
-                    for s in subtasks_raw:
-                        if isinstance(s, str) and s.strip():
-                            valid_subtasks.append(s.strip())
-                    return valid_subtasks
+            # Extraer nombre del área ignorando encabezados
+            area_lines = [
+                line.strip() for line in area_block.splitlines()
+                if line.strip() and not line.strip().startswith("###")
+            ]
+            area_name = area_lines[0] if area_lines else ""
 
-            return [content.strip()]
+            # Extraer subtareas válidas, sin encabezados ni repeticiones del nombre
+            subtasks = [
+                line.lstrip("- ").strip()
+                for line in subtasks_block.splitlines()
+                if line.strip()
+                   and not line.strip().startswith("###")
+                   and line.strip() != area_name
+            ]
 
-        except json.JSONDecodeError:
-            fallback_subtasks = []
-            for line in content.splitlines():
-                line = line.strip()
-                if line:
-                    fallback_subtasks.append(line.lstrip("-• "))
-            return fallback_subtasks
+            return {
+                "area": area_name,
+                "subtasks": subtasks
+            }
 
-    def plan_subtasks(self, decomposition: dict, global_task: str) -> dict:
-        result = {}
+        except Exception as e:
+            if debug:
+                print("❌ Error al parsear especialista:", e)
+            return {"area": "", "subtasks": [text.strip()]}
+
+    def plan_subtasks(self, decomposition: dict, global_task: str) -> list:
+        result = []
 
         for area in decomposition["subtasks"]:
             area_name = area["area"]
@@ -67,34 +78,30 @@ class SpecialistAgent:
                         f"Your role is to analyze this functional area within the broader context of the overall task:\n"
                         f"'{global_task}'\n\n"
                         f"The goal of this area is:\n'{description}'\n\n"
-                        f"Some of the responsibilities associated with this area may include:\n"
+                        f"Some responsibilities associated with this area may include:\n"
                         f"{json.dumps(responsibilities, indent=2)}\n\n"
-                        "Your task is to generate **3 to 7 concrete and well-defined subtasks** required to successfully fulfill this functional area.\n\n"
-                        "Each subtask must:\n"
-                        "- Be written in clear, executable natural language.\n"
-                        "- Include enough context to be actionable by an autonomous agent.\n"
-                        "- Be directly related to the description and the responsibilities of the area.\n\n"
-                        "You must strictly return a **JSON object** with the following structure:\n\n"
-                        "{\n"
-                        f"  \"area\": \"{area_name}\",\n"
-                        "  \"subtasks\": [\n"
-                        "    \"First executable subtask\",\n"
-                        "    \"Second executable subtask\",\n"
-                        "    ...\n"
-                        "  ]\n"
-                        "}\n\n"
-                        "Do not include any explanation, introduction, or text outside this JSON object."
+                        "You must generate a concrete, well-structured plan of executable subtasks for this area."
                     )
                 },
                 {
                     "role": "user",
                     "content": (
-                        f"Area name: {area_name}\n\n"
-                        f"Overall task: {global_task}\n\n"
-                        f"Responsibilities:\n{json.dumps(responsibilities, indent=2)}\n\n"
-                        "Please return a structured plan as described above."
+                        f"Your task is to generate **3 to 7 concrete and well-defined subtasks** required to successfully fulfill the area of: '{area_name}'.\n\n"
+                        f"The plan must:\n"
+                        f"- Contain subtasks written in clear, executable natural language.\n"
+                        f"- Include enough context to be actionable by an autonomous agent.\n"
+                        f"- Be directly related to the area’s description and responsibilities.\n\n"
+                        f"Your response must strictly follow **this format**:\n\n"
+                        f"### AREA ###\n"
+                        f"{area_name}\n\n"
+                        f"### SUBTASKS ###\n"
+                        f"- First executable subtask\n"
+                        f"- Second executable subtask\n"
+                        f"- ... (between 3 and 7 total)\n\n"
+                        f"Do NOT include any explanations, comments, extra formatting, markdown, or sections beyond those specified."
                     )
                 }
+
             ]
 
             response = self.client.chat.completions.create(
@@ -103,7 +110,13 @@ class SpecialistAgent:
                 temperature=0.4
             )
 
-            parsed_subtasks = self._parse_response(response, area_name)
-            result[area_name] = parsed_subtasks
+
+
+            content = response.choices[0].message.content.strip()
+            # print('### LLM RESPONSE ###')
+            # print(content)
+
+            parsed = self._parse_specialist_output(content)
+            result.append(parsed)
 
         return result

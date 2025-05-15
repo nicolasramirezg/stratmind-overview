@@ -1,6 +1,5 @@
 from openai import OpenAI
 from typing import Any
-import json
 
 class TaskRefiner:
 
@@ -14,44 +13,60 @@ class TaskRefiner:
     }
     """
 
-    def __init__(self, model: str = "gpt-3.5-turbo"):
+    def __init__(self, model: str = "gpt-3.5-turbo", debug: bool = False):
         self.model = model
         self.client = OpenAI()
+        self. debug = debug
 
     @staticmethod
-    def _parse_response(response: Any) -> dict:
+    def _parse_response(response: Any, debug: bool = False) -> dict:
         content = response.choices[0].message.content.strip()
 
         try:
-            data = json.loads(content)
+            sections = content.split("###")
+            section_dict = {}
 
-            if isinstance(data, dict) and "original" in data and "refined" in data:
-                original = data["original"]
-                refined = data["refined"]
+            if debug:
+                print("🧩 Secciones detectadas:", [s.strip() for s in sections if s.strip()])
 
-                if isinstance(original, str) and isinstance(refined, list):
-                    refined_clean = [s.strip() for s in refined if isinstance(s, str) and s.strip()]
-                    return {
-                        "original": original.strip(),
-                        "refined": refined_clean
-                    }
+            for i in range(1, len(sections), 2):
+                # Convertimos a mayúsculas para robustez, ya que esperamos etiquetas como 'ORIGINAL', 'REFINED'
+                key = sections[i].strip().upper()
+                value = sections[i + 1].strip() if i + 1 < len(sections) else ""
+                section_dict[key] = value
 
-            # Fallback si estructura incorrecta
+            original = section_dict.get("ORIGINAL", "").strip()
+            refined_raw = section_dict.get("REFINED", "").strip()
+
+            if not original:
+                if debug:
+                    print("❌ No se encontró sección ORIGINAL")
+
+            if debug and refined_raw:
+                print("📄 Sección REFINED bruta:\n", refined_raw)
+
+            refined = []
+            for line in refined_raw.splitlines():
+                line = line.strip()
+                if line.startswith("- "):
+                    item = line[2:].strip()
+                    if item:
+                        refined.append(item)
+
+            if debug:
+                print("✅ Resultado parseado:", {"original": original, "refined": refined})
+
+            return {
+                "original": original,
+                "refined": refined
+            }
+
+        except Exception as e:
+            if debug:
+                print("❌ Error al parsear la respuesta del refinador:", e)
             return {
                 "original": content,
                 "refined": []
-            }
-
-        except json.JSONDecodeError:
-            fallback_lines = []
-            for line in content.splitlines():
-                line = line.strip()
-                if line:
-                    fallback_lines.append(line.lstrip("-• "))
-
-            return {
-                "original": content,
-                "refined": fallback_lines
             }
 
     # devuelve: {"original": str, "refined": list[str] or []}
@@ -61,40 +76,34 @@ class TaskRefiner:
             {
                 "role": "system",
                 "content": (
-                    "You are an expert agent in analyzing and refining subtasks within a multi-agent system.\n\n"
-                    "Your role is to evaluate whether a specific subtask, assigned to a functional area, is clear and focused enough "
-                    "to be executed by a specialized agent, or if it should be broken down into smaller steps.\n\n"
-                    "You should only decompose the subtask if ALL of the following conditions are met:\n"
+                    "You are an expert agent in analyzing and refining subtasks in a multi-agent system.\n\n"
+                    "Your task is to determine whether a given subtask, assigned to a functional area, is clear and focused enough to be executed by an autonomous agent, or if it needs to be decomposed into smaller, more actionable steps.\n\n"
+                    "Only refine the subtask if all of the following conditions are met:\n"
                     "- The subtask is ambiguous, overly broad, or involves multiple distinct decisions.\n"
-                    "- It cannot reasonably be performed by a single autonomous agent.\n"
+                    "- It cannot be reasonably executed by a single autonomous agent as is.\n"
                     "- Its execution requires multiple clearly distinguishable phases.\n\n"
-                    "Do not decompose a subtask simply because it is logically divisible. Only refine it if doing so is necessary "
-                    "for an agent to effectively and autonomously execute it.\n\n"
-                    "Your output must be a JSON object with the following structure:\n\n"
-                    "{\n"
-                    "  \"original\": \"The full original subtask\",\n"
-                    "  \"refined\": [\"Smaller subtask 1\", \"Smaller subtask 2\", ...]\n"
-                    "}\n\n"
-                    "If you believe the subtask is already clear and actionable, return:\n\n"
-                    "{\n"
-                    "  \"original\": \"The full original subtask\",\n"
-                    "  \"refined\": []\n"
-                    "}\n\n"
-                    "Do not include any explanation, comments, or text outside of the JSON object."
+                    "Do not refine a subtask merely because it is logically divisible; only do so when necessary for effective execution."
                 )
             }
             ,
             {
                 "role": "user",
                 "content": (
-                    f"You are evaluating a subtask within the functional area: '{area_name}', "
-                    f"which is part of the broader task: '{global_task}'.\n\n"
-                    f"The subtask to evaluate is:\n"
-                    f"\"{subtask}\"\n\n"
-                    "Determine whether this subtask should be further decomposed following the criteria previously described. "
-                    "Return your output strictly in the required JSON format."
+                    f"Evaluate the following subtask for the functional area: '{area_name}',\n"
+                    f"which is part of the overall task: '{global_task}'.\n\n"
+                    f"Subtask:\n\"{subtask}\"\n\n"
+                    "Return your analysis using exactly the following format:\n\n"
+                    "### ORIGINAL ###\n"
+                    "Copy the original subtask exactly as received above.\n\n"
+                    "### REFINED ###\n"
+                    "- First refined subtask (if applicable)\n"
+                    "- Second refined subtask (if applicable)\n"
+                    "- ...\n\n"
+                    "If the subtask is already actionable, leave the '### REFINED ###' section empty.\n"
+                    "Do not include any explanations, comments, or extra text beyond these two sections."
                 )
             }
+
         ]
 
         response = self.client.chat.completions.create(
@@ -103,6 +112,6 @@ class TaskRefiner:
             temperature=0.4
         )
 
-        parsed_result = self._parse_response(response)
+        parsed_result = self._parse_response(response, debug=self.debug)
         return parsed_result
 

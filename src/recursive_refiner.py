@@ -1,18 +1,21 @@
-def refine_recursively(subtask: str, area_name: str, global_task: str, refiner, depth: int = 0, max_depth: int = 3) -> dict:
-
+def refine_recursively(
+    subtask: str,
+    area_name: str,
+    global_task: str,
+    refiner,
+    depth: int = 0,
+    max_depth: int = 3,
+) -> dict:
     """
-    Refina una subtarea aplicando recursivamente RecursiveRefiner si es necesario.
+    Refina una subtarea aplicando recursivamente el refiner si es necesario.
 
-    Output: dict con estructura jerárquica de subtareas anidadas:
+    Output: nodo enriquecido con contexto jerárquico:
     {
         "original": "Subtarea original",
-        "refined": [
-            {
-                "original": "Subtarea refinada 1",
-                "refined": [...]
-            },
-            ...
-        ]
+        "refined": [...],
+        "area": "Nombre del área funcional",
+        "global_task": "Tarea principal original",
+        "parent_subtask": "Subtarea padre"  # None si es raíz
     }
     """
 

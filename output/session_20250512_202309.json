@@ -1,0 +1,203 @@
+{
+  "task": "organiza un evento de charlas ted de 1 día",
+  "decomposition": {
+    "intro": "The task of organizing a one-day TED talk event involves a variety of specialized areas to ensure its success. To effectively manage the complexity of the task, I have broken it down into 7 key functional subtasks.",
+    "subtasks": [
+      {
+        "area": "Event Planning",
+        "description": "Responsible for overall logistics and coordination of the event.",
+        "responsibilities": [
+          "Selecting event date and venue",
+          "Creating event schedule",
+          "Coordinating with speakers and sponsors"
+        ]
+      },
+      {
+        "area": "Speaker Management",
+        "description": "Handling all aspects related to the speakers participating in the event.",
+        "responsibilities": [
+          "Inviting and confirming speakers",
+          "Coordinating travel and accommodation",
+          "Providing speaker guidelines"
+        ]
+      },
+      {
+        "area": "Marketing and Promotion",
+        "description": "Promoting the event to attract attendees and create buzz.",
+        "responsibilities": [
+          "Developing marketing strategy",
+          "Creating promotional materials",
+          "Managing social media campaigns"
+        ]
+      },
+      {
+        "area": "Registration and Ticketing",
+        "description": "Managing attendee registration and ticket sales.",
+        "responsibilities": [
+          "Setting up online registration system",
+          "Handling ticket sales and inquiries",
+          "Checking in attendees on the event day"
+        ]
+      },
+      {
+        "area": "Technical Support",
+        "description": "Ensuring all technical aspects of the event run smoothly.",
+        "responsibilities": [
+          "Setting up audiovisual equipment",
+          "Testing tech systems before the event",
+          "Providing tech support during the event"
+        ]
+      },
+      {
+        "area": "Sponsorship and Partnerships",
+        "description": "Securing sponsorships and forming partnerships to support the event.",
+        "responsibilities": [
+          "Identifying potential sponsors",
+          "Negotiating sponsorship deals",
+          "Managing relationships with partners"
+        ]
+      },
+      {
+        "area": "On-site Coordination",
+        "description": "Overseeing operations and managing the event on the day of the TED talks.",
+        "responsibilities": [
+          "Coordinating event setup and breakdown",
+          "Managing volunteers and staff",
+          "Handling any on-site issues or emergencies"
+        ]
+      }
+    ]
+  },
+  "refinement": {
+    "Event Planning": [
+      {
+        "original": "Research and select a suitable date for the TED talks event",
+        "refined": []
+      },
+      {
+        "original": "Scout and finalize a venue that can accommodate the event requirements",
+        "refined": []
+      },
+      {
+        "original": "Develop a detailed event schedule outlining the timing of each talk and break",
+        "refined": []
+      },
+      {
+        "original": "Reach out to potential speakers to confirm availability and topic of presentation",
+        "refined": []
+      },
+      {
+        "original": "Coordinate with sponsors to secure funding and confirm their involvement in the event",
+        "refined": []
+      }
+    ],
+    "Speaker Management": [
+      {
+        "original": "Create a list of potential speakers and send out invitations",
+        "refined": []
+      },
+      {
+        "original": "Follow up with invited speakers to confirm their participation and topics",
+        "refined": []
+      },
+      {
+        "original": "Coordinate travel arrangements and book accommodations for the speakers",
+        "refined": []
+      },
+      {
+        "original": "Prepare and distribute detailed speaker guidelines including presentation format and time limits",
+        "refined": []
+      }
+    ],
+    "Marketing and Promotion": [
+      {
+        "original": "Conduct market research to identify target audience and their preferences",
+        "refined": []
+      },
+      {
+        "original": "Design and produce visually appealing promotional materials such as flyers and banners",
+        "refined": []
+      },
+      {
+        "original": "Create a content calendar for social media posts leading up to the event",
+        "refined": []
+      },
+      {
+        "original": "Collaborate with influencers or partners for promotional activities",
+        "refined": []
+      },
+      {
+        "original": "Monitor and analyze the performance of social media campaigns to optimize reach and engagement",
+        "refined": []
+      }
+    ],
+    "Registration and Ticketing": [
+      {
+        "original": "Create an online registration form with fields for attendee information such as name, email, and contact number",
+        "refined": []
+      },
+      {
+        "original": "Set up ticketing system with different ticket types (e.g., regular, VIP) and corresponding prices",
+        "refined": []
+      },
+      {
+        "original": "Monitor ticket sales and respond to inquiries regarding registration and ticketing",
+        "refined": []
+      },
+      {
+        "original": "Prepare and organize the attendee check-in process for the event day, including staff training and equipment setup",
+        "refined": []
+      }
+    ],
+    "Technical Support": [
+      {
+        "original": "Coordinate with the venue to ensure availability of necessary audiovisual equipment",
+        "refined": []
+      },
+      {
+        "original": "Conduct thorough testing of microphones, projectors, and sound systems prior to the event",
+        "refined": []
+      },
+      {
+        "original": "Prepare backup tech systems in case of any failures during the event",
+        "refined": []
+      },
+      {
+        "original": "Provide on-site tech support for speakers and attendees throughout the event",
+        "refined": []
+      }
+    ],
+    "Sponsorship and Partnerships": [
+      {
+        "original": "Research and create a list of potential sponsors based on relevance to the event's theme and target audience.",
+        "refined": []
+      },
+      {
+        "original": "Reach out to potential sponsors to present sponsorship opportunities and negotiate terms of the partnership.",
+        "refined": []
+      },
+      {
+        "original": "Develop sponsorship packages outlining benefits and deliverables for sponsors at different levels of investment.",
+        "refined": []
+      },
+      {
+        "original": "Establish and maintain communication with partners to ensure their needs are met and maximize their involvement in the event.",
+        "refined": []
+      }
+    ],
+    "On-site Coordination": [
+      {
+        "original": "Coordinate with vendors to ensure timely setup of the event venue",
+        "refined": []
+      },
+      {
+        "original": "Create and communicate a detailed schedule to volunteers and staff outlining their roles and responsibilities",
+        "refined": []
+      },
+      {
+        "original": "Establish an on-site communication protocol and chain of command for handling emergencies",
+        "refined": []
+      }
+    ]
+  }
+}

@@ -1,8 +1,7 @@
-from src.decomposer_agent import Decomposer
+from src.decomposer_agent_nojson import Decomposer
 from src.specialist_agent import SpecialistAgent
 from src.task_refiner_agent import TaskRefiner
-from src.recursive_refiner import refine_recursively
-
+from src.recursive_refiner_parent_subtask import refine_recursively
 from src.utils.run_logger import save_run
 
 from dotenv import load_dotenv
@@ -21,23 +20,11 @@ def print_refined_tree(refined_tree: dict):
                 print(f"     {i}.✓ No refinement needed")
 
 def main():
-    task_description = ("organiza un evento de charlas ted de 1 día")
 
-    params = {
-        "num_candidates_initial": 3,
-        "resamples_per_prompt": 1,
-        "top_k_percent": 30,
-        "max_iterations": 3,
-        "temperature_generate": 0.7,
-        "temperature_resample": 0.6,
-        "temperature_score": 0.0,
-        "scoring_mode": "simple",
-        "debug_mode": True,  # --> Este no lo usa nadie todavía, pero no rompe nada
-    }
+    task_description = "Diseña una arquitectura que permita la operar con criptomonedas"
 
     # 1. Descomponer la tarea en áreas funcionales
     decomposer = Decomposer()
-
     area_divisions = decomposer.decompose(task_description)
 
     print("Intro:\n", area_divisions["intro"])
@@ -52,7 +39,10 @@ def main():
     specialist = SpecialistAgent()
     subtasks_by_area = specialist.plan_subtasks(area_divisions, task_description)
 
-    for area, subtasks in subtasks_by_area.items():
+    for area_data in subtasks_by_area:
+        area = area_data["area"]
+        subtasks = area_data["subtasks"]
+
         print(f"\nArea: {area}")
         for i, subtask in enumerate(subtasks, 1):
             print(f"  {i}. {subtask}")
@@ -61,7 +51,10 @@ def main():
     task_refiner = TaskRefiner()
     refined_tree = {}
 
-    for area_name, subtasks in subtasks_by_area.items():
+    for area_data in subtasks_by_area:
+        area_name = area_data["area"]
+        subtasks = area_data["subtasks"]
+
         refined_tree[area_name] = []
 
         for subtask in subtasks:
@@ -69,14 +62,16 @@ def main():
                 subtask=subtask,
                 area_name=area_name,
                 global_task=task_description,
-                refiner=task_refiner ,
-                max_depth=3
+                refiner=task_refiner,
+                max_depth=3,
+                parent_subtask=None  # <- Añadido para raíz
             )
             refined_tree[area_name].append(result)
 
     print_refined_tree(refined_tree)
 
     save_run(task_description, area_divisions, refined_tree, "output")
+
 
 if __name__ == "__main__":
     main()
