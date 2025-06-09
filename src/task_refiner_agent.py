@@ -1,5 +1,6 @@
 from openai import OpenAI
 from typing import Any
+import re
 
 class TaskRefiner:
 
@@ -46,12 +47,18 @@ class TaskRefiner:
                 print("📄 Sección REFINED bruta:\n", refined_raw)
 
             refined = []
-            for line in refined_raw.splitlines():
-                line = line.strip()
-                if line.startswith("- "):
-                    item = line[2:].strip()
-                    if item:
-                        refined.append(item)
+            subtask_blocks = re.split(r"Subtask:", refined_raw)
+            for block in subtask_blocks:
+                if not block.strip():
+                    continue
+                title = re.search(r"Title:\s*(.+)", block)
+                description = re.search(r"Description:\s*(.+)", block)
+                expected_output = re.search(r"Expected_output:\s*(.+)", block)
+                refined.append({
+                    "title": title.group(1).strip() if title else block.strip(),
+                    "description": description.group(1).strip() if description else "",
+                    "expected_output": expected_output.group(1).strip() if expected_output else ""
+                })
 
             if debug:
                 print("✅ Resultado parseado:", {"original": original, "refined": refined})
@@ -69,9 +76,30 @@ class TaskRefiner:
                 "refined": []
             }
 
-    # devuelve: {"original": str, "refined": list[str] or []}
-    def refine(self, area_name: str, global_task: str, subtask: str) -> dict:
-
+    def refine(
+        self,
+        area_name: str,
+        global_task: str,
+        subtask: str,
+        area_description: str = "",
+        root_task_title: str = "",
+        root_task_description: str = "",
+        parent_task: dict = None,
+        parent_dependencies: list = None
+    ) -> dict:
+        parent_info = ""
+        if parent_task:
+            parent_info += f"\nParent Task Title: {parent_task.get('title', '')}"
+            parent_info += f"\nParent Description: {parent_task.get('description', '')}"
+            parent_info += f"\nParent Expected Output: {parent_task.get('expected_output', '')}"
+            if parent_dependencies:
+                parent_info += (
+                    "\nParent Dependencies: " +
+                    ", ".join(
+                        dep.title if hasattr(dep, "title") else str(dep)
+                        for dep in parent_dependencies
+                    )
+                )
         messages = [
             {
                 "role": "system",
@@ -84,26 +112,33 @@ class TaskRefiner:
                     "- Its execution requires multiple clearly distinguishable phases.\n\n"
                     "Do not refine a subtask merely because it is logically divisible; only do so when necessary for effective execution."
                 )
-            }
-            ,
+            },
             {
                 "role": "user",
                 "content": (
-                    f"Evaluate the following subtask for the functional area: '{area_name}',\n"
-                    f"which is part of the overall task: '{global_task}'.\n\n"
+                    f"Root Task Title: {root_task_title}\n"
+                    f"Root Task Description: {root_task_description}\n"
+                    f"Area: {area_name}\n"
+                    f"Area Description: {area_description}\n"
+                    f"{parent_info}\n\n"
                     f"Subtask:\n\"{subtask}\"\n\n"
                     "Return your analysis using exactly the following format:\n\n"
                     "### ORIGINAL ###\n"
                     "Copy the original subtask exactly as received above.\n\n"
                     "### REFINED ###\n"
-                    "- First refined subtask (if applicable)\n"
-                    "- Second refined subtask (if applicable)\n"
-                    "- ...\n\n"
+                    "Subtask:\n"
+                    "Title: <short title>\n"
+                    "Description: <description>\n"
+                    "Expected_output: <expected output>\n"
+                    "Subtask:\n"
+                    "Title: <short title>\n"
+                    "Description: <description>\n"
+                    "Expected_output: <expected output>\n"
+                    "... (repeat for each refined subtask)\n\n"
                     "If the subtask is already actionable, leave the '### REFINED ###' section empty.\n"
                     "Do not include any explanations, comments, or extra text beyond these two sections."
                 )
             }
-
         ]
 
         response = self.client.chat.completions.create(

@@ -2,7 +2,7 @@ import os
 import json
 from datetime import datetime
 
-def save_run(task_description: str, decomposition: dict, refined_tree: dict, log_dir: str = "log"):
+def save_run(task_description: str, decomposition: dict, log_dir: str = "log"):
     # Asegurar que la carpeta existe
     os.makedirs(log_dir, exist_ok=True)
 
@@ -14,8 +14,7 @@ def save_run(task_description: str, decomposition: dict, refined_tree: dict, log
     # Preparar el contenido a guardar
     session = {
         "task": task_description,
-        "decomposition": decomposition,
-        "refinement": refined_tree
+        "decomposition": decomposition
     }
 
     # Guardar en JSON

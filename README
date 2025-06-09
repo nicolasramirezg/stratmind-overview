@@ -1,0 +1,9 @@
+2025 06 08 -->
+- [UPDATE] Cambio en el prompt del Decomposer Agent
+Se ha reemplazado la salida en formato JSON por un formato de texto plano estructurado con encabezados
+(Area:, Description:, Expected_output:, etc.). Esta modificación mejora la robustez del parseo y reduce
+errores causados por respuestas mal formateadas del modelo.
+
+
+
+

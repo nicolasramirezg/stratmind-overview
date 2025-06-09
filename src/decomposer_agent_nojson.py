@@ -14,6 +14,7 @@ class Decomposer:
             {
                 "area": "Nombre del área",
                 "description": "Objetivo de esa área",
+                "expected_output": "Respuesta que se espera"
                 "responsibilities": ["Acción 1", "Acción 2"]
             },
             ...
@@ -45,7 +46,12 @@ class Decomposer:
             for block in raw_subtasks:
                 block = "Area:" + block.strip()
                 lines = block.splitlines()
-                subtask = {"area": "", "description": "", "responsibilities": []}
+                subtask = {
+                    "area": "",
+                    "description": "",
+                    "expected_output": "",  # <-- Añadido
+                    "responsibilities": []
+                }
 
                 for line in lines:
                     line = line.strip()
@@ -53,6 +59,8 @@ class Decomposer:
                         subtask["area"] = line.replace("Area:", "").strip()
                     elif line.startswith("Description:"):
                         subtask["description"] = line.replace("Description:", "").strip()
+                    elif line.startswith("Expected_output:"):
+                        subtask["expected_output"] = line.replace("Expected_output:", "").strip()
                     elif line.startswith("-"):
                         subtask["responsibilities"].append(line.lstrip("- ").strip())
 
@@ -69,7 +77,7 @@ class Decomposer:
                 print("❌ Error al parsear:", e)
             return {"intro": "", "subtasks": [{"raw": text.strip()}]}
 
-    def decompose(self, task_description: str, debug: bool = True) -> dict:
+    def decompose(self, task_description: str, expected_output: str, debug: bool = True) -> dict:
 
         messages = [
             {
@@ -93,6 +101,8 @@ class Decomposer:
                     "Analyze the following task and divide it into a practical number of\n"
                     "functional areas of specialization.\n\n"
                     f"{task_description}\n\n"
+                    "The expecpetected output of the task is:\n"
+                    f"{expected_output}\n\n"
                     "Your response must follow **exactly** this structure:\n\n"
                     "### INTRODUCTION ###\n"
                     "A short paragraph explaining how you approached the decomposition.\n"
@@ -100,6 +110,7 @@ class Decomposer:
                     "### SUBTASKS ###\n"
                     "Area: <short name>\n"
                     "Description: <what this area is responsible for>\n"
+                    "Expected_output: <what you expect from this area>\n"
                     "Responsibilities:\n"
                     "- <first key responsibility>\n"
                     "- <second key responsibility>\n"
