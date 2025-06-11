@@ -1,0 +1,22 @@
+Analyze the following task and divide it into a practical number of
+functional areas of specialization.
+
+${task_description}
+
+Your response must follow **exactly** this structure:
+
+### INTRODUCTION ###
+A short paragraph explaining how you approached the decomposition.
+Justify the number of areas you identified and the logic behind them.
+
+### SUBTASKS ###
+Area: <short name>
+Description: <what this area is responsible for>
+Responsibilities:
+- <first key responsibility>
+- <second key responsibility>
+- <...>
+
+Repeat this block for each functional area (between 3 and 9 total).
+
+Do not include JSON, markdown, or any extra formatting beyond this.

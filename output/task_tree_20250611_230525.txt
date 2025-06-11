@@ -1,0 +1,112 @@
+TAREA PRINCIPAL: Tarea principal: Planea un viaje a cuenca de un fin de semana
+Descripción: In planning a weekend trip to Cuenca, several distinct functional areas can be identified to ensure a comprehensive and well-organized travel plan. I have divided the task into a set of functional areas based on the key responsibilities involved in creating a detailed travel itinerary for a weekend getaway.
+
+- Área: Destination Research
+  - Destination Research
+    · Identify popular tourist attractions in Cuenca.
+    · Research accommodation options within the traveler's budget.
+    · Compile a list of activities and experiences available in Cuenca.
+    - Research Popular Tourist Attractions
+      - Identify Top Historical Sites
+      - Explore Natural Attractions
+      - Investigate Cultural Landmarks
+    - Explore Accommodation Options
+      - Research Accommodation Pricing
+      - Compare Accommodation Amenities
+    - Compile List of Activities and Experiences
+      - Research Popular Tourist Attractions
+      - Explore Local Cultural Events
+      - Check Outdoor Adventure Opportunities
+- Área: Transportation Planning
+  - Transportation Planning
+    · Determine the most suitable mode of transportation to reach Cuenca.
+    · Research and book transportation tickets or rentals.
+    · Plan for transportation within Cuenca to visit different attractions.
+    - Research Transportation Options
+      - Identify Available Modes of Transportation
+      - Evaluate Pros and Cons of Each Mode
+    - Book Transportation Tickets
+      - Research Flight Options
+      - Reserve Flight Ticket
+      - Research Train Options
+      - Reserve Train Ticket
+      - Research Bus Options
+      - Reserve Bus Ticket
+    - Plan Transportation Within Cuenca
+      - Research Transportation Options
+      - Evaluate Cost of Transportation
+      - Create Itinerary for Transportation
+    - Rent a Car or Hire a Driver
+      - Choose Rental Car Option
+      - Hire a Driver
+    - Check Transportation Schedules
+      - Verify Bus Schedule
+      - Verify Train Schedule
+    - Confirm Transportation Reservations
+      - Verify Flight Reservation
+      - Confirm Car Rental Reservation
+      - Schedule Driver Pickup
+- Área: Itinerary Development
+  - Itinerary Development
+    · Allocate time for visiting attractions, dining, and relaxation.
+    · Ensure a balance between planned activities and free time.
+    · Include contingency plans for unexpected events or changes in schedule.
+    - Research Destinations
+      - Research Historical Sites
+      - Research Outdoor Activities
+      - Research Cultural Events
+    - Create Daily Schedule
+      - Research Activities
+      - Plan Activity Schedule
+    - Make Reservations
+      - Research Accommodation Options
+      - Make Dining Reservations
+      - Book Activities
+    - Prepare Contingency Plans
+      - Identify Potential Risks
+      - Develop Alternative Activities
+      - Prioritize Alternatives
+      - Document Contingency Plan
+- Área: Budget Management
+  - Budget Management
+    · Estimate costs for transportation, accommodation, meals, and activities.
+    · Identify cost-saving opportunities without compromising the travel experience.
+    · Track expenses during the trip to stay within the budget.
+    - Estimate Costs
+      - Identify Transportation Costs
+      - Determine Accommodation Costs
+      - Calculate Meals Expenses
+      - Estimate Activity Costs
+    - Identify Cost-Saving Opportunities
+      - Analyze Accommodation Costs
+      - Evaluate Transportation Expenses
+    - Create Budget Plan
+      - Identify Expense Categories
+      - Allocate Funds to Expense Categories
+      - Review and Finalize Budget Plan
+    - Track Expenses During the Trip
+      - Create Expense Log Template
+      - Record Daily Expenses
+      - Compare Actual Expenses to Budget Plan
+- Área: Packing List Preparation
+  - Packing List Preparation
+    · Consider the weather and activities in Cuenca when selecting clothing and gear.
+    · Include travel documents, medications, and other essentials in the packing list.
+    · Check for any specific requirements or restrictions related to the destination.
+    - Check Weather Forecast
+      - Gather Weather Data
+      - Analyze Weather Trends
+    - Identify Planned Activities
+      - Create Activity Schedule
+      - Confirm Activity Locations
+      - Check Activity Requirements
+    - Create Clothing List
+      - Check Weather Forecast
+      - Identify Planned Activities
+    - Prepare Toiletries and Personal Care Items
+      - Check Toiletries Inventory
+      - Purchase Toiletries
+      - Organize Toiletries
+    - Organize Travel Documents and Essentials
+      - Gather Travel Documents
+      - Prepare Essential Items

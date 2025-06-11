@@ -1,7 +1,6 @@
 from openai import OpenAI
-from typing import Dict, List
-import json
 import re
+from src.utils.prompt_loader import load_prompt
 
 
 class SpecialistAgent:
@@ -82,53 +81,30 @@ class SpecialistAgent:
             area_name = area["area"]
             description = area["description"]
             responsibilities = area.get("responsibilities", [])
+            expected_output = area.get("expected_output", "")
+
+            # Preparamos las variables para interpolación en los .txt
+            variables = {
+                "area_name": area_name,
+                "global_task": global_task,
+                "description": description,
+                "expected_output": expected_output,
+                "responsibilities": "\n".join(f"- {r}" for r in responsibilities)
+            }
 
             messages = [
                 {
                     "role": "system",
-                    "content": (
-                        f"You are a specialized expert agent assigned to the area of '{area_name}'.\n\n"
-                        f"Your role is to analyze this functional area within the broader context of the overall task:\n"
-                        f"'{global_task}'\n\n"
-                        f"The goal of this area is:\n'{description}'\n\n"
-                        f"The expected output for this area is:\n'{area.get('expected_output', '')}'\n\n"
-                        f"Some responsibilities associated with this area may include:\n"
-                        f"{json.dumps(responsibilities, indent=2)}\n\n"
-                        "You must generate a concrete, well-structured plan of executable subtasks for this area."
-                    )
+                    "content": load_prompt(
+                        "prompts/specialist_agent/system.txt",
+                        variables)
                 },
                 {
                     "role": "user",
-                    "content": (
-                        f"""Your task is to generate 3 to 7 concrete and well-defined subtasks required to successfully fulfill the area of: '{area_name}'.
-
-                        For each subtask, provide:
-                        - Title: <short title>
-                        - Description: <what this subtask accomplishes>
-                        - Expected_output: <what you expect as output from this subtask>
-                        - Dependencies: <comma-separated titles of other subtasks in this area that must be completed first, or 'None'>
-
-                        Format strictly as:
-                        ### AREA ###
-                        {area_name}
-
-                        ### SUBTASKS ###
-                        Subtask:
-                        Title: <title>
-                        Description: <description>
-                        Expected_output: <expected_output>
-                        Dependencies: <dependencies>
-                        Subtask:
-                        Title: <title>
-                        Description: <description>
-                        Expected_output: <expected_output>
-                        Dependencies: <dependencies>
-                        ... (repeat for each subtask)
-
-                        Do NOT include any explanations, comments, or extra formatting."""
-                    )
+                    "content": load_prompt(
+                        "prompts/specialist_agent/user.txt",
+                        variables)
                 }
-
             ]
 
             response = self.client.chat.completions.create(
@@ -136,8 +112,6 @@ class SpecialistAgent:
                 messages=messages,
                 temperature=0.4
             )
-
-
 
             content = response.choices[0].message.content.strip()
             # print('### LLM RESPONSE ###')

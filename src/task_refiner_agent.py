@@ -2,6 +2,8 @@ from openai import OpenAI
 from typing import Any
 import re
 
+from src.utils.prompt_loader import load_prompt
+
 class TaskRefiner:
 
     """
@@ -100,44 +102,23 @@ class TaskRefiner:
                         for dep in parent_dependencies
                     )
                 )
+        variables = {
+            "root_task_title": root_task_title,
+            "root_task_description": root_task_description,
+            "area_name": area_name,
+            "area_description": area_description,
+            "parent_info": parent_info,  # Esto debe ser un string ya formateado
+            "subtask": subtask  # Puede ser str o subtask["title"]
+        }
+
         messages = [
             {
                 "role": "system",
-                "content": (
-                    "You are an expert agent in analyzing and refining subtasks in a multi-agent system.\n\n"
-                    "Your task is to determine whether a given subtask, assigned to a functional area, is clear and focused enough to be executed by an autonomous agent, or if it needs to be decomposed into smaller, more actionable steps.\n\n"
-                    "Only refine the subtask if all of the following conditions are met:\n"
-                    "- The subtask is ambiguous, overly broad, or involves multiple distinct decisions.\n"
-                    "- It cannot be reasonably executed by a single autonomous agent as is.\n"
-                    "- Its execution requires multiple clearly distinguishable phases.\n\n"
-                    "Do not refine a subtask merely because it is logically divisible; only do so when necessary for effective execution."
-                )
+                "content": load_prompt("prompts/refiner_agent/system.txt", {})
             },
             {
                 "role": "user",
-                "content": (
-                    f"Root Task Title: {root_task_title}\n"
-                    f"Root Task Description: {root_task_description}\n"
-                    f"Area: {area_name}\n"
-                    f"Area Description: {area_description}\n"
-                    f"{parent_info}\n\n"
-                    f"Subtask:\n\"{subtask}\"\n\n"
-                    "Return your analysis using exactly the following format:\n\n"
-                    "### ORIGINAL ###\n"
-                    "Copy the original subtask exactly as received above.\n\n"
-                    "### REFINED ###\n"
-                    "Subtask:\n"
-                    "Title: <short title>\n"
-                    "Description: <description>\n"
-                    "Expected_output: <expected output>\n"
-                    "Subtask:\n"
-                    "Title: <short title>\n"
-                    "Description: <description>\n"
-                    "Expected_output: <expected output>\n"
-                    "... (repeat for each refined subtask)\n\n"
-                    "If the subtask is already actionable, leave the '### REFINED ###' section empty.\n"
-                    "Do not include any explanations, comments, or extra text beyond these two sections."
-                )
+                "content": load_prompt("prompts/refiner_agent/user.txt", variables)
             }
         ]
 

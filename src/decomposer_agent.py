@@ -1,25 +1,27 @@
 from openai import OpenAI
 import re
 
+from src.utils.prompt_loader import load_prompt
+
 
 class Decomposer:
 
     """
     Descompone una tarea compleja en entre 3 y 9 áreas funcionales principales.
 
-    Output: dict con claves:
-    {
-        "intro": "Resumen del razonamiento general",
-        "subtasks": [
-            {
-                "area": "Nombre del área",
-                "description": "Objetivo de esa área",
-                "expected_output": "Respuesta que se espera"
-                "responsibilities": ["Acción 1", "Acción 2"]
-            },
-            ...
-        ]
-    }
+    Output:
+        {
+            "intro": (str) Resumen del razonamiento general,
+            "subtasks": [
+                {
+                    "area": (str) Nombre del área funcional,
+                    "description": (str) Objetivo de esa área,
+                    "expected_output": (str) Resultado esperado de esa área,
+                    "responsibilities": [(str)] Lista de acciones o responsabilidades clave
+                },
+                ...
+            ]
+        }
     """
 
     def __init__(self, model: str = "gpt-3.5-turbo"):
@@ -77,49 +79,30 @@ class Decomposer:
                 print("❌ Error al parsear:", e)
             return {"intro": "", "subtasks": [{"raw": text.strip()}]}
 
-    def decompose(self, task_description: str, expected_output: str, debug: bool = True) -> dict:
+    def decompose(
+            self,
+            task_description: str,
+            expected_output: str,
+            debug: bool = True) -> dict:
 
         messages = [
             {
                 "role": "system",
-                "content": (
-                    "You are an expert agent in analyzing and decomposing complex tasks.\n\n"
-                    "Your goal is to break down a task into a set of meaningful, well-structured\n"
-                    "functional areas. Each area should represent a distinct responsibility that\n"
-                    "could be delegated to a specialized agent.\n\n"
-                    "The number of areas should typically range between 3 and 9, but only include\n"
-                    "as many as are logically justified by the nature of the task.\n\n"
-                    "Avoid artificial segmentation. Do not invent areas just to reach a number.\n"
-                    "Group related responsibilities under coherent domains where appropriate.\n\n"
-                    "Use your expert judgment to ensure the division is practical and efficient.\n"
-                    "Return your output using a strict textual format to ensure correct parsing."
+                "content": load_prompt(
+                    "prompts/decomposer_agent/system.txt",
+                    {}
                 )
             },
             {
                 "role": "user",
-                "content": (
-                    "Analyze the following task and divide it into a practical number of\n"
-                    "functional areas of specialization.\n\n"
-                    f"{task_description}\n\n"
-                    "The expecpetected output of the task is:\n"
-                    f"{expected_output}\n\n"
-                    "Your response must follow **exactly** this structure:\n\n"
-                    "### INTRODUCTION ###\n"
-                    "A short paragraph explaining how you approached the decomposition.\n"
-                    "Justify the number of areas you identified and the logic behind them.\n\n"
-                    "### SUBTASKS ###\n"
-                    "Area: <short name>\n"
-                    "Description: <what this area is responsible for>\n"
-                    "Expected_output: <what you expect from this area>\n"
-                    "Responsibilities:\n"
-                    "- <first key responsibility>\n"
-                    "- <second key responsibility>\n"
-                    "- <...>\n\n"
-                    "Repeat this block for each functional area (between 3 and 9 total).\n\n"
-                    "Do not include JSON, markdown, or any extra formatting beyond this."
+                "content": load_prompt(
+                    "prompts/decomposer_agent/user_with_expectedoutput.txt",
+                    {
+                        "task_description": task_description,
+                        "expected_output": expected_output
+                    }
                 )
             }
-
         ]
 
         response = self.client.chat.completions.create(

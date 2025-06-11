@@ -1,0 +1,880 @@
+{
+  "task_id": "b942c012-0bac-4cbd-9259-3026e64f6442",
+  "title": "Tarea principal: Planea un viaje a cuenca de un fin de semana",
+  "description": "Planea un viaje a cuenca de un fin de semana",
+  "expected_output": "Un plan de viaje detallado",
+  "area": null,
+  "responsibilities": [],
+  "parent": null,
+  "dependencies": [],
+  "subtasks": [
+    {
+      "task_id": "c6f8a2d9-10f1-4f95-8f5a-4602a6d7c53f",
+      "title": "Transportation",
+      "description": "Responsible for arranging the mode of transportation to and from Cuenca.",
+      "expected_output": "A detailed itinerary of transportation options.",
+      "area": "Transportation",
+      "responsibilities": [
+        "Researching available transportation methods (e.g., flights, trains, buses).",
+        "Booking tickets or making reservations for the chosen mode of transportation."
+      ],
+      "parent": "b942c012-0bac-4cbd-9259-3026e64f6442",
+      "dependencies": [],
+      "subtasks": [
+        {
+          "task_id": "ea9242d3-2a43-4a47-a4b9-832d0cdd4bdb",
+          "title": "Research transportation options",
+          "description": "Identify available modes of transportation to and from Cuenca (e.g., flights, trains, buses).",
+          "expected_output": "List of transportation options with schedules and prices.",
+          "area": "Transportation",
+          "responsibilities": [],
+          "parent": "c6f8a2d9-10f1-4f95-8f5a-4602a6d7c53f",
+          "dependencies": [],
+          "subtasks": [
+            {
+              "task_id": "53528cab-655d-463b-abce-f375dcc023f8",
+              "title": "Identify flights to Cuenca",
+              "description": "Research available flight options to and from Cuenca.",
+              "expected_output": "List of airlines, flight schedules, and prices to Cuenca.",
+              "area": "Transportation",
+              "responsibilities": [],
+              "parent": "ea9242d3-2a43-4a47-a4b9-832d0cdd4bdb",
+              "dependencies": [],
+              "subtasks": []
+            },
+            {
+              "task_id": "fb24dbef-7010-4582-a5cd-4efbd7a69bdd",
+              "title": "Explore train routes to Cuenca",
+              "description": "Investigate train routes to and from Cuenca.",
+              "expected_output": "List of train companies, routes, and schedules to Cuenca.",
+              "area": "Transportation",
+              "responsibilities": [],
+              "parent": "ea9242d3-2a43-4a47-a4b9-832d0cdd4bdb",
+              "dependencies": [],
+              "subtasks": []
+            },
+            {
+              "task_id": "4cce4133-d34c-492e-8d8c-a032aa192d4b",
+              "title": "Investigate bus services to Cuenca",
+              "description": "Research bus services available to and from Cuenca.",
+              "expected_output": "List of bus companies, routes, and schedules to Cuenca.",
+              "area": "Transportation",
+              "responsibilities": [],
+              "parent": "ea9242d3-2a43-4a47-a4b9-832d0cdd4bdb",
+              "dependencies": [],
+              "subtasks": []
+            }
+          ]
+        },
+        {
+          "task_id": "01710ff3-871f-4655-9207-4205c4cbbc49",
+          "title": "Compare transportation costs",
+          "description": "Compare the costs of different transportation options to determine the most cost-effective choice.",
+          "expected_output": "Comparison chart of transportation costs.",
+          "area": "Transportation",
+          "responsibilities": [],
+          "parent": "c6f8a2d9-10f1-4f95-8f5a-4602a6d7c53f",
+          "dependencies": [
+            "ea9242d3-2a43-4a47-a4b9-832d0cdd4bdb"
+          ],
+          "subtasks": [
+            {
+              "task_id": "121efc37-40dd-41ad-8f5b-ed9112356fb3",
+              "title": "Research cost of public transportation",
+              "description": "Research the costs associated with using public transportation options.",
+              "expected_output": "Summary of costs for public transportation.",
+              "area": "Transportation",
+              "responsibilities": [],
+              "parent": "01710ff3-871f-4655-9207-4205c4cbbc49",
+              "dependencies": [],
+              "subtasks": []
+            },
+            {
+              "task_id": "e5dcd18c-4055-49c3-bb63-f8434c4a0326",
+              "title": "Research cost of ride-sharing services",
+              "description": "Research the costs associated with using ride-sharing services.",
+              "expected_output": "Summary of costs for ride-sharing services.",
+              "area": "Transportation",
+              "responsibilities": [],
+              "parent": "01710ff3-871f-4655-9207-4205c4cbbc49",
+              "dependencies": [],
+              "subtasks": []
+            },
+            {
+              "task_id": "79988077-4149-4cd1-a5a5-4219e2dfed9c",
+              "title": "Research cost of renting a car",
+              "description": "Research the costs associated with renting a car for transportation.",
+              "expected_output": "Summary of costs for car rentals.",
+              "area": "Transportation",
+              "responsibilities": [],
+              "parent": "01710ff3-871f-4655-9207-4205c4cbbc49",
+              "dependencies": [],
+              "subtasks": []
+            }
+          ]
+        },
+        {
+          "task_id": "ab2e1ff3-0479-4efb-9621-dac94cb46456",
+          "title": "Check availability and book tickets",
+          "description": "Verify the availability of tickets for the chosen mode of transportation and make reservations.",
+          "expected_output": "Confirmed tickets for the selected transportation.",
+          "area": "Transportation",
+          "responsibilities": [],
+          "parent": "c6f8a2d9-10f1-4f95-8f5a-4602a6d7c53f",
+          "dependencies": [
+            "ea9242d3-2a43-4a47-a4b9-832d0cdd4bdb"
+          ],
+          "subtasks": [
+            {
+              "task_id": "bdcbf405-f1c3-4fa1-a7a6-fcc753d09652",
+              "title": "Check availability of tickets",
+              "description": "Verify the availability of tickets for the chosen mode of transportation.",
+              "expected_output": "List of available ticket options",
+              "area": "Transportation",
+              "responsibilities": [],
+              "parent": "ab2e1ff3-0479-4efb-9621-dac94cb46456",
+              "dependencies": [],
+              "subtasks": []
+            },
+            {
+              "task_id": "390ab032-299d-4318-9076-0662bdca58c9",
+              "title": "Make reservations",
+              "description": "Book the selected tickets for transportation.",
+              "expected_output": "Confirmed reservations",
+              "area": "Transportation",
+              "responsibilities": [],
+              "parent": "ab2e1ff3-0479-4efb-9621-dac94cb46456",
+              "dependencies": [],
+              "subtasks": []
+            }
+          ]
+        },
+        {
+          "task_id": "b37cb5d1-388c-41ff-ab6c-c3e3dafb230d",
+          "title": "Arrange transportation to departure point",
+          "description": "Plan and book transportation to the departure point for the journey to Cuenca.",
+          "expected_output": "Confirmed transportation to the departure point.",
+          "area": "Transportation",
+          "responsibilities": [],
+          "parent": "c6f8a2d9-10f1-4f95-8f5a-4602a6d7c53f",
+          "dependencies": [],
+          "subtasks": [
+            {
+              "task_id": "99e056b9-65be-4195-b7f7-f673fa4e9448",
+              "title": "Research transportation options",
+              "description": "Research different transportation options to the departure point.",
+              "expected_output": "List of available transportation options.",
+              "area": "Transportation",
+              "responsibilities": [],
+              "parent": "b37cb5d1-388c-41ff-ab6c-c3e3dafb230d",
+              "dependencies": [],
+              "subtasks": []
+            },
+            {
+              "task_id": "786f96c9-a322-4c9e-9026-049b69e6205e",
+              "title": "Compare transportation costs",
+              "description": "Compare the costs of different transportation options to the departure point.",
+              "expected_output": "Cost comparison of transportation options.",
+              "area": "Transportation",
+              "responsibilities": [],
+              "parent": "b37cb5d1-388c-41ff-ab6c-c3e3dafb230d",
+              "dependencies": [],
+              "subtasks": []
+            },
+            {
+              "task_id": "25245764-3b9e-4f55-b04a-d672c6bf5050",
+              "title": "Book selected transportation",
+              "description": "Book the chosen transportation option to the departure point.",
+              "expected_output": "Confirmation of booked transportation.",
+              "area": "Transportation",
+              "responsibilities": [],
+              "parent": "b37cb5d1-388c-41ff-ab6c-c3e3dafb230d",
+              "dependencies": [],
+              "subtasks": []
+            }
+          ]
+        },
+        {
+          "task_id": "e6f8cc29-9b77-4c38-b4b7-6bad583f470b",
+          "title": "Plan transportation from arrival point",
+          "description": "Organize transportation from the arrival point in Cuenca to the final destination.",
+          "expected_output": "Confirmed transportation from the arrival point.",
+          "area": "Transportation",
+          "responsibilities": [],
+          "parent": "c6f8a2d9-10f1-4f95-8f5a-4602a6d7c53f",
+          "dependencies": [],
+          "subtasks": [
+            {
+              "task_id": "2a8c6d27-c4b2-4ff6-8f07-14206a39f6b1",
+              "title": "Identify transportation options",
+              "description": "Research and compile a list of available transportation options from the arrival point in Cuenca.",
+              "expected_output": "List of transportation options with details such as cost, duration, and availability.",
+              "area": "Transportation",
+              "responsibilities": [],
+              "parent": "e6f8cc29-9b77-4c38-b4b7-6bad583f470b",
+              "dependencies": [],
+              "subtasks": []
+            },
+            {
+              "task_id": "a08c252c-57f4-4fbb-bc2e-5c7628b31cd1",
+              "title": "Evaluate transportation options",
+              "description": "Compare the identified transportation options based on criteria such as cost, comfort, and reliability.",
+              "expected_output": "Evaluation report highlighting the pros and cons of each transportation option.",
+              "area": "Transportation",
+              "responsibilities": [],
+              "parent": "e6f8cc29-9b77-4c38-b4b7-6bad583f470b",
+              "dependencies": [],
+              "subtasks": []
+            },
+            {
+              "task_id": "ae2e55eb-981e-43e1-8086-a4a3ad3a73bf",
+              "title": "Select transportation mode",
+              "description": "Choose the most suitable transportation mode based on the evaluation report and traveler preferences.",
+              "expected_output": "Chosen transportation mode with confirmed booking details.",
+              "area": "Transportation",
+              "responsibilities": [],
+              "parent": "e6f8cc29-9b77-4c38-b4b7-6bad583f470b",
+              "dependencies": [],
+              "subtasks": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "task_id": "bc619506-db07-444c-aa73-8630ee5fcfb5",
+      "title": "Accommodation",
+      "description": "Responsible for selecting and booking suitable accommodation in Cuenca.",
+      "expected_output": "A list of potential accommodation options with booking details.",
+      "area": "Accommodation",
+      "responsibilities": [
+        "Researching hotels, hostels, or other lodging options in Cuenca.",
+        "Making reservations based on preferences and budget constraints."
+      ],
+      "parent": "b942c012-0bac-4cbd-9259-3026e64f6442",
+      "dependencies": [],
+      "subtasks": [
+        {
+          "task_id": "7b9ca5d2-d8bd-47f7-aa9f-1bc109ee7e4d",
+          "title": "Research Accommodation Options",
+          "description": "Identify and gather information on hotels, hostels, or other lodging options in Cuenca.",
+          "expected_output": "List of potential accommodation options with details.",
+          "area": "Accommodation",
+          "responsibilities": [],
+          "parent": "bc619506-db07-444c-aa73-8630ee5fcfb5",
+          "dependencies": [],
+          "subtasks": [
+            {
+              "task_id": "81ffba2e-5e1b-472a-8265-c415da779ffa",
+              "title": "Research Hotels in Cuenca",
+              "description": "Identify and gather information on hotels in Cuenca.",
+              "expected_output": "",
+              "area": "Accommodation",
+              "responsibilities": [],
+              "parent": "7b9ca5d2-d8bd-47f7-aa9f-1bc109ee7e4d",
+              "dependencies": [],
+              "subtasks": []
+            },
+            {
+              "task_id": "abe1a12b-44a3-4cd1-95fa-d85120e3e933",
+              "title": "Research Hostels in Cuenca",
+              "description": "Identify and gather information on hostels in Cuenca.",
+              "expected_output": "",
+              "area": "Accommodation",
+              "responsibilities": [],
+              "parent": "7b9ca5d2-d8bd-47f7-aa9f-1bc109ee7e4d",
+              "dependencies": [],
+              "subtasks": []
+            }
+          ]
+        },
+        {
+          "task_id": "f8f1e853-3499-4e1b-952d-9cd0ec1195cd",
+          "title": "Set Budget Constraints",
+          "description": "Determine the budget limits for accommodation based on overall trip budget.",
+          "expected_output": "Defined budget for lodging.",
+          "area": "Accommodation",
+          "responsibilities": [],
+          "parent": "bc619506-db07-444c-aa73-8630ee5fcfb5",
+          "dependencies": [],
+          "subtasks": [
+            {
+              "task_id": "04cfa56b-a490-4dd0-a0a2-373e86fae0c6",
+              "title": "Determine Maximum Accommodation Budget",
+              "description": "Calculate the maximum amount that can be allocated to accommodation based on the overall trip budget.",
+              "expected_output": "Defined maximum budget for lodging",
+              "area": "Accommodation",
+              "responsibilities": [],
+              "parent": "f8f1e853-3499-4e1b-952d-9cd0ec1195cd",
+              "dependencies": [],
+              "subtasks": []
+            },
+            {
+              "task_id": "c89344af-c27d-437c-b765-75aa54296a2a",
+              "title": "Define Minimum Accommodation Budget",
+              "description": "Calculate the minimum amount that should be allocated to accommodation based on quality and location requirements.",
+              "expected_output": "Defined minimum budget for lodging",
+              "area": "Accommodation",
+              "responsibilities": [],
+              "parent": "f8f1e853-3499-4e1b-952d-9cd0ec1195cd",
+              "dependencies": [],
+              "subtasks": []
+            }
+          ]
+        },
+        {
+          "task_id": "350e23b3-72d7-4b51-af63-2bd8dbea711a",
+          "title": "Check Availability",
+          "description": "Verify the availability of selected accommodation options for the specified travel dates.",
+          "expected_output": "Confirmation of accommodation availability.",
+          "area": "Accommodation",
+          "responsibilities": [],
+          "parent": "bc619506-db07-444c-aa73-8630ee5fcfb5",
+          "dependencies": [
+            "7b9ca5d2-d8bd-47f7-aa9f-1bc109ee7e4d"
+          ],
+          "subtasks": [
+            {
+              "task_id": "ba3c541a-67a4-4541-9efa-8f73fa1cee42",
+              "title": "Search Accommodation Options",
+              "description": "Research and compile a list of accommodation options for the specified travel dates.",
+              "expected_output": "List of accommodation options with availability information",
+              "area": "Accommodation",
+              "responsibilities": [],
+              "parent": "350e23b3-72d7-4b51-af63-2bd8dbea711a",
+              "dependencies": [],
+              "subtasks": []
+            },
+            {
+              "task_id": "09b85601-8648-4bed-96f7-b5da5023c1fe",
+              "title": "Contact Accommodation Providers",
+              "description": "Reach out to the selected accommodation options to inquire about availability for the specified travel dates.",
+              "expected_output": "Confirmation of availability from accommodation providers",
+              "area": "Accommodation",
+              "responsibilities": [],
+              "parent": "350e23b3-72d7-4b51-af63-2bd8dbea711a",
+              "dependencies": [],
+              "subtasks": []
+            }
+          ]
+        },
+        {
+          "task_id": "c9424c18-0c8a-44b1-9f69-2d34e279fde8",
+          "title": "Compare Amenities and Reviews",
+          "description": "Evaluate amenities, reviews, and ratings of shortlisted accommodations to make an informed decision.",
+          "expected_output": "Comparison chart of amenities and reviews.",
+          "area": "Accommodation",
+          "responsibilities": [],
+          "parent": "bc619506-db07-444c-aa73-8630ee5fcfb5",
+          "dependencies": [
+            "7b9ca5d2-d8bd-47f7-aa9f-1bc109ee7e4d"
+          ],
+          "subtasks": [
+            {
+              "task_id": "65211b33-6121-4fc8-bcee-5413917f166c",
+              "title": "Evaluate Amenities",
+              "description": "Analyze the amenities offered by each shortlisted accommodation.",
+              "expected_output": "List of amenities provided by each accommodation.",
+              "area": "Accommodation",
+              "responsibilities": [],
+              "parent": "c9424c18-0c8a-44b1-9f69-2d34e279fde8",
+              "dependencies": [],
+              "subtasks": []
+            },
+            {
+              "task_id": "7a92ffef-c074-4dce-96e4-378cd2b50236",
+              "title": "Review Ratings",
+              "description": "Assess the ratings and reviews of each shortlisted accommodation.",
+              "expected_output": "Summary of ratings and reviews for each accommodation.",
+              "area": "Accommodation",
+              "responsibilities": [],
+              "parent": "c9424c18-0c8a-44b1-9f69-2d34e279fde8",
+              "dependencies": [],
+              "subtasks": []
+            }
+          ]
+        },
+        {
+          "task_id": "90e82bdb-77a4-406d-a88e-7e82b5575573",
+          "title": "Make Reservations",
+          "description": "Book the chosen accommodation based on preferences, availability, and budget constraints.",
+          "expected_output": "Confirmation of reservations.",
+          "area": "Accommodation",
+          "responsibilities": [],
+          "parent": "bc619506-db07-444c-aa73-8630ee5fcfb5",
+          "dependencies": [
+            "c9424c18-0c8a-44b1-9f69-2d34e279fde8",
+            "350e23b3-72d7-4b51-af63-2bd8dbea711a"
+          ],
+          "subtasks": [
+            {
+              "task_id": "aa43285f-0dac-4c86-b05a-7e2a61565a66",
+              "title": "Select Accommodation",
+              "description": "Choose the accommodation based on preferences.",
+              "expected_output": "Chosen accommodation.",
+              "area": "Accommodation",
+              "responsibilities": [],
+              "parent": "90e82bdb-77a4-406d-a88e-7e82b5575573",
+              "dependencies": [],
+              "subtasks": []
+            },
+            {
+              "task_id": "e3c219d6-4df2-4565-b6ac-1b407000c24f",
+              "title": "Check Availability",
+              "description": "Verify the availability of the chosen accommodation.",
+              "expected_output": "Availability confirmation.",
+              "area": "Accommodation",
+              "responsibilities": [],
+              "parent": "90e82bdb-77a4-406d-a88e-7e82b5575573",
+              "dependencies": [],
+              "subtasks": []
+            },
+            {
+              "task_id": "779fc4d7-0fe0-4adc-bfea-0250851a30b5",
+              "title": "Confirm Booking Details",
+              "description": "Provide booking details such as dates, number of guests, and any special requests.",
+              "expected_output": "Booking details confirmation.",
+              "area": "Accommodation",
+              "responsibilities": [],
+              "parent": "90e82bdb-77a4-406d-a88e-7e82b5575573",
+              "dependencies": [],
+              "subtasks": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "task_id": "e4175eaa-3567-4766-8db0-c0b36712229c",
+      "title": "Activities",
+      "description": "Responsible for planning the activities and sightseeing during the weekend trip.",
+      "expected_output": "An itinerary of planned activities and attractions to visit.",
+      "area": "Activities",
+      "responsibilities": [
+        "Researching popular tourist attractions and activities in Cuenca.",
+        "Creating a schedule that balances sightseeing, relaxation, and local experiences."
+      ],
+      "parent": "b942c012-0bac-4cbd-9259-3026e64f6442",
+      "dependencies": [],
+      "subtasks": [
+        {
+          "task_id": "1b823d1b-96f6-40ef-9ab8-4e3a7427f622",
+          "title": "Research popular tourist attractions",
+          "description": "Identify and gather information on popular tourist attractions in Cuenca.",
+          "expected_output": "List of top tourist attractions in Cuenca.",
+          "area": "Activities",
+          "responsibilities": [],
+          "parent": "e4175eaa-3567-4766-8db0-c0b36712229c",
+          "dependencies": [],
+          "subtasks": [
+            {
+              "task_id": "ce31a1f9-1211-4857-9665-bafc3522eaa2",
+              "title": "Identify top historical sites",
+              "description": "Research and compile a list of historical sites in Cuenca.",
+              "expected_output": "List of top historical sites in Cuenca.",
+              "area": "Activities",
+              "responsibilities": [],
+              "parent": "1b823d1b-96f6-40ef-9ab8-4e3a7427f622",
+              "dependencies": [],
+              "subtasks": []
+            },
+            {
+              "task_id": "b6afe1ab-7dfd-4af2-9816-4b59e629af20",
+              "title": "Explore natural landmarks",
+              "description": "Gather information on natural landmarks and scenic spots in Cuenca.",
+              "expected_output": "List of natural landmarks and scenic spots in Cuenca.",
+              "area": "Activities",
+              "responsibilities": [],
+              "parent": "1b823d1b-96f6-40ef-9ab8-4e3a7427f622",
+              "dependencies": [],
+              "subtasks": []
+            }
+          ]
+        },
+        {
+          "task_id": "2ad9c9d8-da71-44c9-b4d4-0fe0d06b7dcd",
+          "title": "Create a balanced itinerary",
+          "description": "Plan a schedule that includes a mix of sightseeing, relaxation, and local experiences.",
+          "expected_output": "Detailed itinerary for the weekend trip.",
+          "area": "Activities",
+          "responsibilities": [],
+          "parent": "e4175eaa-3567-4766-8db0-c0b36712229c",
+          "dependencies": [
+            "1b823d1b-96f6-40ef-9ab8-4e3a7427f622"
+          ],
+          "subtasks": [
+            {
+              "task_id": "df0eec40-a93a-4c56-a033-8daddc657abb",
+              "title": "Research popular tourist attractions",
+              "description": "Find and list popular tourist attractions in the destination city.",
+              "expected_output": "List of popular tourist attractions with descriptions and opening hours.",
+              "area": "Activities",
+              "responsibilities": [],
+              "parent": "2ad9c9d8-da71-44c9-b4d4-0fe0d06b7dcd",
+              "dependencies": [],
+              "subtasks": []
+            },
+            {
+              "task_id": "f93dc3b5-c6bc-4802-ba51-e62f00a0aeaa",
+              "title": "Plan sightseeing activities",
+              "description": "Select specific tourist attractions to visit based on personal preferences and available time.",
+              "expected_output": "List of selected tourist attractions with planned visit times.",
+              "area": "Activities",
+              "responsibilities": [],
+              "parent": "2ad9c9d8-da71-44c9-b4d4-0fe0d06b7dcd",
+              "dependencies": [],
+              "subtasks": []
+            },
+            {
+              "task_id": "792ade29-4177-4f08-8692-85041371973d",
+              "title": "Plan relaxation activities",
+              "description": "Identify and schedule activities that promote relaxation and downtime during the trip.",
+              "expected_output": "List of relaxation activities with scheduled times.",
+              "area": "Activities",
+              "responsibilities": [],
+              "parent": "2ad9c9d8-da71-44c9-b4d4-0fe0d06b7dcd",
+              "dependencies": [],
+              "subtasks": []
+            },
+            {
+              "task_id": "264d5769-c37f-4d0a-8b95-b2f22fc849a6",
+              "title": "Plan local experiences",
+              "description": "Research and plan local experiences such as trying local cuisine, attending cultural events, or visiting markets.",
+              "expected_output": "List of planned local experiences with details on locations and times.",
+              "area": "Activities",
+              "responsibilities": [],
+              "parent": "2ad9c9d8-da71-44c9-b4d4-0fe0d06b7dcd",
+              "dependencies": [],
+              "subtasks": []
+            }
+          ]
+        },
+        {
+          "task_id": "a489864c-747f-438c-aca8-aaee50701e94",
+          "title": "Check opening hours and admission fees",
+          "description": "Verify the opening hours and admission fees of selected attractions.",
+          "expected_output": "Documented information on opening hours and admission fees.",
+          "area": "Activities",
+          "responsibilities": [],
+          "parent": "e4175eaa-3567-4766-8db0-c0b36712229c",
+          "dependencies": [
+            "1b823d1b-96f6-40ef-9ab8-4e3a7427f622"
+          ],
+          "subtasks": [
+            {
+              "task_id": "ed437ad9-af62-48de-b11a-af5741eba765",
+              "title": "Research opening hours",
+              "description": "Gather information on the opening hours of selected attractions.",
+              "expected_output": "Documented information on the opening hours of attractions.",
+              "area": "Activities",
+              "responsibilities": [],
+              "parent": "a489864c-747f-438c-aca8-aaee50701e94",
+              "dependencies": [],
+              "subtasks": []
+            },
+            {
+              "task_id": "9556df9b-dfb4-4aa3-8b1e-146aa9421227",
+              "title": "Verify admission fees",
+              "description": "Confirm the admission fees for selected attractions.",
+              "expected_output": "Documented information on the admission fees of attractions.",
+              "area": "Activities",
+              "responsibilities": [],
+              "parent": "a489864c-747f-438c-aca8-aaee50701e94",
+              "dependencies": [],
+              "subtasks": []
+            }
+          ]
+        },
+        {
+          "task_id": "ea7f8afc-1e96-4d0a-abf0-551b38a063ba",
+          "title": "Make reservations or bookings",
+          "description": "Secure reservations or bookings for activities or attractions that require advance booking.",
+          "expected_output": "Confirmation of reservations or bookings.",
+          "area": "Activities",
+          "responsibilities": [],
+          "parent": "e4175eaa-3567-4766-8db0-c0b36712229c",
+          "dependencies": [
+            "a489864c-747f-438c-aca8-aaee50701e94"
+          ],
+          "subtasks": [
+            {
+              "task_id": "ea061463-9194-48f8-a5d3-540f7a508fe0",
+              "title": "Check availability",
+              "description": "Verify the availability of desired dates and times for the activity or attraction.",
+              "expected_output": "List of available dates and times.",
+              "area": "Activities",
+              "responsibilities": [],
+              "parent": "ea7f8afc-1e96-4d0a-abf0-551b38a063ba",
+              "dependencies": [],
+              "subtasks": []
+            },
+            {
+              "task_id": "9934e8e1-04fa-4c81-a358-1cfa0439a1bb",
+              "title": "Confirm pricing",
+              "description": "Determine the cost of the reservation including any additional fees or charges.",
+              "expected_output": "Total cost breakdown.",
+              "area": "Activities",
+              "responsibilities": [],
+              "parent": "ea7f8afc-1e96-4d0a-abf0-551b38a063ba",
+              "dependencies": [],
+              "subtasks": []
+            },
+            {
+              "task_id": "3c6ee0f6-46bc-4638-bcca-84668b5264e4",
+              "title": "Provide personal information",
+              "description": "Enter necessary personal details such as name, contact information, and payment details.",
+              "expected_output": "Completed personal information form.",
+              "area": "Activities",
+              "responsibilities": [],
+              "parent": "ea7f8afc-1e96-4d0a-abf0-551b38a063ba",
+              "dependencies": [],
+              "subtasks": []
+            },
+            {
+              "task_id": "c6d54330-aeca-48fa-89d5-7879b3045471",
+              "title": "Review and confirm",
+              "description": "Review all booking details for accuracy and confirm the reservation.",
+              "expected_output": "Confirmation of reservation.",
+              "area": "Activities",
+              "responsibilities": [],
+              "parent": "ea7f8afc-1e96-4d0a-abf0-551b38a063ba",
+              "dependencies": [],
+              "subtasks": []
+            }
+          ]
+        },
+        {
+          "task_id": "27cdc596-883e-459f-9704-523caf3e19a1",
+          "title": "Organize transportation",
+          "description": "Arrange transportation to and from the attractions included in the itinerary.",
+          "expected_output": "Transportation schedule for the weekend trip.",
+          "area": "Activities",
+          "responsibilities": [],
+          "parent": "e4175eaa-3567-4766-8db0-c0b36712229c",
+          "dependencies": [
+            "2ad9c9d8-da71-44c9-b4d4-0fe0d06b7dcd"
+          ],
+          "subtasks": [
+            {
+              "task_id": "d6f486a5-8451-43d7-91e6-8ea8f47b0551",
+              "title": "Research transportation options",
+              "description": "Research different transportation options available for the trip.",
+              "expected_output": "List of available transportation methods with their pros and cons.",
+              "area": "Activities",
+              "responsibilities": [],
+              "parent": "27cdc596-883e-459f-9704-523caf3e19a1",
+              "dependencies": [],
+              "subtasks": []
+            },
+            {
+              "task_id": "3c968eac-9f56-4357-970a-6a7f1c5cea38",
+              "title": "Book transportation",
+              "description": "Book the chosen transportation method for the trip.",
+              "expected_output": "Confirmed transportation bookings for the weekend trip.",
+              "area": "Activities",
+              "responsibilities": [],
+              "parent": "27cdc596-883e-459f-9704-523caf3e19a1",
+              "dependencies": [],
+              "subtasks": []
+            }
+          ]
+        },
+        {
+          "task_id": "cb616969-ea20-46e6-8b7c-cd0b9878d6b4",
+          "title": "Prepare a list of essentials",
+          "description": "Compile a list of essentials such as comfortable clothing, snacks, and any necessary documents.",
+          "expected_output": "Checklist of essential items for the trip.",
+          "area": "Activities",
+          "responsibilities": [],
+          "parent": "e4175eaa-3567-4766-8db0-c0b36712229c",
+          "dependencies": [],
+          "subtasks": [
+            {
+              "task_id": "39619da4-7703-4075-a2d2-8e3cdf491a8a",
+              "title": "Identify clothing items",
+              "description": "Create a list of comfortable clothing items suitable for the trip.",
+              "expected_output": "List of clothing items needed for the trip.",
+              "area": "Activities",
+              "responsibilities": [],
+              "parent": "cb616969-ea20-46e6-8b7c-cd0b9878d6b4",
+              "dependencies": [],
+              "subtasks": []
+            },
+            {
+              "task_id": "6a81aa42-48b8-4f60-bc6d-2ff043778879",
+              "title": "Select snack options",
+              "description": "Research and choose suitable snacks for the trip.",
+              "expected_output": "List of snack options for the trip.",
+              "area": "Activities",
+              "responsibilities": [],
+              "parent": "cb616969-ea20-46e6-8b7c-cd0b9878d6b4",
+              "dependencies": [],
+              "subtasks": []
+            },
+            {
+              "task_id": "947d4fa4-48e3-4e8e-a864-1a4d5ac4daff",
+              "title": "Gather necessary documents",
+              "description": "Identify and compile all necessary documents for the trip.",
+              "expected_output": "Checklist of required documents.",
+              "area": "Activities",
+              "responsibilities": [],
+              "parent": "cb616969-ea20-46e6-8b7c-cd0b9878d6b4",
+              "dependencies": [],
+              "subtasks": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "task_id": "08b0f5b7-9873-4672-8200-b4b8a0148662",
+      "title": "Budgeting",
+      "description": "Responsible for managing the budget for the weekend trip to Cuenca.",
+      "expected_output": "A detailed budget breakdown for expenses such as transportation, accommodation, activities, and meals.",
+      "area": "Budgeting",
+      "responsibilities": [
+        "Estimating costs for transportation, accommodation, and activities.",
+        "Tracking expenses and ensuring they align with the allocated budget."
+      ],
+      "parent": "b942c012-0bac-4cbd-9259-3026e64f6442",
+      "dependencies": [],
+      "subtasks": [
+        {
+          "task_id": "809d61d1-14a9-43d7-a69d-c7051af6fb95",
+          "title": "Research transportation options",
+          "description": "Research and compare transportation options to Cuenca for the weekend trip.",
+          "expected_output": "List of transportation options with estimated costs.",
+          "area": "Budgeting",
+          "responsibilities": [],
+          "parent": "08b0f5b7-9873-4672-8200-b4b8a0148662",
+          "dependencies": [],
+          "subtasks": []
+        },
+        {
+          "task_id": "68933cb5-0a65-498d-b6e0-01103283f262",
+          "title": "Find accommodation",
+          "description": "Search for and book suitable accommodation for the weekend in Cuenca.",
+          "expected_output": "Booked accommodation with details and costs.",
+          "area": "Budgeting",
+          "responsibilities": [],
+          "parent": "08b0f5b7-9873-4672-8200-b4b8a0148662",
+          "dependencies": [],
+          "subtasks": [
+            {
+              "task_id": "72372400-f75a-496f-b402-c47af3c8f79d",
+              "title": "Search for available accommodations",
+              "description": "Research and compile a list of available accommodations in Cuenca for the weekend.",
+              "expected_output": "List of available accommodations with basic details (e.g., location, price range, amenities).",
+              "area": "Budgeting",
+              "responsibilities": [],
+              "parent": "68933cb5-0a65-498d-b6e0-01103283f262",
+              "dependencies": [],
+              "subtasks": []
+            },
+            {
+              "task_id": "e46b6446-48d0-4883-8233-40a03a3aec7c",
+              "title": "Compare accommodation options",
+              "description": "Evaluate the list of available accommodations based on criteria such as location, price, reviews, and amenities.",
+              "expected_output": "Comparison chart or summary of the top accommodation options.",
+              "area": "Budgeting",
+              "responsibilities": [],
+              "parent": "68933cb5-0a65-498d-b6e0-01103283f262",
+              "dependencies": [],
+              "subtasks": []
+            },
+            {
+              "task_id": "8852e968-a286-4d2e-8d94-990ca0cacff6",
+              "title": "Make reservation",
+              "description": "Book the selected accommodation for the weekend in Cuenca.",
+              "expected_output": "Confirmed reservation details and costs.",
+              "area": "Budgeting",
+              "responsibilities": [],
+              "parent": "68933cb5-0a65-498d-b6e0-01103283f262",
+              "dependencies": [],
+              "subtasks": []
+            }
+          ]
+        },
+        {
+          "task_id": "73d0b068-8ab6-4be7-8988-34fc3fe17a1f",
+          "title": "Plan activities and attractions",
+          "description": "Research and plan activities and attractions to visit during the weekend in Cuenca.",
+          "expected_output": "List of planned activities with associated costs.",
+          "area": "Budgeting",
+          "responsibilities": [],
+          "parent": "08b0f5b7-9873-4672-8200-b4b8a0148662",
+          "dependencies": [],
+          "subtasks": [
+            {
+              "task_id": "035b1e5b-417c-4cc5-a4a2-cc1c8acb5629",
+              "title": "Research activities in Cuenca",
+              "description": "Research various activities and attractions available in Cuenca for the weekend.",
+              "expected_output": "List of potential activities and attractions.",
+              "area": "Budgeting",
+              "responsibilities": [],
+              "parent": "73d0b068-8ab6-4be7-8988-34fc3fe17a1f",
+              "dependencies": [],
+              "subtasks": []
+            },
+            {
+              "task_id": "647a7c78-9586-4bb8-b489-b5f6d2adeb1c",
+              "title": "Plan weekend itinerary",
+              "description": "Create a detailed itinerary for the weekend, including timing and logistics for each planned activity.",
+              "expected_output": "Weekend itinerary schedule.",
+              "area": "Budgeting",
+              "responsibilities": [],
+              "parent": "73d0b068-8ab6-4be7-8988-34fc3fe17a1f",
+              "dependencies": [],
+              "subtasks": []
+            }
+          ]
+        },
+        {
+          "task_id": "6f4180f2-e41a-417f-828f-cdcd6d060eef",
+          "title": "Create a meal plan",
+          "description": "Plan meals for the weekend trip, considering eating out and groceries.",
+          "expected_output": "Meal plan with estimated costs.",
+          "area": "Budgeting",
+          "responsibilities": [],
+          "parent": "08b0f5b7-9873-4672-8200-b4b8a0148662",
+          "dependencies": [],
+          "subtasks": [
+            {
+              "task_id": "9f14a050-49a0-4c64-9704-c432ebb9d8fb",
+              "title": "Identify dietary restrictions and preferences",
+              "description": "Gather information on dietary restrictions and preferences of all participants.",
+              "expected_output": "List of dietary restrictions and preferences.",
+              "area": "Budgeting",
+              "responsibilities": [],
+              "parent": "6f4180f2-e41a-417f-828f-cdcd6d060eef",
+              "dependencies": [],
+              "subtasks": []
+            },
+            {
+              "task_id": "91c49c27-052f-4982-8674-3b9c6f83d1b5",
+              "title": "Research local restaurants and grocery stores",
+              "description": "Identify and list local restaurants and grocery stores near the accommodation.",
+              "expected_output": "List of local restaurants and grocery stores.",
+              "area": "Budgeting",
+              "responsibilities": [],
+              "parent": "6f4180f2-e41a-417f-828f-cdcd6d060eef",
+              "dependencies": [],
+              "subtasks": []
+            },
+            {
+              "task_id": "cda7c913-a17d-45d2-905e-cea762b99dd2",
+              "title": "Plan meals for each day",
+              "description": "Create a detailed meal plan for each day of the weekend trip, considering dietary restrictions, preferences, and budget.",
+              "expected_output": "Detailed meal plan for each day.",
+              "area": "Budgeting",
+              "responsibilities": [],
+              "parent": "6f4180f2-e41a-417f-828f-cdcd6d060eef",
+              "dependencies": [],
+              "subtasks": []
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

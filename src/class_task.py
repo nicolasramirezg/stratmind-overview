@@ -17,10 +17,12 @@ class Task:
     parent: Optional['Task'] = None
     assigned_agent: Optional[str] = None
     status: str = Status.PENDING
-    responsibilities: Optional[List[str]] = field(default_factory=list)  # <-- Añadido
+    responsibilities: Optional[List[str]] = field(default_factory=list)
     task_id: str = field(default_factory=lambda: str(uuid.uuid4()), init=False)
     dependencies: Set['Task'] = field(default_factory=set, repr=False)
     subtasks: List['Task'] = field(default_factory=list, repr=False)
+    intro: Optional[str] = None  #
+
 
     def __post_init__(self):
         if self.status not in Status.VALID:

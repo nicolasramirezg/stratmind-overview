@@ -1,0 +1,27 @@
+Your task is to generate 3 to 7 concrete and well-defined subtasks required to successfully
+fulfill the area of: '${area_name}'.
+
+For each subtask, provide:
+- Title: <short title>
+- Description: <what this subtask accomplishes>
+- Expected_output: <what you expect as output from this subtask>
+- Dependencies: <comma-separated titles of other subtasks in this area that must be completed first, or 'None'>
+
+Format strictly as:
+### AREA ###
+${area_name}
+
+### SUBTASKS ###
+Subtask:
+Title: <title>
+Description: <description>
+Expected_output: <expected_output>
+Dependencies: <dependencies>
+Subtask:
+Title: <title>
+Description: <description>
+Expected_output: <expected_output>
+Dependencies: <dependencies>
+(repeat for each subtask)
+
+Do NOT include any explanations, comments, or extra formatting.

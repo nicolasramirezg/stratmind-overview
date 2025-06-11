@@ -1,0 +1,27 @@
+Root Task Title: ${root_task_title}
+Root Task Description: ${root_task_description}
+Area: ${area_name}
+Area Description: ${area_description}
+${parent_info}
+
+Subtask:
+"${subtask}"
+
+Return your analysis using exactly the following format:
+
+### ORIGINAL ###
+Copy the original subtask exactly as received above.
+
+### REFINED ###
+Subtask:
+Title: <short title>
+Description: <description>
+Expected_output: <expected output>
+Subtask:
+Title: <short title>
+Description: <description>
+Expected_output: <expected output>
+... (repeat for each refined subtask)
+
+If the subtask is already actionable, leave the '### REFINED ###' section empty.
+Do not include any explanations, comments, or extra text beyond these two sections.
