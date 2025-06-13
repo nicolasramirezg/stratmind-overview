@@ -17,6 +17,6 @@ Responsibilities:
 - <second key responsibility>
 - <...>
 
-Repeat this block for each functional area (between 3 and 9 total).
+Repeat this block for each functional area (between 3 and 7 total).
 
 Do not include JSON, markdown, or any extra formatting beyond this.

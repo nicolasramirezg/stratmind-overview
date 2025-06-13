@@ -8,3 +8,5 @@ Only refine the subtask if all of the following conditions are met:
 - Its execution requires multiple clearly distinguishable phases.
 
 Do not refine a subtask merely because it is logically divisible; only do so when necessary for effective execution.
+
+

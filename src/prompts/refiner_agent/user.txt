@@ -21,7 +21,8 @@ Subtask:
 Title: <short title>
 Description: <description>
 Expected_output: <expected output>
-... (repeat for each refined subtask)
+Dependencies: <comma-separated titles of other refined subtasks that must be completed first, or 'None'>
+... (repeat for each refined subtask, but DO NOT generate more than 3 subtasks in total)
 
 If the subtask is already actionable, leave the '### REFINED ###' section empty.
 Do not include any explanations, comments, or extra text beyond these two sections.

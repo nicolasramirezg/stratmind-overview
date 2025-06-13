@@ -152,3 +152,27 @@ class TaskManager:
         Serializa todas las tareas a diccionario.
         """
         return {tid: t.to_dict() for tid, t in self.tasks.items()}
+
+def create_and_link_subtasks(subtasks, area, area_task, task_manager):
+    """
+    Crea objetos Task para cada subtask y asigna dependencias entre ellas usando títulos normalizados.
+    Devuelve un diccionario {titulo_normalizado: Task}.
+    """
+    subtask_objs = {}
+    for subtask in subtasks:
+        t = task_manager.create_task(
+            title=subtask["title"],
+            description=subtask["description"],
+            expected_output=subtask["expected_output"],
+            area=area,
+            parent_id=area_task.task_id
+        )
+        subtask_objs[subtask["title"].strip().lower()] = t
+
+    for subtask in subtasks:
+        dependencies = subtask.get("dependencies", [])
+        for dep_title in dependencies:
+            dep_task = subtask_objs.get(dep_title.strip().lower())
+            if dep_task:
+                subtask_objs[subtask["title"].strip().lower()].add_dependency(dep_task)
+    return subtask_objs

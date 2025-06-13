@@ -4,7 +4,9 @@ from src.task_refiner_agent import TaskRefiner
 from src.recursive_refiner_parent_subtask import refine_recursively
 from src.utils.task_exporter import export_task_tree
 from src.utils.task_exporter_txt import export_task_tree_txt
-from src.class_task import TaskManager
+from src.class_task import Task, TaskManager, create_and_link_subtasks
+import os
+import json
 from dotenv import load_dotenv
 
 load_dotenv()  # Solo esto, para cargar el .env
@@ -57,111 +59,99 @@ def main():
 
     # 2. Generar subtareas concretas para cada área
     # Obtener las áreas funcionales desde el árbol de tareas
-    areas = []
-    for task_id, task_obj in task_manager.tasks.items():
-        if task_obj.parent == root_task:
-            areas.append(task_obj)
+    areas = [t for t in task_manager.tasks.values() if t.parent == root_task]
+
 
     # Preparar la estructura esperada por SpecialistAgent
     area_divisions_from_tasks = {
-        "subtasks": []
+        "subtasks": [
+            {
+                "area": area.area,
+                "description": area.description,
+                "expected_output": area.expected_output,
+                "responsibilities": getattr(area, "responsibilities", [])
+            }
+            for area in areas
+        ]
     }
-
-    for area in areas:
-        area_data = {
-            "area": area.area,
-            "description": area.description,
-            "expected_output": area.expected_output,
-            "responsibilities": area.responsibilities if area.responsibilities else []
-        }
-        area_divisions_from_tasks["subtasks"].append(area_data)
-
     print("Llamando a SpecialistAgent...")
     specialist = SpecialistAgent()
-    subtasks_by_area = specialist.plan_subtasks(
-        area_divisions_from_tasks,
-        task_description
-    )
+    subtasks_by_area = specialist.plan_subtasks(area_divisions_from_tasks, task_description)
 
     print("Creando subtareas concretas y resolviendo dependencias...")
     # Almacenar subtareas concretas como hijas de cada área y resolver dependencias
     for area_data in subtasks_by_area:
         area = area_data["area"]
         subtasks = area_data["subtasks"]
-
+        print(f"  - Área: {area}, {len(subtasks)} subtareas")
         area_task = next(
             (t for t in task_manager.tasks.values()
-             if t.area == area and t.parent == root_task),
+            if t.area == area and t.parent == root_task),
             None
         )
-
         if not area_task:
-            print(f"⚠️  Área ignorada (no encontrada en árbol): {area}")
+            print(f"    ⚠️ No se encontró tarea de área para {area}")
             continue
+        # Usa la función utilitaria
+        create_and_link_subtasks(subtasks, area, area_task, task_manager)
 
-        # Crear subtareas
-        subtask_objs = {}
-        for subtask in subtasks:
-            st = task_manager.create_task(
-                title=subtask["title"],
-                description=subtask["description"],
-                expected_output=subtask["expected_output"],
-                area=area,
-                parent_id=area_task.task_id
-            )
-            subtask_objs[subtask["title"]] = st
-
-        print(f"\n🧩 Área '{area}': {len(subtasks)} subtareas creadas")
-
-        # Resolver dependencias
-        dep_count = 0
-        for subtask in subtasks:
-            if subtask["dependencies"]:
-                for dep_title in subtask["dependencies"]:
-                    dep_task = subtask_objs.get(dep_title)
-                    if dep_task:
-                        subtask_objs[subtask["title"]].add_dependency(dep_task)
-                        dep_count += 1
-
-        if dep_count > 0:
-            print(f"🔗 {dep_count} dependencias establecidas en subtareas de '{area}'")
 
     # 3. Subdividimos las tareas de manera recursiva
-    print("\n🚀 Iniciando refinamiento recursivo...")
+    print("Iniciando refinamiento recursivo...")
     task_refiner = TaskRefiner()
-    refined_total = 0
 
+    # Recorre áreas funcionales desde el árbol real
     for area_task in [t for t in task_manager.tasks.values() if t.parent == root_task]:
         area_name = area_task.area
-        print(f"\n🔍 Refinando área: {area_name}")
-
-        subtasks = []
-
-        for t in task_manager.tasks.values():
-            if t.parent == area_task:
-                subtasks.append(t)
-
-        for subtask in subtasks:
-            print(f"   ↳ Subtarea: {subtask.title}")
+        print(f"  Refinando área: {area_name}")
+        for subtask_task in [t for t in task_manager.tasks.values() if t.parent == area_task]:
+            print(f"    Refinando subtask: {subtask_task.title}")
             subtask_dict = {
-                "title": subtask.title,
-                "description": subtask.description,
-                "expected_output": subtask.expected_output
+                "title": subtask_task.title,
+                "description": subtask_task.description,
+                "expected_output": subtask_task.expected_output
             }
 
-            new_tasks = refine_recursively(
+            refine_recursively(
                 subtask=subtask_dict,
                 area_name=area_name,
                 global_task=task_description,
                 refiner=task_refiner,
                 task_manager=task_manager,
-                max_depth=1,
-                parent_subtask=subtask
+                max_depth=2,
+                parent_subtask=subtask_task
             )
-            refined_total += len(new_tasks) if isinstance(new_tasks, list) else 0
+    print("Fin de main()")
 
-    print(f"\n✅ Refinamiento completo. Total de nuevas subtareas generadas: {refined_total}")
 
+    def task_to_dict(task, task_manager):
+        return {
+            "task_id": task.task_id,
+            "title": task.title,
+            "description": task.description,
+            "expected_output": task.expected_output,
+            "area": task.area,
+            "responsibilities": getattr(task, "responsibilities", []),
+            "parent": task.parent.task_id if task.parent else None,
+            "dependencies": [dep.task_id for dep in getattr(task, "dependencies", set())],
+            "subtasks": [
+                task_to_dict(child, task_manager)
+                for child in task_manager.tasks.values()
+                if child.parent == task
+            ]
+        }
+
+    # Al final de tu main():
+    output_dir = os.path.join(os.getcwd(), "output")
+    os.makedirs(output_dir, exist_ok=True)
+    output_path = os.path.join(output_dir, "task_tree3.json")
+
+    tree_json = task_to_dict(root_task, task_manager)
+    with open(output_path, "w", encoding="utf-8") as f:
+        json.dump(tree_json, f, indent=2, ensure_ascii=False)
+
+    print(f"\nÁrbol de tareas exportado a: {output_path}")
+    
     export_task_tree(root_task, task_manager)
 
 if __name__ == "__main__":

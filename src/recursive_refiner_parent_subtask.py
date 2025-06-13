@@ -1,3 +1,5 @@
+from src.class_task import create_and_link_subtasks
+
 def refine_recursively(
     subtask: dict,
     area_name: str,
@@ -12,56 +14,31 @@ def refine_recursively(
     Refina una subtarea aplicando recursivamente el refiner y almacena todo en el árbol de tareas.
     No devuelve nada, solo almacena en el TaskManager.
     """
-    # 1. Determinar el título y descripción de la subtarea según su tipo
-    if isinstance(subtask, dict):
-        subtask_title = subtask["title"]
-        area_description = subtask.get("description", "")
-    else:
-        subtask_title = subtask
-        area_description = ""
-
-    # 2. Extraer información del parent_subtask si existe
-    if parent_subtask:
-        root_task_title = getattr(parent_subtask, "root_task_title", "")
-        root_task_description = getattr(parent_subtask, "root_task_description", "")
-
-        parent_task = {
-            "title": getattr(parent_subtask, "title", ""),
-            "description": getattr(parent_subtask, "description", ""),
-            "expected_output": getattr(parent_subtask, "expected_output", "")
-        }
-
-        parent_dependencies = getattr(parent_subtask, "dependencies", [])
-    else:
-        root_task_title = ""
-        root_task_description = ""
-        parent_task = None
-        parent_dependencies = None
-
-    # 3. Llamada limpia al refiner con contexto completo
+    # Llama al refinador con el contexto adecuado
     result = refiner.refine(
         area_name=area_name,
         global_task=global_task,
-        subtask=subtask_title,
-        area_description=area_description,
-        root_task_title=root_task_title,
-        root_task_description=root_task_description,
-        parent_task=parent_task,
-        parent_dependencies=parent_dependencies
+        subtask=subtask["title"] if isinstance(subtask, dict) else subtask,
+        area_description=subtask.get("description", "") if isinstance(subtask, dict) else "",
+        root_task_title=getattr(parent_subtask, "root_task_title", "") if parent_subtask else "",
+        root_task_description=getattr(parent_subtask, "root_task_description", "") if parent_subtask else "",
+        parent_task={
+            "title": getattr(parent_subtask, "title", ""),
+            "description": getattr(parent_subtask, "description", ""),
+            "expected_output": getattr(parent_subtask, "expected_output", "")
+        } if parent_subtask else None,
+        parent_dependencies=getattr(parent_subtask, "dependencies", []) if parent_subtask else None
     )
 
-    # Si hay refinamientos y no hemos alcanzado la profundidad máxima
     if result["refined"] and depth < max_depth and parent_subtask:
+        # Crea y enlaza las subtareas refinadas como hijas del parent_subtask
+        child_tasks = create_and_link_subtasks(
+            result["refined"], area_name, parent_subtask, task_manager
+        )
+
+        # Llama recursivamente para cada subtarea refinada
         for child_subtask in result["refined"]:
-            # Almacena como hija en el árbol real
-            child_task = task_manager.create_task(
-                title=child_subtask.get("title", child_subtask),
-                description=child_subtask.get("description", ""),
-                expected_output=child_subtask.get("expected_output", ""),
-                area=area_name,
-                parent_id=parent_subtask.task_id
-            )
-            # Recursividad profunda
+            child_task = child_tasks[child_subtask["title"].strip().lower()]
             refine_recursively(
                 subtask=child_subtask,
                 area_name=area_name,
