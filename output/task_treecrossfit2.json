@@ -1,0 +1,368 @@
+{
+  "task_id": "ec0f76dd-0ca5-4225-bd88-06d95022e90d",
+  "title": "Tarea principal: Haz un plan de entrenamiento de Crossfit de 1 semana para una competencia de nivel intermedio",
+  "description": "Haz un plan de entrenamiento de Crossfit de 1 semana para una competencia de nivel intermedio",
+  "expected_output": "Un plan de viaje detallado",
+  "area": null,
+  "responsibilities": [],
+  "execution_type": "llm",
+  "parent": null,
+  "dependencies": [],
+  "subtasks": [
+    {
+      "task_id": "f004b82a-c520-485c-924d-8e00a6d9230f",
+      "title": "Assessment",
+      "description": "This area is responsible for evaluating the athlete's current fitness level, goals, and competition requirements to tailor the training plan accordingly.",
+      "expected_output": "Detailed assessment report outlining strengths, weaknesses, and specific goals.",
+      "area": "Assessment",
+      "responsibilities": [
+        "Conduct fitness assessments to determine baseline metrics.",
+        "Analyze competition requirements and athlete's goals."
+      ],
+      "execution_type": "llm",
+      "parent": "ec0f76dd-0ca5-4225-bd88-06d95022e90d",
+      "dependencies": [],
+      "subtasks": [
+        {
+          "task_id": "02b9f304-e775-4919-92f4-3d1dcc81c07b",
+          "title": "Conduct Fitness Assessments",
+          "description": "Determine baseline metrics of the athlete's current fitness level.",
+          "expected_output": "Baseline metrics including strength, endurance, flexibility, and cardiovascular fitness.",
+          "area": "Assessment",
+          "responsibilities": [],
+          "execution_type": "llm",
+          "parent": "f004b82a-c520-485c-924d-8e00a6d9230f",
+          "dependencies": [],
+          "subtasks": [],
+          "prompt": {
+            "system": "You are an expert autonomous agent collaborating in a multi-step project. You must resolve your assigned task using all available context and previous results. Be decisive, avoid repetition, and always act as a responsible project agent.",
+            "user": "=== PROJECT ===\nTitle: Tarea principal: Haz un plan de entrenamiento de Crossfit de 1 semana para una competencia de nivel intermedio\n\n=== CURRENT TASK ===\nTitle: Conduct Fitness Assessments\nDescription: Determine baseline metrics of the athlete's current fitness level.\nExpected Output: Baseline metrics including strength, endurance, flexibility, and cardiovascular fitness.\n\n=== INSTRUCTION ===\nYou are responsible for completing the current task as part of the overall project. Use all available context, including dependency and previous results. Be decisive, avoid repeating previous steps, and provide a clear, actionable output. If the task requires an external system or manual intervention, specify this clearly."
+          },
+          "result": "To conduct fitness assessments for the athlete's current fitness level, you should perform the following tests:\n\n1. Strength Assessment:\n   - Perform 1-rep max tests for major lifts like squat, deadlift, and bench press.\n   - Conduct bodyweight exercises like push-ups, pull-ups, and planks to assess muscular endurance.\n\n2. Endurance Assessment:\n   - Conduct a timed run (e.g., 1 mile or 5k) to assess cardiovascular endurance.\n   - Perform a rowing or cycling test for cardiovascular endurance.\n\n3. Flexibility Assessment:\n   - Conduct a sit-and-reach test to assess lower back and hamstring flexibility.\n   - Perform shoulder flexibility tests like the shoulder reach test.\n\n4. Cardiovascular Fitness Assessment:\n   - Conduct a VO2 max test to measure the athlete's maximal oxygen consumption and cardiovascular fitness level.\n\nEnsure to record all measurements accurately and use them as baseline metrics for designing the Crossfit training plan for the upcoming competition."
+        },
+        {
+          "task_id": "a8d13564-4e41-4aa3-9844-7c7c0ba5cdc7",
+          "title": "Analyze Competition Requirements",
+          "description": "Evaluate the specific demands of the upcoming competition and understand what is needed to perform well.",
+          "expected_output": "Detailed understanding of the competition format, movements, and intensity levels.",
+          "area": "Assessment",
+          "responsibilities": [],
+          "execution_type": "llm",
+          "parent": "f004b82a-c520-485c-924d-8e00a6d9230f",
+          "dependencies": [],
+          "subtasks": [],
+          "prompt": {
+            "system": "You are an expert autonomous agent collaborating in a multi-step project. You must resolve your assigned task using all available context and previous results. Be decisive, avoid repetition, and always act as a responsible project agent.",
+            "user": "=== PROJECT ===\nTitle: Tarea principal: Haz un plan de entrenamiento de Crossfit de 1 semana para una competencia de nivel intermedio\n\n=== CURRENT TASK ===\nTitle: Analyze Competition Requirements\nDescription: Evaluate the specific demands of the upcoming competition and understand what is needed to perform well.\nExpected Output: Detailed understanding of the competition format, movements, and intensity levels.\n\n=== INSTRUCTION ===\nYou are responsible for completing the current task as part of the overall project. Use all available context, including dependency and previous results. Be decisive, avoid repeating previous steps, and provide a clear, actionable output. If the task requires an external system or manual intervention, specify this clearly."
+          },
+          "result": "To analyze the competition requirements for the upcoming Crossfit competition, we need to gather information on the following aspects:\n\n1. Competition Format:\n   - Understand the structure of the competition (e.g., number of events, rounds, scoring system).\n   - Determine if it's a team or individual competition.\n   - Identify any specific rules or regulations unique to this competition.\n\n2. Movements:\n   - List the different types of movements commonly included in Crossfit competitions (e.g., weightlifting, gymnastics, cardio).\n   - Identify any specific movements that are frequently tested in competitions.\n   - Determine if there are any movements that are restricted or not allowed.\n\n3. Intensity Levels:\n   - Assess the expected intensity levels of the competition (e.g., high-intensity intervals, endurance challenges).\n   - Understand the duration of each event and the overall duration of the competition.\n   - Evaluate the expected level of physical and mental endurance required.\n\nBy analyzing these competition requirements, we will gain a detailed understanding of what is needed to perform well in the upcoming Crossfit competition. This information will be crucial in designing an effective training plan for the intermediate level competitor."
+        }
+      ],
+      "result": {
+        "Conduct Fitness Assessments": "To conduct fitness assessments for the athlete's current fitness level, you should perform the following tests:\n\n1. Strength Assessment:\n   - Perform 1-rep max tests for major lifts like squat, deadlift, and bench press.\n   - Conduct bodyweight exercises like push-ups, pull-ups, and planks to assess muscular endurance.\n\n2. Endurance Assessment:\n   - Conduct a timed run (e.g., 1 mile or 5k) to assess cardiovascular endurance.\n   - Perform a rowing or cycling test for cardiovascular endurance.\n\n3. Flexibility Assessment:\n   - Conduct a sit-and-reach test to assess lower back and hamstring flexibility.\n   - Perform shoulder flexibility tests like the shoulder reach test.\n\n4. Cardiovascular Fitness Assessment:\n   - Conduct a VO2 max test to measure the athlete's maximal oxygen consumption and cardiovascular fitness level.\n\nEnsure to record all measurements accurately and use them as baseline metrics for designing the Crossfit training plan for the upcoming competition.",
+        "Analyze Competition Requirements": "To analyze the competition requirements for the upcoming Crossfit competition, we need to gather information on the following aspects:\n\n1. Competition Format:\n   - Understand the structure of the competition (e.g., number of events, rounds, scoring system).\n   - Determine if it's a team or individual competition.\n   - Identify any specific rules or regulations unique to this competition.\n\n2. Movements:\n   - List the different types of movements commonly included in Crossfit competitions (e.g., weightlifting, gymnastics, cardio).\n   - Identify any specific movements that are frequently tested in competitions.\n   - Determine if there are any movements that are restricted or not allowed.\n\n3. Intensity Levels:\n   - Assess the expected intensity levels of the competition (e.g., high-intensity intervals, endurance challenges).\n   - Understand the duration of each event and the overall duration of the competition.\n   - Evaluate the expected level of physical and mental endurance required.\n\nBy analyzing these competition requirements, we will gain a detailed understanding of what is needed to perform well in the upcoming Crossfit competition. This information will be crucial in designing an effective training plan for the intermediate level competitor."
+      }
+    },
+    {
+      "task_id": "2ce7e9ea-1811-41b6-a61b-d4235469bd90",
+      "title": "Programming",
+      "description": "This area focuses on designing the actual training program, including workout schedules, exercises, intensity levels, and progression strategies.",
+      "expected_output": "Detailed 1-week Crossfit training plan with daily workouts and progressions.",
+      "area": "Programming",
+      "responsibilities": [
+        "Create a balanced program targeting different fitness domains (strength, endurance, etc.).",
+        "Incorporate varied exercises and intensity levels to avoid plateaus."
+      ],
+      "execution_type": "llm",
+      "parent": "ec0f76dd-0ca5-4225-bd88-06d95022e90d",
+      "dependencies": [],
+      "subtasks": [
+        {
+          "task_id": "a7636a54-80d4-480a-bc17-57d0bdbbbb0c",
+          "title": "Design a 1-week Crossfit training plan",
+          "description": "Create a detailed plan including daily workouts, exercises, intensity levels, and progression strategies for a competition.",
+          "expected_output": "Comprehensive 1-week training plan",
+          "area": "Programming",
+          "responsibilities": [],
+          "execution_type": "llm",
+          "parent": "2ce7e9ea-1811-41b6-a61b-d4235469bd90",
+          "dependencies": [],
+          "subtasks": [],
+          "prompt": {
+            "system": "You are an expert autonomous agent collaborating in a multi-step project. You must resolve your assigned task using all available context and previous results. Be decisive, avoid repetition, and always act as a responsible project agent.",
+            "user": "=== PROJECT ===\nTitle: Tarea principal: Haz un plan de entrenamiento de Crossfit de 1 semana para una competencia de nivel intermedio\n\n=== CURRENT TASK ===\nTitle: Design a 1-week Crossfit training plan\nDescription: Create a detailed plan including daily workouts, exercises, intensity levels, and progression strategies for a competition.\nExpected Output: Comprehensive 1-week training plan\n\n=== INSTRUCTION ===\nYou are responsible for completing the current task as part of the overall project. Use all available context, including dependency and previous results. Be decisive, avoid repeating previous steps, and provide a clear, actionable output. If the task requires an external system or manual intervention, specify this clearly."
+          },
+          "result": "Based on the information provided, here is a 1-week Crossfit training plan for a competition at an intermediate level:\n\nDay 1:\n- Warm-up: 10 minutes of dynamic stretching\n- Workout: \n  - 5 rounds for time:\n    - 10 thrusters\n    - 15 pull-ups\n    - 20 box jumps\n- Cool down: 5 minutes of foam rolling\n\nDay 2:\n- Warm-up: 800m run\n- Workout:\n  - EMOM (Every Minute on the Minute) for 20 minutes:\n    - 5 power cleans\n    - 10 burpees\n- Cool down: 10 minutes of static stretching\n\nDay 3:\n- Rest day or active recovery (light stretching, yoga, or mobility work)\n\nDay 4:\n- Warm-up: 500m row\n- Workout:\n  - AMRAP (As Many Rounds as Possible) in 15 minutes:\n    - 15 kettlebell swings\n    - 10 handstand push-ups\n    - 200m run\n- Cool down: 5 minutes of stretching\n\nDay 5:\n- Warm-up: 3 rounds of 10 air squats, 10 push-ups, 10 sit-ups\n- Workout:\n  - For time:\n    - 50 wall balls\n    - 40 box step-ups\n    - 30 toes-to-bar\n- Cool down: 5 minutes of foam rolling\n\nDay 6:\n- Warm-up: 400m run\n- Workout:\n  - Tabata (20 seconds work, 10 seconds rest for 8 rounds) of:\n    - Dumbbell snatches\n    - Burpee box jumps\n- Cool down: 10 minutes of stretching\n\nDay 7:\n- Rest day or active recovery (light stretching, yoga, or mobility work)\n\nProgression strategy: Increase weights, reps, or intensity gradually throughout the week to challenge the athlete without risking injury. Focus on proper form and technique in each workout.\n\nThis plan provides a mix of strength, conditioning, and skill work to prepare the athlete for a Crossfit competition at an intermediate level. Adjustments can be made based on individual fitness levels and goals."
+        },
+        {
+          "task_id": "3fbb3801-1bea-41fc-a593-e28f9f1a05a5",
+          "title": "Incorporate a balanced mix of exercises targeting different fitness domains",
+          "description": "Ensure the training plan includes exercises that focus on strength, endurance, agility, and flexibility.",
+          "expected_output": "Diverse exercise selection covering various fitness domains",
+          "area": "Programming",
+          "responsibilities": [],
+          "execution_type": "llm",
+          "parent": "2ce7e9ea-1811-41b6-a61b-d4235469bd90",
+          "dependencies": [
+            "a7636a54-80d4-480a-bc17-57d0bdbbbb0c"
+          ],
+          "subtasks": [],
+          "prompt": {
+            "system": "You are an expert autonomous agent collaborating in a multi-step project. You must resolve your assigned task using all available context and previous results. Be decisive, avoid repetition, and always act as a responsible project agent.",
+            "user": "=== PROJECT ===\nTitle: Tarea principal: Haz un plan de entrenamiento de Crossfit de 1 semana para una competencia de nivel intermedio\n\n=== DEPENDENCY RESULTS ===\nThe following tasks must be completed before this one. Their results are provided for your reference:\n\n- Dependency: Design a 1-week Crossfit training plan\n  Description: Create a detailed plan including daily workouts, exercises, intensity levels, and progression strategies for a competition.\n  Result: Based on the information provided, here is a 1-week Crossfit training plan for a competition at an intermediate level:\n\nDay 1:\n- Warm-up: 10 minutes of dynamic stretching\n- Workout: \n  - 5 rounds for time:\n    - 10 thrusters\n    - 15 pull-ups\n    - 20 box jumps\n- Cool down: 5 minutes of foam rolling\n\nDay 2:\n- Warm-up: 800m run\n- Workout:\n  - EMOM (Every Minute on the Minute) for 20 minutes:\n    - 5 power cleans\n    - 10 burpees\n- Cool down: 10 minutes of static stretching\n\nDay 3:\n- Rest day or active recovery (light stretching, yoga, or mobility work)\n\nDay 4:\n- Warm-up: 500m row\n- Workout:\n  - AMRAP (As Many Rounds as Possible) in 15 minutes:\n    - 15 kettlebell swings\n    - 10 handstand push-ups\n    - 200m run\n- Cool down: 5 minutes of stretching\n\nDay 5:\n- Warm-up: 3 rounds of 10 air squa\n...[truncated]...\n\n\n=== CURRENT TASK ===\nTitle: Incorporate a balanced mix of exercises targeting different fitness domains\nDescription: Ensure the training plan includes exercises that focus on strength, endurance, agility, and flexibility.\nExpected Output: Diverse exercise selection covering various fitness domains\n\n=== INSTRUCTION ===\nYou are responsible for completing the current task as part of the overall project. Use all available context, including dependency and previous results. Be decisive, avoid repeating previous steps, and provide a clear, actionable output. If the task requires an external system or manual intervention, specify this clearly."
+          },
+          "result": "Based on the provided 1-week Crossfit training plan for a competition at an intermediate level, we need to ensure a balanced mix of exercises targeting different fitness domains. Here is a suggestion to enhance the plan:\n\nDay 1:\n- Strength: Thrusters for overall body strength\n- Endurance: Pull-ups for upper body endurance\n- Agility: Box jumps for explosive power and agility\n- Flexibility: Incorporate additional stretching exercises in the cool down\n\nDay 2:\n- Strength: Power cleans for explosive strength\n- Endurance: Burpees for full-body endurance\n- Agility: Focus on speed and coordination during the EMOM workout\n- Flexibility: Include dynamic stretching exercises in the warm-up\n\nDay 4:\n- Strength: Kettlebell swings for posterior chain strength\n- Endurance: Handstand push-ups for upper body endurance\n- Agility: Running intervals for speed and agility\n- Flexibility: Ensure a thorough stretching routine in the cool down\n\nBy incorporating exercises that target strength, endurance, agility, and flexibility across the week, we can ensure a well-rounded training plan that prepares the athlete for the competition at an intermediate level."
+        },
+        {
+          "task_id": "6bb34e1f-54fd-434a-928a-0cb6254faeff",
+          "title": "Vary intensity levels to avoid plateaus",
+          "description": "Establish a progression strategy that adjusts the intensity of workouts throughout the week to prevent stagnation.",
+          "expected_output": "Progressive intensity levels in the training plan",
+          "area": "Programming",
+          "responsibilities": [],
+          "execution_type": "llm",
+          "parent": "2ce7e9ea-1811-41b6-a61b-d4235469bd90",
+          "dependencies": [
+            "a7636a54-80d4-480a-bc17-57d0bdbbbb0c"
+          ],
+          "subtasks": [],
+          "prompt": {
+            "system": "You are an expert autonomous agent collaborating in a multi-step project. You must resolve your assigned task using all available context and previous results. Be decisive, avoid repetition, and always act as a responsible project agent.",
+            "user": "=== PROJECT ===\nTitle: Tarea principal: Haz un plan de entrenamiento de Crossfit de 1 semana para una competencia de nivel intermedio\n\n=== DEPENDENCY RESULTS ===\nThe following tasks must be completed before this one. Their results are provided for your reference:\n\n- Dependency: Design a 1-week Crossfit training plan\n  Description: Create a detailed plan including daily workouts, exercises, intensity levels, and progression strategies for a competition.\n  Result: Based on the information provided, here is a 1-week Crossfit training plan for a competition at an intermediate level:\n\nDay 1:\n- Warm-up: 10 minutes of dynamic stretching\n- Workout: \n  - 5 rounds for time:\n    - 10 thrusters\n    - 15 pull-ups\n    - 20 box jumps\n- Cool down: 5 minutes of foam rolling\n\nDay 2:\n- Warm-up: 800m run\n- Workout:\n  - EMOM (Every Minute on the Minute) for 20 minutes:\n    - 5 power cleans\n    - 10 burpees\n- Cool down: 10 minutes of static stretching\n\nDay 3:\n- Rest day or active recovery (light stretching, yoga, or mobility work)\n\nDay 4:\n- Warm-up: 500m row\n- Workout:\n  - AMRAP (As Many Rounds as Possible) in 15 minutes:\n    - 15 kettlebell swings\n    - 10 handstand push-ups\n    - 200m run\n- Cool down: 5 minutes of stretching\n\nDay 5:\n- Warm-up: 3 rounds of 10 air squa\n...[truncated]...\n\n\n=== CURRENT TASK ===\nTitle: Vary intensity levels to avoid plateaus\nDescription: Establish a progression strategy that adjusts the intensity of workouts throughout the week to prevent stagnation.\nExpected Output: Progressive intensity levels in the training plan\n\n=== INSTRUCTION ===\nYou are responsible for completing the current task as part of the overall project. Use all available context, including dependency and previous results. Be decisive, avoid repeating previous steps, and provide a clear, actionable output. If the task requires an external system or manual intervention, specify this clearly."
+          },
+          "result": "Based on the provided 1-week Crossfit training plan for a competition at an intermediate level, here is a progressive intensity adjustment strategy to avoid plateaus:\n\n1. Implement a mix of high-intensity workouts like EMOMs and AMRAPs with moderate-intensity workouts to prevent overtraining and promote recovery.\n2. Gradually increase the volume or intensity of specific exercises throughout the week to challenge the athletes without causing burnout.\n3. Incorporate active recovery days or lighter workout sessions to allow the body to recover while still staying active.\n4. Introduce variations in workout structures, such as changing the rep schemes, rest intervals, or adding new movements to keep the training stimulating and effective.\n5. Monitor athletes' performance and adjust the intensity levels based on their feedback, ensuring that they are consistently challenged but not overwhelmed.\n\nBy incorporating these progressive intensity adjustments into the training plan, you can help athletes avoid plateaus, improve performance, and prepare effectively for the competition."
+        }
+      ],
+      "result": {
+        "Design a 1-week Crossfit training plan": "Based on the information provided, here is a 1-week Crossfit training plan for a competition at an intermediate level:\n\nDay 1:\n- Warm-up: 10 minutes of dynamic stretching\n- Workout: \n  - 5 rounds for time:\n    - 10 thrusters\n    - 15 pull-ups\n    - 20 box jumps\n- Cool down: 5 minutes of foam rolling\n\nDay 2:\n- Warm-up: 800m run\n- Workout:\n  - EMOM (Every Minute on the Minute) for 20 minutes:\n    - 5 power cleans\n    - 10 burpees\n- Cool down: 10 minutes of static stretching\n\nDay 3:\n- Rest day or active recovery (light stretching, yoga, or mobility work)\n\nDay 4:\n- Warm-up: 500m row\n- Workout:\n  - AMRAP (As Many Rounds as Possible) in 15 minutes:\n    - 15 kettlebell swings\n    - 10 handstand push-ups\n    - 200m run\n- Cool down: 5 minutes of stretching\n\nDay 5:\n- Warm-up: 3 rounds of 10 air squats, 10 push-ups, 10 sit-ups\n- Workout:\n  - For time:\n    - 50 wall balls\n    - 40 box step-ups\n    - 30 toes-to-bar\n- Cool down: 5 minutes of foam rolling\n\nDay 6:\n- Warm-up: 400m run\n- Workout:\n  - Tabata (20 seconds work, 10 seconds rest for 8 rounds) of:\n    - Dumbbell snatches\n    - Burpee box jumps\n- Cool down: 10 minutes of stretching\n\nDay 7:\n- Rest day or active recovery (light stretching, yoga, or mobility work)\n\nProgression strategy: Increase weights, reps, or intensity gradually throughout the week to challenge the athlete without risking injury. Focus on proper form and technique in each workout.\n\nThis plan provides a mix of strength, conditioning, and skill work to prepare the athlete for a Crossfit competition at an intermediate level. Adjustments can be made based on individual fitness levels and goals.",
+        "Incorporate a balanced mix of exercises targeting different fitness domains": "Based on the provided 1-week Crossfit training plan for a competition at an intermediate level, we need to ensure a balanced mix of exercises targeting different fitness domains. Here is a suggestion to enhance the plan:\n\nDay 1:\n- Strength: Thrusters for overall body strength\n- Endurance: Pull-ups for upper body endurance\n- Agility: Box jumps for explosive power and agility\n- Flexibility: Incorporate additional stretching exercises in the cool down\n\nDay 2:\n- Strength: Power cleans for explosive strength\n- Endurance: Burpees for full-body endurance\n- Agility: Focus on speed and coordination during the EMOM workout\n- Flexibility: Include dynamic stretching exercises in the warm-up\n\nDay 4:\n- Strength: Kettlebell swings for posterior chain strength\n- Endurance: Handstand push-ups for upper body endurance\n- Agility: Running intervals for speed and agility\n- Flexibility: Ensure a thorough stretching routine in the cool down\n\nBy incorporating exercises that target strength, endurance, agility, and flexibility across the week, we can ensure a well-rounded training plan that prepares the athlete for the competition at an intermediate level.",
+        "Vary intensity levels to avoid plateaus": "Based on the provided 1-week Crossfit training plan for a competition at an intermediate level, here is a progressive intensity adjustment strategy to avoid plateaus:\n\n1. Implement a mix of high-intensity workouts like EMOMs and AMRAPs with moderate-intensity workouts to prevent overtraining and promote recovery.\n2. Gradually increase the volume or intensity of specific exercises throughout the week to challenge the athletes without causing burnout.\n3. Incorporate active recovery days or lighter workout sessions to allow the body to recover while still staying active.\n4. Introduce variations in workout structures, such as changing the rep schemes, rest intervals, or adding new movements to keep the training stimulating and effective.\n5. Monitor athletes' performance and adjust the intensity levels based on their feedback, ensuring that they are consistently challenged but not overwhelmed.\n\nBy incorporating these progressive intensity adjustments into the training plan, you can help athletes avoid plateaus, improve performance, and prepare effectively for the competition."
+      }
+    },
+    {
+      "task_id": "d3e9ae1f-3f0d-4ce8-b92a-1b53b50586ec",
+      "title": "Nutrition",
+      "description": "Responsible for developing a nutrition plan that complements the training program, supports performance, and aids in recovery.",
+      "expected_output": "Customized nutrition guidelines for the training week.",
+      "area": "Nutrition",
+      "responsibilities": [
+        "Calculate macronutrient requirements based on training intensity and goals.",
+        "Suggest pre- and post-workout meal options for optimal performance."
+      ],
+      "execution_type": "llm",
+      "parent": "ec0f76dd-0ca5-4225-bd88-06d95022e90d",
+      "dependencies": [],
+      "subtasks": [
+        {
+          "task_id": "740a2778-b7e0-48c2-a376-c6fb282983ec",
+          "title": "Calculate daily macronutrient requirements",
+          "description": "Determine the optimal intake of carbohydrates, proteins, and fats based on training intensity and goals.",
+          "expected_output": "Daily macronutrient breakdown (grams) for the athlete.",
+          "area": "Nutrition",
+          "responsibilities": [],
+          "execution_type": "llm",
+          "parent": "d3e9ae1f-3f0d-4ce8-b92a-1b53b50586ec",
+          "dependencies": [],
+          "subtasks": [],
+          "prompt": {
+            "system": "You are an expert autonomous agent collaborating in a multi-step project. You must resolve your assigned task using all available context and previous results. Be decisive, avoid repetition, and always act as a responsible project agent.",
+            "user": "=== PROJECT ===\nTitle: Tarea principal: Haz un plan de entrenamiento de Crossfit de 1 semana para una competencia de nivel intermedio\n\n=== CURRENT TASK ===\nTitle: Calculate daily macronutrient requirements\nDescription: Determine the optimal intake of carbohydrates, proteins, and fats based on training intensity and goals.\nExpected Output: Daily macronutrient breakdown (grams) for the athlete.\n\n=== INSTRUCTION ===\nYou are responsible for completing the current task as part of the overall project. Use all available context, including dependency and previous results. Be decisive, avoid repeating previous steps, and provide a clear, actionable output. If the task requires an external system or manual intervention, specify this clearly."
+          },
+          "result": "Based on the athlete's training intensity and goals for the Crossfit competition, we can calculate the daily macronutrient requirements as follows:\n\n1. Protein intake: Aim for around 1.2-2.2 grams of protein per kilogram of body weight for athletes. Let's use 1.8 grams/kg as a starting point.\n\n2. Carbohydrate intake: For moderate to high-intensity training, aim for 5-8 grams of carbohydrates per kilogram of body weight. Let's use 6 grams/kg as a baseline.\n\n3. Fat intake: The remaining calories after calculating protein and carbohydrate intake can come from fats. Let's allocate around 20-35% of total daily calories to fats.\n\nLet's calculate the daily macronutrient breakdown for the athlete based on these guidelines. If you provide me with the athlete's body weight, I can calculate the specific grams of each macronutrient required per day."
+        },
+        {
+          "task_id": "e45dc6df-f3aa-4a93-a389-0fe3a6a365e9",
+          "title": "Design pre-workout meal options",
+          "description": "Create a list of suitable meals/snacks to consume before training sessions to enhance performance.",
+          "expected_output": "Pre-workout meal options with suggested timing.",
+          "area": "Nutrition",
+          "responsibilities": [],
+          "execution_type": "llm",
+          "parent": "d3e9ae1f-3f0d-4ce8-b92a-1b53b50586ec",
+          "dependencies": [
+            "740a2778-b7e0-48c2-a376-c6fb282983ec"
+          ],
+          "subtasks": [],
+          "prompt": {
+            "system": "You are an expert autonomous agent collaborating in a multi-step project. You must resolve your assigned task using all available context and previous results. Be decisive, avoid repetition, and always act as a responsible project agent.",
+            "user": "=== PROJECT ===\nTitle: Tarea principal: Haz un plan de entrenamiento de Crossfit de 1 semana para una competencia de nivel intermedio\n\n=== DEPENDENCY RESULTS ===\nThe following tasks must be completed before this one. Their results are provided for your reference:\n\n- Dependency: Calculate daily macronutrient requirements\n  Description: Determine the optimal intake of carbohydrates, proteins, and fats based on training intensity and goals.\n  Result: Based on the athlete's training intensity and goals for the Crossfit competition, we can calculate the daily macronutrient requirements as follows:\n\n1. Protein intake: Aim for around 1.2-2.2 grams of protein per kilogram of body weight for athletes. Let's use 1.8 grams/kg as a starting point.\n\n2. Carbohydrate intake: For moderate to high-intensity training, aim for 5-8 grams of carbohydrates per kilogram of body weight. Let's use 6 grams/kg as a baseline.\n\n3. Fat intake: The remaining calories after calculating protein and carbohydrate intake can come from fats. Let's allocate around 20-35% of total daily calories to fats.\n\nLet's calculate the daily macronutrient breakdown for the athlete based on these guidelines. If you provide me with the athlete's body weight, I can calculate the speci\n...[truncated]...\n\n\n=== CURRENT TASK ===\nTitle: Design pre-workout meal options\nDescription: Create a list of suitable meals/snacks to consume before training sessions to enhance performance.\nExpected Output: Pre-workout meal options with suggested timing.\n\n=== INSTRUCTION ===\nYou are responsible for completing the current task as part of the overall project. Use all available context, including dependency and previous results. Be decisive, avoid repeating previous steps, and provide a clear, actionable output. If the task requires an external system or manual intervention, specify this clearly."
+          },
+          "result": "Based on the calculated daily macronutrient requirements for the athlete, we can design suitable pre-workout meal options to enhance performance for the Crossfit training sessions. Here are some suggestions:\n\n1. Meal Option 1:\n   - Timing: 1-2 hours before training\n   - Ingredients: Grilled chicken breast, quinoa, and steamed vegetables\n   - Macronutrient breakdown: Protein from chicken, carbohydrates from quinoa, and fiber and nutrients from vegetables\n\n2. Meal Option 2:\n   - Timing: 30-60 minutes before training\n   - Ingredients: Greek yogurt with mixed berries and a sprinkle of almonds\n   - Macronutrient breakdown: Protein from yogurt, carbohydrates from berries, and healthy fats from almonds\n\n3. Meal Option 3:\n   - Timing: 1 hour before training\n   - Ingredients: Whole grain toast with avocado and sliced turkey\n   - Macronutrient breakdown: Carbohydrates from toast, healthy fats from avocado, and protein from turkey\n\nThese pre-workout meal options provide a balance of macronutrients to fuel the athlete's training sessions effectively. Adjust portion sizes based on the athlete's specific macronutrient requirements and training intensity."
+        },
+        {
+          "task_id": "4325f881-9395-4092-b367-c23f1683ca92",
+          "title": "Develop post-workout nutrition plan",
+          "description": "Recommend post-exercise meals or supplements to support recovery and muscle repair.",
+          "expected_output": "Post-workout nutrition guidelines.",
+          "area": "Nutrition",
+          "responsibilities": [],
+          "execution_type": "llm",
+          "parent": "d3e9ae1f-3f0d-4ce8-b92a-1b53b50586ec",
+          "dependencies": [
+            "740a2778-b7e0-48c2-a376-c6fb282983ec"
+          ],
+          "subtasks": [],
+          "prompt": {
+            "system": "You are an expert autonomous agent collaborating in a multi-step project. You must resolve your assigned task using all available context and previous results. Be decisive, avoid repetition, and always act as a responsible project agent.",
+            "user": "=== PROJECT ===\nTitle: Tarea principal: Haz un plan de entrenamiento de Crossfit de 1 semana para una competencia de nivel intermedio\n\n=== DEPENDENCY RESULTS ===\nThe following tasks must be completed before this one. Their results are provided for your reference:\n\n- Dependency: Calculate daily macronutrient requirements\n  Description: Determine the optimal intake of carbohydrates, proteins, and fats based on training intensity and goals.\n  Result: Based on the athlete's training intensity and goals for the Crossfit competition, we can calculate the daily macronutrient requirements as follows:\n\n1. Protein intake: Aim for around 1.2-2.2 grams of protein per kilogram of body weight for athletes. Let's use 1.8 grams/kg as a starting point.\n\n2. Carbohydrate intake: For moderate to high-intensity training, aim for 5-8 grams of carbohydrates per kilogram of body weight. Let's use 6 grams/kg as a baseline.\n\n3. Fat intake: The remaining calories after calculating protein and carbohydrate intake can come from fats. Let's allocate around 20-35% of total daily calories to fats.\n\nLet's calculate the daily macronutrient breakdown for the athlete based on these guidelines. If you provide me with the athlete's body weight, I can calculate the speci\n...[truncated]...\n\n\n=== CURRENT TASK ===\nTitle: Develop post-workout nutrition plan\nDescription: Recommend post-exercise meals or supplements to support recovery and muscle repair.\nExpected Output: Post-workout nutrition guidelines.\n\n=== INSTRUCTION ===\nYou are responsible for completing the current task as part of the overall project. Use all available context, including dependency and previous results. Be decisive, avoid repeating previous steps, and provide a clear, actionable output. If the task requires an external system or manual intervention, specify this clearly."
+          },
+          "result": "Based on the athlete's training intensity and goals for the Crossfit competition, the post-workout nutrition plan should focus on supporting recovery and muscle repair. Here are the recommended post-workout nutrition guidelines:\n\n1. Protein Intake: Consume a protein-rich meal or shake within 30 minutes to 1 hour after the workout. Aim for around 20-30 grams of high-quality protein to support muscle protein synthesis.\n\n2. Carbohydrate Intake: Include carbohydrates in the post-workout meal to replenish glycogen stores and support recovery. Aim for 0.5-0.7 grams of carbohydrates per kilogram of body weight post-workout.\n\n3. Hydration: Rehydrate by drinking water or a sports drink to replace fluids lost during the workout. Aim to drink enough to replace 150% of the weight lost during exercise.\n\n4. Electrolytes: Consider including electrolytes in your post-workout hydration to help restore electrolyte balance and prevent cramping.\n\n5. Supplements: Depending on individual needs, consider adding supplements like creatine, branched-chain amino acids (BCAAs), or glutamine to support recovery and muscle repair.\n\nEnsure that the post-workout meal is balanced and provides a combination of protein, carbohydrates, and fluids to optimize recovery and prepare for the next training session."
+        }
+      ],
+      "result": {
+        "Calculate daily macronutrient requirements": "Based on the athlete's training intensity and goals for the Crossfit competition, we can calculate the daily macronutrient requirements as follows:\n\n1. Protein intake: Aim for around 1.2-2.2 grams of protein per kilogram of body weight for athletes. Let's use 1.8 grams/kg as a starting point.\n\n2. Carbohydrate intake: For moderate to high-intensity training, aim for 5-8 grams of carbohydrates per kilogram of body weight. Let's use 6 grams/kg as a baseline.\n\n3. Fat intake: The remaining calories after calculating protein and carbohydrate intake can come from fats. Let's allocate around 20-35% of total daily calories to fats.\n\nLet's calculate the daily macronutrient breakdown for the athlete based on these guidelines. If you provide me with the athlete's body weight, I can calculate the specific grams of each macronutrient required per day.",
+        "Design pre-workout meal options": "Based on the calculated daily macronutrient requirements for the athlete, we can design suitable pre-workout meal options to enhance performance for the Crossfit training sessions. Here are some suggestions:\n\n1. Meal Option 1:\n   - Timing: 1-2 hours before training\n   - Ingredients: Grilled chicken breast, quinoa, and steamed vegetables\n   - Macronutrient breakdown: Protein from chicken, carbohydrates from quinoa, and fiber and nutrients from vegetables\n\n2. Meal Option 2:\n   - Timing: 30-60 minutes before training\n   - Ingredients: Greek yogurt with mixed berries and a sprinkle of almonds\n   - Macronutrient breakdown: Protein from yogurt, carbohydrates from berries, and healthy fats from almonds\n\n3. Meal Option 3:\n   - Timing: 1 hour before training\n   - Ingredients: Whole grain toast with avocado and sliced turkey\n   - Macronutrient breakdown: Carbohydrates from toast, healthy fats from avocado, and protein from turkey\n\nThese pre-workout meal options provide a balance of macronutrients to fuel the athlete's training sessions effectively. Adjust portion sizes based on the athlete's specific macronutrient requirements and training intensity.",
+        "Develop post-workout nutrition plan": "Based on the athlete's training intensity and goals for the Crossfit competition, the post-workout nutrition plan should focus on supporting recovery and muscle repair. Here are the recommended post-workout nutrition guidelines:\n\n1. Protein Intake: Consume a protein-rich meal or shake within 30 minutes to 1 hour after the workout. Aim for around 20-30 grams of high-quality protein to support muscle protein synthesis.\n\n2. Carbohydrate Intake: Include carbohydrates in the post-workout meal to replenish glycogen stores and support recovery. Aim for 0.5-0.7 grams of carbohydrates per kilogram of body weight post-workout.\n\n3. Hydration: Rehydrate by drinking water or a sports drink to replace fluids lost during the workout. Aim to drink enough to replace 150% of the weight lost during exercise.\n\n4. Electrolytes: Consider including electrolytes in your post-workout hydration to help restore electrolyte balance and prevent cramping.\n\n5. Supplements: Depending on individual needs, consider adding supplements like creatine, branched-chain amino acids (BCAAs), or glutamine to support recovery and muscle repair.\n\nEnsure that the post-workout meal is balanced and provides a combination of protein, carbohydrates, and fluids to optimize recovery and prepare for the next training session."
+      }
+    },
+    {
+      "task_id": "4c3f0098-e862-4065-ac87-6cb27c7ecef7",
+      "title": "Recovery",
+      "description": "Focuses on strategies to optimize recovery, reduce fatigue, and prevent injuries throughout the training week.",
+      "expected_output": "Recovery plan outlining rest days, mobility exercises, and recovery techniques.",
+      "area": "Recovery",
+      "responsibilities": [
+        "Schedule rest days and active recovery sessions.",
+        "Recommend stretching routines and recovery modalities (e.g., foam rolling)."
+      ],
+      "execution_type": "llm",
+      "parent": "ec0f76dd-0ca5-4225-bd88-06d95022e90d",
+      "dependencies": [],
+      "subtasks": [
+        {
+          "task_id": "c4848fc6-6e66-40ac-8d68-9db73cbf0e14",
+          "title": "Schedule rest days",
+          "description": "Plan specific days within the training week for complete rest to allow for recovery.",
+          "expected_output": "Rest days scheduled in the training plan.",
+          "area": "Recovery",
+          "responsibilities": [],
+          "execution_type": "llm",
+          "parent": "4c3f0098-e862-4065-ac87-6cb27c7ecef7",
+          "dependencies": [],
+          "subtasks": [],
+          "prompt": {
+            "system": "You are an expert autonomous agent collaborating in a multi-step project. You must resolve your assigned task using all available context and previous results. Be decisive, avoid repetition, and always act as a responsible project agent.",
+            "user": "=== PROJECT ===\nTitle: Tarea principal: Haz un plan de entrenamiento de Crossfit de 1 semana para una competencia de nivel intermedio\n\n=== CURRENT TASK ===\nTitle: Schedule rest days\nDescription: Plan specific days within the training week for complete rest to allow for recovery.\nExpected Output: Rest days scheduled in the training plan.\n\n=== INSTRUCTION ===\nYou are responsible for completing the current task as part of the overall project. Use all available context, including dependency and previous results. Be decisive, avoid repeating previous steps, and provide a clear, actionable output. If the task requires an external system or manual intervention, specify this clearly."
+          },
+          "result": "Based on the previous tasks completed for the Crossfit training plan, I recommend scheduling rest days on Wednesday and Sunday within the 1-week training schedule for the intermediate competition level. This will allow for adequate recovery between intense training sessions and help prevent overtraining."
+        },
+        {
+          "task_id": "88e03ad4-38fb-4f56-9ef5-3abe0dfc16f2",
+          "title": "Recommend mobility exercises",
+          "description": "Provide a list of mobility exercises to improve flexibility and reduce muscle stiffness.",
+          "expected_output": "Mobility exercises recommended for incorporation into the training plan.",
+          "area": "Recovery",
+          "responsibilities": [],
+          "execution_type": "llm",
+          "parent": "4c3f0098-e862-4065-ac87-6cb27c7ecef7",
+          "dependencies": [],
+          "subtasks": [],
+          "prompt": {
+            "system": "You are an expert autonomous agent collaborating in a multi-step project. You must resolve your assigned task using all available context and previous results. Be decisive, avoid repetition, and always act as a responsible project agent.",
+            "user": "=== PROJECT ===\nTitle: Tarea principal: Haz un plan de entrenamiento de Crossfit de 1 semana para una competencia de nivel intermedio\n\n=== CURRENT TASK ===\nTitle: Recommend mobility exercises\nDescription: Provide a list of mobility exercises to improve flexibility and reduce muscle stiffness.\nExpected Output: Mobility exercises recommended for incorporation into the training plan.\n\n=== INSTRUCTION ===\nYou are responsible for completing the current task as part of the overall project. Use all available context, including dependency and previous results. Be decisive, avoid repeating previous steps, and provide a clear, actionable output. If the task requires an external system or manual intervention, specify this clearly."
+          },
+          "result": "Based on the context of preparing a Crossfit training plan for a competition, here are some mobility exercises that can be recommended to improve flexibility and reduce muscle stiffness:\n\n1. **Dynamic Stretching**: Incorporate movements like leg swings, arm circles, and hip rotations to warm up and increase range of motion.\n   \n2. **Foam Rolling**: Include foam rolling exercises for major muscle groups such as quads, hamstrings, calves, and back to reduce muscle tightness and improve blood flow.\n\n3. **Hip Flexor Stretch**: Perform lunges or kneeling hip flexor stretches to target the hip flexors, which can get tight from various Crossfit movements.\n\n4. **Shoulder Mobility**: Include exercises like shoulder dislocations with a resistance band or wall slides to enhance shoulder mobility, crucial for overhead movements.\n\n5. **Ankle Mobility**: Incorporate ankle circles, calf stretches, and dorsiflexion exercises to improve ankle mobility, important for movements like squats and jumps.\n\n6. **Thoracic Spine Mobility**: Perform exercises like thoracic spine rotations or foam roller extensions to enhance upper back mobility, aiding in movements like overhead presses.\n\n7. **Piriformis Stretch**: Include stretches like pigeon pose to target the piriformis muscle, which can get tight and affect hip mobility.\n\nThese mobility exercises can be integrated into the training plan to help athletes improve flexibility, reduce muscle stiffness, and enhance overall performance in the Crossfit competition."
+        },
+        {
+          "task_id": "5043b40b-c936-45e2-88d7-4c2506264fdc",
+          "title": "Suggest recovery techniques",
+          "description": "Recommend specific recovery techniques such as foam rolling, ice baths, or compression therapy.",
+          "expected_output": "Recovery techniques suggested for post-workout recovery.",
+          "area": "Recovery",
+          "responsibilities": [],
+          "execution_type": "llm",
+          "parent": "4c3f0098-e862-4065-ac87-6cb27c7ecef7",
+          "dependencies": [],
+          "subtasks": [],
+          "prompt": {
+            "system": "You are an expert autonomous agent collaborating in a multi-step project. You must resolve your assigned task using all available context and previous results. Be decisive, avoid repetition, and always act as a responsible project agent.",
+            "user": "=== PROJECT ===\nTitle: Tarea principal: Haz un plan de entrenamiento de Crossfit de 1 semana para una competencia de nivel intermedio\n\n=== CURRENT TASK ===\nTitle: Suggest recovery techniques\nDescription: Recommend specific recovery techniques such as foam rolling, ice baths, or compression therapy.\nExpected Output: Recovery techniques suggested for post-workout recovery.\n\n=== INSTRUCTION ===\nYou are responsible for completing the current task as part of the overall project. Use all available context, including dependency and previous results. Be decisive, avoid repeating previous steps, and provide a clear, actionable output. If the task requires an external system or manual intervention, specify this clearly."
+          },
+          "result": "Based on the intensity of the Crossfit training program for intermediate level competition, here are some effective recovery techniques to suggest:\n\n1. **Foam Rolling**: Recommend incorporating foam rolling sessions post-workout to help release muscle tightness and improve blood flow for faster recovery.\n\n2. **Ice Baths**: Suggest taking ice baths to reduce inflammation and muscle soreness after intense training sessions.\n\n3. **Compression Therapy**: Advise the use of compression garments or therapy to enhance circulation, reduce muscle soreness, and speed up recovery.\n\n4. **Active Recovery**: Encourage light activities such as walking, swimming, or yoga on rest days to promote blood flow and aid in muscle recovery.\n\n5. **Proper Nutrition**: Emphasize the importance of consuming a balanced diet rich in protein and carbohydrates to support muscle repair and glycogen replenishment.\n\nBy incorporating these recovery techniques into the training plan, the athlete can optimize their recovery process and perform better in the upcoming competition."
+        }
+      ],
+      "result": {
+        "Schedule rest days": "Based on the previous tasks completed for the Crossfit training plan, I recommend scheduling rest days on Wednesday and Sunday within the 1-week training schedule for the intermediate competition level. This will allow for adequate recovery between intense training sessions and help prevent overtraining.",
+        "Recommend mobility exercises": "Based on the context of preparing a Crossfit training plan for a competition, here are some mobility exercises that can be recommended to improve flexibility and reduce muscle stiffness:\n\n1. **Dynamic Stretching**: Incorporate movements like leg swings, arm circles, and hip rotations to warm up and increase range of motion.\n   \n2. **Foam Rolling**: Include foam rolling exercises for major muscle groups such as quads, hamstrings, calves, and back to reduce muscle tightness and improve blood flow.\n\n3. **Hip Flexor Stretch**: Perform lunges or kneeling hip flexor stretches to target the hip flexors, which can get tight from various Crossfit movements.\n\n4. **Shoulder Mobility**: Include exercises like shoulder dislocations with a resistance band or wall slides to enhance shoulder mobility, crucial for overhead movements.\n\n5. **Ankle Mobility**: Incorporate ankle circles, calf stretches, and dorsiflexion exercises to improve ankle mobility, important for movements like squats and jumps.\n\n6. **Thoracic Spine Mobility**: Perform exercises like thoracic spine rotations or foam roller extensions to enhance upper back mobility, aiding in movements like overhead presses.\n\n7. **Piriformis Stretch**: Include stretches like pigeon pose to target the piriformis muscle, which can get tight and affect hip mobility.\n\nThese mobility exercises can be integrated into the training plan to help athletes improve flexibility, reduce muscle stiffness, and enhance overall performance in the Crossfit competition.",
+        "Suggest recovery techniques": "Based on the intensity of the Crossfit training program for intermediate level competition, here are some effective recovery techniques to suggest:\n\n1. **Foam Rolling**: Recommend incorporating foam rolling sessions post-workout to help release muscle tightness and improve blood flow for faster recovery.\n\n2. **Ice Baths**: Suggest taking ice baths to reduce inflammation and muscle soreness after intense training sessions.\n\n3. **Compression Therapy**: Advise the use of compression garments or therapy to enhance circulation, reduce muscle soreness, and speed up recovery.\n\n4. **Active Recovery**: Encourage light activities such as walking, swimming, or yoga on rest days to promote blood flow and aid in muscle recovery.\n\n5. **Proper Nutrition**: Emphasize the importance of consuming a balanced diet rich in protein and carbohydrates to support muscle repair and glycogen replenishment.\n\nBy incorporating these recovery techniques into the training plan, the athlete can optimize their recovery process and perform better in the upcoming competition."
+      }
+    },
+    {
+      "task_id": "a81237aa-2ce7-4732-bc6c-8f3b8a91bf1b",
+      "title": "Monitoring & Adjustments",
+      "description": "Responsible for tracking the athlete's progress, monitoring performance, and making necessary adjustments to the training plan.",
+      "expected_output": "Regular progress reports and updated training plan based on performance feedback.",
+      "area": "Monitoring & Adjustments",
+      "responsibilities": [
+        "Track workout results and performance metrics.",
+        "Adjust the training plan based on feedback and progress assessments."
+      ],
+      "execution_type": "llm",
+      "parent": "ec0f76dd-0ca5-4225-bd88-06d95022e90d",
+      "dependencies": [],
+      "subtasks": [
+        {
+          "task_id": "a4b3de4d-10c3-4922-9dfd-32e8c594fa6d",
+          "title": "Track Workout Results",
+          "description": "Record and analyze the athlete's workout results and performance metrics.",
+          "expected_output": "Documented workout results and performance metrics.",
+          "area": "Monitoring & Adjustments",
+          "responsibilities": [],
+          "execution_type": "llm",
+          "parent": "a81237aa-2ce7-4732-bc6c-8f3b8a91bf1b",
+          "dependencies": [],
+          "subtasks": [],
+          "prompt": {
+            "system": "You are an expert autonomous agent collaborating in a multi-step project. You must resolve your assigned task using all available context and previous results. Be decisive, avoid repetition, and always act as a responsible project agent.",
+            "user": "=== PROJECT ===\nTitle: Tarea principal: Haz un plan de entrenamiento de Crossfit de 1 semana para una competencia de nivel intermedio\n\n=== CURRENT TASK ===\nTitle: Track Workout Results\nDescription: Record and analyze the athlete's workout results and performance metrics.\nExpected Output: Documented workout results and performance metrics.\n\n=== INSTRUCTION ===\nYou are responsible for completing the current task as part of the overall project. Use all available context, including dependency and previous results. Be decisive, avoid repeating previous steps, and provide a clear, actionable output. If the task requires an external system or manual intervention, specify this clearly."
+          },
+          "result": "To track the athlete's workout results and performance metrics, we will create a structured document that includes the following information for each workout session:\n1. Date of the workout\n2. Type of workout (e.g., strength training, cardio, HIIT)\n3. Specific exercises performed\n4. Number of sets and repetitions for each exercise\n5. Weight lifted or resistance level used\n6. Duration of the workout\n7. Rest intervals between sets\n8. Performance metrics such as time taken to complete a certain workout, distance covered, or any other relevant data\n\nThis document will serve as a comprehensive record of the athlete's progress and will help in analyzing trends, identifying areas for improvement, and adjusting the training plan accordingly."
+        },
+        {
+          "task_id": "47526acd-f1c3-4b0b-b049-49d81892cf45",
+          "title": "Assess Progress",
+          "description": "Evaluate the athlete's progress based on tracked workout results and performance metrics.",
+          "expected_output": "Progress assessment report.",
+          "area": "Monitoring & Adjustments",
+          "responsibilities": [],
+          "execution_type": "llm",
+          "parent": "a81237aa-2ce7-4732-bc6c-8f3b8a91bf1b",
+          "dependencies": [
+            "a4b3de4d-10c3-4922-9dfd-32e8c594fa6d"
+          ],
+          "subtasks": [],
+          "prompt": {
+            "system": "You are an expert autonomous agent collaborating in a multi-step project. You must resolve your assigned task using all available context and previous results. Be decisive, avoid repetition, and always act as a responsible project agent.",
+            "user": "=== PROJECT ===\nTitle: Tarea principal: Haz un plan de entrenamiento de Crossfit de 1 semana para una competencia de nivel intermedio\n\n=== DEPENDENCY RESULTS ===\nThe following tasks must be completed before this one. Their results are provided for your reference:\n\n- Dependency: Track Workout Results\n  Description: Record and analyze the athlete's workout results and performance metrics.\n  Result: To track the athlete's workout results and performance metrics, we will create a structured document that includes the following information for each workout session:\n1. Date of the workout\n2. Type of workout (e.g., strength training, cardio, HIIT)\n3. Specific exercises performed\n4. Number of sets and repetitions for each exercise\n5. Weight lifted or resistance level used\n6. Duration of the workout\n7. Rest intervals between sets\n8. Performance metrics such as time taken to complete a certain workout, distance covered, or any other relevant data\n\nThis document will serve as a comprehensive record of the athlete's progress and will help in analyzing trends, identifying areas for improvement, and adjusting the training plan accordingly.\n\n\n=== CURRENT TASK ===\nTitle: Assess Progress\nDescription: Evaluate the athlete's progress based on tracked workout results and performance metrics.\nExpected Output: Progress assessment report.\n\n=== INSTRUCTION ===\nYou are responsible for completing the current task as part of the overall project. Use all available context, including dependency and previous results. Be decisive, avoid repeating previous steps, and provide a clear, actionable output. If the task requires an external system or manual intervention, specify this clearly."
+          },
+          "result": "Based on the tracked workout results and performance metrics, the progress assessment report should include the following key elements:\n\n1. Summary of overall performance improvements or setbacks observed during the tracking period.\n2. Analysis of trends in strength, endurance, and overall fitness levels.\n3. Identification of areas of strength and areas needing improvement.\n4. Comparison of current performance against initial baseline measurements.\n5. Recommendations for adjustments to the training plan based on the assessment.\n\nEnsure the report provides a clear and concise evaluation of the athlete's progress to inform the development of the 1-week Crossfit training plan for the intermediate-level competition."
+        },
+        {
+          "task_id": "5eb00cbe-1b9e-47a6-bd13-7c5cdb19c646",
+          "title": "Adjust Training Plan",
+          "description": "Modify the training plan based on the progress assessment report and feedback.",
+          "expected_output": "Updated training plan.",
+          "area": "Monitoring & Adjustments",
+          "responsibilities": [],
+          "execution_type": "llm",
+          "parent": "a81237aa-2ce7-4732-bc6c-8f3b8a91bf1b",
+          "dependencies": [
+            "47526acd-f1c3-4b0b-b049-49d81892cf45"
+          ],
+          "subtasks": [],
+          "prompt": {
+            "system": "You are an expert autonomous agent collaborating in a multi-step project. You must resolve your assigned task using all available context and previous results. Be decisive, avoid repetition, and always act as a responsible project agent.",
+            "user": "=== PROJECT ===\nTitle: Tarea principal: Haz un plan de entrenamiento de Crossfit de 1 semana para una competencia de nivel intermedio\n\n=== DEPENDENCY RESULTS ===\nThe following tasks must be completed before this one. Their results are provided for your reference:\n\n- Dependency: Assess Progress\n  Description: Evaluate the athlete's progress based on tracked workout results and performance metrics.\n  Result: Based on the tracked workout results and performance metrics, the progress assessment report should include the following key elements:\n\n1. Summary of overall performance improvements or setbacks observed during the tracking period.\n2. Analysis of trends in strength, endurance, and overall fitness levels.\n3. Identification of areas of strength and areas needing improvement.\n4. Comparison of current performance against initial baseline measurements.\n5. Recommendations for adjustments to the training plan based on the assessment.\n\nEnsure the report provides a clear and concise evaluation of the athlete's progress to inform the development of the 1-week Crossfit training plan for the intermediate-level competition.\n\n\n=== CURRENT TASK ===\nTitle: Adjust Training Plan\nDescription: Modify the training plan based on the progress assessment report and feedback.\nExpected Output: Updated training plan.\n\n=== INSTRUCTION ===\nYou are responsible for completing the current task as part of the overall project. Use all available context, including dependency and previous results. Be decisive, avoid repeating previous steps, and provide a clear, actionable output. If the task requires an external system or manual intervention, specify this clearly."
+          },
+          "result": "Based on the progress assessment report and feedback, I recommend the following adjustments to the 1-week Crossfit training plan for the intermediate-level competition:\n\n1. Increase focus on areas needing improvement identified in the assessment, such as endurance or specific strength exercises.\n2. Introduce more varied and challenging workouts to continue pushing the athlete's limits and promote further progress.\n3. Incorporate more specific skill training sessions to target weaknesses and enhance overall performance.\n4. Adjust rest days and recovery periods to optimize recovery and prevent overtraining.\n5. Ensure a balance between high-intensity workouts and active recovery sessions to maintain performance while reducing the risk of injury.\n\nThe updated training plan should reflect these adjustments to better prepare the athlete for the upcoming competition."
+        }
+      ],
+      "result": {
+        "Track Workout Results": "To track the athlete's workout results and performance metrics, we will create a structured document that includes the following information for each workout session:\n1. Date of the workout\n2. Type of workout (e.g., strength training, cardio, HIIT)\n3. Specific exercises performed\n4. Number of sets and repetitions for each exercise\n5. Weight lifted or resistance level used\n6. Duration of the workout\n7. Rest intervals between sets\n8. Performance metrics such as time taken to complete a certain workout, distance covered, or any other relevant data\n\nThis document will serve as a comprehensive record of the athlete's progress and will help in analyzing trends, identifying areas for improvement, and adjusting the training plan accordingly.",
+        "Assess Progress": "Based on the tracked workout results and performance metrics, the progress assessment report should include the following key elements:\n\n1. Summary of overall performance improvements or setbacks observed during the tracking period.\n2. Analysis of trends in strength, endurance, and overall fitness levels.\n3. Identification of areas of strength and areas needing improvement.\n4. Comparison of current performance against initial baseline measurements.\n5. Recommendations for adjustments to the training plan based on the assessment.\n\nEnsure the report provides a clear and concise evaluation of the athlete's progress to inform the development of the 1-week Crossfit training plan for the intermediate-level competition.",
+        "Adjust Training Plan": "Based on the progress assessment report and feedback, I recommend the following adjustments to the 1-week Crossfit training plan for the intermediate-level competition:\n\n1. Increase focus on areas needing improvement identified in the assessment, such as endurance or specific strength exercises.\n2. Introduce more varied and challenging workouts to continue pushing the athlete's limits and promote further progress.\n3. Incorporate more specific skill training sessions to target weaknesses and enhance overall performance.\n4. Adjust rest days and recovery periods to optimize recovery and prevent overtraining.\n5. Ensure a balance between high-intensity workouts and active recovery sessions to maintain performance while reducing the risk of injury.\n\nThe updated training plan should reflect these adjustments to better prepare the athlete for the upcoming competition."
+      }
+    }
+  ],
+  "result": null
+}

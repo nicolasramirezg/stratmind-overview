@@ -1,0 +1,88 @@
+{
+  "task_id": "fa58b02f-2743-4b4d-b111-2f625582c8db",
+  "title": "Tarea principal: Planea un viaje a medellín, Colombia de fin de semana",
+  "description": "Planea un viaje a medellín, Colombia de fin de semana",
+  "expected_output": "Un plan de viaje detallado",
+  "intro": "In planning a weekend trip to Medellín, Colombia, several distinct functional areas can be identified to effectively organize the tasks involved. I have divided the task into a practical number of functional areas to ensure that each area has a clear set of responsibilities, leading to the creation of a detailed travel plan.",
+  "area": null,
+  "responsibilities": [],
+  "parent": null,
+  "dependencies": [],
+  "subtasks": [
+    {
+      "task_id": "ecfc9f4b-a942-4cac-ac63-9591a6fb1661",
+      "title": "Destination Research",
+      "description": "Researching and selecting key destinations and attractions in Medellín for the weekend trip.",
+      "expected_output": "A list of must-visit places and activities in Medellín.",
+      "intro": null,
+      "area": "Destination Research",
+      "responsibilities": [
+        "Identify popular tourist attractions in Medellín.",
+        "Research local events or festivals happening during the weekend."
+      ],
+      "parent": "fa58b02f-2743-4b4d-b111-2f625582c8db",
+      "dependencies": [],
+      "subtasks": []
+    },
+    {
+      "task_id": "0abaa2ff-37a2-45c0-848f-97d247b9b1bc",
+      "title": "Accommodation and Transportation",
+      "description": "Handling all aspects related to booking accommodation and arranging transportation for the trip.",
+      "expected_output": "Confirmed hotel reservations and a transportation plan.",
+      "intro": null,
+      "area": "Accommodation and Transportation",
+      "responsibilities": [
+        "Find and book a suitable hotel or accommodation in Medellín.",
+        "Arrange transportation to and from the airport and within the city."
+      ],
+      "parent": "fa58b02f-2743-4b4d-b111-2f625582c8db",
+      "dependencies": [],
+      "subtasks": []
+    },
+    {
+      "task_id": "b606354f-0689-439f-9884-f9c29d3cebb6",
+      "title": "Budget Planning",
+      "description": "Managing the budget for the trip, including expenses for accommodation, transportation, food, and activities.",
+      "expected_output": "A detailed budget breakdown for the weekend trip.",
+      "intro": null,
+      "area": "Budget Planning",
+      "responsibilities": [
+        "Estimate costs for accommodation, transportation, and meals.",
+        "Allocate funds for entrance fees to attractions and other activities."
+      ],
+      "parent": "fa58b02f-2743-4b4d-b111-2f625582c8db",
+      "dependencies": [],
+      "subtasks": []
+    },
+    {
+      "task_id": "cc499caa-27b7-4d17-99b6-91c20c1cb617",
+      "title": "Itinerary Development",
+      "description": "Creating a detailed itinerary outlining the schedule of activities and sightseeing for the weekend trip.",
+      "expected_output": "A day-by-day plan with timings and locations for each activity.",
+      "intro": null,
+      "area": "Itinerary Development",
+      "responsibilities": [
+        "Plan daily activities, considering travel time between locations.",
+        "Include time for relaxation and exploring the city at leisure."
+      ],
+      "parent": "fa58b02f-2743-4b4d-b111-2f625582c8db",
+      "dependencies": [],
+      "subtasks": []
+    },
+    {
+      "task_id": "b31b849a-7e89-492a-a679-3ffa725574ad",
+      "title": "Packing List Preparation",
+      "description": "Compiling a list of essential items to pack for the weekend trip to Medellín.",
+      "expected_output": "A comprehensive packing list tailored to the specific needs of the trip.",
+      "intro": null,
+      "area": "Packing List Preparation",
+      "responsibilities": [
+        "Consider the weather forecast and pack appropriate clothing.",
+        "Include necessary travel documents, medications, and personal items in the list."
+      ],
+      "parent": "fa58b02f-2743-4b4d-b111-2f625582c8db",
+      "dependencies": [],
+      "subtasks": []
+    }
+  ]
+}

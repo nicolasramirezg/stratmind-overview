@@ -21,8 +21,11 @@ class Task:
     task_id: str = field(default_factory=lambda: str(uuid.uuid4()), init=False)
     dependencies: Set['Task'] = field(default_factory=set, repr=False)
     subtasks: List['Task'] = field(default_factory=list, repr=False)
-    intro: Optional[str] = None  #
-
+    intro: Optional[str] = None
+    execution_type: str = "llm"
+    prompt: Optional[Dict[str, str]] = None   # <-- Add this line
+    result: Optional[str] = None              # <-- Add this line
+    manager: Optional['TaskManager'] = None
 
     def __post_init__(self):
         if self.status not in Status.VALID:
@@ -69,21 +72,24 @@ class Task:
 
     def to_dict(self) -> Dict:
         """
-        Serializa la tarea incluyendo dependencias y subtareas.
+        Serializes the task including dependencies, subtasks, and prompt/result.
         """
         data = {
             **{k: v for k, v in asdict(self).items() if k not in ('dependencies', 'subtasks', 'parent')},
             'area': self.area,
-            'responsibilities': self.responsibilities,  # <-- Añadido
+            'responsibilities': self.responsibilities,
             'dependencies': [d.task_id for d in self.dependencies],
             'subtasks': [s.to_dict() for s in self.subtasks],
-            'parent_task_id': self.parent.task_id if self.parent else None
+            'parent_task_id': self.parent.task_id if self.parent else None,
+            'prompt': self.prompt,    # <-- Add this line
+            'result': self.result     # <-- Add this line
         }
         return data
 
 class TaskManager:
     def __init__(self):
-        self.tasks: Dict[str, Task] = {}
+        self.tasks = {}
+        self.root_task_id = None  # <-- Añade este atributo
 
     def create_task(
         self,
@@ -94,7 +100,8 @@ class TaskManager:
         parent_id: Optional[str] = None,
         assigned_agent: Optional[str] = None,
         status: str = Status.PENDING,
-        responsibilities: Optional[List[str]] = None  # <-- Añadido aquí
+        responsibilities: Optional[List[str]] = None,
+        execution_type: str = "llm"  # <-- Añadido aquí
     ) -> Task:
         """
         Crea una tarea y la registra en el manager.
@@ -107,9 +114,14 @@ class TaskManager:
             area=area,
             assigned_agent=assigned_agent,
             status=status,
-            responsibilities=responsibilities or []  # <-- Añadido aquí
+            responsibilities=responsibilities or [],
+            execution_type=execution_type,
+            manager=self  # <-- Añadido aquí
         )
         self.tasks[task.task_id] = task
+        # Si no tiene padre, es la raíz
+        if parent_id is None:
+            self.root_task_id = task.task_id
         if parent_id:
             parent = self.tasks.get(parent_id)
             if parent:
@@ -165,7 +177,8 @@ def create_and_link_subtasks(subtasks, area, area_task, task_manager):
             description=subtask["description"],
             expected_output=subtask["expected_output"],
             area=area,
-            parent_id=area_task.task_id
+            parent_id=area_task.task_id,
+            execution_type=subtask.get("execution_type", "llm")  # <-- Añadido aquí
         )
         subtask_objs[subtask["title"].strip().lower()] = t
 

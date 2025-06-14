@@ -1,0 +1,118 @@
+{
+  "task_id": "fa58b02f-2743-4b4d-b111-2f625582c8db",
+  "title": "Tarea principal: Planea un viaje a medellín, Colombia de fin de semana",
+  "description": "Planea un viaje a medellín, Colombia de fin de semana",
+  "expected_output": "Un plan de viaje detallado",
+  "area": null,
+  "responsibilities": [],
+  "execution_type": "llm",
+  "prompt": {
+    "system": "You are an expert autonomous agent specialized in hierarchical task planning and execution. You will receive a task with full context and previous results. Always provide clear, actionable, and concise solutions.",
+    "user": "=== ROOT TASK ===\nTitle: Tarea principal: Planea un viaje a medellín, Colombia de fin de semana\nDescription: Planea un viaje a medellín, Colombia de fin de semana\n\n=== CURRENT TASK ===\nTitle: Tarea principal: Planea un viaje a medellín, Colombia de fin de semana\nDescription: Planea un viaje a medellín, Colombia de fin de semana\nExpected Output: Un plan de viaje detallado\n\n=== SUBTASK RESULTS ===\n- Subtask: Destination Research\n  Summary: Researching and selecting key destinations and attractions in Medellín for the weekend trip.\n  Result: To research and select key destinations and attractions in Medellín for the weekend trip, here is a list of must-visit places and activities:\n\n1. Plaza Botero: Explore the iconic plaza filled with sculptures by Fernando Botero.\n2. Parque Arví: Visit this ecological park for hiking, nature trails, and beautiful views of the city.\n3. Comuna 13: Take a guided tour of this vibrant neighborhood known for its street art and transformation.\n4. Jardín Botánico de Medellín: Enjoy a peaceful stroll through the botanical gardens.\n5. Metrocable: Ride the cable cars for panoramic views of the city and surrounding mountains.\n6. Pueblito Paisa: Visit this replica of a traditional Antioquian town for a taste of local culture.\n7. Museo de Antioquia: Explore the museum to learn about the history and art of \n...[truncated]...\n- Subtask: Accommodation and Transportation\n  Summary: Handling all aspects related to booking accommodation and arranging transportation for the trip.\n  Result: To handle booking accommodation and arranging transportation for the trip to Medellín, Colombia, follow these steps:\n\n1. **Accommodation Booking:**\n   - Use a reputable hotel booking platform like Booking.com or Expedia to search for hotels in Medellín.\n   - Filter the search results based on your preferences such as budget, location, and amenities.\n   - Select a hotel that meets your criteria and make a reservation for the desired dates.\n   - Ensure to receive a confirmation of the hotel reservation via email.\n\n2. **Transportation Plan:**\n   - Research transportation options from your location to Medellín, Colombia. Consider flights, buses, or trains depending on your preference and budget.\n   - Book flights or bus tickets in advance to secure the best prices and availability.\n   - Plan f\n...[truncated]...\n- Subtask: Budget Planning\n  Summary: Managing the budget for the trip, including expenses for accommodation, transportation, food, and activities.\n  Result: To create a detailed budget breakdown for the weekend trip to Medellín, Colombia, we need to consider the following expenses:\n\n1. Accommodation:\n   - Research and select a hotel or Airbnb for 2 nights.\n   - Estimate the cost per night and multiply by 2 for the total accommodation cost.\n\n2. Transportation:\n   - Determine the cost of round-trip flights or other transportation modes to Medellín.\n   - Include any local transportation costs within the city.\n\n3. Food:\n   - Estimate the cost of meals for each day, including breakfast, lunch, and dinner.\n   - Consider trying local cuisine and budget accordingly.\n\n4. Activities:\n   - Plan out any activities or excursions during the trip.\n   - Research and estimate the cost of entrance fees, tours, or any other planned activities.\n\n5. Miscellaneous:\n...[truncated]...\n\n=== INSTRUCTION ===\nBased on the context above, complete the current task. If you need to call an external API or system, specify it clearly in your answer."
+  },
+  "result": "### Trip Plan to Medellín, Colombia for the Weekend\n\n#### Destination Research:\n1. **Plaza Botero:** Spend some time exploring the iconic plaza and admiring the sculptures by Fernando Botero.\n2. **Parque Arví:** Enjoy hiking, nature trails, and breathtaking views of the city at this ecological park.\n3. **Comuna 13:** Take a guided tour to experience the vibrant street art and culture of this neighborhood.\n4. **Jardín Botánico de Medellín:** Relax and stroll through the beautiful botanical gardens.\n5. **Metrocable:** Take a ride on the cable cars for panoramic views of the city and mountains.\n6. **Pueblito Paisa:** Immerse yourself in the local culture at this traditional Antioquian town replica.\n7. **Museo de Antioquia:** Explore the museum to learn about the history and art of the region.\n\n#### Accommodation and Transportation:\n1. **Accommodation Booking:**\n   - Use Booking.com or Expedia to find and book a hotel in Medellín for 2 nights.\n   - Filter by your preferences and make a reservation, ensuring to receive a confirmation.\n  \n2. **Transportation Plan:**\n   - Research and book round-trip flights to Medellín for the weekend.\n   - Consider local transportation options within the city for convenience.\n\n#### Budget Planning:\n1. **Accommodation:** Estimate the total cost for 2 nights based on your selected hotel.\n2. **Transportation:** Calculate the expenses for round-trip flights and local transportation.\n3. **Food:** Budget for meals, including trying local cuisine.\n4. **Activities:** Plan and budget for any additional activities or excursions.\n5. **Miscellaneous:** Include any other potential expenses for a comprehensive budget.\n\n### Action Plan:\n1. Finalize the list of destinations and activities you want to visit in Medellín.\n2. Book accommodation for 2 nights and secure transportation to and within the city.\n3. Create a detailed budget breakdown considering all expenses for the trip.\n4. Pack essentials, travel documents, and prepare for a memorable weekend getaway in Medellín, Colombia.",
+  "parent": null,
+  "dependencies": [],
+  "subtasks": [
+    {
+      "task_id": "ecfc9f4b-a942-4cac-ac63-9591a6fb1661",
+      "title": "Destination Research",
+      "description": "Researching and selecting key destinations and attractions in Medellín for the weekend trip.",
+      "expected_output": "A list of must-visit places and activities in Medellín.",
+      "area": "Destination Research",
+      "responsibilities": [
+        "Identify popular tourist attractions in Medellín.",
+        "Research local events or festivals happening during the weekend."
+      ],
+      "execution_type": "llm",
+      "prompt": {
+        "system": "You are an expert autonomous agent specialized in hierarchical task planning and execution. You will receive a task with full context and previous results. Always provide clear, actionable, and concise solutions.",
+        "user": "=== ROOT TASK ===\nTitle: Tarea principal: Planea un viaje a medellín, Colombia de fin de semana\nDescription: Planea un viaje a medellín, Colombia de fin de semana\n\n=== CURRENT TASK ===\nTitle: Destination Research\nDescription: Researching and selecting key destinations and attractions in Medellín for the weekend trip.\nExpected Output: A list of must-visit places and activities in Medellín.\n\n=== INSTRUCTION ===\nBased on the context above, complete the current task. If you need to call an external API or system, specify it clearly in your answer."
+      },
+      "result": "To research and select key destinations and attractions in Medellín for the weekend trip, here is a list of must-visit places and activities:\n\n1. Plaza Botero: Explore the iconic plaza filled with sculptures by Fernando Botero.\n2. Parque Arví: Visit this ecological park for hiking, nature trails, and beautiful views of the city.\n3. Comuna 13: Take a guided tour of this vibrant neighborhood known for its street art and transformation.\n4. Jardín Botánico de Medellín: Enjoy a peaceful stroll through the botanical gardens.\n5. Metrocable: Ride the cable cars for panoramic views of the city and surrounding mountains.\n6. Pueblito Paisa: Visit this replica of a traditional Antioquian town for a taste of local culture.\n7. Museo de Antioquia: Explore the museum to learn about the history and art of the region.\n8. El Peñón de Guatapé: Take a day trip to climb the famous rock formation and enjoy the views from the top.\n\nFor further details and updated information, consider checking official tourism websites or contacting local tour operators in Medellín.",
+      "parent": "fa58b02f-2743-4b4d-b111-2f625582c8db",
+      "dependencies": [],
+      "subtasks": []
+    },
+    {
+      "task_id": "0abaa2ff-37a2-45c0-848f-97d247b9b1bc",
+      "title": "Accommodation and Transportation",
+      "description": "Handling all aspects related to booking accommodation and arranging transportation for the trip.",
+      "expected_output": "Confirmed hotel reservations and a transportation plan.",
+      "area": "Accommodation and Transportation",
+      "responsibilities": [
+        "Find and book a suitable hotel or accommodation in Medellín.",
+        "Arrange transportation to and from the airport and within the city."
+      ],
+      "execution_type": "llm",
+      "prompt": {
+        "system": "You are an expert autonomous agent specialized in hierarchical task planning and execution. You will receive a task with full context and previous results. Always provide clear, actionable, and concise solutions.",
+        "user": "=== ROOT TASK ===\nTitle: Tarea principal: Planea un viaje a medellín, Colombia de fin de semana\nDescription: Planea un viaje a medellín, Colombia de fin de semana\n\n=== CURRENT TASK ===\nTitle: Accommodation and Transportation\nDescription: Handling all aspects related to booking accommodation and arranging transportation for the trip.\nExpected Output: Confirmed hotel reservations and a transportation plan.\n\n=== INSTRUCTION ===\nBased on the context above, complete the current task. If you need to call an external API or system, specify it clearly in your answer."
+      },
+      "result": "To handle booking accommodation and arranging transportation for the trip to Medellín, Colombia, follow these steps:\n\n1. **Accommodation Booking:**\n   - Use a reputable hotel booking platform like Booking.com or Expedia to search for hotels in Medellín.\n   - Filter the search results based on your preferences such as budget, location, and amenities.\n   - Select a hotel that meets your criteria and make a reservation for the desired dates.\n   - Ensure to receive a confirmation of the hotel reservation via email.\n\n2. **Transportation Plan:**\n   - Research transportation options from your location to Medellín, Colombia. Consider flights, buses, or trains depending on your preference and budget.\n   - Book flights or bus tickets in advance to secure the best prices and availability.\n   - Plan for transportation within Medellín by considering options like taxis, public transportation, or rental cars.\n   - Create a detailed transportation plan including departure times, arrival times, and any necessary connections.\n\n3. **Confirmation and Documentation:**\n   - Keep all booking confirmations, tickets, and reservation details organized in one place.\n   - Make sure to have printed or digital copies of all necessary documents for easy access during the trip.\n   - Double-check all reservation details to avoid any last-minute issues.\n\nBy following these steps, you will have confirmed hotel reservations and a well-planned transportation itinerary for your weekend trip to Medellín, Colombia.",
+      "parent": "fa58b02f-2743-4b4d-b111-2f625582c8db",
+      "dependencies": [],
+      "subtasks": []
+    },
+    {
+      "task_id": "b606354f-0689-439f-9884-f9c29d3cebb6",
+      "title": "Budget Planning",
+      "description": "Managing the budget for the trip, including expenses for accommodation, transportation, food, and activities.",
+      "expected_output": "A detailed budget breakdown for the weekend trip.",
+      "area": "Budget Planning",
+      "responsibilities": [
+        "Estimate costs for accommodation, transportation, and meals.",
+        "Allocate funds for entrance fees to attractions and other activities."
+      ],
+      "execution_type": "llm",
+      "prompt": {
+        "system": "You are an expert autonomous agent specialized in hierarchical task planning and execution. You will receive a task with full context and previous results. Always provide clear, actionable, and concise solutions.",
+        "user": "=== ROOT TASK ===\nTitle: Tarea principal: Planea un viaje a medellín, Colombia de fin de semana\nDescription: Planea un viaje a medellín, Colombia de fin de semana\n\n=== CURRENT TASK ===\nTitle: Budget Planning\nDescription: Managing the budget for the trip, including expenses for accommodation, transportation, food, and activities.\nExpected Output: A detailed budget breakdown for the weekend trip.\n\n=== INSTRUCTION ===\nBased on the context above, complete the current task. If you need to call an external API or system, specify it clearly in your answer."
+      },
+      "result": "To create a detailed budget breakdown for the weekend trip to Medellín, Colombia, we need to consider the following expenses:\n\n1. Accommodation:\n   - Research and select a hotel or Airbnb for 2 nights.\n   - Estimate the cost per night and multiply by 2 for the total accommodation cost.\n\n2. Transportation:\n   - Determine the cost of round-trip flights or other transportation modes to Medellín.\n   - Include any local transportation costs within the city.\n\n3. Food:\n   - Estimate the cost of meals for each day, including breakfast, lunch, and dinner.\n   - Consider trying local cuisine and budget accordingly.\n\n4. Activities:\n   - Plan out any activities or excursions during the trip.\n   - Research and estimate the cost of entrance fees, tours, or any other planned activities.\n\n5. Miscellaneous:\n   - Include a buffer for unexpected expenses or souvenirs.\n\nOnce you have gathered all the necessary information, calculate the total budget by summing up all the estimated expenses in each category. Make sure to keep track of any currency conversions if needed.\n\nIf you require assistance with specific cost estimations or recommendations for accommodations, transportation, or activities in Medellín, feel free to ask for further guidance.",
+      "parent": "fa58b02f-2743-4b4d-b111-2f625582c8db",
+      "dependencies": [],
+      "subtasks": []
+    },
+    {
+      "task_id": "cc499caa-27b7-4d17-99b6-91c20c1cb617",
+      "title": "Itinerary Development",
+      "description": "Creating a detailed itinerary outlining the schedule of activities and sightseeing for the weekend trip.",
+      "expected_output": "A day-by-day plan with timings and locations for each activity.",
+      "area": "Itinerary Development",
+      "responsibilities": [
+        "Plan daily activities, considering travel time between locations.",
+        "Include time for relaxation and exploring the city at leisure."
+      ],
+      "execution_type": "llm",
+      "prompt": {
+        "system": "You are an expert autonomous agent specialized in hierarchical task planning and execution. You will receive a task with full context and previous results. Always provide clear, actionable, and concise solutions.",
+        "user": "=== ROOT TASK ===\nTitle: Tarea principal: Planea un viaje a medellín, Colombia de fin de semana\nDescription: Planea un viaje a medellín, Colombia de fin de semana\n\n=== CURRENT TASK ===\nTitle: Itinerary Development\nDescription: Creating a detailed itinerary outlining the schedule of activities and sightseeing for the weekend trip.\nExpected Output: A day-by-day plan with timings and locations for each activity.\n\n=== INSTRUCTION ===\nBased on the context above, complete the current task. If you need to call an external API or system, specify it clearly in your answer."
+      },
+      "result": "To create a detailed itinerary for the weekend trip to Medellín, Colombia, here is a suggested day-by-day plan:\n\n**Day 1:**\n- Morning: \n  - Visit Plaza Botero to see the famous Botero sculptures.\n  - Explore the historic center of Medellín, including Parque Berrio and Parque Bolivar.\n- Lunch: Enjoy traditional Colombian cuisine at a local restaurant.\n- Afternoon:\n  - Take the Metrocable to Parque Arvi for panoramic views of the city.\n  - Visit Comuna 13 for a graffiti tour and learn about its transformation.\n- Dinner: Experience Medellín's vibrant nightlife in El Poblado or Laureles.\n\n**Day 2:**\n- Morning:\n  - Visit the Jardín Botánico de Medellín and enjoy the lush gardens.\n  - Explore the nearby Explora Park for interactive science exhibits.\n- Lunch: Try local street food at Mercado del Rio.\n- Afternoon:\n  - Take a coffee tour to learn about Colombia's coffee culture.\n  - Visit the Museo de Antioquia to see more of Botero's art.\n- Dinner: Enjoy a dinner at a rooftop restaurant with city views.\n\nThis itinerary provides a mix of cultural, historical, and outdoor activities to make the most of your weekend trip to Medellín. Feel free to adjust the schedule based on your preferences and any specific interests you may have.",
+      "parent": "fa58b02f-2743-4b4d-b111-2f625582c8db",
+      "dependencies": [],
+      "subtasks": []
+    },
+    {
+      "task_id": "b31b849a-7e89-492a-a679-3ffa725574ad",
+      "title": "Packing List Preparation",
+      "description": "Compiling a list of essential items to pack for the weekend trip to Medellín.",
+      "expected_output": "A comprehensive packing list tailored to the specific needs of the trip.",
+      "area": "Packing List Preparation",
+      "responsibilities": [
+        "Consider the weather forecast and pack appropriate clothing.",
+        "Include necessary travel documents, medications, and personal items in the list."
+      ],
+      "execution_type": "llm",
+      "prompt": {
+        "system": "You are an expert autonomous agent specialized in hierarchical task planning and execution. You will receive a task with full context and previous results. Always provide clear, actionable, and concise solutions.",
+        "user": "=== ROOT TASK ===\nTitle: Tarea principal: Planea un viaje a medellín, Colombia de fin de semana\nDescription: Planea un viaje a medellín, Colombia de fin de semana\n\n=== CURRENT TASK ===\nTitle: Packing List Preparation\nDescription: Compiling a list of essential items to pack for the weekend trip to Medellín.\nExpected Output: A comprehensive packing list tailored to the specific needs of the trip.\n\n=== INSTRUCTION ===\nBased on the context above, complete the current task. If you need to call an external API or system, specify it clearly in your answer."
+      },
+      "result": "To create a comprehensive packing list for the weekend trip to Medellín, Colombia, consider the following essential items:\n\n1. Clothing:\n   - Lightweight and breathable clothing\n   - Comfortable walking shoes\n   - Swimwear (if planning to visit pools or hot springs)\n   - Jacket or sweater for cooler evenings\n\n2. Personal Items:\n   - Passport and travel documents\n   - Cash and credit/debit cards\n   - Toiletries (toothbrush, toothpaste, shampoo, etc.)\n   - Sunscreen and insect repellent\n   - Prescription medications\n\n3. Electronics:\n   - Phone and charger\n   - Camera or GoPro for capturing memories\n   - Power bank for charging on the go\n\n4. Travel Accessories:\n   - Travel backpack or daypack\n   - Travel-sized umbrella or rain poncho\n   - Travel adapter for electronic devices\n\n5. Miscellaneous:\n   - Snacks for the journey\n   - Reusable water bottle\n   - Guidebook or maps of Medellín\n\nEnsure to tailor the packing list based on personal preferences, planned activities, and the weather forecast for Medellín during the weekend.",
+      "parent": "fa58b02f-2743-4b4d-b111-2f625582c8db",
+      "dependencies": [],
+      "subtasks": []
+    }
+  ]
+}

@@ -1,0 +1,273 @@
+{
+  "task_id": "ec0f76dd-0ca5-4225-bd88-06d95022e90d",
+  "title": "Tarea principal: Haz un plan de entrenamiento de Crossfit de 1 semana para una competencia de nivel intermedio",
+  "description": "Haz un plan de entrenamiento de Crossfit de 1 semana para una competencia de nivel intermedio",
+  "expected_output": "Un plan de viaje detallado",
+  "intro": "In breaking down the task of creating a 1-week Crossfit training plan for an intermediate-level competition, I identified key functional areas based on the different aspects involved in designing a comprehensive training program. The areas are structured to cover the essential components required to develop a well-rounded and effective plan.",
+  "area": null,
+  "responsibilities": [],
+  "parent": null,
+  "dependencies": [],
+  "subtasks": [
+    {
+      "task_id": "f004b82a-c520-485c-924d-8e00a6d9230f",
+      "title": "Assessment",
+      "description": "This area is responsible for evaluating the athlete's current fitness level, goals, and competition requirements to tailor the training plan accordingly.",
+      "expected_output": "Detailed assessment report outlining strengths, weaknesses, and specific goals.",
+      "intro": null,
+      "area": "Assessment",
+      "responsibilities": [
+        "Conduct fitness assessments to determine baseline metrics.",
+        "Analyze competition requirements and athlete's goals."
+      ],
+      "parent": "ec0f76dd-0ca5-4225-bd88-06d95022e90d",
+      "dependencies": [],
+      "subtasks": [
+        {
+          "task_id": "02b9f304-e775-4919-92f4-3d1dcc81c07b",
+          "title": "Conduct Fitness Assessments",
+          "description": "Determine baseline metrics of the athlete's current fitness level.",
+          "expected_output": "Baseline metrics including strength, endurance, flexibility, and cardiovascular fitness.",
+          "intro": null,
+          "area": "Assessment",
+          "responsibilities": [],
+          "parent": "f004b82a-c520-485c-924d-8e00a6d9230f",
+          "dependencies": [],
+          "subtasks": []
+        },
+        {
+          "task_id": "a8d13564-4e41-4aa3-9844-7c7c0ba5cdc7",
+          "title": "Analyze Competition Requirements",
+          "description": "Evaluate the specific demands of the upcoming competition and understand what is needed to perform well.",
+          "expected_output": "Detailed understanding of the competition format, movements, and intensity levels.",
+          "intro": null,
+          "area": "Assessment",
+          "responsibilities": [],
+          "parent": "f004b82a-c520-485c-924d-8e00a6d9230f",
+          "dependencies": [],
+          "subtasks": []
+        }
+      ]
+    },
+    {
+      "task_id": "2ce7e9ea-1811-41b6-a61b-d4235469bd90",
+      "title": "Programming",
+      "description": "This area focuses on designing the actual training program, including workout schedules, exercises, intensity levels, and progression strategies.",
+      "expected_output": "Detailed 1-week Crossfit training plan with daily workouts and progressions.",
+      "intro": null,
+      "area": "Programming",
+      "responsibilities": [
+        "Create a balanced program targeting different fitness domains (strength, endurance, etc.).",
+        "Incorporate varied exercises and intensity levels to avoid plateaus."
+      ],
+      "parent": "ec0f76dd-0ca5-4225-bd88-06d95022e90d",
+      "dependencies": [],
+      "subtasks": [
+        {
+          "task_id": "a7636a54-80d4-480a-bc17-57d0bdbbbb0c",
+          "title": "Design a 1-week Crossfit training plan",
+          "description": "Create a detailed plan including daily workouts, exercises, intensity levels, and progression strategies for a competition.",
+          "expected_output": "Comprehensive 1-week training plan",
+          "intro": null,
+          "area": "Programming",
+          "responsibilities": [],
+          "parent": "2ce7e9ea-1811-41b6-a61b-d4235469bd90",
+          "dependencies": [],
+          "subtasks": []
+        },
+        {
+          "task_id": "3fbb3801-1bea-41fc-a593-e28f9f1a05a5",
+          "title": "Incorporate a balanced mix of exercises targeting different fitness domains",
+          "description": "Ensure the training plan includes exercises that focus on strength, endurance, agility, and flexibility.",
+          "expected_output": "Diverse exercise selection covering various fitness domains",
+          "intro": null,
+          "area": "Programming",
+          "responsibilities": [],
+          "parent": "2ce7e9ea-1811-41b6-a61b-d4235469bd90",
+          "dependencies": [
+            "a7636a54-80d4-480a-bc17-57d0bdbbbb0c"
+          ],
+          "subtasks": []
+        },
+        {
+          "task_id": "6bb34e1f-54fd-434a-928a-0cb6254faeff",
+          "title": "Vary intensity levels to avoid plateaus",
+          "description": "Establish a progression strategy that adjusts the intensity of workouts throughout the week to prevent stagnation.",
+          "expected_output": "Progressive intensity levels in the training plan",
+          "intro": null,
+          "area": "Programming",
+          "responsibilities": [],
+          "parent": "2ce7e9ea-1811-41b6-a61b-d4235469bd90",
+          "dependencies": [
+            "a7636a54-80d4-480a-bc17-57d0bdbbbb0c"
+          ],
+          "subtasks": []
+        }
+      ]
+    },
+    {
+      "task_id": "d3e9ae1f-3f0d-4ce8-b92a-1b53b50586ec",
+      "title": "Nutrition",
+      "description": "Responsible for developing a nutrition plan that complements the training program, supports performance, and aids in recovery.",
+      "expected_output": "Customized nutrition guidelines for the training week.",
+      "intro": null,
+      "area": "Nutrition",
+      "responsibilities": [
+        "Calculate macronutrient requirements based on training intensity and goals.",
+        "Suggest pre- and post-workout meal options for optimal performance."
+      ],
+      "parent": "ec0f76dd-0ca5-4225-bd88-06d95022e90d",
+      "dependencies": [],
+      "subtasks": [
+        {
+          "task_id": "740a2778-b7e0-48c2-a376-c6fb282983ec",
+          "title": "Calculate daily macronutrient requirements",
+          "description": "Determine the optimal intake of carbohydrates, proteins, and fats based on training intensity and goals.",
+          "expected_output": "Daily macronutrient breakdown (grams) for the athlete.",
+          "intro": null,
+          "area": "Nutrition",
+          "responsibilities": [],
+          "parent": "d3e9ae1f-3f0d-4ce8-b92a-1b53b50586ec",
+          "dependencies": [],
+          "subtasks": []
+        },
+        {
+          "task_id": "e45dc6df-f3aa-4a93-a389-0fe3a6a365e9",
+          "title": "Design pre-workout meal options",
+          "description": "Create a list of suitable meals/snacks to consume before training sessions to enhance performance.",
+          "expected_output": "Pre-workout meal options with suggested timing.",
+          "intro": null,
+          "area": "Nutrition",
+          "responsibilities": [],
+          "parent": "d3e9ae1f-3f0d-4ce8-b92a-1b53b50586ec",
+          "dependencies": [
+            "740a2778-b7e0-48c2-a376-c6fb282983ec"
+          ],
+          "subtasks": []
+        },
+        {
+          "task_id": "4325f881-9395-4092-b367-c23f1683ca92",
+          "title": "Develop post-workout nutrition plan",
+          "description": "Recommend post-exercise meals or supplements to support recovery and muscle repair.",
+          "expected_output": "Post-workout nutrition guidelines.",
+          "intro": null,
+          "area": "Nutrition",
+          "responsibilities": [],
+          "parent": "d3e9ae1f-3f0d-4ce8-b92a-1b53b50586ec",
+          "dependencies": [
+            "740a2778-b7e0-48c2-a376-c6fb282983ec"
+          ],
+          "subtasks": []
+        }
+      ]
+    },
+    {
+      "task_id": "4c3f0098-e862-4065-ac87-6cb27c7ecef7",
+      "title": "Recovery",
+      "description": "Focuses on strategies to optimize recovery, reduce fatigue, and prevent injuries throughout the training week.",
+      "expected_output": "Recovery plan outlining rest days, mobility exercises, and recovery techniques.",
+      "intro": null,
+      "area": "Recovery",
+      "responsibilities": [
+        "Schedule rest days and active recovery sessions.",
+        "Recommend stretching routines and recovery modalities (e.g., foam rolling)."
+      ],
+      "parent": "ec0f76dd-0ca5-4225-bd88-06d95022e90d",
+      "dependencies": [],
+      "subtasks": [
+        {
+          "task_id": "c4848fc6-6e66-40ac-8d68-9db73cbf0e14",
+          "title": "Schedule rest days",
+          "description": "Plan specific days within the training week for complete rest to allow for recovery.",
+          "expected_output": "Rest days scheduled in the training plan.",
+          "intro": null,
+          "area": "Recovery",
+          "responsibilities": [],
+          "parent": "4c3f0098-e862-4065-ac87-6cb27c7ecef7",
+          "dependencies": [],
+          "subtasks": []
+        },
+        {
+          "task_id": "88e03ad4-38fb-4f56-9ef5-3abe0dfc16f2",
+          "title": "Recommend mobility exercises",
+          "description": "Provide a list of mobility exercises to improve flexibility and reduce muscle stiffness.",
+          "expected_output": "Mobility exercises recommended for incorporation into the training plan.",
+          "intro": null,
+          "area": "Recovery",
+          "responsibilities": [],
+          "parent": "4c3f0098-e862-4065-ac87-6cb27c7ecef7",
+          "dependencies": [],
+          "subtasks": []
+        },
+        {
+          "task_id": "5043b40b-c936-45e2-88d7-4c2506264fdc",
+          "title": "Suggest recovery techniques",
+          "description": "Recommend specific recovery techniques such as foam rolling, ice baths, or compression therapy.",
+          "expected_output": "Recovery techniques suggested for post-workout recovery.",
+          "intro": null,
+          "area": "Recovery",
+          "responsibilities": [],
+          "parent": "4c3f0098-e862-4065-ac87-6cb27c7ecef7",
+          "dependencies": [],
+          "subtasks": []
+        }
+      ]
+    },
+    {
+      "task_id": "a81237aa-2ce7-4732-bc6c-8f3b8a91bf1b",
+      "title": "Monitoring & Adjustments",
+      "description": "Responsible for tracking the athlete's progress, monitoring performance, and making necessary adjustments to the training plan.",
+      "expected_output": "Regular progress reports and updated training plan based on performance feedback.",
+      "intro": null,
+      "area": "Monitoring & Adjustments",
+      "responsibilities": [
+        "Track workout results and performance metrics.",
+        "Adjust the training plan based on feedback and progress assessments."
+      ],
+      "parent": "ec0f76dd-0ca5-4225-bd88-06d95022e90d",
+      "dependencies": [],
+      "subtasks": [
+        {
+          "task_id": "a4b3de4d-10c3-4922-9dfd-32e8c594fa6d",
+          "title": "Track Workout Results",
+          "description": "Record and analyze the athlete's workout results and performance metrics.",
+          "expected_output": "Documented workout results and performance metrics.",
+          "intro": null,
+          "area": "Monitoring & Adjustments",
+          "responsibilities": [],
+          "parent": "a81237aa-2ce7-4732-bc6c-8f3b8a91bf1b",
+          "dependencies": [],
+          "subtasks": []
+        },
+        {
+          "task_id": "47526acd-f1c3-4b0b-b049-49d81892cf45",
+          "title": "Assess Progress",
+          "description": "Evaluate the athlete's progress based on tracked workout results and performance metrics.",
+          "expected_output": "Progress assessment report.",
+          "intro": null,
+          "area": "Monitoring & Adjustments",
+          "responsibilities": [],
+          "parent": "a81237aa-2ce7-4732-bc6c-8f3b8a91bf1b",
+          "dependencies": [
+            "a4b3de4d-10c3-4922-9dfd-32e8c594fa6d"
+          ],
+          "subtasks": []
+        },
+        {
+          "task_id": "5eb00cbe-1b9e-47a6-bd13-7c5cdb19c646",
+          "title": "Adjust Training Plan",
+          "description": "Modify the training plan based on the progress assessment report and feedback.",
+          "expected_output": "Updated training plan.",
+          "intro": null,
+          "area": "Monitoring & Adjustments",
+          "responsibilities": [],
+          "parent": "a81237aa-2ce7-4732-bc6c-8f3b8a91bf1b",
+          "dependencies": [
+            "47526acd-f1c3-4b0b-b049-49d81892cf45"
+          ],
+          "subtasks": []
+        }
+      ]
+    }
+  ]
+}

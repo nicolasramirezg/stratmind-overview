@@ -1,0 +1,721 @@
+{
+  "task_id": "0c3e551b-cc5e-40f2-836f-ae560dc290a2",
+  "title": "Tarea principal: Planea un viaje a medellín, Colombia de fin de semana",
+  "description": "Planea un viaje a medellín, Colombia de fin de semana",
+  "expected_output": "Un plan de viaje detallado",
+  "intro": "In planning a weekend trip to Medellín, Colombia, several distinct functional areas can be identified to ensure a comprehensive and well-organized travel plan. The division is based on the key aspects that need to be addressed when planning a trip, such as transportation, accommodation, activities, and budgeting. By breaking down the task into these functional areas, each responsible for a specific aspect of the trip, a detailed travel plan can be efficiently developed.",
+  "area": null,
+  "responsibilities": [],
+  "parent": null,
+  "dependencies": [],
+  "subtasks": [
+    {
+      "task_id": "53453de6-adf9-4a96-ba11-03ff4305a877",
+      "title": "Transportation",
+      "description": "Responsible for arranging the transportation to and from Medellín.",
+      "expected_output": "A detailed itinerary of flights, trains, or buses.",
+      "intro": null,
+      "area": "Transportation",
+      "responsibilities": [
+        "Research and book flights or other transportation modes.",
+        "Coordinate ground transportation within Medellín."
+      ],
+      "parent": "0c3e551b-cc5e-40f2-836f-ae560dc290a2",
+      "dependencies": [],
+      "subtasks": [
+        {
+          "task_id": "6b35c105-2cb5-4a00-83ec-8e766f165ba7",
+          "title": "Research and book flights to Medellín",
+          "description": "Find suitable flight options to Medellín, compare prices, and make a reservation.",
+          "expected_output": "Booked flight tickets to Medellín.",
+          "intro": null,
+          "area": "Transportation",
+          "responsibilities": [],
+          "parent": "53453de6-adf9-4a96-ba11-03ff4305a877",
+          "dependencies": [],
+          "subtasks": []
+        },
+        {
+          "task_id": "3d43b475-0f1c-4c71-a202-d4b273cf7a8c",
+          "title": "Arrange ground transportation in Medellín",
+          "description": "Coordinate transportation options within Medellín, such as booking a taxi or arranging for a rental car.",
+          "expected_output": "Confirmed ground transportation arrangements in Medellín.",
+          "intro": null,
+          "area": "Transportation",
+          "responsibilities": [],
+          "parent": "53453de6-adf9-4a96-ba11-03ff4305a877",
+          "dependencies": [],
+          "subtasks": [
+            {
+              "task_id": "a7f644aa-971c-4519-b7e3-b666f331d86c",
+              "title": "Research taxi companies in Medellín",
+              "description": "Identify and compare different taxi companies in Medellín based on rates, reviews, and availability.",
+              "expected_output": "List of recommended taxi companies in Medellín",
+              "intro": null,
+              "area": "Transportation",
+              "responsibilities": [],
+              "parent": "3d43b475-0f1c-4c71-a202-d4b273cf7a8c",
+              "dependencies": [],
+              "subtasks": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "task_id": "ca7a8451-7690-4b64-a4bd-55a87a8cdfe4",
+      "title": "Accommodation",
+      "description": "Responsible for securing suitable lodging during the trip.",
+      "expected_output": "Confirmation of hotel reservations or alternative accommodations.",
+      "intro": null,
+      "area": "Accommodation",
+      "responsibilities": [
+        "Research and book a hotel or Airbnb in Medellín.",
+        "Ensure the accommodation meets the traveler's preferences and budget."
+      ],
+      "parent": "0c3e551b-cc5e-40f2-836f-ae560dc290a2",
+      "dependencies": [],
+      "subtasks": [
+        {
+          "task_id": "bb9ac299-f115-4af3-a661-6a3f6287c802",
+          "title": "Research accommodation options in Medellín",
+          "description": "Research and identify suitable hotels or Airbnbs in Medellín based on preferences and budget.",
+          "expected_output": "List of potential accommodation options with details.",
+          "intro": null,
+          "area": "Accommodation",
+          "responsibilities": [],
+          "parent": "ca7a8451-7690-4b64-a4bd-55a87a8cdfe4",
+          "dependencies": [],
+          "subtasks": [
+            {
+              "task_id": "826edecf-1da3-494c-b137-da4681a1391b",
+              "title": "Identify preferred location in Medellín",
+              "description": "Determine the preferred area or neighborhood in Medellín for accommodation.",
+              "expected_output": "Preferred location identified",
+              "intro": null,
+              "area": "Accommodation",
+              "responsibilities": [],
+              "parent": "bb9ac299-f115-4af3-a661-6a3f6287c802",
+              "dependencies": [],
+              "subtasks": []
+            },
+            {
+              "task_id": "bc1d5116-edf7-4801-8d72-247c42acaf89",
+              "title": "Set budget for accommodation",
+              "description": "Establish the budget constraints for the accommodation in Medellín.",
+              "expected_output": "Budget set",
+              "intro": null,
+              "area": "Accommodation",
+              "responsibilities": [],
+              "parent": "bb9ac299-f115-4af3-a661-6a3f6287c802",
+              "dependencies": [],
+              "subtasks": []
+            }
+          ]
+        },
+        {
+          "task_id": "f8bf9c3e-7fcd-410a-9477-8a827ca696e3",
+          "title": "Check availability and make reservations",
+          "description": "Verify availability for chosen accommodation options and make reservations for the selected dates.",
+          "expected_output": "Confirmed reservations for the chosen accommodation.",
+          "intro": null,
+          "area": "Accommodation",
+          "responsibilities": [],
+          "parent": "ca7a8451-7690-4b64-a4bd-55a87a8cdfe4",
+          "dependencies": [
+            "bb9ac299-f115-4af3-a661-6a3f6287c802"
+          ],
+          "subtasks": []
+        }
+      ]
+    },
+    {
+      "task_id": "da95d354-5339-4fee-81ea-1be5158570c6",
+      "title": "Activities",
+      "description": "Responsible for planning the itinerary and activities during the weekend trip.",
+      "expected_output": "A schedule of sightseeing, dining, and entertainment options.",
+      "intro": null,
+      "area": "Activities",
+      "responsibilities": [
+        "Research and plan visits to attractions in Medellín.",
+        "Make reservations for tours, restaurants, or events."
+      ],
+      "parent": "0c3e551b-cc5e-40f2-836f-ae560dc290a2",
+      "dependencies": [],
+      "subtasks": [
+        {
+          "task_id": "951ef97c-3213-4303-aeea-ef1bfc85c051",
+          "title": "Research tourist attractions in Medellín",
+          "description": "Identify popular sights and activities to visit during the weekend trip.",
+          "expected_output": "List of recommended tourist attractions in Medellín.",
+          "intro": null,
+          "area": "Activities",
+          "responsibilities": [],
+          "parent": "da95d354-5339-4fee-81ea-1be5158570c6",
+          "dependencies": [],
+          "subtasks": [
+            {
+              "task_id": "9622925a-e5a6-4276-af4d-770b207b80ec",
+              "title": "Compile list of museums in Medellín",
+              "description": "Research and compile a list of museums in Medellín worth visiting.",
+              "expected_output": "List of recommended museums in Medellín",
+              "intro": null,
+              "area": "Activities",
+              "responsibilities": [],
+              "parent": "951ef97c-3213-4303-aeea-ef1bfc85c051",
+              "dependencies": [],
+              "subtasks": []
+            }
+          ]
+        },
+        {
+          "task_id": "c1dbb515-1f50-4ae7-a7f5-4fafab9e8562",
+          "title": "Make reservations for guided tours",
+          "description": "Book guided tours to explore specific attractions in Medellín.",
+          "expected_output": "Confirmed reservations for guided tours.",
+          "intro": null,
+          "area": "Activities",
+          "responsibilities": [],
+          "parent": "da95d354-5339-4fee-81ea-1be5158570c6",
+          "dependencies": [
+            "951ef97c-3213-4303-aeea-ef1bfc85c051"
+          ],
+          "subtasks": []
+        },
+        {
+          "task_id": "eb3535a2-1adc-4fca-945e-ac663214207e",
+          "title": "Reserve tables at recommended restaurants",
+          "description": "Secure dining reservations at local restaurants for the weekend trip.",
+          "expected_output": "Confirmed restaurant reservations.",
+          "intro": null,
+          "area": "Activities",
+          "responsibilities": [],
+          "parent": "da95d354-5339-4fee-81ea-1be5158570c6",
+          "dependencies": [],
+          "subtasks": [
+            {
+              "task_id": "c5f9e014-3630-4609-afb9-3b2fd5d1f843",
+              "title": "Check restaurant availability",
+              "description": "Verify the availability of tables at recommended restaurants for the desired date and time.",
+              "expected_output": "List of available time slots at each restaurant",
+              "intro": null,
+              "area": "Activities",
+              "responsibilities": [],
+              "parent": "eb3535a2-1adc-4fca-945e-ac663214207e",
+              "dependencies": [],
+              "subtasks": []
+            },
+            {
+              "task_id": "00099d47-599b-40f7-bfdf-a00996577ac1",
+              "title": "Make reservation requests",
+              "description": "Submit reservation requests to the selected restaurants based on the available time slots.",
+              "expected_output": "Confirmation numbers for reservation requests",
+              "intro": null,
+              "area": "Activities",
+              "responsibilities": [],
+              "parent": "eb3535a2-1adc-4fca-945e-ac663214207e",
+              "dependencies": [
+                "c5f9e014-3630-4609-afb9-3b2fd5d1f843"
+              ],
+              "subtasks": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "task_id": "6c13a7bb-deb7-4c5e-96b5-35307138d69d",
+      "title": "Budgeting",
+      "description": "Responsible for managing the financial aspects of the trip.",
+      "expected_output": "A breakdown of expenses and a budget plan.",
+      "intro": null,
+      "area": "Budgeting",
+      "responsibilities": [
+        "Estimate costs for transportation, accommodation, meals, and activities.",
+        "Monitor expenses during the trip to stay within the budget."
+      ],
+      "parent": "0c3e551b-cc5e-40f2-836f-ae560dc290a2",
+      "dependencies": [],
+      "subtasks": [
+        {
+          "task_id": "1a631b3f-5461-48b1-903a-400e14fa1234",
+          "title": "Estimate Costs",
+          "description": "Calculate the expected expenses for transportation, accommodation, meals, and activities.",
+          "expected_output": "Estimated budget breakdown.",
+          "intro": null,
+          "area": "Budgeting",
+          "responsibilities": [],
+          "parent": "6c13a7bb-deb7-4c5e-96b5-35307138d69d",
+          "dependencies": [],
+          "subtasks": [
+            {
+              "task_id": "ab5a3cf0-fbaf-400a-8016-ceeaa140d910",
+              "title": "Estimate Transportation Costs",
+              "description": "Calculate the expected expenses for transportation.",
+              "expected_output": "",
+              "intro": null,
+              "area": "Budgeting",
+              "responsibilities": [],
+              "parent": "1a631b3f-5461-48b1-903a-400e14fa1234",
+              "dependencies": [],
+              "subtasks": []
+            },
+            {
+              "task_id": "78f19293-9b66-4acf-852c-fc75f77aa0ef",
+              "title": "Estimate Accommodation Costs",
+              "description": "Calculate the expected expenses for accommodation.",
+              "expected_output": "",
+              "intro": null,
+              "area": "Budgeting",
+              "responsibilities": [],
+              "parent": "1a631b3f-5461-48b1-903a-400e14fa1234",
+              "dependencies": [],
+              "subtasks": []
+            },
+            {
+              "task_id": "6fcbcf7d-8bf0-4aee-a6d1-4159872d9186",
+              "title": "Estimate Meals and Activities Costs",
+              "description": "Calculate the expected expenses for meals and activities.",
+              "expected_output": "",
+              "intro": null,
+              "area": "Budgeting",
+              "responsibilities": [],
+              "parent": "1a631b3f-5461-48b1-903a-400e14fa1234",
+              "dependencies": [],
+              "subtasks": []
+            }
+          ]
+        },
+        {
+          "task_id": "7b4f0636-1e1a-406d-acf3-df9dba43c9d5",
+          "title": "Research Deals and Discounts",
+          "description": "Look for discounts, deals, or special offers on transportation, accommodation, meals, and activities to reduce costs.",
+          "expected_output": "List of potential cost-saving options.",
+          "intro": null,
+          "area": "Budgeting",
+          "responsibilities": [],
+          "parent": "6c13a7bb-deb7-4c5e-96b5-35307138d69d",
+          "dependencies": [
+            "1a631b3f-5461-48b1-903a-400e14fa1234"
+          ],
+          "subtasks": [
+            {
+              "task_id": "7cf954f2-18ea-46ab-9d9d-4db2fe42c570",
+              "title": "Identify Transportation Discounts",
+              "description": "Look for discounts, deals, or special offers on transportation to reduce costs.",
+              "expected_output": "List of potential transportation cost-saving options",
+              "intro": null,
+              "area": "Budgeting",
+              "responsibilities": [],
+              "parent": "7b4f0636-1e1a-406d-acf3-df9dba43c9d5",
+              "dependencies": [],
+              "subtasks": []
+            },
+            {
+              "task_id": "3df43c7a-419b-41a6-8d5f-eb5dc525fe0c",
+              "title": "Explore Accommodation Deals",
+              "description": "Look for discounts, deals, or special offers on accommodation to reduce costs.",
+              "expected_output": "List of potential accommodation cost-saving options",
+              "intro": null,
+              "area": "Budgeting",
+              "responsibilities": [],
+              "parent": "7b4f0636-1e1a-406d-acf3-df9dba43c9d5",
+              "dependencies": [],
+              "subtasks": []
+            }
+          ]
+        },
+        {
+          "task_id": "4f523127-82d7-405b-8829-967785111f55",
+          "title": "Create Budget Plan",
+          "description": "Develop a detailed budget plan outlining the allocated funds for each expense category.",
+          "expected_output": "Comprehensive budget plan.",
+          "intro": null,
+          "area": "Budgeting",
+          "responsibilities": [],
+          "parent": "6c13a7bb-deb7-4c5e-96b5-35307138d69d",
+          "dependencies": [
+            "1a631b3f-5461-48b1-903a-400e14fa1234",
+            "7b4f0636-1e1a-406d-acf3-df9dba43c9d5"
+          ],
+          "subtasks": [
+            {
+              "task_id": "00af2da0-edc1-406c-8d77-f5d93fbf6c2f",
+              "title": "Identify Expense Categories",
+              "description": "Break down expenses into distinct categories such as utilities, rent, supplies, etc.",
+              "expected_output": "List of expense categories",
+              "intro": null,
+              "area": "Budgeting",
+              "responsibilities": [],
+              "parent": "4f523127-82d7-405b-8829-967785111f55",
+              "dependencies": [],
+              "subtasks": []
+            },
+            {
+              "task_id": "f76d9eaa-0161-4f21-a732-a71efaa4fbed",
+              "title": "Allocate Funds to Expense Categories",
+              "description": "Determine the amount of funds to allocate to each expense category based on estimated costs and priorities.",
+              "expected_output": "Allocated funds for each expense category",
+              "intro": null,
+              "area": "Budgeting",
+              "responsibilities": [],
+              "parent": "4f523127-82d7-405b-8829-967785111f55",
+              "dependencies": [
+                "00af2da0-edc1-406c-8d77-f5d93fbf6c2f"
+              ],
+              "subtasks": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "task_id": "a2dfa414-ebe8-4cb0-89a9-62353b4ec9e7",
+      "title": "Packing",
+      "description": "Responsible for ensuring the traveler has all necessary items for the trip.",
+      "expected_output": "A packing list tailored to the specific needs of the trip.",
+      "intro": null,
+      "area": "Packing",
+      "responsibilities": [
+        "Create a checklist of essential items to pack for the weekend trip.",
+        "Provide guidance on weather-appropriate clothing and travel essentials."
+      ],
+      "parent": "0c3e551b-cc5e-40f2-836f-ae560dc290a2",
+      "dependencies": [],
+      "subtasks": [
+        {
+          "task_id": "8cd94d61-4278-4624-8db4-27a3efc69e03",
+          "title": "Create a packing checklist",
+          "description": "Compile a list of essential items to pack for the weekend trip to Medellín, Colombia.",
+          "expected_output": "Comprehensive packing checklist tailored to the specific needs of the trip.",
+          "intro": null,
+          "area": "Packing",
+          "responsibilities": [],
+          "parent": "a2dfa414-ebe8-4cb0-89a9-62353b4ec9e7",
+          "dependencies": [],
+          "subtasks": [
+            {
+              "task_id": "9b978134-c29d-4630-bb82-53aeb7e8e5f1",
+              "title": "Identify clothing items",
+              "description": "Determine the specific clothing items needed for the trip based on the weather forecast and planned activities.",
+              "expected_output": "List of clothing items required for the trip",
+              "intro": null,
+              "area": "Packing",
+              "responsibilities": [],
+              "parent": "8cd94d61-4278-4624-8db4-27a3efc69e03",
+              "dependencies": [],
+              "subtasks": []
+            },
+            {
+              "task_id": "98d9771e-e895-4d52-a11a-b143f27b7e9b",
+              "title": "Gather toiletries and personal care items",
+              "description": "Compile a list of toiletries and personal care items necessary for the trip, considering travel size restrictions and personal preferences.",
+              "expected_output": "List of toiletries and personal care items to pack",
+              "intro": null,
+              "area": "Packing",
+              "responsibilities": [],
+              "parent": "8cd94d61-4278-4624-8db4-27a3efc69e03",
+              "dependencies": [],
+              "subtasks": []
+            }
+          ]
+        },
+        {
+          "task_id": "8ed3d24f-c244-4634-bdfe-55a438ecce81",
+          "title": "Check the weather forecast",
+          "description": "Review the weather forecast for Medellín during the weekend trip to determine appropriate clothing and gear.",
+          "expected_output": "Weather-appropriate clothing and gear recommendations based on the forecast.",
+          "intro": null,
+          "area": "Packing",
+          "responsibilities": [],
+          "parent": "a2dfa414-ebe8-4cb0-89a9-62353b4ec9e7",
+          "dependencies": [],
+          "subtasks": [
+            {
+              "task_id": "a1dd46cf-f886-4b17-b869-a38f59039f78",
+              "title": "Retrieve current weather conditions",
+              "description": "Access the latest weather information for Medellín.",
+              "expected_output": "Current weather conditions for Medellín",
+              "intro": null,
+              "area": "Packing",
+              "responsibilities": [],
+              "parent": "8ed3d24f-c244-4634-bdfe-55a438ecce81",
+              "dependencies": [],
+              "subtasks": []
+            }
+          ]
+        },
+        {
+          "task_id": "6de13840-faa2-4453-8ac4-3b4369a19ccf",
+          "title": "Research travel essentials",
+          "description": "Identify and list down any specific travel essentials required for the trip to Medellín.",
+          "expected_output": "List of necessary travel essentials for a weekend trip to Medellín.",
+          "intro": null,
+          "area": "Packing",
+          "responsibilities": [],
+          "parent": "a2dfa414-ebe8-4cb0-89a9-62353b4ec9e7",
+          "dependencies": [],
+          "subtasks": [
+            {
+              "task_id": "b6c21a94-1d18-4a37-881e-f9cfea135b7d",
+              "title": "Identify clothing requirements",
+              "description": "Determine the type and quantity of clothing needed for the trip to Medellín.",
+              "expected_output": "List of clothing items required for the trip",
+              "intro": null,
+              "area": "Packing",
+              "responsibilities": [],
+              "parent": "6de13840-faa2-4453-8ac4-3b4369a19ccf",
+              "dependencies": [],
+              "subtasks": []
+            },
+            {
+              "task_id": "9f783725-105c-4240-a0fc-06e7a04a2da5",
+              "title": "Determine toiletry essentials",
+              "description": "Identify the necessary toiletries and personal care items for the trip to Medellín.",
+              "expected_output": "List of toiletry essentials for the trip",
+              "intro": null,
+              "area": "Packing",
+              "responsibilities": [],
+              "parent": "6de13840-faa2-4453-8ac4-3b4369a19ccf",
+              "dependencies": [],
+              "subtasks": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "task_id": "53b3daf2-a898-4312-ad65-26175d712eab",
+      "title": "Safety and Health",
+      "description": "Responsible for addressing safety and health considerations during the trip.",
+      "expected_output": "Information on travel insurance, emergency contacts, and health precautions.",
+      "intro": null,
+      "area": "Safety and Health",
+      "responsibilities": [
+        "Arrange travel insurance coverage for the trip.",
+        "Provide guidance on health and safety measures in Medellín."
+      ],
+      "parent": "0c3e551b-cc5e-40f2-836f-ae560dc290a2",
+      "dependencies": [],
+      "subtasks": [
+        {
+          "task_id": "0b8400ca-0328-482d-8fce-e3105c4ba1cc",
+          "title": "Arrange Travel Insurance",
+          "description": "Purchase travel insurance coverage for the trip to Medellín.",
+          "expected_output": "Travel insurance policy documents and coverage details.",
+          "intro": null,
+          "area": "Safety and Health",
+          "responsibilities": [],
+          "parent": "53b3daf2-a898-4312-ad65-26175d712eab",
+          "dependencies": [],
+          "subtasks": [
+            {
+              "task_id": "6077be25-3e69-49f5-b4f8-ff7750da78e2",
+              "title": "Research Travel Insurance Providers",
+              "description": "Research different travel insurance providers to compare coverage options and prices.",
+              "expected_output": "List of potential travel insurance providers with their coverage details and prices.",
+              "intro": null,
+              "area": "Safety and Health",
+              "responsibilities": [],
+              "parent": "0b8400ca-0328-482d-8fce-e3105c4ba1cc",
+              "dependencies": [],
+              "subtasks": []
+            },
+            {
+              "task_id": "67d52149-0958-460d-b06a-aac2fe8e74f5",
+              "title": "Select Travel Insurance Provider",
+              "description": "Choose the most suitable travel insurance provider based on the research conducted.",
+              "expected_output": "Chosen travel insurance provider and selected coverage plan.",
+              "intro": null,
+              "area": "Safety and Health",
+              "responsibilities": [],
+              "parent": "0b8400ca-0328-482d-8fce-e3105c4ba1cc",
+              "dependencies": [
+                "6077be25-3e69-49f5-b4f8-ff7750da78e2"
+              ],
+              "subtasks": []
+            }
+          ]
+        },
+        {
+          "task_id": "1ee26f41-1d4e-4d6e-b79e-95911342828d",
+          "title": "Research Health Precautions",
+          "description": "Gather information on necessary vaccinations, health advisories, and safety measures for traveling to Medellín.",
+          "expected_output": "List of recommended vaccinations, health tips, and safety precautions.",
+          "intro": null,
+          "area": "Safety and Health",
+          "responsibilities": [],
+          "parent": "53b3daf2-a898-4312-ad65-26175d712eab",
+          "dependencies": [],
+          "subtasks": [
+            {
+              "task_id": "fa0557f1-09c4-4bd5-b45e-548c71243c17",
+              "title": "Check Required Vaccinations",
+              "description": "Identify the specific vaccinations needed for traveling to Medellín.",
+              "expected_output": "",
+              "intro": null,
+              "area": "Safety and Health",
+              "responsibilities": [],
+              "parent": "1ee26f41-1d4e-4d6e-b79e-95911342828d",
+              "dependencies": [],
+              "subtasks": []
+            },
+            {
+              "task_id": "1a798cd5-7e1e-4f0b-a3b7-697da9f45b2a",
+              "title": "Gather Health Advisories",
+              "description": "Research health advisories specific to Medellín.",
+              "expected_output": "",
+              "intro": null,
+              "area": "Safety and Health",
+              "responsibilities": [],
+              "parent": "1ee26f41-1d4e-4d6e-b79e-95911342828d",
+              "dependencies": [],
+              "subtasks": []
+            },
+            {
+              "task_id": "963b7e0e-4683-4ebb-b1ce-5089ab616cef",
+              "title": "Compile Safety Measures",
+              "description": "Collect safety measures recommended for travelers in Medellín.",
+              "expected_output": "",
+              "intro": null,
+              "area": "Safety and Health",
+              "responsibilities": [],
+              "parent": "1ee26f41-1d4e-4d6e-b79e-95911342828d",
+              "dependencies": [],
+              "subtasks": []
+            }
+          ]
+        },
+        {
+          "task_id": "43b8d57b-81c1-44f1-80f3-c7f61bd162bd",
+          "title": "Compile Emergency Contacts",
+          "description": "Create a list of emergency contacts including local emergency services, embassy contacts, and insurance provider's contact information.",
+          "expected_output": "Document with emergency contact numbers and details.",
+          "intro": null,
+          "area": "Safety and Health",
+          "responsibilities": [],
+          "parent": "53b3daf2-a898-4312-ad65-26175d712eab",
+          "dependencies": [],
+          "subtasks": [
+            {
+              "task_id": "28e96bb1-1478-49d0-b0d4-c8d25ca7af1c",
+              "title": "Identify Local Emergency Services",
+              "description": "Research and list the contact information for local emergency services such as police, fire department, and medical services.",
+              "expected_output": "List of local emergency services contact information",
+              "intro": null,
+              "area": "Safety and Health",
+              "responsibilities": [],
+              "parent": "43b8d57b-81c1-44f1-80f3-c7f61bd162bd",
+              "dependencies": [],
+              "subtasks": []
+            },
+            {
+              "task_id": "97b78d0e-dc32-42a4-83a8-b68c7bd96599",
+              "title": "Gather Embassy Contacts",
+              "description": "Compile a list of embassy contacts for relevant countries in the area.",
+              "expected_output": "List of embassy contacts",
+              "intro": null,
+              "area": "Safety and Health",
+              "responsibilities": [],
+              "parent": "43b8d57b-81c1-44f1-80f3-c7f61bd162bd",
+              "dependencies": [],
+              "subtasks": []
+            },
+            {
+              "task_id": "278cf5ea-214a-47e7-a865-6021421c4dbf",
+              "title": "Obtain Insurance Provider's Contact Information",
+              "description": "Retrieve and document the contact information for the insurance provider.",
+              "expected_output": "Insurance provider's contact information",
+              "intro": null,
+              "area": "Safety and Health",
+              "responsibilities": [],
+              "parent": "43b8d57b-81c1-44f1-80f3-c7f61bd162bd",
+              "dependencies": [],
+              "subtasks": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "task_id": "ad64f40d-ee44-4c58-bf98-db4a502aa1e3",
+      "title": "Communication",
+      "description": "Responsible for ensuring connectivity and communication during the trip.",
+      "expected_output": "Information on SIM cards, Wi-Fi availability, and emergency communication.",
+      "intro": null,
+      "area": "Communication",
+      "responsibilities": [
+        "Research local SIM card options for mobile phones.",
+        "Provide guidance on accessing Wi-Fi and staying connected in Medellín."
+      ],
+      "parent": "0c3e551b-cc5e-40f2-836f-ae560dc290a2",
+      "dependencies": [],
+      "subtasks": [
+        {
+          "task_id": "e898e8c2-1b7a-444a-ab52-e7fe27d5b4b1",
+          "title": "Research Local SIM Card Options",
+          "description": "Identify and compare local SIM card options for mobile phones in Medellín.",
+          "expected_output": "List of available local SIM card providers, their coverage, and pricing.",
+          "intro": null,
+          "area": "Communication",
+          "responsibilities": [],
+          "parent": "ad64f40d-ee44-4c58-bf98-db4a502aa1e3",
+          "dependencies": [],
+          "subtasks": [
+            {
+              "task_id": "f2595708-234d-4f97-94a3-78d7abe39369",
+              "title": "Identify Local SIM Card Providers",
+              "description": "Research and list the local SIM card providers available in Medellín.",
+              "expected_output": "",
+              "intro": null,
+              "area": "Communication",
+              "responsibilities": [],
+              "parent": "e898e8c2-1b7a-444a-ab52-e7fe27d5b4b1",
+              "dependencies": [],
+              "subtasks": []
+            },
+            {
+              "task_id": "fdf88de8-1d4f-45e0-a404-ffb04a9fe919",
+              "title": "Compare Coverage of Local SIM Card Providers",
+              "description": "Compare the coverage areas of each local SIM card provider in Medellín.",
+              "expected_output": "",
+              "intro": null,
+              "area": "Communication",
+              "responsibilities": [],
+              "parent": "e898e8c2-1b7a-444a-ab52-e7fe27d5b4b1",
+              "dependencies": [
+                "f2595708-234d-4f97-94a3-78d7abe39369"
+              ],
+              "subtasks": []
+            }
+          ]
+        },
+        {
+          "task_id": "30858f0f-0c4d-4663-85c8-fc087b251c6e",
+          "title": "Identify Wi-Fi Hotspots",
+          "description": "Locate and list Wi-Fi hotspots in Medellín for connectivity.",
+          "expected_output": "Compilation of Wi-Fi hotspot locations in Medellín.",
+          "intro": null,
+          "area": "Communication",
+          "responsibilities": [],
+          "parent": "ad64f40d-ee44-4c58-bf98-db4a502aa1e3",
+          "dependencies": [],
+          "subtasks": [
+            {
+              "task_id": "53a3747e-4232-4e76-96d7-4549236f7ba1",
+              "title": "Survey Public Spaces",
+              "description": "Conduct a survey of public spaces in Medellín to identify existing Wi-Fi hotspots.",
+              "expected_output": "List of public spaces with Wi-Fi hotspots",
+              "intro": null,
+              "area": "Communication",
+              "responsibilities": [],
+              "parent": "30858f0f-0c4d-4663-85c8-fc087b251c6e",
+              "dependencies": [],
+              "subtasks": []
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

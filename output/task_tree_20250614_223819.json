@@ -1,0 +1,247 @@
+{
+  "task_id": "02f6a0fe-eead-4bc1-b7a9-be2dce25a60f",
+  "title": "Tarea principal: Haz un plan de viaje a Bogotá, Colombia, incluyendo actividades, lugares turísticos, gastronomía y cultura local.",
+  "description": "Haz un plan de viaje a Bogotá, Colombia, incluyendo actividades, lugares turísticos, gastronomía y cultura local.",
+  "expected_output": "Un plan de viaje detallado",
+  "intro": "I divided the task of planning a trip to Bogotá, Colombia into four functional areas: activities, tourist attractions, gastronomy, and local culture. Each area represents a distinct aspect of the travel plan, covering essential elements that contribute to a comprehensive and enjoyable trip to Bogotá.",
+  "area": null,
+  "responsibilities": [],
+  "parent": null,
+  "dependencies": [],
+  "subtasks": [
+    {
+      "task_id": "76613117-b643-41e5-b251-102337960e80",
+      "title": "Activities",
+      "description": "Planning and organizing engaging activities for the trip.",
+      "expected_output": "A diverse list of activities suitable for different preferences and interests.",
+      "intro": null,
+      "area": "Activities",
+      "responsibilities": [
+        "Research and recommend outdoor activities such as hiking in Monserrate or exploring La Candelaria.",
+        "Suggest cultural experiences like visiting museums or attending local events."
+      ],
+      "parent": "02f6a0fe-eead-4bc1-b7a9-be2dce25a60f",
+      "dependencies": [],
+      "subtasks": [
+        {
+          "task_id": "c2be7d20-0d25-4e8f-bf81-954e54c6c51d",
+          "title": "Research Outdoor Activities",
+          "description": "Identify and gather information on outdoor activities such as hiking, biking, or nature walks available in Bogotá.",
+          "expected_output": "List of outdoor activities with descriptions and locations.",
+          "intro": null,
+          "area": "Activities",
+          "responsibilities": [],
+          "parent": "76613117-b643-41e5-b251-102337960e80",
+          "dependencies": [],
+          "subtasks": []
+        },
+        {
+          "task_id": "32b1016c-c48e-46a0-8c06-3a55f13c32ee",
+          "title": "Explore Cultural Experiences",
+          "description": "Research and compile a list of cultural experiences, including museums, art galleries, and local events in Bogotá.",
+          "expected_output": "List of cultural experiences with details and schedules.",
+          "intro": null,
+          "area": "Activities",
+          "responsibilities": [],
+          "parent": "76613117-b643-41e5-b251-102337960e80",
+          "dependencies": [],
+          "subtasks": []
+        },
+        {
+          "task_id": "53abefc7-fb35-49fa-a8a0-fbc3d500ec13",
+          "title": "Plan Gastronomic Tours",
+          "description": "Research popular local restaurants, street food markets, and traditional dishes to create a gastronomic tour itinerary.",
+          "expected_output": "Itinerary with recommended food spots and dishes to try.",
+          "intro": null,
+          "area": "Activities",
+          "responsibilities": [],
+          "parent": "76613117-b643-41e5-b251-102337960e80",
+          "dependencies": [],
+          "subtasks": []
+        },
+        {
+          "task_id": "3e0af5ee-0743-468c-b609-078cdbb84081",
+          "title": "Identify Adventure Activities",
+          "description": "Search for adventurous activities like zip-lining, paragliding, or rock climbing in Bogotá.",
+          "expected_output": "List of adventure activities with providers and contact information.",
+          "intro": null,
+          "area": "Activities",
+          "responsibilities": [],
+          "parent": "76613117-b643-41e5-b251-102337960e80",
+          "dependencies": [],
+          "subtasks": []
+        }
+      ]
+    },
+    {
+      "task_id": "151db533-a63e-4e12-9f7d-2b5f8004b494",
+      "title": "Tourist Attractions",
+      "description": "Identifying and including must-visit tourist spots in Bogotá.",
+      "expected_output": "A curated list of popular attractions that showcase the city's highlights.",
+      "intro": null,
+      "area": "Tourist Attractions",
+      "responsibilities": [
+        "Research and list iconic landmarks like Plaza de Bolívar and Gold Museum.",
+        "Include off-the-beaten-path attractions to provide a well-rounded experience."
+      ],
+      "parent": "02f6a0fe-eead-4bc1-b7a9-be2dce25a60f",
+      "dependencies": [],
+      "subtasks": [
+        {
+          "task_id": "ba3681ea-33d0-470b-967f-d297ad5bb2f7",
+          "title": "Research Iconic Landmarks",
+          "description": "Identify and list must-visit tourist spots in Bogotá such as Plaza de Bolívar and Gold Museum.",
+          "expected_output": "List of iconic landmarks in Bogotá.",
+          "intro": null,
+          "area": "Tourist Attractions",
+          "responsibilities": [],
+          "parent": "151db533-a63e-4e12-9f7d-2b5f8004b494",
+          "dependencies": [],
+          "subtasks": []
+        },
+        {
+          "task_id": "5fc91cdf-55c9-4231-bcc8-b85b7f60900f",
+          "title": "Explore Off-the-Beaten-Path Attractions",
+          "description": "Research and include lesser-known attractions to provide a unique experience for travelers.",
+          "expected_output": "List of off-the-beaten-path attractions in Bogotá.",
+          "intro": null,
+          "area": "Tourist Attractions",
+          "responsibilities": [],
+          "parent": "151db533-a63e-4e12-9f7d-2b5f8004b494",
+          "dependencies": [],
+          "subtasks": []
+        },
+        {
+          "task_id": "b5717e7f-8ad9-426c-8fab-dbf4c0fb7916",
+          "title": "Curate Cultural Experiences",
+          "description": "Identify cultural activities and events like local markets or traditional performances to immerse in the local culture.",
+          "expected_output": "List of cultural experiences in Bogotá.",
+          "intro": null,
+          "area": "Tourist Attractions",
+          "responsibilities": [],
+          "parent": "151db533-a63e-4e12-9f7d-2b5f8004b494",
+          "dependencies": [],
+          "subtasks": []
+        }
+      ]
+    },
+    {
+      "task_id": "c49f5d05-5947-4124-a1a7-4945ddd2c371",
+      "title": "Gastronomy",
+      "description": "Planning dining experiences to explore the local cuisine.",
+      "expected_output": "A selection of restaurants and food markets offering authentic Colombian dishes.",
+      "intro": null,
+      "area": "Gastronomy",
+      "responsibilities": [
+        "Research and recommend traditional Colombian dishes to try, such as Ajiaco or Bandeja Paisa.",
+        "Provide information on popular dining spots known for their quality and authenticity."
+      ],
+      "parent": "02f6a0fe-eead-4bc1-b7a9-be2dce25a60f",
+      "dependencies": [],
+      "subtasks": [
+        {
+          "task_id": "a3be7f47-f2c4-4d42-89de-3c7a866e6a8a",
+          "title": "Research Traditional Colombian Dishes",
+          "description": "Identify and list traditional Colombian dishes to try, such as Ajiaco or Bandeja Paisa.",
+          "expected_output": "List of traditional Colombian dishes",
+          "intro": null,
+          "area": "Gastronomy",
+          "responsibilities": [],
+          "parent": "c49f5d05-5947-4124-a1a7-4945ddd2c371",
+          "dependencies": [],
+          "subtasks": []
+        },
+        {
+          "task_id": "8510899b-33da-48c1-94eb-b632363f6ba9",
+          "title": "Identify Authentic Colombian Restaurants",
+          "description": "Research and recommend restaurants known for serving authentic Colombian cuisine.",
+          "expected_output": "List of authentic Colombian restaurants",
+          "intro": null,
+          "area": "Gastronomy",
+          "responsibilities": [],
+          "parent": "c49f5d05-5947-4124-a1a7-4945ddd2c371",
+          "dependencies": [
+            "a3be7f47-f2c4-4d42-89de-3c7a866e6a8a"
+          ],
+          "subtasks": []
+        },
+        {
+          "task_id": "be7724c4-f4f1-453b-b2cf-a4691d87711f",
+          "title": "Explore Local Food Markets",
+          "description": "Find and list local food markets in Bogotá offering fresh ingredients and traditional Colombian products.",
+          "expected_output": "List of local food markets",
+          "intro": null,
+          "area": "Gastronomy",
+          "responsibilities": [],
+          "parent": "c49f5d05-5947-4124-a1a7-4945ddd2c371",
+          "dependencies": [],
+          "subtasks": []
+        }
+      ]
+    },
+    {
+      "task_id": "34b11e7a-52c7-4658-9e2e-dc957b8f3095",
+      "title": "Local Culture",
+      "description": "Immersing in the local culture through various activities and experiences.",
+      "expected_output": "Insights into Bogotá's cultural heritage and opportunities to engage with local traditions.",
+      "intro": null,
+      "area": "Local Culture",
+      "responsibilities": [
+        "Identify cultural events or festivals happening during the visit.",
+        "Recommend visits to art galleries, theaters, or street markets to experience the city's vibrant culture."
+      ],
+      "parent": "02f6a0fe-eead-4bc1-b7a9-be2dce25a60f",
+      "dependencies": [],
+      "subtasks": [
+        {
+          "task_id": "452c2b9d-aed5-4f22-885a-e696957496e9",
+          "title": "Research Cultural Events and Festivals",
+          "description": "Identify and research cultural events and festivals happening in Bogotá during the visit.",
+          "expected_output": "List of upcoming cultural events and festivals in Bogotá.",
+          "intro": null,
+          "area": "Local Culture",
+          "responsibilities": [],
+          "parent": "34b11e7a-52c7-4658-9e2e-dc957b8f3095",
+          "dependencies": [],
+          "subtasks": []
+        },
+        {
+          "task_id": "0354ae71-4eb8-4313-8bc3-934b8f138c55",
+          "title": "Explore Art Galleries and Museums",
+          "description": "Identify popular art galleries and museums in Bogotá to explore the local art scene.",
+          "expected_output": "List of recommended art galleries and museums to visit.",
+          "intro": null,
+          "area": "Local Culture",
+          "responsibilities": [],
+          "parent": "34b11e7a-52c7-4658-9e2e-dc957b8f3095",
+          "dependencies": [],
+          "subtasks": []
+        },
+        {
+          "task_id": "42892ebf-cf72-4a29-a4a3-34441f7227f9",
+          "title": "Attend a Local Theater Performance",
+          "description": "Find information on local theater performances in Bogotá and select one to attend.",
+          "expected_output": "Information on a selected local theater performance to attend.",
+          "intro": null,
+          "area": "Local Culture",
+          "responsibilities": [],
+          "parent": "34b11e7a-52c7-4658-9e2e-dc957b8f3095",
+          "dependencies": [],
+          "subtasks": []
+        },
+        {
+          "task_id": "0070c1f7-ae39-4ba6-a59f-20a08ff7152d",
+          "title": "Visit a Traditional Street Market",
+          "description": "Research traditional street markets in Bogotá to experience local culture and cuisine.",
+          "expected_output": "List of recommended traditional street markets to visit.",
+          "intro": null,
+          "area": "Local Culture",
+          "responsibilities": [],
+          "parent": "34b11e7a-52c7-4658-9e2e-dc957b8f3095",
+          "dependencies": [],
+          "subtasks": []
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+TAREA PRINCIPAL: Tarea principal: Haz un plan de viaje a Bogotá, Colombia, incluyendo actividades, lugares turísticos, gastronomía y cultura local.
+Descripción: I have divided the task of planning a trip to Bogotá, Colombia into four functional areas: activities, tourist attractions, gastronomy, and local culture. Each area represents a distinct aspect of the travel planning process, allowing for a comprehensive and detailed travel plan.
+
+- Área: Activities
+  - Activities
+    · Research and identify popular activities in Bogotá.
+    · Create a daily itinerary with a mix of cultural, outdoor, and leisure activities.
+    - Research popular activities in Bogotá
+    - Create a daily itinerary
+- Área: Tourist Attractions
+  - Tourist Attractions
+    · Research iconic landmarks such as Monserrate and Plaza de Bolívar.
+    · Provide information on entry fees, operating hours, and transportation options to each attraction.
+    - Research Top Tourist Attractions
+    - Gather Information on Entry Fees and Operating Hours
+    - Explore Transportation Options
+- Área: Gastronomy
+  - Gastronomy
+    · Identify traditional Colombian dishes to try, such as arepas and bandeja paisa.
+    · Suggest restaurants known for serving authentic Colombian food.
+    - Identify Traditional Colombian Dishes
+    - Recommend Authentic Colombian Restaurants
+- Área: Local Culture
+  - Local Culture
+    · Research art galleries, museums, and cultural events in the city.
+    · Provide information on traditional festivals and cultural practices unique to Bogotá.
+    - Research Art Galleries and Museums
+    - Explore Traditional Festivals and Cultural Events

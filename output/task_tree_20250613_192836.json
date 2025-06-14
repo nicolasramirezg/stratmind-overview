@@ -1,0 +1,245 @@
+{
+  "task_id": "5e376f0b-215b-4e6c-9d68-5caf540a8a07",
+  "title": "Tarea principal: Planea un viaje a medellín, Colombia de fin de semana",
+  "description": "Planea un viaje a medellín, Colombia de fin de semana",
+  "expected_output": "Un plan de viaje detallado",
+  "intro": "In breaking down the task of planning a weekend trip to Medellín, Colombia, I have identified four functional areas. These areas cover the essential aspects of travel planning, ensuring a comprehensive and well-structured approach to creating a detailed travel plan.",
+  "area": null,
+  "responsibilities": [],
+  "parent": null,
+  "dependencies": [],
+  "subtasks": [
+    {
+      "task_id": "7275c36c-34be-4a09-8885-07d366272987",
+      "title": "Destination Research",
+      "description": "Researching and selecting the destination, Medellín, Colombia, for the weekend trip.",
+      "expected_output": "A list of attractions, accommodations, and activities in Medellín.",
+      "intro": null,
+      "area": "Destination Research",
+      "responsibilities": [
+        "Identify popular tourist attractions in Medellín.",
+        "Research accommodation options in different areas of the city.",
+        "Compile a list of recommended activities and dining options."
+      ],
+      "parent": "5e376f0b-215b-4e6c-9d68-5caf540a8a07",
+      "dependencies": [],
+      "subtasks": [
+        {
+          "task_id": "63a7b968-4521-4dc1-87d0-6d6dd7953002",
+          "title": "Research Popular Tourist Attractions",
+          "description": "Identify and list popular tourist attractions in Medellín.",
+          "expected_output": "List of popular tourist attractions in Medellín.",
+          "intro": null,
+          "area": "Destination Research",
+          "responsibilities": [],
+          "parent": "7275c36c-34be-4a09-8885-07d366272987",
+          "dependencies": [],
+          "subtasks": []
+        },
+        {
+          "task_id": "71337e77-996f-4cb9-a861-27a79e01865b",
+          "title": "Explore Accommodation Options",
+          "description": "Research accommodation options in different areas of Medellín.",
+          "expected_output": "List of recommended accommodations in Medellín.",
+          "intro": null,
+          "area": "Destination Research",
+          "responsibilities": [],
+          "parent": "7275c36c-34be-4a09-8885-07d366272987",
+          "dependencies": [],
+          "subtasks": []
+        },
+        {
+          "task_id": "f982bb0b-1987-44b8-a106-025f68f9bb76",
+          "title": "Compile List of Activities and Dining Options",
+          "description": "Gather information on activities and dining options in Medellín.",
+          "expected_output": "List of recommended activities and dining options in Medellín.",
+          "intro": null,
+          "area": "Destination Research",
+          "responsibilities": [],
+          "parent": "7275c36c-34be-4a09-8885-07d366272987",
+          "dependencies": [
+            "63a7b968-4521-4dc1-87d0-6d6dd7953002"
+          ],
+          "subtasks": []
+        }
+      ]
+    },
+    {
+      "task_id": "e72cb4b0-bae3-4701-90a6-331b3e326042",
+      "title": "Travel Logistics",
+      "description": "Handling all travel logistics, including transportation and accommodation arrangements.",
+      "expected_output": "A detailed itinerary with transportation and accommodation details.",
+      "intro": null,
+      "area": "Travel Logistics",
+      "responsibilities": [
+        "Book flights or other transportation to and from Medellín.",
+        "Reserve accommodation for the weekend stay.",
+        "Arrange for transportation within Medellín, such as car rental or public transportation."
+      ],
+      "parent": "5e376f0b-215b-4e6c-9d68-5caf540a8a07",
+      "dependencies": [],
+      "subtasks": [
+        {
+          "task_id": "722bd369-dc37-4e20-9635-553d21dc148b",
+          "title": "Book Flights to Medellín",
+          "description": "Book round-trip flights to Medellín for the weekend stay.",
+          "expected_output": "Confirmed flight tickets to and from Medellín.",
+          "intro": null,
+          "area": "Travel Logistics",
+          "responsibilities": [],
+          "parent": "e72cb4b0-bae3-4701-90a6-331b3e326042",
+          "dependencies": [],
+          "subtasks": []
+        },
+        {
+          "task_id": "7c3624aa-87d7-46e1-b818-90c37816e351",
+          "title": "Reserve Accommodation in Medellín",
+          "description": "Reserve a hotel or Airbnb for the weekend stay in Medellín.",
+          "expected_output": "Confirmation of accommodation booking in Medellín.",
+          "intro": null,
+          "area": "Travel Logistics",
+          "responsibilities": [],
+          "parent": "e72cb4b0-bae3-4701-90a6-331b3e326042",
+          "dependencies": [],
+          "subtasks": []
+        },
+        {
+          "task_id": "06cefca5-98fb-4ad0-a9ac-4b9e6df2740d",
+          "title": "Arrange Transportation in Medellín",
+          "description": "Plan for transportation within Medellín, such as car rental or public transportation.",
+          "expected_output": "Transportation arrangements within Medellín.",
+          "intro": null,
+          "area": "Travel Logistics",
+          "responsibilities": [],
+          "parent": "e72cb4b0-bae3-4701-90a6-331b3e326042",
+          "dependencies": [],
+          "subtasks": []
+        }
+      ]
+    },
+    {
+      "task_id": "42ff8c5d-af39-49a7-9cc7-c01ca55b7b6a",
+      "title": "Budget Planning",
+      "description": "Planning and managing the budget for the weekend trip to Medellín.",
+      "expected_output": "A budget breakdown including expenses for transportation, accommodation, activities, and meals.",
+      "intro": null,
+      "area": "Budget Planning",
+      "responsibilities": [
+        "Estimate costs for flights, accommodation, and transportation.",
+        "Research and allocate a budget for activities and dining.",
+        "Identify potential areas for cost-saving without compromising the quality of the trip."
+      ],
+      "parent": "5e376f0b-215b-4e6c-9d68-5caf540a8a07",
+      "dependencies": [],
+      "subtasks": [
+        {
+          "task_id": "581a57ce-f6d7-44b8-8ead-f7ab5c04f7a9",
+          "title": "Research Transportation Options",
+          "description": "Research and estimate costs for flights or other transportation options to Medellín.",
+          "expected_output": "Estimated cost for transportation.",
+          "intro": null,
+          "area": "Budget Planning",
+          "responsibilities": [],
+          "parent": "42ff8c5d-af39-49a7-9cc7-c01ca55b7b6a",
+          "dependencies": [],
+          "subtasks": []
+        },
+        {
+          "task_id": "4b8aeacd-46e9-42dd-bebc-7844c512f3c8",
+          "title": "Explore Accommodation Choices",
+          "description": "Research and allocate a budget for accommodation options in Medellín.",
+          "expected_output": "Budget breakdown for accommodation.",
+          "intro": null,
+          "area": "Budget Planning",
+          "responsibilities": [],
+          "parent": "42ff8c5d-af39-49a7-9cc7-c01ca55b7b6a",
+          "dependencies": [],
+          "subtasks": []
+        },
+        {
+          "task_id": "1c8552d8-f1e7-4871-8701-576e9b6478ce",
+          "title": "Plan Activities and Dining",
+          "description": "Allocate a budget for activities and dining during the weekend trip in Medellín.",
+          "expected_output": "Budget breakdown for activities and meals.",
+          "intro": null,
+          "area": "Budget Planning",
+          "responsibilities": [],
+          "parent": "42ff8c5d-af39-49a7-9cc7-c01ca55b7b6a",
+          "dependencies": [],
+          "subtasks": []
+        }
+      ]
+    },
+    {
+      "task_id": "9b1aeb97-6116-433e-8296-4edfd0d789e0",
+      "title": "Itinerary Creation",
+      "description": "Creating a detailed itinerary outlining the activities and schedule for the weekend trip.",
+      "expected_output": "A day-by-day itinerary with planned activities, timings, and locations.",
+      "intro": null,
+      "area": "Itinerary Creation",
+      "responsibilities": [
+        "Organize the sequence of activities and sightseeing spots.",
+        "Allocate time for travel between locations.",
+        "Include free time for relaxation or spontaneous exploration."
+      ],
+      "parent": "5e376f0b-215b-4e6c-9d68-5caf540a8a07",
+      "dependencies": [],
+      "subtasks": [
+        {
+          "task_id": "6d28aabf-60c2-44b3-af85-5a3b00e0c1d5",
+          "title": "Research Activities and Attractions",
+          "description": "Research and identify popular activities and attractions in Medellín for the weekend trip.",
+          "expected_output": "List of recommended activities and attractions.",
+          "intro": null,
+          "area": "Itinerary Creation",
+          "responsibilities": [],
+          "parent": "9b1aeb97-6116-433e-8296-4edfd0d789e0",
+          "dependencies": [],
+          "subtasks": []
+        },
+        {
+          "task_id": "e7b6de59-93c3-4d23-81d9-b82c13f0517e",
+          "title": "Create Day-by-Day Itinerary",
+          "description": "Organize the selected activities and attractions into a detailed day-by-day itinerary with timings and locations.",
+          "expected_output": "Day-by-day itinerary plan.",
+          "intro": null,
+          "area": "Itinerary Creation",
+          "responsibilities": [],
+          "parent": "9b1aeb97-6116-433e-8296-4edfd0d789e0",
+          "dependencies": [
+            "6d28aabf-60c2-44b3-af85-5a3b00e0c1d5"
+          ],
+          "subtasks": []
+        },
+        {
+          "task_id": "5d695250-e796-4f8d-9851-d18c3f1a90bf",
+          "title": "Allocate Travel Time",
+          "description": "Allocate sufficient time for travel between locations in the itinerary.",
+          "expected_output": "Travel time slots included in the itinerary.",
+          "intro": null,
+          "area": "Itinerary Creation",
+          "responsibilities": [],
+          "parent": "9b1aeb97-6116-433e-8296-4edfd0d789e0",
+          "dependencies": [
+            "e7b6de59-93c3-4d23-81d9-b82c13f0517e"
+          ],
+          "subtasks": []
+        },
+        {
+          "task_id": "a3396973-7857-4807-816f-75e2d0a98732",
+          "title": "Include Free Time",
+          "description": "Allocate free time for relaxation or spontaneous exploration in the itinerary.",
+          "expected_output": "Free time slots included in the itinerary.",
+          "intro": null,
+          "area": "Itinerary Creation",
+          "responsibilities": [],
+          "parent": "9b1aeb97-6116-433e-8296-4edfd0d789e0",
+          "dependencies": [
+            "e7b6de59-93c3-4d23-81d9-b82c13f0517e"
+          ],
+          "subtasks": []
+        }
+      ]
+    }
+  ]
+}

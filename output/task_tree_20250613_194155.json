@@ -1,0 +1,218 @@
+{
+  "task_id": "1728ca4f-2c14-4366-9c68-32fd07837044",
+  "title": "Tarea principal: Haz un plan de entrenamiento de Crossfit de 1 semana para una competencia de nivel intermedio",
+  "description": "Haz un plan de entrenamiento de Crossfit de 1 semana para una competencia de nivel intermedio",
+  "expected_output": "Un plan de viaje detallado",
+  "intro": "In breaking down the task of creating a 1-week Crossfit training plan for an intermediate-level competition, I have identified four key functional areas. Each area represents a distinct aspect of the training plan creation process, ensuring a comprehensive and well-structured approach to preparing for the competition.",
+  "area": null,
+  "responsibilities": [],
+  "parent": null,
+  "dependencies": [],
+  "subtasks": [
+    {
+      "task_id": "59ef14c0-ebfd-4791-a4c6-743f0070f54c",
+      "title": "Assessment",
+      "description": "Responsible for evaluating the athlete's current fitness level, goals, and competition requirements to inform the training plan.",
+      "expected_output": "Detailed assessment report outlining strengths, weaknesses, and specific areas for improvement.",
+      "intro": null,
+      "area": "Assessment",
+      "responsibilities": [
+        "Conduct fitness assessments to determine baseline performance.",
+        "Analyze competition requirements and athlete's goals."
+      ],
+      "parent": "1728ca4f-2c14-4366-9c68-32fd07837044",
+      "dependencies": [],
+      "subtasks": [
+        {
+          "task_id": "9f77fa6e-5faf-417e-a4ff-c0597d069136",
+          "title": "Conduct fitness assessments",
+          "description": "Determine athlete's baseline performance through various fitness tests.",
+          "expected_output": "Data on athlete's current fitness level, strengths, weaknesses, and areas for improvement.",
+          "intro": null,
+          "area": "Assessment",
+          "responsibilities": [],
+          "parent": "59ef14c0-ebfd-4791-a4c6-743f0070f54c",
+          "dependencies": [],
+          "subtasks": []
+        },
+        {
+          "task_id": "04696633-6f6a-4a94-b2e7-01ae53846540",
+          "title": "Analyze competition requirements and athlete's goals",
+          "description": "Review competition guidelines and athlete's objectives to align training plan with specific needs.",
+          "expected_output": "Clear understanding of competition demands and athlete's targets.",
+          "intro": null,
+          "area": "Assessment",
+          "responsibilities": [],
+          "parent": "59ef14c0-ebfd-4791-a4c6-743f0070f54c",
+          "dependencies": [],
+          "subtasks": []
+        }
+      ]
+    },
+    {
+      "task_id": "62352a94-a614-494e-9350-e0d277e1306c",
+      "title": "Program Design",
+      "description": "Develops a structured training program tailored to the athlete's needs, focusing on improving strengths, addressing weaknesses, and peaking for the competition.",
+      "expected_output": "Comprehensive 1-week Crossfit training plan with daily workouts, rest days, and recovery strategies.",
+      "intro": null,
+      "area": "Program Design",
+      "responsibilities": [
+        "Design a balanced program that includes strength, conditioning, and skill work.",
+        "Incorporate periodization principles to optimize performance leading up to the competition."
+      ],
+      "parent": "1728ca4f-2c14-4366-9c68-32fd07837044",
+      "dependencies": [],
+      "subtasks": [
+        {
+          "task_id": "cb42fc45-8d25-4f21-bc19-7e93db31e6a2",
+          "title": "Assess Athlete's Current Fitness Level",
+          "description": "Evaluate the athlete's strengths, weaknesses, and current fitness level to tailor the training program accordingly.",
+          "expected_output": "Assessment report highlighting areas of improvement.",
+          "intro": null,
+          "area": "Program Design",
+          "responsibilities": [],
+          "parent": "62352a94-a614-494e-9350-e0d277e1306c",
+          "dependencies": [],
+          "subtasks": []
+        },
+        {
+          "task_id": "ab2efb98-1dc7-4056-8419-e4a1db813164",
+          "title": "Design Weekly Training Schedule",
+          "description": "Create a structured 1-week training plan that includes strength training, conditioning workouts, and skill practice sessions.",
+          "expected_output": "Detailed daily workout schedule for the entire week.",
+          "intro": null,
+          "area": "Program Design",
+          "responsibilities": [],
+          "parent": "62352a94-a614-494e-9350-e0d277e1306c",
+          "dependencies": [
+            "cb42fc45-8d25-4f21-bc19-7e93db31e6a2"
+          ],
+          "subtasks": []
+        },
+        {
+          "task_id": "e7e212e2-abb3-41f1-9fbf-24ae6f155129",
+          "title": "Implement Periodization Principles",
+          "description": "Incorporate periodization techniques to optimize performance leading up to the competition, including phases of preparation, peaking, and recovery.",
+          "expected_output": "Periodized training plan outlining different phases and goals.",
+          "intro": null,
+          "area": "Program Design",
+          "responsibilities": [],
+          "parent": "62352a94-a614-494e-9350-e0d277e1306c",
+          "dependencies": [
+            "ab2efb98-1dc7-4056-8419-e4a1db813164"
+          ],
+          "subtasks": []
+        }
+      ]
+    },
+    {
+      "task_id": "58ed1fff-b304-49d2-a2eb-145d4dc40f9e",
+      "title": "Nutrition Planning",
+      "description": "Focuses on creating a nutrition plan that supports the athlete's training, performance, and recovery needs during the competition preparation phase.",
+      "expected_output": "Detailed nutrition guide outlining meal plans, macronutrient breakdown, and hydration strategies.",
+      "intro": null,
+      "area": "Nutrition Planning",
+      "responsibilities": [
+        "Calculate macronutrient requirements based on training volume and intensity.",
+        "Provide guidance on pre- and post-workout nutrition to enhance performance and recovery."
+      ],
+      "parent": "1728ca4f-2c14-4366-9c68-32fd07837044",
+      "dependencies": [],
+      "subtasks": [
+        {
+          "task_id": "b8b449fb-8555-4e81-a790-e424d3062d16",
+          "title": "Calculate Daily Macronutrient Requirements",
+          "description": "Determine the athlete's protein, carbohydrate, and fat needs based on training volume and intensity.",
+          "expected_output": "Daily macronutrient breakdown for the athlete.",
+          "intro": null,
+          "area": "Nutrition Planning",
+          "responsibilities": [],
+          "parent": "58ed1fff-b304-49d2-a2eb-145d4dc40f9e",
+          "dependencies": [],
+          "subtasks": []
+        },
+        {
+          "task_id": "33087b51-4e7a-4dd4-9c99-710f56bea09f",
+          "title": "Design Pre- and Post-Workout Nutrition Guidelines",
+          "description": "Develop specific recommendations for meals or snacks to be consumed before and after training sessions to optimize performance and recovery.",
+          "expected_output": "Detailed pre- and post-workout nutrition guidelines.",
+          "intro": null,
+          "area": "Nutrition Planning",
+          "responsibilities": [],
+          "parent": "58ed1fff-b304-49d2-a2eb-145d4dc40f9e",
+          "dependencies": [],
+          "subtasks": []
+        }
+      ]
+    },
+    {
+      "task_id": "6b1d0950-8bc8-4d94-afde-636f0032772f",
+      "title": "Monitoring and Adjustments",
+      "description": "Monitors the athlete's progress throughout the week, adjusts the training plan as needed, and provides feedback to optimize performance.",
+      "expected_output": "Regular progress reports, performance feedback, and adjustments to the training plan based on athlete's response.",
+      "intro": null,
+      "area": "Monitoring and Adjustments",
+      "responsibilities": [
+        "Track athlete's performance metrics and recovery markers.",
+        "Modify the training plan based on feedback, fatigue levels, and competition readiness indicators."
+      ],
+      "parent": "1728ca4f-2c14-4366-9c68-32fd07837044",
+      "dependencies": [],
+      "subtasks": [
+        {
+          "task_id": "3ef8e6b0-ad37-461d-8d9d-43d90bd93d35",
+          "title": "Track athlete's performance metrics",
+          "description": "Monitor key performance indicators such as strength, endurance, and speed throughout the week.",
+          "expected_output": "Data on athlete's performance metrics.",
+          "intro": null,
+          "area": "Monitoring and Adjustments",
+          "responsibilities": [],
+          "parent": "6b1d0950-8bc8-4d94-afde-636f0032772f",
+          "dependencies": [],
+          "subtasks": []
+        },
+        {
+          "task_id": "5add982a-3352-4de0-8155-0fbb5c4ceae9",
+          "title": "Monitor recovery markers",
+          "description": "Keep track of the athlete's recovery markers such as heart rate variability, sleep quality, and muscle soreness.",
+          "expected_output": "Data on athlete's recovery markers.",
+          "intro": null,
+          "area": "Monitoring and Adjustments",
+          "responsibilities": [],
+          "parent": "6b1d0950-8bc8-4d94-afde-636f0032772f",
+          "dependencies": [],
+          "subtasks": []
+        },
+        {
+          "task_id": "3bb8dd71-a4de-4738-bb01-84a8ce7e3d80",
+          "title": "Adjust training plan based on feedback",
+          "description": "Modify the training program according to athlete's feedback on the difficulty, soreness, and overall performance.",
+          "expected_output": "Updated training plan.",
+          "intro": null,
+          "area": "Monitoring and Adjustments",
+          "responsibilities": [],
+          "parent": "6b1d0950-8bc8-4d94-afde-636f0032772f",
+          "dependencies": [
+            "3ef8e6b0-ad37-461d-8d9d-43d90bd93d35",
+            "5add982a-3352-4de0-8155-0fbb5c4ceae9"
+          ],
+          "subtasks": []
+        },
+        {
+          "task_id": "f90ed8fc-ed9b-4fa4-96a8-ffe41199a388",
+          "title": "Provide feedback on performance",
+          "description": "Offer feedback to the athlete on their progress, areas of improvement, and overall performance.",
+          "expected_output": "Feedback on athlete's performance.",
+          "intro": null,
+          "area": "Monitoring and Adjustments",
+          "responsibilities": [],
+          "parent": "6b1d0950-8bc8-4d94-afde-636f0032772f",
+          "dependencies": [
+            "3bb8dd71-a4de-4738-bb01-84a8ce7e3d80"
+          ],
+          "subtasks": []
+        }
+      ]
+    }
+  ]
+}

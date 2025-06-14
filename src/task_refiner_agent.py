@@ -56,11 +56,13 @@ class TaskRefiner:
                 title = re.search(r"Title:\s*(.+)", block)
                 description = re.search(r"Description:\s*(.+)", block)
                 expected_output = re.search(r"Expected_output:\s*(.+)", block)
+                execution_type = re.search(r"Execution_type:\s*(.+)", block)  # <-- Añadido
                 dependencies = re.search(r"Dependencies:\s*(.+)", block)
                 refined.append({
                     "title": title.group(1).strip() if title else block.strip(),
                     "description": description.group(1).strip() if description else "",
                     "expected_output": expected_output.group(1).strip() if expected_output else "",
+                    "execution_type": execution_type.lower().strip() if execution_type else "llm",  # <-- Añadido
                     "dependencies": [d.strip() for d in dependencies.group(1).split(",")] if dependencies and dependencies.group(1).strip().lower() != "none" else []
                 })
 

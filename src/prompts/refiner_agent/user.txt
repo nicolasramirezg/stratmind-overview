@@ -7,6 +7,13 @@ ${parent_info}
 Subtask:
 "${subtask}"
 
+For each subtask, analyze the required resources and information to solve it:
+
+- If the subtask can be fully completed using only the information and reasoning available to the LLM (i.e., it does not require access to real-time data, external systems, APIs, or human intervention), set 'Execution_type' to 'llm'.
+- If the subtask requires information or actions that are not accessible to the LLM (such as real-world data, external APIs, databases, or manual steps), specify the appropriate 'Execution_type' (e.g., 'external_api', 'mcp', 'manual', etc.).
+
+Be precise: Only use 'llm' if the subtask can be solved entirely by the language model without any external input or action.
+
 Return your analysis using exactly the following format:
 
 ### ORIGINAL ###
@@ -20,9 +27,10 @@ Expected_output: <expected output>
 Subtask:
 Title: <short title>
 Description: <description>
+Execution_type: <llm|external_api|mcp|manual|...>
 Expected_output: <expected output>
 Dependencies: <comma-separated titles of other refined subtasks that must be completed first, or 'None'>
-... (repeat for each refined subtask, but DO NOT generate more than 3 subtasks in total)
+... (repeat for each refined subtask, but DO NOT generate more than 6 subtasks in total)
 
 If the subtask is already actionable, leave the '### REFINED ###' section empty.
 Do not include any explanations, comments, or extra text beyond these two sections.

@@ -1,0 +1,32 @@
+TAREA PRINCIPAL: Tarea principal: Haz un plan de entrenamiento de Crossfit de 1 semana para una competencia de nivel intermedio
+Descripción: I have divided the task of creating a 1-week Crossfit training plan for an intermediate-level competition into four functional areas. These areas cover different aspects of designing a comprehensive and effective training program, ensuring that each aspect is well-defined and manageable.
+
+- Área: Assessment
+  - Assessment
+    · Conduct fitness tests to measure strength, endurance, and flexibility.
+    · Analyze past performance data and competition history to identify areas for improvement.
+    - Conduct Fitness Tests
+    - Analyze Past Performance Data
+- Área: Program Design
+  - Program Design
+    · Create a balanced schedule with a mix of strength training, cardio, and skill work.
+    · Adjust the intensity and volume of workouts based on the athlete's assessment results.
+    - Assess Athlete's Fitness Level
+    - Design Daily Workout Schedule
+    - Adjust Intensity and Volume
+    - Incorporate Rest Days
+- Área: Nutrition Planning
+  - Nutrition Planning
+    · Calculate the athlete's daily caloric and macronutrient needs.
+    · Recommend pre- and post-workout nutrition strategies to optimize performance and recovery.
+    - Calculate Daily Caloric Needs
+    - Determine Macronutrient Breakdown
+    - Create Pre- and Post-Workout Nutrition Plan
+- Área: Monitoring and Adjustment
+  - Monitoring and Adjustment
+    · Monitor the athlete's workout performance, recovery, and overall well-being.
+    · Analyze training data and feedback to identify areas of improvement and modify the training plan accordingly.
+    - Collect Workout Performance Data
+    - Analyze Recovery Metrics
+    - Review Feedback from Athlete
+    - Adjust Training Plan
