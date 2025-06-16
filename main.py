@@ -1,18 +1,23 @@
+# Módulos estándar
+import json
+import os
+from datetime import datetime
+
+# Paquetes externos
+from dotenv import load_dotenv
+
+# Módulos locales
+from src.class_task import TaskManager, create_and_link_subtasks
 from src.decomposer_agent import Decomposer
+from src.executor_agent import execute_tasks_postorder
+from src.recursive_refiner_parent_subtask import refine_recursively
 from src.specialist_agent import SpecialistAgent
 from src.task_refiner_agent import TaskRefiner
-from src.recursive_refiner_parent_subtask import refine_recursively
 from src.utils.task_exporter import export_task_tree
-from src.utils.task_exporter_txt import export_task_tree_txt
-from src.class_task import Task, TaskManager, create_and_link_subtasks
-from src.prompt_generator import execute_tasks_postorder
-import os
-import json
-from dotenv import load_dotenv
+from src.utils.task_to_dict import task_to_dict
 
 
 load_dotenv()  # Solo esto, para cargar el .env
-
 
 def main():
     print("Iniciando main()")
@@ -129,43 +134,8 @@ def main():
     print("Executing all tasks with LLM or simulation as needed...")
     execute_tasks_postorder(root_task)
 
-    def task_to_dict(task, task_manager):
-        data = {
-            "task_id": task.task_id,
-            "title": task.title,
-            "description": task.description,
-            "expected_output": task.expected_output,
-            "area": task.area,
-            "responsibilities": getattr(task, "responsibilities", []),
-            "execution_type": getattr(task, "execution_type", "llm"),
-            "parent": task.parent.task_id if task.parent else None,
-            "dependencies": [dep.task_id for dep in getattr(task, "dependencies", set())],
-            "subtasks": [
-                task_to_dict(child, task_manager)
-                for child in task_manager.tasks.values()
-                if child.parent == task
-            ]
-        }
-        # Solo exporta prompt y result si no es área
-        if not [t for t in task_manager.tasks.values() if t.parent == task]:
-            data["prompt"] = getattr(task, "prompt", None)
-            data["result"] = getattr(task, "result", None)
-        else:
-            data["result"] = getattr(task, "result", None)
-        return data
-
-    # Al final de tu main():
-    output_dir = os.path.join(os.getcwd(), "output")
-    os.makedirs(output_dir, exist_ok=True)
-    output_path = os.path.join(output_dir, "task_treebogota4.json")
-
-    tree_json = task_to_dict(root_task, task_manager)
-    with open(output_path, "w", encoding="utf-8") as f:
-        json.dump(tree_json, f, indent=2, ensure_ascii=False)
-
-    print(f"\nÁrbol de tareas exportado a: {output_path}")
-    
-    export_task_tree(root_task, task_manager)
+    # Exportar con nombre personalizado
+    export_task_tree(root_task, task_manager, out_name="task_tree_bogota")
 
 if __name__ == "__main__":
     main()

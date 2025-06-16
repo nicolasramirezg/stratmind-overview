@@ -1,0 +1,35 @@
+TAREA PRINCIPAL: Tarea principal: Haz un plan de viaje a Bogotá, Colombia, incluyendo actividades, lugares turísticos, gastronomía y cultura local.
+Descripción: In breaking down the task of creating a travel plan to Bogotá, Colombia, I have identified four functional areas of specialization. Each area represents a distinct aspect of travel planning - activities, tourist attractions, gastronomy, and local culture. By dividing the task into these areas, we can ensure a comprehensive and well-rounded travel plan that covers key aspects of the trip to Bogotá.
+
+- Área: Activities
+  - Activities
+    · Research and recommend activities such as hiking in Monserrate, exploring the Gold Museum, and visiting Usaquén Market.
+    · Ensure a balance of cultural, outdoor, and leisure activities to cater to varied preferences.
+    - Research popular tourist attractions in Bogotá
+    - Create a diverse list of activities
+    - Determine the opening hours and accessibility of activities
+    - Estimate the duration and cost of each activity
+    - Prioritize activities based on preferences and constraints
+- Área: Tourist Attractions
+  - Tourist Attractions
+    · Identify key attractions like Plaza de Bolívar, La Candelaria neighborhood, and Botero Museum.
+    · Provide information on opening hours, ticket prices, and any special considerations for each attraction.
+    - Research Top Tourist Attractions in Bogotá
+    - Gather Information on Opening Hours and Ticket Prices
+    - Prioritize Tourist Attractions
+    - Create Itinerary with Time Allocation
+- Área: Gastronomy
+  - Gastronomy
+    · Research and suggest places to try Colombian specialties like bandeja paisa, ajiaco, and arepas.
+    · Include a mix of high-end restaurants, local eateries, and street food vendors for a diverse gastronomic experience.
+    - Research Traditional Colombian Dishes
+    - Identify Recommended Restaurants in Bogotá
+    - Curate a Diverse Culinary Experience
+    - Gather Information on Restaurant Details
+- Área: Local Culture
+  - Local Culture
+    · Provide information on traditional festivals, music venues, and art galleries to experience local culture.
+    · Offer tips on interacting with locals, understanding etiquette, and participating in cultural activities.
+    - Research Traditional Festivals
+    - Explore Local Music Venues
+    - Visit Art Galleries

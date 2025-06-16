@@ -1,4 +1,4 @@
-from src.class_task import Task, TaskManager
+from src.class_task import Task
 from openai import OpenAI
 
 def build_system_prompt(task: Task) -> str:

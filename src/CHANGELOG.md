@@ -20,4 +20,3 @@
 
 **Descripción:** se genera un txt con el árbol de subtareas.  
 **Notas:**
-- Se elimina "expected output"

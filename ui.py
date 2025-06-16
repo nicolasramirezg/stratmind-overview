@@ -1,11 +1,16 @@
 import streamlit as st
 import json
 from streamlit_tree_select import tree_select
+import os
 
 st.set_page_config(page_title="Task Tree", layout="wide")
 st.title("Task Tree (Interactive)")
 
-json_path = "c:/Users/nicol/Documents/MEBDS/TFM/git/agentLLM/output/task_treecrossfit2.json"
+# Construir la ruta al JSON de forma robusta
+json_path = os.path.normpath(os.path.join(
+    os.path.dirname(__file__),
+    "..", "output", "task_treebogota4.json"
+))
 
 with open(json_path, "r", encoding="utf-8") as f:
     data = json.load(f)
@@ -63,12 +68,20 @@ if selected and "value" in selected:
             show_result(selected_task['result'])
         elif 'subtasks' in selected_task and selected_task['subtasks']:
             st.markdown("**Aggregated Results from Subtasks:**")
-            for sub in selected_task['subtasks']:
-                st.markdown(f"- **{sub['title']}**")
-                if 'result' in sub and sub['result'] is not None:
-                    show_result(sub['result'], 1)
-                else:
-                    st.markdown("&nbsp;" * 4 + "_No result available for this subtask._")
+
+            def render_subtasks(subtasks, level=1):
+                for sub in subtasks:
+                    indent = "&nbsp;" * 4 * level
+                    st.markdown(f"{indent}▶️ **{sub['title']}**")
+                    if 'result' in sub and sub['result'] is not None:
+                        show_result(sub['result'], level + 1)
+                    elif 'subtasks' in sub and sub['subtasks']:
+                        render_subtasks(sub['subtasks'], level + 1)
+                    else:
+                        st.markdown(f"{indent}_No result available for this subtask._")
+
+            render_subtasks(selected_task['subtasks'])
+
         else:
             st.markdown("_No result available for this task._")
         if 'execution_type' in selected_task:
@@ -77,3 +90,14 @@ if selected and "value" in selected:
             st.markdown(f"**Responsibilities:** {', '.join(selected_task['responsibilities'])}")
         if 'dependencies' in selected_task and selected_task['dependencies']:
             st.markdown(f"**Dependencies:** {', '.join(selected_task['dependencies'])}")
+        if 'subtasks' in selected_task and selected_task['subtasks']:
+            st.markdown("**Subtasks and Their Results:**")
+            for sub in selected_task['subtasks']:
+                with st.expander(f"🔹 {sub['title']}"):
+                    st.markdown(f"**Description:** {sub.get('description', '')}")
+                    st.markdown(f"**Expected Output:** {sub.get('expected_output', '')}")
+                    if 'result' in sub and sub['result'] is not None:
+                        st.markdown("**Result:**")
+                        show_result(sub['result'], level=1)
+                    else:
+                        st.markdown("_No result available for this subtask._")

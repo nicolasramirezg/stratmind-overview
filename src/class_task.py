@@ -10,6 +10,23 @@ class Status:
 
 @dataclass
 class Task:
+
+    """
+    Representa una tarea dentro de un sistema jerárquico de ejecución por agentes.
+
+    Cada tarea puede tener:
+    - Subtareas anidadas (jerarquía padre-hijo)
+    - Dependencias explícitas de ejecución
+    - Una asignación a área funcional y/o agente
+    - Un prompt de entrada y resultado generado por un modelo LLM
+
+    Output: estructura en árbol con control de dependencias y serialización completa.
+    Ejemplo de uso:
+        t = Task(title="Diseñar campaña", description="...", expected_output="...")
+        t.add_subtask(Task(...))
+        t.add_dependency(otra_tarea)
+    """
+
     title: str
     description: str
     expected_output: str
@@ -87,6 +104,24 @@ class Task:
         return data
 
 class TaskManager:
+
+    """
+    Gestiona la creación, jerarquía y dependencias entre múltiples tareas.
+
+    Funcionalidades clave:
+    - Crear tareas y subtareas vinculadas por ID
+    - Registrar todas las tareas y su estado
+    - Resolver el orden de ejecución en base a dependencias (orden topológico)
+    - Serializar el sistema completo de tareas en un diccionario exportable
+
+    Output: diccionario completo de tareas con subtareas y dependencias resueltas.
+    Ejemplo de uso:
+        manager = TaskManager()
+        t1 = manager.create_task("Principal", "...", "...")
+        t2 = manager.create_task("Sub", "...", "...", parent_id=t1.task_id)
+        manager.add_dependency(t2.task_id, t1.task_id)
+    """
+
     def __init__(self):
         self.tasks = {}
         self.root_task_id = None  # <-- Añade este atributo
