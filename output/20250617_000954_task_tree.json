@@ -1,0 +1,328 @@
+{
+  "task_id": "1f41dc06-4a15-4cc1-814c-569ef63a615c",
+  "title": "Haz un plan de viaje a Bogotá, Colombia, incluyendo actividades, lugares turísticos, gastronomía y cultura local.",
+  "description": "Haz un plan de viaje a Bogotá, Colombia, incluyendo actividades, lugares turísticos, gastronomía y cultura local.",
+  "expected_output": "Un itinerario detallado de viaje.",
+  "area": null,
+  "responsibilities": [],
+  "execution_type": "llm",
+  "parent": null,
+  "dependencies": [],
+  "subtasks": [
+    {
+      "task_id": "0bb0156b-16e9-4538-a00a-28c614ffa51b",
+      "title": "Activities",
+      "description": "Responsible for planning engaging and diverse activities during the trip.",
+      "expected_output": "A list of activities that cater to different preferences and interests.",
+      "area": "Activities",
+      "responsibilities": [
+        "Research and recommend outdoor activities such as hiking in Monserrate or exploring the Salt Cathedral.",
+        "Plan cultural experiences like visiting museums, attending local events, or taking a graffiti tour."
+      ],
+      "execution_type": "llm",
+      "parent": "1f41dc06-4a15-4cc1-814c-569ef63a615c",
+      "dependencies": [],
+      "subtasks": [
+        {
+          "task_id": "09f24632-996e-4878-b56d-3a2223a09de9",
+          "title": "Research Outdoor Activities",
+          "description": "Identify and research outdoor activities such as hiking, biking, or nature parks for the trip.",
+          "expected_output": "List of outdoor activities with details and locations.",
+          "area": "Activities",
+          "responsibilities": [],
+          "execution_type": "llm",
+          "parent": "0bb0156b-16e9-4538-a00a-28c614ffa51b",
+          "dependencies": [],
+          "subtasks": [],
+          "prompt": {
+            "system": "You are an expert autonomous agent collaborating in a multi-step project. Your responsibility is to complete your assigned task using all available context and previous results. Always act as the main expert for your task: be decisive, avoid repetition, and provide clear, actionable outputs. Do NOT include any explanations, comments, or introductory phrases in your output.",
+            "user": "=== PROJECT ===\nTitle: Haz un plan de viaje a Bogotá, Colombia, incluyendo actividades, lugares turísticos, gastronomía y cultura local.\n\n=== AREA ===\nTitle: Activities\nDescription: Responsible for planning engaging and diverse activities during the trip.\n\n=== CURRENT TASK ===\nTitle: Research Outdoor Activities\nDescription: Identify and research outdoor activities such as hiking, biking, or nature parks for the trip.\nExpected Output: List of outdoor activities with details and locations.\n\n=== INSTRUCTION ===\nYou are responsible for completing the current task as part of the overall project. Use all available context, including dependency and previous results, but present your answer as your own expert recommendation or decision. Do NOT use phrases like 'Based on previous research', 'According to earlier results', or any introductory statements. Respond directly and professionally, as if you are the main expert responsible for this part of the project. If the task requires an external system or manual intervention, specify this clearly."
+          },
+          "result": "1. Monserrate Hill: Hiking trail with stunning views of Bogotá. Location: Eastern Hills of Bogotá.\n   \n2. Ciclovía: Enjoy biking through the city streets on Sundays when they are closed to traffic. Location: Various locations in Bogotá.\n\n3. Parque Nacional Natural Chingaza: Nature park offering hiking trails and birdwatching opportunities. Location: Northeast of Bogotá.\n\n4. Quebrada La Vieja: Hiking trail through a lush forest with waterfalls. Location: North of Bogotá.\n\n5. Usaquén Park: Green space for outdoor activities and relaxation. Location: Usaquén neighborhood in Bogotá."
+        },
+        {
+          "task_id": "d58edc6f-24e1-484d-bf14-247bd5d0c32b",
+          "title": "Plan Cultural Experiences",
+          "description": "Plan visits to museums, local events, street art tours, or cultural performances.",
+          "expected_output": "Itinerary of cultural experiences with dates, times, and locations.",
+          "area": "Activities",
+          "responsibilities": [],
+          "execution_type": "llm",
+          "parent": "0bb0156b-16e9-4538-a00a-28c614ffa51b",
+          "dependencies": [],
+          "subtasks": [],
+          "prompt": {
+            "system": "You are an expert autonomous agent collaborating in a multi-step project. Your responsibility is to complete your assigned task using all available context and previous results. Always act as the main expert for your task: be decisive, avoid repetition, and provide clear, actionable outputs. Do NOT include any explanations, comments, or introductory phrases in your output.",
+            "user": "=== PROJECT ===\nTitle: Haz un plan de viaje a Bogotá, Colombia, incluyendo actividades, lugares turísticos, gastronomía y cultura local.\n\n=== AREA ===\nTitle: Activities\nDescription: Responsible for planning engaging and diverse activities during the trip.\n\n=== CURRENT TASK ===\nTitle: Plan Cultural Experiences\nDescription: Plan visits to museums, local events, street art tours, or cultural performances.\nExpected Output: Itinerary of cultural experiences with dates, times, and locations.\n\n=== INSTRUCTION ===\nYou are responsible for completing the current task as part of the overall project. Use all available context, including dependency and previous results, but present your answer as your own expert recommendation or decision. Do NOT use phrases like 'Based on previous research', 'According to earlier results', or any introductory statements. Respond directly and professionally, as if you are the main expert responsible for this part of the project. If the task requires an external system or manual intervention, specify this clearly."
+          },
+          "result": "- Visit Gold Museum (Museo del Oro) on Day 1 at 10:00 AM.\n- Attend a traditional music and dance performance at Teatro Colón on Day 2 at 7:00 PM.\n- Explore street art in La Candelaria neighborhood on Day 3 in the afternoon.\n- Join a guided tour of Botero Museum on Day 4 at 11:00 AM.\n- Experience a live salsa music show at Quiebra Canto on Day 5 at 8:00 PM."
+        },
+        {
+          "task_id": "b40a44f2-c1bf-4175-aec1-71a2a59c2efc",
+          "title": "Explore Local Markets",
+          "description": "Find and explore traditional markets to experience local products, crafts, and cuisine.",
+          "expected_output": "List of recommended local markets with specialties.",
+          "area": "Activities",
+          "responsibilities": [],
+          "execution_type": "llm",
+          "parent": "0bb0156b-16e9-4538-a00a-28c614ffa51b",
+          "dependencies": [],
+          "subtasks": [],
+          "prompt": {
+            "system": "You are an expert autonomous agent collaborating in a multi-step project. Your responsibility is to complete your assigned task using all available context and previous results. Always act as the main expert for your task: be decisive, avoid repetition, and provide clear, actionable outputs. Do NOT include any explanations, comments, or introductory phrases in your output.",
+            "user": "=== PROJECT ===\nTitle: Haz un plan de viaje a Bogotá, Colombia, incluyendo actividades, lugares turísticos, gastronomía y cultura local.\n\n=== AREA ===\nTitle: Activities\nDescription: Responsible for planning engaging and diverse activities during the trip.\n\n=== CURRENT TASK ===\nTitle: Explore Local Markets\nDescription: Find and explore traditional markets to experience local products, crafts, and cuisine.\nExpected Output: List of recommended local markets with specialties.\n\n=== INSTRUCTION ===\nYou are responsible for completing the current task as part of the overall project. Use all available context, including dependency and previous results, but present your answer as your own expert recommendation or decision. Do NOT use phrases like 'Based on previous research', 'According to earlier results', or any introductory statements. Respond directly and professionally, as if you are the main expert responsible for this part of the project. If the task requires an external system or manual intervention, specify this clearly."
+          },
+          "result": "1. Paloquemao Market - Known for fresh produce, flowers, and local Colombian snacks.\n2. Usaquén Market - Offers a mix of artisan crafts, antiques, and delicious street food.\n3. Mercado de las Pulgas de San Alejo - Great for unique souvenirs, vintage items, and a vibrant atmosphere.\n4. Plaza de Mercado de La Perseverancia - Explore traditional Colombian ingredients, street food, and cultural displays.\n5. Mercado de las Pulgas de Usaquén - Ideal for browsing through second-hand treasures, crafts, and enjoying local bites."
+        }
+      ],
+      "result": {
+        "Research Outdoor Activities": "1. Monserrate Hill: Hiking trail with stunning views of Bogotá. Location: Eastern Hills of Bogotá.\n   \n2. Ciclovía: Enjoy biking through the city streets on Sundays when they are closed to traffic. Location: Various locations in Bogotá.\n\n3. Parque Nacional Natural Chingaza: Nature park offering hiking trails and birdwatching opportunities. Location: Northeast of Bogotá.\n\n4. Quebrada La Vieja: Hiking trail through a lush forest with waterfalls. Location: North of Bogotá.\n\n5. Usaquén Park: Green space for outdoor activities and relaxation. Location: Usaquén neighborhood in Bogotá.",
+        "Plan Cultural Experiences": "- Visit Gold Museum (Museo del Oro) on Day 1 at 10:00 AM.\n- Attend a traditional music and dance performance at Teatro Colón on Day 2 at 7:00 PM.\n- Explore street art in La Candelaria neighborhood on Day 3 in the afternoon.\n- Join a guided tour of Botero Museum on Day 4 at 11:00 AM.\n- Experience a live salsa music show at Quiebra Canto on Day 5 at 8:00 PM.",
+        "Explore Local Markets": "1. Paloquemao Market - Known for fresh produce, flowers, and local Colombian snacks.\n2. Usaquén Market - Offers a mix of artisan crafts, antiques, and delicious street food.\n3. Mercado de las Pulgas de San Alejo - Great for unique souvenirs, vintage items, and a vibrant atmosphere.\n4. Plaza de Mercado de La Perseverancia - Explore traditional Colombian ingredients, street food, and cultural displays.\n5. Mercado de las Pulgas de Usaquén - Ideal for browsing through second-hand treasures, crafts, and enjoying local bites."
+      }
+    },
+    {
+      "task_id": "bc6ddb09-04fe-4dfa-b0f3-ea2308d91877",
+      "title": "Tourist Attractions",
+      "description": "Focuses on identifying and scheduling visits to key tourist spots in Bogotá.",
+      "expected_output": "A detailed itinerary of must-see attractions in the city.",
+      "area": "Tourist Attractions",
+      "responsibilities": [
+        "Identify iconic landmarks like Plaza de Bolívar, La Candelaria, and Gold Museum for inclusion in the itinerary.",
+        "Schedule visits to historical sites such as Usaquén and Botero Museum."
+      ],
+      "execution_type": "llm",
+      "parent": "1f41dc06-4a15-4cc1-814c-569ef63a615c",
+      "dependencies": [],
+      "subtasks": [
+        {
+          "task_id": "2d72a304-d8fb-4337-85d3-428d52b7cc6b",
+          "title": "Identify Key Tourist Attractions",
+          "description": "Identify and list the main tourist attractions in Bogotá that should be included in the itinerary.",
+          "expected_output": "List of key tourist attractions in Bogotá.",
+          "area": "Tourist Attractions",
+          "responsibilities": [],
+          "execution_type": "llm",
+          "parent": "bc6ddb09-04fe-4dfa-b0f3-ea2308d91877",
+          "dependencies": [],
+          "subtasks": [],
+          "prompt": {
+            "system": "You are an expert autonomous agent collaborating in a multi-step project. Your responsibility is to complete your assigned task using all available context and previous results. Always act as the main expert for your task: be decisive, avoid repetition, and provide clear, actionable outputs. Do NOT include any explanations, comments, or introductory phrases in your output.",
+            "user": "=== PROJECT ===\nTitle: Haz un plan de viaje a Bogotá, Colombia, incluyendo actividades, lugares turísticos, gastronomía y cultura local.\n\n=== AREA ===\nTitle: Tourist Attractions\nDescription: Focuses on identifying and scheduling visits to key tourist spots in Bogotá.\n\n=== CURRENT TASK ===\nTitle: Identify Key Tourist Attractions\nDescription: Identify and list the main tourist attractions in Bogotá that should be included in the itinerary.\nExpected Output: List of key tourist attractions in Bogotá.\n\n=== INSTRUCTION ===\nYou are responsible for completing the current task as part of the overall project. Use all available context, including dependency and previous results, but present your answer as your own expert recommendation or decision. Do NOT use phrases like 'Based on previous research', 'According to earlier results', or any introductory statements. Respond directly and professionally, as if you are the main expert responsible for this part of the project. If the task requires an external system or manual intervention, specify this clearly."
+          },
+          "result": "- Monserrate\n- La Candelaria (Historic District)\n- Gold Museum (Museo del Oro)\n- Botero Museum (Museo Botero)\n- Usaquén (for its Sunday market)\n- Salt Cathedral of Zipaquirá\n- Plaza de Bolívar\n- Simon Bolivar Metropolitan Park\n- Maloka Interactive Museum\n- National Museum of Colombia"
+        },
+        {
+          "task_id": "3d7e4d60-4ff5-4f04-998d-512227a8fe9c",
+          "title": "Research Opening Hours and Entry Fees",
+          "description": "Gather information on the opening hours and entry fees for each tourist attraction to plan the itinerary effectively.",
+          "expected_output": "Opening hours and entry fees for each tourist attraction.",
+          "area": "Tourist Attractions",
+          "responsibilities": [],
+          "execution_type": "llm",
+          "parent": "bc6ddb09-04fe-4dfa-b0f3-ea2308d91877",
+          "dependencies": [
+            "2d72a304-d8fb-4337-85d3-428d52b7cc6b"
+          ],
+          "subtasks": [],
+          "prompt": {
+            "system": "You are an expert autonomous agent collaborating in a multi-step project. Your responsibility is to complete your assigned task using all available context and previous results. Always act as the main expert for your task: be decisive, avoid repetition, and provide clear, actionable outputs. Do NOT include any explanations, comments, or introductory phrases in your output.",
+            "user": "=== PROJECT ===\nTitle: Haz un plan de viaje a Bogotá, Colombia, incluyendo actividades, lugares turísticos, gastronomía y cultura local.\n\n=== AREA ===\nTitle: Tourist Attractions\nDescription: Focuses on identifying and scheduling visits to key tourist spots in Bogotá.\n\n=== DEPENDENCY RESULTS ===\nThe following tasks must be completed before this one. Their results are provided for your reference:\n\n- Dependency: Identify Key Tourist Attractions\n  Description: Identify and list the main tourist attractions in Bogotá that should be included in the itinerary.\n  Result: - Monserrate\n- La Candelaria (Historic District)\n- Gold Museum (Museo del Oro)\n- Botero Museum (Museo Botero)\n- Usaquén (for its Sunday market)\n- Salt Cathedral of Zipaquirá\n- Plaza de Bolívar\n- Simon Bolivar Metropolitan Park\n- Maloka Interactive Museum\n- National Museum of Colombia\n\n\n=== CURRENT TASK ===\nTitle: Research Opening Hours and Entry Fees\nDescription: Gather information on the opening hours and entry fees for each tourist attraction to plan the itinerary effectively.\nExpected Output: Opening hours and entry fees for each tourist attraction.\n\n=== INSTRUCTION ===\nYou are responsible for completing the current task as part of the overall project. Use all available context, including dependency and previous results, but present your answer as your own expert recommendation or decision. Do NOT use phrases like 'Based on previous research', 'According to earlier results', or any introductory statements. Respond directly and professionally, as if you are the main expert responsible for this part of the project. If the task requires an external system or manual intervention, specify this clearly."
+          },
+          "result": "- Monserrate: Open daily from 6:30 AM to 12:00 AM. Entry fee varies depending on the chosen transportation method (cable car, funicular, or hiking).\n- La Candelaria (Historic District): No entry fee as it's a neighborhood to explore freely.\n- Gold Museum (Museo del Oro): Open Tuesday to Saturday from 9:00 AM to 6:00 PM, Sundays and holidays from 10:00 AM to 4:00 PM. Entry fee is COP 4,000 for nationals and residents, COP 10,000 for foreigners.\n- Botero Museum (Museo Botero): Open Tuesday to Sunday from 9:00 AM to 5:00 PM. Free entry.\n- Usaquén (for its Sunday market): The market is open on Sundays from morning until late afternoon. No entry fee.\n- Salt Cathedral of Zipaquirá: Open daily from 9:00 AM to 5:30 PM. Entry fee is COP 62,000 for adults, COP 52,000 for students.\n- Plaza de Bolívar: Open to the public all day. No entry fee.\n- Simon Bolivar Metropolitan Park: Open daily from 5:00 AM to 6:00 PM. No entry fee.\n- Maloka Interactive Museum: Open Wednesday to Sunday from 9:30 AM to 5:30 PM. Entry fee is COP 22,000 for adults, COP 19,000 for children.\n- National Museum of Colombia: Open Tuesday to Saturday from 10:00 AM to 5:00 PM, Sundays from 10:00 AM to 4:00 PM. Entry fee is COP 5,000 for nationals and residents, COP 10,000 for foreigners."
+        },
+        {
+          "task_id": "cca42c2b-9f2d-4cf3-8e57-84041c7fd208",
+          "title": "Create Itinerary Schedule",
+          "description": "Organize the visits to the tourist attractions into a detailed itinerary schedule considering opening hours, distances, and logistical feasibility.",
+          "expected_output": "Detailed itinerary schedule with time slots for each attraction visit.",
+          "area": "Tourist Attractions",
+          "responsibilities": [],
+          "execution_type": "llm",
+          "parent": "bc6ddb09-04fe-4dfa-b0f3-ea2308d91877",
+          "dependencies": [
+            "2d72a304-d8fb-4337-85d3-428d52b7cc6b",
+            "3d7e4d60-4ff5-4f04-998d-512227a8fe9c"
+          ],
+          "subtasks": [],
+          "prompt": {
+            "system": "You are an expert autonomous agent collaborating in a multi-step project. Your responsibility is to complete your assigned task using all available context and previous results. Always act as the main expert for your task: be decisive, avoid repetition, and provide clear, actionable outputs. Do NOT include any explanations, comments, or introductory phrases in your output.",
+            "user": "=== PROJECT ===\nTitle: Haz un plan de viaje a Bogotá, Colombia, incluyendo actividades, lugares turísticos, gastronomía y cultura local.\n\n=== AREA ===\nTitle: Tourist Attractions\nDescription: Focuses on identifying and scheduling visits to key tourist spots in Bogotá.\n\n=== DEPENDENCY RESULTS ===\nThe following tasks must be completed before this one. Their results are provided for your reference:\n\n- Dependency: Identify Key Tourist Attractions\n  Description: Identify and list the main tourist attractions in Bogotá that should be included in the itinerary.\n  Result: - Monserrate\n- La Candelaria (Historic District)\n- Gold Museum (Museo del Oro)\n- Botero Museum (Museo Botero)\n- Usaquén (for its Sunday market)\n- Salt Cathedral of Zipaquirá\n- Plaza de Bolívar\n- Simon Bolivar Metropolitan Park\n- Maloka Interactive Museum\n- National Museum of Colombia\n\n- Dependency: Research Opening Hours and Entry Fees\n  Description: Gather information on the opening hours and entry fees for each tourist attraction to plan the itinerary effectively.\n  Result: - Monserrate: Open daily from 6:30 AM to 12:00 AM. Entry fee varies depending on the chosen transportation method (cable car, funicular, or hiking).\n- La Candelaria (Historic District): No entry fee as it's a neighborhood to explore freely.\n- Gold Museum (Museo del Oro): Open Tuesday to Saturday from 9:00 AM to 6:00 PM, Sundays and holidays from 10:00 AM to 4:00 PM. Entry fee is COP 4,000 for nationals and residents, COP 10,000 for foreigners.\n- Botero Museum (Museo Botero): Open Tuesday to Sunday from 9:00 AM to 5:00 PM. Free entry.\n- Usaquén (for its Sunday market): The market is open on Sundays from morning until late afternoon. No entry fee.\n- Salt Cathedral of Zipaquirá: Open daily from 9:00 AM to 5:30 PM. Entry fee is COP 62,000 for adults, COP 52,000 for students.\n- Plaza de Bolívar\n...[truncated]...\n\n\n=== CURRENT TASK ===\nTitle: Create Itinerary Schedule\nDescription: Organize the visits to the tourist attractions into a detailed itinerary schedule considering opening hours, distances, and logistical feasibility.\nExpected Output: Detailed itinerary schedule with time slots for each attraction visit.\n\n=== INSTRUCTION ===\nYou are responsible for completing the current task as part of the overall project. Use all available context, including dependency and previous results, but present your answer as your own expert recommendation or decision. Do NOT use phrases like 'Based on previous research', 'According to earlier results', or any introductory statements. Respond directly and professionally, as if you are the main expert responsible for this part of the project. If the task requires an external system or manual intervention, specify this clearly."
+          },
+          "result": "**Itinerary Schedule for Bogotá, Colombia:**\n\n- **Day 1:**\n  - 9:00 AM - Visit Gold Museum (Museo del Oro)\n  - 11:00 AM - Explore La Candelaria (Historic District)\n  - 1:00 PM - Lunch at a local restaurant in La Candelaria\n  - 3:00 PM - Visit Botero Museum (Museo Botero)\n  - 5:00 PM - Wander around Plaza de Bolívar\n\n- **Day 2:**\n  - 8:00 AM - Depart for Salt Cathedral of Zipaquirá\n  - 10:00 AM - Explore Salt Cathedral of Zipaquirá\n  - 1:00 PM - Lunch nearby\n  - 3:00 PM - Visit Usaquén for its Sunday market\n  - 6:00 PM - Return to accommodation\n\n- **Day 3:**\n  - 7:00 AM - Start early to visit Monserrate\n  - 10:00 AM - Explore Simon Bolivar Metropolitan Park\n  - 12:00 PM - Visit Maloka Interactive Museum\n  - 2:00 PM - Lunch at a local restaurant\n  - 4:00 PM - Visit National Museum of Colombia\n  - 6:00 PM - Free time for shopping or leisure activities\n\n**Note:** Ensure to consider transportation time between locations and allocate buffer time for unexpected delays."
+        }
+      ],
+      "result": {
+        "Identify Key Tourist Attractions": "- Monserrate\n- La Candelaria (Historic District)\n- Gold Museum (Museo del Oro)\n- Botero Museum (Museo Botero)\n- Usaquén (for its Sunday market)\n- Salt Cathedral of Zipaquirá\n- Plaza de Bolívar\n- Simon Bolivar Metropolitan Park\n- Maloka Interactive Museum\n- National Museum of Colombia",
+        "Research Opening Hours and Entry Fees": "- Monserrate: Open daily from 6:30 AM to 12:00 AM. Entry fee varies depending on the chosen transportation method (cable car, funicular, or hiking).\n- La Candelaria (Historic District): No entry fee as it's a neighborhood to explore freely.\n- Gold Museum (Museo del Oro): Open Tuesday to Saturday from 9:00 AM to 6:00 PM, Sundays and holidays from 10:00 AM to 4:00 PM. Entry fee is COP 4,000 for nationals and residents, COP 10,000 for foreigners.\n- Botero Museum (Museo Botero): Open Tuesday to Sunday from 9:00 AM to 5:00 PM. Free entry.\n- Usaquén (for its Sunday market): The market is open on Sundays from morning until late afternoon. No entry fee.\n- Salt Cathedral of Zipaquirá: Open daily from 9:00 AM to 5:30 PM. Entry fee is COP 62,000 for adults, COP 52,000 for students.\n- Plaza de Bolívar: Open to the public all day. No entry fee.\n- Simon Bolivar Metropolitan Park: Open daily from 5:00 AM to 6:00 PM. No entry fee.\n- Maloka Interactive Museum: Open Wednesday to Sunday from 9:30 AM to 5:30 PM. Entry fee is COP 22,000 for adults, COP 19,000 for children.\n- National Museum of Colombia: Open Tuesday to Saturday from 10:00 AM to 5:00 PM, Sundays from 10:00 AM to 4:00 PM. Entry fee is COP 5,000 for nationals and residents, COP 10,000 for foreigners.",
+        "Create Itinerary Schedule": "**Itinerary Schedule for Bogotá, Colombia:**\n\n- **Day 1:**\n  - 9:00 AM - Visit Gold Museum (Museo del Oro)\n  - 11:00 AM - Explore La Candelaria (Historic District)\n  - 1:00 PM - Lunch at a local restaurant in La Candelaria\n  - 3:00 PM - Visit Botero Museum (Museo Botero)\n  - 5:00 PM - Wander around Plaza de Bolívar\n\n- **Day 2:**\n  - 8:00 AM - Depart for Salt Cathedral of Zipaquirá\n  - 10:00 AM - Explore Salt Cathedral of Zipaquirá\n  - 1:00 PM - Lunch nearby\n  - 3:00 PM - Visit Usaquén for its Sunday market\n  - 6:00 PM - Return to accommodation\n\n- **Day 3:**\n  - 7:00 AM - Start early to visit Monserrate\n  - 10:00 AM - Explore Simon Bolivar Metropolitan Park\n  - 12:00 PM - Visit Maloka Interactive Museum\n  - 2:00 PM - Lunch at a local restaurant\n  - 4:00 PM - Visit National Museum of Colombia\n  - 6:00 PM - Free time for shopping or leisure activities\n\n**Note:** Ensure to consider transportation time between locations and allocate buffer time for unexpected delays."
+      }
+    },
+    {
+      "task_id": "9b5d4938-9eff-4ea0-87c7-2e2bce1d9422",
+      "title": "Gastronomy",
+      "description": "Specializes in selecting and recommending local culinary experiences.",
+      "expected_output": "A curated list of restaurants and food experiences showcasing Colombian cuisine.",
+      "area": "Gastronomy",
+      "responsibilities": [
+        "Research and suggest traditional dishes to try, such as ajiaco, bandeja paisa, and arepas.",
+        "Recommend dining establishments ranging from street food vendors to upscale restaurants for a diverse gastronomic experience."
+      ],
+      "execution_type": "llm",
+      "parent": "1f41dc06-4a15-4cc1-814c-569ef63a615c",
+      "dependencies": [],
+      "subtasks": [
+        {
+          "task_id": "f3639bbf-87ae-411f-b358-509e27140f8e",
+          "title": "Research Traditional Colombian Dishes",
+          "description": "Identify and compile a list of traditional Colombian dishes to recommend for tasting.",
+          "expected_output": "List of traditional Colombian dishes.",
+          "area": "Gastronomy",
+          "responsibilities": [],
+          "execution_type": "llm",
+          "parent": "9b5d4938-9eff-4ea0-87c7-2e2bce1d9422",
+          "dependencies": [],
+          "subtasks": [],
+          "prompt": {
+            "system": "You are an expert autonomous agent collaborating in a multi-step project. Your responsibility is to complete your assigned task using all available context and previous results. Always act as the main expert for your task: be decisive, avoid repetition, and provide clear, actionable outputs. Do NOT include any explanations, comments, or introductory phrases in your output.",
+            "user": "=== PROJECT ===\nTitle: Haz un plan de viaje a Bogotá, Colombia, incluyendo actividades, lugares turísticos, gastronomía y cultura local.\n\n=== AREA ===\nTitle: Gastronomy\nDescription: Specializes in selecting and recommending local culinary experiences.\n\n=== CURRENT TASK ===\nTitle: Research Traditional Colombian Dishes\nDescription: Identify and compile a list of traditional Colombian dishes to recommend for tasting.\nExpected Output: List of traditional Colombian dishes.\n\n=== INSTRUCTION ===\nYou are responsible for completing the current task as part of the overall project. Use all available context, including dependency and previous results, but present your answer as your own expert recommendation or decision. Do NOT use phrases like 'Based on previous research', 'According to earlier results', or any introductory statements. Respond directly and professionally, as if you are the main expert responsible for this part of the project. If the task requires an external system or manual intervention, specify this clearly."
+          },
+          "result": "- Ajiaco\n- Bandeja Paisa\n- Sancocho\n- Arepas\n- Lechona\n- Empanadas\n- Fritanga\n- Tamal\n- Pandebono\n- Chicharrón"
+        },
+        {
+          "task_id": "8a0d6744-bd38-4ffd-a336-a1269fa567f3",
+          "title": "Curate a List of Recommended Restaurants",
+          "description": "Research and select a variety of restaurants in Bogotá offering authentic Colombian cuisine.",
+          "expected_output": "Curated list of recommended restaurants.",
+          "area": "Gastronomy",
+          "responsibilities": [],
+          "execution_type": "llm",
+          "parent": "9b5d4938-9eff-4ea0-87c7-2e2bce1d9422",
+          "dependencies": [],
+          "subtasks": [],
+          "prompt": {
+            "system": "You are an expert autonomous agent collaborating in a multi-step project. Your responsibility is to complete your assigned task using all available context and previous results. Always act as the main expert for your task: be decisive, avoid repetition, and provide clear, actionable outputs. Do NOT include any explanations, comments, or introductory phrases in your output.",
+            "user": "=== PROJECT ===\nTitle: Haz un plan de viaje a Bogotá, Colombia, incluyendo actividades, lugares turísticos, gastronomía y cultura local.\n\n=== AREA ===\nTitle: Gastronomy\nDescription: Specializes in selecting and recommending local culinary experiences.\n\n=== CURRENT TASK ===\nTitle: Curate a List of Recommended Restaurants\nDescription: Research and select a variety of restaurants in Bogotá offering authentic Colombian cuisine.\nExpected Output: Curated list of recommended restaurants.\n\n=== INSTRUCTION ===\nYou are responsible for completing the current task as part of the overall project. Use all available context, including dependency and previous results, but present your answer as your own expert recommendation or decision. Do NOT use phrases like 'Based on previous research', 'According to earlier results', or any introductory statements. Respond directly and professionally, as if you are the main expert responsible for this part of the project. If the task requires an external system or manual intervention, specify this clearly."
+          },
+          "result": "- Andrés Carne de Res (Chía) - Known for its lively atmosphere and traditional Colombian dishes.\n- La Puerta Falsa - Oldest restaurant in Bogotá, famous for its Ajiaco soup.\n- Harry Sasson - Upscale dining offering a modern twist on Colombian cuisine.\n- Leo Cocina y Cava - Fine dining experience with a focus on local ingredients and flavors.\n- La Mar - Excellent choice for seafood lovers, offering a fusion of Colombian and Peruvian cuisine."
+        },
+        {
+          "task_id": "c5ffd29f-1406-4ace-946a-ccc125515514",
+          "title": "Recommend Street Food Vendors",
+          "description": "Identify popular street food vendors in Bogotá known for serving delicious local snacks.",
+          "expected_output": "List of recommended street food vendors.",
+          "area": "Gastronomy",
+          "responsibilities": [],
+          "execution_type": "llm",
+          "parent": "9b5d4938-9eff-4ea0-87c7-2e2bce1d9422",
+          "dependencies": [],
+          "subtasks": [],
+          "prompt": {
+            "system": "You are an expert autonomous agent collaborating in a multi-step project. Your responsibility is to complete your assigned task using all available context and previous results. Always act as the main expert for your task: be decisive, avoid repetition, and provide clear, actionable outputs. Do NOT include any explanations, comments, or introductory phrases in your output.",
+            "user": "=== PROJECT ===\nTitle: Haz un plan de viaje a Bogotá, Colombia, incluyendo actividades, lugares turísticos, gastronomía y cultura local.\n\n=== AREA ===\nTitle: Gastronomy\nDescription: Specializes in selecting and recommending local culinary experiences.\n\n=== CURRENT TASK ===\nTitle: Recommend Street Food Vendors\nDescription: Identify popular street food vendors in Bogotá known for serving delicious local snacks.\nExpected Output: List of recommended street food vendors.\n\n=== INSTRUCTION ===\nYou are responsible for completing the current task as part of the overall project. Use all available context, including dependency and previous results, but present your answer as your own expert recommendation or decision. Do NOT use phrases like 'Based on previous research', 'According to earlier results', or any introductory statements. Respond directly and professionally, as if you are the main expert responsible for this part of the project. If the task requires an external system or manual intervention, specify this clearly."
+          },
+          "result": "1. La Puerta Falsa\n2. Andrés Carne de Res\n3. Arepas del 7\n4. El Perro Caliente\n5. La Esquina del Pandebono\n\nThese street food vendors in Bogotá are highly recommended for their delicious local snacks."
+        }
+      ],
+      "result": {
+        "Research Traditional Colombian Dishes": "- Ajiaco\n- Bandeja Paisa\n- Sancocho\n- Arepas\n- Lechona\n- Empanadas\n- Fritanga\n- Tamal\n- Pandebono\n- Chicharrón",
+        "Curate a List of Recommended Restaurants": "- Andrés Carne de Res (Chía) - Known for its lively atmosphere and traditional Colombian dishes.\n- La Puerta Falsa - Oldest restaurant in Bogotá, famous for its Ajiaco soup.\n- Harry Sasson - Upscale dining offering a modern twist on Colombian cuisine.\n- Leo Cocina y Cava - Fine dining experience with a focus on local ingredients and flavors.\n- La Mar - Excellent choice for seafood lovers, offering a fusion of Colombian and Peruvian cuisine.",
+        "Recommend Street Food Vendors": "1. La Puerta Falsa\n2. Andrés Carne de Res\n3. Arepas del 7\n4. El Perro Caliente\n5. La Esquina del Pandebono\n\nThese street food vendors in Bogotá are highly recommended for their delicious local snacks."
+      }
+    },
+    {
+      "task_id": "e20fa708-dd26-4465-8eee-c47b88de72f8",
+      "title": "Local Culture",
+      "description": "Focuses on immersing travelers in the vibrant culture of Bogotá.",
+      "expected_output": "A cultural agenda that includes music, dance, and art experiences.",
+      "area": "Local Culture",
+      "responsibilities": [
+        "Arrange visits to cultural centers like Teatro Colón or Teatro Mayor Julio Mario Santo Domingo.",
+        "Suggest opportunities to witness traditional music and dance performances, such as salsa or cumbia shows."
+      ],
+      "execution_type": "llm",
+      "parent": "1f41dc06-4a15-4cc1-814c-569ef63a615c",
+      "dependencies": [],
+      "subtasks": [
+        {
+          "task_id": "6a4d944c-56d0-4d60-afd8-a404ea20f56d",
+          "title": "Identify Traditional Music Venues",
+          "description": "Find venues in Bogotá where traditional Colombian music performances take place.",
+          "expected_output": "List of traditional music venues in Bogotá.",
+          "area": "Local Culture",
+          "responsibilities": [],
+          "execution_type": "llm",
+          "parent": "e20fa708-dd26-4465-8eee-c47b88de72f8",
+          "dependencies": [],
+          "subtasks": [],
+          "prompt": {
+            "system": "You are an expert autonomous agent collaborating in a multi-step project. Your responsibility is to complete your assigned task using all available context and previous results. Always act as the main expert for your task: be decisive, avoid repetition, and provide clear, actionable outputs. Do NOT include any explanations, comments, or introductory phrases in your output.",
+            "user": "=== PROJECT ===\nTitle: Haz un plan de viaje a Bogotá, Colombia, incluyendo actividades, lugares turísticos, gastronomía y cultura local.\n\n=== AREA ===\nTitle: Local Culture\nDescription: Focuses on immersing travelers in the vibrant culture of Bogotá.\n\n=== CURRENT TASK ===\nTitle: Identify Traditional Music Venues\nDescription: Find venues in Bogotá where traditional Colombian music performances take place.\nExpected Output: List of traditional music venues in Bogotá.\n\n=== INSTRUCTION ===\nYou are responsible for completing the current task as part of the overall project. Use all available context, including dependency and previous results, but present your answer as your own expert recommendation or decision. Do NOT use phrases like 'Based on previous research', 'According to earlier results', or any introductory statements. Respond directly and professionally, as if you are the main expert responsible for this part of the project. If the task requires an external system or manual intervention, specify this clearly."
+          },
+          "result": "1. Andres Carne de Res - A popular restaurant and nightclub known for its lively atmosphere and traditional Colombian music performances.\n2. Quiebra Canto - A cultural center and bar that hosts live music events featuring traditional Colombian music.\n3. Matik-Matik - An arts space that occasionally organizes traditional music performances showcasing local talent.\n4. Casa de Citas - A cozy venue where you can enjoy intimate traditional music shows in a relaxed setting.\n5. La Puerta Falsa - While primarily a restaurant, La Puerta Falsa occasionally hosts traditional music events, offering a unique cultural experience."
+        },
+        {
+          "task_id": "282645e6-54b6-4c93-847e-4c1c1bc4a4a6",
+          "title": "Explore Local Art Galleries",
+          "description": "Research and identify renowned art galleries in Bogotá to explore local artworks.",
+          "expected_output": "List of recommended art galleries in Bogotá.",
+          "area": "Local Culture",
+          "responsibilities": [],
+          "execution_type": "llm",
+          "parent": "e20fa708-dd26-4465-8eee-c47b88de72f8",
+          "dependencies": [],
+          "subtasks": [],
+          "prompt": {
+            "system": "You are an expert autonomous agent collaborating in a multi-step project. Your responsibility is to complete your assigned task using all available context and previous results. Always act as the main expert for your task: be decisive, avoid repetition, and provide clear, actionable outputs. Do NOT include any explanations, comments, or introductory phrases in your output.",
+            "user": "=== PROJECT ===\nTitle: Haz un plan de viaje a Bogotá, Colombia, incluyendo actividades, lugares turísticos, gastronomía y cultura local.\n\n=== AREA ===\nTitle: Local Culture\nDescription: Focuses on immersing travelers in the vibrant culture of Bogotá.\n\n=== CURRENT TASK ===\nTitle: Explore Local Art Galleries\nDescription: Research and identify renowned art galleries in Bogotá to explore local artworks.\nExpected Output: List of recommended art galleries in Bogotá.\n\n=== INSTRUCTION ===\nYou are responsible for completing the current task as part of the overall project. Use all available context, including dependency and previous results, but present your answer as your own expert recommendation or decision. Do NOT use phrases like 'Based on previous research', 'According to earlier results', or any introductory statements. Respond directly and professionally, as if you are the main expert responsible for this part of the project. If the task requires an external system or manual intervention, specify this clearly."
+          },
+          "result": "1. Museo Nacional de Colombia\n2. Casa de Moneda\n3. Galería Santa Fe\n4. Galería La Cometa\n5. NC-arte\n\nThese art galleries in Bogotá are highly recommended for exploring local artworks and immersing yourself in the vibrant art scene of the city."
+        },
+        {
+          "task_id": "5a4ad1e7-7aa2-4b1e-baa8-c2c6a837cb18",
+          "title": "Attend a Folklore Dance Show",
+          "description": "Find opportunities to attend a folklore dance show in Bogotá, such as a cumbia or bambuco performance.",
+          "expected_output": "Information on folklore dance shows and how to attend.",
+          "area": "Local Culture",
+          "responsibilities": [],
+          "execution_type": "llm",
+          "parent": "e20fa708-dd26-4465-8eee-c47b88de72f8",
+          "dependencies": [],
+          "subtasks": [],
+          "prompt": {
+            "system": "You are an expert autonomous agent collaborating in a multi-step project. Your responsibility is to complete your assigned task using all available context and previous results. Always act as the main expert for your task: be decisive, avoid repetition, and provide clear, actionable outputs. Do NOT include any explanations, comments, or introductory phrases in your output.",
+            "user": "=== PROJECT ===\nTitle: Haz un plan de viaje a Bogotá, Colombia, incluyendo actividades, lugares turísticos, gastronomía y cultura local.\n\n=== AREA ===\nTitle: Local Culture\nDescription: Focuses on immersing travelers in the vibrant culture of Bogotá.\n\n=== CURRENT TASK ===\nTitle: Attend a Folklore Dance Show\nDescription: Find opportunities to attend a folklore dance show in Bogotá, such as a cumbia or bambuco performance.\nExpected Output: Information on folklore dance shows and how to attend.\n\n=== INSTRUCTION ===\nYou are responsible for completing the current task as part of the overall project. Use all available context, including dependency and previous results, but present your answer as your own expert recommendation or decision. Do NOT use phrases like 'Based on previous research', 'According to earlier results', or any introductory statements. Respond directly and professionally, as if you are the main expert responsible for this part of the project. If the task requires an external system or manual intervention, specify this clearly."
+          },
+          "result": "I recommend attending a folklore dance show at the renowned Teatro Colón in Bogotá. They often host traditional Colombian dance performances, including cumbia and bambuco shows. To attend, you can check the theater's schedule online and purchase tickets in advance through their official website or at the box office. Make sure to arrive early to secure good seats and fully enjoy the vibrant cultural experience."
+        }
+      ],
+      "result": {
+        "Identify Traditional Music Venues": "1. Andres Carne de Res - A popular restaurant and nightclub known for its lively atmosphere and traditional Colombian music performances.\n2. Quiebra Canto - A cultural center and bar that hosts live music events featuring traditional Colombian music.\n3. Matik-Matik - An arts space that occasionally organizes traditional music performances showcasing local talent.\n4. Casa de Citas - A cozy venue where you can enjoy intimate traditional music shows in a relaxed setting.\n5. La Puerta Falsa - While primarily a restaurant, La Puerta Falsa occasionally hosts traditional music events, offering a unique cultural experience.",
+        "Explore Local Art Galleries": "1. Museo Nacional de Colombia\n2. Casa de Moneda\n3. Galería Santa Fe\n4. Galería La Cometa\n5. NC-arte\n\nThese art galleries in Bogotá are highly recommended for exploring local artworks and immersing yourself in the vibrant art scene of the city.",
+        "Attend a Folklore Dance Show": "I recommend attending a folklore dance show at the renowned Teatro Colón in Bogotá. They often host traditional Colombian dance performances, including cumbia and bambuco shows. To attend, you can check the theater's schedule online and purchase tickets in advance through their official website or at the box office. Make sure to arrive early to secure good seats and fully enjoy the vibrant cultural experience."
+      }
+    }
+  ],
+  "result": {
+    "Activities": {
+      "Research Outdoor Activities": "1. Monserrate Hill: Hiking trail with stunning views of Bogotá. Location: Eastern Hills of Bogotá.\n   \n2. Ciclovía: Enjoy biking through the city streets on Sundays when they are closed to traffic. Location: Various locations in Bogotá.\n\n3. Parque Nacional Natural Chingaza: Nature park offering hiking trails and birdwatching opportunities. Location: Northeast of Bogotá.\n\n4. Quebrada La Vieja: Hiking trail through a lush forest with waterfalls. Location: North of Bogotá.\n\n5. Usaquén Park: Green space for outdoor activities and relaxation. Location: Usaquén neighborhood in Bogotá.",
+      "Plan Cultural Experiences": "- Visit Gold Museum (Museo del Oro) on Day 1 at 10:00 AM.\n- Attend a traditional music and dance performance at Teatro Colón on Day 2 at 7:00 PM.\n- Explore street art in La Candelaria neighborhood on Day 3 in the afternoon.\n- Join a guided tour of Botero Museum on Day 4 at 11:00 AM.\n- Experience a live salsa music show at Quiebra Canto on Day 5 at 8:00 PM.",
+      "Explore Local Markets": "1. Paloquemao Market - Known for fresh produce, flowers, and local Colombian snacks.\n2. Usaquén Market - Offers a mix of artisan crafts, antiques, and delicious street food.\n3. Mercado de las Pulgas de San Alejo - Great for unique souvenirs, vintage items, and a vibrant atmosphere.\n4. Plaza de Mercado de La Perseverancia - Explore traditional Colombian ingredients, street food, and cultural displays.\n5. Mercado de las Pulgas de Usaquén - Ideal for browsing through second-hand treasures, crafts, and enjoying local bites."
+    },
+    "Tourist Attractions": {
+      "Identify Key Tourist Attractions": "- Monserrate\n- La Candelaria (Historic District)\n- Gold Museum (Museo del Oro)\n- Botero Museum (Museo Botero)\n- Usaquén (for its Sunday market)\n- Salt Cathedral of Zipaquirá\n- Plaza de Bolívar\n- Simon Bolivar Metropolitan Park\n- Maloka Interactive Museum\n- National Museum of Colombia",
+      "Research Opening Hours and Entry Fees": "- Monserrate: Open daily from 6:30 AM to 12:00 AM. Entry fee varies depending on the chosen transportation method (cable car, funicular, or hiking).\n- La Candelaria (Historic District): No entry fee as it's a neighborhood to explore freely.\n- Gold Museum (Museo del Oro): Open Tuesday to Saturday from 9:00 AM to 6:00 PM, Sundays and holidays from 10:00 AM to 4:00 PM. Entry fee is COP 4,000 for nationals and residents, COP 10,000 for foreigners.\n- Botero Museum (Museo Botero): Open Tuesday to Sunday from 9:00 AM to 5:00 PM. Free entry.\n- Usaquén (for its Sunday market): The market is open on Sundays from morning until late afternoon. No entry fee.\n- Salt Cathedral of Zipaquirá: Open daily from 9:00 AM to 5:30 PM. Entry fee is COP 62,000 for adults, COP 52,000 for students.\n- Plaza de Bolívar: Open to the public all day. No entry fee.\n- Simon Bolivar Metropolitan Park: Open daily from 5:00 AM to 6:00 PM. No entry fee.\n- Maloka Interactive Museum: Open Wednesday to Sunday from 9:30 AM to 5:30 PM. Entry fee is COP 22,000 for adults, COP 19,000 for children.\n- National Museum of Colombia: Open Tuesday to Saturday from 10:00 AM to 5:00 PM, Sundays from 10:00 AM to 4:00 PM. Entry fee is COP 5,000 for nationals and residents, COP 10,000 for foreigners.",
+      "Create Itinerary Schedule": "**Itinerary Schedule for Bogotá, Colombia:**\n\n- **Day 1:**\n  - 9:00 AM - Visit Gold Museum (Museo del Oro)\n  - 11:00 AM - Explore La Candelaria (Historic District)\n  - 1:00 PM - Lunch at a local restaurant in La Candelaria\n  - 3:00 PM - Visit Botero Museum (Museo Botero)\n  - 5:00 PM - Wander around Plaza de Bolívar\n\n- **Day 2:**\n  - 8:00 AM - Depart for Salt Cathedral of Zipaquirá\n  - 10:00 AM - Explore Salt Cathedral of Zipaquirá\n  - 1:00 PM - Lunch nearby\n  - 3:00 PM - Visit Usaquén for its Sunday market\n  - 6:00 PM - Return to accommodation\n\n- **Day 3:**\n  - 7:00 AM - Start early to visit Monserrate\n  - 10:00 AM - Explore Simon Bolivar Metropolitan Park\n  - 12:00 PM - Visit Maloka Interactive Museum\n  - 2:00 PM - Lunch at a local restaurant\n  - 4:00 PM - Visit National Museum of Colombia\n  - 6:00 PM - Free time for shopping or leisure activities\n\n**Note:** Ensure to consider transportation time between locations and allocate buffer time for unexpected delays."
+    },
+    "Gastronomy": {
+      "Research Traditional Colombian Dishes": "- Ajiaco\n- Bandeja Paisa\n- Sancocho\n- Arepas\n- Lechona\n- Empanadas\n- Fritanga\n- Tamal\n- Pandebono\n- Chicharrón",
+      "Curate a List of Recommended Restaurants": "- Andrés Carne de Res (Chía) - Known for its lively atmosphere and traditional Colombian dishes.\n- La Puerta Falsa - Oldest restaurant in Bogotá, famous for its Ajiaco soup.\n- Harry Sasson - Upscale dining offering a modern twist on Colombian cuisine.\n- Leo Cocina y Cava - Fine dining experience with a focus on local ingredients and flavors.\n- La Mar - Excellent choice for seafood lovers, offering a fusion of Colombian and Peruvian cuisine.",
+      "Recommend Street Food Vendors": "1. La Puerta Falsa\n2. Andrés Carne de Res\n3. Arepas del 7\n4. El Perro Caliente\n5. La Esquina del Pandebono\n\nThese street food vendors in Bogotá are highly recommended for their delicious local snacks."
+    },
+    "Local Culture": {
+      "Identify Traditional Music Venues": "1. Andres Carne de Res - A popular restaurant and nightclub known for its lively atmosphere and traditional Colombian music performances.\n2. Quiebra Canto - A cultural center and bar that hosts live music events featuring traditional Colombian music.\n3. Matik-Matik - An arts space that occasionally organizes traditional music performances showcasing local talent.\n4. Casa de Citas - A cozy venue where you can enjoy intimate traditional music shows in a relaxed setting.\n5. La Puerta Falsa - While primarily a restaurant, La Puerta Falsa occasionally hosts traditional music events, offering a unique cultural experience.",
+      "Explore Local Art Galleries": "1. Museo Nacional de Colombia\n2. Casa de Moneda\n3. Galería Santa Fe\n4. Galería La Cometa\n5. NC-arte\n\nThese art galleries in Bogotá are highly recommended for exploring local artworks and immersing yourself in the vibrant art scene of the city.",
+      "Attend a Folklore Dance Show": "I recommend attending a folklore dance show at the renowned Teatro Colón in Bogotá. They often host traditional Colombian dance performances, including cumbia and bambuco shows. To attend, you can check the theater's schedule online and purchase tickets in advance through their official website or at the box office. Make sure to arrive early to secure good seats and fully enjoy the vibrant cultural experience."
+    }
+  }
+}

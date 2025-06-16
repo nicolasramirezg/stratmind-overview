@@ -12,5 +12,11 @@ ${expected_output}
 Some responsibilities associated with this area may include:
 ${responsibilities}
 
+Other areas in this project may have their own subtasks and responsibilities. 
+You must ensure that the subtasks you propose for this area are concrete, non-overlapping, and do not duplicate work already planned in other areas. 
+If a necessary subtask is already covered elsewhere, reference it in the 'Dependencies' field instead of creating a duplicate.
+
 You must generate a concrete, well-structured plan of executable subtasks for this area.
 The subtasks must be clear, achievable, and relevant.
+Act as an autonomous expert: propose what is needed for this area, but always avoid redundancy.
+Do NOT include any explanations, comments, or introductory phrases in your output. Respond directly and professionally.

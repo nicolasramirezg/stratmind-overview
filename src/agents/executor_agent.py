@@ -1,15 +1,16 @@
-from src.class_task import Task
+from src.utils.class_task import Task
 from openai import OpenAI
+from src.utils.prompt_loader import load_prompt
+import os
+
+PROMPT_DIR = os.path.join("prompts", "executor_agent")
 
 def build_system_prompt(task: Task) -> str:
     """
-    Returns the system prompt for the LLM agent, emphasizing its role in a larger project.
+    Loads the system prompt for the LLM agent from an external .txt file.
     """
-    return (
-        "You are an expert autonomous agent collaborating in a multi-step project. "
-        "You must resolve your assigned task using all available context and previous results. "
-        "Be decisive, avoid repetition, and always act as a responsible project agent."
-    )
+    prompt_path = os.path.join(PROMPT_DIR, "system.txt")
+    return load_prompt(prompt_path, variables={})  # <-- FIXED
 
 def build_user_prompt(
     task: Task,
@@ -18,61 +19,48 @@ def build_user_prompt(
     max_chars_per_result: int = 800
 ) -> str:
     """
-    Returns a structured, generic user prompt for the LLM agent.
-    Only includes results of direct children (not grandchildren).
+    Loads and formats the user prompt for the LLM agent from an external .txt file.
     """
-    prompt_parts = []
-    if project_title:
-        prompt_parts.append(f"=== PROJECT ===\nTitle: {project_title}\n")
+    prompt_path = os.path.join(PROMPT_DIR, "user.txt")
 
-    # Include area if the parent is not the root
+    # Build dynamic sections
+    area_section = ""
     if task.parent and task.parent.parent is not None:
-        prompt_parts.append(f"=== AREA ===\nTitle: {task.parent.title}")
-        if getattr(task.parent, "description", None):
-            prompt_parts.append(f"Description: {task.parent.description}")
-        prompt_parts.append("")
-
+        area_section = f"=== AREA ===\nTitle: {task.parent.title}\nDescription: {getattr(task.parent, 'description', '')}\n"
+    dependency_section = ""
     dependencies = getattr(task, "dependencies", set())
     if dependencies:
-        prompt_parts.append("=== DEPENDENCY RESULTS ===")
-        prompt_parts.append("The following tasks must be completed before this one. Their results are provided for your reference:\n")
+        dep_lines = []
         for dep in dependencies:
-            if hasattr(dep, "result") and dep.result:
-                dep_result = str(dep.result)
-                if len(dep_result) > max_chars_per_result:
-                    dep_result = dep_result[:max_chars_per_result] + "\n...[truncated]..."
-                prompt_parts.append(f"- Dependency: {dep.title}\n  Description: {dep.description}\n  Result: {dep_result}\n")
-        prompt_parts.append("")
-
-    prompt_parts.append("=== CURRENT TASK ===")
-    prompt_parts.append(f"Title: {task.title}")
-    prompt_parts.append(f"Description: {task.description}")
-    prompt_parts.append(f"Expected Output: {task.expected_output}\n")
-
-    # Only include direct children's results (not grandchildren)
+            dep_result = str(dep.result)[:max_chars_per_result] if hasattr(dep, "result") and dep.result else ""
+            dep_lines.append(f"- Dependency: {dep.title}\n  Description: {dep.description}\n  Result: {dep_result}\n")
+        dependency_section = "=== DEPENDENCY RESULTS ===\n" + "\n".join(dep_lines)
+    subtask_section = ""
     subtasks = [t for t in task.manager.tasks.values() if t.parent == task]
     if subtasks:
-        prompt_parts.append("=== SUBTASK RESULTS ===")
+        sub_lines = []
         for sub in subtasks[:max_subtasks]:
             if hasattr(sub, "result") and sub.result:
                 if isinstance(sub.result, dict):
-                    prompt_parts.append(f"- {sub.title}: [Has {len(sub.result)} subtasks. See details in their own context.]")
+                    sub_lines.append(f"- {sub.title}: [Has {len(sub.result)} subtasks. See details in their own context.]")
                 else:
                     result_text = str(sub.result)
                     if len(result_text) > max_chars_per_result:
                         result_text = result_text[:max_chars_per_result] + "\n...[truncated]..."
-                    prompt_parts.append(f"- {sub.title}: {result_text}")
-        prompt_parts.append("")
+                    sub_lines.append(f"- {sub.title}: {result_text}")
+        subtask_section = "=== SUBTASK RESULTS ===\n" + "\n".join(sub_lines)
 
-    prompt_parts.append(
-        "=== INSTRUCTION ===\n"
-        "You are responsible for completing the current task as part of the overall project. "
-        "Use all available context, including dependency and previous results, but present your answer as your own expert recommendation or decision. "
-        "Do NOT use phrases like 'Based on previous research' or 'According to earlier results'. "
-        "Be direct, decisive, and act as an autonomous agent: provide your output as if you are the main expert responsible for this part of the project. "
-        "If the task requires an external system or manual intervention, specify this clearly."
-    )
-    return "\n".join(prompt_parts)
+    variables = {
+        "project_title": project_title,
+        "area_section": area_section,
+        "dependency_section": dependency_section,
+        "task_title": task.title,
+        "task_description": task.description,
+        "expected_output": task.expected_output,
+        "subtask_section": subtask_section
+    }
+
+    return load_prompt(prompt_path, variables)
 
 def call_llm(system_prompt: str, user_prompt: str, model: str = "gpt-3.5-turbo") -> str:
     """
@@ -142,12 +130,3 @@ def execute_tasks_postorder(task: Task, prompts_and_responses=None, model: str =
         "response": response
     })
     return prompts_and_responses
-
-# Example usage:
-# from src.class_task import TaskManager
-# task_manager = TaskManager()
-# ... (build your task tree, setting execution_type as needed) ...
-# prompts_responses = execute_tasks_postorder(task_manager.root_task)
-# for item in prompts_responses:
-#     print(item["prompt"])
-#     print(item["response"])

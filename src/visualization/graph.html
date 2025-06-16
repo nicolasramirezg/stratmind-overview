@@ -1,0 +1,127 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        
+            <script src="lib/bindings/utils.js"></script>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/dist/vis-network.min.css" integrity="sha512-WgxfT5LWjfszlPHXRmBWHkV2eceiWTOBvrKCNbdgDYTHrT2AeLCGbF4sZlZw3UMN3WtL0tGUoIAKsu8mllg/XA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/vis-network.min.js" integrity="sha512-LnvoEWDFrqGHlHmDD2101OrLcbsfkrzoSpvtSQtxK3RMnRV0eOkhhBN2dXHKRrUU8p2DGRTk35n4O8nWSVe1mQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+            
+        
+<center>
+<h1></h1>
+</center>
+
+<!-- <link rel="stylesheet" href="../node_modules/vis/dist/vis.min.css" type="text/css" />
+<script type="text/javascript" src="../node_modules/vis/dist/vis.js"> </script>-->
+        <link
+          href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
+          crossorigin="anonymous"
+        />
+        <script
+          src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+          crossorigin="anonymous"
+        ></script>
+
+
+        <center>
+          <h1></h1>
+        </center>
+        <style type="text/css">
+
+             #mynetwork {
+                 width: 100%;
+                 height: 700px;
+                 background-color: #222222;
+                 border: 1px solid lightgray;
+                 position: relative;
+                 float: left;
+             }
+
+             
+
+             
+
+             
+        </style>
+    </head>
+
+
+    <body>
+        <div class="card" style="width: 100%">
+            
+            
+            <div id="mynetwork" class="card-body"></div>
+        </div>
+
+        
+        
+
+        <script type="text/javascript">
+
+              // initialize global variables.
+              var edges;
+              var nodes;
+              var allNodes;
+              var allEdges;
+              var nodeColors;
+              var originalNodes;
+              var network;
+              var container;
+              var options, data;
+              var filter = {
+                  item : '',
+                  property : '',
+                  value : []
+              };
+
+              
+
+              
+
+              // This method is responsible for drawing the graph, returns the drawn network
+              function drawGraph() {
+                  var container = document.getElementById('mynetwork');
+
+                  
+
+                  // parsing and collecting nodes and edges from the python
+                  nodes = new vis.DataSet([{"color": "#6fa8dc", "font": {"color": "white"}, "id": "65dd5c34-238e-4149-81be-5e84be4c75e1", "label": "Tarea principal: Haz un plan de viaje a Bogot\u00e1, Colombia, incluyendo actividades, lugares tur\u00edsticos, gastronom\u00eda y cultura local.", "shape": "dot", "size": 25, "title": "\u003cb\u003eTarea principal: Haz un plan de viaje a Bogot\u00e1, Colombia, incluyendo actividades, lugares tur\u00edsticos, gastronom\u00eda y cultura local.\u003c/b\u003e\u003cbr\u003e\u003cb\u003eDescripci\u00f3n:\u003c/b\u003e Haz un plan de viaje a Bogot\u00e1, Colombia, incluyendo actividades, lugares tur\u00edsticos, gastronom\u00eda y cultura local.\u003cbr\u003e\u003cb\u003eExpected Output:\u003c/b\u003e Un plan de viaje detallado\u003cbr\u003e\u003cb\u003eExecution Type:\u003c/b\u003e llm\u003cbr\u003e\u003cb\u003eResultado:\u003c/b\u003e {\u0027Activities\u0027: {\u0027Research Popular Activities in Bogot\u00e1\u0027: \u0027- Visit the historic neighborhood of La Candelaria\\n- Explore the Gold Museum (Museo del Oro)\\n- Take a cable car ride up to Monserrate for panoramic views of the city\\n- Wander around Usaqu\u00e9n Sunday Market\\n- Experience street art in the nei...\u003cbr\u003e"}, {"color": "#b6d7a8", "font": {"color": "white"}, "id": "0e0714d6-bf8e-4877-8c0f-e5fc2b776a2b", "label": "Activities", "shape": "dot", "size": 25, "title": "\u003cb\u003eActivities\u003c/b\u003e\u003cbr\u003e\u003cb\u003eDescripci\u00f3n:\u003c/b\u003e Planning and organizing recreational and leisure activities during the trip.\u003cbr\u003e\u003cb\u003eExpected Output:\u003c/b\u003e A list of engaging and diverse activities to suit different preferences.\u003cbr\u003e\u003cb\u003eExecution Type:\u003c/b\u003e llm\u003cbr\u003e\u003cb\u003eResultado:\u003c/b\u003e {\u0027Research Popular Activities in Bogot\u00e1\u0027: \u0027- Visit the historic neighborhood of La Candelaria\\n- Explore the Gold Museum (Museo del Oro)\\n- Take a cable car ride up to Monserrate for panoramic views of the city\\n- Wander around Usaqu\u00e9n Sunday Market\\n- Experience street art in the neighborhood of La...\u003cbr\u003e"}, {"color": "#b6d7a8", "font": {"color": "white"}, "id": "16982ae8-abb4-4d73-9d66-209400444515", "label": "Research Popular Activities in Bogot\u00e1", "shape": "dot", "size": 25, "title": "\u003cb\u003eResearch Popular Activities in Bogot\u00e1\u003c/b\u003e\u003cbr\u003e\u003cb\u003eDescripci\u00f3n:\u003c/b\u003e Identify and compile a list of popular activities and attractions in Bogot\u00e1.\u003cbr\u003e\u003cb\u003eExpected Output:\u003c/b\u003e List of popular activities and attractions in Bogot\u00e1.\u003cbr\u003e\u003cb\u003eExecution Type:\u003c/b\u003e llm\u003cbr\u003e\u003cb\u003eResultado:\u003c/b\u003e - Visit the historic neighborhood of La Candelaria\n- Explore the Gold Museum (Museo del Oro)\n- Take a cable car ride up to Monserrate for panoramic views of the city\n- Wander around Usaqu\u00e9n Sunday Market\n- Experience street art in the neighborhood of La Candelaria\n- Visit the Botero Museum\n- Explore...\u003cbr\u003e"}, {"color": "#b6d7a8", "font": {"color": "white"}, "id": "86d703c4-77cc-4879-bba1-4cf705cd9e21", "label": "Create Daily Itinerary", "shape": "dot", "size": 25, "title": "\u003cb\u003eCreate Daily Itinerary\u003c/b\u003e\u003cbr\u003e\u003cb\u003eDescripci\u00f3n:\u003c/b\u003e Develop a daily schedule with a mix of cultural, outdoor, and entertainment activities.\u003cbr\u003e\u003cb\u003eExpected Output:\u003c/b\u003e Daily itinerary with activities planned for each day.\u003cbr\u003e\u003cb\u003eExecution Type:\u003c/b\u003e llm\u003cbr\u003e\u003cb\u003eDependencias:\u003c/b\u003e 16982ae8-abb4-4d73-9d66-209400444515\u003cbr\u003e\u003cb\u003eResultado:\u003c/b\u003e **Daily Itinerary for Bogot\u00e1 Trip:**\n\n**Day 1:**\n- Morning: Visit the Gold Museum (Museo del Oro) to explore Colombian history and culture.\n- Afternoon: Take a cable car ride up to Monserrate for breathtaking views of Bogot\u00e1.\n- Evening: Enjoy a traditional Colombian dinner at a local restaurant.\n\n**...\u003cbr\u003e"}, {"color": "#b6d7a8", "font": {"color": "white"}, "id": "55e24369-e038-4a4a-926f-7b19fe06f4b2", "label": "Reserve Tickets or Book Activities", "shape": "dot", "size": 25, "title": "\u003cb\u003eReserve Tickets or Book Activities\u003c/b\u003e\u003cbr\u003e\u003cb\u003eDescripci\u00f3n:\u003c/b\u003e Make reservations or bookings for selected activities to secure spots.\u003cbr\u003e\u003cb\u003eExpected Output:\u003c/b\u003e Confirmed reservations or bookings for selected activities.\u003cbr\u003e\u003cb\u003eExecution Type:\u003c/b\u003e llm\u003cbr\u003e\u003cb\u003eDependencias:\u003c/b\u003e 86d703c4-77cc-4879-bba1-4cf705cd9e21\u003cbr\u003e\u003cb\u003eResultado:\u003c/b\u003e I recommend making reservations for the following selected activities in Bogot\u00e1:\n\n1. Cable car ride up to Monserrate for Day 1.\n2. Graffiti tour in Bogot\u00e1 for Day 3.\n\nPlease proceed with booking these activities to secure spots for the trip.\u003cbr\u003e"}, {"color": "#b6d7a8", "font": {"color": "white"}, "id": "4f8c6990-facd-45ff-9bcd-a914fac005a4", "label": "Tourist Attractions", "shape": "dot", "size": 25, "title": "\u003cb\u003eTourist Attractions\u003c/b\u003e\u003cbr\u003e\u003cb\u003eDescripci\u00f3n:\u003c/b\u003e Identifying and including must-visit tourist spots in Bogot\u00e1.\u003cbr\u003e\u003cb\u003eExpected Output:\u003c/b\u003e A comprehensive list of iconic and off-the-beaten-path attractions.\u003cbr\u003e\u003cb\u003eExecution Type:\u003c/b\u003e llm\u003cbr\u003e\u003cb\u003eResultado:\u003c/b\u003e {\u0027Identify Iconic Tourist Attractions\u0027: \u00271. Monserrate\\n2. La Candelaria (Historic District)\\n3. Gold Museum (Museo del Oro)\\n4. Botero Museum (Museo Botero)\\n5. Plaza de Bol\u00edvar\\n6. Usaqu\u00e9n\\n7. Salt Cathedral of Zipaquir\u00e1\\n8. Maloka Interactive Museum\\n9. Simon Bolivar Metropolitan Park\\n10. Nation...\u003cbr\u003e"}, {"color": "#b6d7a8", "font": {"color": "white"}, "id": "e86eeaee-d929-476a-90fa-355b822a65ff", "label": "Identify Iconic Tourist Attractions", "shape": "dot", "size": 25, "title": "\u003cb\u003eIdentify Iconic Tourist Attractions\u003c/b\u003e\u003cbr\u003e\u003cb\u003eDescripci\u00f3n:\u003c/b\u003e Compile a list of well-known tourist spots in Bogot\u00e1 that are considered iconic and popular among visitors.\u003cbr\u003e\u003cb\u003eExpected Output:\u003c/b\u003e List of iconic tourist attractions in Bogot\u00e1.\u003cbr\u003e\u003cb\u003eExecution Type:\u003c/b\u003e llm\u003cbr\u003e\u003cb\u003eResultado:\u003c/b\u003e 1. Monserrate\n2. La Candelaria (Historic District)\n3. Gold Museum (Museo del Oro)\n4. Botero Museum (Museo Botero)\n5. Plaza de Bol\u00edvar\n6. Usaqu\u00e9n\n7. Salt Cathedral of Zipaquir\u00e1\n8. Maloka Interactive Museum\n9. Simon Bolivar Metropolitan Park\n10. National Museum of Colombia\u003cbr\u003e"}, {"color": "#b6d7a8", "font": {"color": "white"}, "id": "5a8852cf-3a1a-4598-838f-20b1305e727f", "label": "Discover Off-the-Beaten-Path Attractions", "shape": "dot", "size": 25, "title": "\u003cb\u003eDiscover Off-the-Beaten-Path Attractions\u003c/b\u003e\u003cbr\u003e\u003cb\u003eDescripci\u00f3n:\u003c/b\u003e Research and identify hidden gems and lesser-known attractions in Bogot\u00e1 that offer unique and authentic experiences.\u003cbr\u003e\u003cb\u003eExpected Output:\u003c/b\u003e List of off-the-beaten-path attractions in Bogot\u00e1.\u003cbr\u003e\u003cb\u003eExecution Type:\u003c/b\u003e llm\u003cbr\u003e\u003cb\u003eResultado:\u003c/b\u003e 1. Usaqu\u00e9n Market\n2. La Candelaria Street Art Tour\n3. Quebrada La Vieja Hike\n4. Casa Santa Clara\n5. Caf\u00e9 de la Fonda\u003cbr\u003e"}, {"color": "#b6d7a8", "font": {"color": "white"}, "id": "7442905b-40d2-4112-9566-71bfdc51ad63", "label": "Gastronomy", "shape": "dot", "size": 25, "title": "\u003cb\u003eGastronomy\u003c/b\u003e\u003cbr\u003e\u003cb\u003eDescripci\u00f3n:\u003c/b\u003e Curating a selection of traditional and contemporary dining options.\u003cbr\u003e\u003cb\u003eExpected Output:\u003c/b\u003e A diverse gastronomic itinerary showcasing Colombian cuisine.\u003cbr\u003e\u003cb\u003eExecution Type:\u003c/b\u003e llm\u003cbr\u003e\u003cb\u003eResultado:\u003c/b\u003e {\u0027Identify Traditional Colombian Dishes\u0027: \u0027- Ajiaco\\n- Bandeja Paisa\\n- Sancocho\\n- Arepas\\n- Lechona\\n- Empanadas\\n- Fritanga\\n- Lomo al Trapo\\n- Tamal\\n- Changua\u0027, \u0027Curate a List of Local Restaurants\u0027: \u0027Expected Output: \\n1. La Puerta Falsa - Known for its traditional Colombian dishes like Ajiaco ...\u003cbr\u003e"}, {"color": "#b6d7a8", "font": {"color": "white"}, "id": "6fc53d8d-fdf0-4b19-8500-f30d76cb0873", "label": "Identify Traditional Colombian Dishes", "shape": "dot", "size": 25, "title": "\u003cb\u003eIdentify Traditional Colombian Dishes\u003c/b\u003e\u003cbr\u003e\u003cb\u003eDescripci\u00f3n:\u003c/b\u003e Research and compile a list of traditional Colombian dishes, including popular ones like bandeja paisa, ajiaco, and sancocho.\u003cbr\u003e\u003cb\u003eExpected Output:\u003c/b\u003e List of traditional Colombian dishes\u003cbr\u003e\u003cb\u003eExecution Type:\u003c/b\u003e llm\u003cbr\u003e\u003cb\u003eResultado:\u003c/b\u003e - Ajiaco\n- Bandeja Paisa\n- Sancocho\n- Arepas\n- Lechona\n- Empanadas\n- Fritanga\n- Lomo al Trapo\n- Tamal\n- Changua\u003cbr\u003e"}, {"color": "#b6d7a8", "font": {"color": "white"}, "id": "0b48ba10-3f4c-492e-91e0-e82a4d754bd3", "label": "Curate a List of Local Restaurants", "shape": "dot", "size": 25, "title": "\u003cb\u003eCurate a List of Local Restaurants\u003c/b\u003e\u003cbr\u003e\u003cb\u003eDescripci\u00f3n:\u003c/b\u003e Identify a variety of dining establishments in Bogot\u00e1, ranging from street food vendors to upscale restaurants, that offer traditional Colombian cuisine.\u003cbr\u003e\u003cb\u003eExpected Output:\u003c/b\u003e Curated list of local restaurants\u003cbr\u003e\u003cb\u003eExecution Type:\u003c/b\u003e llm\u003cbr\u003e\u003cb\u003eDependencias:\u003c/b\u003e 6fc53d8d-fdf0-4b19-8500-f30d76cb0873\u003cbr\u003e\u003cb\u003eResultado:\u003c/b\u003e Expected Output: \n1. La Puerta Falsa - Known for its traditional Colombian dishes like Ajiaco and Tamal.\n2. Andr\u00e9s Carne de Res - Offers a lively atmosphere and a variety of Colombian cuisine options including Bandeja Paisa.\n3. Crepes \u0026 Waffles - A popular local chain serving Colombian-inspired crep...\u003cbr\u003e"}, {"color": "#b6d7a8", "font": {"color": "white"}, "id": "51a2c301-254f-41fc-a4d7-c217d3f508ac", "label": "Research Contemporary Gastronomic Trends in Bogot\u00e1", "shape": "dot", "size": 25, "title": "\u003cb\u003eResearch Contemporary Gastronomic Trends in Bogot\u00e1\u003c/b\u003e\u003cbr\u003e\u003cb\u003eDescripci\u00f3n:\u003c/b\u003e Explore modern culinary trends in Bogot\u00e1, such as fusion cuisine or innovative dishes that blend traditional flavors with a modern twist.\u003cbr\u003e\u003cb\u003eExpected Output:\u003c/b\u003e Overview of contemporary gastronomic trends in Bogot\u00e1\u003cbr\u003e\u003cb\u003eExecution Type:\u003c/b\u003e llm\u003cbr\u003e\u003cb\u003eResultado:\u003c/b\u003e Overview of contemporary gastronomic trends in Bogot\u00e1:\n\n1. Fusion cuisine combining traditional Colombian ingredients with international flavors.\n2. Farm-to-table dining experiences focusing on locally sourced, organic ingredients.\n3. Innovative takes on traditional dishes like arepas, empanadas, an...\u003cbr\u003e"}, {"color": "#b6d7a8", "font": {"color": "white"}, "id": "8f6ed8e9-c9c4-450d-9f67-a2ebc51a542d", "label": "Local Culture", "shape": "dot", "size": 25, "title": "\u003cb\u003eLocal Culture\u003c/b\u003e\u003cbr\u003e\u003cb\u003eDescripci\u00f3n:\u003c/b\u003e Immersing travelers in the rich cultural heritage of Bogot\u00e1.\u003cbr\u003e\u003cb\u003eExpected Output:\u003c/b\u003e Insights into the history, art, and traditions of the city.\u003cbr\u003e\u003cb\u003eExecution Type:\u003c/b\u003e llm\u003cbr\u003e\u003cb\u003eResultado:\u003c/b\u003e {\"Explore Bogot\u00e1\u0027s Cultural History\": \"Research and understand Bogot\u00e1\u0027s cultural history, focusing on key historical events, influences, and developments that have contributed to the city\u0027s rich cultural heritage. Pay particular attention to the impact of indigenous cultures, colonial history, indep...\u003cbr\u003e"}, {"color": "#b6d7a8", "font": {"color": "white"}, "id": "40581329-dae5-41a5-acdd-cde8ca67635e", "label": "Explore Bogot\u00e1\u0027s Cultural History", "shape": "dot", "size": 25, "title": "\u003cb\u003eExplore Bogot\u00e1\u0027s Cultural History\u003c/b\u003e\u003cbr\u003e\u003cb\u003eDescripci\u00f3n:\u003c/b\u003e Research and understand the historical background and significant cultural events that have shaped Bogot\u00e1\u0027s identity.\u003cbr\u003e\u003cb\u003eExpected Output:\u003c/b\u003e Comprehensive knowledge of Bogot\u00e1\u0027s cultural history.\u003cbr\u003e\u003cb\u003eExecution Type:\u003c/b\u003e llm\u003cbr\u003e\u003cb\u003eResultado:\u003c/b\u003e Research and understand Bogot\u00e1\u0027s cultural history, focusing on key historical events, influences, and developments that have contributed to the city\u0027s rich cultural heritage. Pay particular attention to the impact of indigenous cultures, colonial history, independence movements, and modern cultural ...\u003cbr\u003e"}, {"color": "#b6d7a8", "font": {"color": "white"}, "id": "e2932580-1ca4-4805-9dd4-53d8889d79ac", "label": "Visit Museums and Art Galleries", "shape": "dot", "size": 25, "title": "\u003cb\u003eVisit Museums and Art Galleries\u003c/b\u003e\u003cbr\u003e\u003cb\u003eDescripci\u00f3n:\u003c/b\u003e Identify prominent museums and art galleries in Bogot\u00e1 to explore the city\u0027s artistic heritage.\u003cbr\u003e\u003cb\u003eExpected Output:\u003c/b\u003e List of recommended museums and art galleries to visit.\u003cbr\u003e\u003cb\u003eExecution Type:\u003c/b\u003e llm\u003cbr\u003e\u003cb\u003eResultado:\u003c/b\u003e - Museo Nacional de Colombia\n- Museo Botero\n- Museo del Oro\n- Museo de Arte Moderno de Bogot\u00e1\n- Casa de la Moneda\n- Museo de Arte Colonial\n- Museo de Arte Miguel Urrutia\n- Galer\u00eda Santa Fe\n- Galer\u00eda La Cometa\n- Flora ars+natura\n\nThese are the recommended museums and art galleries to visit in Bogot\u00e1 ...\u003cbr\u003e"}, {"color": "#b6d7a8", "font": {"color": "white"}, "id": "6b086a35-a635-4f04-9416-a4d81e3165fa", "label": "Attend Cultural Events", "shape": "dot", "size": 25, "title": "\u003cb\u003eAttend Cultural Events\u003c/b\u003e\u003cbr\u003e\u003cb\u003eDescripci\u00f3n:\u003c/b\u003e Find information on upcoming cultural events, festivals, or performances in Bogot\u00e1 to experience the local traditions and arts scene.\u003cbr\u003e\u003cb\u003eExpected Output:\u003c/b\u003e List of cultural events with dates and locations.\u003cbr\u003e\u003cb\u003eExecution Type:\u003c/b\u003e llm\u003cbr\u003e\u003cb\u003eResultado:\u003c/b\u003e - Bogot\u00e1 International Film Festival: October 8-16, 2022, at various cinemas across the city.\n- Ibero-American Theater Festival: March 16-27, 2023, held at multiple theaters in Bogot\u00e1.\n- Bogot\u00e1 Book Fair: April 25 - May 8, 2023, taking place at Corferias convention center.\n- Rock al Parque: July 1-3...\u003cbr\u003e"}]);
+                  edges = new vis.DataSet([{"arrows": "to", "color": "#999999", "from": "65dd5c34-238e-4149-81be-5e84be4c75e1", "to": "0e0714d6-bf8e-4877-8c0f-e5fc2b776a2b"}, {"arrows": "to", "color": "#999999", "from": "0e0714d6-bf8e-4877-8c0f-e5fc2b776a2b", "to": "16982ae8-abb4-4d73-9d66-209400444515"}, {"arrows": "to", "color": "#999999", "from": "0e0714d6-bf8e-4877-8c0f-e5fc2b776a2b", "to": "86d703c4-77cc-4879-bba1-4cf705cd9e21"}, {"arrows": "to", "color": "#999999", "from": "0e0714d6-bf8e-4877-8c0f-e5fc2b776a2b", "to": "55e24369-e038-4a4a-926f-7b19fe06f4b2"}, {"arrows": "to", "color": "#999999", "from": "65dd5c34-238e-4149-81be-5e84be4c75e1", "to": "4f8c6990-facd-45ff-9bcd-a914fac005a4"}, {"arrows": "to", "color": "#999999", "from": "4f8c6990-facd-45ff-9bcd-a914fac005a4", "to": "e86eeaee-d929-476a-90fa-355b822a65ff"}, {"arrows": "to", "color": "#999999", "from": "4f8c6990-facd-45ff-9bcd-a914fac005a4", "to": "5a8852cf-3a1a-4598-838f-20b1305e727f"}, {"arrows": "to", "color": "#999999", "from": "65dd5c34-238e-4149-81be-5e84be4c75e1", "to": "7442905b-40d2-4112-9566-71bfdc51ad63"}, {"arrows": "to", "color": "#999999", "from": "7442905b-40d2-4112-9566-71bfdc51ad63", "to": "6fc53d8d-fdf0-4b19-8500-f30d76cb0873"}, {"arrows": "to", "color": "#999999", "from": "7442905b-40d2-4112-9566-71bfdc51ad63", "to": "0b48ba10-3f4c-492e-91e0-e82a4d754bd3"}, {"arrows": "to", "color": "#999999", "from": "7442905b-40d2-4112-9566-71bfdc51ad63", "to": "51a2c301-254f-41fc-a4d7-c217d3f508ac"}, {"arrows": "to", "color": "#999999", "from": "65dd5c34-238e-4149-81be-5e84be4c75e1", "to": "8f6ed8e9-c9c4-450d-9f67-a2ebc51a542d"}, {"arrows": "to", "color": "#999999", "from": "8f6ed8e9-c9c4-450d-9f67-a2ebc51a542d", "to": "40581329-dae5-41a5-acdd-cde8ca67635e"}, {"arrows": "to", "color": "#999999", "from": "8f6ed8e9-c9c4-450d-9f67-a2ebc51a542d", "to": "e2932580-1ca4-4805-9dd4-53d8889d79ac"}, {"arrows": "to", "color": "#999999", "from": "8f6ed8e9-c9c4-450d-9f67-a2ebc51a542d", "to": "6b086a35-a635-4f04-9416-a4d81e3165fa"}]);
+
+                  nodeColors = {};
+                  allNodes = nodes.get({ returnType: "Object" });
+                  for (nodeId in allNodes) {
+                    nodeColors[nodeId] = allNodes[nodeId].color;
+                  }
+                  allEdges = edges.get({ returnType: "Object" });
+                  // adding nodes and edges to the graph
+                  data = {nodes: nodes, edges: edges};
+
+                  var options = {"nodes": {"borderWidth": 2, "shadow": true}, "edges": {"color": {"inherit": true}, "smooth": false}, "interaction": {"hover": true, "navigationButtons": true, "multiselect": true, "tooltipDelay": 100}, "physics": {"enabled": true, "barnesHut": {"gravitationalConstant": -8000, "centralGravity": 0.3, "springLength": 120, "springConstant": 0.04, "damping": 0.09, "avoidOverlap": 1}}};
+
+                  
+
+
+                  
+
+                  network = new vis.Network(container, data, options);
+
+                  
+
+                  
+
+                  
+
+
+                  
+
+                  return network;
+
+              }
+              drawGraph();
+        </script>
+    </body>
+</html>

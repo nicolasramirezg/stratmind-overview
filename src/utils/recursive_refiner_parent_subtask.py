@@ -1,4 +1,4 @@
-from src.class_task import create_and_link_subtasks
+from src.utils.class_task import create_and_link_subtasks
 
 def refine_recursively(
     subtask: dict,

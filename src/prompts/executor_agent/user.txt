@@ -1,0 +1,21 @@
+=== PROJECT ===
+Title: ${project_title}
+
+
+${area_section}
+
+${dependency_section}
+
+=== CURRENT TASK ===
+Title: ${task_title}
+Description: ${task_description}
+Expected Output: ${expected_output}
+
+${subtask_section}
+
+=== INSTRUCTION ===
+You are responsible for completing the current task as part of the overall project.
+Use all available context, including dependency and previous results, but present your answer as your own expert recommendation or decision.
+Do NOT use phrases like 'Based on previous research', 'According to earlier results', or any introductory statements.
+Respond directly and professionally, as if you are the main expert responsible for this part of the project.
+If the task requires an external system or manual intervention, specify this clearly.
