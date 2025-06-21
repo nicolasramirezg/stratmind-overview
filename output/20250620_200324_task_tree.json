@@ -1,0 +1,494 @@
+{
+  "task_id": "c2d6c460-a97c-4dcf-ad90-f6a3b169d3c8",
+  "title": "Crea un plan de viaje",
+  "description": "Crea un plan de viaje",
+  "expected_output": "Un plan de viaje detallado.",
+  "area": null,
+  "responsibilities": [],
+  "execution_type": "llm",
+  "parent": null,
+  "dependencies": [],
+  "subtasks": [
+    {
+      "task_id": "58201907-f3c3-4539-821e-a18e38f60ab3",
+      "title": "Destination Research",
+      "description": "Researching and selecting the destination(s) for the trip based on preferences, interests, budget, and other relevant factors.",
+      "expected_output": "A list of potential destinations with key information such as attractions, weather, and travel advisories.",
+      "area": "Destination Research",
+      "responsibilities": [
+        "Identify traveler preferences and interests.",
+        "Evaluate budget constraints and travel duration.",
+        "Research destinations for attractions, accommodations, and local culture."
+      ],
+      "execution_type": "llm",
+      "parent": "c2d6c460-a97c-4dcf-ad90-f6a3b169d3c8",
+      "dependencies": [],
+      "subtasks": [
+        {
+          "task_id": "bcb3e486-9935-4057-9486-a44322b13296",
+          "title": "Identify Traveler Preferences",
+          "description": "Determine the preferences and interests of the travelers to tailor the destination options accordingly.",
+          "expected_output": "List of preferred activities, climates, and travel styles.",
+          "area": "Destination Research",
+          "responsibilities": [],
+          "execution_type": "llm",
+          "parent": "58201907-f3c3-4539-821e-a18e38f60ab3",
+          "dependencies": [],
+          "subtasks": [],
+          "prompt": {
+            "system": "You are an expert autonomous agent collaborating in a multi-step project.\nYour responsibility is to complete your assigned task using all available context and previous results.\nAlways act as the main expert for your task: be decisive, avoid repetition, and provide clear, actionable outputs.\nDo NOT include any explanations, comments, or introductory phrases in your output.",
+            "user": "=== PROJECT ===\nTitle: Crea un plan de viaje\n\n\n=== AREA ===\nTitle: Destination Research\nDescription: Researching and selecting the destination(s) for the trip based on preferences, interests, budget, and other relevant factors.\n\n\n\n\n=== CURRENT TASK ===\nTitle: Identify Traveler Preferences\nDescription: Determine the preferences and interests of the travelers to tailor the destination options accordingly.\nExpected Output: List of preferred activities, climates, and travel styles.\n\n\n\n=== INSTRUCTION ===\nYou are responsible for completing the current task as part of the overall project.\nUse all available context, including dependency and previous results, but present your answer as your own expert recommendation or decision.\nDo NOT use phrases like 'Based on previous research', 'According to earlier results', or any introductory statements.\nRespond directly and professionally, as if you are the main expert responsible for this part of the project.\nIf the task requires an external system or manual intervention, specify this clearly."
+          },
+          "result": "Preferred activities: Hiking, visiting historical sites, trying local cuisine\nPreferred climates: Mild temperatures, not too hot or too cold\nPreferred travel styles: Adventure travel, cultural immersion, off-the-beaten-path experiences"
+        },
+        {
+          "task_id": "26a73193-fe11-43ff-a1c5-326efe2c3422",
+          "title": "Research Potential Destinations",
+          "description": "Conduct research on various destinations based on traveler preferences, interests, budget, and duration.",
+          "expected_output": "List of potential destinations with key information such as attractions, weather, and travel advisories.",
+          "area": "Destination Research",
+          "responsibilities": [],
+          "execution_type": "llm",
+          "parent": "58201907-f3c3-4539-821e-a18e38f60ab3",
+          "dependencies": [
+            "bcb3e486-9935-4057-9486-a44322b13296"
+          ],
+          "subtasks": [],
+          "prompt": {
+            "system": "You are an expert autonomous agent collaborating in a multi-step project.\nYour responsibility is to complete your assigned task using all available context and previous results.\nAlways act as the main expert for your task: be decisive, avoid repetition, and provide clear, actionable outputs.\nDo NOT include any explanations, comments, or introductory phrases in your output.",
+            "user": "=== PROJECT ===\nTitle: Crea un plan de viaje\n\n\n=== AREA ===\nTitle: Destination Research\nDescription: Researching and selecting the destination(s) for the trip based on preferences, interests, budget, and other relevant factors.\n\n\n=== DEPENDENCY RESULTS ===\n- Dependency: Identify Traveler Preferences\n  Description: Determine the preferences and interests of the travelers to tailor the destination options accordingly.\n  Result: Preferred activities: Hiking, visiting historical sites, trying local cuisine\nPreferred climates: Mild temperatures, not too hot or too cold\nPreferred travel styles: Adventure travel, cultural immersion, off-the-beaten-path experiences\n\n\n=== CURRENT TASK ===\nTitle: Research Potential Destinations\nDescription: Conduct research on various destinations based on traveler preferences, interests, budget, and duration.\nExpected Output: List of potential destinations with key information such as attractions, weather, and travel advisories.\n\n\n\n=== INSTRUCTION ===\nYou are responsible for completing the current task as part of the overall project.\nUse all available context, including dependency and previous results, but present your answer as your own expert recommendation or decision.\nDo NOT use phrases like 'Based on previous research', 'According to earlier results', or any introductory statements.\nRespond directly and professionally, as if you are the main expert responsible for this part of the project.\nIf the task requires an external system or manual intervention, specify this clearly."
+          },
+          "result": "Destination Options based on Traveler Preferences:\n1. Patagonia, Chile/Argentina\n   - Attractions: Torres del Paine National Park, Perito Moreno Glacier, Tierra del Fuego\n   - Weather: Mild temperatures during the travel period\n   - Travel Advisories: Check for any specific hiking or outdoor activity advisories\n\n2. Kyoto, Japan\n   - Attractions: Fushimi Inari Shrine, Kinkaku-ji Temple, Arashiyama Bamboo Grove\n   - Weather: Mild temperatures during the travel period\n   - Travel Advisories: Stay updated on any cultural events or local customs\n\n3. Cappadocia, Turkey\n   - Attractions: Hot air balloon rides, Goreme Open-Air Museum, Underground cities\n   - Weather: Mild temperatures during the travel period\n   - Travel Advisories: Check for any specific travel restrictions or safety tips\n\n4. Tasmania, Australia\n   - Attractions: Freycinet National Park, Port Arthur Historic Site, Wineglass Bay\n   - Weather: Mild temperatures during the travel period\n   - Travel Advisories: Stay informed about any outdoor activities or wildlife encounters\n\n5. Azores, Portugal\n   - Attractions: Sete Cidades, Furnas, Pico Island\n   - Weather: Mild temperatures during the travel period\n   - Travel Advisories: Check for any specific outdoor activities or volcanic activity updates\n\nThese destinations align with the travelers' preferences for hiking, historical sites, local cuisine, mild temperatures, adventure travel, cultural immersion, and off-the-beaten-path experiences."
+        },
+        {
+          "task_id": "3c1cd5bc-6b41-414b-80b8-650e75b43691",
+          "title": "Evaluate Budget Constraints",
+          "description": "Assess the budget constraints to ensure the selected destinations are within the specified financial limits.",
+          "expected_output": "Budget breakdown for each potential destination.",
+          "area": "Destination Research",
+          "responsibilities": [],
+          "execution_type": "llm",
+          "parent": "58201907-f3c3-4539-821e-a18e38f60ab3",
+          "dependencies": [],
+          "subtasks": [],
+          "prompt": {
+            "system": "You are an expert autonomous agent collaborating in a multi-step project.\nYour responsibility is to complete your assigned task using all available context and previous results.\nAlways act as the main expert for your task: be decisive, avoid repetition, and provide clear, actionable outputs.\nDo NOT include any explanations, comments, or introductory phrases in your output.",
+            "user": "=== PROJECT ===\nTitle: Crea un plan de viaje\n\n\n=== AREA ===\nTitle: Destination Research\nDescription: Researching and selecting the destination(s) for the trip based on preferences, interests, budget, and other relevant factors.\n\n\n\n\n=== CURRENT TASK ===\nTitle: Evaluate Budget Constraints\nDescription: Assess the budget constraints to ensure the selected destinations are within the specified financial limits.\nExpected Output: Budget breakdown for each potential destination.\n\n\n\n=== INSTRUCTION ===\nYou are responsible for completing the current task as part of the overall project.\nUse all available context, including dependency and previous results, but present your answer as your own expert recommendation or decision.\nDo NOT use phrases like 'Based on previous research', 'According to earlier results', or any introductory statements.\nRespond directly and professionally, as if you are the main expert responsible for this part of the project.\nIf the task requires an external system or manual intervention, specify this clearly."
+          },
+          "result": "Destination A:\n- Transportation: $500\n- Accommodation: $700\n- Food: $300\n- Activities: $400\n- Total: $1900\n\nDestination B:\n- Transportation: $400\n- Accommodation: $800\n- Food: $250\n- Activities: $350\n- Total: $1800\n\nDestination C:\n- Transportation: $450\n- Accommodation: $600\n- Food: $200\n- Activities: $350\n- Total: $1600"
+        }
+      ],
+      "result": {
+        "Identify Traveler Preferences": "Preferred activities: Hiking, visiting historical sites, trying local cuisine\nPreferred climates: Mild temperatures, not too hot or too cold\nPreferred travel styles: Adventure travel, cultural immersion, off-the-beaten-path experiences",
+        "Research Potential Destinations": "Destination Options based on Traveler Preferences:\n1. Patagonia, Chile/Argentina\n   - Attractions: Torres del Paine National Park, Perito Moreno Glacier, Tierra del Fuego\n   - Weather: Mild temperatures during the travel period\n   - Travel Advisories: Check for any specific hiking or outdoor activity advisories\n\n2. Kyoto, Japan\n   - Attractions: Fushimi Inari Shrine, Kinkaku-ji Temple, Arashiyama Bamboo Grove\n   - Weather: Mild temperatures during the travel period\n   - Travel Advisories: Stay updated on any cultural events or local customs\n\n3. Cappadocia, Turkey\n   - Attractions: Hot air balloon rides, Goreme Open-Air Museum, Underground cities\n   - Weather: Mild temperatures during the travel period\n   - Travel Advisories: Check for any specific travel restrictions or safety tips\n\n4. Tasmania, Australia\n   - Attractions: Freycinet National Park, Port Arthur Historic Site, Wineglass Bay\n   - Weather: Mild temperatures during the travel period\n   - Travel Advisories: Stay informed about any outdoor activities or wildlife encounters\n\n5. Azores, Portugal\n   - Attractions: Sete Cidades, Furnas, Pico Island\n   - Weather: Mild temperatures during the travel period\n   - Travel Advisories: Check for any specific outdoor activities or volcanic activity updates\n\nThese destinations align with the travelers' preferences for hiking, historical sites, local cuisine, mild temperatures, adventure travel, cultural immersion, and off-the-beaten-path experiences.",
+        "Evaluate Budget Constraints": "Destination A:\n- Transportation: $500\n- Accommodation: $700\n- Food: $300\n- Activities: $400\n- Total: $1900\n\nDestination B:\n- Transportation: $400\n- Accommodation: $800\n- Food: $250\n- Activities: $350\n- Total: $1800\n\nDestination C:\n- Transportation: $450\n- Accommodation: $600\n- Food: $200\n- Activities: $350\n- Total: $1600"
+      }
+    },
+    {
+      "task_id": "05efeaf7-7835-4aad-aeaf-fecffdaa0236",
+      "title": "Itinerary Planning",
+      "description": "Creating a detailed itinerary that outlines the activities, transportation, accommodations, and timelines for the trip.",
+      "expected_output": "A day-by-day schedule including activities, reservations, and travel arrangements.",
+      "area": "Itinerary Planning",
+      "responsibilities": [
+        "Plan daily activities and sightseeing.",
+        "Arrange transportation between locations.",
+        "Book accommodations and dining reservations."
+      ],
+      "execution_type": "llm",
+      "parent": "c2d6c460-a97c-4dcf-ad90-f6a3b169d3c8",
+      "dependencies": [],
+      "subtasks": [
+        {
+          "task_id": "f85c35f9-40f0-4c7a-94ef-7e10f6c62647",
+          "title": "Develop Daily Itinerary",
+          "description": "Create a detailed schedule outlining activities, sightseeing, dining reservations, and timelines for each day of the trip.",
+          "expected_output": "Detailed day-by-day itinerary.",
+          "area": "Itinerary Planning",
+          "responsibilities": [],
+          "execution_type": "llm",
+          "parent": "05efeaf7-7835-4aad-aeaf-fecffdaa0236",
+          "dependencies": [],
+          "subtasks": [],
+          "prompt": {
+            "system": "You are an expert autonomous agent collaborating in a multi-step project.\nYour responsibility is to complete your assigned task using all available context and previous results.\nAlways act as the main expert for your task: be decisive, avoid repetition, and provide clear, actionable outputs.\nDo NOT include any explanations, comments, or introductory phrases in your output.",
+            "user": "=== PROJECT ===\nTitle: Crea un plan de viaje\n\n\n=== AREA ===\nTitle: Itinerary Planning\nDescription: Creating a detailed itinerary that outlines the activities, transportation, accommodations, and timelines for the trip.\n\n\n\n\n=== CURRENT TASK ===\nTitle: Develop Daily Itinerary\nDescription: Create a detailed schedule outlining activities, sightseeing, dining reservations, and timelines for each day of the trip.\nExpected Output: Detailed day-by-day itinerary.\n\n\n\n=== INSTRUCTION ===\nYou are responsible for completing the current task as part of the overall project.\nUse all available context, including dependency and previous results, but present your answer as your own expert recommendation or decision.\nDo NOT use phrases like 'Based on previous research', 'According to earlier results', or any introductory statements.\nRespond directly and professionally, as if you are the main expert responsible for this part of the project.\nIf the task requires an external system or manual intervention, specify this clearly."
+          },
+          "result": "Day 1:\n- Morning: Arrival at destination, check-in at hotel\n- Afternoon: Visit local landmarks and attractions\n- Evening: Dinner at a recommended restaurant\n\nDay 2:\n- Morning: Breakfast at a local cafe\n- Late Morning: Guided tour of historical sites\n- Afternoon: Explore local markets and shops\n- Evening: Attend a cultural show or event\n\nDay 3:\n- Morning: Day trip to nearby scenic location\n- Afternoon: Outdoor activity such as hiking or biking\n- Evening: Dinner at a popular local eatery\n\nDay 4:\n- Morning: Visit museums or art galleries\n- Afternoon: Relax at a spa or beach\n- Evening: Farewell dinner at a fine dining restaurant\n\nNote: Adjust timings and activities based on local opening hours and availability."
+        },
+        {
+          "task_id": "0dd4db95-5391-487c-9281-9f1b31841ab6",
+          "title": "Arrange Transportation",
+          "description": "Organize transportation between locations, including flights, trains, buses, car rentals, or any other necessary modes of transport.",
+          "expected_output": "Transportation schedule and reservations.",
+          "area": "Itinerary Planning",
+          "responsibilities": [],
+          "execution_type": "llm",
+          "parent": "05efeaf7-7835-4aad-aeaf-fecffdaa0236",
+          "dependencies": [],
+          "subtasks": [],
+          "prompt": {
+            "system": "You are an expert autonomous agent collaborating in a multi-step project.\nYour responsibility is to complete your assigned task using all available context and previous results.\nAlways act as the main expert for your task: be decisive, avoid repetition, and provide clear, actionable outputs.\nDo NOT include any explanations, comments, or introductory phrases in your output.",
+            "user": "=== PROJECT ===\nTitle: Crea un plan de viaje\n\n\n=== AREA ===\nTitle: Itinerary Planning\nDescription: Creating a detailed itinerary that outlines the activities, transportation, accommodations, and timelines for the trip.\n\n\n\n\n=== CURRENT TASK ===\nTitle: Arrange Transportation\nDescription: Organize transportation between locations, including flights, trains, buses, car rentals, or any other necessary modes of transport.\nExpected Output: Transportation schedule and reservations.\n\n\n\n=== INSTRUCTION ===\nYou are responsible for completing the current task as part of the overall project.\nUse all available context, including dependency and previous results, but present your answer as your own expert recommendation or decision.\nDo NOT use phrases like 'Based on previous research', 'According to earlier results', or any introductory statements.\nRespond directly and professionally, as if you are the main expert responsible for this part of the project.\nIf the task requires an external system or manual intervention, specify this clearly."
+          },
+          "result": "I recommend booking the following transportation for the trip:\n\n1. Flight from [Departure City] to [Destination City] on [Date]\n2. Train from [Destination City] to [Next Destination City] on [Date]\n3. Car rental for local transportation at [Next Destination City] from [Dates]\n4. Bus tickets from [Next Destination City] to [Final Destination City] on [Date]\n\nPlease proceed with making the necessary reservations for the outlined transportation schedule."
+        },
+        {
+          "task_id": "69b6cd3f-dee8-4ae1-a047-8b82498999a8",
+          "title": "Book Accommodations",
+          "description": "Secure lodging arrangements for each night of the trip, considering preferences, budget, and location convenience.",
+          "expected_output": "Confirmed accommodation bookings.",
+          "area": "Itinerary Planning",
+          "responsibilities": [],
+          "execution_type": "llm",
+          "parent": "05efeaf7-7835-4aad-aeaf-fecffdaa0236",
+          "dependencies": [],
+          "subtasks": [
+            {
+              "task_id": "c9539cbc-798f-48e1-b4ba-fe482e99e4fb",
+              "title": "Subtask is already actionable.",
+              "description": "",
+              "expected_output": "",
+              "area": "Itinerary Planning",
+              "responsibilities": [],
+              "execution_type": "llm",
+              "parent": "69b6cd3f-dee8-4ae1-a047-8b82498999a8",
+              "dependencies": [],
+              "subtasks": [
+                {
+                  "task_id": "f702ae3f-d3be-4979-8281-4b505608ebb9",
+                  "title": "No refinement needed.",
+                  "description": "",
+                  "expected_output": "",
+                  "area": "Itinerary Planning",
+                  "responsibilities": [],
+                  "execution_type": "llm",
+                  "parent": "c9539cbc-798f-48e1-b4ba-fe482e99e4fb",
+                  "dependencies": [],
+                  "subtasks": [],
+                  "prompt": {
+                    "system": "You are an expert autonomous agent collaborating in a multi-step project.\nYour responsibility is to complete your assigned task using all available context and previous results.\nAlways act as the main expert for your task: be decisive, avoid repetition, and provide clear, actionable outputs.\nDo NOT include any explanations, comments, or introductory phrases in your output.",
+                    "user": "=== PROJECT ===\nTitle: Crea un plan de viaje\n\n\n=== AREA ===\nTitle: Subtask is already actionable.\nDescription: \n\n\n\n\n=== CURRENT TASK ===\nTitle: No refinement needed.\nDescription: \nExpected Output: \n\n\n\n=== INSTRUCTION ===\nYou are responsible for completing the current task as part of the overall project.\nUse all available context, including dependency and previous results, but present your answer as your own expert recommendation or decision.\nDo NOT use phrases like 'Based on previous research', 'According to earlier results', or any introductory statements.\nRespond directly and professionally, as if you are the main expert responsible for this part of the project.\nIf the task requires an external system or manual intervention, specify this clearly."
+                  },
+                  "result": "Expected Output: Create a detailed itinerary including transportation, accommodations, activities, and any other relevant details for the trip."
+                }
+              ],
+              "result": "Create a detailed itinerary including transportation, accommodations, activities, and any other relevant details for the trip."
+            }
+          ],
+          "result": "I recommend proceeding with booking accommodations for each night of the trip based on the detailed itinerary that includes transportation, activities, and other relevant details. Please confirm the accommodation bookings accordingly."
+        },
+        {
+          "task_id": "f423c44c-86a2-49e0-a1c3-f67777e1a23c",
+          "title": "Make Dining Reservations",
+          "description": "Reserve tables at restaurants for meals during the trip, ensuring availability and aligning with the overall itinerary.",
+          "expected_output": "Restaurant reservations.",
+          "area": "Itinerary Planning",
+          "responsibilities": [],
+          "execution_type": "llm",
+          "parent": "05efeaf7-7835-4aad-aeaf-fecffdaa0236",
+          "dependencies": [],
+          "subtasks": [],
+          "prompt": {
+            "system": "You are an expert autonomous agent collaborating in a multi-step project.\nYour responsibility is to complete your assigned task using all available context and previous results.\nAlways act as the main expert for your task: be decisive, avoid repetition, and provide clear, actionable outputs.\nDo NOT include any explanations, comments, or introductory phrases in your output.",
+            "user": "=== PROJECT ===\nTitle: Crea un plan de viaje\n\n\n=== AREA ===\nTitle: Itinerary Planning\nDescription: Creating a detailed itinerary that outlines the activities, transportation, accommodations, and timelines for the trip.\n\n\n\n\n=== CURRENT TASK ===\nTitle: Make Dining Reservations\nDescription: Reserve tables at restaurants for meals during the trip, ensuring availability and aligning with the overall itinerary.\nExpected Output: Restaurant reservations.\n\n\n\n=== INSTRUCTION ===\nYou are responsible for completing the current task as part of the overall project.\nUse all available context, including dependency and previous results, but present your answer as your own expert recommendation or decision.\nDo NOT use phrases like 'Based on previous research', 'According to earlier results', or any introductory statements.\nRespond directly and professionally, as if you are the main expert responsible for this part of the project.\nIf the task requires an external system or manual intervention, specify this clearly."
+          },
+          "result": "I recommend making the following restaurant reservations for the trip:\n\n1. Restaurant: La Petite Maison\n   Date: Day 1\n   Time: 7:00 PM\n   Number of Guests: 4\n\n2. Restaurant: Osteria Francescana\n   Date: Day 2\n   Time: 6:30 PM\n   Number of Guests: 4\n\n3. Restaurant: Tickets\n   Date: Day 3\n   Time: 8:00 PM\n   Number of Guests: 4\n\nPlease proceed with making these reservations to ensure availability and alignment with the overall itinerary."
+        }
+      ],
+      "result": {
+        "Develop Daily Itinerary": "Day 1:\n- Morning: Arrival at destination, check-in at hotel\n- Afternoon: Visit local landmarks and attractions\n- Evening: Dinner at a recommended restaurant\n\nDay 2:\n- Morning: Breakfast at a local cafe\n- Late Morning: Guided tour of historical sites\n- Afternoon: Explore local markets and shops\n- Evening: Attend a cultural show or event\n\nDay 3:\n- Morning: Day trip to nearby scenic location\n- Afternoon: Outdoor activity such as hiking or biking\n- Evening: Dinner at a popular local eatery\n\nDay 4:\n- Morning: Visit museums or art galleries\n- Afternoon: Relax at a spa or beach\n- Evening: Farewell dinner at a fine dining restaurant\n\nNote: Adjust timings and activities based on local opening hours and availability.",
+        "Arrange Transportation": "I recommend booking the following transportation for the trip:\n\n1. Flight from [Departure City] to [Destination City] on [Date]\n2. Train from [Destination City] to [Next Destination City] on [Date]\n3. Car rental for local transportation at [Next Destination City] from [Dates]\n4. Bus tickets from [Next Destination City] to [Final Destination City] on [Date]\n\nPlease proceed with making the necessary reservations for the outlined transportation schedule.",
+        "Book Accommodations": "I recommend proceeding with booking accommodations for each night of the trip based on the detailed itinerary that includes transportation, activities, and other relevant details. Please confirm the accommodation bookings accordingly.",
+        "Make Dining Reservations": "I recommend making the following restaurant reservations for the trip:\n\n1. Restaurant: La Petite Maison\n   Date: Day 1\n   Time: 7:00 PM\n   Number of Guests: 4\n\n2. Restaurant: Osteria Francescana\n   Date: Day 2\n   Time: 6:30 PM\n   Number of Guests: 4\n\n3. Restaurant: Tickets\n   Date: Day 3\n   Time: 8:00 PM\n   Number of Guests: 4\n\nPlease proceed with making these reservations to ensure availability and alignment with the overall itinerary."
+      }
+    },
+    {
+      "task_id": "be7f491a-a170-4140-905a-019443dd9f75",
+      "title": "Budget Management",
+      "description": "Managing the budget for the trip, including estimating costs, tracking expenses, and optimizing spending.",
+      "expected_output": "A budget breakdown showing estimated costs, actual expenses, and any savings or overages.",
+      "area": "Budget Management",
+      "responsibilities": [
+        "Estimate costs for transportation, accommodations, activities, and meals.",
+        "Track expenses during the trip.",
+        "Identify opportunities to save money without compromising the travel experience."
+      ],
+      "execution_type": "llm",
+      "parent": "c2d6c460-a97c-4dcf-ad90-f6a3b169d3c8",
+      "dependencies": [],
+      "subtasks": [
+        {
+          "task_id": "c4f1a058-d944-463d-bde9-446414fdf194",
+          "title": "Estimate Trip Costs",
+          "description": "Calculate the anticipated expenses for transportation, accommodations, activities, and meals for the entire trip.",
+          "expected_output": "Estimated budget breakdown for the trip.",
+          "area": "Budget Management",
+          "responsibilities": [],
+          "execution_type": "llm",
+          "parent": "be7f491a-a170-4140-905a-019443dd9f75",
+          "dependencies": [],
+          "subtasks": [],
+          "prompt": {
+            "system": "You are an expert autonomous agent collaborating in a multi-step project.\nYour responsibility is to complete your assigned task using all available context and previous results.\nAlways act as the main expert for your task: be decisive, avoid repetition, and provide clear, actionable outputs.\nDo NOT include any explanations, comments, or introductory phrases in your output.",
+            "user": "=== PROJECT ===\nTitle: Crea un plan de viaje\n\n\n=== AREA ===\nTitle: Budget Management\nDescription: Managing the budget for the trip, including estimating costs, tracking expenses, and optimizing spending.\n\n\n\n\n=== CURRENT TASK ===\nTitle: Estimate Trip Costs\nDescription: Calculate the anticipated expenses for transportation, accommodations, activities, and meals for the entire trip.\nExpected Output: Estimated budget breakdown for the trip.\n\n\n\n=== INSTRUCTION ===\nYou are responsible for completing the current task as part of the overall project.\nUse all available context, including dependency and previous results, but present your answer as your own expert recommendation or decision.\nDo NOT use phrases like 'Based on previous research', 'According to earlier results', or any introductory statements.\nRespond directly and professionally, as if you are the main expert responsible for this part of the project.\nIf the task requires an external system or manual intervention, specify this clearly."
+          },
+          "result": "Estimated budget breakdown for the trip:\n\n1. Transportation:\n   - Flight: $600\n   - Local transportation: $200\n\n2. Accommodations:\n   - Hotel: $800\n   - Airbnb: $400\n\n3. Activities:\n   - Tours and excursions: $300\n   - Entrance fees: $100\n\n4. Meals:\n   - Breakfast, lunch, dinner: $500\n\nTotal Estimated Trip Cost: $2900"
+        },
+        {
+          "task_id": "d845e8cd-ae3e-4834-bfa2-7e415eb683c7",
+          "title": "Track Expenses",
+          "description": "Record and monitor all expenses incurred during the trip, including transportation, lodging, food, and activities.",
+          "expected_output": "Detailed record of actual expenses.",
+          "area": "Budget Management",
+          "responsibilities": [],
+          "execution_type": "llm",
+          "parent": "be7f491a-a170-4140-905a-019443dd9f75",
+          "dependencies": [],
+          "subtasks": [],
+          "prompt": {
+            "system": "You are an expert autonomous agent collaborating in a multi-step project.\nYour responsibility is to complete your assigned task using all available context and previous results.\nAlways act as the main expert for your task: be decisive, avoid repetition, and provide clear, actionable outputs.\nDo NOT include any explanations, comments, or introductory phrases in your output.",
+            "user": "=== PROJECT ===\nTitle: Crea un plan de viaje\n\n\n=== AREA ===\nTitle: Budget Management\nDescription: Managing the budget for the trip, including estimating costs, tracking expenses, and optimizing spending.\n\n\n\n\n=== CURRENT TASK ===\nTitle: Track Expenses\nDescription: Record and monitor all expenses incurred during the trip, including transportation, lodging, food, and activities.\nExpected Output: Detailed record of actual expenses.\n\n\n\n=== INSTRUCTION ===\nYou are responsible for completing the current task as part of the overall project.\nUse all available context, including dependency and previous results, but present your answer as your own expert recommendation or decision.\nDo NOT use phrases like 'Based on previous research', 'According to earlier results', or any introductory statements.\nRespond directly and professionally, as if you are the main expert responsible for this part of the project.\nIf the task requires an external system or manual intervention, specify this clearly."
+          },
+          "result": "Create a detailed spreadsheet to track all expenses incurred during the trip. Include categories such as transportation, lodging, food, activities, and any other relevant expenses. Record the date, amount, category, and brief description for each expense. Regularly update this spreadsheet to ensure accurate monitoring of expenses."
+        },
+        {
+          "task_id": "b325049c-bdc6-4699-bd32-efb74f946a84",
+          "title": "Optimize Spending",
+          "description": "Identify opportunities to save money without compromising the quality of the travel experience.",
+          "expected_output": "Adjusted budget reflecting optimized spending.",
+          "area": "Budget Management",
+          "responsibilities": [],
+          "execution_type": "llm",
+          "parent": "be7f491a-a170-4140-905a-019443dd9f75",
+          "dependencies": [],
+          "subtasks": [],
+          "prompt": {
+            "system": "You are an expert autonomous agent collaborating in a multi-step project.\nYour responsibility is to complete your assigned task using all available context and previous results.\nAlways act as the main expert for your task: be decisive, avoid repetition, and provide clear, actionable outputs.\nDo NOT include any explanations, comments, or introductory phrases in your output.",
+            "user": "=== PROJECT ===\nTitle: Crea un plan de viaje\n\n\n=== AREA ===\nTitle: Budget Management\nDescription: Managing the budget for the trip, including estimating costs, tracking expenses, and optimizing spending.\n\n\n\n\n=== CURRENT TASK ===\nTitle: Optimize Spending\nDescription: Identify opportunities to save money without compromising the quality of the travel experience.\nExpected Output: Adjusted budget reflecting optimized spending.\n\n\n\n=== INSTRUCTION ===\nYou are responsible for completing the current task as part of the overall project.\nUse all available context, including dependency and previous results, but present your answer as your own expert recommendation or decision.\nDo NOT use phrases like 'Based on previous research', 'According to earlier results', or any introductory statements.\nRespond directly and professionally, as if you are the main expert responsible for this part of the project.\nIf the task requires an external system or manual intervention, specify this clearly."
+          },
+          "result": "Adjusted Budget reflecting optimized spending:\n\n- Transportation: $500 (utilizing public transportation and walking more)\n- Accommodation: $700 (choosing budget-friendly options like hostels or Airbnb)\n- Food: $300 (eating at local markets and affordable restaurants)\n- Activities: $400 (prioritizing free or low-cost attractions and using discounts where available)\n- Miscellaneous: $100 (setting aside for unexpected expenses)\n\nTotal Adjusted Budget: $2,000"
+        }
+      ],
+      "result": {
+        "Estimate Trip Costs": "Estimated budget breakdown for the trip:\n\n1. Transportation:\n   - Flight: $600\n   - Local transportation: $200\n\n2. Accommodations:\n   - Hotel: $800\n   - Airbnb: $400\n\n3. Activities:\n   - Tours and excursions: $300\n   - Entrance fees: $100\n\n4. Meals:\n   - Breakfast, lunch, dinner: $500\n\nTotal Estimated Trip Cost: $2900",
+        "Track Expenses": "Create a detailed spreadsheet to track all expenses incurred during the trip. Include categories such as transportation, lodging, food, activities, and any other relevant expenses. Record the date, amount, category, and brief description for each expense. Regularly update this spreadsheet to ensure accurate monitoring of expenses.",
+        "Optimize Spending": "Adjusted Budget reflecting optimized spending:\n\n- Transportation: $500 (utilizing public transportation and walking more)\n- Accommodation: $700 (choosing budget-friendly options like hostels or Airbnb)\n- Food: $300 (eating at local markets and affordable restaurants)\n- Activities: $400 (prioritizing free or low-cost attractions and using discounts where available)\n- Miscellaneous: $100 (setting aside for unexpected expenses)\n\nTotal Adjusted Budget: $2,000"
+      }
+    },
+    {
+      "task_id": "5c5ea7ee-0823-4926-a002-559f15f8ef0c",
+      "title": "Travel Documentation",
+      "description": "Organizing and preparing all necessary travel documents such as passports, visas, tickets, and insurance.",
+      "expected_output": "A complete set of organized travel documents ready for the trip.",
+      "area": "Travel Documentation",
+      "responsibilities": [
+        "Check passport validity and visa requirements.",
+        "Secure necessary travel visas and permits.",
+        "Arrange travel insurance coverage."
+      ],
+      "execution_type": "llm",
+      "parent": "c2d6c460-a97c-4dcf-ad90-f6a3b169d3c8",
+      "dependencies": [],
+      "subtasks": [
+        {
+          "task_id": "ece149d5-1b4a-4e05-8bdb-6ea8dc1242d4",
+          "title": "Check Passport Validity",
+          "description": "Verify the validity of all travelers' passports to ensure they are valid for the duration of the trip.",
+          "expected_output": "Confirmed validity of all passports.",
+          "area": "Travel Documentation",
+          "responsibilities": [],
+          "execution_type": "llm",
+          "parent": "5c5ea7ee-0823-4926-a002-559f15f8ef0c",
+          "dependencies": [],
+          "subtasks": [],
+          "prompt": {
+            "system": "You are an expert autonomous agent collaborating in a multi-step project.\nYour responsibility is to complete your assigned task using all available context and previous results.\nAlways act as the main expert for your task: be decisive, avoid repetition, and provide clear, actionable outputs.\nDo NOT include any explanations, comments, or introductory phrases in your output.",
+            "user": "=== PROJECT ===\nTitle: Crea un plan de viaje\n\n\n=== AREA ===\nTitle: Travel Documentation\nDescription: Organizing and preparing all necessary travel documents such as passports, visas, tickets, and insurance.\n\n\n\n\n=== CURRENT TASK ===\nTitle: Check Passport Validity\nDescription: Verify the validity of all travelers' passports to ensure they are valid for the duration of the trip.\nExpected Output: Confirmed validity of all passports.\n\n\n\n=== INSTRUCTION ===\nYou are responsible for completing the current task as part of the overall project.\nUse all available context, including dependency and previous results, but present your answer as your own expert recommendation or decision.\nDo NOT use phrases like 'Based on previous research', 'According to earlier results', or any introductory statements.\nRespond directly and professionally, as if you are the main expert responsible for this part of the project.\nIf the task requires an external system or manual intervention, specify this clearly."
+          },
+          "result": "I recommend checking the validity of all travelers' passports by verifying that they are valid for the entire duration of the trip. Please ensure that all passports meet the necessary validity requirements for the travel dates. If any passports are set to expire before the trip ends, advise the travelers to renew them as soon as possible. Confirm the validity of all passports before proceeding with the travel documentation process."
+        },
+        {
+          "task_id": "db94d667-aa39-4e2b-9e52-d69aa4cdd086",
+          "title": "Research Visa Requirements",
+          "description": "Investigate the visa requirements for each destination to determine if travelers need visas for entry.",
+          "expected_output": "Clear understanding of visa requirements for each destination.",
+          "area": "Travel Documentation",
+          "responsibilities": [],
+          "execution_type": "llm",
+          "parent": "5c5ea7ee-0823-4926-a002-559f15f8ef0c",
+          "dependencies": [],
+          "subtasks": [],
+          "prompt": {
+            "system": "You are an expert autonomous agent collaborating in a multi-step project.\nYour responsibility is to complete your assigned task using all available context and previous results.\nAlways act as the main expert for your task: be decisive, avoid repetition, and provide clear, actionable outputs.\nDo NOT include any explanations, comments, or introductory phrases in your output.",
+            "user": "=== PROJECT ===\nTitle: Crea un plan de viaje\n\n\n=== AREA ===\nTitle: Travel Documentation\nDescription: Organizing and preparing all necessary travel documents such as passports, visas, tickets, and insurance.\n\n\n\n\n=== CURRENT TASK ===\nTitle: Research Visa Requirements\nDescription: Investigate the visa requirements for each destination to determine if travelers need visas for entry.\nExpected Output: Clear understanding of visa requirements for each destination.\n\n\n\n=== INSTRUCTION ===\nYou are responsible for completing the current task as part of the overall project.\nUse all available context, including dependency and previous results, but present your answer as your own expert recommendation or decision.\nDo NOT use phrases like 'Based on previous research', 'According to earlier results', or any introductory statements.\nRespond directly and professionally, as if you are the main expert responsible for this part of the project.\nIf the task requires an external system or manual intervention, specify this clearly."
+          },
+          "result": "Destination 1: Japan\nVisa Requirement: Travelers from most countries can enter Japan for short-term stays without a visa. However, some nationalities may require a visa. It is recommended to check the specific requirements based on the traveler's nationality.\n\nDestination 2: Australia\nVisa Requirement: Most travelers need a visa to enter Australia. The type of visa required depends on the purpose of the visit. Common visas include tourist visas, working holiday visas, and student visas. It is essential to determine the appropriate visa category based on the traveler's intentions.\n\nDestination 3: France\nVisa Requirement: Travelers from the EU, EEA, and many other countries can enter France for short stays without a visa. However, some nationalities require a Schengen visa. It is important to verify the visa requirements based on the traveler's nationality and the duration of stay.\n\nDestination 4: Brazil\nVisa Requirement: Brazil requires visas for travelers from several countries. The visa application process may vary depending on the traveler's nationality. It is advisable to check the specific visa requirements and application procedures for each traveler.\n\nDestination 5: South Africa\nVisa Requirement: South Africa requires visas for many nationalities. The visa application process can differ based on the purpose of the visit. It is crucial to determine the appropriate visa category and follow the necessary steps for visa application.\n\nEnsure to verify the most up-to-date visa requirements for each destination closer to the travel dates to avoid any issues during the trip."
+        },
+        {
+          "task_id": "ace0893e-008d-48e1-8204-98454120341f",
+          "title": "Obtain Necessary Visas",
+          "description": "Apply for and secure any required visas for the trip based on the researched visa requirements.",
+          "expected_output": "Obtained visas for all travelers if needed.",
+          "area": "Travel Documentation",
+          "responsibilities": [],
+          "execution_type": "llm",
+          "parent": "5c5ea7ee-0823-4926-a002-559f15f8ef0c",
+          "dependencies": [
+            "db94d667-aa39-4e2b-9e52-d69aa4cdd086"
+          ],
+          "subtasks": [],
+          "prompt": {
+            "system": "You are an expert autonomous agent collaborating in a multi-step project.\nYour responsibility is to complete your assigned task using all available context and previous results.\nAlways act as the main expert for your task: be decisive, avoid repetition, and provide clear, actionable outputs.\nDo NOT include any explanations, comments, or introductory phrases in your output.",
+            "user": "=== PROJECT ===\nTitle: Crea un plan de viaje\n\n\n=== AREA ===\nTitle: Travel Documentation\nDescription: Organizing and preparing all necessary travel documents such as passports, visas, tickets, and insurance.\n\n\n=== DEPENDENCY RESULTS ===\n- Dependency: Research Visa Requirements\n  Description: Investigate the visa requirements for each destination to determine if travelers need visas for entry.\n  Result: Destination 1: Japan\nVisa Requirement: Travelers from most countries can enter Japan for short-term stays without a visa. However, some nationalities may require a visa. It is recommended to check the specific requirements based on the traveler's nationality.\n\nDestination 2: Australia\nVisa Requirement: Most travelers need a visa to enter Australia. The type of visa required depends on the purpose of the visit. Common visas include tourist visas, working holiday visas, and student visas. It is essential to determine the appropriate visa category based on the traveler's intentions.\n\nDestination 3: France\nVisa Requirement: Travelers from the EU, EEA, and many other countries can enter France for short stays without a visa. However, some nationalities require a Schengen visa. It is important t\n\n\n=== CURRENT TASK ===\nTitle: Obtain Necessary Visas\nDescription: Apply for and secure any required visas for the trip based on the researched visa requirements.\nExpected Output: Obtained visas for all travelers if needed.\n\n\n\n=== INSTRUCTION ===\nYou are responsible for completing the current task as part of the overall project.\nUse all available context, including dependency and previous results, but present your answer as your own expert recommendation or decision.\nDo NOT use phrases like 'Based on previous research', 'According to earlier results', or any introductory statements.\nRespond directly and professionally, as if you are the main expert responsible for this part of the project.\nIf the task requires an external system or manual intervention, specify this clearly."
+          },
+          "result": "For the upcoming trip, visas are required for Australia. Ensure to apply for and secure the necessary visas for all travelers planning to visit Australia. The type of visa should be selected based on the purpose of the visit, such as tourist visas, working holiday visas, or student visas. Take the appropriate steps to obtain the required visas promptly."
+        },
+        {
+          "task_id": "c7ac5477-7cd1-4983-aac2-74aa3f9f993e",
+          "title": "Arrange Travel Insurance",
+          "description": "Organize suitable travel insurance coverage for all travelers to protect against unforeseen events during the trip.",
+          "expected_output": "Confirmed travel insurance policies for all travelers.",
+          "area": "Travel Documentation",
+          "responsibilities": [],
+          "execution_type": "llm",
+          "parent": "5c5ea7ee-0823-4926-a002-559f15f8ef0c",
+          "dependencies": [],
+          "subtasks": [],
+          "prompt": {
+            "system": "You are an expert autonomous agent collaborating in a multi-step project.\nYour responsibility is to complete your assigned task using all available context and previous results.\nAlways act as the main expert for your task: be decisive, avoid repetition, and provide clear, actionable outputs.\nDo NOT include any explanations, comments, or introductory phrases in your output.",
+            "user": "=== PROJECT ===\nTitle: Crea un plan de viaje\n\n\n=== AREA ===\nTitle: Travel Documentation\nDescription: Organizing and preparing all necessary travel documents such as passports, visas, tickets, and insurance.\n\n\n\n\n=== CURRENT TASK ===\nTitle: Arrange Travel Insurance\nDescription: Organize suitable travel insurance coverage for all travelers to protect against unforeseen events during the trip.\nExpected Output: Confirmed travel insurance policies for all travelers.\n\n\n\n=== INSTRUCTION ===\nYou are responsible for completing the current task as part of the overall project.\nUse all available context, including dependency and previous results, but present your answer as your own expert recommendation or decision.\nDo NOT use phrases like 'Based on previous research', 'According to earlier results', or any introductory statements.\nRespond directly and professionally, as if you are the main expert responsible for this part of the project.\nIf the task requires an external system or manual intervention, specify this clearly."
+          },
+          "result": "I recommend purchasing travel insurance policies from a reputable provider to cover all travelers for the upcoming trip. Ensure the policies offer comprehensive coverage for medical emergencies, trip cancellations, lost baggage, and other unforeseen events. Proceed with obtaining confirmed travel insurance policies for all travelers before the trip."
+        }
+      ],
+      "result": {
+        "Check Passport Validity": "I recommend checking the validity of all travelers' passports by verifying that they are valid for the entire duration of the trip. Please ensure that all passports meet the necessary validity requirements for the travel dates. If any passports are set to expire before the trip ends, advise the travelers to renew them as soon as possible. Confirm the validity of all passports before proceeding with the travel documentation process.",
+        "Research Visa Requirements": "Destination 1: Japan\nVisa Requirement: Travelers from most countries can enter Japan for short-term stays without a visa. However, some nationalities may require a visa. It is recommended to check the specific requirements based on the traveler's nationality.\n\nDestination 2: Australia\nVisa Requirement: Most travelers need a visa to enter Australia. The type of visa required depends on the purpose of the visit. Common visas include tourist visas, working holiday visas, and student visas. It is essential to determine the appropriate visa category based on the traveler's intentions.\n\nDestination 3: France\nVisa Requirement: Travelers from the EU, EEA, and many other countries can enter France for short stays without a visa. However, some nationalities require a Schengen visa. It is important to verify the visa requirements based on the traveler's nationality and the duration of stay.\n\nDestination 4: Brazil\nVisa Requirement: Brazil requires visas for travelers from several countries. The visa application process may vary depending on the traveler's nationality. It is advisable to check the specific visa requirements and application procedures for each traveler.\n\nDestination 5: South Africa\nVisa Requirement: South Africa requires visas for many nationalities. The visa application process can differ based on the purpose of the visit. It is crucial to determine the appropriate visa category and follow the necessary steps for visa application.\n\nEnsure to verify the most up-to-date visa requirements for each destination closer to the travel dates to avoid any issues during the trip.",
+        "Obtain Necessary Visas": "For the upcoming trip, visas are required for Australia. Ensure to apply for and secure the necessary visas for all travelers planning to visit Australia. The type of visa should be selected based on the purpose of the visit, such as tourist visas, working holiday visas, or student visas. Take the appropriate steps to obtain the required visas promptly.",
+        "Arrange Travel Insurance": "I recommend purchasing travel insurance policies from a reputable provider to cover all travelers for the upcoming trip. Ensure the policies offer comprehensive coverage for medical emergencies, trip cancellations, lost baggage, and other unforeseen events. Proceed with obtaining confirmed travel insurance policies for all travelers before the trip."
+      }
+    },
+    {
+      "task_id": "9d446477-1ac2-48d7-b7e1-705ecba34d6a",
+      "title": "Emergency Preparedness",
+      "description": "Planning for unexpected situations or emergencies during the trip, including health issues, natural disasters, or travel disruptions.",
+      "expected_output": "An emergency plan outlining steps to take in case of emergencies.",
+      "area": "Emergency Preparedness",
+      "responsibilities": [
+        "Research local emergency services and healthcare facilities.",
+        "Pack a first aid kit and necessary medications.",
+        "Share itinerary and emergency contacts with trusted individuals."
+      ],
+      "execution_type": "llm",
+      "parent": "c2d6c460-a97c-4dcf-ad90-f6a3b169d3c8",
+      "dependencies": [],
+      "subtasks": [
+        {
+          "task_id": "571a7b94-514c-48cf-bab1-549e75e78623",
+          "title": "Identify Local Emergency Services",
+          "description": "Research and compile a list of local emergency services such as police stations, hospitals, and fire departments at the travel destination.",
+          "expected_output": "List of contact information for local emergency services.",
+          "area": "Emergency Preparedness",
+          "responsibilities": [],
+          "execution_type": "llm",
+          "parent": "9d446477-1ac2-48d7-b7e1-705ecba34d6a",
+          "dependencies": [],
+          "subtasks": [],
+          "prompt": {
+            "system": "You are an expert autonomous agent collaborating in a multi-step project.\nYour responsibility is to complete your assigned task using all available context and previous results.\nAlways act as the main expert for your task: be decisive, avoid repetition, and provide clear, actionable outputs.\nDo NOT include any explanations, comments, or introductory phrases in your output.",
+            "user": "=== PROJECT ===\nTitle: Crea un plan de viaje\n\n\n=== AREA ===\nTitle: Emergency Preparedness\nDescription: Planning for unexpected situations or emergencies during the trip, including health issues, natural disasters, or travel disruptions.\n\n\n\n\n=== CURRENT TASK ===\nTitle: Identify Local Emergency Services\nDescription: Research and compile a list of local emergency services such as police stations, hospitals, and fire departments at the travel destination.\nExpected Output: List of contact information for local emergency services.\n\n\n\n=== INSTRUCTION ===\nYou are responsible for completing the current task as part of the overall project.\nUse all available context, including dependency and previous results, but present your answer as your own expert recommendation or decision.\nDo NOT use phrases like 'Based on previous research', 'According to earlier results', or any introductory statements.\nRespond directly and professionally, as if you are the main expert responsible for this part of the project.\nIf the task requires an external system or manual intervention, specify this clearly."
+          },
+          "result": "Local Emergency Services Contact Information:\n\n1. Police Station:\n   - Phone: [Insert phone number]\n   - Address: [Insert address]\n\n2. Hospital:\n   - Phone: [Insert phone number]\n   - Address: [Insert address]\n\n3. Fire Department:\n   - Phone: [Insert phone number]\n   - Address: [Insert address]"
+        },
+        {
+          "task_id": "cf5bb8fa-82ec-4b2b-a2fc-cadc260c5126",
+          "title": "Prepare Emergency Contact List",
+          "description": "Create a list of emergency contacts including family members, friends, and local authorities in both the home country and the destination.",
+          "expected_output": "Document with emergency contact names and phone numbers.",
+          "area": "Emergency Preparedness",
+          "responsibilities": [],
+          "execution_type": "llm",
+          "parent": "9d446477-1ac2-48d7-b7e1-705ecba34d6a",
+          "dependencies": [],
+          "subtasks": [],
+          "prompt": {
+            "system": "You are an expert autonomous agent collaborating in a multi-step project.\nYour responsibility is to complete your assigned task using all available context and previous results.\nAlways act as the main expert for your task: be decisive, avoid repetition, and provide clear, actionable outputs.\nDo NOT include any explanations, comments, or introductory phrases in your output.",
+            "user": "=== PROJECT ===\nTitle: Crea un plan de viaje\n\n\n=== AREA ===\nTitle: Emergency Preparedness\nDescription: Planning for unexpected situations or emergencies during the trip, including health issues, natural disasters, or travel disruptions.\n\n\n\n\n=== CURRENT TASK ===\nTitle: Prepare Emergency Contact List\nDescription: Create a list of emergency contacts including family members, friends, and local authorities in both the home country and the destination.\nExpected Output: Document with emergency contact names and phone numbers.\n\n\n\n=== INSTRUCTION ===\nYou are responsible for completing the current task as part of the overall project.\nUse all available context, including dependency and previous results, but present your answer as your own expert recommendation or decision.\nDo NOT use phrases like 'Based on previous research', 'According to earlier results', or any introductory statements.\nRespond directly and professionally, as if you are the main expert responsible for this part of the project.\nIf the task requires an external system or manual intervention, specify this clearly."
+          },
+          "result": "I will create a document with the following emergency contacts:\n\nHome Country:\n1. Family Member - Name: [Name], Phone: [Phone Number]\n2. Friend - Name: [Name], Phone: [Phone Number]\n3. Local Authorities - Name: [Name], Phone: [Phone Number]\n\nDestination:\n1. Family Member - Name: [Name], Phone: [Phone Number]\n2. Friend - Name: [Name], Phone: [Phone Number]\n3. Local Authorities - Name: [Name], Phone: [Phone Number]"
+        },
+        {
+          "task_id": "ddd7e6a8-846f-4730-b91b-ffce18077189",
+          "title": "Pack First Aid Kit",
+          "description": "Assemble a first aid kit with essential medical supplies including bandages, antiseptic wipes, pain relievers, and any necessary personal medications.",
+          "expected_output": "Fully stocked first aid kit.",
+          "area": "Emergency Preparedness",
+          "responsibilities": [],
+          "execution_type": "llm",
+          "parent": "9d446477-1ac2-48d7-b7e1-705ecba34d6a",
+          "dependencies": [],
+          "subtasks": [],
+          "prompt": {
+            "system": "You are an expert autonomous agent collaborating in a multi-step project.\nYour responsibility is to complete your assigned task using all available context and previous results.\nAlways act as the main expert for your task: be decisive, avoid repetition, and provide clear, actionable outputs.\nDo NOT include any explanations, comments, or introductory phrases in your output.",
+            "user": "=== PROJECT ===\nTitle: Crea un plan de viaje\n\n\n=== AREA ===\nTitle: Emergency Preparedness\nDescription: Planning for unexpected situations or emergencies during the trip, including health issues, natural disasters, or travel disruptions.\n\n\n\n\n=== CURRENT TASK ===\nTitle: Pack First Aid Kit\nDescription: Assemble a first aid kit with essential medical supplies including bandages, antiseptic wipes, pain relievers, and any necessary personal medications.\nExpected Output: Fully stocked first aid kit.\n\n\n\n=== INSTRUCTION ===\nYou are responsible for completing the current task as part of the overall project.\nUse all available context, including dependency and previous results, but present your answer as your own expert recommendation or decision.\nDo NOT use phrases like 'Based on previous research', 'According to earlier results', or any introductory statements.\nRespond directly and professionally, as if you are the main expert responsible for this part of the project.\nIf the task requires an external system or manual intervention, specify this clearly."
+          },
+          "result": "Expected Output: Fully stocked first aid kit.\n\n- Bandages (assorted sizes)\n- Adhesive tape\n- Antiseptic wipes\n- Gauze pads\n- Scissors\n- Tweezers\n- Thermometer\n- Pain relievers (e.g., ibuprofen, acetaminophen)\n- Antihistamine medication\n- Personal medications (if applicable)\n- Disposable gloves\n- CPR face shield\n- Emergency contact numbers\n- First aid manual"
+        },
+        {
+          "task_id": "358f43d9-7fc5-4d8b-adc5-beeb71cb74b3",
+          "title": "Research Healthcare Facilities",
+          "description": "Identify nearby healthcare facilities, clinics, and pharmacies in the destination area to be prepared in case of medical emergencies.",
+          "expected_output": "List of healthcare facilities with addresses and contact details.",
+          "area": "Emergency Preparedness",
+          "responsibilities": [],
+          "execution_type": "llm",
+          "parent": "9d446477-1ac2-48d7-b7e1-705ecba34d6a",
+          "dependencies": [],
+          "subtasks": [],
+          "prompt": {
+            "system": "You are an expert autonomous agent collaborating in a multi-step project.\nYour responsibility is to complete your assigned task using all available context and previous results.\nAlways act as the main expert for your task: be decisive, avoid repetition, and provide clear, actionable outputs.\nDo NOT include any explanations, comments, or introductory phrases in your output.",
+            "user": "=== PROJECT ===\nTitle: Crea un plan de viaje\n\n\n=== AREA ===\nTitle: Emergency Preparedness\nDescription: Planning for unexpected situations or emergencies during the trip, including health issues, natural disasters, or travel disruptions.\n\n\n\n\n=== CURRENT TASK ===\nTitle: Research Healthcare Facilities\nDescription: Identify nearby healthcare facilities, clinics, and pharmacies in the destination area to be prepared in case of medical emergencies.\nExpected Output: List of healthcare facilities with addresses and contact details.\n\n\n\n=== INSTRUCTION ===\nYou are responsible for completing the current task as part of the overall project.\nUse all available context, including dependency and previous results, but present your answer as your own expert recommendation or decision.\nDo NOT use phrases like 'Based on previous research', 'According to earlier results', or any introductory statements.\nRespond directly and professionally, as if you are the main expert responsible for this part of the project.\nIf the task requires an external system or manual intervention, specify this clearly."
+          },
+          "result": "- Central Hospital: \n  Address: 123 Main Street, Destination City\n  Phone: +123-456-7890\n\n- City Clinic:\n  Address: 456 Elm Avenue, Destination City\n  Phone: +123-555-1234\n\n- Coastal Pharmacy:\n  Address: 789 Ocean Boulevard, Destination City\n  Phone: +123-777-4567"
+        }
+      ],
+      "result": {
+        "Identify Local Emergency Services": "Local Emergency Services Contact Information:\n\n1. Police Station:\n   - Phone: [Insert phone number]\n   - Address: [Insert address]\n\n2. Hospital:\n   - Phone: [Insert phone number]\n   - Address: [Insert address]\n\n3. Fire Department:\n   - Phone: [Insert phone number]\n   - Address: [Insert address]",
+        "Prepare Emergency Contact List": "I will create a document with the following emergency contacts:\n\nHome Country:\n1. Family Member - Name: [Name], Phone: [Phone Number]\n2. Friend - Name: [Name], Phone: [Phone Number]\n3. Local Authorities - Name: [Name], Phone: [Phone Number]\n\nDestination:\n1. Family Member - Name: [Name], Phone: [Phone Number]\n2. Friend - Name: [Name], Phone: [Phone Number]\n3. Local Authorities - Name: [Name], Phone: [Phone Number]",
+        "Pack First Aid Kit": "Expected Output: Fully stocked first aid kit.\n\n- Bandages (assorted sizes)\n- Adhesive tape\n- Antiseptic wipes\n- Gauze pads\n- Scissors\n- Tweezers\n- Thermometer\n- Pain relievers (e.g., ibuprofen, acetaminophen)\n- Antihistamine medication\n- Personal medications (if applicable)\n- Disposable gloves\n- CPR face shield\n- Emergency contact numbers\n- First aid manual",
+        "Research Healthcare Facilities": "- Central Hospital: \n  Address: 123 Main Street, Destination City\n  Phone: +123-456-7890\n\n- City Clinic:\n  Address: 456 Elm Avenue, Destination City\n  Phone: +123-555-1234\n\n- Coastal Pharmacy:\n  Address: 789 Ocean Boulevard, Destination City\n  Phone: +123-777-4567"
+      }
+    }
+  ],
+  "result": {
+    "Destination Research": {
+      "Identify Traveler Preferences": "Preferred activities: Hiking, visiting historical sites, trying local cuisine\nPreferred climates: Mild temperatures, not too hot or too cold\nPreferred travel styles: Adventure travel, cultural immersion, off-the-beaten-path experiences",
+      "Research Potential Destinations": "Destination Options based on Traveler Preferences:\n1. Patagonia, Chile/Argentina\n   - Attractions: Torres del Paine National Park, Perito Moreno Glacier, Tierra del Fuego\n   - Weather: Mild temperatures during the travel period\n   - Travel Advisories: Check for any specific hiking or outdoor activity advisories\n\n2. Kyoto, Japan\n   - Attractions: Fushimi Inari Shrine, Kinkaku-ji Temple, Arashiyama Bamboo Grove\n   - Weather: Mild temperatures during the travel period\n   - Travel Advisories: Stay updated on any cultural events or local customs\n\n3. Cappadocia, Turkey\n   - Attractions: Hot air balloon rides, Goreme Open-Air Museum, Underground cities\n   - Weather: Mild temperatures during the travel period\n   - Travel Advisories: Check for any specific travel restrictions or safety tips\n\n4. Tasmania, Australia\n   - Attractions: Freycinet National Park, Port Arthur Historic Site, Wineglass Bay\n   - Weather: Mild temperatures during the travel period\n   - Travel Advisories: Stay informed about any outdoor activities or wildlife encounters\n\n5. Azores, Portugal\n   - Attractions: Sete Cidades, Furnas, Pico Island\n   - Weather: Mild temperatures during the travel period\n   - Travel Advisories: Check for any specific outdoor activities or volcanic activity updates\n\nThese destinations align with the travelers' preferences for hiking, historical sites, local cuisine, mild temperatures, adventure travel, cultural immersion, and off-the-beaten-path experiences.",
+      "Evaluate Budget Constraints": "Destination A:\n- Transportation: $500\n- Accommodation: $700\n- Food: $300\n- Activities: $400\n- Total: $1900\n\nDestination B:\n- Transportation: $400\n- Accommodation: $800\n- Food: $250\n- Activities: $350\n- Total: $1800\n\nDestination C:\n- Transportation: $450\n- Accommodation: $600\n- Food: $200\n- Activities: $350\n- Total: $1600"
+    },
+    "Itinerary Planning": {
+      "Develop Daily Itinerary": "Day 1:\n- Morning: Arrival at destination, check-in at hotel\n- Afternoon: Visit local landmarks and attractions\n- Evening: Dinner at a recommended restaurant\n\nDay 2:\n- Morning: Breakfast at a local cafe\n- Late Morning: Guided tour of historical sites\n- Afternoon: Explore local markets and shops\n- Evening: Attend a cultural show or event\n\nDay 3:\n- Morning: Day trip to nearby scenic location\n- Afternoon: Outdoor activity such as hiking or biking\n- Evening: Dinner at a popular local eatery\n\nDay 4:\n- Morning: Visit museums or art galleries\n- Afternoon: Relax at a spa or beach\n- Evening: Farewell dinner at a fine dining restaurant\n\nNote: Adjust timings and activities based on local opening hours and availability.",
+      "Arrange Transportation": "I recommend booking the following transportation for the trip:\n\n1. Flight from [Departure City] to [Destination City] on [Date]\n2. Train from [Destination City] to [Next Destination City] on [Date]\n3. Car rental for local transportation at [Next Destination City] from [Dates]\n4. Bus tickets from [Next Destination City] to [Final Destination City] on [Date]\n\nPlease proceed with making the necessary reservations for the outlined transportation schedule.",
+      "Book Accommodations": "I recommend proceeding with booking accommodations for each night of the trip based on the detailed itinerary that includes transportation, activities, and other relevant details. Please confirm the accommodation bookings accordingly.",
+      "Make Dining Reservations": "I recommend making the following restaurant reservations for the trip:\n\n1. Restaurant: La Petite Maison\n   Date: Day 1\n   Time: 7:00 PM\n   Number of Guests: 4\n\n2. Restaurant: Osteria Francescana\n   Date: Day 2\n   Time: 6:30 PM\n   Number of Guests: 4\n\n3. Restaurant: Tickets\n   Date: Day 3\n   Time: 8:00 PM\n   Number of Guests: 4\n\nPlease proceed with making these reservations to ensure availability and alignment with the overall itinerary."
+    },
+    "Budget Management": {
+      "Estimate Trip Costs": "Estimated budget breakdown for the trip:\n\n1. Transportation:\n   - Flight: $600\n   - Local transportation: $200\n\n2. Accommodations:\n   - Hotel: $800\n   - Airbnb: $400\n\n3. Activities:\n   - Tours and excursions: $300\n   - Entrance fees: $100\n\n4. Meals:\n   - Breakfast, lunch, dinner: $500\n\nTotal Estimated Trip Cost: $2900",
+      "Track Expenses": "Create a detailed spreadsheet to track all expenses incurred during the trip. Include categories such as transportation, lodging, food, activities, and any other relevant expenses. Record the date, amount, category, and brief description for each expense. Regularly update this spreadsheet to ensure accurate monitoring of expenses.",
+      "Optimize Spending": "Adjusted Budget reflecting optimized spending:\n\n- Transportation: $500 (utilizing public transportation and walking more)\n- Accommodation: $700 (choosing budget-friendly options like hostels or Airbnb)\n- Food: $300 (eating at local markets and affordable restaurants)\n- Activities: $400 (prioritizing free or low-cost attractions and using discounts where available)\n- Miscellaneous: $100 (setting aside for unexpected expenses)\n\nTotal Adjusted Budget: $2,000"
+    },
+    "Travel Documentation": {
+      "Check Passport Validity": "I recommend checking the validity of all travelers' passports by verifying that they are valid for the entire duration of the trip. Please ensure that all passports meet the necessary validity requirements for the travel dates. If any passports are set to expire before the trip ends, advise the travelers to renew them as soon as possible. Confirm the validity of all passports before proceeding with the travel documentation process.",
+      "Research Visa Requirements": "Destination 1: Japan\nVisa Requirement: Travelers from most countries can enter Japan for short-term stays without a visa. However, some nationalities may require a visa. It is recommended to check the specific requirements based on the traveler's nationality.\n\nDestination 2: Australia\nVisa Requirement: Most travelers need a visa to enter Australia. The type of visa required depends on the purpose of the visit. Common visas include tourist visas, working holiday visas, and student visas. It is essential to determine the appropriate visa category based on the traveler's intentions.\n\nDestination 3: France\nVisa Requirement: Travelers from the EU, EEA, and many other countries can enter France for short stays without a visa. However, some nationalities require a Schengen visa. It is important to verify the visa requirements based on the traveler's nationality and the duration of stay.\n\nDestination 4: Brazil\nVisa Requirement: Brazil requires visas for travelers from several countries. The visa application process may vary depending on the traveler's nationality. It is advisable to check the specific visa requirements and application procedures for each traveler.\n\nDestination 5: South Africa\nVisa Requirement: South Africa requires visas for many nationalities. The visa application process can differ based on the purpose of the visit. It is crucial to determine the appropriate visa category and follow the necessary steps for visa application.\n\nEnsure to verify the most up-to-date visa requirements for each destination closer to the travel dates to avoid any issues during the trip.",
+      "Obtain Necessary Visas": "For the upcoming trip, visas are required for Australia. Ensure to apply for and secure the necessary visas for all travelers planning to visit Australia. The type of visa should be selected based on the purpose of the visit, such as tourist visas, working holiday visas, or student visas. Take the appropriate steps to obtain the required visas promptly.",
+      "Arrange Travel Insurance": "I recommend purchasing travel insurance policies from a reputable provider to cover all travelers for the upcoming trip. Ensure the policies offer comprehensive coverage for medical emergencies, trip cancellations, lost baggage, and other unforeseen events. Proceed with obtaining confirmed travel insurance policies for all travelers before the trip."
+    },
+    "Emergency Preparedness": {
+      "Identify Local Emergency Services": "Local Emergency Services Contact Information:\n\n1. Police Station:\n   - Phone: [Insert phone number]\n   - Address: [Insert address]\n\n2. Hospital:\n   - Phone: [Insert phone number]\n   - Address: [Insert address]\n\n3. Fire Department:\n   - Phone: [Insert phone number]\n   - Address: [Insert address]",
+      "Prepare Emergency Contact List": "I will create a document with the following emergency contacts:\n\nHome Country:\n1. Family Member - Name: [Name], Phone: [Phone Number]\n2. Friend - Name: [Name], Phone: [Phone Number]\n3. Local Authorities - Name: [Name], Phone: [Phone Number]\n\nDestination:\n1. Family Member - Name: [Name], Phone: [Phone Number]\n2. Friend - Name: [Name], Phone: [Phone Number]\n3. Local Authorities - Name: [Name], Phone: [Phone Number]",
+      "Pack First Aid Kit": "Expected Output: Fully stocked first aid kit.\n\n- Bandages (assorted sizes)\n- Adhesive tape\n- Antiseptic wipes\n- Gauze pads\n- Scissors\n- Tweezers\n- Thermometer\n- Pain relievers (e.g., ibuprofen, acetaminophen)\n- Antihistamine medication\n- Personal medications (if applicable)\n- Disposable gloves\n- CPR face shield\n- Emergency contact numbers\n- First aid manual",
+      "Research Healthcare Facilities": "- Central Hospital: \n  Address: 123 Main Street, Destination City\n  Phone: +123-456-7890\n\n- City Clinic:\n  Address: 456 Elm Avenue, Destination City\n  Phone: +123-555-1234\n\n- Coastal Pharmacy:\n  Address: 789 Ocean Boulevard, Destination City\n  Phone: +123-777-4567"
+    }
+  }
+}

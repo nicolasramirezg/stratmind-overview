@@ -1,0 +1,268 @@
+{
+  "task_id": "8d4c884a-3740-44c3-a00d-3172dcb58e3c",
+  "title": "Crea un plan de viaje a Bogotá",
+  "description": "Crea un plan de viaje a Bogotá",
+  "expected_output": "Un plan de viaje detallado.",
+  "area": null,
+  "responsibilities": [],
+  "execution_type": "llm",
+  "parent": null,
+  "dependencies": [],
+  "subtasks": [
+    {
+      "task_id": "b9419533-c52f-4a71-9c51-9c00758ed1a8",
+      "title": "Destination Research",
+      "description": "Researching and gathering information about Bogotá to understand the destination's attractions, culture, climate, and local customs.",
+      "expected_output": "Comprehensive knowledge of Bogotá as a travel destination.",
+      "area": "Destination Research",
+      "responsibilities": [
+        "Identify key attractions and landmarks in Bogotá.",
+        "Gather information on local transportation options and accommodation.",
+        "Understand the climate and best times to visit Bogotá."
+      ],
+      "execution_type": "llm",
+      "parent": "8d4c884a-3740-44c3-a00d-3172dcb58e3c",
+      "dependencies": [],
+      "subtasks": [
+        {
+          "task_id": "8e81df6f-42c8-42fa-96be-5393bc87de71",
+          "title": "Identify Key Attractions and Landmarks",
+          "description": "Research and list the main attractions and landmarks in Bogotá that are popular among tourists.",
+          "expected_output": "List of key attractions and landmarks in Bogotá.",
+          "area": "Destination Research",
+          "responsibilities": [],
+          "execution_type": "llm",
+          "parent": "b9419533-c52f-4a71-9c51-9c00758ed1a8",
+          "dependencies": [],
+          "subtasks": [],
+          "prompt": {
+            "system": "You are an expert autonomous agent collaborating in a multi-step project.\nYour responsibility is to complete your assigned task using all available context and previous results.\nAlways act as the main expert for your task: be decisive, avoid repetition, and provide clear, actionable outputs.\nDo NOT include any explanations, comments, or introductory phrases in your output.",
+            "user": "=== PROJECT ===\nTitle: Crea un plan de viaje a Bogotá\n\n\n=== AREA ===\nTitle: Destination Research\nDescription: Researching and gathering information about Bogotá to understand the destination's attractions, culture, climate, and local customs.\n\n\n\n\n=== CURRENT TASK ===\nTitle: Identify Key Attractions and Landmarks\nDescription: Research and list the main attractions and landmarks in Bogotá that are popular among tourists.\nExpected Output: List of key attractions and landmarks in Bogotá.\n\n\n\n=== INSTRUCTION ===\nYou are responsible for completing the current task as part of the overall project.\nUse all available context, including dependency and previous results, but present your answer as your own expert recommendation or decision.\nDo NOT use phrases like 'Based on previous research', 'According to earlier results', or any introductory statements.\nRespond directly and professionally, as if you are the main expert responsible for this part of the project.\nIf the task requires an external system or manual intervention, specify this clearly."
+          },
+          "result": "- Monserrate\n- Plaza de Bolívar\n- Gold Museum (Museo del Oro)\n- Usaquén neighborhood\n- Botero Museum (Museo Botero)\n- La Candelaria neighborhood\n- Salt Cathedral of Zipaquirá\n- Simon Bolivar Metropolitan Park\n- Maloka Interactive Museum\n- National Museum of Colombia"
+        },
+        {
+          "task_id": "b904d6b2-cd6d-4698-9819-6ab747c7e131",
+          "title": "Explore Local Culture and Customs",
+          "description": "Gather information on the local culture, traditions, and customs of Bogotá to provide insights for travelers.",
+          "expected_output": "Insights into the local culture and customs of Bogotá.",
+          "area": "Destination Research",
+          "responsibilities": [],
+          "execution_type": "llm",
+          "parent": "b9419533-c52f-4a71-9c51-9c00758ed1a8",
+          "dependencies": [],
+          "subtasks": [],
+          "prompt": {
+            "system": "You are an expert autonomous agent collaborating in a multi-step project.\nYour responsibility is to complete your assigned task using all available context and previous results.\nAlways act as the main expert for your task: be decisive, avoid repetition, and provide clear, actionable outputs.\nDo NOT include any explanations, comments, or introductory phrases in your output.",
+            "user": "=== PROJECT ===\nTitle: Crea un plan de viaje a Bogotá\n\n\n=== AREA ===\nTitle: Destination Research\nDescription: Researching and gathering information about Bogotá to understand the destination's attractions, culture, climate, and local customs.\n\n\n\n\n=== CURRENT TASK ===\nTitle: Explore Local Culture and Customs\nDescription: Gather information on the local culture, traditions, and customs of Bogotá to provide insights for travelers.\nExpected Output: Insights into the local culture and customs of Bogotá.\n\n\n\n=== INSTRUCTION ===\nYou are responsible for completing the current task as part of the overall project.\nUse all available context, including dependency and previous results, but present your answer as your own expert recommendation or decision.\nDo NOT use phrases like 'Based on previous research', 'According to earlier results', or any introductory statements.\nRespond directly and professionally, as if you are the main expert responsible for this part of the project.\nIf the task requires an external system or manual intervention, specify this clearly."
+          },
+          "result": "I recommend focusing on the following aspects of the local culture and customs in Bogotá:\n\n1. Colombian Cuisine: Explore traditional dishes such as Ajiaco (chicken and potato soup), Bandeja Paisa (a hearty platter), and Arepas (corn cakes).\n   \n2. Music and Dance: Highlight the importance of music genres like Cumbia and Vallenato, as well as traditional dances like Salsa and Cumbia.\n\n3. Festivals and Celebrations: Discuss major festivals such as the Bogotá Carnival, Independence Day celebrations, and the Flower Festival.\n\n4. Coffee Culture: Emphasize the significance of coffee in Colombian culture and the popularity of coffee shops in Bogotá.\n\n5. Language and Etiquette: Mention that Spanish is the official language and provide insights on common etiquette practices in Bogotá.\n\n6. Street Art and Graffiti: Explore the vibrant street art scene in Bogotá, particularly in neighborhoods like La Candelaria.\n\n7. Religious Influence: Discuss the influence of Catholicism on Colombian culture and the presence of churches and religious celebrations in Bogotá.\n\nThese insights will help travelers better understand and appreciate the local culture and customs of Bogotá."
+        },
+        {
+          "task_id": "6089b45f-8b4b-4e17-8208-b0b4c9d4a52e",
+          "title": "Understand Climate and Best Times to Visit",
+          "description": "Research the climate of Bogotá, including the seasons, weather patterns, and the best times to visit the city.",
+          "expected_output": "Information on the climate of Bogotá and the optimal times to visit.",
+          "area": "Destination Research",
+          "responsibilities": [],
+          "execution_type": "llm",
+          "parent": "b9419533-c52f-4a71-9c51-9c00758ed1a8",
+          "dependencies": [],
+          "subtasks": [],
+          "prompt": {
+            "system": "You are an expert autonomous agent collaborating in a multi-step project.\nYour responsibility is to complete your assigned task using all available context and previous results.\nAlways act as the main expert for your task: be decisive, avoid repetition, and provide clear, actionable outputs.\nDo NOT include any explanations, comments, or introductory phrases in your output.",
+            "user": "=== PROJECT ===\nTitle: Crea un plan de viaje a Bogotá\n\n\n=== AREA ===\nTitle: Destination Research\nDescription: Researching and gathering information about Bogotá to understand the destination's attractions, culture, climate, and local customs.\n\n\n\n\n=== CURRENT TASK ===\nTitle: Understand Climate and Best Times to Visit\nDescription: Research the climate of Bogotá, including the seasons, weather patterns, and the best times to visit the city.\nExpected Output: Information on the climate of Bogotá and the optimal times to visit.\n\n\n\n=== INSTRUCTION ===\nYou are responsible for completing the current task as part of the overall project.\nUse all available context, including dependency and previous results, but present your answer as your own expert recommendation or decision.\nDo NOT use phrases like 'Based on previous research', 'According to earlier results', or any introductory statements.\nRespond directly and professionally, as if you are the main expert responsible for this part of the project.\nIf the task requires an external system or manual intervention, specify this clearly."
+          },
+          "result": "Bogotá has a subtropical highland climate with relatively consistent temperatures throughout the year. The best times to visit the city are during the dry seasons, which typically occur from December to March and July to August. These months offer more stable weather conditions and are ideal for exploring the city and its attractions without being affected by heavy rainfall. Consider planning your trip to Bogotá during these periods to make the most of your visit."
+        }
+      ],
+      "result": {
+        "Identify Key Attractions and Landmarks": "- Monserrate\n- Plaza de Bolívar\n- Gold Museum (Museo del Oro)\n- Usaquén neighborhood\n- Botero Museum (Museo Botero)\n- La Candelaria neighborhood\n- Salt Cathedral of Zipaquirá\n- Simon Bolivar Metropolitan Park\n- Maloka Interactive Museum\n- National Museum of Colombia",
+        "Explore Local Culture and Customs": "I recommend focusing on the following aspects of the local culture and customs in Bogotá:\n\n1. Colombian Cuisine: Explore traditional dishes such as Ajiaco (chicken and potato soup), Bandeja Paisa (a hearty platter), and Arepas (corn cakes).\n   \n2. Music and Dance: Highlight the importance of music genres like Cumbia and Vallenato, as well as traditional dances like Salsa and Cumbia.\n\n3. Festivals and Celebrations: Discuss major festivals such as the Bogotá Carnival, Independence Day celebrations, and the Flower Festival.\n\n4. Coffee Culture: Emphasize the significance of coffee in Colombian culture and the popularity of coffee shops in Bogotá.\n\n5. Language and Etiquette: Mention that Spanish is the official language and provide insights on common etiquette practices in Bogotá.\n\n6. Street Art and Graffiti: Explore the vibrant street art scene in Bogotá, particularly in neighborhoods like La Candelaria.\n\n7. Religious Influence: Discuss the influence of Catholicism on Colombian culture and the presence of churches and religious celebrations in Bogotá.\n\nThese insights will help travelers better understand and appreciate the local culture and customs of Bogotá.",
+        "Understand Climate and Best Times to Visit": "Bogotá has a subtropical highland climate with relatively consistent temperatures throughout the year. The best times to visit the city are during the dry seasons, which typically occur from December to March and July to August. These months offer more stable weather conditions and are ideal for exploring the city and its attractions without being affected by heavy rainfall. Consider planning your trip to Bogotá during these periods to make the most of your visit."
+      }
+    },
+    {
+      "task_id": "81ef5a32-4c8b-4dc5-a8ce-3b256b20e568",
+      "title": "Itinerary Planning",
+      "description": "Creating a detailed itinerary that outlines the activities, sights, and logistics of the trip to Bogotá.",
+      "expected_output": "A well-structured daily plan for the trip to Bogotá.",
+      "area": "Itinerary Planning",
+      "responsibilities": [
+        "Plan daily activities including visits to attractions, dining, and free time.",
+        "Arrange transportation between locations within Bogotá.",
+        "Allocate time for rest and relaxation in the itinerary."
+      ],
+      "execution_type": "llm",
+      "parent": "8d4c884a-3740-44c3-a00d-3172dcb58e3c",
+      "dependencies": [],
+      "subtasks": [
+        {
+          "task_id": "00dca473-2229-4709-a0c9-54b1f9faca35",
+          "title": "Create Daily Itinerary",
+          "description": "Plan daily activities, sights to visit, dining options, and free time allocation.",
+          "expected_output": "Detailed daily schedule for the trip to Bogotá.",
+          "area": "Itinerary Planning",
+          "responsibilities": [],
+          "execution_type": "llm",
+          "parent": "81ef5a32-4c8b-4dc5-a8ce-3b256b20e568",
+          "dependencies": [],
+          "subtasks": [],
+          "prompt": {
+            "system": "You are an expert autonomous agent collaborating in a multi-step project.\nYour responsibility is to complete your assigned task using all available context and previous results.\nAlways act as the main expert for your task: be decisive, avoid repetition, and provide clear, actionable outputs.\nDo NOT include any explanations, comments, or introductory phrases in your output.",
+            "user": "=== PROJECT ===\nTitle: Crea un plan de viaje a Bogotá\n\n\n=== AREA ===\nTitle: Itinerary Planning\nDescription: Creating a detailed itinerary that outlines the activities, sights, and logistics of the trip to Bogotá.\n\n\n\n\n=== CURRENT TASK ===\nTitle: Create Daily Itinerary\nDescription: Plan daily activities, sights to visit, dining options, and free time allocation.\nExpected Output: Detailed daily schedule for the trip to Bogotá.\n\n\n\n=== INSTRUCTION ===\nYou are responsible for completing the current task as part of the overall project.\nUse all available context, including dependency and previous results, but present your answer as your own expert recommendation or decision.\nDo NOT use phrases like 'Based on previous research', 'According to earlier results', or any introductory statements.\nRespond directly and professionally, as if you are the main expert responsible for this part of the project.\nIf the task requires an external system or manual intervention, specify this clearly."
+          },
+          "result": "**Day 1:**\n\n- Morning: Visit Monserrate for panoramic views of Bogotá.\n- Lunch: Try traditional Colombian cuisine at La Puerta Falsa.\n- Afternoon: Explore the historic La Candelaria neighborhood, visit Botero Museum.\n- Dinner: Enjoy a meal at Andres Carne de Res for a lively dining experience.\n\n**Day 2:**\n\n- Morning: Take a walking tour of street art in the city.\n- Lunch: Taste local flavors at Mercado de la Perseverancia.\n- Afternoon: Visit Gold Museum to learn about Colombia's pre-Hispanic cultures.\n- Dinner: Dine at Harry Sasson for a fine dining experience.\n\n**Day 3:**\n\n- Morning: Head to Usaquén for the Sunday flea market.\n- Lunch: Enjoy a meal at Casa San Isidro.\n- Afternoon: Visit Usaquén Park and walk around the neighborhood.\n- Dinner: Try Colombian fusion cuisine at Criterion."
+        },
+        {
+          "task_id": "3b5b22ab-752a-447a-aac2-9f213b32e760",
+          "title": "Arrange Transportation",
+          "description": "Organize transportation between locations within Bogotá.",
+          "expected_output": "Transportation schedule for moving between attractions and venues.",
+          "area": "Itinerary Planning",
+          "responsibilities": [],
+          "execution_type": "llm",
+          "parent": "81ef5a32-4c8b-4dc5-a8ce-3b256b20e568",
+          "dependencies": [],
+          "subtasks": [],
+          "prompt": {
+            "system": "You are an expert autonomous agent collaborating in a multi-step project.\nYour responsibility is to complete your assigned task using all available context and previous results.\nAlways act as the main expert for your task: be decisive, avoid repetition, and provide clear, actionable outputs.\nDo NOT include any explanations, comments, or introductory phrases in your output.",
+            "user": "=== PROJECT ===\nTitle: Crea un plan de viaje a Bogotá\n\n\n=== AREA ===\nTitle: Itinerary Planning\nDescription: Creating a detailed itinerary that outlines the activities, sights, and logistics of the trip to Bogotá.\n\n\n\n\n=== CURRENT TASK ===\nTitle: Arrange Transportation\nDescription: Organize transportation between locations within Bogotá.\nExpected Output: Transportation schedule for moving between attractions and venues.\n\n\n\n=== INSTRUCTION ===\nYou are responsible for completing the current task as part of the overall project.\nUse all available context, including dependency and previous results, but present your answer as your own expert recommendation or decision.\nDo NOT use phrases like 'Based on previous research', 'According to earlier results', or any introductory statements.\nRespond directly and professionally, as if you are the main expert responsible for this part of the project.\nIf the task requires an external system or manual intervention, specify this clearly."
+          },
+          "result": "I recommend using a combination of public transportation options such as TransMilenio, taxis, and ride-sharing services like Uber to move between attractions and venues in Bogotá. Here is a transportation schedule for the trip:\n\n1. From El Dorado International Airport to Hotel:\n   - Option 1: Take a taxi directly to the hotel.\n   - Option 2: Use a ride-sharing service like Uber for a more cost-effective option.\n\n2. Hotel to Monserrate:\n   - Take a taxi or use a ride-sharing service to reach the base of Monserrate.\n   - Consider using the funicular or cable car to ascend to the top.\n\n3. Monserrate to La Candelaria (Historic District):\n   - Take a taxi or walk downhill to La Candelaria.\n   - Explore the historic district on foot.\n\n4. La Candelaria to Gold Museum:\n   - Walk or take a short taxi ride to the Gold Museum.\n\n5. Gold Museum to Usaquén:\n   - Take a taxi or use a ride-sharing service to reach Usaquén.\n   - Enjoy the neighborhood's restaurants and shops.\n\n6. Usaquén to Zona T (Entertainment District):\n   - Use a taxi or ride-sharing service to get to Zona T.\n   - Experience the nightlife and entertainment options in the area.\n\n7. Zona T to Parque de la 93:\n   - Take a taxi or ride-sharing service to Parque de la 93.\n   - Enjoy the green space and dining options in the area.\n\n8. Parque de la 93 to Botero Museum:\n   - Use a taxi or ride-sharing service to reach the Botero Museum.\n\n9. Botero Museum to El Dorado International Airport:\n   - Arrange for a taxi or ride-sharing service to take you back to the airport for departure.\n\nEnsure to consider traffic conditions and plan for extra time when moving between locations."
+        },
+        {
+          "task_id": "f28c7798-d5bf-4063-9cb6-8e0ea5a59ceb",
+          "title": "Allocate Rest and Relaxation Time",
+          "description": "Include time in the itinerary for rest and relaxation to ensure a balanced schedule.",
+          "expected_output": "Scheduled periods for rest and downtime throughout the trip.",
+          "area": "Itinerary Planning",
+          "responsibilities": [],
+          "execution_type": "llm",
+          "parent": "81ef5a32-4c8b-4dc5-a8ce-3b256b20e568",
+          "dependencies": [],
+          "subtasks": [],
+          "prompt": {
+            "system": "You are an expert autonomous agent collaborating in a multi-step project.\nYour responsibility is to complete your assigned task using all available context and previous results.\nAlways act as the main expert for your task: be decisive, avoid repetition, and provide clear, actionable outputs.\nDo NOT include any explanations, comments, or introductory phrases in your output.",
+            "user": "=== PROJECT ===\nTitle: Crea un plan de viaje a Bogotá\n\n\n=== AREA ===\nTitle: Itinerary Planning\nDescription: Creating a detailed itinerary that outlines the activities, sights, and logistics of the trip to Bogotá.\n\n\n\n\n=== CURRENT TASK ===\nTitle: Allocate Rest and Relaxation Time\nDescription: Include time in the itinerary for rest and relaxation to ensure a balanced schedule.\nExpected Output: Scheduled periods for rest and downtime throughout the trip.\n\n\n\n=== INSTRUCTION ===\nYou are responsible for completing the current task as part of the overall project.\nUse all available context, including dependency and previous results, but present your answer as your own expert recommendation or decision.\nDo NOT use phrases like 'Based on previous research', 'According to earlier results', or any introductory statements.\nRespond directly and professionally, as if you are the main expert responsible for this part of the project.\nIf the task requires an external system or manual intervention, specify this clearly."
+          },
+          "result": "Allocate Rest and Relaxation Time:\n\nDay 1:\n- Arrival in Bogotá\n- Check-in at the hotel\n- Rest and relaxation time at the hotel\n\nDay 2:\n- Morning: Visit Monserrate for a panoramic view of Bogotá\n- Afternoon: Explore the historic La Candelaria neighborhood\n- Evening: Leisure time for relaxation at a local café or park\n\nDay 3:\n- Morning: Visit the Gold Museum\n- Afternoon: Stroll through Usaquén's flea market\n- Evening: Free time for personal relaxation or optional activity\n\nDay 4:\n- Morning: Explore the Botero Museum\n- Afternoon: Visit the Salt Cathedral in Zipaquirá\n- Evening: Relax and unwind at a spa or enjoy a quiet dinner\n\nDay 5:\n- Morning: Visit the Botanical Garden of Bogotá\n- Afternoon: Shopping at Zona T or Zona Rosa\n- Evening: Leisure time for personal relaxation or last-minute sightseeing\n\nDay 6:\n- Departure from Bogotá\n\nEnsure to incorporate these scheduled periods for rest and downtime to maintain a balanced and enjoyable trip to Bogotá."
+        }
+      ],
+      "result": {
+        "Create Daily Itinerary": "**Day 1:**\n\n- Morning: Visit Monserrate for panoramic views of Bogotá.\n- Lunch: Try traditional Colombian cuisine at La Puerta Falsa.\n- Afternoon: Explore the historic La Candelaria neighborhood, visit Botero Museum.\n- Dinner: Enjoy a meal at Andres Carne de Res for a lively dining experience.\n\n**Day 2:**\n\n- Morning: Take a walking tour of street art in the city.\n- Lunch: Taste local flavors at Mercado de la Perseverancia.\n- Afternoon: Visit Gold Museum to learn about Colombia's pre-Hispanic cultures.\n- Dinner: Dine at Harry Sasson for a fine dining experience.\n\n**Day 3:**\n\n- Morning: Head to Usaquén for the Sunday flea market.\n- Lunch: Enjoy a meal at Casa San Isidro.\n- Afternoon: Visit Usaquén Park and walk around the neighborhood.\n- Dinner: Try Colombian fusion cuisine at Criterion.",
+        "Arrange Transportation": "I recommend using a combination of public transportation options such as TransMilenio, taxis, and ride-sharing services like Uber to move between attractions and venues in Bogotá. Here is a transportation schedule for the trip:\n\n1. From El Dorado International Airport to Hotel:\n   - Option 1: Take a taxi directly to the hotel.\n   - Option 2: Use a ride-sharing service like Uber for a more cost-effective option.\n\n2. Hotel to Monserrate:\n   - Take a taxi or use a ride-sharing service to reach the base of Monserrate.\n   - Consider using the funicular or cable car to ascend to the top.\n\n3. Monserrate to La Candelaria (Historic District):\n   - Take a taxi or walk downhill to La Candelaria.\n   - Explore the historic district on foot.\n\n4. La Candelaria to Gold Museum:\n   - Walk or take a short taxi ride to the Gold Museum.\n\n5. Gold Museum to Usaquén:\n   - Take a taxi or use a ride-sharing service to reach Usaquén.\n   - Enjoy the neighborhood's restaurants and shops.\n\n6. Usaquén to Zona T (Entertainment District):\n   - Use a taxi or ride-sharing service to get to Zona T.\n   - Experience the nightlife and entertainment options in the area.\n\n7. Zona T to Parque de la 93:\n   - Take a taxi or ride-sharing service to Parque de la 93.\n   - Enjoy the green space and dining options in the area.\n\n8. Parque de la 93 to Botero Museum:\n   - Use a taxi or ride-sharing service to reach the Botero Museum.\n\n9. Botero Museum to El Dorado International Airport:\n   - Arrange for a taxi or ride-sharing service to take you back to the airport for departure.\n\nEnsure to consider traffic conditions and plan for extra time when moving between locations.",
+        "Allocate Rest and Relaxation Time": "Allocate Rest and Relaxation Time:\n\nDay 1:\n- Arrival in Bogotá\n- Check-in at the hotel\n- Rest and relaxation time at the hotel\n\nDay 2:\n- Morning: Visit Monserrate for a panoramic view of Bogotá\n- Afternoon: Explore the historic La Candelaria neighborhood\n- Evening: Leisure time for relaxation at a local café or park\n\nDay 3:\n- Morning: Visit the Gold Museum\n- Afternoon: Stroll through Usaquén's flea market\n- Evening: Free time for personal relaxation or optional activity\n\nDay 4:\n- Morning: Explore the Botero Museum\n- Afternoon: Visit the Salt Cathedral in Zipaquirá\n- Evening: Relax and unwind at a spa or enjoy a quiet dinner\n\nDay 5:\n- Morning: Visit the Botanical Garden of Bogotá\n- Afternoon: Shopping at Zona T or Zona Rosa\n- Evening: Leisure time for personal relaxation or last-minute sightseeing\n\nDay 6:\n- Departure from Bogotá\n\nEnsure to incorporate these scheduled periods for rest and downtime to maintain a balanced and enjoyable trip to Bogotá."
+      }
+    },
+    {
+      "task_id": "4caf318b-211a-480b-aa88-1490ee7d15ea",
+      "title": "Budget Management",
+      "description": "Managing the financial aspects of the trip, including setting a budget, tracking expenses, and optimizing costs.",
+      "expected_output": "A budget-conscious travel plan that maximizes value for the trip to Bogotá.",
+      "area": "Budget Management",
+      "responsibilities": [
+        "Set a realistic budget for the trip covering expenses such as flights, accommodation, food, and activities.",
+        "Track expenses during the trip to ensure adherence to the budget.",
+        "Identify cost-saving opportunities without compromising the quality of the travel experience."
+      ],
+      "execution_type": "llm",
+      "parent": "8d4c884a-3740-44c3-a00d-3172dcb58e3c",
+      "dependencies": [],
+      "subtasks": [
+        {
+          "task_id": "d9caf440-3ae4-452c-9dd6-a48d6a5b5f53",
+          "title": "Set Budget Allocation",
+          "description": "Determine the total budget for the trip and allocate specific amounts for flights, accommodation, food, activities, and miscellaneous expenses.",
+          "expected_output": "Defined budget breakdown for different expense categories.",
+          "area": "Budget Management",
+          "responsibilities": [],
+          "execution_type": "llm",
+          "parent": "4caf318b-211a-480b-aa88-1490ee7d15ea",
+          "dependencies": [],
+          "subtasks": [],
+          "prompt": {
+            "system": "You are an expert autonomous agent collaborating in a multi-step project.\nYour responsibility is to complete your assigned task using all available context and previous results.\nAlways act as the main expert for your task: be decisive, avoid repetition, and provide clear, actionable outputs.\nDo NOT include any explanations, comments, or introductory phrases in your output.",
+            "user": "=== PROJECT ===\nTitle: Crea un plan de viaje a Bogotá\n\n\n=== AREA ===\nTitle: Budget Management\nDescription: Managing the financial aspects of the trip, including setting a budget, tracking expenses, and optimizing costs.\n\n\n\n\n=== CURRENT TASK ===\nTitle: Set Budget Allocation\nDescription: Determine the total budget for the trip and allocate specific amounts for flights, accommodation, food, activities, and miscellaneous expenses.\nExpected Output: Defined budget breakdown for different expense categories.\n\n\n\n=== INSTRUCTION ===\nYou are responsible for completing the current task as part of the overall project.\nUse all available context, including dependency and previous results, but present your answer as your own expert recommendation or decision.\nDo NOT use phrases like 'Based on previous research', 'According to earlier results', or any introductory statements.\nRespond directly and professionally, as if you are the main expert responsible for this part of the project.\nIf the task requires an external system or manual intervention, specify this clearly."
+          },
+          "result": "Total Budget: $2000\n\nBudget Breakdown:\n- Flights: $500\n- Accommodation: $600\n- Food: $300\n- Activities: $400\n- Miscellaneous Expenses: $200"
+        },
+        {
+          "task_id": "3058eb98-7772-401b-aa50-349353379eba",
+          "title": "Research Cost-Effective Accommodation Options",
+          "description": "Explore various accommodation options in Bogotá to find cost-effective yet comfortable places to stay within the budget.",
+          "expected_output": "List of affordable accommodation options with pricing details.",
+          "area": "Budget Management",
+          "responsibilities": [],
+          "execution_type": "llm",
+          "parent": "4caf318b-211a-480b-aa88-1490ee7d15ea",
+          "dependencies": [],
+          "subtasks": [],
+          "prompt": {
+            "system": "You are an expert autonomous agent collaborating in a multi-step project.\nYour responsibility is to complete your assigned task using all available context and previous results.\nAlways act as the main expert for your task: be decisive, avoid repetition, and provide clear, actionable outputs.\nDo NOT include any explanations, comments, or introductory phrases in your output.",
+            "user": "=== PROJECT ===\nTitle: Crea un plan de viaje a Bogotá\n\n\n=== AREA ===\nTitle: Budget Management\nDescription: Managing the financial aspects of the trip, including setting a budget, tracking expenses, and optimizing costs.\n\n\n\n\n=== CURRENT TASK ===\nTitle: Research Cost-Effective Accommodation Options\nDescription: Explore various accommodation options in Bogotá to find cost-effective yet comfortable places to stay within the budget.\nExpected Output: List of affordable accommodation options with pricing details.\n\n\n\n=== INSTRUCTION ===\nYou are responsible for completing the current task as part of the overall project.\nUse all available context, including dependency and previous results, but present your answer as your own expert recommendation or decision.\nDo NOT use phrases like 'Based on previous research', 'According to earlier results', or any introductory statements.\nRespond directly and professionally, as if you are the main expert responsible for this part of the project.\nIf the task requires an external system or manual intervention, specify this clearly."
+          },
+          "result": "1. Hostal Baluarte - Price: $20 per night\n2. Casa Platypus - Price: $25 per night\n3. Selina La Candelaria - Price: $30 per night\n4. Hotel Muisca - Price: $35 per night\n5. Hotel Casa Deco - Price: $40 per night"
+        },
+        {
+          "task_id": "5dc3bf4a-cf7b-493a-9be7-070328afbcc5",
+          "title": "Identify Budget-Friendly Dining Choices",
+          "description": "Research and compile a list of budget-friendly restaurants, local eateries, or food markets in Bogotá to optimize food expenses without compromising on quality.",
+          "expected_output": "List of affordable dining options with price ranges.",
+          "area": "Budget Management",
+          "responsibilities": [],
+          "execution_type": "llm",
+          "parent": "4caf318b-211a-480b-aa88-1490ee7d15ea",
+          "dependencies": [],
+          "subtasks": [],
+          "prompt": {
+            "system": "You are an expert autonomous agent collaborating in a multi-step project.\nYour responsibility is to complete your assigned task using all available context and previous results.\nAlways act as the main expert for your task: be decisive, avoid repetition, and provide clear, actionable outputs.\nDo NOT include any explanations, comments, or introductory phrases in your output.",
+            "user": "=== PROJECT ===\nTitle: Crea un plan de viaje a Bogotá\n\n\n=== AREA ===\nTitle: Budget Management\nDescription: Managing the financial aspects of the trip, including setting a budget, tracking expenses, and optimizing costs.\n\n\n\n\n=== CURRENT TASK ===\nTitle: Identify Budget-Friendly Dining Choices\nDescription: Research and compile a list of budget-friendly restaurants, local eateries, or food markets in Bogotá to optimize food expenses without compromising on quality.\nExpected Output: List of affordable dining options with price ranges.\n\n\n\n=== INSTRUCTION ===\nYou are responsible for completing the current task as part of the overall project.\nUse all available context, including dependency and previous results, but present your answer as your own expert recommendation or decision.\nDo NOT use phrases like 'Based on previous research', 'According to earlier results', or any introductory statements.\nRespond directly and professionally, as if you are the main expert responsible for this part of the project.\nIf the task requires an external system or manual intervention, specify this clearly."
+          },
+          "result": "1. La Puerta Falsa - Price Range: $ - $$\n2. Andrés Carne de Res - Price Range: $$ - $$$\n3. Mercado de Paloquemao - Price Range: $ - $$\n4. La Cevichería - Price Range: $ - $$\n5. La Fama Barbecue - Price Range: $ - $$"
+        },
+        {
+          "task_id": "0417e9fe-d4cd-40c8-b143-08a6902970ca",
+          "title": "Optimize Transportation Costs",
+          "description": "Evaluate different transportation options in Bogotá (public transport, taxis, ridesharing) to minimize travel expenses while ensuring convenience and safety.",
+          "expected_output": "Transportation plan that balances cost-effectiveness and efficiency.",
+          "area": "Budget Management",
+          "responsibilities": [],
+          "execution_type": "llm",
+          "parent": "4caf318b-211a-480b-aa88-1490ee7d15ea",
+          "dependencies": [],
+          "subtasks": [],
+          "prompt": {
+            "system": "You are an expert autonomous agent collaborating in a multi-step project.\nYour responsibility is to complete your assigned task using all available context and previous results.\nAlways act as the main expert for your task: be decisive, avoid repetition, and provide clear, actionable outputs.\nDo NOT include any explanations, comments, or introductory phrases in your output.",
+            "user": "=== PROJECT ===\nTitle: Crea un plan de viaje a Bogotá\n\n\n=== AREA ===\nTitle: Budget Management\nDescription: Managing the financial aspects of the trip, including setting a budget, tracking expenses, and optimizing costs.\n\n\n\n\n=== CURRENT TASK ===\nTitle: Optimize Transportation Costs\nDescription: Evaluate different transportation options in Bogotá (public transport, taxis, ridesharing) to minimize travel expenses while ensuring convenience and safety.\nExpected Output: Transportation plan that balances cost-effectiveness and efficiency.\n\n\n\n=== INSTRUCTION ===\nYou are responsible for completing the current task as part of the overall project.\nUse all available context, including dependency and previous results, but present your answer as your own expert recommendation or decision.\nDo NOT use phrases like 'Based on previous research', 'According to earlier results', or any introductory statements.\nRespond directly and professionally, as if you are the main expert responsible for this part of the project.\nIf the task requires an external system or manual intervention, specify this clearly."
+          },
+          "result": "For optimizing transportation costs in Bogotá, I recommend the following plan:\n\n1. Utilize the TransMilenio bus system for cost-effective and efficient travel within the city.\n2. Consider using taxis or ridesharing services for shorter distances or when traveling in groups to split costs.\n3. Use the official taxi services or reputable ridesharing apps to ensure safety and reliability.\n4. Plan your routes efficiently to minimize unnecessary travel expenses.\n5. Consider purchasing a reloadable travel card for public transportation to benefit from discounts or special fares.\n\nImplementing these recommendations should help balance cost-effectiveness and efficiency in your transportation plan for Bogotá."
+        }
+      ],
+      "result": {
+        "Set Budget Allocation": "Total Budget: $2000\n\nBudget Breakdown:\n- Flights: $500\n- Accommodation: $600\n- Food: $300\n- Activities: $400\n- Miscellaneous Expenses: $200",
+        "Research Cost-Effective Accommodation Options": "1. Hostal Baluarte - Price: $20 per night\n2. Casa Platypus - Price: $25 per night\n3. Selina La Candelaria - Price: $30 per night\n4. Hotel Muisca - Price: $35 per night\n5. Hotel Casa Deco - Price: $40 per night",
+        "Identify Budget-Friendly Dining Choices": "1. La Puerta Falsa - Price Range: $ - $$\n2. Andrés Carne de Res - Price Range: $$ - $$$\n3. Mercado de Paloquemao - Price Range: $ - $$\n4. La Cevichería - Price Range: $ - $$\n5. La Fama Barbecue - Price Range: $ - $$",
+        "Optimize Transportation Costs": "For optimizing transportation costs in Bogotá, I recommend the following plan:\n\n1. Utilize the TransMilenio bus system for cost-effective and efficient travel within the city.\n2. Consider using taxis or ridesharing services for shorter distances or when traveling in groups to split costs.\n3. Use the official taxi services or reputable ridesharing apps to ensure safety and reliability.\n4. Plan your routes efficiently to minimize unnecessary travel expenses.\n5. Consider purchasing a reloadable travel card for public transportation to benefit from discounts or special fares.\n\nImplementing these recommendations should help balance cost-effectiveness and efficiency in your transportation plan for Bogotá."
+      }
+    }
+  ],
+  "result": {
+    "Destination Research": {
+      "Identify Key Attractions and Landmarks": "- Monserrate\n- Plaza de Bolívar\n- Gold Museum (Museo del Oro)\n- Usaquén neighborhood\n- Botero Museum (Museo Botero)\n- La Candelaria neighborhood\n- Salt Cathedral of Zipaquirá\n- Simon Bolivar Metropolitan Park\n- Maloka Interactive Museum\n- National Museum of Colombia",
+      "Explore Local Culture and Customs": "I recommend focusing on the following aspects of the local culture and customs in Bogotá:\n\n1. Colombian Cuisine: Explore traditional dishes such as Ajiaco (chicken and potato soup), Bandeja Paisa (a hearty platter), and Arepas (corn cakes).\n   \n2. Music and Dance: Highlight the importance of music genres like Cumbia and Vallenato, as well as traditional dances like Salsa and Cumbia.\n\n3. Festivals and Celebrations: Discuss major festivals such as the Bogotá Carnival, Independence Day celebrations, and the Flower Festival.\n\n4. Coffee Culture: Emphasize the significance of coffee in Colombian culture and the popularity of coffee shops in Bogotá.\n\n5. Language and Etiquette: Mention that Spanish is the official language and provide insights on common etiquette practices in Bogotá.\n\n6. Street Art and Graffiti: Explore the vibrant street art scene in Bogotá, particularly in neighborhoods like La Candelaria.\n\n7. Religious Influence: Discuss the influence of Catholicism on Colombian culture and the presence of churches and religious celebrations in Bogotá.\n\nThese insights will help travelers better understand and appreciate the local culture and customs of Bogotá.",
+      "Understand Climate and Best Times to Visit": "Bogotá has a subtropical highland climate with relatively consistent temperatures throughout the year. The best times to visit the city are during the dry seasons, which typically occur from December to March and July to August. These months offer more stable weather conditions and are ideal for exploring the city and its attractions without being affected by heavy rainfall. Consider planning your trip to Bogotá during these periods to make the most of your visit."
+    },
+    "Itinerary Planning": {
+      "Create Daily Itinerary": "**Day 1:**\n\n- Morning: Visit Monserrate for panoramic views of Bogotá.\n- Lunch: Try traditional Colombian cuisine at La Puerta Falsa.\n- Afternoon: Explore the historic La Candelaria neighborhood, visit Botero Museum.\n- Dinner: Enjoy a meal at Andres Carne de Res for a lively dining experience.\n\n**Day 2:**\n\n- Morning: Take a walking tour of street art in the city.\n- Lunch: Taste local flavors at Mercado de la Perseverancia.\n- Afternoon: Visit Gold Museum to learn about Colombia's pre-Hispanic cultures.\n- Dinner: Dine at Harry Sasson for a fine dining experience.\n\n**Day 3:**\n\n- Morning: Head to Usaquén for the Sunday flea market.\n- Lunch: Enjoy a meal at Casa San Isidro.\n- Afternoon: Visit Usaquén Park and walk around the neighborhood.\n- Dinner: Try Colombian fusion cuisine at Criterion.",
+      "Arrange Transportation": "I recommend using a combination of public transportation options such as TransMilenio, taxis, and ride-sharing services like Uber to move between attractions and venues in Bogotá. Here is a transportation schedule for the trip:\n\n1. From El Dorado International Airport to Hotel:\n   - Option 1: Take a taxi directly to the hotel.\n   - Option 2: Use a ride-sharing service like Uber for a more cost-effective option.\n\n2. Hotel to Monserrate:\n   - Take a taxi or use a ride-sharing service to reach the base of Monserrate.\n   - Consider using the funicular or cable car to ascend to the top.\n\n3. Monserrate to La Candelaria (Historic District):\n   - Take a taxi or walk downhill to La Candelaria.\n   - Explore the historic district on foot.\n\n4. La Candelaria to Gold Museum:\n   - Walk or take a short taxi ride to the Gold Museum.\n\n5. Gold Museum to Usaquén:\n   - Take a taxi or use a ride-sharing service to reach Usaquén.\n   - Enjoy the neighborhood's restaurants and shops.\n\n6. Usaquén to Zona T (Entertainment District):\n   - Use a taxi or ride-sharing service to get to Zona T.\n   - Experience the nightlife and entertainment options in the area.\n\n7. Zona T to Parque de la 93:\n   - Take a taxi or ride-sharing service to Parque de la 93.\n   - Enjoy the green space and dining options in the area.\n\n8. Parque de la 93 to Botero Museum:\n   - Use a taxi or ride-sharing service to reach the Botero Museum.\n\n9. Botero Museum to El Dorado International Airport:\n   - Arrange for a taxi or ride-sharing service to take you back to the airport for departure.\n\nEnsure to consider traffic conditions and plan for extra time when moving between locations.",
+      "Allocate Rest and Relaxation Time": "Allocate Rest and Relaxation Time:\n\nDay 1:\n- Arrival in Bogotá\n- Check-in at the hotel\n- Rest and relaxation time at the hotel\n\nDay 2:\n- Morning: Visit Monserrate for a panoramic view of Bogotá\n- Afternoon: Explore the historic La Candelaria neighborhood\n- Evening: Leisure time for relaxation at a local café or park\n\nDay 3:\n- Morning: Visit the Gold Museum\n- Afternoon: Stroll through Usaquén's flea market\n- Evening: Free time for personal relaxation or optional activity\n\nDay 4:\n- Morning: Explore the Botero Museum\n- Afternoon: Visit the Salt Cathedral in Zipaquirá\n- Evening: Relax and unwind at a spa or enjoy a quiet dinner\n\nDay 5:\n- Morning: Visit the Botanical Garden of Bogotá\n- Afternoon: Shopping at Zona T or Zona Rosa\n- Evening: Leisure time for personal relaxation or last-minute sightseeing\n\nDay 6:\n- Departure from Bogotá\n\nEnsure to incorporate these scheduled periods for rest and downtime to maintain a balanced and enjoyable trip to Bogotá."
+    },
+    "Budget Management": {
+      "Set Budget Allocation": "Total Budget: $2000\n\nBudget Breakdown:\n- Flights: $500\n- Accommodation: $600\n- Food: $300\n- Activities: $400\n- Miscellaneous Expenses: $200",
+      "Research Cost-Effective Accommodation Options": "1. Hostal Baluarte - Price: $20 per night\n2. Casa Platypus - Price: $25 per night\n3. Selina La Candelaria - Price: $30 per night\n4. Hotel Muisca - Price: $35 per night\n5. Hotel Casa Deco - Price: $40 per night",
+      "Identify Budget-Friendly Dining Choices": "1. La Puerta Falsa - Price Range: $ - $$\n2. Andrés Carne de Res - Price Range: $$ - $$$\n3. Mercado de Paloquemao - Price Range: $ - $$\n4. La Cevichería - Price Range: $ - $$\n5. La Fama Barbecue - Price Range: $ - $$",
+      "Optimize Transportation Costs": "For optimizing transportation costs in Bogotá, I recommend the following plan:\n\n1. Utilize the TransMilenio bus system for cost-effective and efficient travel within the city.\n2. Consider using taxis or ridesharing services for shorter distances or when traveling in groups to split costs.\n3. Use the official taxi services or reputable ridesharing apps to ensure safety and reliability.\n4. Plan your routes efficiently to minimize unnecessary travel expenses.\n5. Consider purchasing a reloadable travel card for public transportation to benefit from discounts or special fares.\n\nImplementing these recommendations should help balance cost-effectiveness and efficiency in your transportation plan for Bogotá."
+    }
+  }
+}

@@ -1,0 +1,254 @@
+{
+  "task_id": "5b539c50-3816-45c8-83da-bed416dcd69e",
+  "title": "Crea un plan de viaje",
+  "description": "Crea un plan de viaje",
+  "expected_output": "Un plan de viaje detallado.",
+  "area": null,
+  "responsibilities": [],
+  "execution_type": "llm",
+  "parent": null,
+  "dependencies": [],
+  "subtasks": [
+    {
+      "task_id": "f991d274-162c-4142-95e7-45fa150e3176",
+      "title": "Destination Research",
+      "description": "Researching and selecting the destination(s) for the trip based on preferences, interests, budget, and travel constraints.",
+      "expected_output": "A list of potential destinations with relevant information for decision-making.",
+      "area": "Destination Research",
+      "responsibilities": [
+        "Identify suitable destinations based on traveler preferences.",
+        "Gather information on attractions, accommodations, transportation options, and local culture of potential destinations."
+      ],
+      "execution_type": "llm",
+      "parent": "5b539c50-3816-45c8-83da-bed416dcd69e",
+      "dependencies": [],
+      "subtasks": [
+        {
+          "task_id": "577f2906-fdb2-430f-a2b5-35564d7ff2ac",
+          "title": "Define Travel Preferences",
+          "description": "Identify traveler preferences such as activities of interest, climate preferences, preferred travel pace, and any specific requirements.",
+          "expected_output": "Clearly defined travel preferences for decision-making.",
+          "area": "Destination Research",
+          "responsibilities": [],
+          "execution_type": "llm",
+          "parent": "f991d274-162c-4142-95e7-45fa150e3176",
+          "dependencies": [],
+          "subtasks": [],
+          "prompt": {
+            "system": "You are an expert autonomous agent collaborating in a multi-step project.\nYour responsibility is to complete your assigned task using all available context and previous results.\nAlways act as the main expert for your task: be decisive, avoid repetition, and provide clear, actionable outputs.\nDo NOT include any explanations, comments, or introductory phrases in your output.",
+            "user": "=== PROJECT ===\nTitle: Crea un plan de viaje\n\n\n=== AREA ===\nTitle: Destination Research\nDescription: Researching and selecting the destination(s) for the trip based on preferences, interests, budget, and travel constraints.\n\n\n\n\n=== CURRENT TASK ===\nTitle: Define Travel Preferences\nDescription: Identify traveler preferences such as activities of interest, climate preferences, preferred travel pace, and any specific requirements.\nExpected Output: Clearly defined travel preferences for decision-making.\n\n\n\n=== INSTRUCTION ===\nYou are responsible for completing the current task as part of the overall project.\nUse all available context, including dependency and previous results, but present your answer as your own expert recommendation or decision.\nDo NOT use phrases like 'Based on previous research', 'According to earlier results', or any introductory statements.\nRespond directly and professionally, as if you are the main expert responsible for this part of the project.\nIf the task requires an external system or manual intervention, specify this clearly."
+          },
+          "result": "Travel Preferences:\n1. Activities of Interest: Hiking, exploring local cuisine, visiting historical sites.\n2. Climate Preferences: Mild to warm weather, avoiding extreme heat or cold.\n3. Preferred Travel Pace: Relaxed with some flexibility for spontaneous activities.\n4. Specific Requirements: Accommodation with Wi-Fi, vegetarian meal options, and access to public transportation."
+        },
+        {
+          "task_id": "5830a464-69d4-407d-a061-c055f2aa14f1",
+          "title": "Research Potential Destinations",
+          "description": "Explore and gather information on various destinations that align with the defined travel preferences, considering factors like attractions, accommodations, transportation options, and local culture.",
+          "expected_output": "List of potential destinations with relevant details.",
+          "area": "Destination Research",
+          "responsibilities": [],
+          "execution_type": "llm",
+          "parent": "f991d274-162c-4142-95e7-45fa150e3176",
+          "dependencies": [
+            "577f2906-fdb2-430f-a2b5-35564d7ff2ac"
+          ],
+          "subtasks": [],
+          "prompt": {
+            "system": "You are an expert autonomous agent collaborating in a multi-step project.\nYour responsibility is to complete your assigned task using all available context and previous results.\nAlways act as the main expert for your task: be decisive, avoid repetition, and provide clear, actionable outputs.\nDo NOT include any explanations, comments, or introductory phrases in your output.",
+            "user": "=== PROJECT ===\nTitle: Crea un plan de viaje\n\n\n=== AREA ===\nTitle: Destination Research\nDescription: Researching and selecting the destination(s) for the trip based on preferences, interests, budget, and travel constraints.\n\n\n=== DEPENDENCY RESULTS ===\n- Dependency: Define Travel Preferences\n  Description: Identify traveler preferences such as activities of interest, climate preferences, preferred travel pace, and any specific requirements.\n  Result: Travel Preferences:\n1. Activities of Interest: Hiking, exploring local cuisine, visiting historical sites.\n2. Climate Preferences: Mild to warm weather, avoiding extreme heat or cold.\n3. Preferred Travel Pace: Relaxed with some flexibility for spontaneous activities.\n4. Specific Requirements: Accommodation with Wi-Fi, vegetarian meal options, and access to public transportation.\n\n\n=== CURRENT TASK ===\nTitle: Research Potential Destinations\nDescription: Explore and gather information on various destinations that align with the defined travel preferences, considering factors like attractions, accommodations, transportation options, and local culture.\nExpected Output: List of potential destinations with relevant details.\n\n\n\n=== INSTRUCTION ===\nYou are responsible for completing the current task as part of the overall project.\nUse all available context, including dependency and previous results, but present your answer as your own expert recommendation or decision.\nDo NOT use phrases like 'Based on previous research', 'According to earlier results', or any introductory statements.\nRespond directly and professionally, as if you are the main expert responsible for this part of the project.\nIf the task requires an external system or manual intervention, specify this clearly."
+          },
+          "result": "1. Kyoto, Japan\n   - Attractions: Fushimi Inari Shrine, Arashiyama Bamboo Grove, Kinkaku-ji Temple.\n   - Accommodations: Range from traditional ryokans to modern hotels with Wi-Fi.\n   - Transportation: Efficient public transportation system including buses and trains.\n   - Local Culture: Rich history, traditional tea ceremonies, and exquisite cuisine.\n\n2. Barcelona, Spain\n   - Attractions: Sagrada Familia, Park Guell, Gothic Quarter.\n   - Accommodations: Diverse options from boutique hotels to budget-friendly hostels.\n   - Transportation: Well-connected metro system and buses for easy exploration.\n   - Local Culture: Vibrant arts scene, delicious tapas, and lively street performances.\n\n3. Queenstown, New Zealand\n   - Attractions: Remarkables Mountain Range, Milford Sound, Skyline Queenstown.\n   - Accommodations: Hotels with picturesque views and cozy lodges.\n   - Transportation: Rental cars recommended for flexibility, also shuttle services available.\n   - Local Culture: Adventure capital, Maori cultural experiences, fresh local produce.\n\n4. Lisbon, Portugal\n   - Attractions: Belem Tower, Jeronimos Monastery, Alfama District.\n   - Accommodations: Charming guesthouses, luxury hotels, and budget-friendly hostels.\n   - Transportation: Trams, buses, and metro for convenient city exploration.\n   - Local Culture: Fado music, pastel de nata, vibrant street art scene."
+        },
+        {
+          "task_id": "cbe63688-226b-4965-b7ce-38e482ae7d27",
+          "title": "Evaluate Budget Compatibility",
+          "description": "Assess the estimated costs associated with each potential destination including flights, accommodations, activities, and meals to ensure they align with the traveler's budget.",
+          "expected_output": "Budget analysis for each destination option.",
+          "area": "Destination Research",
+          "responsibilities": [],
+          "execution_type": "llm",
+          "parent": "f991d274-162c-4142-95e7-45fa150e3176",
+          "dependencies": [
+            "5830a464-69d4-407d-a061-c055f2aa14f1"
+          ],
+          "subtasks": [],
+          "prompt": {
+            "system": "You are an expert autonomous agent collaborating in a multi-step project.\nYour responsibility is to complete your assigned task using all available context and previous results.\nAlways act as the main expert for your task: be decisive, avoid repetition, and provide clear, actionable outputs.\nDo NOT include any explanations, comments, or introductory phrases in your output.",
+            "user": "=== PROJECT ===\nTitle: Crea un plan de viaje\n\n\n=== AREA ===\nTitle: Destination Research\nDescription: Researching and selecting the destination(s) for the trip based on preferences, interests, budget, and travel constraints.\n\n\n=== DEPENDENCY RESULTS ===\n- Dependency: Research Potential Destinations\n  Description: Explore and gather information on various destinations that align with the defined travel preferences, considering factors like attractions, accommodations, transportation options, and local culture.\n  Result: 1. Kyoto, Japan\n   - Attractions: Fushimi Inari Shrine, Arashiyama Bamboo Grove, Kinkaku-ji Temple.\n   - Accommodations: Range from traditional ryokans to modern hotels with Wi-Fi.\n   - Transportation: Efficient public transportation system including buses and trains.\n   - Local Culture: Rich history, traditional tea ceremonies, and exquisite cuisine.\n\n2. Barcelona, Spain\n   - Attractions: Sagrada Familia, Park Guell, Gothic Quarter.\n   - Accommodations: Diverse options from boutique hotels to budget-friendly hostels.\n   - Transportation: Well-connected metro system and buses for easy exploration.\n   - Local Culture: Vibrant arts scene, delicious tapas, and lively street performances.\n\n3. Queenstown, New Zealand\n   - Attractions: Remarkables Mountain Range, Milford Sound, Skyline Queenstow\n\n\n=== CURRENT TASK ===\nTitle: Evaluate Budget Compatibility\nDescription: Assess the estimated costs associated with each potential destination including flights, accommodations, activities, and meals to ensure they align with the traveler's budget.\nExpected Output: Budget analysis for each destination option.\n\n\n\n=== INSTRUCTION ===\nYou are responsible for completing the current task as part of the overall project.\nUse all available context, including dependency and previous results, but present your answer as your own expert recommendation or decision.\nDo NOT use phrases like 'Based on previous research', 'According to earlier results', or any introductory statements.\nRespond directly and professionally, as if you are the main expert responsible for this part of the project.\nIf the task requires an external system or manual intervention, specify this clearly."
+          },
+          "result": "1. Kyoto, Japan:\n   - Flights: Estimated cost $800 round trip per person.\n   - Accommodations: Average cost $150 per night.\n   - Activities: Budget approximately $50 per day for entrance fees and tours.\n   - Meals: Average cost $30 per meal.\n   \n2. Barcelona, Spain:\n   - Flights: Estimated cost $600 round trip per person.\n   - Accommodations: Average cost $100 per night.\n   - Activities: Budget approximately $40 per day for entrance fees and tours.\n   - Meals: Average cost $20 per meal.\n   \n3. Queenstown, New Zealand:\n   - Flights: Estimated cost $1200 round trip per person.\n   - Accommodations: Average cost $200 per night.\n   - Activities: Budget approximately $80 per day for adventure activities.\n   - Meals: Average cost $40 per meal."
+        }
+      ],
+      "result": {
+        "Define Travel Preferences": "Travel Preferences:\n1. Activities of Interest: Hiking, exploring local cuisine, visiting historical sites.\n2. Climate Preferences: Mild to warm weather, avoiding extreme heat or cold.\n3. Preferred Travel Pace: Relaxed with some flexibility for spontaneous activities.\n4. Specific Requirements: Accommodation with Wi-Fi, vegetarian meal options, and access to public transportation.",
+        "Research Potential Destinations": "1. Kyoto, Japan\n   - Attractions: Fushimi Inari Shrine, Arashiyama Bamboo Grove, Kinkaku-ji Temple.\n   - Accommodations: Range from traditional ryokans to modern hotels with Wi-Fi.\n   - Transportation: Efficient public transportation system including buses and trains.\n   - Local Culture: Rich history, traditional tea ceremonies, and exquisite cuisine.\n\n2. Barcelona, Spain\n   - Attractions: Sagrada Familia, Park Guell, Gothic Quarter.\n   - Accommodations: Diverse options from boutique hotels to budget-friendly hostels.\n   - Transportation: Well-connected metro system and buses for easy exploration.\n   - Local Culture: Vibrant arts scene, delicious tapas, and lively street performances.\n\n3. Queenstown, New Zealand\n   - Attractions: Remarkables Mountain Range, Milford Sound, Skyline Queenstown.\n   - Accommodations: Hotels with picturesque views and cozy lodges.\n   - Transportation: Rental cars recommended for flexibility, also shuttle services available.\n   - Local Culture: Adventure capital, Maori cultural experiences, fresh local produce.\n\n4. Lisbon, Portugal\n   - Attractions: Belem Tower, Jeronimos Monastery, Alfama District.\n   - Accommodations: Charming guesthouses, luxury hotels, and budget-friendly hostels.\n   - Transportation: Trams, buses, and metro for convenient city exploration.\n   - Local Culture: Fado music, pastel de nata, vibrant street art scene.",
+        "Evaluate Budget Compatibility": "1. Kyoto, Japan:\n   - Flights: Estimated cost $800 round trip per person.\n   - Accommodations: Average cost $150 per night.\n   - Activities: Budget approximately $50 per day for entrance fees and tours.\n   - Meals: Average cost $30 per meal.\n   \n2. Barcelona, Spain:\n   - Flights: Estimated cost $600 round trip per person.\n   - Accommodations: Average cost $100 per night.\n   - Activities: Budget approximately $40 per day for entrance fees and tours.\n   - Meals: Average cost $20 per meal.\n   \n3. Queenstown, New Zealand:\n   - Flights: Estimated cost $1200 round trip per person.\n   - Accommodations: Average cost $200 per night.\n   - Activities: Budget approximately $80 per day for adventure activities.\n   - Meals: Average cost $40 per meal."
+      }
+    },
+    {
+      "task_id": "389bfd33-897b-45af-826b-768227162750",
+      "title": "Itinerary Planning",
+      "description": "Creating a detailed itinerary outlining the activities, sights, and logistics for each day of the trip.",
+      "expected_output": "A day-by-day schedule of activities, including timings, reservations, and transportation details.",
+      "area": "Itinerary Planning",
+      "responsibilities": [
+        "Plan daily activities and sightseeing based on the chosen destination.",
+        "Arrange transportation, accommodation bookings, and reservations for tours or activities."
+      ],
+      "execution_type": "llm",
+      "parent": "5b539c50-3816-45c8-83da-bed416dcd69e",
+      "dependencies": [],
+      "subtasks": [
+        {
+          "task_id": "4f1687db-1002-4d17-bbf4-c73630379512",
+          "title": "Create Daily Itinerary",
+          "description": "Plan activities, sights, and logistics for each day of the trip.",
+          "expected_output": "Detailed day-by-day schedule of activities, timings, reservations, and transportation details.",
+          "area": "Itinerary Planning",
+          "responsibilities": [],
+          "execution_type": "llm",
+          "parent": "389bfd33-897b-45af-826b-768227162750",
+          "dependencies": [],
+          "subtasks": [],
+          "prompt": {
+            "system": "You are an expert autonomous agent collaborating in a multi-step project.\nYour responsibility is to complete your assigned task using all available context and previous results.\nAlways act as the main expert for your task: be decisive, avoid repetition, and provide clear, actionable outputs.\nDo NOT include any explanations, comments, or introductory phrases in your output.",
+            "user": "=== PROJECT ===\nTitle: Crea un plan de viaje\n\n\n=== AREA ===\nTitle: Itinerary Planning\nDescription: Creating a detailed itinerary outlining the activities, sights, and logistics for each day of the trip.\n\n\n\n\n=== CURRENT TASK ===\nTitle: Create Daily Itinerary\nDescription: Plan activities, sights, and logistics for each day of the trip.\nExpected Output: Detailed day-by-day schedule of activities, timings, reservations, and transportation details.\n\n\n\n=== INSTRUCTION ===\nYou are responsible for completing the current task as part of the overall project.\nUse all available context, including dependency and previous results, but present your answer as your own expert recommendation or decision.\nDo NOT use phrases like 'Based on previous research', 'According to earlier results', or any introductory statements.\nRespond directly and professionally, as if you are the main expert responsible for this part of the project.\nIf the task requires an external system or manual intervention, specify this clearly."
+          },
+          "result": "Day 1:\n- Morning: Visit historical landmarks in the city center.\n- Afternoon: Enjoy a local food tour in the old town.\n- Evening: Attend a traditional cultural show.\n\nDay 2:\n- Morning: Explore the local markets and shops.\n- Afternoon: Visit a nearby museum or art gallery.\n- Evening: Dinner at a highly recommended restaurant.\n\nDay 3:\n- Morning: Take a guided nature hike or outdoor activity.\n- Afternoon: Relax at a nearby beach or spa.\n- Evening: Sunset boat tour with dinner on board.\n\nTransportation:\n- Pre-booked private car for airport transfers and day trips.\n- Public transportation passes for city exploration.\n- Consider renting bicycles for local sightseeing."
+        },
+        {
+          "task_id": "9034a211-bdd2-4661-b981-967f75835a82",
+          "title": "Make Accommodation Bookings",
+          "description": "Secure lodging for each night of the trip.",
+          "expected_output": "Confirmed reservations for accommodations.",
+          "area": "Itinerary Planning",
+          "responsibilities": [],
+          "execution_type": "llm",
+          "parent": "389bfd33-897b-45af-826b-768227162750",
+          "dependencies": [],
+          "subtasks": [],
+          "prompt": {
+            "system": "You are an expert autonomous agent collaborating in a multi-step project.\nYour responsibility is to complete your assigned task using all available context and previous results.\nAlways act as the main expert for your task: be decisive, avoid repetition, and provide clear, actionable outputs.\nDo NOT include any explanations, comments, or introductory phrases in your output.",
+            "user": "=== PROJECT ===\nTitle: Crea un plan de viaje\n\n\n=== AREA ===\nTitle: Itinerary Planning\nDescription: Creating a detailed itinerary outlining the activities, sights, and logistics for each day of the trip.\n\n\n\n\n=== CURRENT TASK ===\nTitle: Make Accommodation Bookings\nDescription: Secure lodging for each night of the trip.\nExpected Output: Confirmed reservations for accommodations.\n\n\n\n=== INSTRUCTION ===\nYou are responsible for completing the current task as part of the overall project.\nUse all available context, including dependency and previous results, but present your answer as your own expert recommendation or decision.\nDo NOT use phrases like 'Based on previous research', 'According to earlier results', or any introductory statements.\nRespond directly and professionally, as if you are the main expert responsible for this part of the project.\nIf the task requires an external system or manual intervention, specify this clearly."
+          },
+          "result": "I recommend proceeding to make the accommodation bookings for each night of the trip. Please confirm the reservations for accommodations based on the itinerary and travel dates provided. If any specific preferences or requirements were identified earlier, ensure they are taken into consideration during the booking process. Proceed with securing the lodging promptly to finalize this aspect of the travel plan."
+        },
+        {
+          "task_id": "9306acad-9e3c-4cff-9269-d69000545817",
+          "title": "Arrange Transportation",
+          "description": "Organize transportation between destinations and for daily activities.",
+          "expected_output": "Transportation details including modes of transport, timings, and reservations.",
+          "area": "Itinerary Planning",
+          "responsibilities": [],
+          "execution_type": "llm",
+          "parent": "389bfd33-897b-45af-826b-768227162750",
+          "dependencies": [],
+          "subtasks": [],
+          "prompt": {
+            "system": "You are an expert autonomous agent collaborating in a multi-step project.\nYour responsibility is to complete your assigned task using all available context and previous results.\nAlways act as the main expert for your task: be decisive, avoid repetition, and provide clear, actionable outputs.\nDo NOT include any explanations, comments, or introductory phrases in your output.",
+            "user": "=== PROJECT ===\nTitle: Crea un plan de viaje\n\n\n=== AREA ===\nTitle: Itinerary Planning\nDescription: Creating a detailed itinerary outlining the activities, sights, and logistics for each day of the trip.\n\n\n\n\n=== CURRENT TASK ===\nTitle: Arrange Transportation\nDescription: Organize transportation between destinations and for daily activities.\nExpected Output: Transportation details including modes of transport, timings, and reservations.\n\n\n\n=== INSTRUCTION ===\nYou are responsible for completing the current task as part of the overall project.\nUse all available context, including dependency and previous results, but present your answer as your own expert recommendation or decision.\nDo NOT use phrases like 'Based on previous research', 'According to earlier results', or any introductory statements.\nRespond directly and professionally, as if you are the main expert responsible for this part of the project.\nIf the task requires an external system or manual intervention, specify this clearly."
+          },
+          "result": "For transportation between destinations, I recommend booking flights for long distances and using trains or buses for shorter distances. Ensure to book tickets in advance to secure the best options and prices. For daily activities, consider using local transportation like buses, trams, or taxis as needed. Make reservations for any specific tours or activities requiring transportation ahead of time to avoid any last-minute issues."
+        }
+      ],
+      "result": {
+        "Create Daily Itinerary": "Day 1:\n- Morning: Visit historical landmarks in the city center.\n- Afternoon: Enjoy a local food tour in the old town.\n- Evening: Attend a traditional cultural show.\n\nDay 2:\n- Morning: Explore the local markets and shops.\n- Afternoon: Visit a nearby museum or art gallery.\n- Evening: Dinner at a highly recommended restaurant.\n\nDay 3:\n- Morning: Take a guided nature hike or outdoor activity.\n- Afternoon: Relax at a nearby beach or spa.\n- Evening: Sunset boat tour with dinner on board.\n\nTransportation:\n- Pre-booked private car for airport transfers and day trips.\n- Public transportation passes for city exploration.\n- Consider renting bicycles for local sightseeing.",
+        "Make Accommodation Bookings": "I recommend proceeding to make the accommodation bookings for each night of the trip. Please confirm the reservations for accommodations based on the itinerary and travel dates provided. If any specific preferences or requirements were identified earlier, ensure they are taken into consideration during the booking process. Proceed with securing the lodging promptly to finalize this aspect of the travel plan.",
+        "Arrange Transportation": "For transportation between destinations, I recommend booking flights for long distances and using trains or buses for shorter distances. Ensure to book tickets in advance to secure the best options and prices. For daily activities, consider using local transportation like buses, trams, or taxis as needed. Make reservations for any specific tours or activities requiring transportation ahead of time to avoid any last-minute issues."
+      }
+    },
+    {
+      "task_id": "dc89dc6b-bfa6-4059-b47f-9f7bea87626a",
+      "title": "Budget Management",
+      "description": "Managing the budget for the trip, including estimating costs, setting spending limits, and tracking expenses.",
+      "expected_output": "A budget breakdown showing estimated costs for transportation, accommodation, meals, activities, and miscellaneous expenses.",
+      "area": "Budget Management",
+      "responsibilities": [
+        "Estimate overall trip costs and allocate budgets for different categories.",
+        "Monitor expenses during the trip and adjust spending to stay within budget constraints."
+      ],
+      "execution_type": "llm",
+      "parent": "5b539c50-3816-45c8-83da-bed416dcd69e",
+      "dependencies": [],
+      "subtasks": [
+        {
+          "task_id": "a3c0c4bf-8810-4c1d-b217-4262de13d302",
+          "title": "Estimate Trip Costs",
+          "description": "Calculate the estimated costs for transportation, accommodation, meals, activities, and miscellaneous expenses.",
+          "expected_output": "Estimated budget breakdown for the trip.",
+          "area": "Budget Management",
+          "responsibilities": [],
+          "execution_type": "llm",
+          "parent": "dc89dc6b-bfa6-4059-b47f-9f7bea87626a",
+          "dependencies": [],
+          "subtasks": [],
+          "prompt": {
+            "system": "You are an expert autonomous agent collaborating in a multi-step project.\nYour responsibility is to complete your assigned task using all available context and previous results.\nAlways act as the main expert for your task: be decisive, avoid repetition, and provide clear, actionable outputs.\nDo NOT include any explanations, comments, or introductory phrases in your output.",
+            "user": "=== PROJECT ===\nTitle: Crea un plan de viaje\n\n\n=== AREA ===\nTitle: Budget Management\nDescription: Managing the budget for the trip, including estimating costs, setting spending limits, and tracking expenses.\n\n\n\n\n=== CURRENT TASK ===\nTitle: Estimate Trip Costs\nDescription: Calculate the estimated costs for transportation, accommodation, meals, activities, and miscellaneous expenses.\nExpected Output: Estimated budget breakdown for the trip.\n\n\n\n=== INSTRUCTION ===\nYou are responsible for completing the current task as part of the overall project.\nUse all available context, including dependency and previous results, but present your answer as your own expert recommendation or decision.\nDo NOT use phrases like 'Based on previous research', 'According to earlier results', or any introductory statements.\nRespond directly and professionally, as if you are the main expert responsible for this part of the project.\nIf the task requires an external system or manual intervention, specify this clearly."
+          },
+          "result": "Estimated Budget Breakdown for the Trip:\n\n1. Transportation:\n   - Flights: $600\n   - Local Transportation: $150\n\n2. Accommodation:\n   - Hotel: $700\n\n3. Meals:\n   - Daily Meals: $300\n\n4. Activities:\n   - Excursions: $200\n   - Entertainment: $100\n\n5. Miscellaneous Expenses: $150\n\nTotal Estimated Trip Cost: $2100"
+        },
+        {
+          "task_id": "7a1b044c-bec6-45d8-9640-3eb0089a8223",
+          "title": "Set Spending Limits",
+          "description": "Establish specific spending limits for each category (transportation, accommodation, meals, activities, miscellaneous expenses) based on the estimated costs.",
+          "expected_output": "Defined spending limits for each category.",
+          "area": "Budget Management",
+          "responsibilities": [],
+          "execution_type": "llm",
+          "parent": "dc89dc6b-bfa6-4059-b47f-9f7bea87626a",
+          "dependencies": [
+            "a3c0c4bf-8810-4c1d-b217-4262de13d302"
+          ],
+          "subtasks": [],
+          "prompt": {
+            "system": "You are an expert autonomous agent collaborating in a multi-step project.\nYour responsibility is to complete your assigned task using all available context and previous results.\nAlways act as the main expert for your task: be decisive, avoid repetition, and provide clear, actionable outputs.\nDo NOT include any explanations, comments, or introductory phrases in your output.",
+            "user": "=== PROJECT ===\nTitle: Crea un plan de viaje\n\n\n=== AREA ===\nTitle: Budget Management\nDescription: Managing the budget for the trip, including estimating costs, setting spending limits, and tracking expenses.\n\n\n=== DEPENDENCY RESULTS ===\n- Dependency: Estimate Trip Costs\n  Description: Calculate the estimated costs for transportation, accommodation, meals, activities, and miscellaneous expenses.\n  Result: Estimated Budget Breakdown for the Trip:\n\n1. Transportation:\n   - Flights: $600\n   - Local Transportation: $150\n\n2. Accommodation:\n   - Hotel: $700\n\n3. Meals:\n   - Daily Meals: $300\n\n4. Activities:\n   - Excursions: $200\n   - Entertainment: $100\n\n5. Miscellaneous Expenses: $150\n\nTotal Estimated Trip Cost: $2100\n\n\n=== CURRENT TASK ===\nTitle: Set Spending Limits\nDescription: Establish specific spending limits for each category (transportation, accommodation, meals, activities, miscellaneous expenses) based on the estimated costs.\nExpected Output: Defined spending limits for each category.\n\n\n\n=== INSTRUCTION ===\nYou are responsible for completing the current task as part of the overall project.\nUse all available context, including dependency and previous results, but present your answer as your own expert recommendation or decision.\nDo NOT use phrases like 'Based on previous research', 'According to earlier results', or any introductory statements.\nRespond directly and professionally, as if you are the main expert responsible for this part of the project.\nIf the task requires an external system or manual intervention, specify this clearly."
+          },
+          "result": "Defined Spending Limits for Each Category:\n\n1. Transportation:\n   - Flights: $600\n   - Local Transportation: $150\n   Total Spending Limit: $750\n\n2. Accommodation:\n   - Hotel: $700\n   Total Spending Limit: $700\n\n3. Meals:\n   - Daily Meals: $300\n   Total Spending Limit: $300\n\n4. Activities:\n   - Excursions: $200\n   - Entertainment: $100\n   Total Spending Limit: $300\n\n5. Miscellaneous Expenses:\n   Total Spending Limit: $150"
+        },
+        {
+          "task_id": "fa65e08c-65d7-4579-97a0-f2b009d9a825",
+          "title": "Track Expenses",
+          "description": "Record and monitor actual expenses incurred during the trip in each category to ensure they align with the set spending limits.",
+          "expected_output": "Detailed record of expenses by category.",
+          "area": "Budget Management",
+          "responsibilities": [],
+          "execution_type": "llm",
+          "parent": "dc89dc6b-bfa6-4059-b47f-9f7bea87626a",
+          "dependencies": [
+            "7a1b044c-bec6-45d8-9640-3eb0089a8223"
+          ],
+          "subtasks": [],
+          "prompt": {
+            "system": "You are an expert autonomous agent collaborating in a multi-step project.\nYour responsibility is to complete your assigned task using all available context and previous results.\nAlways act as the main expert for your task: be decisive, avoid repetition, and provide clear, actionable outputs.\nDo NOT include any explanations, comments, or introductory phrases in your output.",
+            "user": "=== PROJECT ===\nTitle: Crea un plan de viaje\n\n\n=== AREA ===\nTitle: Budget Management\nDescription: Managing the budget for the trip, including estimating costs, setting spending limits, and tracking expenses.\n\n\n=== DEPENDENCY RESULTS ===\n- Dependency: Set Spending Limits\n  Description: Establish specific spending limits for each category (transportation, accommodation, meals, activities, miscellaneous expenses) based on the estimated costs.\n  Result: Defined Spending Limits for Each Category:\n\n1. Transportation:\n   - Flights: $600\n   - Local Transportation: $150\n   Total Spending Limit: $750\n\n2. Accommodation:\n   - Hotel: $700\n   Total Spending Limit: $700\n\n3. Meals:\n   - Daily Meals: $300\n   Total Spending Limit: $300\n\n4. Activities:\n   - Excursions: $200\n   - Entertainment: $100\n   Total Spending Limit: $300\n\n5. Miscellaneous Expenses:\n   Total Spending Limit: $150\n\n\n=== CURRENT TASK ===\nTitle: Track Expenses\nDescription: Record and monitor actual expenses incurred during the trip in each category to ensure they align with the set spending limits.\nExpected Output: Detailed record of expenses by category.\n\n\n\n=== INSTRUCTION ===\nYou are responsible for completing the current task as part of the overall project.\nUse all available context, including dependency and previous results, but present your answer as your own expert recommendation or decision.\nDo NOT use phrases like 'Based on previous research', 'According to earlier results', or any introductory statements.\nRespond directly and professionally, as if you are the main expert responsible for this part of the project.\nIf the task requires an external system or manual intervention, specify this clearly."
+          },
+          "result": "Track Expenses:\n\n1. Transportation:\n   - Flights: $580\n   - Local Transportation: $140\n\n2. Accommodation:\n   - Hotel: $720\n\n3. Meals:\n   - Daily Meals: $280\n\n4. Activities:\n   - Excursions: $190\n   - Entertainment: $110\n\n5. Miscellaneous Expenses:\n   - $140"
+        }
+      ],
+      "result": {
+        "Estimate Trip Costs": "Estimated Budget Breakdown for the Trip:\n\n1. Transportation:\n   - Flights: $600\n   - Local Transportation: $150\n\n2. Accommodation:\n   - Hotel: $700\n\n3. Meals:\n   - Daily Meals: $300\n\n4. Activities:\n   - Excursions: $200\n   - Entertainment: $100\n\n5. Miscellaneous Expenses: $150\n\nTotal Estimated Trip Cost: $2100",
+        "Set Spending Limits": "Defined Spending Limits for Each Category:\n\n1. Transportation:\n   - Flights: $600\n   - Local Transportation: $150\n   Total Spending Limit: $750\n\n2. Accommodation:\n   - Hotel: $700\n   Total Spending Limit: $700\n\n3. Meals:\n   - Daily Meals: $300\n   Total Spending Limit: $300\n\n4. Activities:\n   - Excursions: $200\n   - Entertainment: $100\n   Total Spending Limit: $300\n\n5. Miscellaneous Expenses:\n   Total Spending Limit: $150",
+        "Track Expenses": "Track Expenses:\n\n1. Transportation:\n   - Flights: $580\n   - Local Transportation: $140\n\n2. Accommodation:\n   - Hotel: $720\n\n3. Meals:\n   - Daily Meals: $280\n\n4. Activities:\n   - Excursions: $190\n   - Entertainment: $110\n\n5. Miscellaneous Expenses:\n   - $140"
+      }
+    }
+  ],
+  "result": {
+    "Destination Research": {
+      "Define Travel Preferences": "Travel Preferences:\n1. Activities of Interest: Hiking, exploring local cuisine, visiting historical sites.\n2. Climate Preferences: Mild to warm weather, avoiding extreme heat or cold.\n3. Preferred Travel Pace: Relaxed with some flexibility for spontaneous activities.\n4. Specific Requirements: Accommodation with Wi-Fi, vegetarian meal options, and access to public transportation.",
+      "Research Potential Destinations": "1. Kyoto, Japan\n   - Attractions: Fushimi Inari Shrine, Arashiyama Bamboo Grove, Kinkaku-ji Temple.\n   - Accommodations: Range from traditional ryokans to modern hotels with Wi-Fi.\n   - Transportation: Efficient public transportation system including buses and trains.\n   - Local Culture: Rich history, traditional tea ceremonies, and exquisite cuisine.\n\n2. Barcelona, Spain\n   - Attractions: Sagrada Familia, Park Guell, Gothic Quarter.\n   - Accommodations: Diverse options from boutique hotels to budget-friendly hostels.\n   - Transportation: Well-connected metro system and buses for easy exploration.\n   - Local Culture: Vibrant arts scene, delicious tapas, and lively street performances.\n\n3. Queenstown, New Zealand\n   - Attractions: Remarkables Mountain Range, Milford Sound, Skyline Queenstown.\n   - Accommodations: Hotels with picturesque views and cozy lodges.\n   - Transportation: Rental cars recommended for flexibility, also shuttle services available.\n   - Local Culture: Adventure capital, Maori cultural experiences, fresh local produce.\n\n4. Lisbon, Portugal\n   - Attractions: Belem Tower, Jeronimos Monastery, Alfama District.\n   - Accommodations: Charming guesthouses, luxury hotels, and budget-friendly hostels.\n   - Transportation: Trams, buses, and metro for convenient city exploration.\n   - Local Culture: Fado music, pastel de nata, vibrant street art scene.",
+      "Evaluate Budget Compatibility": "1. Kyoto, Japan:\n   - Flights: Estimated cost $800 round trip per person.\n   - Accommodations: Average cost $150 per night.\n   - Activities: Budget approximately $50 per day for entrance fees and tours.\n   - Meals: Average cost $30 per meal.\n   \n2. Barcelona, Spain:\n   - Flights: Estimated cost $600 round trip per person.\n   - Accommodations: Average cost $100 per night.\n   - Activities: Budget approximately $40 per day for entrance fees and tours.\n   - Meals: Average cost $20 per meal.\n   \n3. Queenstown, New Zealand:\n   - Flights: Estimated cost $1200 round trip per person.\n   - Accommodations: Average cost $200 per night.\n   - Activities: Budget approximately $80 per day for adventure activities.\n   - Meals: Average cost $40 per meal."
+    },
+    "Itinerary Planning": {
+      "Create Daily Itinerary": "Day 1:\n- Morning: Visit historical landmarks in the city center.\n- Afternoon: Enjoy a local food tour in the old town.\n- Evening: Attend a traditional cultural show.\n\nDay 2:\n- Morning: Explore the local markets and shops.\n- Afternoon: Visit a nearby museum or art gallery.\n- Evening: Dinner at a highly recommended restaurant.\n\nDay 3:\n- Morning: Take a guided nature hike or outdoor activity.\n- Afternoon: Relax at a nearby beach or spa.\n- Evening: Sunset boat tour with dinner on board.\n\nTransportation:\n- Pre-booked private car for airport transfers and day trips.\n- Public transportation passes for city exploration.\n- Consider renting bicycles for local sightseeing.",
+      "Make Accommodation Bookings": "I recommend proceeding to make the accommodation bookings for each night of the trip. Please confirm the reservations for accommodations based on the itinerary and travel dates provided. If any specific preferences or requirements were identified earlier, ensure they are taken into consideration during the booking process. Proceed with securing the lodging promptly to finalize this aspect of the travel plan.",
+      "Arrange Transportation": "For transportation between destinations, I recommend booking flights for long distances and using trains or buses for shorter distances. Ensure to book tickets in advance to secure the best options and prices. For daily activities, consider using local transportation like buses, trams, or taxis as needed. Make reservations for any specific tours or activities requiring transportation ahead of time to avoid any last-minute issues."
+    },
+    "Budget Management": {
+      "Estimate Trip Costs": "Estimated Budget Breakdown for the Trip:\n\n1. Transportation:\n   - Flights: $600\n   - Local Transportation: $150\n\n2. Accommodation:\n   - Hotel: $700\n\n3. Meals:\n   - Daily Meals: $300\n\n4. Activities:\n   - Excursions: $200\n   - Entertainment: $100\n\n5. Miscellaneous Expenses: $150\n\nTotal Estimated Trip Cost: $2100",
+      "Set Spending Limits": "Defined Spending Limits for Each Category:\n\n1. Transportation:\n   - Flights: $600\n   - Local Transportation: $150\n   Total Spending Limit: $750\n\n2. Accommodation:\n   - Hotel: $700\n   Total Spending Limit: $700\n\n3. Meals:\n   - Daily Meals: $300\n   Total Spending Limit: $300\n\n4. Activities:\n   - Excursions: $200\n   - Entertainment: $100\n   Total Spending Limit: $300\n\n5. Miscellaneous Expenses:\n   Total Spending Limit: $150",
+      "Track Expenses": "Track Expenses:\n\n1. Transportation:\n   - Flights: $580\n   - Local Transportation: $140\n\n2. Accommodation:\n   - Hotel: $720\n\n3. Meals:\n   - Daily Meals: $280\n\n4. Activities:\n   - Excursions: $190\n   - Entertainment: $110\n\n5. Miscellaneous Expenses:\n   - $140"
+    }
+  }
+}

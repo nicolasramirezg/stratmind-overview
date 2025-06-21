@@ -1,0 +1,335 @@
+{
+  "task_id": "b08c22f6-2115-446d-aeef-32957f4009da",
+  "title": "Crea un plan de viaje",
+  "description": "Crea un plan de viaje",
+  "expected_output": "Un plan de viaje detallado.",
+  "area": null,
+  "responsibilities": [],
+  "execution_type": "llm",
+  "parent": null,
+  "dependencies": [],
+  "subtasks": [
+    {
+      "task_id": "6f87cf75-97f8-444b-bbf4-ea4afc6f0dd5",
+      "title": "Research",
+      "description": "Responsible for gathering information about potential destinations, activities, and accommodations.",
+      "expected_output": "A comprehensive list of options for destinations, activities, and accommodations.",
+      "area": "Research",
+      "responsibilities": [
+        "Research popular travel destinations.",
+        "Compile a list of activities and attractions at each destination.",
+        "Identify various accommodation options within budget constraints."
+      ],
+      "execution_type": "llm",
+      "parent": "b08c22f6-2115-446d-aeef-32957f4009da",
+      "dependencies": [],
+      "subtasks": [
+        {
+          "task_id": "432affb0-0eeb-42f9-93ac-e4a858bf2e81",
+          "title": "Research Popular Travel Destinations",
+          "description": "Identify and gather information on popular travel destinations worldwide.",
+          "expected_output": "List of top travel destinations with key details.",
+          "area": "Research",
+          "responsibilities": [],
+          "execution_type": "llm",
+          "parent": "6f87cf75-97f8-444b-bbf4-ea4afc6f0dd5",
+          "dependencies": [],
+          "subtasks": [],
+          "prompt": {
+            "system": "You are an expert autonomous agent collaborating in a multi-step project.\nYour responsibility is to complete your assigned task using all available context and previous results.\nAlways act as the main expert for your task: be decisive, avoid repetition, and provide clear, actionable outputs.\nDo NOT include any explanations, comments, or introductory phrases in your output.",
+            "user": "=== PROJECT ===\nTitle: Crea un plan de viaje\n\n\n=== AREA ===\nTitle: Research\nDescription: Responsible for gathering information about potential destinations, activities, and accommodations.\n\n\n\n\n=== CURRENT TASK ===\nTitle: Research Popular Travel Destinations\nDescription: Identify and gather information on popular travel destinations worldwide.\nExpected Output: List of top travel destinations with key details.\n\n\n\n=== INSTRUCTION ===\nYou are responsible for completing the current task as part of the overall project.\nUse all available context, including dependency and previous results, but present your answer as your own expert recommendation or decision.\nDo NOT use phrases like 'Based on previous research', 'According to earlier results', or any introductory statements.\nRespond directly and professionally, as if you are the main expert responsible for this part of the project.\nIf the task requires an external system or manual intervention, specify this clearly."
+          },
+          "result": "1. Paris, France\n   - Iconic landmarks: Eiffel Tower, Louvre Museum\n   - Cuisine: French cuisine, patisseries\n   - Accommodation: Wide range from luxury hotels to boutique apartments\n\n2. Tokyo, Japan\n   - Culture: Traditional temples, modern technology\n   - Food: Sushi, ramen, izakayas\n   - Stay: Mix of traditional ryokans and modern hotels\n\n3. Rome, Italy\n   - History: Colosseum, Roman Forum\n   - Food: Pasta, pizza, gelato\n   - Lodging: Hotels near historic sites or cozy B&Bs\n\n4. New York City, USA\n   - Attractions: Times Square, Central Park\n   - Dining: Diverse food scene, food trucks\n   - Stay: Range from luxury hotels to budget-friendly accommodations\n\n5. Bali, Indonesia\n   - Nature: Beaches, rice terraces\n   - Cuisine: Balinese dishes, seafood\n   - Accommodation: Resorts, villas, eco-friendly lodges"
+        },
+        {
+          "task_id": "49ff2dae-5b05-4bb3-93f0-d32bcfb42b3f",
+          "title": "Compile List of Activities and Attractions",
+          "description": "Research and compile a list of activities and attractions available at each destination.",
+          "expected_output": "Comprehensive list of activities and attractions for each destination.",
+          "area": "Research",
+          "responsibilities": [],
+          "execution_type": "llm",
+          "parent": "6f87cf75-97f8-444b-bbf4-ea4afc6f0dd5",
+          "dependencies": [
+            "432affb0-0eeb-42f9-93ac-e4a858bf2e81"
+          ],
+          "subtasks": [],
+          "prompt": {
+            "system": "You are an expert autonomous agent collaborating in a multi-step project.\nYour responsibility is to complete your assigned task using all available context and previous results.\nAlways act as the main expert for your task: be decisive, avoid repetition, and provide clear, actionable outputs.\nDo NOT include any explanations, comments, or introductory phrases in your output.",
+            "user": "=== PROJECT ===\nTitle: Crea un plan de viaje\n\n\n=== AREA ===\nTitle: Research\nDescription: Responsible for gathering information about potential destinations, activities, and accommodations.\n\n\n=== DEPENDENCY RESULTS ===\n- Dependency: Research Popular Travel Destinations\n  Description: Identify and gather information on popular travel destinations worldwide.\n  Result: 1. Paris, France\n   - Iconic landmarks: Eiffel Tower, Louvre Museum\n   - Cuisine: French cuisine, patisseries\n   - Accommodation: Wide range from luxury hotels to boutique apartments\n\n2. Tokyo, Japan\n   - Culture: Traditional temples, modern technology\n   - Food: Sushi, ramen, izakayas\n   - Stay: Mix of traditional ryokans and modern hotels\n\n3. Rome, Italy\n   - History: Colosseum, Roman Forum\n   - Food: Pasta, pizza, gelato\n   - Lodging: Hotels near historic sites or cozy B&Bs\n\n4. New York City, USA\n   - Attractions: Times Square, Central Park\n   - Dining: Diverse food scene, food trucks\n   - Stay: Range from luxury hotels to budget-friendly accommodations\n\n5. Bali, Indonesia\n   - Nature: Beaches, rice terraces\n   - Cuisine: Balinese dishes, seafood\n   - Accommodation: Resorts, villas, eco\n\n\n=== CURRENT TASK ===\nTitle: Compile List of Activities and Attractions\nDescription: Research and compile a list of activities and attractions available at each destination.\nExpected Output: Comprehensive list of activities and attractions for each destination.\n\n\n\n=== INSTRUCTION ===\nYou are responsible for completing the current task as part of the overall project.\nUse all available context, including dependency and previous results, but present your answer as your own expert recommendation or decision.\nDo NOT use phrases like 'Based on previous research', 'According to earlier results', or any introductory statements.\nRespond directly and professionally, as if you are the main expert responsible for this part of the project.\nIf the task requires an external system or manual intervention, specify this clearly."
+          },
+          "result": "1. Paris, France:\n   - Activities and Attractions:\n     - Visit the Eiffel Tower\n     - Explore the Louvre Museum\n     - Stroll along the Seine River\n     - Enjoy a French pastry tasting tour\n     - Take a day trip to Versailles Palace\n\n2. Tokyo, Japan:\n   - Activities and Attractions:\n     - Visit Senso-ji Temple in Asakusa\n     - Explore the bustling streets of Shibuya\n     - Experience a traditional tea ceremony\n     - Enjoy sushi at Tsukiji Fish Market\n     - Visit the teamLab Borderless digital art museum\n\n3. Rome, Italy:\n   - Activities and Attractions:\n     - Explore the Colosseum and Roman Forum\n     - Visit Vatican City and St. Peter's Basilica\n     - Enjoy a pasta-making class\n     - Throw a coin in the Trevi Fountain\n     - Take a day trip to Pompeii\n\n4. New York City, USA:\n   - Activities and Attractions:\n     - Explore Central Park by bike or carriage ride\n     - Visit the Statue of Liberty and Ellis Island\n     - Watch a Broadway show\n     - Try diverse cuisines in Chelsea Market\n     - Walk across the Brooklyn Bridge\n\n5. Bali, Indonesia:\n   - Activities and Attractions:\n     - Relax on the beaches of Kuta and Seminyak\n     - Explore Ubud's art markets and rice terraces\n     - Visit Uluwatu Temple for a sunset view\n     - Try surfing in Canggu\n     - Experience a Balinese cooking class"
+        },
+        {
+          "task_id": "d76e0578-dd32-4f77-a2b8-eddadcd250f0",
+          "title": "Identify Accommodation Options",
+          "description": "Research and identify various accommodation options (hotels, hostels, vacation rentals, etc.) within specified budget constraints.",
+          "expected_output": "List of accommodation options with pricing and details.",
+          "area": "Research",
+          "responsibilities": [],
+          "execution_type": "llm",
+          "parent": "6f87cf75-97f8-444b-bbf4-ea4afc6f0dd5",
+          "dependencies": [
+            "432affb0-0eeb-42f9-93ac-e4a858bf2e81"
+          ],
+          "subtasks": [],
+          "prompt": {
+            "system": "You are an expert autonomous agent collaborating in a multi-step project.\nYour responsibility is to complete your assigned task using all available context and previous results.\nAlways act as the main expert for your task: be decisive, avoid repetition, and provide clear, actionable outputs.\nDo NOT include any explanations, comments, or introductory phrases in your output.",
+            "user": "=== PROJECT ===\nTitle: Crea un plan de viaje\n\n\n=== AREA ===\nTitle: Research\nDescription: Responsible for gathering information about potential destinations, activities, and accommodations.\n\n\n=== DEPENDENCY RESULTS ===\n- Dependency: Research Popular Travel Destinations\n  Description: Identify and gather information on popular travel destinations worldwide.\n  Result: 1. Paris, France\n   - Iconic landmarks: Eiffel Tower, Louvre Museum\n   - Cuisine: French cuisine, patisseries\n   - Accommodation: Wide range from luxury hotels to boutique apartments\n\n2. Tokyo, Japan\n   - Culture: Traditional temples, modern technology\n   - Food: Sushi, ramen, izakayas\n   - Stay: Mix of traditional ryokans and modern hotels\n\n3. Rome, Italy\n   - History: Colosseum, Roman Forum\n   - Food: Pasta, pizza, gelato\n   - Lodging: Hotels near historic sites or cozy B&Bs\n\n4. New York City, USA\n   - Attractions: Times Square, Central Park\n   - Dining: Diverse food scene, food trucks\n   - Stay: Range from luxury hotels to budget-friendly accommodations\n\n5. Bali, Indonesia\n   - Nature: Beaches, rice terraces\n   - Cuisine: Balinese dishes, seafood\n   - Accommodation: Resorts, villas, eco\n\n\n=== CURRENT TASK ===\nTitle: Identify Accommodation Options\nDescription: Research and identify various accommodation options (hotels, hostels, vacation rentals, etc.) within specified budget constraints.\nExpected Output: List of accommodation options with pricing and details.\n\n\n\n=== INSTRUCTION ===\nYou are responsible for completing the current task as part of the overall project.\nUse all available context, including dependency and previous results, but present your answer as your own expert recommendation or decision.\nDo NOT use phrases like 'Based on previous research', 'According to earlier results', or any introductory statements.\nRespond directly and professionally, as if you are the main expert responsible for this part of the project.\nIf the task requires an external system or manual intervention, specify this clearly."
+          },
+          "result": "1. Paris, France:\n   - Accommodation Options:\n     1. Luxury Hotel: The Ritz Paris - Starting at $800 per night\n     2. Boutique Apartment: Le Marais Chic Studio - Starting at $150 per night\n\n2. Tokyo, Japan:\n   - Accommodation Options:\n     1. Traditional Ryokan: Gora Kadan - Starting at $400 per night\n     2. Modern Hotel: Park Hyatt Tokyo - Starting at $300 per night\n\n3. Rome, Italy:\n   - Accommodation Options:\n     1. Historic Hotel: Hotel Raphael - Starting at $250 per night\n     2. Cozy B&B: Casa Howard Guest Houses - Starting at $100 per night\n\n4. New York City, USA:\n   - Accommodation Options:\n     1. Luxury Hotel: The Plaza Hotel - Starting at $700 per night\n     2. Budget-Friendly Accommodation: Pod 51 Hotel - Starting at $150 per night\n\n5. Bali, Indonesia:\n   - Accommodation Options:\n     1. Resort: AYANA Resort and Spa - Starting at $300 per night\n     2. Villa: The Royal Purnama - Starting at $200 per night"
+        }
+      ],
+      "result": {
+        "Research Popular Travel Destinations": "1. Paris, France\n   - Iconic landmarks: Eiffel Tower, Louvre Museum\n   - Cuisine: French cuisine, patisseries\n   - Accommodation: Wide range from luxury hotels to boutique apartments\n\n2. Tokyo, Japan\n   - Culture: Traditional temples, modern technology\n   - Food: Sushi, ramen, izakayas\n   - Stay: Mix of traditional ryokans and modern hotels\n\n3. Rome, Italy\n   - History: Colosseum, Roman Forum\n   - Food: Pasta, pizza, gelato\n   - Lodging: Hotels near historic sites or cozy B&Bs\n\n4. New York City, USA\n   - Attractions: Times Square, Central Park\n   - Dining: Diverse food scene, food trucks\n   - Stay: Range from luxury hotels to budget-friendly accommodations\n\n5. Bali, Indonesia\n   - Nature: Beaches, rice terraces\n   - Cuisine: Balinese dishes, seafood\n   - Accommodation: Resorts, villas, eco-friendly lodges",
+        "Compile List of Activities and Attractions": "1. Paris, France:\n   - Activities and Attractions:\n     - Visit the Eiffel Tower\n     - Explore the Louvre Museum\n     - Stroll along the Seine River\n     - Enjoy a French pastry tasting tour\n     - Take a day trip to Versailles Palace\n\n2. Tokyo, Japan:\n   - Activities and Attractions:\n     - Visit Senso-ji Temple in Asakusa\n     - Explore the bustling streets of Shibuya\n     - Experience a traditional tea ceremony\n     - Enjoy sushi at Tsukiji Fish Market\n     - Visit the teamLab Borderless digital art museum\n\n3. Rome, Italy:\n   - Activities and Attractions:\n     - Explore the Colosseum and Roman Forum\n     - Visit Vatican City and St. Peter's Basilica\n     - Enjoy a pasta-making class\n     - Throw a coin in the Trevi Fountain\n     - Take a day trip to Pompeii\n\n4. New York City, USA:\n   - Activities and Attractions:\n     - Explore Central Park by bike or carriage ride\n     - Visit the Statue of Liberty and Ellis Island\n     - Watch a Broadway show\n     - Try diverse cuisines in Chelsea Market\n     - Walk across the Brooklyn Bridge\n\n5. Bali, Indonesia:\n   - Activities and Attractions:\n     - Relax on the beaches of Kuta and Seminyak\n     - Explore Ubud's art markets and rice terraces\n     - Visit Uluwatu Temple for a sunset view\n     - Try surfing in Canggu\n     - Experience a Balinese cooking class",
+        "Identify Accommodation Options": "1. Paris, France:\n   - Accommodation Options:\n     1. Luxury Hotel: The Ritz Paris - Starting at $800 per night\n     2. Boutique Apartment: Le Marais Chic Studio - Starting at $150 per night\n\n2. Tokyo, Japan:\n   - Accommodation Options:\n     1. Traditional Ryokan: Gora Kadan - Starting at $400 per night\n     2. Modern Hotel: Park Hyatt Tokyo - Starting at $300 per night\n\n3. Rome, Italy:\n   - Accommodation Options:\n     1. Historic Hotel: Hotel Raphael - Starting at $250 per night\n     2. Cozy B&B: Casa Howard Guest Houses - Starting at $100 per night\n\n4. New York City, USA:\n   - Accommodation Options:\n     1. Luxury Hotel: The Plaza Hotel - Starting at $700 per night\n     2. Budget-Friendly Accommodation: Pod 51 Hotel - Starting at $150 per night\n\n5. Bali, Indonesia:\n   - Accommodation Options:\n     1. Resort: AYANA Resort and Spa - Starting at $300 per night\n     2. Villa: The Royal Purnama - Starting at $200 per night"
+      }
+    },
+    {
+      "task_id": "0cee6e46-51bf-4f94-affa-98a464ee7985",
+      "title": "Itinerary Planning",
+      "description": "Responsible for structuring the travel plan timeline and activities.",
+      "expected_output": "A detailed itinerary outlining daily activities, transportation, and accommodations.",
+      "area": "Itinerary Planning",
+      "responsibilities": [
+        "Create a day-by-day schedule of activities.",
+        "Arrange transportation between destinations.",
+        "Book accommodations for each night of the trip."
+      ],
+      "execution_type": "llm",
+      "parent": "b08c22f6-2115-446d-aeef-32957f4009da",
+      "dependencies": [],
+      "subtasks": [
+        {
+          "task_id": "a4495aad-90ed-4700-8b86-b509564537f1",
+          "title": "Create Daily Itinerary",
+          "description": "Plan daily activities, including sightseeing, dining, and any scheduled tours or events.",
+          "expected_output": "Detailed daily schedule of activities.",
+          "area": "Itinerary Planning",
+          "responsibilities": [],
+          "execution_type": "llm",
+          "parent": "0cee6e46-51bf-4f94-affa-98a464ee7985",
+          "dependencies": [],
+          "subtasks": [],
+          "prompt": {
+            "system": "You are an expert autonomous agent collaborating in a multi-step project.\nYour responsibility is to complete your assigned task using all available context and previous results.\nAlways act as the main expert for your task: be decisive, avoid repetition, and provide clear, actionable outputs.\nDo NOT include any explanations, comments, or introductory phrases in your output.",
+            "user": "=== PROJECT ===\nTitle: Crea un plan de viaje\n\n\n=== AREA ===\nTitle: Itinerary Planning\nDescription: Responsible for structuring the travel plan timeline and activities.\n\n\n\n\n=== CURRENT TASK ===\nTitle: Create Daily Itinerary\nDescription: Plan daily activities, including sightseeing, dining, and any scheduled tours or events.\nExpected Output: Detailed daily schedule of activities.\n\n\n\n=== INSTRUCTION ===\nYou are responsible for completing the current task as part of the overall project.\nUse all available context, including dependency and previous results, but present your answer as your own expert recommendation or decision.\nDo NOT use phrases like 'Based on previous research', 'According to earlier results', or any introductory statements.\nRespond directly and professionally, as if you are the main expert responsible for this part of the project.\nIf the task requires an external system or manual intervention, specify this clearly."
+          },
+          "result": "**Daily Itinerary:**\n\n**Day 1:**\n- Morning: Visit historical landmarks\n- Afternoon: Enjoy local cuisine at recommended restaurants\n- Evening: Attend cultural show or event\n\n**Day 2:**\n- Morning: Guided tour of city highlights\n- Afternoon: Explore local markets and shops\n- Evening: Dinner at a popular local restaurant\n\n**Day 3:**\n- Morning: Outdoor activity (hiking, biking, etc.)\n- Afternoon: Visit museums or art galleries\n- Evening: Relax at a scenic spot for sunset viewing\n\n**Day 4:**\n- Morning: Day trip to nearby attraction\n- Afternoon: Participate in a local workshop or class\n- Evening: Farewell dinner at a traditional restaurant\n\n**Note:** Ensure to allow flexibility in the schedule for unexpected discoveries or adjustments based on local recommendations."
+        },
+        {
+          "task_id": "e4d8585c-e4a0-493b-9688-e4620a098e1b",
+          "title": "Arrange Transportation",
+          "description": "Organize transportation between destinations, including flights, trains, or rental cars.",
+          "expected_output": "Confirmed transportation bookings.",
+          "area": "Itinerary Planning",
+          "responsibilities": [],
+          "execution_type": "llm",
+          "parent": "0cee6e46-51bf-4f94-affa-98a464ee7985",
+          "dependencies": [],
+          "subtasks": [],
+          "prompt": {
+            "system": "You are an expert autonomous agent collaborating in a multi-step project.\nYour responsibility is to complete your assigned task using all available context and previous results.\nAlways act as the main expert for your task: be decisive, avoid repetition, and provide clear, actionable outputs.\nDo NOT include any explanations, comments, or introductory phrases in your output.",
+            "user": "=== PROJECT ===\nTitle: Crea un plan de viaje\n\n\n=== AREA ===\nTitle: Itinerary Planning\nDescription: Responsible for structuring the travel plan timeline and activities.\n\n\n\n\n=== CURRENT TASK ===\nTitle: Arrange Transportation\nDescription: Organize transportation between destinations, including flights, trains, or rental cars.\nExpected Output: Confirmed transportation bookings.\n\n\n\n=== INSTRUCTION ===\nYou are responsible for completing the current task as part of the overall project.\nUse all available context, including dependency and previous results, but present your answer as your own expert recommendation or decision.\nDo NOT use phrases like 'Based on previous research', 'According to earlier results', or any introductory statements.\nRespond directly and professionally, as if you are the main expert responsible for this part of the project.\nIf the task requires an external system or manual intervention, specify this clearly."
+          },
+          "result": "I recommend booking the following transportation for the travel plan:\n\n1. Flight from Departure City to Destination City on [Date]\n2. Rental car pickup at Destination City on [Date] for local transportation\n3. Train tickets from Destination City to Next Destination on [Date]\n\nPlease proceed with confirming these transportation bookings to ensure a smooth travel experience."
+        },
+        {
+          "task_id": "0b739644-651e-4110-8f83-2cb8e3ab0f44",
+          "title": "Book Accommodations",
+          "description": "Secure accommodations for each night of the trip, considering preferences and budget.",
+          "expected_output": "Confirmed hotel reservations.",
+          "area": "Itinerary Planning",
+          "responsibilities": [],
+          "execution_type": "llm",
+          "parent": "0cee6e46-51bf-4f94-affa-98a464ee7985",
+          "dependencies": [],
+          "subtasks": [],
+          "prompt": {
+            "system": "You are an expert autonomous agent collaborating in a multi-step project.\nYour responsibility is to complete your assigned task using all available context and previous results.\nAlways act as the main expert for your task: be decisive, avoid repetition, and provide clear, actionable outputs.\nDo NOT include any explanations, comments, or introductory phrases in your output.",
+            "user": "=== PROJECT ===\nTitle: Crea un plan de viaje\n\n\n=== AREA ===\nTitle: Itinerary Planning\nDescription: Responsible for structuring the travel plan timeline and activities.\n\n\n\n\n=== CURRENT TASK ===\nTitle: Book Accommodations\nDescription: Secure accommodations for each night of the trip, considering preferences and budget.\nExpected Output: Confirmed hotel reservations.\n\n\n\n=== INSTRUCTION ===\nYou are responsible for completing the current task as part of the overall project.\nUse all available context, including dependency and previous results, but present your answer as your own expert recommendation or decision.\nDo NOT use phrases like 'Based on previous research', 'According to earlier results', or any introductory statements.\nRespond directly and professionally, as if you are the main expert responsible for this part of the project.\nIf the task requires an external system or manual intervention, specify this clearly."
+          },
+          "result": "I recommend booking accommodations at the following hotels for each night of the trip:\n\n1. Night 1: Hotel A\n2. Night 2: Hotel B\n3. Night 3: Hotel C\n4. Night 4: Hotel D\n\nPlease proceed with securing these hotel reservations to fulfill the task requirement."
+        }
+      ],
+      "result": {
+        "Create Daily Itinerary": "**Daily Itinerary:**\n\n**Day 1:**\n- Morning: Visit historical landmarks\n- Afternoon: Enjoy local cuisine at recommended restaurants\n- Evening: Attend cultural show or event\n\n**Day 2:**\n- Morning: Guided tour of city highlights\n- Afternoon: Explore local markets and shops\n- Evening: Dinner at a popular local restaurant\n\n**Day 3:**\n- Morning: Outdoor activity (hiking, biking, etc.)\n- Afternoon: Visit museums or art galleries\n- Evening: Relax at a scenic spot for sunset viewing\n\n**Day 4:**\n- Morning: Day trip to nearby attraction\n- Afternoon: Participate in a local workshop or class\n- Evening: Farewell dinner at a traditional restaurant\n\n**Note:** Ensure to allow flexibility in the schedule for unexpected discoveries or adjustments based on local recommendations.",
+        "Arrange Transportation": "I recommend booking the following transportation for the travel plan:\n\n1. Flight from Departure City to Destination City on [Date]\n2. Rental car pickup at Destination City on [Date] for local transportation\n3. Train tickets from Destination City to Next Destination on [Date]\n\nPlease proceed with confirming these transportation bookings to ensure a smooth travel experience.",
+        "Book Accommodations": "I recommend booking accommodations at the following hotels for each night of the trip:\n\n1. Night 1: Hotel A\n2. Night 2: Hotel B\n3. Night 3: Hotel C\n4. Night 4: Hotel D\n\nPlease proceed with securing these hotel reservations to fulfill the task requirement."
+      }
+    },
+    {
+      "task_id": "30a4086d-2fce-4789-90cb-4a0506aa863b",
+      "title": "Budget Management",
+      "description": "Responsible for estimating costs, setting a budget, and tracking expenses.",
+      "expected_output": "A budget plan detailing estimated costs and actual expenses.",
+      "area": "Budget Management",
+      "responsibilities": [
+        "Estimate costs for transportation, accommodation, activities, and meals.",
+        "Set a budget based on the estimated costs.",
+        "Track expenses during the trip to ensure adherence to the budget."
+      ],
+      "execution_type": "llm",
+      "parent": "b08c22f6-2115-446d-aeef-32957f4009da",
+      "dependencies": [],
+      "subtasks": [
+        {
+          "task_id": "0877123b-3816-4880-8520-87007b849f46",
+          "title": "Estimate Travel Costs",
+          "description": "Calculate the estimated costs for transportation, accommodation, activities, and meals for the trip.",
+          "expected_output": "Estimated budget breakdown for the trip.",
+          "area": "Budget Management",
+          "responsibilities": [],
+          "execution_type": "llm",
+          "parent": "30a4086d-2fce-4789-90cb-4a0506aa863b",
+          "dependencies": [],
+          "subtasks": [],
+          "prompt": {
+            "system": "You are an expert autonomous agent collaborating in a multi-step project.\nYour responsibility is to complete your assigned task using all available context and previous results.\nAlways act as the main expert for your task: be decisive, avoid repetition, and provide clear, actionable outputs.\nDo NOT include any explanations, comments, or introductory phrases in your output.",
+            "user": "=== PROJECT ===\nTitle: Crea un plan de viaje\n\n\n=== AREA ===\nTitle: Budget Management\nDescription: Responsible for estimating costs, setting a budget, and tracking expenses.\n\n\n\n\n=== CURRENT TASK ===\nTitle: Estimate Travel Costs\nDescription: Calculate the estimated costs for transportation, accommodation, activities, and meals for the trip.\nExpected Output: Estimated budget breakdown for the trip.\n\n\n\n=== INSTRUCTION ===\nYou are responsible for completing the current task as part of the overall project.\nUse all available context, including dependency and previous results, but present your answer as your own expert recommendation or decision.\nDo NOT use phrases like 'Based on previous research', 'According to earlier results', or any introductory statements.\nRespond directly and professionally, as if you are the main expert responsible for this part of the project.\nIf the task requires an external system or manual intervention, specify this clearly."
+          },
+          "result": "Estimated Budget Breakdown for the Trip:\n\n1. Transportation:\n   - Flights: $600\n   - Local Transportation: $150\n\n2. Accommodation:\n   - Hotel: $400 (4 nights)\n\n3. Activities:\n   - Tours and Excursions: $200\n   - Entrance Fees: $50\n\n4. Meals:\n   - Daily Meals: $300 (estimated at $50 per day for 6 days)\n\nTotal Estimated Budget: $1700"
+        },
+        {
+          "task_id": "0c61ae29-88f3-49fc-9cfc-099e8f67b9b3",
+          "title": "Set Budget",
+          "description": "Determine a budget based on the estimated costs for the trip.",
+          "expected_output": "Defined budget limit for the trip.",
+          "area": "Budget Management",
+          "responsibilities": [],
+          "execution_type": "llm",
+          "parent": "30a4086d-2fce-4789-90cb-4a0506aa863b",
+          "dependencies": [
+            "0877123b-3816-4880-8520-87007b849f46"
+          ],
+          "subtasks": [],
+          "prompt": {
+            "system": "You are an expert autonomous agent collaborating in a multi-step project.\nYour responsibility is to complete your assigned task using all available context and previous results.\nAlways act as the main expert for your task: be decisive, avoid repetition, and provide clear, actionable outputs.\nDo NOT include any explanations, comments, or introductory phrases in your output.",
+            "user": "=== PROJECT ===\nTitle: Crea un plan de viaje\n\n\n=== AREA ===\nTitle: Budget Management\nDescription: Responsible for estimating costs, setting a budget, and tracking expenses.\n\n\n=== DEPENDENCY RESULTS ===\n- Dependency: Estimate Travel Costs\n  Description: Calculate the estimated costs for transportation, accommodation, activities, and meals for the trip.\n  Result: Estimated Budget Breakdown for the Trip:\n\n1. Transportation:\n   - Flights: $600\n   - Local Transportation: $150\n\n2. Accommodation:\n   - Hotel: $400 (4 nights)\n\n3. Activities:\n   - Tours and Excursions: $200\n   - Entrance Fees: $50\n\n4. Meals:\n   - Daily Meals: $300 (estimated at $50 per day for 6 days)\n\nTotal Estimated Budget: $1700\n\n\n=== CURRENT TASK ===\nTitle: Set Budget\nDescription: Determine a budget based on the estimated costs for the trip.\nExpected Output: Defined budget limit for the trip.\n\n\n\n=== INSTRUCTION ===\nYou are responsible for completing the current task as part of the overall project.\nUse all available context, including dependency and previous results, but present your answer as your own expert recommendation or decision.\nDo NOT use phrases like 'Based on previous research', 'According to earlier results', or any introductory statements.\nRespond directly and professionally, as if you are the main expert responsible for this part of the project.\nIf the task requires an external system or manual intervention, specify this clearly."
+          },
+          "result": "Defined budget limit for the trip: $2000"
+        },
+        {
+          "task_id": "4a6bccbd-fd33-4628-95d9-cc8eb7c0dc9d",
+          "title": "Track Expenses",
+          "description": "Monitor and record expenses during the trip to ensure adherence to the set budget.",
+          "expected_output": "Detailed record of expenses incurred during the trip.",
+          "area": "Budget Management",
+          "responsibilities": [],
+          "execution_type": "llm",
+          "parent": "30a4086d-2fce-4789-90cb-4a0506aa863b",
+          "dependencies": [],
+          "subtasks": [],
+          "prompt": {
+            "system": "You are an expert autonomous agent collaborating in a multi-step project.\nYour responsibility is to complete your assigned task using all available context and previous results.\nAlways act as the main expert for your task: be decisive, avoid repetition, and provide clear, actionable outputs.\nDo NOT include any explanations, comments, or introductory phrases in your output.",
+            "user": "=== PROJECT ===\nTitle: Crea un plan de viaje\n\n\n=== AREA ===\nTitle: Budget Management\nDescription: Responsible for estimating costs, setting a budget, and tracking expenses.\n\n\n\n\n=== CURRENT TASK ===\nTitle: Track Expenses\nDescription: Monitor and record expenses during the trip to ensure adherence to the set budget.\nExpected Output: Detailed record of expenses incurred during the trip.\n\n\n\n=== INSTRUCTION ===\nYou are responsible for completing the current task as part of the overall project.\nUse all available context, including dependency and previous results, but present your answer as your own expert recommendation or decision.\nDo NOT use phrases like 'Based on previous research', 'According to earlier results', or any introductory statements.\nRespond directly and professionally, as if you are the main expert responsible for this part of the project.\nIf the task requires an external system or manual intervention, specify this clearly."
+          },
+          "result": "I recommend using a dedicated expense tracking app or software to monitor and record all expenses during the trip. This will provide a detailed and organized record of all costs incurred, making it easier to track adherence to the set budget. Be diligent in entering all expenses as they occur to ensure accuracy and completeness in the expense tracking process."
+        }
+      ],
+      "result": {
+        "Estimate Travel Costs": "Estimated Budget Breakdown for the Trip:\n\n1. Transportation:\n   - Flights: $600\n   - Local Transportation: $150\n\n2. Accommodation:\n   - Hotel: $400 (4 nights)\n\n3. Activities:\n   - Tours and Excursions: $200\n   - Entrance Fees: $50\n\n4. Meals:\n   - Daily Meals: $300 (estimated at $50 per day for 6 days)\n\nTotal Estimated Budget: $1700",
+        "Set Budget": "Defined budget limit for the trip: $2000",
+        "Track Expenses": "I recommend using a dedicated expense tracking app or software to monitor and record all expenses during the trip. This will provide a detailed and organized record of all costs incurred, making it easier to track adherence to the set budget. Be diligent in entering all expenses as they occur to ensure accuracy and completeness in the expense tracking process."
+      }
+    },
+    {
+      "task_id": "563ab851-7825-4cf2-9f2e-9c213ddd1635",
+      "title": "Documentation",
+      "description": "Responsible for organizing essential travel documents and information.",
+      "expected_output": "A folder or digital file containing all necessary documents for the trip.",
+      "area": "Documentation",
+      "responsibilities": [
+        "Collect and organize passports, visas, tickets, and travel insurance documents.",
+        "Create a digital backup of important documents.",
+        "Prepare a list of emergency contacts and important information for the trip."
+      ],
+      "execution_type": "llm",
+      "parent": "b08c22f6-2115-446d-aeef-32957f4009da",
+      "dependencies": [],
+      "subtasks": [
+        {
+          "task_id": "43ffcd08-326c-4f22-9fb0-3f471639cba5",
+          "title": "Gather Travel Documents",
+          "description": "Collect passports, visas, tickets, travel insurance, and any other necessary travel documents.",
+          "expected_output": "A folder containing all essential travel documents.",
+          "area": "Documentation",
+          "responsibilities": [],
+          "execution_type": "llm",
+          "parent": "563ab851-7825-4cf2-9f2e-9c213ddd1635",
+          "dependencies": [],
+          "subtasks": [],
+          "prompt": {
+            "system": "You are an expert autonomous agent collaborating in a multi-step project.\nYour responsibility is to complete your assigned task using all available context and previous results.\nAlways act as the main expert for your task: be decisive, avoid repetition, and provide clear, actionable outputs.\nDo NOT include any explanations, comments, or introductory phrases in your output.",
+            "user": "=== PROJECT ===\nTitle: Crea un plan de viaje\n\n\n=== AREA ===\nTitle: Documentation\nDescription: Responsible for organizing essential travel documents and information.\n\n\n\n\n=== CURRENT TASK ===\nTitle: Gather Travel Documents\nDescription: Collect passports, visas, tickets, travel insurance, and any other necessary travel documents.\nExpected Output: A folder containing all essential travel documents.\n\n\n\n=== INSTRUCTION ===\nYou are responsible for completing the current task as part of the overall project.\nUse all available context, including dependency and previous results, but present your answer as your own expert recommendation or decision.\nDo NOT use phrases like 'Based on previous research', 'According to earlier results', or any introductory statements.\nRespond directly and professionally, as if you are the main expert responsible for this part of the project.\nIf the task requires an external system or manual intervention, specify this clearly."
+          },
+          "result": "I will create a folder containing all essential travel documents, including passports, visas, tickets, travel insurance, and any other necessary documents."
+        },
+        {
+          "task_id": "3c0bbe5f-81b6-4807-8b79-52b3dc51a686",
+          "title": "Create Digital Backup",
+          "description": "Make electronic copies of all important travel documents.",
+          "expected_output": "Digital copies of passports, visas, tickets, and insurance saved in a secure location.",
+          "area": "Documentation",
+          "responsibilities": [],
+          "execution_type": "llm",
+          "parent": "563ab851-7825-4cf2-9f2e-9c213ddd1635",
+          "dependencies": [
+            "43ffcd08-326c-4f22-9fb0-3f471639cba5"
+          ],
+          "subtasks": [],
+          "prompt": {
+            "system": "You are an expert autonomous agent collaborating in a multi-step project.\nYour responsibility is to complete your assigned task using all available context and previous results.\nAlways act as the main expert for your task: be decisive, avoid repetition, and provide clear, actionable outputs.\nDo NOT include any explanations, comments, or introductory phrases in your output.",
+            "user": "=== PROJECT ===\nTitle: Crea un plan de viaje\n\n\n=== AREA ===\nTitle: Documentation\nDescription: Responsible for organizing essential travel documents and information.\n\n\n=== DEPENDENCY RESULTS ===\n- Dependency: Gather Travel Documents\n  Description: Collect passports, visas, tickets, travel insurance, and any other necessary travel documents.\n  Result: I will create a folder containing all essential travel documents, including passports, visas, tickets, travel insurance, and any other necessary documents.\n\n\n=== CURRENT TASK ===\nTitle: Create Digital Backup\nDescription: Make electronic copies of all important travel documents.\nExpected Output: Digital copies of passports, visas, tickets, and insurance saved in a secure location.\n\n\n\n=== INSTRUCTION ===\nYou are responsible for completing the current task as part of the overall project.\nUse all available context, including dependency and previous results, but present your answer as your own expert recommendation or decision.\nDo NOT use phrases like 'Based on previous research', 'According to earlier results', or any introductory statements.\nRespond directly and professionally, as if you are the main expert responsible for this part of the project.\nIf the task requires an external system or manual intervention, specify this clearly."
+          },
+          "result": "Create digital copies of passports, visas, tickets, and travel insurance. Save these copies in a secure location such as a password-protected folder on your computer, a cloud storage service, or a secure USB drive. Ensure that the digital backup is easily accessible during your travels but also secure from unauthorized access."
+        },
+        {
+          "task_id": "44891ff6-5f01-4735-8aed-905f6ad88ac9",
+          "title": "Prepare Emergency Contact List",
+          "description": "Compile a list of emergency contacts, including family, friends, local authorities, and embassy information.",
+          "expected_output": "Document with emergency contact numbers and essential information.",
+          "area": "Documentation",
+          "responsibilities": [],
+          "execution_type": "llm",
+          "parent": "563ab851-7825-4cf2-9f2e-9c213ddd1635",
+          "dependencies": [],
+          "subtasks": [],
+          "prompt": {
+            "system": "You are an expert autonomous agent collaborating in a multi-step project.\nYour responsibility is to complete your assigned task using all available context and previous results.\nAlways act as the main expert for your task: be decisive, avoid repetition, and provide clear, actionable outputs.\nDo NOT include any explanations, comments, or introductory phrases in your output.",
+            "user": "=== PROJECT ===\nTitle: Crea un plan de viaje\n\n\n=== AREA ===\nTitle: Documentation\nDescription: Responsible for organizing essential travel documents and information.\n\n\n\n\n=== CURRENT TASK ===\nTitle: Prepare Emergency Contact List\nDescription: Compile a list of emergency contacts, including family, friends, local authorities, and embassy information.\nExpected Output: Document with emergency contact numbers and essential information.\n\n\n\n=== INSTRUCTION ===\nYou are responsible for completing the current task as part of the overall project.\nUse all available context, including dependency and previous results, but present your answer as your own expert recommendation or decision.\nDo NOT use phrases like 'Based on previous research', 'According to earlier results', or any introductory statements.\nRespond directly and professionally, as if you are the main expert responsible for this part of the project.\nIf the task requires an external system or manual intervention, specify this clearly."
+          },
+          "result": "I will compile a document with emergency contact numbers and essential information as follows:\n\n1. Family Emergency Contacts:\n   - Name: \n     Phone:\n     Relationship:\n\n2. Friends Emergency Contacts:\n   - Name: \n     Phone:\n     Relationship:\n\n3. Local Authorities:\n   - Police:\n     Fire Department:\n     Medical Emergency Services:\n\n4. Embassy Information:\n   - Embassy Name:\n     Address:\n     Phone:\n     Email:"
+        }
+      ],
+      "result": {
+        "Gather Travel Documents": "I will create a folder containing all essential travel documents, including passports, visas, tickets, travel insurance, and any other necessary documents.",
+        "Create Digital Backup": "Create digital copies of passports, visas, tickets, and travel insurance. Save these copies in a secure location such as a password-protected folder on your computer, a cloud storage service, or a secure USB drive. Ensure that the digital backup is easily accessible during your travels but also secure from unauthorized access.",
+        "Prepare Emergency Contact List": "I will compile a document with emergency contact numbers and essential information as follows:\n\n1. Family Emergency Contacts:\n   - Name: \n     Phone:\n     Relationship:\n\n2. Friends Emergency Contacts:\n   - Name: \n     Phone:\n     Relationship:\n\n3. Local Authorities:\n   - Police:\n     Fire Department:\n     Medical Emergency Services:\n\n4. Embassy Information:\n   - Embassy Name:\n     Address:\n     Phone:\n     Email:"
+      }
+    }
+  ],
+  "result": {
+    "Research": {
+      "Research Popular Travel Destinations": "1. Paris, France\n   - Iconic landmarks: Eiffel Tower, Louvre Museum\n   - Cuisine: French cuisine, patisseries\n   - Accommodation: Wide range from luxury hotels to boutique apartments\n\n2. Tokyo, Japan\n   - Culture: Traditional temples, modern technology\n   - Food: Sushi, ramen, izakayas\n   - Stay: Mix of traditional ryokans and modern hotels\n\n3. Rome, Italy\n   - History: Colosseum, Roman Forum\n   - Food: Pasta, pizza, gelato\n   - Lodging: Hotels near historic sites or cozy B&Bs\n\n4. New York City, USA\n   - Attractions: Times Square, Central Park\n   - Dining: Diverse food scene, food trucks\n   - Stay: Range from luxury hotels to budget-friendly accommodations\n\n5. Bali, Indonesia\n   - Nature: Beaches, rice terraces\n   - Cuisine: Balinese dishes, seafood\n   - Accommodation: Resorts, villas, eco-friendly lodges",
+      "Compile List of Activities and Attractions": "1. Paris, France:\n   - Activities and Attractions:\n     - Visit the Eiffel Tower\n     - Explore the Louvre Museum\n     - Stroll along the Seine River\n     - Enjoy a French pastry tasting tour\n     - Take a day trip to Versailles Palace\n\n2. Tokyo, Japan:\n   - Activities and Attractions:\n     - Visit Senso-ji Temple in Asakusa\n     - Explore the bustling streets of Shibuya\n     - Experience a traditional tea ceremony\n     - Enjoy sushi at Tsukiji Fish Market\n     - Visit the teamLab Borderless digital art museum\n\n3. Rome, Italy:\n   - Activities and Attractions:\n     - Explore the Colosseum and Roman Forum\n     - Visit Vatican City and St. Peter's Basilica\n     - Enjoy a pasta-making class\n     - Throw a coin in the Trevi Fountain\n     - Take a day trip to Pompeii\n\n4. New York City, USA:\n   - Activities and Attractions:\n     - Explore Central Park by bike or carriage ride\n     - Visit the Statue of Liberty and Ellis Island\n     - Watch a Broadway show\n     - Try diverse cuisines in Chelsea Market\n     - Walk across the Brooklyn Bridge\n\n5. Bali, Indonesia:\n   - Activities and Attractions:\n     - Relax on the beaches of Kuta and Seminyak\n     - Explore Ubud's art markets and rice terraces\n     - Visit Uluwatu Temple for a sunset view\n     - Try surfing in Canggu\n     - Experience a Balinese cooking class",
+      "Identify Accommodation Options": "1. Paris, France:\n   - Accommodation Options:\n     1. Luxury Hotel: The Ritz Paris - Starting at $800 per night\n     2. Boutique Apartment: Le Marais Chic Studio - Starting at $150 per night\n\n2. Tokyo, Japan:\n   - Accommodation Options:\n     1. Traditional Ryokan: Gora Kadan - Starting at $400 per night\n     2. Modern Hotel: Park Hyatt Tokyo - Starting at $300 per night\n\n3. Rome, Italy:\n   - Accommodation Options:\n     1. Historic Hotel: Hotel Raphael - Starting at $250 per night\n     2. Cozy B&B: Casa Howard Guest Houses - Starting at $100 per night\n\n4. New York City, USA:\n   - Accommodation Options:\n     1. Luxury Hotel: The Plaza Hotel - Starting at $700 per night\n     2. Budget-Friendly Accommodation: Pod 51 Hotel - Starting at $150 per night\n\n5. Bali, Indonesia:\n   - Accommodation Options:\n     1. Resort: AYANA Resort and Spa - Starting at $300 per night\n     2. Villa: The Royal Purnama - Starting at $200 per night"
+    },
+    "Itinerary Planning": {
+      "Create Daily Itinerary": "**Daily Itinerary:**\n\n**Day 1:**\n- Morning: Visit historical landmarks\n- Afternoon: Enjoy local cuisine at recommended restaurants\n- Evening: Attend cultural show or event\n\n**Day 2:**\n- Morning: Guided tour of city highlights\n- Afternoon: Explore local markets and shops\n- Evening: Dinner at a popular local restaurant\n\n**Day 3:**\n- Morning: Outdoor activity (hiking, biking, etc.)\n- Afternoon: Visit museums or art galleries\n- Evening: Relax at a scenic spot for sunset viewing\n\n**Day 4:**\n- Morning: Day trip to nearby attraction\n- Afternoon: Participate in a local workshop or class\n- Evening: Farewell dinner at a traditional restaurant\n\n**Note:** Ensure to allow flexibility in the schedule for unexpected discoveries or adjustments based on local recommendations.",
+      "Arrange Transportation": "I recommend booking the following transportation for the travel plan:\n\n1. Flight from Departure City to Destination City on [Date]\n2. Rental car pickup at Destination City on [Date] for local transportation\n3. Train tickets from Destination City to Next Destination on [Date]\n\nPlease proceed with confirming these transportation bookings to ensure a smooth travel experience.",
+      "Book Accommodations": "I recommend booking accommodations at the following hotels for each night of the trip:\n\n1. Night 1: Hotel A\n2. Night 2: Hotel B\n3. Night 3: Hotel C\n4. Night 4: Hotel D\n\nPlease proceed with securing these hotel reservations to fulfill the task requirement."
+    },
+    "Budget Management": {
+      "Estimate Travel Costs": "Estimated Budget Breakdown for the Trip:\n\n1. Transportation:\n   - Flights: $600\n   - Local Transportation: $150\n\n2. Accommodation:\n   - Hotel: $400 (4 nights)\n\n3. Activities:\n   - Tours and Excursions: $200\n   - Entrance Fees: $50\n\n4. Meals:\n   - Daily Meals: $300 (estimated at $50 per day for 6 days)\n\nTotal Estimated Budget: $1700",
+      "Set Budget": "Defined budget limit for the trip: $2000",
+      "Track Expenses": "I recommend using a dedicated expense tracking app or software to monitor and record all expenses during the trip. This will provide a detailed and organized record of all costs incurred, making it easier to track adherence to the set budget. Be diligent in entering all expenses as they occur to ensure accuracy and completeness in the expense tracking process."
+    },
+    "Documentation": {
+      "Gather Travel Documents": "I will create a folder containing all essential travel documents, including passports, visas, tickets, travel insurance, and any other necessary documents.",
+      "Create Digital Backup": "Create digital copies of passports, visas, tickets, and travel insurance. Save these copies in a secure location such as a password-protected folder on your computer, a cloud storage service, or a secure USB drive. Ensure that the digital backup is easily accessible during your travels but also secure from unauthorized access.",
+      "Prepare Emergency Contact List": "I will compile a document with emergency contact numbers and essential information as follows:\n\n1. Family Emergency Contacts:\n   - Name: \n     Phone:\n     Relationship:\n\n2. Friends Emergency Contacts:\n   - Name: \n     Phone:\n     Relationship:\n\n3. Local Authorities:\n   - Police:\n     Fire Department:\n     Medical Emergency Services:\n\n4. Embassy Information:\n   - Embassy Name:\n     Address:\n     Phone:\n     Email:"
+    }
+  }
+}

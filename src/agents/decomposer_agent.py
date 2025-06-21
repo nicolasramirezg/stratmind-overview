@@ -1,23 +1,20 @@
 from openai import OpenAI
 import re
-
 from src.utils.prompt_loader import load_prompt
 
-
 class Decomposer:
-
     """
-    Descompone una tarea compleja en entre 3 y 9 áreas funcionales principales.
+    Decomposer agent that breaks down a complex task into 3 to 9 main functional areas.
 
-    Output:
+    Output format:
         {
-            "intro": (str) Resumen del razonamiento general,
+            "intro": (str) General reasoning summary,
             "subtasks": [
                 {
-                    "area": (str) Nombre del área funcional,
-                    "description": (str) Objetivo de esa área,
-                    "expected_output": (str) Resultado esperado de esa área,
-                    "responsibilities": [(str)] Lista de acciones o responsabilidades clave
+                    "area": (str) Name of the functional area,
+                    "description": (str) Objective of that area,
+                    "expected_output": (str) Expected result for that area,
+                    "responsibilities": [(str)] List of key actions or responsibilities
                 },
                 ...
             ]
@@ -25,23 +22,39 @@ class Decomposer:
     """
 
     def __init__(self, model: str = "gpt-3.5-turbo"):
+        """
+        Initialize the Decomposer agent with the specified OpenAI model.
+        """
         self.model = model
         self.client = OpenAI()
 
     @staticmethod
     def parse_llm_decomposition(text: str, debug: bool = False) -> dict:
+        """
+        Parse the LLM output into an introduction and a list of area subtasks.
+
+        Args:
+            text (str): The raw output from the LLM.
+            debug (bool): If True, prints parsing errors.
+
+        Returns:
+            dict: {
+                "intro": <introduction string>,
+                "subtasks": [ {area, description, expected_output, responsibilities}, ... ]
+            }
+        """
         try:
-            # Separar en dos secciones: INTRO y SUBTASKS
+            # Split into INTRO and SUBTASKS sections
             parts = re.split(r"###\s*SUBTASKS\s*###", text, maxsplit=1)
             if len(parts) != 2:
                 if debug:
-                    print("❌ No se encontraron ambas secciones (INTRO y SUBTASKS)")
+                    print("Both sections (INTRO and SUBTASKS) were not found.")
                 return {"intro": "", "subtasks": [{"raw": text.strip()}]}
 
             intro_block = parts[0].replace("### INTRODUCTION ###", "").strip()
             subtasks_block = parts[1].strip()
 
-            # Separar subtareas por bloques que empiezan por "Area:"
+            # Split subtasks by blocks starting with "Area:"
             raw_subtasks = re.split(r"\n(?:\d+\.\s*)?Area:", subtasks_block)
             parsed_subtasks = []
 
@@ -51,7 +64,7 @@ class Decomposer:
                 subtask = {
                     "area": "",
                     "description": "",
-                    "expected_output": "",  # <-- Añadido
+                    "expected_output": "",
                     "responsibilities": []
                 }
 
@@ -76,7 +89,7 @@ class Decomposer:
 
         except Exception as e:
             if debug:
-                print("❌ Error al parsear:", e)
+                print("Error while parsing:", e)
             return {"intro": "", "subtasks": [{"raw": text.strip()}]}
 
     def decompose(
@@ -84,7 +97,17 @@ class Decomposer:
             task_description: str,
             expected_output: str,
             debug: bool = True) -> dict:
+        """
+        Decompose a complex task into main functional areas using the LLM.
 
+        Args:
+            task_description (str): The main task description.
+            expected_output (str): The expected output for the main task.
+            debug (bool): If True, prints parsing errors.
+
+        Returns:
+            dict: Decomposition result with intro and subtasks.
+        """
         messages = [
             {
                 "role": "system",
@@ -112,14 +135,5 @@ class Decomposer:
         )
 
         content = response.choices[0].message.content.strip()
-        # print("🧾 RAW LLM content:\n", content)
-
         result = self.parse_llm_decomposition(content, debug=True)
         return result
-        # print(result["intro"])
-        # for s in result["subtasks"]:
-        #     print("-", s["area"])
-
-
-
-

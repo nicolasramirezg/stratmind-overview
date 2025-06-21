@@ -213,8 +213,12 @@ def create_and_link_subtasks(subtasks, area, area_task, task_manager):
             expected_output=subtask["expected_output"],
             area=area,
             parent_id=area_task.task_id,
-            execution_type=subtask.get("execution_type", "llm")  # <-- Añadido aquí
+            execution_type=subtask.get("execution_type", "llm")
         )
+        # Asegúrate de que el hijo está en la lista de subtasks del padre real
+        if t not in area_task.subtasks:
+            area_task.subtasks.append(t)
+        t.parent = area_task
         subtask_objs[subtask["title"].strip().lower()] = t
 
     for subtask in subtasks:

@@ -21,7 +21,7 @@ def export_task_tree(root_task, manager, out_name="task_tree", output_dir="outpu
     os.makedirs(full_dir, exist_ok=True)
     output_path = os.path.join(full_dir, filename)
 
-    tree_json = task_to_dict(root_task, manager)
+    tree_json = task_to_dict(root_task)
 
     with open(output_path, "w", encoding="utf-8") as f:
         json.dump(tree_json, f, indent=2, ensure_ascii=False)

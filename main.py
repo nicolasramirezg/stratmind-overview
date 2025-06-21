@@ -1,8 +1,4 @@
-import json
-import os
-from datetime import datetime
 from dotenv import load_dotenv
-
 # Local modules
 from src.utils.class_task import TaskManager, create_and_link_subtasks
 from src.agents.decomposer_agent import Decomposer
@@ -11,7 +7,6 @@ from src.utils.recursive_refiner_parent_subtask import refine_recursively
 from src.agents.specialist_agent import SpecialistAgent, get_other_areas_subtasks
 from src.agents.task_refiner_agent import TaskRefiner
 from src.utils.task_exporter import export_task_tree
-from src.utils.task_to_dict import task_to_dict
 
 load_dotenv()
 
@@ -81,38 +76,42 @@ def plan_area_subtasks(task_manager, root_task, specialist, task_description):
                 None
             )
             if not area_task:
-                print(f"    ⚠️ Area task not found for {area_name}")
+                print(f"!! Area task not found for {area_name}")
                 continue
             create_and_link_subtasks(subtasks, area_name, area_task, task_manager)
 
-def refine_all_subtasks(task_manager, root_task, task_refiner, task_description, max_depth=3):
+def refine_all_subtasks(task_manager, root_task, task_refiner, task_description, max_depth=2):
     """
-    Recursively refine the subtasks of each area.
+    Recursively refine ALL subtasks of each area, including all levels.
     """
     for area_task in [t for t in task_manager.tasks.values() if t.parent == root_task]:
         area_name = area_task.area
         print(f"  Refining area: {area_name}")
-        for subtask_task in [t for t in task_manager.tasks.values() if t.parent == area_task]:
-            print(f"    Refining subtask: {subtask_task.title}")
-            subtask_dict = {
-                "title": subtask_task.title,
-                "description": subtask_task.description,
-                "expected_output": subtask_task.expected_output
-            }
+        def refine_subtree(task, depth=0):
+            print(f"    Refining subtask: {task.title}")
             refine_recursively(
-                subtask=subtask_dict,
+                subtask=task,
                 area_name=area_name,
                 global_task=task_description,
                 refiner=task_refiner,
                 task_manager=task_manager,
-                max_depth=max_depth,
-                parent_subtask=subtask_task
+                depth=depth,
+                max_depth=max_depth
             )
+            for child in task.subtasks:
+                refine_subtree(child, depth=depth+1)
+        for subtask_task in area_task.subtasks:
+            refine_subtree(subtask_task, depth=0)
+
+def print_task_tree(task, level=0):
+    print("  " * level + f"- {task.title} (id: {task.task_id})")
+    for sub in getattr(task, "subtasks", []):
+        print_task_tree(sub, level + 1)
 
 def main():
     print("Starting main()")
-    task_description = "Crea un plan de entrenamiento para una competencia de crossfit de 3 dias nivel intermedio."
-    expected_output = "Un plan de entrenamiento detallado."
+    task_description = "Crea un plan de viaje a Bogotá"
+    expected_output = "Un plan de viaje detallado."
     task_manager = TaskManager()
 
     print("Creating root task...")
@@ -137,6 +136,9 @@ def main():
     execute_tasks_postorder(root_task)
 
     export_task_tree(root_task, task_manager, out_name="task_tree")
+
+    print("\n=== TASK TREE IN MEMORY BEFORE EXPORT ===")
+    print_task_tree(root_task)
 
 if __name__ == "__main__":
     main()

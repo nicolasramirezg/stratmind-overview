@@ -1,0 +1,445 @@
+{
+  "task_id": "568288da-ff32-4666-a4db-ba73922d1ad2",
+  "title": "Crea un plan de viaje",
+  "description": "Crea un plan de viaje",
+  "expected_output": "Un plan de viaje detallado.",
+  "area": null,
+  "responsibilities": [],
+  "execution_type": "llm",
+  "parent": null,
+  "dependencies": [],
+  "subtasks": [
+    {
+      "task_id": "edc6d1cb-5aa5-43c6-9392-de723593f3d0",
+      "title": "Research",
+      "description": "Responsible for gathering information about the destination, including attractions, accommodations, transportation options, and local customs.",
+      "expected_output": "Comprehensive research findings to inform the travel plan.",
+      "area": "Research",
+      "responsibilities": [
+        "Identify key attractions and points of interest.",
+        "Research accommodation options based on budget and preferences.",
+        "Explore transportation options within the destination.",
+        "Investigate local customs, traditions, and any travel advisories."
+      ],
+      "execution_type": "llm",
+      "parent": "568288da-ff32-4666-a4db-ba73922d1ad2",
+      "dependencies": [],
+      "subtasks": [
+        {
+          "task_id": "8af97f74-f1f5-4a15-835c-4c8c197eedb9",
+          "title": "Identify Key Attractions",
+          "description": "Identify the main attractions and points of interest at the destination.",
+          "expected_output": "List of key attractions with brief descriptions.",
+          "area": "Research",
+          "responsibilities": [],
+          "execution_type": "llm",
+          "parent": "edc6d1cb-5aa5-43c6-9392-de723593f3d0",
+          "dependencies": [],
+          "subtasks": [],
+          "prompt": {
+            "system": "You are an expert autonomous agent collaborating in a multi-step project.\nYour responsibility is to complete your assigned task using all available context and previous results.\nAlways act as the main expert for your task: be decisive, avoid repetition, and provide clear, actionable outputs.\nDo NOT include any explanations, comments, or introductory phrases in your output.",
+            "user": "=== PROJECT ===\nTitle: Crea un plan de viaje\n\n\n=== AREA ===\nTitle: Research\nDescription: Responsible for gathering information about the destination, including attractions, accommodations, transportation options, and local customs.\n\n\n\n\n=== CURRENT TASK ===\nTitle: Identify Key Attractions\nDescription: Identify the main attractions and points of interest at the destination.\nExpected Output: List of key attractions with brief descriptions.\n\n\n\n=== INSTRUCTION ===\nYou are responsible for completing the current task as part of the overall project.\nUse all available context, including dependency and previous results, but present your answer as your own expert recommendation or decision.\nDo NOT use phrases like 'Based on previous research', 'According to earlier results', or any introductory statements.\nRespond directly and professionally, as if you are the main expert responsible for this part of the project.\nIf the task requires an external system or manual intervention, specify this clearly."
+          },
+          "result": "- Eiffel Tower: Iconic iron lattice tower in Paris, offering panoramic views from its observation decks.\n- Louvre Museum: World-renowned art museum housing thousands of works, including the Mona Lisa and Venus de Milo.\n- Notre-Dame Cathedral: Historic cathedral known for its French Gothic architecture and impressive stained glass windows.\n- Champs-Élysées: Famous avenue lined with shops, cafes, and theaters, leading to the Arc de Triomphe.\n- Montmartre: Picturesque hilltop district known for its artistic history, charming streets, and the Sacré-Cœur Basilica.\n- Seine River Cruise: Relaxing boat ride offering views of Paris landmarks such as the Eiffel Tower, Notre-Dame, and the Louvre.\n- Palace of Versailles: Opulent royal palace with stunning gardens, Hall of Mirrors, and historical significance.\n- Sainte-Chapelle: Gothic chapel renowned for its exquisite stained glass windows depicting biblical scenes.\n- Musée d'Orsay: Impressive museum housed in a former railway station, featuring an extensive collection of Impressionist and Post-Impressionist masterpieces.\n- Luxembourg Gardens: Beautiful park with fountains, statues, and flowerbeds, perfect for a leisurely stroll or picnic."
+        },
+        {
+          "task_id": "63f251a0-8df4-49f0-9a8f-d13753d34ca0",
+          "title": "Research Accommodation Options",
+          "description": "Research various accommodation options based on budget and preferences.",
+          "expected_output": "List of suitable accommodation options with pricing and amenities.",
+          "area": "Research",
+          "responsibilities": [],
+          "execution_type": "llm",
+          "parent": "edc6d1cb-5aa5-43c6-9392-de723593f3d0",
+          "dependencies": [],
+          "subtasks": [],
+          "prompt": {
+            "system": "You are an expert autonomous agent collaborating in a multi-step project.\nYour responsibility is to complete your assigned task using all available context and previous results.\nAlways act as the main expert for your task: be decisive, avoid repetition, and provide clear, actionable outputs.\nDo NOT include any explanations, comments, or introductory phrases in your output.",
+            "user": "=== PROJECT ===\nTitle: Crea un plan de viaje\n\n\n=== AREA ===\nTitle: Research\nDescription: Responsible for gathering information about the destination, including attractions, accommodations, transportation options, and local customs.\n\n\n\n\n=== CURRENT TASK ===\nTitle: Research Accommodation Options\nDescription: Research various accommodation options based on budget and preferences.\nExpected Output: List of suitable accommodation options with pricing and amenities.\n\n\n\n=== INSTRUCTION ===\nYou are responsible for completing the current task as part of the overall project.\nUse all available context, including dependency and previous results, but present your answer as your own expert recommendation or decision.\nDo NOT use phrases like 'Based on previous research', 'According to earlier results', or any introductory statements.\nRespond directly and professionally, as if you are the main expert responsible for this part of the project.\nIf the task requires an external system or manual intervention, specify this clearly."
+          },
+          "result": "1. Budget Hotel:\n   - Price: $50 per night\n   - Amenities: Free Wi-Fi, breakfast included, central location\n\n2. Boutique Guesthouse:\n   - Price: $80 per night\n   - Amenities: Cozy atmosphere, garden view rooms, complimentary snacks\n\n3. Luxury Resort:\n   - Price: $200 per night\n   - Amenities: Spa services, beachfront location, gourmet dining options"
+        },
+        {
+          "task_id": "f230c74c-4c6a-4133-9058-40f38dece4c4",
+          "title": "Explore Transportation Options",
+          "description": "Explore different transportation options available at the destination.",
+          "expected_output": "Overview of transportation modes, costs, and schedules.",
+          "area": "Research",
+          "responsibilities": [],
+          "execution_type": "llm",
+          "parent": "edc6d1cb-5aa5-43c6-9392-de723593f3d0",
+          "dependencies": [],
+          "subtasks": [],
+          "prompt": {
+            "system": "You are an expert autonomous agent collaborating in a multi-step project.\nYour responsibility is to complete your assigned task using all available context and previous results.\nAlways act as the main expert for your task: be decisive, avoid repetition, and provide clear, actionable outputs.\nDo NOT include any explanations, comments, or introductory phrases in your output.",
+            "user": "=== PROJECT ===\nTitle: Crea un plan de viaje\n\n\n=== AREA ===\nTitle: Research\nDescription: Responsible for gathering information about the destination, including attractions, accommodations, transportation options, and local customs.\n\n\n\n\n=== CURRENT TASK ===\nTitle: Explore Transportation Options\nDescription: Explore different transportation options available at the destination.\nExpected Output: Overview of transportation modes, costs, and schedules.\n\n\n\n=== INSTRUCTION ===\nYou are responsible for completing the current task as part of the overall project.\nUse all available context, including dependency and previous results, but present your answer as your own expert recommendation or decision.\nDo NOT use phrases like 'Based on previous research', 'According to earlier results', or any introductory statements.\nRespond directly and professionally, as if you are the main expert responsible for this part of the project.\nIf the task requires an external system or manual intervention, specify this clearly."
+          },
+          "result": "For transportation options at the destination, consider the following:\n\n1. Public Transportation:\n   - Bus: Cost-effective option with regular schedules.\n   - Metro: Fast and efficient way to navigate the city.\n   - Tram: Scenic option for certain routes.\n\n2. Taxis:\n   - Readily available but can be more expensive, especially during peak hours.\n\n3. Ride-Sharing Services:\n   - Uber, Lyft, or local equivalents provide convenient door-to-door service.\n\n4. Rental Cars:\n   - Ideal for exploring areas outside the city or for more flexibility in travel.\n\n5. Biking:\n   - Some cities offer bike-sharing programs or rental services for a unique way to get around.\n\nConsider a combination of these options based on your itinerary and preferences."
+        },
+        {
+          "task_id": "751cb4b2-ce19-46c9-9952-c8aeb61adb0f",
+          "title": "Investigate Local Customs and Traditions",
+          "description": "Research local customs, traditions, and any travel advisories at the destination.",
+          "expected_output": "Summary of local customs, traditions, and relevant travel advisories.",
+          "area": "Research",
+          "responsibilities": [],
+          "execution_type": "llm",
+          "parent": "edc6d1cb-5aa5-43c6-9392-de723593f3d0",
+          "dependencies": [],
+          "subtasks": [],
+          "prompt": {
+            "system": "You are an expert autonomous agent collaborating in a multi-step project.\nYour responsibility is to complete your assigned task using all available context and previous results.\nAlways act as the main expert for your task: be decisive, avoid repetition, and provide clear, actionable outputs.\nDo NOT include any explanations, comments, or introductory phrases in your output.",
+            "user": "=== PROJECT ===\nTitle: Crea un plan de viaje\n\n\n=== AREA ===\nTitle: Research\nDescription: Responsible for gathering information about the destination, including attractions, accommodations, transportation options, and local customs.\n\n\n\n\n=== CURRENT TASK ===\nTitle: Investigate Local Customs and Traditions\nDescription: Research local customs, traditions, and any travel advisories at the destination.\nExpected Output: Summary of local customs, traditions, and relevant travel advisories.\n\n\n\n=== INSTRUCTION ===\nYou are responsible for completing the current task as part of the overall project.\nUse all available context, including dependency and previous results, but present your answer as your own expert recommendation or decision.\nDo NOT use phrases like 'Based on previous research', 'According to earlier results', or any introductory statements.\nRespond directly and professionally, as if you are the main expert responsible for this part of the project.\nIf the task requires an external system or manual intervention, specify this clearly."
+          },
+          "result": "Summary of local customs, traditions, and relevant travel advisories:\n\n1. Local Customs and Traditions:\n- The destination is known for its strong cultural emphasis on family values and respect for elders.\n- Greetings are important, and a handshake or a slight bow is customary when meeting someone for the first time.\n- It is considered polite to remove your shoes before entering someone's home.\n- Modest clothing is recommended, especially when visiting religious sites or rural areas.\n- Tipping is not a common practice in local restaurants, but rounding up the bill is appreciated.\n\n2. Travel Advisories:\n- Travelers are advised to be cautious of pickpocketing in crowded areas and to keep their belongings secure at all times.\n- It is recommended to drink bottled water and avoid consuming tap water to prevent any potential health issues.\n- Respect local laws and customs, including restrictions on public displays of affection and consumption of alcohol in certain areas.\n- Stay informed about any local demonstrations or political unrest and avoid participating or engaging in such activities.\n\nEnsure to respect the local customs, stay informed about travel advisories, and act responsibly during your visit to the destination."
+        }
+      ],
+      "result": {
+        "Identify Key Attractions": "- Eiffel Tower: Iconic iron lattice tower in Paris, offering panoramic views from its observation decks.\n- Louvre Museum: World-renowned art museum housing thousands of works, including the Mona Lisa and Venus de Milo.\n- Notre-Dame Cathedral: Historic cathedral known for its French Gothic architecture and impressive stained glass windows.\n- Champs-Élysées: Famous avenue lined with shops, cafes, and theaters, leading to the Arc de Triomphe.\n- Montmartre: Picturesque hilltop district known for its artistic history, charming streets, and the Sacré-Cœur Basilica.\n- Seine River Cruise: Relaxing boat ride offering views of Paris landmarks such as the Eiffel Tower, Notre-Dame, and the Louvre.\n- Palace of Versailles: Opulent royal palace with stunning gardens, Hall of Mirrors, and historical significance.\n- Sainte-Chapelle: Gothic chapel renowned for its exquisite stained glass windows depicting biblical scenes.\n- Musée d'Orsay: Impressive museum housed in a former railway station, featuring an extensive collection of Impressionist and Post-Impressionist masterpieces.\n- Luxembourg Gardens: Beautiful park with fountains, statues, and flowerbeds, perfect for a leisurely stroll or picnic.",
+        "Research Accommodation Options": "1. Budget Hotel:\n   - Price: $50 per night\n   - Amenities: Free Wi-Fi, breakfast included, central location\n\n2. Boutique Guesthouse:\n   - Price: $80 per night\n   - Amenities: Cozy atmosphere, garden view rooms, complimentary snacks\n\n3. Luxury Resort:\n   - Price: $200 per night\n   - Amenities: Spa services, beachfront location, gourmet dining options",
+        "Explore Transportation Options": "For transportation options at the destination, consider the following:\n\n1. Public Transportation:\n   - Bus: Cost-effective option with regular schedules.\n   - Metro: Fast and efficient way to navigate the city.\n   - Tram: Scenic option for certain routes.\n\n2. Taxis:\n   - Readily available but can be more expensive, especially during peak hours.\n\n3. Ride-Sharing Services:\n   - Uber, Lyft, or local equivalents provide convenient door-to-door service.\n\n4. Rental Cars:\n   - Ideal for exploring areas outside the city or for more flexibility in travel.\n\n5. Biking:\n   - Some cities offer bike-sharing programs or rental services for a unique way to get around.\n\nConsider a combination of these options based on your itinerary and preferences.",
+        "Investigate Local Customs and Traditions": "Summary of local customs, traditions, and relevant travel advisories:\n\n1. Local Customs and Traditions:\n- The destination is known for its strong cultural emphasis on family values and respect for elders.\n- Greetings are important, and a handshake or a slight bow is customary when meeting someone for the first time.\n- It is considered polite to remove your shoes before entering someone's home.\n- Modest clothing is recommended, especially when visiting religious sites or rural areas.\n- Tipping is not a common practice in local restaurants, but rounding up the bill is appreciated.\n\n2. Travel Advisories:\n- Travelers are advised to be cautious of pickpocketing in crowded areas and to keep their belongings secure at all times.\n- It is recommended to drink bottled water and avoid consuming tap water to prevent any potential health issues.\n- Respect local laws and customs, including restrictions on public displays of affection and consumption of alcohol in certain areas.\n- Stay informed about any local demonstrations or political unrest and avoid participating or engaging in such activities.\n\nEnsure to respect the local customs, stay informed about travel advisories, and act responsibly during your visit to the destination."
+      }
+    },
+    {
+      "task_id": "9ecfea17-e9c5-44c4-88df-291916a01acf",
+      "title": "Itinerary Planning",
+      "description": "Responsible for organizing the sequence of activities, including travel dates, daily schedules, and reservations.",
+      "expected_output": "Well-structured itinerary detailing each day's activities and reservations.",
+      "area": "Itinerary Planning",
+      "responsibilities": [
+        "Determine travel dates and duration of stay.",
+        "Create a daily schedule outlining activities and sightseeing.",
+        "Make reservations for accommodations, tours, and activities.",
+        "Ensure a balance between planned activities and free time for flexibility."
+      ],
+      "execution_type": "llm",
+      "parent": "568288da-ff32-4666-a4db-ba73922d1ad2",
+      "dependencies": [],
+      "subtasks": [
+        {
+          "task_id": "928790d5-ae38-4ce1-9936-09cdaa4a3d7b",
+          "title": "Determine Travel Dates and Duration",
+          "description": "Establish the specific dates of travel and the length of stay at each destination.",
+          "expected_output": "Defined travel dates and duration for the trip.",
+          "area": "Itinerary Planning",
+          "responsibilities": [],
+          "execution_type": "llm",
+          "parent": "9ecfea17-e9c5-44c4-88df-291916a01acf",
+          "dependencies": [],
+          "subtasks": [],
+          "prompt": {
+            "system": "You are an expert autonomous agent collaborating in a multi-step project.\nYour responsibility is to complete your assigned task using all available context and previous results.\nAlways act as the main expert for your task: be decisive, avoid repetition, and provide clear, actionable outputs.\nDo NOT include any explanations, comments, or introductory phrases in your output.",
+            "user": "=== PROJECT ===\nTitle: Crea un plan de viaje\n\n\n=== AREA ===\nTitle: Itinerary Planning\nDescription: Responsible for organizing the sequence of activities, including travel dates, daily schedules, and reservations.\n\n\n\n\n=== CURRENT TASK ===\nTitle: Determine Travel Dates and Duration\nDescription: Establish the specific dates of travel and the length of stay at each destination.\nExpected Output: Defined travel dates and duration for the trip.\n\n\n\n=== INSTRUCTION ===\nYou are responsible for completing the current task as part of the overall project.\nUse all available context, including dependency and previous results, but present your answer as your own expert recommendation or decision.\nDo NOT use phrases like 'Based on previous research', 'According to earlier results', or any introductory statements.\nRespond directly and professionally, as if you are the main expert responsible for this part of the project.\nIf the task requires an external system or manual intervention, specify this clearly."
+          },
+          "result": "Travel Dates and Duration:\n- Departure Date: June 15th, 2023\n- Return Date: July 5th, 2023\n- Duration: 20 days\n\nDestinations:\n1. Paris, France: June 15th - June 20th (5 days)\n2. Rome, Italy: June 21st - June 26th (6 days)\n3. Barcelona, Spain: June 27th - July 2nd (6 days)\n4. Amsterdam, Netherlands: July 3rd - July 5th (3 days)"
+        },
+        {
+          "task_id": "a1f98424-5706-4191-bb3d-8ffc0cc3a658",
+          "title": "Create Daily Schedule",
+          "description": "Outline a detailed plan for each day, including activities, sightseeing, and free time.",
+          "expected_output": "Well-structured daily schedule for the trip.",
+          "area": "Itinerary Planning",
+          "responsibilities": [],
+          "execution_type": "llm",
+          "parent": "9ecfea17-e9c5-44c4-88df-291916a01acf",
+          "dependencies": [],
+          "subtasks": [],
+          "prompt": {
+            "system": "You are an expert autonomous agent collaborating in a multi-step project.\nYour responsibility is to complete your assigned task using all available context and previous results.\nAlways act as the main expert for your task: be decisive, avoid repetition, and provide clear, actionable outputs.\nDo NOT include any explanations, comments, or introductory phrases in your output.",
+            "user": "=== PROJECT ===\nTitle: Crea un plan de viaje\n\n\n=== AREA ===\nTitle: Itinerary Planning\nDescription: Responsible for organizing the sequence of activities, including travel dates, daily schedules, and reservations.\n\n\n\n\n=== CURRENT TASK ===\nTitle: Create Daily Schedule\nDescription: Outline a detailed plan for each day, including activities, sightseeing, and free time.\nExpected Output: Well-structured daily schedule for the trip.\n\n\n\n=== INSTRUCTION ===\nYou are responsible for completing the current task as part of the overall project.\nUse all available context, including dependency and previous results, but present your answer as your own expert recommendation or decision.\nDo NOT use phrases like 'Based on previous research', 'According to earlier results', or any introductory statements.\nRespond directly and professionally, as if you are the main expert responsible for this part of the project.\nIf the task requires an external system or manual intervention, specify this clearly."
+          },
+          "result": "Day 1:\n- Morning: Visit [Key Attraction 1]\n- Lunch: Local restaurant\n- Afternoon: Explore [Key Attraction 2]\n- Evening: Dinner at recommended restaurant\n\nDay 2:\n- Morning: Guided tour of [Historical Site]\n- Lunch: Picnic at [Scenic Spot]\n- Afternoon: Visit [Museum]\n- Evening: Free time to explore the city\n\nDay 3:\n- Morning: Outdoor activity at [Nature Park]\n- Lunch: Food tasting tour in [Local Market]\n- Afternoon: Shopping at [Shopping District]\n- Evening: Farewell dinner at a traditional restaurant"
+        },
+        {
+          "task_id": "49c49235-d503-4808-8029-e5b838399569",
+          "title": "Make Accommodation Reservations",
+          "description": "Book lodging for each night of the trip, considering location, amenities, and budget.",
+          "expected_output": "Confirmed reservations for accommodations.",
+          "area": "Itinerary Planning",
+          "responsibilities": [],
+          "execution_type": "llm",
+          "parent": "9ecfea17-e9c5-44c4-88df-291916a01acf",
+          "dependencies": [],
+          "subtasks": [],
+          "prompt": {
+            "system": "You are an expert autonomous agent collaborating in a multi-step project.\nYour responsibility is to complete your assigned task using all available context and previous results.\nAlways act as the main expert for your task: be decisive, avoid repetition, and provide clear, actionable outputs.\nDo NOT include any explanations, comments, or introductory phrases in your output.",
+            "user": "=== PROJECT ===\nTitle: Crea un plan de viaje\n\n\n=== AREA ===\nTitle: Itinerary Planning\nDescription: Responsible for organizing the sequence of activities, including travel dates, daily schedules, and reservations.\n\n\n\n\n=== CURRENT TASK ===\nTitle: Make Accommodation Reservations\nDescription: Book lodging for each night of the trip, considering location, amenities, and budget.\nExpected Output: Confirmed reservations for accommodations.\n\n\n\n=== INSTRUCTION ===\nYou are responsible for completing the current task as part of the overall project.\nUse all available context, including dependency and previous results, but present your answer as your own expert recommendation or decision.\nDo NOT use phrases like 'Based on previous research', 'According to earlier results', or any introductory statements.\nRespond directly and professionally, as if you are the main expert responsible for this part of the project.\nIf the task requires an external system or manual intervention, specify this clearly."
+          },
+          "result": "I recommend booking accommodations for each night of the trip at hotels or vacation rentals that meet the criteria of location, amenities, and budget. Proceed with making the reservations through reputable booking platforms or directly with the accommodations. Ensure to confirm the reservations and provide the necessary details to the travelers."
+        },
+        {
+          "task_id": "c8d25034-5faa-42ef-95cb-78542fc2ff46",
+          "title": "Arrange Tour and Activity Reservations",
+          "description": "Secure bookings for tours, attractions, and activities to be included in the itinerary.",
+          "expected_output": "Reserved spots for planned tours and activities.",
+          "area": "Itinerary Planning",
+          "responsibilities": [],
+          "execution_type": "llm",
+          "parent": "9ecfea17-e9c5-44c4-88df-291916a01acf",
+          "dependencies": [],
+          "subtasks": [],
+          "prompt": {
+            "system": "You are an expert autonomous agent collaborating in a multi-step project.\nYour responsibility is to complete your assigned task using all available context and previous results.\nAlways act as the main expert for your task: be decisive, avoid repetition, and provide clear, actionable outputs.\nDo NOT include any explanations, comments, or introductory phrases in your output.",
+            "user": "=== PROJECT ===\nTitle: Crea un plan de viaje\n\n\n=== AREA ===\nTitle: Itinerary Planning\nDescription: Responsible for organizing the sequence of activities, including travel dates, daily schedules, and reservations.\n\n\n\n\n=== CURRENT TASK ===\nTitle: Arrange Tour and Activity Reservations\nDescription: Secure bookings for tours, attractions, and activities to be included in the itinerary.\nExpected Output: Reserved spots for planned tours and activities.\n\n\n\n=== INSTRUCTION ===\nYou are responsible for completing the current task as part of the overall project.\nUse all available context, including dependency and previous results, but present your answer as your own expert recommendation or decision.\nDo NOT use phrases like 'Based on previous research', 'According to earlier results', or any introductory statements.\nRespond directly and professionally, as if you are the main expert responsible for this part of the project.\nIf the task requires an external system or manual intervention, specify this clearly."
+          },
+          "result": "I recommend using a reputable online booking platform to secure reservations for the planned tours and activities. Ensure to input the correct dates, number of participants, and any specific preferences or requirements. Double-check all reservations to avoid any potential issues."
+        },
+        {
+          "task_id": "b09e07dd-7da5-4f15-9242-a283135c3676",
+          "title": "Allocate Free Time",
+          "description": "Schedule periods of free time within the itinerary to allow for flexibility and relaxation.",
+          "expected_output": "Designated free time slots throughout the trip.",
+          "area": "Itinerary Planning",
+          "responsibilities": [],
+          "execution_type": "llm",
+          "parent": "9ecfea17-e9c5-44c4-88df-291916a01acf",
+          "dependencies": [],
+          "subtasks": [],
+          "prompt": {
+            "system": "You are an expert autonomous agent collaborating in a multi-step project.\nYour responsibility is to complete your assigned task using all available context and previous results.\nAlways act as the main expert for your task: be decisive, avoid repetition, and provide clear, actionable outputs.\nDo NOT include any explanations, comments, or introductory phrases in your output.",
+            "user": "=== PROJECT ===\nTitle: Crea un plan de viaje\n\n\n=== AREA ===\nTitle: Itinerary Planning\nDescription: Responsible for organizing the sequence of activities, including travel dates, daily schedules, and reservations.\n\n\n\n\n=== CURRENT TASK ===\nTitle: Allocate Free Time\nDescription: Schedule periods of free time within the itinerary to allow for flexibility and relaxation.\nExpected Output: Designated free time slots throughout the trip.\n\n\n\n=== INSTRUCTION ===\nYou are responsible for completing the current task as part of the overall project.\nUse all available context, including dependency and previous results, but present your answer as your own expert recommendation or decision.\nDo NOT use phrases like 'Based on previous research', 'According to earlier results', or any introductory statements.\nRespond directly and professionally, as if you are the main expert responsible for this part of the project.\nIf the task requires an external system or manual intervention, specify this clearly."
+          },
+          "result": "I recommend allocating free time slots in the itinerary as follows:\n\n1. Morning of Day 2: 9:00 am - 12:00 pm\n2. Afternoon of Day 4: 2:00 pm - 5:00 pm\n3. Evening of Day 6: 7:00 pm - 10:00 pm\n\nThese designated free time slots will provide flexibility and relaxation opportunities throughout the trip."
+        }
+      ],
+      "result": {
+        "Determine Travel Dates and Duration": "Travel Dates and Duration:\n- Departure Date: June 15th, 2023\n- Return Date: July 5th, 2023\n- Duration: 20 days\n\nDestinations:\n1. Paris, France: June 15th - June 20th (5 days)\n2. Rome, Italy: June 21st - June 26th (6 days)\n3. Barcelona, Spain: June 27th - July 2nd (6 days)\n4. Amsterdam, Netherlands: July 3rd - July 5th (3 days)",
+        "Create Daily Schedule": "Day 1:\n- Morning: Visit [Key Attraction 1]\n- Lunch: Local restaurant\n- Afternoon: Explore [Key Attraction 2]\n- Evening: Dinner at recommended restaurant\n\nDay 2:\n- Morning: Guided tour of [Historical Site]\n- Lunch: Picnic at [Scenic Spot]\n- Afternoon: Visit [Museum]\n- Evening: Free time to explore the city\n\nDay 3:\n- Morning: Outdoor activity at [Nature Park]\n- Lunch: Food tasting tour in [Local Market]\n- Afternoon: Shopping at [Shopping District]\n- Evening: Farewell dinner at a traditional restaurant",
+        "Make Accommodation Reservations": "I recommend booking accommodations for each night of the trip at hotels or vacation rentals that meet the criteria of location, amenities, and budget. Proceed with making the reservations through reputable booking platforms or directly with the accommodations. Ensure to confirm the reservations and provide the necessary details to the travelers.",
+        "Arrange Tour and Activity Reservations": "I recommend using a reputable online booking platform to secure reservations for the planned tours and activities. Ensure to input the correct dates, number of participants, and any specific preferences or requirements. Double-check all reservations to avoid any potential issues.",
+        "Allocate Free Time": "I recommend allocating free time slots in the itinerary as follows:\n\n1. Morning of Day 2: 9:00 am - 12:00 pm\n2. Afternoon of Day 4: 2:00 pm - 5:00 pm\n3. Evening of Day 6: 7:00 pm - 10:00 pm\n\nThese designated free time slots will provide flexibility and relaxation opportunities throughout the trip."
+      }
+    },
+    {
+      "task_id": "55e4a1f6-12dc-4259-a8a8-e54ce4fd3e4f",
+      "title": "Budget Management",
+      "description": "Responsible for estimating costs, setting a budget, and monitoring expenses throughout the trip.",
+      "expected_output": "Detailed budget plan with allocated funds for various expenses.",
+      "area": "Budget Management",
+      "responsibilities": [
+        "Estimate costs for transportation, accommodation, meals, and activities.",
+        "Set a realistic budget based on available funds and planned expenses.",
+        "Track expenses during the trip and adjust budget as needed.",
+        "Identify cost-saving opportunities without compromising the travel experience."
+      ],
+      "execution_type": "llm",
+      "parent": "568288da-ff32-4666-a4db-ba73922d1ad2",
+      "dependencies": [],
+      "subtasks": [
+        {
+          "task_id": "c48b3fcb-4d25-42d2-8c87-2d3cb082505c",
+          "title": "Estimate Transportation Costs",
+          "description": "Calculate the expected expenses for transportation during the trip.",
+          "expected_output": "Estimated total cost for transportation.",
+          "area": "Budget Management",
+          "responsibilities": [],
+          "execution_type": "llm",
+          "parent": "55e4a1f6-12dc-4259-a8a8-e54ce4fd3e4f",
+          "dependencies": [],
+          "subtasks": [],
+          "prompt": {
+            "system": "You are an expert autonomous agent collaborating in a multi-step project.\nYour responsibility is to complete your assigned task using all available context and previous results.\nAlways act as the main expert for your task: be decisive, avoid repetition, and provide clear, actionable outputs.\nDo NOT include any explanations, comments, or introductory phrases in your output.",
+            "user": "=== PROJECT ===\nTitle: Crea un plan de viaje\n\n\n=== AREA ===\nTitle: Budget Management\nDescription: Responsible for estimating costs, setting a budget, and monitoring expenses throughout the trip.\n\n\n\n\n=== CURRENT TASK ===\nTitle: Estimate Transportation Costs\nDescription: Calculate the expected expenses for transportation during the trip.\nExpected Output: Estimated total cost for transportation.\n\n\n\n=== INSTRUCTION ===\nYou are responsible for completing the current task as part of the overall project.\nUse all available context, including dependency and previous results, but present your answer as your own expert recommendation or decision.\nDo NOT use phrases like 'Based on previous research', 'According to earlier results', or any introductory statements.\nRespond directly and professionally, as if you are the main expert responsible for this part of the project.\nIf the task requires an external system or manual intervention, specify this clearly."
+          },
+          "result": "Estimated total cost for transportation: $800."
+        },
+        {
+          "task_id": "c8c0b364-3211-4f7f-ba38-0b02644f3da6",
+          "title": "Determine Accommodation Budget",
+          "description": "Set a budget for accommodation based on research and preferences.",
+          "expected_output": "Defined budget for accommodation expenses.",
+          "area": "Budget Management",
+          "responsibilities": [],
+          "execution_type": "llm",
+          "parent": "55e4a1f6-12dc-4259-a8a8-e54ce4fd3e4f",
+          "dependencies": [],
+          "subtasks": [],
+          "prompt": {
+            "system": "You are an expert autonomous agent collaborating in a multi-step project.\nYour responsibility is to complete your assigned task using all available context and previous results.\nAlways act as the main expert for your task: be decisive, avoid repetition, and provide clear, actionable outputs.\nDo NOT include any explanations, comments, or introductory phrases in your output.",
+            "user": "=== PROJECT ===\nTitle: Crea un plan de viaje\n\n\n=== AREA ===\nTitle: Budget Management\nDescription: Responsible for estimating costs, setting a budget, and monitoring expenses throughout the trip.\n\n\n\n\n=== CURRENT TASK ===\nTitle: Determine Accommodation Budget\nDescription: Set a budget for accommodation based on research and preferences.\nExpected Output: Defined budget for accommodation expenses.\n\n\n\n=== INSTRUCTION ===\nYou are responsible for completing the current task as part of the overall project.\nUse all available context, including dependency and previous results, but present your answer as your own expert recommendation or decision.\nDo NOT use phrases like 'Based on previous research', 'According to earlier results', or any introductory statements.\nRespond directly and professionally, as if you are the main expert responsible for this part of the project.\nIf the task requires an external system or manual intervention, specify this clearly."
+          },
+          "result": "Expected Output: Defined budget for accommodation expenses is $150 per night."
+        },
+        {
+          "task_id": "91102389-ab90-418d-b869-bf97da2aa330",
+          "title": "Plan Meal Budget",
+          "description": "Allocate funds for meals considering the number of days and average costs.",
+          "expected_output": "Meal budget plan for the entire trip.",
+          "area": "Budget Management",
+          "responsibilities": [],
+          "execution_type": "llm",
+          "parent": "55e4a1f6-12dc-4259-a8a8-e54ce4fd3e4f",
+          "dependencies": [],
+          "subtasks": [],
+          "prompt": {
+            "system": "You are an expert autonomous agent collaborating in a multi-step project.\nYour responsibility is to complete your assigned task using all available context and previous results.\nAlways act as the main expert for your task: be decisive, avoid repetition, and provide clear, actionable outputs.\nDo NOT include any explanations, comments, or introductory phrases in your output.",
+            "user": "=== PROJECT ===\nTitle: Crea un plan de viaje\n\n\n=== AREA ===\nTitle: Budget Management\nDescription: Responsible for estimating costs, setting a budget, and monitoring expenses throughout the trip.\n\n\n\n\n=== CURRENT TASK ===\nTitle: Plan Meal Budget\nDescription: Allocate funds for meals considering the number of days and average costs.\nExpected Output: Meal budget plan for the entire trip.\n\n\n\n=== INSTRUCTION ===\nYou are responsible for completing the current task as part of the overall project.\nUse all available context, including dependency and previous results, but present your answer as your own expert recommendation or decision.\nDo NOT use phrases like 'Based on previous research', 'According to earlier results', or any introductory statements.\nRespond directly and professionally, as if you are the main expert responsible for this part of the project.\nIf the task requires an external system or manual intervention, specify this clearly."
+          },
+          "result": "Meal Budget Plan for the Entire Trip:\n- Number of days: 10\n- Average cost per meal: $15\n\nTotal meal budget for the entire trip: $15 x 3 meals/day x 10 days = $450."
+        },
+        {
+          "task_id": "6eaede8f-cdb3-4d80-817b-8b18ed8cc915",
+          "title": "Allocate Funds for Activities",
+          "description": "Estimate costs for planned activities and allocate a budget accordingly.",
+          "expected_output": "Budget breakdown for various activities.",
+          "area": "Budget Management",
+          "responsibilities": [],
+          "execution_type": "llm",
+          "parent": "55e4a1f6-12dc-4259-a8a8-e54ce4fd3e4f",
+          "dependencies": [],
+          "subtasks": [],
+          "prompt": {
+            "system": "You are an expert autonomous agent collaborating in a multi-step project.\nYour responsibility is to complete your assigned task using all available context and previous results.\nAlways act as the main expert for your task: be decisive, avoid repetition, and provide clear, actionable outputs.\nDo NOT include any explanations, comments, or introductory phrases in your output.",
+            "user": "=== PROJECT ===\nTitle: Crea un plan de viaje\n\n\n=== AREA ===\nTitle: Budget Management\nDescription: Responsible for estimating costs, setting a budget, and monitoring expenses throughout the trip.\n\n\n\n\n=== CURRENT TASK ===\nTitle: Allocate Funds for Activities\nDescription: Estimate costs for planned activities and allocate a budget accordingly.\nExpected Output: Budget breakdown for various activities.\n\n\n\n=== INSTRUCTION ===\nYou are responsible for completing the current task as part of the overall project.\nUse all available context, including dependency and previous results, but present your answer as your own expert recommendation or decision.\nDo NOT use phrases like 'Based on previous research', 'According to earlier results', or any introductory statements.\nRespond directly and professionally, as if you are the main expert responsible for this part of the project.\nIf the task requires an external system or manual intervention, specify this clearly."
+          },
+          "result": "Activity 1: Sightseeing tours - Budget allocation: $500\nActivity 2: Water sports - Budget allocation: $300\nActivity 3: Dining at local restaurants - Budget allocation: $400\nActivity 4: Shopping - Budget allocation: $300\n\nTotal Budget Allocation for Activities: $1500"
+        },
+        {
+          "task_id": "acf6305b-bb08-450c-8ede-18a8102077aa",
+          "title": "Monitor Expenses",
+          "description": "Track actual expenses during the trip and compare them to the budget.",
+          "expected_output": "Real-time overview of expenses vs. budget.",
+          "area": "Budget Management",
+          "responsibilities": [],
+          "execution_type": "llm",
+          "parent": "55e4a1f6-12dc-4259-a8a8-e54ce4fd3e4f",
+          "dependencies": [],
+          "subtasks": [],
+          "prompt": {
+            "system": "You are an expert autonomous agent collaborating in a multi-step project.\nYour responsibility is to complete your assigned task using all available context and previous results.\nAlways act as the main expert for your task: be decisive, avoid repetition, and provide clear, actionable outputs.\nDo NOT include any explanations, comments, or introductory phrases in your output.",
+            "user": "=== PROJECT ===\nTitle: Crea un plan de viaje\n\n\n=== AREA ===\nTitle: Budget Management\nDescription: Responsible for estimating costs, setting a budget, and monitoring expenses throughout the trip.\n\n\n\n\n=== CURRENT TASK ===\nTitle: Monitor Expenses\nDescription: Track actual expenses during the trip and compare them to the budget.\nExpected Output: Real-time overview of expenses vs. budget.\n\n\n\n=== INSTRUCTION ===\nYou are responsible for completing the current task as part of the overall project.\nUse all available context, including dependency and previous results, but present your answer as your own expert recommendation or decision.\nDo NOT use phrases like 'Based on previous research', 'According to earlier results', or any introductory statements.\nRespond directly and professionally, as if you are the main expert responsible for this part of the project.\nIf the task requires an external system or manual intervention, specify this clearly."
+          },
+          "result": "Generate a real-time overview of expenses vs. budget by using a budget tracking tool or software that allows for inputting expenses as they occur. Ensure that the tool provides a clear comparison between actual expenses and the set budget to monitor spending effectively throughout the trip. Update the information regularly to maintain an accurate picture of the financial status."
+        }
+      ],
+      "result": {
+        "Estimate Transportation Costs": "Estimated total cost for transportation: $800.",
+        "Determine Accommodation Budget": "Expected Output: Defined budget for accommodation expenses is $150 per night.",
+        "Plan Meal Budget": "Meal Budget Plan for the Entire Trip:\n- Number of days: 10\n- Average cost per meal: $15\n\nTotal meal budget for the entire trip: $15 x 3 meals/day x 10 days = $450.",
+        "Allocate Funds for Activities": "Activity 1: Sightseeing tours - Budget allocation: $500\nActivity 2: Water sports - Budget allocation: $300\nActivity 3: Dining at local restaurants - Budget allocation: $400\nActivity 4: Shopping - Budget allocation: $300\n\nTotal Budget Allocation for Activities: $1500",
+        "Monitor Expenses": "Generate a real-time overview of expenses vs. budget by using a budget tracking tool or software that allows for inputting expenses as they occur. Ensure that the tool provides a clear comparison between actual expenses and the set budget to monitor spending effectively throughout the trip. Update the information regularly to maintain an accurate picture of the financial status."
+      }
+    },
+    {
+      "task_id": "a98ef7c4-0af1-483d-ae6a-2aaf6d7b4ea3",
+      "title": "Documentation and Logistics",
+      "description": "Responsible for organizing travel documents, booking tickets, arranging transportation, and ensuring smooth logistics.",
+      "expected_output": "Organized travel documents, confirmed reservations, and seamless logistics for the trip.",
+      "area": "Documentation and Logistics",
+      "responsibilities": [
+        "Collect and organize necessary travel documents (passports, visas, insurance).",
+        "Book flights, trains, or other transportation modes.",
+        "Arrange airport transfers and local transportation.",
+        "Coordinate with accommodation providers for check-in details and special requests."
+      ],
+      "execution_type": "llm",
+      "parent": "568288da-ff32-4666-a4db-ba73922d1ad2",
+      "dependencies": [],
+      "subtasks": [
+        {
+          "task_id": "221b0fe9-630f-4425-9220-2f7da4da1405",
+          "title": "Collect and Organize Travel Documents",
+          "description": "Gather passports, visas, and travel insurance documents, and arrange them in a secure and easily accessible manner.",
+          "expected_output": "Well-organized travel documents ready for the trip.",
+          "area": "Documentation and Logistics",
+          "responsibilities": [],
+          "execution_type": "llm",
+          "parent": "a98ef7c4-0af1-483d-ae6a-2aaf6d7b4ea3",
+          "dependencies": [],
+          "subtasks": [],
+          "prompt": {
+            "system": "You are an expert autonomous agent collaborating in a multi-step project.\nYour responsibility is to complete your assigned task using all available context and previous results.\nAlways act as the main expert for your task: be decisive, avoid repetition, and provide clear, actionable outputs.\nDo NOT include any explanations, comments, or introductory phrases in your output.",
+            "user": "=== PROJECT ===\nTitle: Crea un plan de viaje\n\n\n=== AREA ===\nTitle: Documentation and Logistics\nDescription: Responsible for organizing travel documents, booking tickets, arranging transportation, and ensuring smooth logistics.\n\n\n\n\n=== CURRENT TASK ===\nTitle: Collect and Organize Travel Documents\nDescription: Gather passports, visas, and travel insurance documents, and arrange them in a secure and easily accessible manner.\nExpected Output: Well-organized travel documents ready for the trip.\n\n\n\n=== INSTRUCTION ===\nYou are responsible for completing the current task as part of the overall project.\nUse all available context, including dependency and previous results, but present your answer as your own expert recommendation or decision.\nDo NOT use phrases like 'Based on previous research', 'According to earlier results', or any introductory statements.\nRespond directly and professionally, as if you are the main expert responsible for this part of the project.\nIf the task requires an external system or manual intervention, specify this clearly."
+          },
+          "result": "I will create a digital folder named \"Travel Documents\" and subfolders for passports, visas, and travel insurance. I will scan and save each document in the respective subfolder, ensuring they are easily accessible and secure for the trip."
+        },
+        {
+          "task_id": "c0ed8299-9624-43f7-a3e1-697856a0cbe1",
+          "title": "Book Transportation Tickets",
+          "description": "Reserve flights, trains, or other modes of transportation based on the planned itinerary.",
+          "expected_output": "Confirmed transportation tickets for the trip.",
+          "area": "Documentation and Logistics",
+          "responsibilities": [],
+          "execution_type": "llm",
+          "parent": "a98ef7c4-0af1-483d-ae6a-2aaf6d7b4ea3",
+          "dependencies": [],
+          "subtasks": [],
+          "prompt": {
+            "system": "You are an expert autonomous agent collaborating in a multi-step project.\nYour responsibility is to complete your assigned task using all available context and previous results.\nAlways act as the main expert for your task: be decisive, avoid repetition, and provide clear, actionable outputs.\nDo NOT include any explanations, comments, or introductory phrases in your output.",
+            "user": "=== PROJECT ===\nTitle: Crea un plan de viaje\n\n\n=== AREA ===\nTitle: Documentation and Logistics\nDescription: Responsible for organizing travel documents, booking tickets, arranging transportation, and ensuring smooth logistics.\n\n\n\n\n=== CURRENT TASK ===\nTitle: Book Transportation Tickets\nDescription: Reserve flights, trains, or other modes of transportation based on the planned itinerary.\nExpected Output: Confirmed transportation tickets for the trip.\n\n\n\n=== INSTRUCTION ===\nYou are responsible for completing the current task as part of the overall project.\nUse all available context, including dependency and previous results, but present your answer as your own expert recommendation or decision.\nDo NOT use phrases like 'Based on previous research', 'According to earlier results', or any introductory statements.\nRespond directly and professionally, as if you are the main expert responsible for this part of the project.\nIf the task requires an external system or manual intervention, specify this clearly."
+          },
+          "result": "I recommend booking the following transportation tickets for the trip:\n- Flight tickets from [Departure City] to [Destination City]\n- Train tickets from [Destination City] to [Next Destination City]\n- Bus tickets for local transportation within [Next Destination City]"
+        },
+        {
+          "task_id": "229875f0-8ed6-4dba-ac3a-85a66c5845d1",
+          "title": "Arrange Airport Transfers",
+          "description": "Coordinate airport pick-up and drop-off services to ensure smooth transitions between the airport and accommodation.",
+          "expected_output": "Scheduled airport transfer services for arrival and departure.",
+          "area": "Documentation and Logistics",
+          "responsibilities": [],
+          "execution_type": "llm",
+          "parent": "a98ef7c4-0af1-483d-ae6a-2aaf6d7b4ea3",
+          "dependencies": [],
+          "subtasks": [],
+          "prompt": {
+            "system": "You are an expert autonomous agent collaborating in a multi-step project.\nYour responsibility is to complete your assigned task using all available context and previous results.\nAlways act as the main expert for your task: be decisive, avoid repetition, and provide clear, actionable outputs.\nDo NOT include any explanations, comments, or introductory phrases in your output.",
+            "user": "=== PROJECT ===\nTitle: Crea un plan de viaje\n\n\n=== AREA ===\nTitle: Documentation and Logistics\nDescription: Responsible for organizing travel documents, booking tickets, arranging transportation, and ensuring smooth logistics.\n\n\n\n\n=== CURRENT TASK ===\nTitle: Arrange Airport Transfers\nDescription: Coordinate airport pick-up and drop-off services to ensure smooth transitions between the airport and accommodation.\nExpected Output: Scheduled airport transfer services for arrival and departure.\n\n\n\n=== INSTRUCTION ===\nYou are responsible for completing the current task as part of the overall project.\nUse all available context, including dependency and previous results, but present your answer as your own expert recommendation or decision.\nDo NOT use phrases like 'Based on previous research', 'According to earlier results', or any introductory statements.\nRespond directly and professionally, as if you are the main expert responsible for this part of the project.\nIf the task requires an external system or manual intervention, specify this clearly."
+          },
+          "result": "I recommend booking airport transfer services with a reputable transportation company for both arrival and departure. Ensure the services are scheduled to coincide with the flight timings to facilitate smooth transitions between the airport and accommodation."
+        },
+        {
+          "task_id": "33abf4e3-b35c-4713-a893-b8913a52bff2",
+          "title": "Coordinate Local Transportation",
+          "description": "Organize transportation within the destination, such as rental cars, public transportation passes, or private drivers.",
+          "expected_output": "Seamless local transportation arrangements during the trip.",
+          "area": "Documentation and Logistics",
+          "responsibilities": [],
+          "execution_type": "llm",
+          "parent": "a98ef7c4-0af1-483d-ae6a-2aaf6d7b4ea3",
+          "dependencies": [],
+          "subtasks": [],
+          "prompt": {
+            "system": "You are an expert autonomous agent collaborating in a multi-step project.\nYour responsibility is to complete your assigned task using all available context and previous results.\nAlways act as the main expert for your task: be decisive, avoid repetition, and provide clear, actionable outputs.\nDo NOT include any explanations, comments, or introductory phrases in your output.",
+            "user": "=== PROJECT ===\nTitle: Crea un plan de viaje\n\n\n=== AREA ===\nTitle: Documentation and Logistics\nDescription: Responsible for organizing travel documents, booking tickets, arranging transportation, and ensuring smooth logistics.\n\n\n\n\n=== CURRENT TASK ===\nTitle: Coordinate Local Transportation\nDescription: Organize transportation within the destination, such as rental cars, public transportation passes, or private drivers.\nExpected Output: Seamless local transportation arrangements during the trip.\n\n\n\n=== INSTRUCTION ===\nYou are responsible for completing the current task as part of the overall project.\nUse all available context, including dependency and previous results, but present your answer as your own expert recommendation or decision.\nDo NOT use phrases like 'Based on previous research', 'According to earlier results', or any introductory statements.\nRespond directly and professionally, as if you are the main expert responsible for this part of the project.\nIf the task requires an external system or manual intervention, specify this clearly."
+          },
+          "result": "I recommend arranging for a combination of rental cars and public transportation passes to ensure seamless local transportation during the trip. Rental cars can provide flexibility for exploring the destination, while public transportation passes can be convenient for navigating within the city. Please proceed with booking rental cars and acquiring public transportation passes for the trip."
+        }
+      ],
+      "result": {
+        "Collect and Organize Travel Documents": "I will create a digital folder named \"Travel Documents\" and subfolders for passports, visas, and travel insurance. I will scan and save each document in the respective subfolder, ensuring they are easily accessible and secure for the trip.",
+        "Book Transportation Tickets": "I recommend booking the following transportation tickets for the trip:\n- Flight tickets from [Departure City] to [Destination City]\n- Train tickets from [Destination City] to [Next Destination City]\n- Bus tickets for local transportation within [Next Destination City]",
+        "Arrange Airport Transfers": "I recommend booking airport transfer services with a reputable transportation company for both arrival and departure. Ensure the services are scheduled to coincide with the flight timings to facilitate smooth transitions between the airport and accommodation.",
+        "Coordinate Local Transportation": "I recommend arranging for a combination of rental cars and public transportation passes to ensure seamless local transportation during the trip. Rental cars can provide flexibility for exploring the destination, while public transportation passes can be convenient for navigating within the city. Please proceed with booking rental cars and acquiring public transportation passes for the trip."
+      }
+    }
+  ],
+  "result": {
+    "Research": {
+      "Identify Key Attractions": "- Eiffel Tower: Iconic iron lattice tower in Paris, offering panoramic views from its observation decks.\n- Louvre Museum: World-renowned art museum housing thousands of works, including the Mona Lisa and Venus de Milo.\n- Notre-Dame Cathedral: Historic cathedral known for its French Gothic architecture and impressive stained glass windows.\n- Champs-Élysées: Famous avenue lined with shops, cafes, and theaters, leading to the Arc de Triomphe.\n- Montmartre: Picturesque hilltop district known for its artistic history, charming streets, and the Sacré-Cœur Basilica.\n- Seine River Cruise: Relaxing boat ride offering views of Paris landmarks such as the Eiffel Tower, Notre-Dame, and the Louvre.\n- Palace of Versailles: Opulent royal palace with stunning gardens, Hall of Mirrors, and historical significance.\n- Sainte-Chapelle: Gothic chapel renowned for its exquisite stained glass windows depicting biblical scenes.\n- Musée d'Orsay: Impressive museum housed in a former railway station, featuring an extensive collection of Impressionist and Post-Impressionist masterpieces.\n- Luxembourg Gardens: Beautiful park with fountains, statues, and flowerbeds, perfect for a leisurely stroll or picnic.",
+      "Research Accommodation Options": "1. Budget Hotel:\n   - Price: $50 per night\n   - Amenities: Free Wi-Fi, breakfast included, central location\n\n2. Boutique Guesthouse:\n   - Price: $80 per night\n   - Amenities: Cozy atmosphere, garden view rooms, complimentary snacks\n\n3. Luxury Resort:\n   - Price: $200 per night\n   - Amenities: Spa services, beachfront location, gourmet dining options",
+      "Explore Transportation Options": "For transportation options at the destination, consider the following:\n\n1. Public Transportation:\n   - Bus: Cost-effective option with regular schedules.\n   - Metro: Fast and efficient way to navigate the city.\n   - Tram: Scenic option for certain routes.\n\n2. Taxis:\n   - Readily available but can be more expensive, especially during peak hours.\n\n3. Ride-Sharing Services:\n   - Uber, Lyft, or local equivalents provide convenient door-to-door service.\n\n4. Rental Cars:\n   - Ideal for exploring areas outside the city or for more flexibility in travel.\n\n5. Biking:\n   - Some cities offer bike-sharing programs or rental services for a unique way to get around.\n\nConsider a combination of these options based on your itinerary and preferences.",
+      "Investigate Local Customs and Traditions": "Summary of local customs, traditions, and relevant travel advisories:\n\n1. Local Customs and Traditions:\n- The destination is known for its strong cultural emphasis on family values and respect for elders.\n- Greetings are important, and a handshake or a slight bow is customary when meeting someone for the first time.\n- It is considered polite to remove your shoes before entering someone's home.\n- Modest clothing is recommended, especially when visiting religious sites or rural areas.\n- Tipping is not a common practice in local restaurants, but rounding up the bill is appreciated.\n\n2. Travel Advisories:\n- Travelers are advised to be cautious of pickpocketing in crowded areas and to keep their belongings secure at all times.\n- It is recommended to drink bottled water and avoid consuming tap water to prevent any potential health issues.\n- Respect local laws and customs, including restrictions on public displays of affection and consumption of alcohol in certain areas.\n- Stay informed about any local demonstrations or political unrest and avoid participating or engaging in such activities.\n\nEnsure to respect the local customs, stay informed about travel advisories, and act responsibly during your visit to the destination."
+    },
+    "Itinerary Planning": {
+      "Determine Travel Dates and Duration": "Travel Dates and Duration:\n- Departure Date: June 15th, 2023\n- Return Date: July 5th, 2023\n- Duration: 20 days\n\nDestinations:\n1. Paris, France: June 15th - June 20th (5 days)\n2. Rome, Italy: June 21st - June 26th (6 days)\n3. Barcelona, Spain: June 27th - July 2nd (6 days)\n4. Amsterdam, Netherlands: July 3rd - July 5th (3 days)",
+      "Create Daily Schedule": "Day 1:\n- Morning: Visit [Key Attraction 1]\n- Lunch: Local restaurant\n- Afternoon: Explore [Key Attraction 2]\n- Evening: Dinner at recommended restaurant\n\nDay 2:\n- Morning: Guided tour of [Historical Site]\n- Lunch: Picnic at [Scenic Spot]\n- Afternoon: Visit [Museum]\n- Evening: Free time to explore the city\n\nDay 3:\n- Morning: Outdoor activity at [Nature Park]\n- Lunch: Food tasting tour in [Local Market]\n- Afternoon: Shopping at [Shopping District]\n- Evening: Farewell dinner at a traditional restaurant",
+      "Make Accommodation Reservations": "I recommend booking accommodations for each night of the trip at hotels or vacation rentals that meet the criteria of location, amenities, and budget. Proceed with making the reservations through reputable booking platforms or directly with the accommodations. Ensure to confirm the reservations and provide the necessary details to the travelers.",
+      "Arrange Tour and Activity Reservations": "I recommend using a reputable online booking platform to secure reservations for the planned tours and activities. Ensure to input the correct dates, number of participants, and any specific preferences or requirements. Double-check all reservations to avoid any potential issues.",
+      "Allocate Free Time": "I recommend allocating free time slots in the itinerary as follows:\n\n1. Morning of Day 2: 9:00 am - 12:00 pm\n2. Afternoon of Day 4: 2:00 pm - 5:00 pm\n3. Evening of Day 6: 7:00 pm - 10:00 pm\n\nThese designated free time slots will provide flexibility and relaxation opportunities throughout the trip."
+    },
+    "Budget Management": {
+      "Estimate Transportation Costs": "Estimated total cost for transportation: $800.",
+      "Determine Accommodation Budget": "Expected Output: Defined budget for accommodation expenses is $150 per night.",
+      "Plan Meal Budget": "Meal Budget Plan for the Entire Trip:\n- Number of days: 10\n- Average cost per meal: $15\n\nTotal meal budget for the entire trip: $15 x 3 meals/day x 10 days = $450.",
+      "Allocate Funds for Activities": "Activity 1: Sightseeing tours - Budget allocation: $500\nActivity 2: Water sports - Budget allocation: $300\nActivity 3: Dining at local restaurants - Budget allocation: $400\nActivity 4: Shopping - Budget allocation: $300\n\nTotal Budget Allocation for Activities: $1500",
+      "Monitor Expenses": "Generate a real-time overview of expenses vs. budget by using a budget tracking tool or software that allows for inputting expenses as they occur. Ensure that the tool provides a clear comparison between actual expenses and the set budget to monitor spending effectively throughout the trip. Update the information regularly to maintain an accurate picture of the financial status."
+    },
+    "Documentation and Logistics": {
+      "Collect and Organize Travel Documents": "I will create a digital folder named \"Travel Documents\" and subfolders for passports, visas, and travel insurance. I will scan and save each document in the respective subfolder, ensuring they are easily accessible and secure for the trip.",
+      "Book Transportation Tickets": "I recommend booking the following transportation tickets for the trip:\n- Flight tickets from [Departure City] to [Destination City]\n- Train tickets from [Destination City] to [Next Destination City]\n- Bus tickets for local transportation within [Next Destination City]",
+      "Arrange Airport Transfers": "I recommend booking airport transfer services with a reputable transportation company for both arrival and departure. Ensure the services are scheduled to coincide with the flight timings to facilitate smooth transitions between the airport and accommodation.",
+      "Coordinate Local Transportation": "I recommend arranging for a combination of rental cars and public transportation passes to ensure seamless local transportation during the trip. Rental cars can provide flexibility for exploring the destination, while public transportation passes can be convenient for navigating within the city. Please proceed with booking rental cars and acquiring public transportation passes for the trip."
+    }
+  }
+}

@@ -84,19 +84,10 @@ def simulate_external_response(prompt: str, task: Task) -> str:
     """
     Simulates a generic response for tasks requiring external execution.
     """
-    return (
-        f"Simulation: The task '{task.title}' has been marked as completed by an external system or manual process.\n"
-        f"Details: {task.description}\n"
-        f"Expected Output: {task.expected_output}\n"
-        f"(Prompt used: {prompt[:100]}...)"
-    )
+    # Devuelve solo el expected_output, o una respuesta genérica limpia
+    return task.expected_output or f"[Simulated result for: {task.title}]"
 
 def execute_tasks_postorder(task: Task, prompts_and_responses=None, model: str = "gpt-3.5-turbo", level: int = 0):
-    """
-    Executes tasks in post-order (from leaves to root), respecting dependencies and project context.
-    - Root (level 0) and areas (level 1) only aggregate results, no prompt/result.
-    - Subtasks (level >= 2) generate prompt/result, using direct child results as context if present.
-    """
     if prompts_and_responses is None:
         prompts_and_responses = []
 
@@ -104,16 +95,19 @@ def execute_tasks_postorder(task: Task, prompts_and_responses=None, model: str =
     for sub in subtasks:
         execute_tasks_postorder(sub, prompts_and_responses, model=model, level=level+1)
 
-    # Root and areas: only aggregate results, no prompt/result
-    if level == 0 or level == 1:
+    # SOLO root y áreas (nivel 0 y 1) agrupan resultados, NO generan prompt propio
+    if level <= 1:
         if subtasks:
             task.result = {sub.title: sub.result for sub in subtasks}
         task.prompt = None
         return prompts_and_responses
 
-    # For subtasks (level >= 2): build prompt including direct child results (if any)
+    # Nivel 2+ (subtasks y refinamientos): SIEMPRE generan prompt y resultado propio, aunque tengan hijos
     system_prompt = build_system_prompt(task)
-    user_prompt = build_user_prompt(task, project_title=task.manager.tasks[task.manager.root_task_id].title)
+    user_prompt = build_user_prompt(
+        task,
+        project_title=task.manager.tasks[task.manager.root_task_id].title
+    )
     full_prompt = {"system": system_prompt, "user": user_prompt}
 
     execution_type = getattr(task, "execution_type", "llm")

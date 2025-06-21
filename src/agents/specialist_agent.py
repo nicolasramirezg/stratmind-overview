@@ -49,7 +49,7 @@ class SpecialistAgent:
             parts = re.split(r"###\s*SUBTASKS\s*###", text, maxsplit=1)
             if len(parts) != 2:
                 if debug:
-                    print("❌ Both sections (AREA and SUBTASKS) not found")
+                    print("Both sections (AREA and SUBTASKS) not found")
                 return {"area": "", "subtasks": []}
 
             area_block = parts[0]
@@ -74,7 +74,7 @@ class SpecialistAgent:
                 dependencies = re.search(r"Dependencies:\s*(.+)", block)
                 if not (title and description and expected_output and dependencies):
                     if debug:
-                        print(f"❌ Incorrect format in block:\n{block}")
+                        print(f"Incorrect format in block:\n{block}")
                     continue
                 subtasks.append({
                     "title": title.group(1).strip(),
@@ -90,7 +90,7 @@ class SpecialistAgent:
 
         except Exception as e:
             if debug:
-                print("❌ Error parsing specialist output:", e)
+                print("Error parsing specialist output:", e)
                 print("Received content:\n", text)
             return {"area": "", "subtasks": []}
 

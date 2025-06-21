@@ -5,7 +5,7 @@ from pyvis.network import Network
 st.set_page_config(page_title="Árbol de Agentes - Grafo Interactivo", layout="wide")
 st.title("🌳 Visualización Impactante del Árbol de Agentes (Grafo Interactivo)")
 
-json_path = "output/20250616_235044_task_tree_bogota.json"
+json_path = "output/20250620_204411_task_tree.json"
 
 @st.cache_data
 def load_tree(path):
