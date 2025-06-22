@@ -1,5 +1,5 @@
-from fastapi import FastAPI, Request
-from fastapi.middleware.cors import CORSMiddleware  # <-- Añadido para CORS
+from fastapi import FastAPI, Request, HTTPException
+from fastapi.middleware.cors import CORSMiddleware
 from src.agents.specify_agent import SpecifyAgent
 from src.agents.synthesize_agent import SynthesizeAgent
 from src.agents.decomposer_agent import Decomposer
@@ -13,7 +13,6 @@ import uvicorn
 
 app = FastAPI()
 
-# --- CORS Middleware: permite peticiones desde tu frontend ---
 app.add_middleware(
     CORSMiddleware,
     allow_origins=[
@@ -49,6 +48,8 @@ async def synthesize(request: Request):
     data = await request.json()
     session_id = data.get("session_id", "default")
     history = data.get("history", [])
+    if session_id not in SESSION:
+        raise HTTPException(status_code=404, detail="Session not found")
     synthesize_agent = SynthesizeAgent()
     spec = synthesize_agent.synthesize(history)
     SESSION[session_id]["spec"] = spec
@@ -58,6 +59,8 @@ async def synthesize(request: Request):
 async def decompose(request: Request):
     data = await request.json()
     session_id = data.get("session_id", "default")
+    if session_id not in SESSION or "spec" not in SESSION[session_id]:
+        raise HTTPException(status_code=404, detail="Session or spec not found")
     spec = SESSION[session_id]["spec"]
     task_manager = TaskManager()
     from main import create_root_task, decompose_into_areas, create_area_tasks
@@ -74,6 +77,8 @@ async def decompose(request: Request):
 async def plan_subtasks(request: Request):
     data = await request.json()
     session_id = data.get("session_id", "default")
+    if session_id not in SESSION or "task_manager" not in SESSION[session_id] or "root_task" not in SESSION[session_id] or "spec" not in SESSION[session_id]:
+        raise HTTPException(status_code=404, detail="Session or required data not found")
     from main import plan_area_subtasks
     specialist = SpecialistAgent()
     task_manager = SESSION[session_id]["task_manager"]
@@ -86,6 +91,8 @@ async def plan_subtasks(request: Request):
 async def refine(request: Request):
     data = await request.json()
     session_id = data.get("session_id", "default")
+    if session_id not in SESSION or "task_manager" not in SESSION[session_id] or "root_task" not in SESSION[session_id] or "spec" not in SESSION[session_id]:
+        raise HTTPException(status_code=404, detail="Session or required data not found")
     from main import refine_all_subtasks
     task_refiner = TaskRefiner()
     task_manager = SESSION[session_id]["task_manager"]
@@ -98,6 +105,8 @@ async def refine(request: Request):
 async def execute(request: Request):
     data = await request.json()
     session_id = data.get("session_id", "default")
+    if session_id not in SESSION or "task_manager" not in SESSION[session_id] or "root_task" not in SESSION[session_id]:
+        raise HTTPException(status_code=404, detail="Session or required data not found")
     task_manager = SESSION[session_id]["task_manager"]
     root_task = SESSION[session_id]["root_task"]
     execute_tasks_postorder(root_task)
@@ -108,6 +117,8 @@ async def execute(request: Request):
 async def get_tree(request: Request):
     data = await request.json()
     session_id = data.get("session_id", "default")
+    if session_id not in SESSION or "root_task" not in SESSION[session_id]:
+        raise HTTPException(status_code=404, detail="Session or required data not found")
     root_task = SESSION[session_id]["root_task"]
     return {"tree": root_task.to_dict()}
 
