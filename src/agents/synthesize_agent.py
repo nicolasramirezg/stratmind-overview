@@ -1,8 +1,12 @@
+import os
 from openai import OpenAI
 
 class SynthesizeAgent:
     def __init__(self, model="gpt-4o", temperature=0.7):
-        self.client = OpenAI()
+        api_key = os.getenv("OPENAI_API_KEY")
+        if not api_key:
+            raise ValueError("OPENAI_API_KEY environment variable not set")
+        self.client = OpenAI(api_key=api_key)
         self.model = model
         self.temperature = temperature
 

@@ -1,3 +1,4 @@
+import os
 from openai import OpenAI
 import re
 from src.utils.prompt_loader import load_prompt
@@ -27,8 +28,11 @@ class SpecialistAgent:
         """
         Initialize the SpecialistAgent with a given OpenAI model.
         """
+        api_key = os.getenv("OPENAI_API_KEY")
+        if not api_key:
+            raise ValueError("OPENAI_API_KEY environment variable not set")
         self.model = model
-        self.client = OpenAI()
+        self.client = OpenAI(api_key=api_key)
 
     @staticmethod
     def _parse_specialist_output(text: str, debug: bool = False) -> dict:

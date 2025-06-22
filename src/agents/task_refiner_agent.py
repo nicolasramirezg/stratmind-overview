@@ -1,3 +1,4 @@
+import os
 from openai import OpenAI
 from typing import Any
 import re
@@ -15,8 +16,11 @@ class TaskRefiner:
     """
 
     def __init__(self, model: str = "gpt-3.5-turbo", debug: bool = False):
+        api_key = os.getenv("OPENAI_API_KEY")
+        if not api_key:
+            raise ValueError("OPENAI_API_KEY environment variable not set")
         self.model = model
-        self.client = OpenAI()
+        self.client = OpenAI(api_key=api_key)
         self.debug = debug
 
     @staticmethod

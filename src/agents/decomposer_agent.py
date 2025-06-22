@@ -1,3 +1,4 @@
+import os
 from openai import OpenAI
 import re
 from src.utils.prompt_loader import load_prompt
@@ -25,8 +26,11 @@ class Decomposer:
         """
         Initialize the Decomposer agent with the specified OpenAI model.
         """
+        api_key = os.getenv("OPENAI_API_KEY")
+        if not api_key:
+            raise ValueError("OPENAI_API_KEY environment variable not set")
         self.model = model
-        self.client = OpenAI()
+        self.client = OpenAI(api_key=api_key)
 
     @staticmethod
     def parse_llm_decomposition(text: str, debug: bool = False) -> dict:

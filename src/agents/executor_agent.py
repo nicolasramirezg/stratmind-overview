@@ -66,7 +66,11 @@ def call_llm(system_prompt: str, user_prompt: str, model: str = "gpt-3.5-turbo")
     """
     Calls the real LLM (OpenAI) to get a response for the given prompts.
     """
-    client = OpenAI()
+    import os
+    api_key = os.getenv("OPENAI_API_KEY")
+    if not api_key:
+        return "[LLM ERROR]: OPENAI_API_KEY environment variable not set"
+    client = OpenAI(api_key=api_key)
     try:
         response = client.chat.completions.create(
             model=model,
