@@ -34,9 +34,28 @@ async def clarify(request: Request):
     session_id = data.get("session_id", "default")
     history = data.get("history", [])
     user_input = data.get("user_input", "")
-    specify_agent = SpecifyAgent()
+
+    # Si el historial está vacío, agrega el mensaje de sistema
+    if not history:
+        history = [
+            {"role": "system", "content": (
+                "You are an expert agent specialized in clarifying and specifying user tasks. "
+                "Your job is to ask concise, relevant questions to clarify the user's request. "
+                "Ask only one question at a time. "
+                "Do not execute or solve the task, only clarify. "
+                "Do not provide options, suggestions, or examples unless the user asks. "
+                "Do not insist if the user does not specify. "
+                "Do not empathize or extend the conversation unnecessarily. "
+                "When you have gathered all the necessary information and the task is fully specified, "
+                "respond with: 'Thank you. The task is now fully specified.' and do not ask further questions. "
+                "If the user types 'finish', you must also stop asking questions."
+            )}
+        ]
+
     if user_input:
         history.append({"role": "user", "content": user_input})
+
+    specify_agent = SpecifyAgent()
     agent_response = specify_agent.get_response(history)
     history.append({"role": "assistant", "content": agent_response})
     finished = "fully specified" in agent_response.lower() or user_input.lower() == "finish"
