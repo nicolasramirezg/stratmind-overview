@@ -7,6 +7,9 @@ from src.utils.recursive_refiner_parent_subtask import refine_recursively
 from src.agents.specialist_agent import SpecialistAgent, get_other_areas_subtasks
 from src.agents.task_refiner_agent import TaskRefiner
 from src.utils.task_exporter import export_task_tree
+from src.agents.specify_agent import SpecifyAgent
+from src.agents.synthesize_agent import SynthesizeAgent
+
 
 load_dotenv()
 
@@ -110,8 +113,21 @@ def print_task_tree(task, level=0):
 
 def main():
     print("Starting main()")
-    task_description = "Crea un plan de viaje a Bogotá"
-    expected_output = "Un plan de viaje detallado."
+
+    # Step 1: Interactive clarification
+    specify_agent = SpecifyAgent()
+    history = specify_agent.interactive_specification()
+
+    # Step 2: Synthesize clarified task and expected output
+    synthesize_agent = SynthesizeAgent()
+    spec = synthesize_agent.synthesize(history)
+    task_description = spec["description"]
+    expected_output = spec["expected_output"]
+
+    print("\nFinal clarified task:")
+    print("Task:", task_description)
+    print("Expected Output:", expected_output)
+
     task_manager = TaskManager()
 
     print("Creating root task...")
