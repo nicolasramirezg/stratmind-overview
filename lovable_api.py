@@ -20,8 +20,7 @@ app.add_middleware(
         "http://localhost:3000",
         "http://127.0.0.1:3000",
         "https://7e64aab1-e35a-4556-a06e-ae3a83f8a9af.lovableproject.com",
-        "https://58b77832-a85f-4c06-b9b0-c0b284d922e2.lovableproject.com",
-        "https://*.lovableproject.com",
+        "https://58b77832-a85f-4c06-b9b0-c0b284d922e2.lovableproject.com"
     ],
     allow_credentials=True,
     allow_methods=["*"],
