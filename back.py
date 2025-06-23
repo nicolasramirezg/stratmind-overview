@@ -39,15 +39,18 @@ async def clarify(request: Request):
     history = data.get("history", [])
     user_input = data.get("user_input", "")
 
-    # Si el historial está vacío, solo agrega el input del usuario
-    if not history and user_input:
-        history = [{"role": "user", "content": user_input}]
-        # El agente se encargará de añadir el mensaje de sistema si lo necesita
+    # Si el historial está vacío, usa el método del agente para construirlo
+    if not history:
+        history = SpecifyAgent.initial_history(user_input)
+        user_input = None  # Ya está en el historial
+
+    elif user_input:
+        history.append({"role": "user", "content": user_input})
 
     specify_agent = SpecifyAgent()
     agent_response = specify_agent.get_response(history)
     history.append({"role": "assistant", "content": agent_response})
-    finished = "fully specified" in agent_response.lower() or user_input.lower() == "finish"
+    finished = "fully specified" in agent_response.lower() or (user_input and user_input.lower() == "finish")
     SESSION[session_id] = {"history": history}
     return {"history": history, "agent_response": agent_response, "finished": finished}
 
