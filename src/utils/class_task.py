@@ -91,22 +91,28 @@ class Task:
         """
         Serializes the task including dependencies, subtasks, and prompt/result.
         """
-        data = {
-            **{k: v for k, v in asdict(self).items() if k not in ('dependencies', 'subtasks', 'parent')},
-            'area': self.area,
-            'responsibilities': self.responsibilities,
-            'dependencies': [d.task_id for d in self.dependencies],
-            'subtasks': [s.to_dict() for s in self.subtasks],
-            'parent_task_id': self.parent.task_id if self.parent else None,
-            'prompt': self.prompt,    # <-- Add this line
-            'result': self.result     # <-- Add this line
+        return {
+            "task_id": self.task_id,
+            "title": self.title,
+            "description": self.description,
+            "expected_output": self.expected_output,
+            "area": self.area,
+            "responsibilities": self.responsibilities,
+            "assigned_agent": self.assigned_agent,
+            "status": self.status,
+            "intro": self.intro,
+            "execution_type": self.execution_type,
+            "prompt": self.prompt,
+            "result": self.result,
+            "dependencies": [d.task_id for d in self.dependencies],
+            "subtasks": [s.to_dict() for s in self.subtasks],
+            "parent_task_id": self.parent.task_id if self.parent else None,
         }
-        return data
 
 class TaskManager:
 
     """
-    Gestiona la creación, jerarquía y dependencias entre múltiples tareas.
+    Gestiona la creación, jerárquía y dependencias entre múltiples tareas.
 
     Funcionalidades clave:
     - Crear tareas y subtareas vinculadas por ID
