@@ -1,9 +1,118 @@
-2025 06 08 -->
-- [UPDATE] Cambio en el prompt del Decomposer Agent
-Se ha reemplazado la salida en formato JSON por un formato de texto plano estructurado con encabezados
-(Area:, Description:, Expected_output:, etc.). Esta modificación mejora la robustez del parseo y reduce
-errores causados por respuestas mal formateadas del modelo.
+# StratMind 
+
+Dynamic LLM-Based Architecture for Autonomous Task Decomposition and Hierarchical Intelligent Agent Generation
+
+**StratMind** is a multi-agent system powered by LLMs (Large Language Models) for autonomously decomposing, refining, and executing complex tasks, generating structured task trees and results. The workflow covers everything from interactive task specification to execution and export of the full task tree.
+
+---
+
+## Main Features
+
+- **Interactive Specification:** The user clarifies and details the task through a dialogue with a specialized agent.
+- **Automatic Synthesis:** The system summarizes and formalizes the task and expected output.
+- **Intelligent Decomposition:** An agent breaks down the task into specialized functional areas.
+- **Subtask Planning:** Each area generates concrete subtasks, resolving dependencies and avoiding duplication.
+- **Recursive Refinement:** Ambiguous subtasks are automatically refined until they are executable.
+- **Autonomous Execution:** Each subtask is executed (via LLM or simulation), propagating results through the tree.
+- **Structured Export:** The complete tree is exported in JSON and TXT, ready for analysis or integration.
+
+---
+
+## Project Structure
+
+```
+src/
+  agents/           # LLM agents: specify, synthesize, decompose, specialist, refiner, executor
+  utils/            # Task classes, exporters, serialization and prompt utilities
+  prompts/          # Plain text prompts for each agent
+  executor/         # Subtask execution logic
+  APErefiner/       # Advanced iterative refiner (experimental)
+main.py             # Interactive CLI runner
+back.py             # FastAPI backend for web/API integration
+output/             # Exported task trees
+```
+
+---
+
+## Installation
+
+1. **Clone the repository:**
+   ```bash
+   git clone <REPO_URL>
+   cd agentLLM
+   ```
+
+2. **Install dependencies:**
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+3. **Set your OpenAI API Key:**
+   - Create a `.env` file in the root directory with:
+     ```
+     OPENAI_API_KEY=your_key_here
+     ```
+
+---
+
+## Usage
+
+### Interactive Mode (CLI)
+
+```bash
+python main.py
+```
+- The system will guide you to specify, decompose, refine, and execute all subtasks.
+- At the end, it exports the task tree to `output/`.
+
+### API Mode (FastAPI)
+
+```bash
+uvicorn back:app --reload
+```
+- Exposes endpoints for each pipeline stage (clarify, synthesize, decompose, plan_subtasks, refine, execute, etc.).
+- Ideal for integration with web frontends or automation.
+
+---
+
+## Example Workflow
+
+1. **Specification:**  
+   The user describes the task and answers clarification questions.
+2. **Synthesis:**  
+   The system summarizes the task and expected output.
+3. **Decomposition:**  
+   The agent splits the task into functional areas.
+4. **Planning:**  
+   Each area generates concrete subtasks, resolving dependencies.
+5. **Refinement:**  
+   Ambiguous subtasks are recursively refined.
+6. **Execution:**  
+   Each subtask is executed (via LLM or simulation).
+7. **Export:**  
+   The task tree and results are exported in JSON and TXT.
+
+---
+
+## Customization
+
+- **Prompts:**  
+  You can modify prompts in `src/prompts/` to adapt agent behavior.
+- **Agents:**  
+  Agents are in `src/agents/` and can be easily extended.
+- **Exporters:**  
+  Export the tree in JSON (`task_exporter.py`) or TXT (`task_exporter_txt.py`).
+
+---
+
+## Credits
+
+Developed by Nicolás Ramírez - Jorge Martin.
+Universidad de Navarra.
+Master in Big Data Science & AI.
 
 
+---
 
+## License
 
