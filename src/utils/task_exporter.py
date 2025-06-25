@@ -1,31 +1,34 @@
 import os
 import json
 from datetime import datetime
-from .task_to_dict import task_to_dict  # si lo separas, si no, elimina esta línea
-# from src.utils.task_exporter_txt import export_task_tree_txt
+from .task_to_dict import task_to_dict
 
 def export_task_tree(root_task, manager, out_name="task_tree", output_dir="output"):
     """
-    Exporta el árbol de tareas a un archivo JSON con nombre personalizado + timestamp.
+    Exports the task tree to a JSON file with a custom name and timestamp.
 
     Args:
-        root_task: tarea raíz del árbol.
-        manager: instancia de TaskManager con todas las tareas.
-        out_name: prefijo del nombre del archivo.
-        output_dir: carpeta donde se guarda el JSON.
+        root_task: The root task of the tree.
+        manager: The TaskManager instance with all tasks.
+        out_name: Prefix for the output file name.
+        output_dir: Directory where the JSON will be saved.
     """
+    # Generate a timestamped filename
     timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
     filename = f"{timestamp}_{out_name}.json"
 
+    # Ensure the output directory exists
     full_dir = os.path.join(os.getcwd(), output_dir)
     os.makedirs(full_dir, exist_ok=True)
     output_path = os.path.join(full_dir, filename)
 
+    # Convert the task tree to a serializable dict
     tree_json = task_to_dict(root_task)
 
+    # Write the JSON to file
     with open(output_path, "w", encoding="utf-8") as f:
         json.dump(tree_json, f, indent=2, ensure_ascii=False)
 
-    print(f"\n📦 Árbol de tareas exportado a: {output_path}")
+    print(f"\n📦 Task tree exported to: {output_path}")
 
 

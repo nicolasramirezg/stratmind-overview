@@ -16,6 +16,14 @@ load_dotenv()
 def create_root_task(task_manager, task_description, expected_output):
     """
     Create the root task for the project.
+
+    Args:
+        task_manager (TaskManager): The task manager instance.
+        task_description (str): The clarified task description.
+        expected_output (str): The expected output for the root task.
+
+    Returns:
+        Task: The created root task.
     """
     return task_manager.create_task(
         title=task_description,
@@ -25,7 +33,14 @@ def create_root_task(task_manager, task_description, expected_output):
 
 def decompose_into_areas(root_task, decomposer):
     """
-    Decompose the root task into functional areas.
+    Decompose the root task into functional areas using the decomposer agent.
+
+    Args:
+        root_task (Task): The root task object.
+        decomposer (Decomposer): The decomposer agent.
+
+    Returns:
+        dict: Area divisions as returned by the decomposer.
     """
     area_divisions = decomposer.decompose(
         root_task.description,
@@ -38,6 +53,11 @@ def decompose_into_areas(root_task, decomposer):
 def create_area_tasks(task_manager, root_task, area_divisions):
     """
     Create area tasks under the root task.
+
+    Args:
+        task_manager (TaskManager): The task manager instance.
+        root_task (Task): The root task object.
+        area_divisions (dict): The area divisions from the decomposer.
     """
     for subtask in area_divisions["subtasks"]:
         print(f"  - Area: {subtask['area']}")
@@ -54,6 +74,12 @@ def create_area_tasks(task_manager, root_task, area_divisions):
 def plan_area_subtasks(task_manager, root_task, specialist, task_description):
     """
     Generate concrete subtasks for each area and resolve dependencies.
+
+    Args:
+        task_manager (TaskManager): The task manager instance.
+        root_task (Task): The root task object.
+        specialist (SpecialistAgent): The specialist agent.
+        task_description (str): The clarified task description.
     """
     areas = [t for t in task_manager.tasks.values() if t.parent == root_task]
     all_area_names = [area.area for area in areas]
@@ -86,6 +112,13 @@ def plan_area_subtasks(task_manager, root_task, specialist, task_description):
 def refine_all_subtasks(task_manager, root_task, task_refiner, task_description, max_depth=2):
     """
     Recursively refine ALL subtasks of each area, including all levels.
+
+    Args:
+        task_manager (TaskManager): The task manager instance.
+        root_task (Task): The root task object.
+        task_refiner (TaskRefiner): The task refiner agent.
+        task_description (str): The clarified task description.
+        max_depth (int): Maximum recursion depth for refinement.
     """
     for area_task in [t for t in task_manager.tasks.values() if t.parent == root_task]:
         area_name = area_task.area
@@ -107,11 +140,23 @@ def refine_all_subtasks(task_manager, root_task, task_refiner, task_description,
             refine_subtree(subtask_task, depth=0)
 
 def print_task_tree(task, level=0):
+    """
+    Recursively prints the task tree to the console.
+
+    Args:
+        task (Task): The current task to print.
+        level (int): The current depth in the tree (for indentation).
+    """
     print("  " * level + f"- {task.title} (id: {task.task_id})")
     for sub in getattr(task, "subtasks", []):
         print_task_tree(sub, level + 1)
 
 def main():
+    """
+    Main entry point for the CLI workflow.
+    Guides the user through clarification, synthesis, decomposition,
+    subtask planning, refinement, execution, and export.
+    """
     print("Starting main()")
 
     # Step 1: Interactive clarification

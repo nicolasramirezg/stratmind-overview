@@ -27,6 +27,9 @@ class SpecialistAgent:
     def __init__(self, model: str = "gpt-3.5-turbo"):
         """
         Initialize the SpecialistAgent with a given OpenAI model.
+
+        Args:
+            model (str): The OpenAI model to use for subtask planning.
         """
         api_key = os.getenv("OPENAI_API_KEY")
         if not api_key:
@@ -50,6 +53,7 @@ class SpecialistAgent:
             }
         """
         try:
+            # Split the output into area and subtasks sections
             parts = re.split(r"###\s*SUBTASKS\s*###", text, maxsplit=1)
             if len(parts) != 2:
                 if debug:
@@ -128,6 +132,7 @@ class SpecialistAgent:
                 "all_area_names": "\n".join(f"- {name}" for name in area.get("all_area_names", [])),
             }
 
+            # Load prompts from external .txt files
             messages = [
                 {
                     "role": "system",
@@ -143,6 +148,7 @@ class SpecialistAgent:
                 }
             ]
 
+            # Call the LLM to generate subtasks
             response = self.client.chat.completions.create(
                 model=self.model,
                 messages=messages,
@@ -151,6 +157,7 @@ class SpecialistAgent:
 
             content = response.choices[0].message.content.strip()
 
+            # Parse the LLM output into structured data
             parsed = self._parse_specialist_output(content)
             result.append(parsed)
 

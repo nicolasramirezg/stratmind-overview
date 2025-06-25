@@ -13,8 +13,17 @@ def refine_recursively(
     """
     Recursively refines a subtask using the refiner agent and stores everything in the TaskManager.
     Does not return anything, only updates the TaskManager.
+
+    Args:
+        subtask (Task): The subtask to be refined.
+        area_name (str): The name of the area the subtask belongs to.
+        global_task (str): The main/root task description.
+        refiner: The TaskRefiner agent instance.
+        task_manager: The TaskManager instance.
+        depth (int, optional): Current recursion depth.
+        max_depth (int, optional): Maximum allowed recursion depth.
     """
-    # Get sibling subtasks titles (excluding the current one)
+    # Get sibling subtasks' titles (excluding the current one)
     siblings = [t for t in task_manager.tasks.values() if t.parent == subtask.parent and t != subtask]
     sibling_titles = [t.title.strip().lower() for t in siblings]
 
@@ -34,14 +43,14 @@ def refine_recursively(
         return_prompt_and_response=True 
     )
 
-    # Solo crea hijos si hay refinamiento y no se ha alcanzado la profundidad máxima
+    # Only create children if there is refinement and max depth is not reached
     if result["refined"] and depth < max_depth:
-        # Crea y enlaza los hijos refinados como subtareas de 'subtask'
+        # Create and link the refined children as subtasks of 'subtask'
         child_tasks = create_and_link_subtasks(
             result["refined"], area_name, subtask, task_manager
         )
 
-        # Llama recursivamente para cada subtask refinada
+        # Recursively call for each refined subtask
         for child_subtask in result["refined"]:
             child_task = child_tasks[child_subtask["title"].strip().lower()]
             refine_recursively(

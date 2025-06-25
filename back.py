@@ -17,6 +17,7 @@ import uvicorn
 
 app = FastAPI()
 
+# Enable CORS for local and deployed frontends
 app.add_middleware(
     CORSMiddleware,
     allow_origins=[
@@ -30,20 +31,24 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
+# In-memory session storage for each user/session
 SESSION = {}
 
 @app.post("/clarify")
 async def clarify(request: Request):
+    """
+    Endpoint for the clarification step.
+    Receives user input and conversation history, returns updated history and agent response.
+    """
     data = await request.json()
     session_id = data.get("session_id", "default")
     history = data.get("history", [])
     user_input = data.get("user_input", "")
 
-    # Si el historial está vacío, usa el método del agente para construirlo
+    # If history is empty, build it using the agent's method
     if not history:
         history = SpecifyAgent.initial_history(user_input)
-        user_input = None  # Ya está en el historial
-
+        user_input = None  # Already included in history
     elif user_input:
         history.append({"role": "user", "content": user_input})
 
@@ -56,6 +61,10 @@ async def clarify(request: Request):
 
 @app.post("/synthesize")
 async def synthesize(request: Request):
+    """
+    Endpoint for the synthesis step.
+    Uses the conversation history to generate a clarified task and expected output.
+    """
     data = await request.json()
     session_id = data.get("session_id", "default")
     history = SESSION.get(session_id, {}).get("history", [])
@@ -68,6 +77,10 @@ async def synthesize(request: Request):
 
 @app.post("/decompose")
 async def decompose(request: Request):
+    """
+    Endpoint for the decomposition step.
+    Decomposes the clarified task into functional areas.
+    """
     data = await request.json()
     session_id = data.get("session_id", "default")
     spec = SESSION.get(session_id, {}).get("spec")
@@ -86,6 +99,9 @@ async def decompose(request: Request):
 
 @app.post("/create_area_tasks")
 async def create_area_tasks_endpoint(request: Request):
+    """
+    Endpoint to create area tasks in the task manager after decomposition.
+    """
     data = await request.json()
     session_id = data.get("session_id", "default")
     tm = SESSION.get(session_id, {}).get("task_manager")
@@ -98,6 +114,9 @@ async def create_area_tasks_endpoint(request: Request):
 
 @app.post("/plan_subtasks")
 async def plan_subtasks_endpoint(request: Request):
+    """
+    Endpoint to plan subtasks for each area using the specialist agent.
+    """
     data = await request.json()
     session_id = data.get("session_id", "default")
     tm = SESSION.get(session_id, {}).get("task_manager")
@@ -111,6 +130,9 @@ async def plan_subtasks_endpoint(request: Request):
 
 @app.post("/refine")
 async def refine_endpoint(request: Request):
+    """
+    Endpoint to recursively refine ambiguous subtasks using the refiner agent.
+    """
     data = await request.json()
     session_id = data.get("session_id", "default")
     tm = SESSION.get(session_id, {}).get("task_manager")
@@ -124,6 +146,9 @@ async def refine_endpoint(request: Request):
 
 @app.post("/execute")
 async def execute_endpoint(request: Request):
+    """
+    Endpoint to execute all tasks in the tree (post-order) and export the results.
+    """
     data = await request.json()
     session_id = data.get("session_id", "default")
     tm = SESSION.get(session_id, {}).get("task_manager")
@@ -136,6 +161,9 @@ async def execute_endpoint(request: Request):
 
 @app.post("/get_tree")
 async def get_tree(request: Request):
+    """
+    Endpoint to retrieve the current task tree for a session.
+    """
     data = await request.json()
     session_id = data.get("session_id", "default")
     root_task = SESSION.get(session_id, {}).get("root_task")
@@ -145,6 +173,9 @@ async def get_tree(request: Request):
 
 @app.post("/print_tree")
 async def print_tree(request: Request):
+    """
+    Endpoint to print the current task tree for a session to the server console.
+    """
     data = await request.json()
     session_id = data.get("session_id", "default")
     root_task = SESSION.get(session_id, {}).get("root_task")

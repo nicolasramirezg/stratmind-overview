@@ -1,8 +1,21 @@
 import os
 from openai import OpenAI
+from src.utils.prompt_loader import load_prompt
 
 class SynthesizeAgent:
+    """
+    Agent that synthesizes a clarified task and expected output from a conversation history.
+    Loads prompts from external .txt files for flexibility.
+    """
+
     def __init__(self, model="gpt-4o", temperature=0.7):
+        """
+        Initialize the SynthesizeAgent with a given OpenAI model and temperature.
+
+        Args:
+            model (str): The OpenAI model to use.
+            temperature (float): The temperature for LLM responses.
+        """
         api_key = os.getenv("OPENAI_API_KEY")
         if not api_key:
             raise ValueError("OPENAI_API_KEY environment variable not set")
@@ -11,32 +24,42 @@ class SynthesizeAgent:
         self.temperature = temperature
 
     def synthesize(self, history):
-        prompt = (
-            "Analyze the following conversation and extract the final, clarified task specification "
-            "and the expected output. Return your answer in exactly this format:\n\n"
-            "Task: <the detailed task>\n"
-            "Expected Output: <the expected output description. Do not leave this blank. If the user was vague, infer a reasonable output.>\n"
-            "Conversation:\n"
-        )
+        """
+        Synthesizes the clarified task and expected output from the conversation history.
+
+        Args:
+            history (list): The conversation history as a list of message dicts.
+
+        Returns:
+            dict: {
+                "description": <clarified task>,
+                "expected_output": <expected output>
+            }
+        """
+        # Build the conversation string for the prompt
         conversation = "\n".join(
             [f"{msg['role'].capitalize()}: {msg['content']}" for msg in history]
         )
-        full_prompt = prompt + conversation
+        variables = {"conversation": conversation}
+
+        # Load prompts from external .txt files
+        system_prompt = load_prompt("prompts/synthesize_agent/system.txt", {})
+        user_prompt = load_prompt("prompts/synthesize_agent/user.txt", variables)
 
         messages = [
-            {"role": "system", "content": (
-                "You are an expert agent that reads conversations and extracts the clarified task and expected output."
-            )},
-            {"role": "user", "content": full_prompt}
+            {"role": "system", "content": system_prompt},
+            {"role": "user", "content": user_prompt}
         ]
 
+        # Call the LLM to synthesize the task
         response = self.client.chat.completions.create(
             model=self.model,
             messages=messages,
             temperature=self.temperature
         )
         output_text = response.choices[0].message.content.strip()
-        # Parse result
+
+        # Parse the LLM output to extract the task and expected output
         lines = output_text.split("\n")
         task = ""
         expected_output = ""

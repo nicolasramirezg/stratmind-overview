@@ -3,25 +3,25 @@ import os
 
 def load_prompt(rel_path: str, variables: dict) -> str:
     """
-    Carga un archivo de prompt con placeholders y realiza la sustitución usando
-    Template.substitute().
+    Loads a prompt file with placeholders and performs variable substitution using Template.substitute().
 
     Args:
-        rel_path (str): Ruta relativa desde el directorio raíz del proyecto.
-        variables (dict): Diccionario con las claves a sustituir en el texto.
+        rel_path (str): Relative path from the project root directory to the prompt file.
+        variables (dict): Dictionary with keys to substitute in the prompt text.
 
     Returns:
-        str: Prompt con las variables interpoladas.
+        str: The prompt with variables interpolated.
     """
-    # Obtiene ruta absoluta desde donde se ejecuta el script
+    # Get the absolute path of the current file (this script)
     base_dir = os.path.dirname(os.path.abspath(__file__))
 
-    # Sube un nivel para salir de /utils y llegar a /src
+    # Go up one level to reach /src from /src/utils
     project_root = os.path.abspath(os.path.join(base_dir, ".."))
 
-    # Construye ruta absoluta al archivo de texto
+    # Build the absolute path to the prompt text file
     full_path = os.path.join(project_root, rel_path)
 
+    # Read the prompt file and substitute variables
     with open(full_path, encoding="utf-8") as f:
         template = Template(f.read())
         return template.substitute(variables)

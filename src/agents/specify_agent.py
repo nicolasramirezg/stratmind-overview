@@ -1,8 +1,22 @@
 import os
 from openai import OpenAI
+from src.utils.prompt_loader import load_prompt
+
 
 class SpecifyAgent:
+    """
+    Agent specialized in clarifying and specifying user tasks through interactive dialogue.
+    Loads system prompts from external .txt files for flexibility.
+    """
+
     def __init__(self, model="gpt-4o", temperature=0.7):
+        """
+        Initialize the SpecifyAgent with a given OpenAI model and temperature.
+
+        Args:
+            model (str): The OpenAI model to use.
+            temperature (float): The temperature for LLM responses.
+        """
         api_key = os.getenv("OPENAI_API_KEY")
         if not api_key:
             raise ValueError("OPENAI_API_KEY environment variable not set")
@@ -12,27 +26,40 @@ class SpecifyAgent:
 
     @staticmethod
     def system_prompt():
-        return (
-            "You are an expert agent specialized in clarifying and specifying user tasks. "
-            "Your job is to ask concise, relevant questions to clarify the user's request. "
-            "Ask only one question at a time. "
-            "Do not execute or solve the task, only clarify. "
-            "Do not provide options, suggestions, or examples unless the user asks. "
-            "Do not insist if the user does not specify. "
-            "Do not empathize or extend the conversation unnecessarily. "
-            "When you have gathered all the necessary information and the task is fully specified, "
-            "respond with: 'Thank you. The task is now fully specified.' and do not ask further questions. "
-            "If the user types 'finish', you must also stop asking questions."
-        )
+        """
+        Loads the system prompt from an external .txt file.
+
+        Returns:
+            str: The system prompt string.
+        """
+        return load_prompt("prompts/specify_agent/system.txt", {})
 
     @classmethod
     def initial_history(cls, user_input=None):
+        """
+        Builds the initial conversation history for the agent.
+
+        Args:
+            user_input (str, optional): The user's initial task description.
+
+        Returns:
+            list: List of message dicts for the conversation.
+        """
         history = [{"role": "system", "content": cls.system_prompt()}]
         if user_input:
             history.append({"role": "user", "content": user_input})
         return history
 
     def get_response(self, history):
+        """
+        Gets a response from the LLM given the conversation history.
+
+        Args:
+            history (list): The conversation history as a list of message dicts.
+
+        Returns:
+            str: The LLM's response.
+        """
         response = self.client.chat.completions.create(
             model=self.model,
             messages=history,
@@ -41,6 +68,14 @@ class SpecifyAgent:
         return response.choices[0].message.content.strip()
 
     def interactive_specification(self):
+        """
+        Runs an interactive loop to clarify and specify the user's task.
+        The loop continues until the agent determines the task is fully specified
+        or the user types 'finish'.
+
+        Returns:
+            list: The final conversation history.
+        """
         history = self.initial_history()
         initial_task = input("Enter the initial task: ").strip()
         history.append({"role": "user", "content": initial_task})

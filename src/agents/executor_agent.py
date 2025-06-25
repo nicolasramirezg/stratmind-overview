@@ -3,14 +3,21 @@ from openai import OpenAI
 from src.utils.prompt_loader import load_prompt
 import os
 
+# Directory where the executor agent's prompt templates are stored
 PROMPT_DIR = os.path.join("prompts", "executor_agent")
 
 def build_system_prompt(task: Task) -> str:
     """
     Loads the system prompt for the LLM agent from an external .txt file.
+
+    Args:
+        task (Task): The task for which the prompt is being built.
+
+    Returns:
+        str: The system prompt string.
     """
     prompt_path = os.path.join(PROMPT_DIR, "system.txt")
-    return load_prompt(prompt_path, variables={})  # <-- FIXED
+    return load_prompt(prompt_path, variables={})
 
 def build_user_prompt(
     task: Task,
@@ -20,13 +27,25 @@ def build_user_prompt(
 ) -> str:
     """
     Loads and formats the user prompt for the LLM agent from an external .txt file.
+    Dynamically fills in sections for area, dependencies, and subtask results.
+
+    Args:
+        task (Task): The task for which the prompt is being built.
+        project_title (str): The title of the overall project/root task.
+        max_subtasks (int): Maximum number of subtask results to include.
+        max_chars_per_result (int): Maximum characters per subtask result.
+
+    Returns:
+        str: The formatted user prompt string.
     """
     prompt_path = os.path.join(PROMPT_DIR, "user.txt")
 
-    # Build dynamic sections
+    # Build area section if this is a subtask within an area
     area_section = ""
     if task.parent and task.parent.parent is not None:
         area_section = f"=== AREA ===\nTitle: {task.parent.title}\nDescription: {getattr(task.parent, 'description', '')}\n"
+
+    # Build dependency section if there are dependencies
     dependency_section = ""
     dependencies = getattr(task, "dependencies", set())
     if dependencies:
@@ -35,6 +54,8 @@ def build_user_prompt(
             dep_result = str(dep.result)[:max_chars_per_result] if hasattr(dep, "result") and dep.result else ""
             dep_lines.append(f"- Dependency: {dep.title}\n  Description: {dep.description}\n  Result: {dep_result}\n")
         dependency_section = "=== DEPENDENCY RESULTS ===\n" + "\n".join(dep_lines)
+
+    # Build subtask section if there are subtasks with results
     subtask_section = ""
     subtasks = [t for t in task.manager.tasks.values() if t.parent == task]
     if subtasks:
@@ -50,6 +71,7 @@ def build_user_prompt(
                     sub_lines.append(f"- {sub.title}: {result_text}")
         subtask_section = "=== SUBTASK RESULTS ===\n" + "\n".join(sub_lines)
 
+    # Prepare variables for prompt template
     variables = {
         "project_title": project_title,
         "area_section": area_section,
@@ -64,9 +86,16 @@ def build_user_prompt(
 
 def call_llm(system_prompt: str, user_prompt: str, model: str = "gpt-3.5-turbo") -> str:
     """
-    Calls the real LLM (OpenAI) to get a response for the given prompts.
+    Calls the OpenAI LLM to get a response for the given prompts.
+
+    Args:
+        system_prompt (str): The system prompt for the LLM.
+        user_prompt (str): The user prompt for the LLM.
+        model (str): The OpenAI model to use.
+
+    Returns:
+        str: The LLM's response, or an error message if the call fails.
     """
-    import os
     api_key = os.getenv("OPENAI_API_KEY")
     if not api_key:
         return "[LLM ERROR]: OPENAI_API_KEY environment variable not set"
@@ -86,27 +115,48 @@ def call_llm(system_prompt: str, user_prompt: str, model: str = "gpt-3.5-turbo")
 
 def simulate_external_response(prompt: str, task: Task) -> str:
     """
-    Simulates a generic response for tasks requiring external execution.
+    Simulates a generic response for tasks that require external execution.
+
+    Args:
+        prompt (str): The prompt that would be sent to the LLM.
+        task (Task): The task being executed.
+
+    Returns:
+        str: The simulated result (usually the expected output or a generic message).
     """
-    # Devuelve solo el expected_output, o una respuesta genérica limpia
     return task.expected_output or f"[Simulated result for: {task.title}]"
 
 def execute_tasks_postorder(task: Task, prompts_and_responses=None, model: str = "gpt-3.5-turbo", level: int = 0):
+    """
+    Recursively executes all subtasks in post-order (children before parent).
+    For root and area tasks (levels 0 and 1), aggregates results from subtasks.
+    For deeper levels, generates prompts and executes via LLM or simulation.
+
+    Args:
+        task (Task): The current task to execute.
+        prompts_and_responses (list): Accumulates prompts and responses for logging/export.
+        model (str): The LLM model to use.
+        level (int): Current depth in the task tree.
+
+    Returns:
+        list: List of dicts with task_id, prompt, and response for each executed task.
+    """
     if prompts_and_responses is None:
         prompts_and_responses = []
 
+    # Recursively execute all subtasks first
     subtasks = [t for t in task.manager.tasks.values() if t.parent == task]
     for sub in subtasks:
         execute_tasks_postorder(sub, prompts_and_responses, model=model, level=level+1)
 
-    # SOLO root y áreas (nivel 0 y 1) agrupan resultados, NO generan prompt propio
+    # Root and area tasks only aggregate results, do not generate their own prompt
     if level <= 1:
         if subtasks:
             task.result = {sub.title: sub.result for sub in subtasks}
         task.prompt = None
         return prompts_and_responses
 
-    # Nivel 2+ (subtasks y refinamientos): SIEMPRE generan prompt y resultado propio, aunque tengan hijos
+    # Subtasks and refinements (level 2+): always generate their own prompt and result
     system_prompt = build_system_prompt(task)
     user_prompt = build_user_prompt(
         task,

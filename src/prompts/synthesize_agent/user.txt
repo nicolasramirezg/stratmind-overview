@@ -1,0 +1,7 @@
+Analyze the following conversation and extract the final, clarified task specification
+and the expected output. Return your answer in exactly this format:
+
+Task: <the detailed task>
+Expected Output: <the expected output description. Do not leave this blank. If the user was vague, infer a reasonable output.>
+Conversation:
+${conversation}

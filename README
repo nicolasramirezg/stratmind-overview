@@ -1,4 +1,4 @@
-# StratMind 
+# StratMind
 
 Dynamic LLM-Based Architecture for Autonomous Task Decomposition and Hierarchical Intelligent Agent Generation
 
@@ -8,13 +8,14 @@ Dynamic LLM-Based Architecture for Autonomous Task Decomposition and Hierarchica
 
 ## Main Features
 
-- **Interactive Specification:** The user clarifies and details the task through a dialogue with a specialized agent.
-- **Automatic Synthesis:** The system summarizes and formalizes the task and expected output.
-- **Intelligent Decomposition:** An agent breaks down the task into specialized functional areas.
-- **Subtask Planning:** Each area generates concrete subtasks, resolving dependencies and avoiding duplication.
-- **Recursive Refinement:** Ambiguous subtasks are automatically refined until they are executable.
-- **Autonomous Execution:** Each subtask is executed (via LLM or simulation), propagating results through the tree.
-- **Structured Export:** The complete tree is exported in JSON and TXT, ready for analysis or integration.
+- **Interactive Specification:** Clarify and detail tasks through a dialogue with a specialized agent.
+- **Automatic Synthesis:** Summarize and formalize the clarified task and expected output.
+- **Intelligent Decomposition:** Break down tasks into specialized functional areas using LLM agents.
+- **Subtask Planning:** Generate concrete subtasks for each area, resolving dependencies and avoiding duplication.
+- **Recursive Refinement:** Automatically refine ambiguous subtasks until they are executable.
+- **Autonomous Execution:** Execute each subtask (via LLM or simulation), propagating results through the tree.
+- **Structured Export:** Export the complete tree in JSON and TXT, ready for analysis or integration.
+- **API and CLI:** Use interactively via CLI or integrate with other systems via a FastAPI backend.
 
 ---
 
@@ -24,12 +25,13 @@ Dynamic LLM-Based Architecture for Autonomous Task Decomposition and Hierarchica
 src/
   agents/           # LLM agents: specify, synthesize, decompose, specialist, refiner, executor
   utils/            # Task classes, exporters, serialization and prompt utilities
-  prompts/          # Plain text prompts for each agent
+  prompts/          # Plain text prompts for each agent (editable for custom behavior)
   executor/         # Subtask execution logic
   APErefiner/       # Advanced iterative refiner (experimental)
 main.py             # Interactive CLI runner
 back.py             # FastAPI backend for web/API integration
-output/             # Exported task trees
+output/             # Exported task trees (JSON/TXT)
+requirements.txt    # Python dependencies
 ```
 
 ---
@@ -63,15 +65,16 @@ output/             # Exported task trees
 python main.py
 ```
 - The system will guide you to specify, decompose, refine, and execute all subtasks.
-- At the end, it exports the task tree to `output/`.
+- At the end, it exports the task tree to the `output/` directory.
 
 ### API Mode (FastAPI)
 
 ```bash
 uvicorn back:app --reload
 ```
-- Exposes endpoints for each pipeline stage (clarify, synthesize, decompose, plan_subtasks, refine, execute, etc.).
+- Exposes endpoints for each pipeline stage (`/clarify`, `/synthesize`, `/decompose`, `/plan_subtasks`, `/refine`, `/execute`, etc.).
 - Ideal for integration with web frontends or automation.
+- Session-based: Each session tracks its own task tree and progress.
 
 ---
 
@@ -97,22 +100,19 @@ uvicorn back:app --reload
 ## Customization
 
 - **Prompts:**  
-  You can modify prompts in `src/prompts/` to adapt agent behavior.
+  Modify prompts in `src/prompts/` to adapt agent behavior for your use case.
 - **Agents:**  
-  Agents are in `src/agents/` and can be easily extended.
+  Extend or customize agents in `src/agents/` for new logic or integrations.
 - **Exporters:**  
   Export the tree in JSON (`task_exporter.py`) or TXT (`task_exporter_txt.py`).
+- **Execution:**  
+  Add new execution types or integrate with external APIs in `src/agents/executor_agent.py`.
 
 ---
 
 ## Credits
 
-Developed by Nicolás Ramírez - Jorge Martin.
-Universidad de Navarra.
-Master in Big Data Science & AI.
-
-
----
-
-## License
+Developed by Nicolás Ramírez & Jorge Martin  
+Universidad de Navarra  
+Master in Big Data Science & AI
 

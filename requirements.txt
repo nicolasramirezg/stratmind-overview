@@ -4,11 +4,11 @@ fastapi
 uvicorn[standard]
 python-dotenv>=1.0.0
 
-# Utilidades adicionales recomendadas
+# Additional recommended utilities
 tqdm>=4.66.0
 requests>=2.31.0
 orjson>=3.9.10
 loguru>=0.7.2
 
-# Si usas Streamlit para visualización local
+# If you use Streamlit for local visualization
 streamlit~=1.45.1

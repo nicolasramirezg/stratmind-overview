@@ -8,6 +8,8 @@ from src.utils.prompt_loader import load_prompt
 class TaskRefiner:
     """
     Evaluates whether a subtask should be refined and, if so, generates more specific subtasks.
+    Loads prompts from external .txt files for flexibility.
+
     Output: dict with structure:
     {
         "original": "Original subtask",
@@ -16,6 +18,13 @@ class TaskRefiner:
     """
 
     def __init__(self, model: str = "gpt-3.5-turbo", debug: bool = False):
+        """
+        Initialize the TaskRefiner with a given OpenAI model and debug flag.
+
+        Args:
+            model (str): The OpenAI model to use.
+            debug (bool): If True, prints debug information during parsing.
+        """
         api_key = os.getenv("OPENAI_API_KEY")
         if not api_key:
             raise ValueError("OPENAI_API_KEY environment variable not set")
@@ -25,9 +34,22 @@ class TaskRefiner:
 
     @staticmethod
     def _parse_response(response: Any, debug: bool = False) -> dict:
+        """
+        Parses the LLM response to extract refined subtasks.
+
+        Args:
+            response (Any): The response object from the LLM.
+            debug (bool): If True, prints debug information.
+
+        Returns:
+            dict: {
+                "original": "",
+                "refined": [ {title, description, execution_type, expected_output, dependencies}, ... ]
+            }
+        """
         content = response.choices[0].message.content.strip()
 
-        # Si no hay refinamiento, el modelo responde con "NO_REFINEMENT_NEEDED"
+        # If no refinement is needed, the model responds with "NO_REFINEMENT_NEEDED"
         if content == "NO_REFINEMENT_NEEDED":
             if debug:
                 print("No refinement needed for this subtask.")
@@ -36,7 +58,7 @@ class TaskRefiner:
                 "refined": []
             }
 
-        # Extrae bloques entre ---
+        # Extract blocks between ---
         blocks = re.findall(
             r"---\s*Title:\s*(.+?)\s*Description:\s*(.+?)\s*Execution_type:\s*(.+?)\s*Expected_output:\s*(.+?)\s*Dependencies:\s*(.+?)\s*---",
             content,
@@ -70,6 +92,27 @@ class TaskRefiner:
         existing_sibling_titles: list = None,
         return_prompt_and_response: bool = False
     ) -> dict:
+        """
+        Refines a given subtask by asking the LLM if it should be broken down further.
+        If refinement is needed, returns a list of more specific subtasks.
+
+        Args:
+            area_name (str): The name of the area the subtask belongs to.
+            global_task (str): The main/root task description.
+            subtask (str): The subtask to be refined.
+            area_description (str, optional): Description of the area.
+            parent_task_title (str, optional): Title of the parent task.
+            existing_sibling_titles (list, optional): Titles of sibling subtasks.
+            return_prompt_and_response (bool, optional): If True, also returns the prompt and raw LLM response.
+
+        Returns:
+            dict: {
+                "original": "",
+                "refined": [ {title, description, execution_type, expected_output, dependencies}, ... ]
+            }
+            or (if return_prompt_and_response is True)
+            tuple: (parsed_result, prompt, raw_response)
+        """
         variables = {
             "root_task_title": global_task,
             "root_task_description": "",
