@@ -1,0 +1,202 @@
+[
+  {
+    "base_case": "CASE01",
+    "variants": [
+      {
+        "id": "CASE01_ORIG",
+        "description": "Design a hybrid educational system for rural areas in developing countries.",
+        "expected_output": "A comprehensive plan covering pedagogical strategies, technological infrastructure, teacher training modules, accessibility solutions, and an implementation timeline tailored for rural regions."
+      },
+      {
+        "id": "CASE01_REPH",
+        "description": "Design a hybrid educational system for rural areas in developing countries. (please reformulate this idea differently without changing its intent)",
+        "expected_output": "A comprehensive plan covering pedagogical strategies, technological infrastructure, teacher training modules, accessibility solutions, and an implementation timeline tailored for rural regions."
+      },
+      {
+        "id": "CASE01_NOIS",
+        "description": "!!! Start of irrelevant info !!! Lorem ipsum text just for noise. Design a hybrid educational system for rural areas in developing countries. !!! End of irrelevant info !!!",
+        "expected_output": "A comprehensive plan covering pedagogical strategies, technological infrastructure, teacher training modules, accessibility solutions, and an implementation timeline tailored for rural regions."
+      }
+    ]
+  },
+  {
+    "base_case": "CASE02",
+    "variants": [
+      {
+        "id": "CASE02_ORIG",
+        "description": "Develop a microservices-based architecture for an educational streaming platform.",
+        "expected_output": "A modular system architecture including service separation, database strategy, APIs, scalability and fault tolerance measures, recommended tech stack, and CI/CD pipeline."
+      },
+      {
+        "id": "CASE02_REPH",
+        "description": "Develop a microservices-based architecture for an educational streaming platform. (please reformulate this idea differently without changing its intent)",
+        "expected_output": "A modular system architecture including service separation, database strategy, APIs, scalability and fault tolerance measures, recommended tech stack, and CI/CD pipeline."
+      },
+      {
+        "id": "CASE02_NOIS",
+        "description": "!!! Start of irrelevant info !!! Lorem ipsum text just for noise. Develop a microservices-based architecture for an educational streaming platform. !!! End of irrelevant info !!!",
+        "expected_output": "A modular system architecture including service separation, database strategy, APIs, scalability and fault tolerance measures, recommended tech stack, and CI/CD pipeline."
+      }
+    ]
+  },
+  {
+    "base_case": "CASE03",
+    "variants": [
+      {
+        "id": "CASE03_ORIG",
+        "description": "Formulate a national strategy to reduce food waste across the entire supply chain.",
+        "expected_output": "A multi-sector policy proposal that includes prevention strategies, incentives, stakeholder roles, measurement frameworks, and public awareness campaigns."
+      },
+      {
+        "id": "CASE03_REPH",
+        "description": "Formulate a national strategy to reduce food waste across the entire supply chain. (please reformulate this idea differently without changing its intent)",
+        "expected_output": "A multi-sector policy proposal that includes prevention strategies, incentives, stakeholder roles, measurement frameworks, and public awareness campaigns."
+      },
+      {
+        "id": "CASE03_NOIS",
+        "description": "!!! Start of irrelevant info !!! Lorem ipsum text just for noise. Formulate a national strategy to reduce food waste across the entire supply chain. !!! End of irrelevant info !!!",
+        "expected_output": "A multi-sector policy proposal that includes prevention strategies, incentives, stakeholder roles, measurement frameworks, and public awareness campaigns."
+      }
+    ]
+  },
+  {
+    "base_case": "CASE04",
+    "variants": [
+      {
+        "id": "CASE04_ORIG",
+        "description": "Organize a week-long cultural festival in a medium-sized city.",
+        "expected_output": "An operational plan with programming schedule, venue logistics, artist coordination, budget estimation, communication plan, and stakeholder engagement strategy."
+      },
+      {
+        "id": "CASE04_REPH",
+        "description": "Organize a week-long cultural festival in a medium-sized city. (please reformulate this idea differently without changing its intent)",
+        "expected_output": "An operational plan with programming schedule, venue logistics, artist coordination, budget estimation, communication plan, and stakeholder engagement strategy."
+      },
+      {
+        "id": "CASE04_NOIS",
+        "description": "!!! Start of irrelevant info !!! Lorem ipsum text just for noise. Organize a week-long cultural festival in a medium-sized city. !!! End of irrelevant info !!!",
+        "expected_output": "An operational plan with programming schedule, venue logistics, artist coordination, budget estimation, communication plan, and stakeholder engagement strategy."
+      }
+    ]
+  },
+  {
+    "base_case": "CASE05",
+    "variants": [
+      {
+        "id": "CASE05_ORIG",
+        "description": "Plan a 7-day trip to Japan focused on cultural immersion and sustainability.",
+        "expected_output": "A detailed itinerary highlighting eco-friendly transportation, traditional experiences, low-impact accommodations, and budget allocation for each day."
+      },
+      {
+        "id": "CASE05_REPH",
+        "description": "Plan a 7-day trip to Japan focused on cultural immersion and sustainability. (please reformulate this idea differently without changing its intent)",
+        "expected_output": "A detailed itinerary highlighting eco-friendly transportation, traditional experiences, low-impact accommodations, and budget allocation for each day."
+      },
+      {
+        "id": "CASE05_NOIS",
+        "description": "!!! Start of irrelevant info !!! Lorem ipsum text just for noise. Plan a 7-day trip to Japan focused on cultural immersion and sustainability. !!! End of irrelevant info !!!",
+        "expected_output": "A detailed itinerary highlighting eco-friendly transportation, traditional experiences, low-impact accommodations, and budget allocation for each day."
+      }
+    ]
+  },
+  {
+    "base_case": "CASE06",
+    "variants": [
+      {
+        "id": "CASE06_ORIG",
+        "description": "Design a national mental health awareness campaign targeting university students.",
+        "expected_output": "A phased campaign strategy including messaging, communication channels, mental health topics to address, campus activations, and methods of measuring impact."
+      },
+      {
+        "id": "CASE06_REPH",
+        "description": "Design a national mental health awareness campaign targeting university students. (please reformulate this idea differently without changing its intent)",
+        "expected_output": "A phased campaign strategy including messaging, communication channels, mental health topics to address, campus activations, and methods of measuring impact."
+      },
+      {
+        "id": "CASE06_NOIS",
+        "description": "!!! Start of irrelevant info !!! Lorem ipsum text just for noise. Design a national mental health awareness campaign targeting university students. !!! End of irrelevant info !!!",
+        "expected_output": "A phased campaign strategy including messaging, communication channels, mental health topics to address, campus activations, and methods of measuring impact."
+      }
+    ]
+  },
+  {
+    "base_case": "CASE07",
+    "variants": [
+      {
+        "id": "CASE07_ORIG",
+        "description": "Build a virtual assistant to help high school students learn mathematics.",
+        "expected_output": "A functional specification for the assistant including core features, interaction flow, topics covered, user feedback mechanisms, and platform integration."
+      },
+      {
+        "id": "CASE07_REPH",
+        "description": "Build a virtual assistant to help high school students learn mathematics. (please reformulate this idea differently without changing its intent)",
+        "expected_output": "A functional specification for the assistant including core features, interaction flow, topics covered, user feedback mechanisms, and platform integration."
+      },
+      {
+        "id": "CASE07_NOIS",
+        "description": "!!! Start of irrelevant info !!! Lorem ipsum text just for noise. Build a virtual assistant to help high school students learn mathematics. !!! End of irrelevant info !!!",
+        "expected_output": "A functional specification for the assistant including core features, interaction flow, topics covered, user feedback mechanisms, and platform integration."
+      }
+    ]
+  },
+  {
+    "base_case": "CASE08",
+    "variants": [
+      {
+        "id": "CASE08_ORIG",
+        "description": "Write an argumentative essay about the impact of artificial intelligence on employment.",
+        "expected_output": "A structured essay outline with thesis statement, three main arguments with supporting evidence, counterargument, and a conclusion."
+      },
+      {
+        "id": "CASE08_REPH",
+        "description": "Write an argumentative essay about the impact of artificial intelligence on employment. (please reformulate this idea differently without changing its intent)",
+        "expected_output": "A structured essay outline with thesis statement, three main arguments with supporting evidence, counterargument, and a conclusion."
+      },
+      {
+        "id": "CASE08_NOIS",
+        "description": "!!! Start of irrelevant info !!! Lorem ipsum text just for noise. Write an argumentative essay about the impact of artificial intelligence on employment. !!! End of irrelevant info !!!",
+        "expected_output": "A structured essay outline with thesis statement, three main arguments with supporting evidence, counterargument, and a conclusion."
+      }
+    ]
+  },
+  {
+    "base_case": "CASE09",
+    "variants": [
+      {
+        "id": "CASE09_ORIG",
+        "description": "Teach a child how to make toast safely.",
+        "expected_output": "A simple step-by-step instruction list using safe language, including required items, actions, and safety warnings."
+      },
+      {
+        "id": "CASE09_REPH",
+        "description": "Teach a child how to make toast safely. (please reformulate this idea differently without changing its intent)",
+        "expected_output": "A simple step-by-step instruction list using safe language, including required items, actions, and safety warnings."
+      },
+      {
+        "id": "CASE09_NOIS",
+        "description": "!!! Start of irrelevant info !!! Lorem ipsum text just for noise. Teach a child how to make toast safely. !!! End of irrelevant info !!!",
+        "expected_output": "A simple step-by-step instruction list using safe language, including required items, actions, and safety warnings."
+      }
+    ]
+  },
+  {
+    "base_case": "CASE10",
+    "variants": [
+      {
+        "id": "CASE10_ORIG",
+        "description": "Propose a global solution to eradicate extreme poverty.",
+        "expected_output": "A high-level policy and development plan integrating economic models, social programs, international cooperation, and sustainability principles."
+      },
+      {
+        "id": "CASE10_REPH",
+        "description": "Propose a global solution to eradicate extreme poverty. (please reformulate this idea differently without changing its intent)",
+        "expected_output": "A high-level policy and development plan integrating economic models, social programs, international cooperation, and sustainability principles."
+      },
+      {
+        "id": "CASE10_NOIS",
+        "description": "!!! Start of irrelevant info !!! Lorem ipsum text just for noise. Propose a global solution to eradicate extreme poverty. !!! End of irrelevant info !!!",
+        "expected_output": "A high-level policy and development plan integrating economic models, social programs, international cooperation, and sustainability principles."
+      }
+    ]
+  }
+]

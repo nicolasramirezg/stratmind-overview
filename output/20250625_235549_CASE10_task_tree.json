@@ -1,0 +1,440 @@
+{
+  "task_id": "5878cd85-00f9-429b-bc12-c67ea2afd97b",
+  "title": "Propose a global solution to eradicate extreme poverty.",
+  "description": "Propose a global solution to eradicate extreme poverty.",
+  "expected_output": "A high-level policy and development plan integrating economic models, social programs, international cooperation, and sustainability principles.",
+  "area": null,
+  "responsibilities": [],
+  "execution_type": "llm",
+  "parent": null,
+  "dependencies": [],
+  "subtasks": [
+    {
+      "task_id": "efb908f2-8c16-4982-84b9-aa895ec27c2f",
+      "title": "Economic Modeling",
+      "description": "Developing economic models to understand the root causes of poverty, identify key drivers of economic growth, and assess the impact of various interventions.",
+      "expected_output": "Data-driven insights into the economic dynamics of poverty and growth patterns.",
+      "area": "Economic Modeling",
+      "responsibilities": [
+        "Conducting macroeconomic analysis to identify structural barriers to poverty eradication.",
+        "Simulating the effects of different policy interventions on poverty reduction."
+      ],
+      "execution_type": "llm",
+      "parent": "5878cd85-00f9-429b-bc12-c67ea2afd97b",
+      "dependencies": [],
+      "subtasks": [
+        {
+          "task_id": "bc3dc80d-12cf-4549-9809-3253a8bd46c8",
+          "title": "Data Collection and Analysis",
+          "description": "Collect relevant economic data and analyze it to understand poverty trends and economic growth drivers.",
+          "expected_output": "Data-driven insights into poverty dynamics and economic growth patterns.",
+          "area": "Economic Modeling",
+          "responsibilities": [],
+          "execution_type": "llm",
+          "parent": "efb908f2-8c16-4982-84b9-aa895ec27c2f",
+          "dependencies": [],
+          "subtasks": [],
+          "prompt": {
+            "system": "You are an expert autonomous agent collaborating in a multi-step project.\nYour responsibility is to complete your assigned task using all available context and previous results.\nAlways act as the main expert for your task: be decisive, avoid repetition, and provide clear, actionable outputs.\nDo NOT include any explanations, comments, or introductory phrases in your output.",
+            "user": "=== PROJECT ===\nTitle: Propose a global solution to eradicate extreme poverty.\n\n\n=== AREA ===\nTitle: Economic Modeling\nDescription: Developing economic models to understand the root causes of poverty, identify key drivers of economic growth, and assess the impact of various interventions.\n\n\n\n\n=== CURRENT TASK ===\nTitle: Data Collection and Analysis\nDescription: Collect relevant economic data and analyze it to understand poverty trends and economic growth drivers.\nExpected Output: Data-driven insights into poverty dynamics and economic growth patterns.\n\n\n\n=== INSTRUCTION ===\nYou are responsible for completing the current task as part of the overall project.\nUse all available context, including dependency and previous results, but present your answer as your own expert recommendation or decision.\nDo NOT use phrases like 'Based on previous research', 'According to earlier results', or any introductory statements.\nRespond directly and professionally, as if you are the main expert responsible for this part of the project.\nIf the task requires an external system or manual intervention, specify this clearly."
+          },
+          "result": "I will collect relevant economic data on poverty trends and economic growth drivers. Then, I will analyze the data to provide data-driven insights into poverty dynamics and economic growth patterns."
+        },
+        {
+          "task_id": "1dc93e6f-66d9-477b-9826-e0f0c9d04fb9",
+          "title": "Economic Modeling and Simulation",
+          "description": "Develop economic models to simulate the impact of different interventions on poverty reduction and economic growth.",
+          "expected_output": "Simulated scenarios showing the effects of policy interventions on poverty eradication.",
+          "area": "Economic Modeling",
+          "responsibilities": [],
+          "execution_type": "llm",
+          "parent": "efb908f2-8c16-4982-84b9-aa895ec27c2f",
+          "dependencies": [
+            "bc3dc80d-12cf-4549-9809-3253a8bd46c8"
+          ],
+          "subtasks": [],
+          "prompt": {
+            "system": "You are an expert autonomous agent collaborating in a multi-step project.\nYour responsibility is to complete your assigned task using all available context and previous results.\nAlways act as the main expert for your task: be decisive, avoid repetition, and provide clear, actionable outputs.\nDo NOT include any explanations, comments, or introductory phrases in your output.",
+            "user": "=== PROJECT ===\nTitle: Propose a global solution to eradicate extreme poverty.\n\n\n=== AREA ===\nTitle: Economic Modeling\nDescription: Developing economic models to understand the root causes of poverty, identify key drivers of economic growth, and assess the impact of various interventions.\n\n\n=== DEPENDENCY RESULTS ===\n- Dependency: Data Collection and Analysis\n  Description: Collect relevant economic data and analyze it to understand poverty trends and economic growth drivers.\n  Result: I will collect relevant economic data on poverty trends and economic growth drivers. Then, I will analyze the data to provide data-driven insights into poverty dynamics and economic growth patterns.\n\n\n=== CURRENT TASK ===\nTitle: Economic Modeling and Simulation\nDescription: Develop economic models to simulate the impact of different interventions on poverty reduction and economic growth.\nExpected Output: Simulated scenarios showing the effects of policy interventions on poverty eradication.\n\n\n\n=== INSTRUCTION ===\nYou are responsible for completing the current task as part of the overall project.\nUse all available context, including dependency and previous results, but present your answer as your own expert recommendation or decision.\nDo NOT use phrases like 'Based on previous research', 'According to earlier results', or any introductory statements.\nRespond directly and professionally, as if you are the main expert responsible for this part of the project.\nIf the task requires an external system or manual intervention, specify this clearly."
+          },
+          "result": "Develop economic models to simulate the impact of different interventions on poverty reduction and economic growth. Provide simulated scenarios showing the effects of policy interventions on poverty eradication."
+        },
+        {
+          "task_id": "a9b7ecc2-e6cd-4468-92ec-786f643ae3ba",
+          "title": "Structural Barrier Identification",
+          "description": "Conduct macroeconomic analysis to identify structural barriers hindering poverty eradication.",
+          "expected_output": "Identification of key obstacles preventing poverty reduction.",
+          "area": "Economic Modeling",
+          "responsibilities": [],
+          "execution_type": "llm",
+          "parent": "efb908f2-8c16-4982-84b9-aa895ec27c2f",
+          "dependencies": [
+            "bc3dc80d-12cf-4549-9809-3253a8bd46c8"
+          ],
+          "subtasks": [],
+          "prompt": {
+            "system": "You are an expert autonomous agent collaborating in a multi-step project.\nYour responsibility is to complete your assigned task using all available context and previous results.\nAlways act as the main expert for your task: be decisive, avoid repetition, and provide clear, actionable outputs.\nDo NOT include any explanations, comments, or introductory phrases in your output.",
+            "user": "=== PROJECT ===\nTitle: Propose a global solution to eradicate extreme poverty.\n\n\n=== AREA ===\nTitle: Economic Modeling\nDescription: Developing economic models to understand the root causes of poverty, identify key drivers of economic growth, and assess the impact of various interventions.\n\n\n=== DEPENDENCY RESULTS ===\n- Dependency: Data Collection and Analysis\n  Description: Collect relevant economic data and analyze it to understand poverty trends and economic growth drivers.\n  Result: I will collect relevant economic data on poverty trends and economic growth drivers. Then, I will analyze the data to provide data-driven insights into poverty dynamics and economic growth patterns.\n\n\n=== CURRENT TASK ===\nTitle: Structural Barrier Identification\nDescription: Conduct macroeconomic analysis to identify structural barriers hindering poverty eradication.\nExpected Output: Identification of key obstacles preventing poverty reduction.\n\n\n\n=== INSTRUCTION ===\nYou are responsible for completing the current task as part of the overall project.\nUse all available context, including dependency and previous results, but present your answer as your own expert recommendation or decision.\nDo NOT use phrases like 'Based on previous research', 'According to earlier results', or any introductory statements.\nRespond directly and professionally, as if you are the main expert responsible for this part of the project.\nIf the task requires an external system or manual intervention, specify this clearly."
+          },
+          "result": "Conduct a thorough macroeconomic analysis to identify key structural barriers hindering poverty eradication. Focus on understanding how these barriers impact poverty dynamics and impede sustainable economic growth. Provide a detailed list of the identified obstacles along with their specific implications for poverty reduction efforts."
+        }
+      ],
+      "result": {
+        "Data Collection and Analysis": "I will collect relevant economic data on poverty trends and economic growth drivers. Then, I will analyze the data to provide data-driven insights into poverty dynamics and economic growth patterns.",
+        "Economic Modeling and Simulation": "Develop economic models to simulate the impact of different interventions on poverty reduction and economic growth. Provide simulated scenarios showing the effects of policy interventions on poverty eradication.",
+        "Structural Barrier Identification": "Conduct a thorough macroeconomic analysis to identify key structural barriers hindering poverty eradication. Focus on understanding how these barriers impact poverty dynamics and impede sustainable economic growth. Provide a detailed list of the identified obstacles along with their specific implications for poverty reduction efforts."
+      }
+    },
+    {
+      "task_id": "30c37adf-4984-4d00-b177-54a1a9f45056",
+      "title": "Social Programs Design",
+      "description": "Designing and implementing social programs that target the most vulnerable populations, provide essential services, and promote social inclusion.",
+      "expected_output": "Tailored social programs that address specific needs of different communities and demographics.",
+      "area": "Social Programs Design",
+      "responsibilities": [
+        "Conducting needs assessments to identify the most pressing social challenges.",
+        "Designing programs that offer access to education, healthcare, housing, and other essential services."
+      ],
+      "execution_type": "llm",
+      "parent": "5878cd85-00f9-429b-bc12-c67ea2afd97b",
+      "dependencies": [],
+      "subtasks": [
+        {
+          "task_id": "cdfa838b-23e4-4275-b7dd-4dee46bd3ce3",
+          "title": "Needs Assessment",
+          "description": "Identify the most pressing social challenges and needs of the target populations.",
+          "expected_output": "Comprehensive report outlining the identified social challenges and needs.",
+          "area": "Social Programs Design",
+          "responsibilities": [],
+          "execution_type": "llm",
+          "parent": "30c37adf-4984-4d00-b177-54a1a9f45056",
+          "dependencies": [],
+          "subtasks": [],
+          "prompt": {
+            "system": "You are an expert autonomous agent collaborating in a multi-step project.\nYour responsibility is to complete your assigned task using all available context and previous results.\nAlways act as the main expert for your task: be decisive, avoid repetition, and provide clear, actionable outputs.\nDo NOT include any explanations, comments, or introductory phrases in your output.",
+            "user": "=== PROJECT ===\nTitle: Propose a global solution to eradicate extreme poverty.\n\n\n=== AREA ===\nTitle: Social Programs Design\nDescription: Designing and implementing social programs that target the most vulnerable populations, provide essential services, and promote social inclusion.\n\n\n\n\n=== CURRENT TASK ===\nTitle: Needs Assessment\nDescription: Identify the most pressing social challenges and needs of the target populations.\nExpected Output: Comprehensive report outlining the identified social challenges and needs.\n\n\n\n=== INSTRUCTION ===\nYou are responsible for completing the current task as part of the overall project.\nUse all available context, including dependency and previous results, but present your answer as your own expert recommendation or decision.\nDo NOT use phrases like 'Based on previous research', 'According to earlier results', or any introductory statements.\nRespond directly and professionally, as if you are the main expert responsible for this part of the project.\nIf the task requires an external system or manual intervention, specify this clearly."
+          },
+          "result": "Compile a comprehensive report outlining the identified social challenges and needs of the target populations for the social programs design. Utilize available data, research, and insights to provide a detailed overview of the pressing issues that need to be addressed to effectively combat extreme poverty. Ensure the report covers a wide range of challenges and needs to inform the development of impactful social programs."
+        },
+        {
+          "task_id": "96a8c6a8-8c89-4e6f-a942-88cf6173f968",
+          "title": "Program Design",
+          "description": "Develop tailored social programs that address the identified needs of different communities and demographics.",
+          "expected_output": "Detailed program plans including objectives, activities, and target outcomes.",
+          "area": "Social Programs Design",
+          "responsibilities": [],
+          "execution_type": "llm",
+          "parent": "30c37adf-4984-4d00-b177-54a1a9f45056",
+          "dependencies": [
+            "cdfa838b-23e4-4275-b7dd-4dee46bd3ce3"
+          ],
+          "subtasks": [],
+          "prompt": {
+            "system": "You are an expert autonomous agent collaborating in a multi-step project.\nYour responsibility is to complete your assigned task using all available context and previous results.\nAlways act as the main expert for your task: be decisive, avoid repetition, and provide clear, actionable outputs.\nDo NOT include any explanations, comments, or introductory phrases in your output.",
+            "user": "=== PROJECT ===\nTitle: Propose a global solution to eradicate extreme poverty.\n\n\n=== AREA ===\nTitle: Social Programs Design\nDescription: Designing and implementing social programs that target the most vulnerable populations, provide essential services, and promote social inclusion.\n\n\n=== DEPENDENCY RESULTS ===\n- Dependency: Needs Assessment\n  Description: Identify the most pressing social challenges and needs of the target populations.\n  Result: Compile a comprehensive report outlining the identified social challenges and needs of the target populations for the social programs design. Utilize available data, research, and insights to provide a detailed overview of the pressing issues that need to be addressed to effectively combat extreme poverty. Ensure the report covers a wide range of challenges and needs to inform the development of impactful social programs.\n\n\n=== CURRENT TASK ===\nTitle: Program Design\nDescription: Develop tailored social programs that address the identified needs of different communities and demographics.\nExpected Output: Detailed program plans including objectives, activities, and target outcomes.\n\n\n\n=== INSTRUCTION ===\nYou are responsible for completing the current task as part of the overall project.\nUse all available context, including dependency and previous results, but present your answer as your own expert recommendation or decision.\nDo NOT use phrases like 'Based on previous research', 'According to earlier results', or any introductory statements.\nRespond directly and professionally, as if you are the main expert responsible for this part of the project.\nIf the task requires an external system or manual intervention, specify this clearly."
+          },
+          "result": "Developing tailored social programs to address the identified needs of different communities and demographics is crucial in eradicating extreme poverty. The program plans should include clear objectives, detailed activities, and specific target outcomes to ensure effectiveness and impact. Ensure that the programs are designed to provide essential services, promote social inclusion, and address the root causes of poverty. Consider the unique challenges and characteristics of each target population to create programs that are relevant and impactful. Be comprehensive in your approach to maximize the potential for success in combating extreme poverty."
+        },
+        {
+          "task_id": "d49b6d17-7c3c-4a7b-a453-dbbbf3cd53f6",
+          "title": "Stakeholder Engagement",
+          "description": "Engage with key stakeholders including community members, NGOs, and government agencies to gather input and ensure program relevance.",
+          "expected_output": "Stakeholder engagement report with feedback and recommendations incorporated into program design.",
+          "area": "Social Programs Design",
+          "responsibilities": [],
+          "execution_type": "llm",
+          "parent": "30c37adf-4984-4d00-b177-54a1a9f45056",
+          "dependencies": [
+            "96a8c6a8-8c89-4e6f-a942-88cf6173f968"
+          ],
+          "subtasks": [],
+          "prompt": {
+            "system": "You are an expert autonomous agent collaborating in a multi-step project.\nYour responsibility is to complete your assigned task using all available context and previous results.\nAlways act as the main expert for your task: be decisive, avoid repetition, and provide clear, actionable outputs.\nDo NOT include any explanations, comments, or introductory phrases in your output.",
+            "user": "=== PROJECT ===\nTitle: Propose a global solution to eradicate extreme poverty.\n\n\n=== AREA ===\nTitle: Social Programs Design\nDescription: Designing and implementing social programs that target the most vulnerable populations, provide essential services, and promote social inclusion.\n\n\n=== DEPENDENCY RESULTS ===\n- Dependency: Program Design\n  Description: Develop tailored social programs that address the identified needs of different communities and demographics.\n  Result: Developing tailored social programs to address the identified needs of different communities and demographics is crucial in eradicating extreme poverty. The program plans should include clear objectives, detailed activities, and specific target outcomes to ensure effectiveness and impact. Ensure that the programs are designed to provide essential services, promote social inclusion, and address the root causes of poverty. Consider the unique challenges and characteristics of each target population to create programs that are relevant and impactful. Be comprehensive in your approach to maximize the potential for success in combating extreme poverty.\n\n\n=== CURRENT TASK ===\nTitle: Stakeholder Engagement\nDescription: Engage with key stakeholders including community members, NGOs, and government agencies to gather input and ensure program relevance.\nExpected Output: Stakeholder engagement report with feedback and recommendations incorporated into program design.\n\n\n\n=== INSTRUCTION ===\nYou are responsible for completing the current task as part of the overall project.\nUse all available context, including dependency and previous results, but present your answer as your own expert recommendation or decision.\nDo NOT use phrases like 'Based on previous research', 'According to earlier results', or any introductory statements.\nRespond directly and professionally, as if you are the main expert responsible for this part of the project.\nIf the task requires an external system or manual intervention, specify this clearly."
+          },
+          "result": "Engage with key stakeholders, including community members, NGOs, and government agencies, to gather input and ensure program relevance. Incorporate their feedback and recommendations into the program design to tailor social programs effectively. Provide a stakeholder engagement report outlining the feedback received and how it has been integrated into the program design to enhance its impact on eradicating extreme poverty."
+        },
+        {
+          "task_id": "b3e46812-f10a-4c88-b6eb-0b9cc4b32547",
+          "title": "Resource Allocation",
+          "description": "Determine the allocation of resources including budget, personnel, and materials needed for program implementation.",
+          "expected_output": "Resource allocation plan detailing the distribution of resources for each program component.",
+          "area": "Social Programs Design",
+          "responsibilities": [],
+          "execution_type": "llm",
+          "parent": "30c37adf-4984-4d00-b177-54a1a9f45056",
+          "dependencies": [
+            "96a8c6a8-8c89-4e6f-a942-88cf6173f968"
+          ],
+          "subtasks": [],
+          "prompt": {
+            "system": "You are an expert autonomous agent collaborating in a multi-step project.\nYour responsibility is to complete your assigned task using all available context and previous results.\nAlways act as the main expert for your task: be decisive, avoid repetition, and provide clear, actionable outputs.\nDo NOT include any explanations, comments, or introductory phrases in your output.",
+            "user": "=== PROJECT ===\nTitle: Propose a global solution to eradicate extreme poverty.\n\n\n=== AREA ===\nTitle: Social Programs Design\nDescription: Designing and implementing social programs that target the most vulnerable populations, provide essential services, and promote social inclusion.\n\n\n=== DEPENDENCY RESULTS ===\n- Dependency: Program Design\n  Description: Develop tailored social programs that address the identified needs of different communities and demographics.\n  Result: Developing tailored social programs to address the identified needs of different communities and demographics is crucial in eradicating extreme poverty. The program plans should include clear objectives, detailed activities, and specific target outcomes to ensure effectiveness and impact. Ensure that the programs are designed to provide essential services, promote social inclusion, and address the root causes of poverty. Consider the unique challenges and characteristics of each target population to create programs that are relevant and impactful. Be comprehensive in your approach to maximize the potential for success in combating extreme poverty.\n\n\n=== CURRENT TASK ===\nTitle: Resource Allocation\nDescription: Determine the allocation of resources including budget, personnel, and materials needed for program implementation.\nExpected Output: Resource allocation plan detailing the distribution of resources for each program component.\n\n\n\n=== INSTRUCTION ===\nYou are responsible for completing the current task as part of the overall project.\nUse all available context, including dependency and previous results, but present your answer as your own expert recommendation or decision.\nDo NOT use phrases like 'Based on previous research', 'According to earlier results', or any introductory statements.\nRespond directly and professionally, as if you are the main expert responsible for this part of the project.\nIf the task requires an external system or manual intervention, specify this clearly."
+          },
+          "result": "Allocate resources based on the identified needs and objectives of each tailored social program. Develop a resource allocation plan that outlines the distribution of budget, personnel, and materials for each program component. Ensure that resources are allocated efficiently to maximize impact and effectiveness in eradicating extreme poverty. Consider the specific requirements of each program to address the root causes of poverty and promote social inclusion. Be strategic in resource allocation to support the successful implementation of the social programs."
+        }
+      ],
+      "result": {
+        "Needs Assessment": "Compile a comprehensive report outlining the identified social challenges and needs of the target populations for the social programs design. Utilize available data, research, and insights to provide a detailed overview of the pressing issues that need to be addressed to effectively combat extreme poverty. Ensure the report covers a wide range of challenges and needs to inform the development of impactful social programs.",
+        "Program Design": "Developing tailored social programs to address the identified needs of different communities and demographics is crucial in eradicating extreme poverty. The program plans should include clear objectives, detailed activities, and specific target outcomes to ensure effectiveness and impact. Ensure that the programs are designed to provide essential services, promote social inclusion, and address the root causes of poverty. Consider the unique challenges and characteristics of each target population to create programs that are relevant and impactful. Be comprehensive in your approach to maximize the potential for success in combating extreme poverty.",
+        "Stakeholder Engagement": "Engage with key stakeholders, including community members, NGOs, and government agencies, to gather input and ensure program relevance. Incorporate their feedback and recommendations into the program design to tailor social programs effectively. Provide a stakeholder engagement report outlining the feedback received and how it has been integrated into the program design to enhance its impact on eradicating extreme poverty.",
+        "Resource Allocation": "Allocate resources based on the identified needs and objectives of each tailored social program. Develop a resource allocation plan that outlines the distribution of budget, personnel, and materials for each program component. Ensure that resources are allocated efficiently to maximize impact and effectiveness in eradicating extreme poverty. Consider the specific requirements of each program to address the root causes of poverty and promote social inclusion. Be strategic in resource allocation to support the successful implementation of the social programs."
+      }
+    },
+    {
+      "task_id": "91824727-d3e9-4116-a52f-937f8a295227",
+      "title": "International Cooperation",
+      "description": "Facilitating collaboration and coordination among countries, international organizations, and stakeholders to mobilize resources and expertise for poverty eradication.",
+      "expected_output": "Multilateral agreements, partnerships, and joint initiatives to address poverty at a global scale.",
+      "area": "International Cooperation",
+      "responsibilities": [
+        "Negotiating agreements on financial assistance, technology transfer, and capacity-building.",
+        "Coordinating efforts to align national policies with global poverty reduction goals."
+      ],
+      "execution_type": "llm",
+      "parent": "5878cd85-00f9-429b-bc12-c67ea2afd97b",
+      "dependencies": [],
+      "subtasks": [
+        {
+          "task_id": "35e6f34f-c0d4-4ac4-93a1-a6acf5e8490d",
+          "title": "Multilateral Agreement Negotiation",
+          "description": "Negotiate agreements among countries and international organizations on financial assistance, technology transfer, and capacity-building for poverty eradication.",
+          "expected_output": "Signed multilateral agreements outlining commitments for poverty eradication efforts.",
+          "area": "International Cooperation",
+          "responsibilities": [],
+          "execution_type": "llm",
+          "parent": "91824727-d3e9-4116-a52f-937f8a295227",
+          "dependencies": [],
+          "subtasks": [],
+          "prompt": {
+            "system": "You are an expert autonomous agent collaborating in a multi-step project.\nYour responsibility is to complete your assigned task using all available context and previous results.\nAlways act as the main expert for your task: be decisive, avoid repetition, and provide clear, actionable outputs.\nDo NOT include any explanations, comments, or introductory phrases in your output.",
+            "user": "=== PROJECT ===\nTitle: Propose a global solution to eradicate extreme poverty.\n\n\n=== AREA ===\nTitle: International Cooperation\nDescription: Facilitating collaboration and coordination among countries, international organizations, and stakeholders to mobilize resources and expertise for poverty eradication.\n\n\n\n\n=== CURRENT TASK ===\nTitle: Multilateral Agreement Negotiation\nDescription: Negotiate agreements among countries and international organizations on financial assistance, technology transfer, and capacity-building for poverty eradication.\nExpected Output: Signed multilateral agreements outlining commitments for poverty eradication efforts.\n\n\n\n=== INSTRUCTION ===\nYou are responsible for completing the current task as part of the overall project.\nUse all available context, including dependency and previous results, but present your answer as your own expert recommendation or decision.\nDo NOT use phrases like 'Based on previous research', 'According to earlier results', or any introductory statements.\nRespond directly and professionally, as if you are the main expert responsible for this part of the project.\nIf the task requires an external system or manual intervention, specify this clearly."
+          },
+          "result": "Negotiate and finalize multilateral agreements among countries and international organizations on financial assistance, technology transfer, and capacity-building for poverty eradication. Ensure that the agreements are comprehensive, clear, and include specific commitments from each party. Coordinate the signing process and secure the necessary endorsements to formalize the agreements."
+        },
+        {
+          "task_id": "992cb96b-f533-434d-b586-e0a652c5a5aa",
+          "title": "Stakeholder Coordination",
+          "description": "Coordinate efforts to align national policies with global poverty reduction goals by engaging with various stakeholders including governments, NGOs, and private sector entities.",
+          "expected_output": "Coordinated stakeholder actions supporting poverty eradication initiatives.",
+          "area": "International Cooperation",
+          "responsibilities": [],
+          "execution_type": "llm",
+          "parent": "91824727-d3e9-4116-a52f-937f8a295227",
+          "dependencies": [],
+          "subtasks": [],
+          "prompt": {
+            "system": "You are an expert autonomous agent collaborating in a multi-step project.\nYour responsibility is to complete your assigned task using all available context and previous results.\nAlways act as the main expert for your task: be decisive, avoid repetition, and provide clear, actionable outputs.\nDo NOT include any explanations, comments, or introductory phrases in your output.",
+            "user": "=== PROJECT ===\nTitle: Propose a global solution to eradicate extreme poverty.\n\n\n=== AREA ===\nTitle: International Cooperation\nDescription: Facilitating collaboration and coordination among countries, international organizations, and stakeholders to mobilize resources and expertise for poverty eradication.\n\n\n\n\n=== CURRENT TASK ===\nTitle: Stakeholder Coordination\nDescription: Coordinate efforts to align national policies with global poverty reduction goals by engaging with various stakeholders including governments, NGOs, and private sector entities.\nExpected Output: Coordinated stakeholder actions supporting poverty eradication initiatives.\n\n\n\n=== INSTRUCTION ===\nYou are responsible for completing the current task as part of the overall project.\nUse all available context, including dependency and previous results, but present your answer as your own expert recommendation or decision.\nDo NOT use phrases like 'Based on previous research', 'According to earlier results', or any introductory statements.\nRespond directly and professionally, as if you are the main expert responsible for this part of the project.\nIf the task requires an external system or manual intervention, specify this clearly."
+          },
+          "result": "Develop a Stakeholder Coordination Framework that includes regular meetings, progress tracking mechanisms, and communication channels to ensure alignment of national policies with global poverty reduction goals. Establish working groups comprising representatives from governments, NGOs, and private sector entities to collaborate on specific initiatives and monitor progress. Implement a reporting system to track stakeholder actions and outcomes, fostering accountability and transparency in the poverty eradication efforts."
+        },
+        {
+          "task_id": "1b0e88eb-2e0c-42b6-a53c-4c503c2b3b23",
+          "title": "Resource Mobilization Strategy Development",
+          "description": "Develop a strategy to mobilize resources (financial, technological, expertise) from various sources to support poverty eradication programs.",
+          "expected_output": "Comprehensive strategy outlining resource mobilization mechanisms for poverty eradication.",
+          "area": "International Cooperation",
+          "responsibilities": [],
+          "execution_type": "llm",
+          "parent": "91824727-d3e9-4116-a52f-937f8a295227",
+          "dependencies": [],
+          "subtasks": [],
+          "prompt": {
+            "system": "You are an expert autonomous agent collaborating in a multi-step project.\nYour responsibility is to complete your assigned task using all available context and previous results.\nAlways act as the main expert for your task: be decisive, avoid repetition, and provide clear, actionable outputs.\nDo NOT include any explanations, comments, or introductory phrases in your output.",
+            "user": "=== PROJECT ===\nTitle: Propose a global solution to eradicate extreme poverty.\n\n\n=== AREA ===\nTitle: International Cooperation\nDescription: Facilitating collaboration and coordination among countries, international organizations, and stakeholders to mobilize resources and expertise for poverty eradication.\n\n\n\n\n=== CURRENT TASK ===\nTitle: Resource Mobilization Strategy Development\nDescription: Develop a strategy to mobilize resources (financial, technological, expertise) from various sources to support poverty eradication programs.\nExpected Output: Comprehensive strategy outlining resource mobilization mechanisms for poverty eradication.\n\n\n\n=== INSTRUCTION ===\nYou are responsible for completing the current task as part of the overall project.\nUse all available context, including dependency and previous results, but present your answer as your own expert recommendation or decision.\nDo NOT use phrases like 'Based on previous research', 'According to earlier results', or any introductory statements.\nRespond directly and professionally, as if you are the main expert responsible for this part of the project.\nIf the task requires an external system or manual intervention, specify this clearly."
+          },
+          "result": "Develop a comprehensive resource mobilization strategy for poverty eradication by focusing on the following key mechanisms:\n\n1. Establishing partnerships with governments, international organizations, and NGOs to pool financial resources and expertise.\n2. Creating innovative financing mechanisms such as impact investment funds, social impact bonds, and public-private partnerships.\n3. Leveraging technology for crowdfunding campaigns, digital payment platforms, and online fundraising initiatives.\n4. Encouraging corporate social responsibility through partnerships with businesses for funding and in-kind contributions.\n5. Mobilizing resources through multilateral development banks, donor countries, and philanthropic foundations.\n6. Conducting capacity-building programs to enhance local communities' ability to generate income and sustain poverty alleviation efforts."
+        }
+      ],
+      "result": {
+        "Multilateral Agreement Negotiation": "Negotiate and finalize multilateral agreements among countries and international organizations on financial assistance, technology transfer, and capacity-building for poverty eradication. Ensure that the agreements are comprehensive, clear, and include specific commitments from each party. Coordinate the signing process and secure the necessary endorsements to formalize the agreements.",
+        "Stakeholder Coordination": "Develop a Stakeholder Coordination Framework that includes regular meetings, progress tracking mechanisms, and communication channels to ensure alignment of national policies with global poverty reduction goals. Establish working groups comprising representatives from governments, NGOs, and private sector entities to collaborate on specific initiatives and monitor progress. Implement a reporting system to track stakeholder actions and outcomes, fostering accountability and transparency in the poverty eradication efforts.",
+        "Resource Mobilization Strategy Development": "Develop a comprehensive resource mobilization strategy for poverty eradication by focusing on the following key mechanisms:\n\n1. Establishing partnerships with governments, international organizations, and NGOs to pool financial resources and expertise.\n2. Creating innovative financing mechanisms such as impact investment funds, social impact bonds, and public-private partnerships.\n3. Leveraging technology for crowdfunding campaigns, digital payment platforms, and online fundraising initiatives.\n4. Encouraging corporate social responsibility through partnerships with businesses for funding and in-kind contributions.\n5. Mobilizing resources through multilateral development banks, donor countries, and philanthropic foundations.\n6. Conducting capacity-building programs to enhance local communities' ability to generate income and sustain poverty alleviation efforts."
+      }
+    },
+    {
+      "task_id": "c77b93f2-fc9d-408d-8931-d0dde6eaac4b",
+      "title": "Sustainability Integration",
+      "description": "Integrating sustainability principles into poverty eradication strategies to ensure long-term impact and environmental resilience.",
+      "expected_output": "Sustainable development plans that balance economic growth with environmental conservation and social equity.",
+      "area": "Sustainability Integration",
+      "responsibilities": [
+        "Assessing the environmental impact of poverty alleviation programs.",
+        "Promoting sustainable practices in sectors such as agriculture, energy, and infrastructure."
+      ],
+      "execution_type": "llm",
+      "parent": "5878cd85-00f9-429b-bc12-c67ea2afd97b",
+      "dependencies": [],
+      "subtasks": [
+        {
+          "task_id": "721ec1b1-207f-4611-9556-2ec8ab9ace9c",
+          "title": "Environmental Impact Assessment",
+          "description": "Evaluate the environmental consequences of poverty alleviation initiatives.",
+          "expected_output": "Comprehensive report on the environmental impact of poverty alleviation programs.",
+          "area": "Sustainability Integration",
+          "responsibilities": [],
+          "execution_type": "llm",
+          "parent": "c77b93f2-fc9d-408d-8931-d0dde6eaac4b",
+          "dependencies": [],
+          "subtasks": [],
+          "prompt": {
+            "system": "You are an expert autonomous agent collaborating in a multi-step project.\nYour responsibility is to complete your assigned task using all available context and previous results.\nAlways act as the main expert for your task: be decisive, avoid repetition, and provide clear, actionable outputs.\nDo NOT include any explanations, comments, or introductory phrases in your output.",
+            "user": "=== PROJECT ===\nTitle: Propose a global solution to eradicate extreme poverty.\n\n\n=== AREA ===\nTitle: Sustainability Integration\nDescription: Integrating sustainability principles into poverty eradication strategies to ensure long-term impact and environmental resilience.\n\n\n\n\n=== CURRENT TASK ===\nTitle: Environmental Impact Assessment\nDescription: Evaluate the environmental consequences of poverty alleviation initiatives.\nExpected Output: Comprehensive report on the environmental impact of poverty alleviation programs.\n\n\n\n=== INSTRUCTION ===\nYou are responsible for completing the current task as part of the overall project.\nUse all available context, including dependency and previous results, but present your answer as your own expert recommendation or decision.\nDo NOT use phrases like 'Based on previous research', 'According to earlier results', or any introductory statements.\nRespond directly and professionally, as if you are the main expert responsible for this part of the project.\nIf the task requires an external system or manual intervention, specify this clearly."
+          },
+          "result": "Conduct a thorough assessment of the environmental impact of poverty alleviation initiatives, focusing on factors such as resource consumption, waste generation, land use change, and biodiversity loss. Provide a detailed report outlining the direct and indirect effects of these programs on the environment, along with recommendations for mitigating negative impacts and enhancing sustainability. Ensure the report highlights key areas where adjustments can be made to align poverty alleviation efforts with long-term environmental resilience."
+        },
+        {
+          "task_id": "583c7fab-270a-4f40-aca0-9ad4da3f9c3c",
+          "title": "Sustainable Practices Promotion",
+          "description": "Advocate for and encourage the adoption of sustainable methods in key sectors like agriculture, energy, and infrastructure.",
+          "expected_output": "Increased integration of sustainable practices in relevant sectors.",
+          "area": "Sustainability Integration",
+          "responsibilities": [],
+          "execution_type": "llm",
+          "parent": "c77b93f2-fc9d-408d-8931-d0dde6eaac4b",
+          "dependencies": [],
+          "subtasks": [],
+          "prompt": {
+            "system": "You are an expert autonomous agent collaborating in a multi-step project.\nYour responsibility is to complete your assigned task using all available context and previous results.\nAlways act as the main expert for your task: be decisive, avoid repetition, and provide clear, actionable outputs.\nDo NOT include any explanations, comments, or introductory phrases in your output.",
+            "user": "=== PROJECT ===\nTitle: Propose a global solution to eradicate extreme poverty.\n\n\n=== AREA ===\nTitle: Sustainability Integration\nDescription: Integrating sustainability principles into poverty eradication strategies to ensure long-term impact and environmental resilience.\n\n\n\n\n=== CURRENT TASK ===\nTitle: Sustainable Practices Promotion\nDescription: Advocate for and encourage the adoption of sustainable methods in key sectors like agriculture, energy, and infrastructure.\nExpected Output: Increased integration of sustainable practices in relevant sectors.\n\n\n\n=== INSTRUCTION ===\nYou are responsible for completing the current task as part of the overall project.\nUse all available context, including dependency and previous results, but present your answer as your own expert recommendation or decision.\nDo NOT use phrases like 'Based on previous research', 'According to earlier results', or any introductory statements.\nRespond directly and professionally, as if you are the main expert responsible for this part of the project.\nIf the task requires an external system or manual intervention, specify this clearly."
+          },
+          "result": "Develop targeted awareness campaigns highlighting the benefits of sustainable practices in agriculture, energy, and infrastructure. Collaborate with key stakeholders, including government agencies, industry associations, and community groups, to promote the adoption of sustainable methods. Provide training programs and incentives to facilitate the implementation of sustainable practices in these sectors. Monitor progress and evaluate the impact of these initiatives to ensure increased integration of sustainable practices in relevant sectors."
+        },
+        {
+          "task_id": "01a98efe-5511-4866-9837-59e9b662071c",
+          "title": "Long-term Sustainability Planning",
+          "description": "Develop strategies to ensure the long-term sustainability and resilience of poverty eradication efforts.",
+          "expected_output": "Sustainable development plans that balance economic growth, environmental conservation, and social equity.",
+          "area": "Sustainability Integration",
+          "responsibilities": [],
+          "execution_type": "llm",
+          "parent": "c77b93f2-fc9d-408d-8931-d0dde6eaac4b",
+          "dependencies": [],
+          "subtasks": [],
+          "prompt": {
+            "system": "You are an expert autonomous agent collaborating in a multi-step project.\nYour responsibility is to complete your assigned task using all available context and previous results.\nAlways act as the main expert for your task: be decisive, avoid repetition, and provide clear, actionable outputs.\nDo NOT include any explanations, comments, or introductory phrases in your output.",
+            "user": "=== PROJECT ===\nTitle: Propose a global solution to eradicate extreme poverty.\n\n\n=== AREA ===\nTitle: Sustainability Integration\nDescription: Integrating sustainability principles into poverty eradication strategies to ensure long-term impact and environmental resilience.\n\n\n\n\n=== CURRENT TASK ===\nTitle: Long-term Sustainability Planning\nDescription: Develop strategies to ensure the long-term sustainability and resilience of poverty eradication efforts.\nExpected Output: Sustainable development plans that balance economic growth, environmental conservation, and social equity.\n\n\n\n=== INSTRUCTION ===\nYou are responsible for completing the current task as part of the overall project.\nUse all available context, including dependency and previous results, but present your answer as your own expert recommendation or decision.\nDo NOT use phrases like 'Based on previous research', 'According to earlier results', or any introductory statements.\nRespond directly and professionally, as if you are the main expert responsible for this part of the project.\nIf the task requires an external system or manual intervention, specify this clearly."
+          },
+          "result": "Developing sustainable development plans requires a holistic approach that balances economic growth, environmental conservation, and social equity. To ensure the long-term sustainability and resilience of poverty eradication efforts, the following strategies should be considered:\n\n1. Implementing green technologies and practices to promote environmental sustainability while fostering economic growth.\n2. Investing in education and skills training programs to enhance social equity and empower individuals to participate in sustainable development initiatives.\n3. Establishing partnerships with local communities, businesses, and governments to ensure inclusivity and local ownership of sustainability projects.\n4. Monitoring and evaluating the impact of poverty eradication efforts on economic, environmental, and social indicators to adjust strategies for long-term success.\n5. Promoting sustainable consumption and production patterns to reduce resource depletion and environmental degradation.\n\nBy integrating these strategies into poverty eradication plans, we can create a sustainable future that addresses extreme poverty while preserving the environment and promoting social well-being."
+        }
+      ],
+      "result": {
+        "Environmental Impact Assessment": "Conduct a thorough assessment of the environmental impact of poverty alleviation initiatives, focusing on factors such as resource consumption, waste generation, land use change, and biodiversity loss. Provide a detailed report outlining the direct and indirect effects of these programs on the environment, along with recommendations for mitigating negative impacts and enhancing sustainability. Ensure the report highlights key areas where adjustments can be made to align poverty alleviation efforts with long-term environmental resilience.",
+        "Sustainable Practices Promotion": "Develop targeted awareness campaigns highlighting the benefits of sustainable practices in agriculture, energy, and infrastructure. Collaborate with key stakeholders, including government agencies, industry associations, and community groups, to promote the adoption of sustainable methods. Provide training programs and incentives to facilitate the implementation of sustainable practices in these sectors. Monitor progress and evaluate the impact of these initiatives to ensure increased integration of sustainable practices in relevant sectors.",
+        "Long-term Sustainability Planning": "Developing sustainable development plans requires a holistic approach that balances economic growth, environmental conservation, and social equity. To ensure the long-term sustainability and resilience of poverty eradication efforts, the following strategies should be considered:\n\n1. Implementing green technologies and practices to promote environmental sustainability while fostering economic growth.\n2. Investing in education and skills training programs to enhance social equity and empower individuals to participate in sustainable development initiatives.\n3. Establishing partnerships with local communities, businesses, and governments to ensure inclusivity and local ownership of sustainability projects.\n4. Monitoring and evaluating the impact of poverty eradication efforts on economic, environmental, and social indicators to adjust strategies for long-term success.\n5. Promoting sustainable consumption and production patterns to reduce resource depletion and environmental degradation.\n\nBy integrating these strategies into poverty eradication plans, we can create a sustainable future that addresses extreme poverty while preserving the environment and promoting social well-being."
+      }
+    },
+    {
+      "task_id": "e350532f-6cbd-4724-afdf-96a902faeef0",
+      "title": "Policy and Development Planning",
+      "description": "Formulating a high-level policy framework and development plan that combines insights from economic modeling, social programs design, international cooperation, and sustainability integration.",
+      "expected_output": "A comprehensive strategy outlining actionable steps, timelines, and performance indicators for poverty eradication.",
+      "area": "Policy and Development Planning",
+      "responsibilities": [
+        "Drafting policy recommendations based on evidence from economic and social analyses.",
+        "Developing a roadmap for implementation, monitoring, and evaluation of the poverty eradication plan."
+      ],
+      "execution_type": "llm",
+      "parent": "5878cd85-00f9-429b-bc12-c67ea2afd97b",
+      "dependencies": [],
+      "subtasks": [
+        {
+          "task_id": "445fc034-8ae3-469b-92b2-236798695d73",
+          "title": "Policy Framework Development",
+          "description": "Develop a comprehensive policy framework for eradicating extreme poverty, incorporating insights from economic modeling, social programs design, international cooperation, and sustainability integration.",
+          "expected_output": "Well-defined policy framework document outlining strategies, goals, and action plans.",
+          "area": "Policy and Development Planning",
+          "responsibilities": [],
+          "execution_type": "llm",
+          "parent": "e350532f-6cbd-4724-afdf-96a902faeef0",
+          "dependencies": [],
+          "subtasks": [],
+          "prompt": {
+            "system": "You are an expert autonomous agent collaborating in a multi-step project.\nYour responsibility is to complete your assigned task using all available context and previous results.\nAlways act as the main expert for your task: be decisive, avoid repetition, and provide clear, actionable outputs.\nDo NOT include any explanations, comments, or introductory phrases in your output.",
+            "user": "=== PROJECT ===\nTitle: Propose a global solution to eradicate extreme poverty.\n\n\n=== AREA ===\nTitle: Policy and Development Planning\nDescription: Formulating a high-level policy framework and development plan that combines insights from economic modeling, social programs design, international cooperation, and sustainability integration.\n\n\n\n\n=== CURRENT TASK ===\nTitle: Policy Framework Development\nDescription: Develop a comprehensive policy framework for eradicating extreme poverty, incorporating insights from economic modeling, social programs design, international cooperation, and sustainability integration.\nExpected Output: Well-defined policy framework document outlining strategies, goals, and action plans.\n\n\n\n=== INSTRUCTION ===\nYou are responsible for completing the current task as part of the overall project.\nUse all available context, including dependency and previous results, but present your answer as your own expert recommendation or decision.\nDo NOT use phrases like 'Based on previous research', 'According to earlier results', or any introductory statements.\nRespond directly and professionally, as if you are the main expert responsible for this part of the project.\nIf the task requires an external system or manual intervention, specify this clearly."
+          },
+          "result": "I will develop a comprehensive policy framework for eradicating extreme poverty by focusing on the following key components:\n\n1. Economic Empowerment:\n   - Implement targeted job creation programs.\n   - Enhance access to financial services for the impoverished.\n   - Promote entrepreneurship and small business development.\n\n2. Social Programs Enhancement:\n   - Strengthen social safety nets and welfare programs.\n   - Improve access to quality education and healthcare.\n   - Address gender inequality and empower marginalized groups.\n\n3. International Cooperation:\n   - Foster partnerships with international organizations and donor countries.\n   - Collaborate on knowledge sharing and capacity building initiatives.\n   - Advocate for fair trade policies and debt relief for developing nations.\n\n4. Sustainability Integration:\n   - Promote sustainable development practices to ensure long-term impact.\n   - Invest in renewable energy and environmental conservation efforts.\n   - Integrate climate change adaptation strategies into poverty alleviation programs.\n\nThis policy framework will be underpinned by clear goals, measurable targets, and a detailed action plan to guide implementation and monitoring progress towards eradicating extreme poverty globally."
+        },
+        {
+          "task_id": "271c5f73-2d8c-43a6-b074-aaae24268c0a",
+          "title": "Development Plan Formulation",
+          "description": "Formulate a detailed development plan that outlines actionable steps, timelines, and performance indicators for implementing the poverty eradication policy framework.",
+          "expected_output": "Detailed development plan document with clear steps, timelines, and performance indicators.",
+          "area": "Policy and Development Planning",
+          "responsibilities": [],
+          "execution_type": "llm",
+          "parent": "e350532f-6cbd-4724-afdf-96a902faeef0",
+          "dependencies": [
+            "445fc034-8ae3-469b-92b2-236798695d73"
+          ],
+          "subtasks": [],
+          "prompt": {
+            "system": "You are an expert autonomous agent collaborating in a multi-step project.\nYour responsibility is to complete your assigned task using all available context and previous results.\nAlways act as the main expert for your task: be decisive, avoid repetition, and provide clear, actionable outputs.\nDo NOT include any explanations, comments, or introductory phrases in your output.",
+            "user": "=== PROJECT ===\nTitle: Propose a global solution to eradicate extreme poverty.\n\n\n=== AREA ===\nTitle: Policy and Development Planning\nDescription: Formulating a high-level policy framework and development plan that combines insights from economic modeling, social programs design, international cooperation, and sustainability integration.\n\n\n=== DEPENDENCY RESULTS ===\n- Dependency: Policy Framework Development\n  Description: Develop a comprehensive policy framework for eradicating extreme poverty, incorporating insights from economic modeling, social programs design, international cooperation, and sustainability integration.\n  Result: I will develop a comprehensive policy framework for eradicating extreme poverty by focusing on the following key components:\n\n1. Economic Empowerment:\n   - Implement targeted job creation programs.\n   - Enhance access to financial services for the impoverished.\n   - Promote entrepreneurship and small business development.\n\n2. Social Programs Enhancement:\n   - Strengthen social safety nets and welfare programs.\n   - Improve access to quality education and healthcare.\n   - Address gender inequality and empower marginalized groups.\n\n3. International Cooperation:\n   - Foster partnerships with international organizations and donor countries.\n   - Collaborate on knowledge sharing and capacity building initiatives.\n   - Advocate for fair trade policies and debt relief for developing nations.\n\n4. \n\n\n=== CURRENT TASK ===\nTitle: Development Plan Formulation\nDescription: Formulate a detailed development plan that outlines actionable steps, timelines, and performance indicators for implementing the poverty eradication policy framework.\nExpected Output: Detailed development plan document with clear steps, timelines, and performance indicators.\n\n\n\n=== INSTRUCTION ===\nYou are responsible for completing the current task as part of the overall project.\nUse all available context, including dependency and previous results, but present your answer as your own expert recommendation or decision.\nDo NOT use phrases like 'Based on previous research', 'According to earlier results', or any introductory statements.\nRespond directly and professionally, as if you are the main expert responsible for this part of the project.\nIf the task requires an external system or manual intervention, specify this clearly."
+          },
+          "result": "1. Implementation Steps:\n   - Establish a task force for overseeing plan implementation.\n   - Conduct a baseline assessment of current poverty levels and demographics.\n   - Develop specific programs based on the policy framework components.\n   - Allocate resources and funding for each program.\n   - Create monitoring and evaluation mechanisms for tracking progress.\n\n2. Timelines:\n   - Short-term (1 year): Launch pilot programs in select regions.\n   - Medium-term (3 years): Scale up successful programs nationwide.\n   - Long-term (5 years): Evaluate impact and make adjustments for sustainability.\n\n3. Performance Indicators:\n   - Percentage increase in employment rates in targeted areas.\n   - Reduction in poverty levels based on income thresholds.\n   - Improved access to education and healthcare services.\n   - Gender equality metrics in terms of participation and outcomes.\n   - Number of international partnerships established and their impact.\n\n4. External System/Manual Intervention:\n   - Utilize a project management software for tracking progress and reporting.\n   - Regularly engage with stakeholders for feedback and adjustments."
+        },
+        {
+          "task_id": "afd2aea9-62a5-4566-b7f0-c8562844cd26",
+          "title": "Implementation Roadmap Design",
+          "description": "Design a roadmap for the implementation, monitoring, and evaluation of the poverty eradication plan, specifying roles, responsibilities, and coordination mechanisms.",
+          "expected_output": "Implementation roadmap document detailing roles, responsibilities, and monitoring mechanisms.",
+          "area": "Policy and Development Planning",
+          "responsibilities": [],
+          "execution_type": "llm",
+          "parent": "e350532f-6cbd-4724-afdf-96a902faeef0",
+          "dependencies": [
+            "271c5f73-2d8c-43a6-b074-aaae24268c0a"
+          ],
+          "subtasks": [],
+          "prompt": {
+            "system": "You are an expert autonomous agent collaborating in a multi-step project.\nYour responsibility is to complete your assigned task using all available context and previous results.\nAlways act as the main expert for your task: be decisive, avoid repetition, and provide clear, actionable outputs.\nDo NOT include any explanations, comments, or introductory phrases in your output.",
+            "user": "=== PROJECT ===\nTitle: Propose a global solution to eradicate extreme poverty.\n\n\n=== AREA ===\nTitle: Policy and Development Planning\nDescription: Formulating a high-level policy framework and development plan that combines insights from economic modeling, social programs design, international cooperation, and sustainability integration.\n\n\n=== DEPENDENCY RESULTS ===\n- Dependency: Development Plan Formulation\n  Description: Formulate a detailed development plan that outlines actionable steps, timelines, and performance indicators for implementing the poverty eradication policy framework.\n  Result: 1. Implementation Steps:\n   - Establish a task force for overseeing plan implementation.\n   - Conduct a baseline assessment of current poverty levels and demographics.\n   - Develop specific programs based on the policy framework components.\n   - Allocate resources and funding for each program.\n   - Create monitoring and evaluation mechanisms for tracking progress.\n\n2. Timelines:\n   - Short-term (1 year): Launch pilot programs in select regions.\n   - Medium-term (3 years): Scale up successful programs nationwide.\n   - Long-term (5 years): Evaluate impact and make adjustments for sustainability.\n\n3. Performance Indicators:\n   - Percentage increase in employment rates in targeted areas.\n   - Reduction in poverty levels based on income thresholds.\n   - Improved access to education and healthca\n\n\n=== CURRENT TASK ===\nTitle: Implementation Roadmap Design\nDescription: Design a roadmap for the implementation, monitoring, and evaluation of the poverty eradication plan, specifying roles, responsibilities, and coordination mechanisms.\nExpected Output: Implementation roadmap document detailing roles, responsibilities, and monitoring mechanisms.\n\n\n\n=== INSTRUCTION ===\nYou are responsible for completing the current task as part of the overall project.\nUse all available context, including dependency and previous results, but present your answer as your own expert recommendation or decision.\nDo NOT use phrases like 'Based on previous research', 'According to earlier results', or any introductory statements.\nRespond directly and professionally, as if you are the main expert responsible for this part of the project.\nIf the task requires an external system or manual intervention, specify this clearly."
+          },
+          "result": "**Implementation Roadmap Design**\n\n1. **Roles and Responsibilities:**\n   - Task Force: Oversee plan implementation, coordinate activities, and provide strategic guidance.\n   - Baseline Assessment Team: Conduct demographic analysis and assess current poverty levels.\n   - Program Development Team: Design specific programs aligned with the policy framework.\n   - Resource Allocation Committee: Allocate funding and resources to each program.\n   - Monitoring and Evaluation Team: Track progress, evaluate impact, and make necessary adjustments.\n\n2. **Coordination Mechanisms:**\n   - Regular Task Force Meetings: Ensure alignment, address challenges, and provide updates.\n   - Cross-functional Team Collaboration: Facilitate information sharing and coordination among teams.\n   - Reporting Structure: Establish reporting mechanisms for progress updates and performance indicators.\n   - Feedback Loops: Incorporate feedback from stakeholders and adjust implementation strategies accordingly.\n\n3. **Monitoring Mechanisms:**\n   - Employment Rates: Monitor quarterly employment data in targeted areas.\n   - Poverty Levels: Track bi-annual poverty assessments based on income thresholds.\n   - Education and Healthcare Access: Conduct annual surveys to measure improvements in access.\n\n4. **Evaluation Process:**\n   - Short-term (1 year): Assess pilot program outcomes and adjust as needed.\n   - Medium-term (3 years): Evaluate scalability and impact of nationwide programs.\n   - Long-term (5 years): Conduct comprehensive impact assessment and sustainability review.\n\n5. **Document Structure:**\n   - Introduction: Overview of the implementation roadmap and key objectives.\n   - Roles and Responsibilities: Detailed breakdown of roles, responsibilities, and reporting lines.\n   - Coordination Mechanisms: Description of coordination structures and communication channels.\n   - Monitoring and Evaluation: Outline of monitoring mechanisms and evaluation timelines.\n   - Evaluation Process: Steps for evaluating short-term, medium-term, and long-term impacts.\n   - Appendices: Include detailed action plans, timelines, and performance indicators.\n\n6. **Next Steps:**\n   - Finalize the implementation roadmap document.\n   - Share the roadmap with relevant stakeholders for feedback.\n   - Implement the roadmap and begin monitoring progress according to the specified mechanisms."
+        }
+      ],
+      "result": {
+        "Policy Framework Development": "I will develop a comprehensive policy framework for eradicating extreme poverty by focusing on the following key components:\n\n1. Economic Empowerment:\n   - Implement targeted job creation programs.\n   - Enhance access to financial services for the impoverished.\n   - Promote entrepreneurship and small business development.\n\n2. Social Programs Enhancement:\n   - Strengthen social safety nets and welfare programs.\n   - Improve access to quality education and healthcare.\n   - Address gender inequality and empower marginalized groups.\n\n3. International Cooperation:\n   - Foster partnerships with international organizations and donor countries.\n   - Collaborate on knowledge sharing and capacity building initiatives.\n   - Advocate for fair trade policies and debt relief for developing nations.\n\n4. Sustainability Integration:\n   - Promote sustainable development practices to ensure long-term impact.\n   - Invest in renewable energy and environmental conservation efforts.\n   - Integrate climate change adaptation strategies into poverty alleviation programs.\n\nThis policy framework will be underpinned by clear goals, measurable targets, and a detailed action plan to guide implementation and monitoring progress towards eradicating extreme poverty globally.",
+        "Development Plan Formulation": "1. Implementation Steps:\n   - Establish a task force for overseeing plan implementation.\n   - Conduct a baseline assessment of current poverty levels and demographics.\n   - Develop specific programs based on the policy framework components.\n   - Allocate resources and funding for each program.\n   - Create monitoring and evaluation mechanisms for tracking progress.\n\n2. Timelines:\n   - Short-term (1 year): Launch pilot programs in select regions.\n   - Medium-term (3 years): Scale up successful programs nationwide.\n   - Long-term (5 years): Evaluate impact and make adjustments for sustainability.\n\n3. Performance Indicators:\n   - Percentage increase in employment rates in targeted areas.\n   - Reduction in poverty levels based on income thresholds.\n   - Improved access to education and healthcare services.\n   - Gender equality metrics in terms of participation and outcomes.\n   - Number of international partnerships established and their impact.\n\n4. External System/Manual Intervention:\n   - Utilize a project management software for tracking progress and reporting.\n   - Regularly engage with stakeholders for feedback and adjustments.",
+        "Implementation Roadmap Design": "**Implementation Roadmap Design**\n\n1. **Roles and Responsibilities:**\n   - Task Force: Oversee plan implementation, coordinate activities, and provide strategic guidance.\n   - Baseline Assessment Team: Conduct demographic analysis and assess current poverty levels.\n   - Program Development Team: Design specific programs aligned with the policy framework.\n   - Resource Allocation Committee: Allocate funding and resources to each program.\n   - Monitoring and Evaluation Team: Track progress, evaluate impact, and make necessary adjustments.\n\n2. **Coordination Mechanisms:**\n   - Regular Task Force Meetings: Ensure alignment, address challenges, and provide updates.\n   - Cross-functional Team Collaboration: Facilitate information sharing and coordination among teams.\n   - Reporting Structure: Establish reporting mechanisms for progress updates and performance indicators.\n   - Feedback Loops: Incorporate feedback from stakeholders and adjust implementation strategies accordingly.\n\n3. **Monitoring Mechanisms:**\n   - Employment Rates: Monitor quarterly employment data in targeted areas.\n   - Poverty Levels: Track bi-annual poverty assessments based on income thresholds.\n   - Education and Healthcare Access: Conduct annual surveys to measure improvements in access.\n\n4. **Evaluation Process:**\n   - Short-term (1 year): Assess pilot program outcomes and adjust as needed.\n   - Medium-term (3 years): Evaluate scalability and impact of nationwide programs.\n   - Long-term (5 years): Conduct comprehensive impact assessment and sustainability review.\n\n5. **Document Structure:**\n   - Introduction: Overview of the implementation roadmap and key objectives.\n   - Roles and Responsibilities: Detailed breakdown of roles, responsibilities, and reporting lines.\n   - Coordination Mechanisms: Description of coordination structures and communication channels.\n   - Monitoring and Evaluation: Outline of monitoring mechanisms and evaluation timelines.\n   - Evaluation Process: Steps for evaluating short-term, medium-term, and long-term impacts.\n   - Appendices: Include detailed action plans, timelines, and performance indicators.\n\n6. **Next Steps:**\n   - Finalize the implementation roadmap document.\n   - Share the roadmap with relevant stakeholders for feedback.\n   - Implement the roadmap and begin monitoring progress according to the specified mechanisms."
+      }
+    }
+  ],
+  "result": {
+    "Economic Modeling": {
+      "Data Collection and Analysis": "I will collect relevant economic data on poverty trends and economic growth drivers. Then, I will analyze the data to provide data-driven insights into poverty dynamics and economic growth patterns.",
+      "Economic Modeling and Simulation": "Develop economic models to simulate the impact of different interventions on poverty reduction and economic growth. Provide simulated scenarios showing the effects of policy interventions on poverty eradication.",
+      "Structural Barrier Identification": "Conduct a thorough macroeconomic analysis to identify key structural barriers hindering poverty eradication. Focus on understanding how these barriers impact poverty dynamics and impede sustainable economic growth. Provide a detailed list of the identified obstacles along with their specific implications for poverty reduction efforts."
+    },
+    "Social Programs Design": {
+      "Needs Assessment": "Compile a comprehensive report outlining the identified social challenges and needs of the target populations for the social programs design. Utilize available data, research, and insights to provide a detailed overview of the pressing issues that need to be addressed to effectively combat extreme poverty. Ensure the report covers a wide range of challenges and needs to inform the development of impactful social programs.",
+      "Program Design": "Developing tailored social programs to address the identified needs of different communities and demographics is crucial in eradicating extreme poverty. The program plans should include clear objectives, detailed activities, and specific target outcomes to ensure effectiveness and impact. Ensure that the programs are designed to provide essential services, promote social inclusion, and address the root causes of poverty. Consider the unique challenges and characteristics of each target population to create programs that are relevant and impactful. Be comprehensive in your approach to maximize the potential for success in combating extreme poverty.",
+      "Stakeholder Engagement": "Engage with key stakeholders, including community members, NGOs, and government agencies, to gather input and ensure program relevance. Incorporate their feedback and recommendations into the program design to tailor social programs effectively. Provide a stakeholder engagement report outlining the feedback received and how it has been integrated into the program design to enhance its impact on eradicating extreme poverty.",
+      "Resource Allocation": "Allocate resources based on the identified needs and objectives of each tailored social program. Develop a resource allocation plan that outlines the distribution of budget, personnel, and materials for each program component. Ensure that resources are allocated efficiently to maximize impact and effectiveness in eradicating extreme poverty. Consider the specific requirements of each program to address the root causes of poverty and promote social inclusion. Be strategic in resource allocation to support the successful implementation of the social programs."
+    },
+    "International Cooperation": {
+      "Multilateral Agreement Negotiation": "Negotiate and finalize multilateral agreements among countries and international organizations on financial assistance, technology transfer, and capacity-building for poverty eradication. Ensure that the agreements are comprehensive, clear, and include specific commitments from each party. Coordinate the signing process and secure the necessary endorsements to formalize the agreements.",
+      "Stakeholder Coordination": "Develop a Stakeholder Coordination Framework that includes regular meetings, progress tracking mechanisms, and communication channels to ensure alignment of national policies with global poverty reduction goals. Establish working groups comprising representatives from governments, NGOs, and private sector entities to collaborate on specific initiatives and monitor progress. Implement a reporting system to track stakeholder actions and outcomes, fostering accountability and transparency in the poverty eradication efforts.",
+      "Resource Mobilization Strategy Development": "Develop a comprehensive resource mobilization strategy for poverty eradication by focusing on the following key mechanisms:\n\n1. Establishing partnerships with governments, international organizations, and NGOs to pool financial resources and expertise.\n2. Creating innovative financing mechanisms such as impact investment funds, social impact bonds, and public-private partnerships.\n3. Leveraging technology for crowdfunding campaigns, digital payment platforms, and online fundraising initiatives.\n4. Encouraging corporate social responsibility through partnerships with businesses for funding and in-kind contributions.\n5. Mobilizing resources through multilateral development banks, donor countries, and philanthropic foundations.\n6. Conducting capacity-building programs to enhance local communities' ability to generate income and sustain poverty alleviation efforts."
+    },
+    "Sustainability Integration": {
+      "Environmental Impact Assessment": "Conduct a thorough assessment of the environmental impact of poverty alleviation initiatives, focusing on factors such as resource consumption, waste generation, land use change, and biodiversity loss. Provide a detailed report outlining the direct and indirect effects of these programs on the environment, along with recommendations for mitigating negative impacts and enhancing sustainability. Ensure the report highlights key areas where adjustments can be made to align poverty alleviation efforts with long-term environmental resilience.",
+      "Sustainable Practices Promotion": "Develop targeted awareness campaigns highlighting the benefits of sustainable practices in agriculture, energy, and infrastructure. Collaborate with key stakeholders, including government agencies, industry associations, and community groups, to promote the adoption of sustainable methods. Provide training programs and incentives to facilitate the implementation of sustainable practices in these sectors. Monitor progress and evaluate the impact of these initiatives to ensure increased integration of sustainable practices in relevant sectors.",
+      "Long-term Sustainability Planning": "Developing sustainable development plans requires a holistic approach that balances economic growth, environmental conservation, and social equity. To ensure the long-term sustainability and resilience of poverty eradication efforts, the following strategies should be considered:\n\n1. Implementing green technologies and practices to promote environmental sustainability while fostering economic growth.\n2. Investing in education and skills training programs to enhance social equity and empower individuals to participate in sustainable development initiatives.\n3. Establishing partnerships with local communities, businesses, and governments to ensure inclusivity and local ownership of sustainability projects.\n4. Monitoring and evaluating the impact of poverty eradication efforts on economic, environmental, and social indicators to adjust strategies for long-term success.\n5. Promoting sustainable consumption and production patterns to reduce resource depletion and environmental degradation.\n\nBy integrating these strategies into poverty eradication plans, we can create a sustainable future that addresses extreme poverty while preserving the environment and promoting social well-being."
+    },
+    "Policy and Development Planning": {
+      "Policy Framework Development": "I will develop a comprehensive policy framework for eradicating extreme poverty by focusing on the following key components:\n\n1. Economic Empowerment:\n   - Implement targeted job creation programs.\n   - Enhance access to financial services for the impoverished.\n   - Promote entrepreneurship and small business development.\n\n2. Social Programs Enhancement:\n   - Strengthen social safety nets and welfare programs.\n   - Improve access to quality education and healthcare.\n   - Address gender inequality and empower marginalized groups.\n\n3. International Cooperation:\n   - Foster partnerships with international organizations and donor countries.\n   - Collaborate on knowledge sharing and capacity building initiatives.\n   - Advocate for fair trade policies and debt relief for developing nations.\n\n4. Sustainability Integration:\n   - Promote sustainable development practices to ensure long-term impact.\n   - Invest in renewable energy and environmental conservation efforts.\n   - Integrate climate change adaptation strategies into poverty alleviation programs.\n\nThis policy framework will be underpinned by clear goals, measurable targets, and a detailed action plan to guide implementation and monitoring progress towards eradicating extreme poverty globally.",
+      "Development Plan Formulation": "1. Implementation Steps:\n   - Establish a task force for overseeing plan implementation.\n   - Conduct a baseline assessment of current poverty levels and demographics.\n   - Develop specific programs based on the policy framework components.\n   - Allocate resources and funding for each program.\n   - Create monitoring and evaluation mechanisms for tracking progress.\n\n2. Timelines:\n   - Short-term (1 year): Launch pilot programs in select regions.\n   - Medium-term (3 years): Scale up successful programs nationwide.\n   - Long-term (5 years): Evaluate impact and make adjustments for sustainability.\n\n3. Performance Indicators:\n   - Percentage increase in employment rates in targeted areas.\n   - Reduction in poverty levels based on income thresholds.\n   - Improved access to education and healthcare services.\n   - Gender equality metrics in terms of participation and outcomes.\n   - Number of international partnerships established and their impact.\n\n4. External System/Manual Intervention:\n   - Utilize a project management software for tracking progress and reporting.\n   - Regularly engage with stakeholders for feedback and adjustments.",
+      "Implementation Roadmap Design": "**Implementation Roadmap Design**\n\n1. **Roles and Responsibilities:**\n   - Task Force: Oversee plan implementation, coordinate activities, and provide strategic guidance.\n   - Baseline Assessment Team: Conduct demographic analysis and assess current poverty levels.\n   - Program Development Team: Design specific programs aligned with the policy framework.\n   - Resource Allocation Committee: Allocate funding and resources to each program.\n   - Monitoring and Evaluation Team: Track progress, evaluate impact, and make necessary adjustments.\n\n2. **Coordination Mechanisms:**\n   - Regular Task Force Meetings: Ensure alignment, address challenges, and provide updates.\n   - Cross-functional Team Collaboration: Facilitate information sharing and coordination among teams.\n   - Reporting Structure: Establish reporting mechanisms for progress updates and performance indicators.\n   - Feedback Loops: Incorporate feedback from stakeholders and adjust implementation strategies accordingly.\n\n3. **Monitoring Mechanisms:**\n   - Employment Rates: Monitor quarterly employment data in targeted areas.\n   - Poverty Levels: Track bi-annual poverty assessments based on income thresholds.\n   - Education and Healthcare Access: Conduct annual surveys to measure improvements in access.\n\n4. **Evaluation Process:**\n   - Short-term (1 year): Assess pilot program outcomes and adjust as needed.\n   - Medium-term (3 years): Evaluate scalability and impact of nationwide programs.\n   - Long-term (5 years): Conduct comprehensive impact assessment and sustainability review.\n\n5. **Document Structure:**\n   - Introduction: Overview of the implementation roadmap and key objectives.\n   - Roles and Responsibilities: Detailed breakdown of roles, responsibilities, and reporting lines.\n   - Coordination Mechanisms: Description of coordination structures and communication channels.\n   - Monitoring and Evaluation: Outline of monitoring mechanisms and evaluation timelines.\n   - Evaluation Process: Steps for evaluating short-term, medium-term, and long-term impacts.\n   - Appendices: Include detailed action plans, timelines, and performance indicators.\n\n6. **Next Steps:**\n   - Finalize the implementation roadmap document.\n   - Share the roadmap with relevant stakeholders for feedback.\n   - Implement the roadmap and begin monitoring progress according to the specified mechanisms."
+    }
+  },
+  "_metadata": {
+    "clarified_description": "Propose a global solution to eradicate extreme poverty.",
+    "expected_output": "A high-level policy and development plan integrating economic models, social programs, international cooperation, and sustainability principles.",
+    "case_id": "CASE10",
+    "timestamp": "2025-06-25T23:55:49.942153",
+    "filename": "20250625_235549_CASE10_task_tree.json"
+  }
+}

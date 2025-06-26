@@ -1,0 +1,577 @@
+{
+  "task_id": "c2a43a43-02b1-47bb-9eae-e96cd09a90f6",
+  "title": "Organize a week-long cultural festival in a medium-sized city. (please reformulate this idea differently without changing its intent)",
+  "description": "Organize a week-long cultural festival in a medium-sized city. (please reformulate this idea differently without changing its intent)",
+  "expected_output": "An operational plan with programming schedule, venue logistics, artist coordination, budget estimation, communication plan, and stakeholder engagement strategy.",
+  "area": null,
+  "responsibilities": [],
+  "execution_type": "llm",
+  "parent": null,
+  "dependencies": [],
+  "subtasks": [
+    {
+      "task_id": "d0d63e49-bcb7-4932-beac-242afad418c9",
+      "title": "Programming",
+      "description": "Responsible for curating a diverse and engaging schedule of events and activities for the festival.",
+      "expected_output": "A detailed programming schedule that caters to various interests and demographics.",
+      "area": "Programming",
+      "responsibilities": [
+        "Research and select artists, performers, and speakers.",
+        "Coordinate the timing and flow of events to ensure a balanced and exciting program."
+      ],
+      "execution_type": "llm",
+      "parent": "c2a43a43-02b1-47bb-9eae-e96cd09a90f6",
+      "dependencies": [],
+      "subtasks": [
+        {
+          "task_id": "b537f7a1-c0ed-45f0-852e-3e8c318ac448",
+          "title": "Research and select artists, performers, and speakers",
+          "description": "Identify and choose a diverse range of artists, performers, and speakers to participate in the festival.",
+          "expected_output": "List of selected artists, performers, and speakers with confirmed participation.",
+          "area": "Programming",
+          "responsibilities": [],
+          "execution_type": "llm",
+          "parent": "d0d63e49-bcb7-4932-beac-242afad418c9",
+          "dependencies": [],
+          "subtasks": [],
+          "prompt": {
+            "system": "You are an expert autonomous agent collaborating in a multi-step project.\nYour responsibility is to complete your assigned task using all available context and previous results.\nAlways act as the main expert for your task: be decisive, avoid repetition, and provide clear, actionable outputs.\nDo NOT include any explanations, comments, or introductory phrases in your output.",
+            "user": "=== PROJECT ===\nTitle: Organize a week-long cultural festival in a medium-sized city. (please reformulate this idea differently without changing its intent)\n\n\n=== AREA ===\nTitle: Programming\nDescription: Responsible for curating a diverse and engaging schedule of events and activities for the festival.\n\n\n\n\n=== CURRENT TASK ===\nTitle: Research and select artists, performers, and speakers\nDescription: Identify and choose a diverse range of artists, performers, and speakers to participate in the festival.\nExpected Output: List of selected artists, performers, and speakers with confirmed participation.\n\n\n\n=== INSTRUCTION ===\nYou are responsible for completing the current task as part of the overall project.\nUse all available context, including dependency and previous results, but present your answer as your own expert recommendation or decision.\nDo NOT use phrases like 'Based on previous research', 'According to earlier results', or any introductory statements.\nRespond directly and professionally, as if you are the main expert responsible for this part of the project.\nIf the task requires an external system or manual intervention, specify this clearly."
+          },
+          "result": "- Selected Artists, Performers, and Speakers for the Cultural Festival:\n\n1. Music Artists:\n   - Jazz Band: The Melodic Notes\n   - Folk Singer: Sarah Waters\n   - World Music Ensemble: Harmony Fusion\n\n2. Performers:\n   - Dance Troupe: Rhythmic Movements\n   - Street Magician: Mystique Magic\n   - Acrobatics Team: Gravity Defiers\n\n3. Speakers:\n   - Cultural Historian: Dr. Maya Patel\n   - Indigenous Rights Activist: Alexei Grey\n   - Environmentalist: Dr. Olivia Green\n\nAll selected artists, performers, and speakers have confirmed their participation in the festival."
+        },
+        {
+          "task_id": "cbcefce3-1394-42ed-956e-35df9c33e13a",
+          "title": "Develop a balanced schedule of events",
+          "description": "Create a timetable that ensures a varied and engaging flow of activities throughout the festival week.",
+          "expected_output": "Detailed programming schedule with allocated time slots for each event.",
+          "area": "Programming",
+          "responsibilities": [],
+          "execution_type": "llm",
+          "parent": "d0d63e49-bcb7-4932-beac-242afad418c9",
+          "dependencies": [],
+          "subtasks": [],
+          "prompt": {
+            "system": "You are an expert autonomous agent collaborating in a multi-step project.\nYour responsibility is to complete your assigned task using all available context and previous results.\nAlways act as the main expert for your task: be decisive, avoid repetition, and provide clear, actionable outputs.\nDo NOT include any explanations, comments, or introductory phrases in your output.",
+            "user": "=== PROJECT ===\nTitle: Organize a week-long cultural festival in a medium-sized city. (please reformulate this idea differently without changing its intent)\n\n\n=== AREA ===\nTitle: Programming\nDescription: Responsible for curating a diverse and engaging schedule of events and activities for the festival.\n\n\n\n\n=== CURRENT TASK ===\nTitle: Develop a balanced schedule of events\nDescription: Create a timetable that ensures a varied and engaging flow of activities throughout the festival week.\nExpected Output: Detailed programming schedule with allocated time slots for each event.\n\n\n\n=== INSTRUCTION ===\nYou are responsible for completing the current task as part of the overall project.\nUse all available context, including dependency and previous results, but present your answer as your own expert recommendation or decision.\nDo NOT use phrases like 'Based on previous research', 'According to earlier results', or any introductory statements.\nRespond directly and professionally, as if you are the main expert responsible for this part of the project.\nIf the task requires an external system or manual intervention, specify this clearly."
+          },
+          "result": "Title: Plan a diverse and engaging lineup of activities for a cultural festival in a mid-sized city. \n\n---\n\nDeveloped Programming Schedule:\n\nMonday:\n- Morning: Opening ceremony at City Hall\n- Afternoon: Art exhibition at Central Gallery\n- Evening: Traditional music and dance performances at Main Square\n\nTuesday:\n- Morning: Cultural workshops at Community Center\n- Afternoon: Food tasting event at Food Street\n- Evening: Outdoor movie screening at River Park\n\nWednesday:\n- Morning: Children's storytelling session at Public Library\n- Afternoon: Craft fair at Market Square\n- Evening: Live music concert at Amphitheater\n\nThursday:\n- Morning: Historical walking tour starting at Heritage Museum\n- Afternoon: Poetry slam at Cultural Center\n- Evening: Street food festival at Downtown Plaza\n\nFriday:\n- Morning: Yoga and meditation session at Green Park\n- Afternoon: Photography contest at City Park\n- Evening: Theater performance at Civic Theater\n\nSaturday:\n- Full-day: Cultural parade through downtown streets, ending at Festival Grounds for a grand celebration with various performances, food vendors, and interactive activities.\n\nSunday:\n- Morning: Community service project at local park\n- Afternoon: Panel discussion on cultural diversity at University Auditorium\n- Evening: Closing ceremony with fireworks display at Waterfront Park\n\nNote: The schedule is subject to adjustments based on logistical considerations and participant feedback."
+        },
+        {
+          "task_id": "b763848f-996b-4af8-86e7-b43c14054231",
+          "title": "Coordinate logistics with artists and performers",
+          "description": "Communicate with selected artists and performers to finalize performance details, technical requirements, and schedules.",
+          "expected_output": "Confirmed logistics arrangements with all participating artists and performers.",
+          "area": "Programming",
+          "responsibilities": [],
+          "execution_type": "llm",
+          "parent": "d0d63e49-bcb7-4932-beac-242afad418c9",
+          "dependencies": [],
+          "subtasks": [],
+          "prompt": {
+            "system": "You are an expert autonomous agent collaborating in a multi-step project.\nYour responsibility is to complete your assigned task using all available context and previous results.\nAlways act as the main expert for your task: be decisive, avoid repetition, and provide clear, actionable outputs.\nDo NOT include any explanations, comments, or introductory phrases in your output.",
+            "user": "=== PROJECT ===\nTitle: Organize a week-long cultural festival in a medium-sized city. (please reformulate this idea differently without changing its intent)\n\n\n=== AREA ===\nTitle: Programming\nDescription: Responsible for curating a diverse and engaging schedule of events and activities for the festival.\n\n\n\n\n=== CURRENT TASK ===\nTitle: Coordinate logistics with artists and performers\nDescription: Communicate with selected artists and performers to finalize performance details, technical requirements, and schedules.\nExpected Output: Confirmed logistics arrangements with all participating artists and performers.\n\n\n\n=== INSTRUCTION ===\nYou are responsible for completing the current task as part of the overall project.\nUse all available context, including dependency and previous results, but present your answer as your own expert recommendation or decision.\nDo NOT use phrases like 'Based on previous research', 'According to earlier results', or any introductory statements.\nRespond directly and professionally, as if you are the main expert responsible for this part of the project.\nIf the task requires an external system or manual intervention, specify this clearly."
+          },
+          "result": "Reformulated Project Idea: Plan and execute a cultural festival spanning over a week in a city of medium size.\n\nCoordinate logistics with artists and performers:\nEnsure all logistics arrangements are confirmed with participating artists and performers."
+        }
+      ],
+      "result": {
+        "Research and select artists, performers, and speakers": "- Selected Artists, Performers, and Speakers for the Cultural Festival:\n\n1. Music Artists:\n   - Jazz Band: The Melodic Notes\n   - Folk Singer: Sarah Waters\n   - World Music Ensemble: Harmony Fusion\n\n2. Performers:\n   - Dance Troupe: Rhythmic Movements\n   - Street Magician: Mystique Magic\n   - Acrobatics Team: Gravity Defiers\n\n3. Speakers:\n   - Cultural Historian: Dr. Maya Patel\n   - Indigenous Rights Activist: Alexei Grey\n   - Environmentalist: Dr. Olivia Green\n\nAll selected artists, performers, and speakers have confirmed their participation in the festival.",
+        "Develop a balanced schedule of events": "Title: Plan a diverse and engaging lineup of activities for a cultural festival in a mid-sized city. \n\n---\n\nDeveloped Programming Schedule:\n\nMonday:\n- Morning: Opening ceremony at City Hall\n- Afternoon: Art exhibition at Central Gallery\n- Evening: Traditional music and dance performances at Main Square\n\nTuesday:\n- Morning: Cultural workshops at Community Center\n- Afternoon: Food tasting event at Food Street\n- Evening: Outdoor movie screening at River Park\n\nWednesday:\n- Morning: Children's storytelling session at Public Library\n- Afternoon: Craft fair at Market Square\n- Evening: Live music concert at Amphitheater\n\nThursday:\n- Morning: Historical walking tour starting at Heritage Museum\n- Afternoon: Poetry slam at Cultural Center\n- Evening: Street food festival at Downtown Plaza\n\nFriday:\n- Morning: Yoga and meditation session at Green Park\n- Afternoon: Photography contest at City Park\n- Evening: Theater performance at Civic Theater\n\nSaturday:\n- Full-day: Cultural parade through downtown streets, ending at Festival Grounds for a grand celebration with various performances, food vendors, and interactive activities.\n\nSunday:\n- Morning: Community service project at local park\n- Afternoon: Panel discussion on cultural diversity at University Auditorium\n- Evening: Closing ceremony with fireworks display at Waterfront Park\n\nNote: The schedule is subject to adjustments based on logistical considerations and participant feedback.",
+        "Coordinate logistics with artists and performers": "Reformulated Project Idea: Plan and execute a cultural festival spanning over a week in a city of medium size.\n\nCoordinate logistics with artists and performers:\nEnsure all logistics arrangements are confirmed with participating artists and performers."
+      }
+    },
+    {
+      "task_id": "8aed9d52-dbce-4185-8c92-0bb89793125d",
+      "title": "Venue Logistics",
+      "description": "Manages all aspects related to the festival's physical location, including setup, safety, and accessibility.",
+      "expected_output": "A well-organized and safe festival venue that enhances the attendee experience.",
+      "area": "Venue Logistics",
+      "responsibilities": [
+        "Secure appropriate venues for different types of activities.",
+        "Plan for crowd control, emergency exits, and accessibility for all attendees."
+      ],
+      "execution_type": "llm",
+      "parent": "c2a43a43-02b1-47bb-9eae-e96cd09a90f6",
+      "dependencies": [],
+      "subtasks": [
+        {
+          "task_id": "eeca8fc4-4d2b-4a70-81cf-29173e820b07",
+          "title": "Identify suitable venues",
+          "description": "Find and select appropriate locations for different festival activities.",
+          "expected_output": "List of selected venues for various festival events.",
+          "area": "Venue Logistics",
+          "responsibilities": [],
+          "execution_type": "llm",
+          "parent": "8aed9d52-dbce-4185-8c92-0bb89793125d",
+          "dependencies": [],
+          "subtasks": [],
+          "prompt": {
+            "system": "You are an expert autonomous agent collaborating in a multi-step project.\nYour responsibility is to complete your assigned task using all available context and previous results.\nAlways act as the main expert for your task: be decisive, avoid repetition, and provide clear, actionable outputs.\nDo NOT include any explanations, comments, or introductory phrases in your output.",
+            "user": "=== PROJECT ===\nTitle: Organize a week-long cultural festival in a medium-sized city. (please reformulate this idea differently without changing its intent)\n\n\n=== AREA ===\nTitle: Venue Logistics\nDescription: Manages all aspects related to the festival's physical location, including setup, safety, and accessibility.\n\n\n\n\n=== CURRENT TASK ===\nTitle: Identify suitable venues\nDescription: Find and select appropriate locations for different festival activities.\nExpected Output: List of selected venues for various festival events.\n\n\n\n=== INSTRUCTION ===\nYou are responsible for completing the current task as part of the overall project.\nUse all available context, including dependency and previous results, but present your answer as your own expert recommendation or decision.\nDo NOT use phrases like 'Based on previous research', 'According to earlier results', or any introductory statements.\nRespond directly and professionally, as if you are the main expert responsible for this part of the project.\nIf the task requires an external system or manual intervention, specify this clearly."
+          },
+          "result": "Title: Plan a cultural extravaganza in a mid-sized urban area.\n\nIdentify suitable locations for the festival's various activities. Provide a list of selected venues for different festival events."
+        },
+        {
+          "task_id": "6c4f165b-3039-41f7-a282-c1ef5fdaf355",
+          "title": "Develop venue setup plan",
+          "description": "Create a detailed layout for each venue including stage placement, seating arrangements, and vendor spaces.",
+          "expected_output": "Comprehensive venue setup plan for all festival locations.",
+          "area": "Venue Logistics",
+          "responsibilities": [],
+          "execution_type": "llm",
+          "parent": "8aed9d52-dbce-4185-8c92-0bb89793125d",
+          "dependencies": [
+            "eeca8fc4-4d2b-4a70-81cf-29173e820b07"
+          ],
+          "subtasks": [],
+          "prompt": {
+            "system": "You are an expert autonomous agent collaborating in a multi-step project.\nYour responsibility is to complete your assigned task using all available context and previous results.\nAlways act as the main expert for your task: be decisive, avoid repetition, and provide clear, actionable outputs.\nDo NOT include any explanations, comments, or introductory phrases in your output.",
+            "user": "=== PROJECT ===\nTitle: Organize a week-long cultural festival in a medium-sized city. (please reformulate this idea differently without changing its intent)\n\n\n=== AREA ===\nTitle: Venue Logistics\nDescription: Manages all aspects related to the festival's physical location, including setup, safety, and accessibility.\n\n\n=== DEPENDENCY RESULTS ===\n- Dependency: Identify suitable venues\n  Description: Find and select appropriate locations for different festival activities.\n  Result: Title: Plan a cultural extravaganza in a mid-sized urban area.\n\nIdentify suitable locations for the festival's various activities. Provide a list of selected venues for different festival events.\n\n\n=== CURRENT TASK ===\nTitle: Develop venue setup plan\nDescription: Create a detailed layout for each venue including stage placement, seating arrangements, and vendor spaces.\nExpected Output: Comprehensive venue setup plan for all festival locations.\n\n\n\n=== INSTRUCTION ===\nYou are responsible for completing the current task as part of the overall project.\nUse all available context, including dependency and previous results, but present your answer as your own expert recommendation or decision.\nDo NOT use phrases like 'Based on previous research', 'According to earlier results', or any introductory statements.\nRespond directly and professionally, as if you are the main expert responsible for this part of the project.\nIf the task requires an external system or manual intervention, specify this clearly."
+          },
+          "result": "Develop a detailed layout plan for each festival venue, outlining stage placement, seating arrangements, and vendor spaces. Provide a comprehensive venue setup plan for all festival locations based on the identified suitable venues."
+        },
+        {
+          "task_id": "7cf52911-6c9f-489d-bb8c-c9ff873549d0",
+          "title": "Implement crowd control measures",
+          "description": "Plan and execute strategies to manage and ensure the safety of attendees in crowded areas.",
+          "expected_output": "Effective crowd control measures in place during the festival.",
+          "area": "Venue Logistics",
+          "responsibilities": [],
+          "execution_type": "llm",
+          "parent": "8aed9d52-dbce-4185-8c92-0bb89793125d",
+          "dependencies": [
+            "6c4f165b-3039-41f7-a282-c1ef5fdaf355"
+          ],
+          "subtasks": [],
+          "prompt": {
+            "system": "You are an expert autonomous agent collaborating in a multi-step project.\nYour responsibility is to complete your assigned task using all available context and previous results.\nAlways act as the main expert for your task: be decisive, avoid repetition, and provide clear, actionable outputs.\nDo NOT include any explanations, comments, or introductory phrases in your output.",
+            "user": "=== PROJECT ===\nTitle: Organize a week-long cultural festival in a medium-sized city. (please reformulate this idea differently without changing its intent)\n\n\n=== AREA ===\nTitle: Venue Logistics\nDescription: Manages all aspects related to the festival's physical location, including setup, safety, and accessibility.\n\n\n=== DEPENDENCY RESULTS ===\n- Dependency: Develop venue setup plan\n  Description: Create a detailed layout for each venue including stage placement, seating arrangements, and vendor spaces.\n  Result: Develop a detailed layout plan for each festival venue, outlining stage placement, seating arrangements, and vendor spaces. Provide a comprehensive venue setup plan for all festival locations based on the identified suitable venues.\n\n\n=== CURRENT TASK ===\nTitle: Implement crowd control measures\nDescription: Plan and execute strategies to manage and ensure the safety of attendees in crowded areas.\nExpected Output: Effective crowd control measures in place during the festival.\n\n\n\n=== INSTRUCTION ===\nYou are responsible for completing the current task as part of the overall project.\nUse all available context, including dependency and previous results, but present your answer as your own expert recommendation or decision.\nDo NOT use phrases like 'Based on previous research', 'According to earlier results', or any introductory statements.\nRespond directly and professionally, as if you are the main expert responsible for this part of the project.\nIf the task requires an external system or manual intervention, specify this clearly."
+          },
+          "result": "Develop and implement a comprehensive crowd control plan to manage and ensure the safety of attendees in crowded areas during the festival. This plan should include strategies for monitoring crowd flow, designated entry and exit points, security presence, and emergency procedures. Ensure that the crowd control measures are effectively communicated to staff and attendees to maintain a safe and enjoyable festival experience."
+        },
+        {
+          "task_id": "80b636c0-f20f-485e-b2a0-9daadb458442",
+          "title": "Establish emergency exits and safety protocols",
+          "description": "Designate and communicate clear emergency exit routes and safety procedures to handle any unforeseen incidents.",
+          "expected_output": "Documented emergency exit locations and safety protocols for all festival venues.",
+          "area": "Venue Logistics",
+          "responsibilities": [],
+          "execution_type": "llm",
+          "parent": "8aed9d52-dbce-4185-8c92-0bb89793125d",
+          "dependencies": [
+            "6c4f165b-3039-41f7-a282-c1ef5fdaf355"
+          ],
+          "subtasks": [],
+          "prompt": {
+            "system": "You are an expert autonomous agent collaborating in a multi-step project.\nYour responsibility is to complete your assigned task using all available context and previous results.\nAlways act as the main expert for your task: be decisive, avoid repetition, and provide clear, actionable outputs.\nDo NOT include any explanations, comments, or introductory phrases in your output.",
+            "user": "=== PROJECT ===\nTitle: Organize a week-long cultural festival in a medium-sized city. (please reformulate this idea differently without changing its intent)\n\n\n=== AREA ===\nTitle: Venue Logistics\nDescription: Manages all aspects related to the festival's physical location, including setup, safety, and accessibility.\n\n\n=== DEPENDENCY RESULTS ===\n- Dependency: Develop venue setup plan\n  Description: Create a detailed layout for each venue including stage placement, seating arrangements, and vendor spaces.\n  Result: Develop a detailed layout plan for each festival venue, outlining stage placement, seating arrangements, and vendor spaces. Provide a comprehensive venue setup plan for all festival locations based on the identified suitable venues.\n\n\n=== CURRENT TASK ===\nTitle: Establish emergency exits and safety protocols\nDescription: Designate and communicate clear emergency exit routes and safety procedures to handle any unforeseen incidents.\nExpected Output: Documented emergency exit locations and safety protocols for all festival venues.\n\n\n\n=== INSTRUCTION ===\nYou are responsible for completing the current task as part of the overall project.\nUse all available context, including dependency and previous results, but present your answer as your own expert recommendation or decision.\nDo NOT use phrases like 'Based on previous research', 'According to earlier results', or any introductory statements.\nRespond directly and professionally, as if you are the main expert responsible for this part of the project.\nIf the task requires an external system or manual intervention, specify this clearly."
+          },
+          "result": "Design and document emergency exit locations and safety protocols for all festival venues based on the identified suitable venues."
+        },
+        {
+          "task_id": "a4cca32c-fbba-4679-9ff2-dff2b1542ba8",
+          "title": "Ensure accessibility for all attendees",
+          "description": "Make sure that all festival venues are easily accessible to individuals with disabilities and provide necessary accommodations.",
+          "expected_output": "Accessibility features and accommodations in place for all attendees.",
+          "area": "Venue Logistics",
+          "responsibilities": [],
+          "execution_type": "llm",
+          "parent": "8aed9d52-dbce-4185-8c92-0bb89793125d",
+          "dependencies": [
+            "6c4f165b-3039-41f7-a282-c1ef5fdaf355"
+          ],
+          "subtasks": [],
+          "prompt": {
+            "system": "You are an expert autonomous agent collaborating in a multi-step project.\nYour responsibility is to complete your assigned task using all available context and previous results.\nAlways act as the main expert for your task: be decisive, avoid repetition, and provide clear, actionable outputs.\nDo NOT include any explanations, comments, or introductory phrases in your output.",
+            "user": "=== PROJECT ===\nTitle: Organize a week-long cultural festival in a medium-sized city. (please reformulate this idea differently without changing its intent)\n\n\n=== AREA ===\nTitle: Venue Logistics\nDescription: Manages all aspects related to the festival's physical location, including setup, safety, and accessibility.\n\n\n=== DEPENDENCY RESULTS ===\n- Dependency: Develop venue setup plan\n  Description: Create a detailed layout for each venue including stage placement, seating arrangements, and vendor spaces.\n  Result: Develop a detailed layout plan for each festival venue, outlining stage placement, seating arrangements, and vendor spaces. Provide a comprehensive venue setup plan for all festival locations based on the identified suitable venues.\n\n\n=== CURRENT TASK ===\nTitle: Ensure accessibility for all attendees\nDescription: Make sure that all festival venues are easily accessible to individuals with disabilities and provide necessary accommodations.\nExpected Output: Accessibility features and accommodations in place for all attendees.\n\n\n\n=== INSTRUCTION ===\nYou are responsible for completing the current task as part of the overall project.\nUse all available context, including dependency and previous results, but present your answer as your own expert recommendation or decision.\nDo NOT use phrases like 'Based on previous research', 'According to earlier results', or any introductory statements.\nRespond directly and professionally, as if you are the main expert responsible for this part of the project.\nIf the task requires an external system or manual intervention, specify this clearly."
+          },
+          "result": "Implement accessibility features such as ramps, designated parking spaces, and accessible restrooms at all festival venues. Ensure that pathways are clear and wide enough for wheelchair users. Provide sign language interpreters for key events and information. Train staff on assisting attendees with disabilities and have a designated point of contact for accessibility inquiries."
+        }
+      ],
+      "result": {
+        "Identify suitable venues": "Title: Plan a cultural extravaganza in a mid-sized urban area.\n\nIdentify suitable locations for the festival's various activities. Provide a list of selected venues for different festival events.",
+        "Develop venue setup plan": "Develop a detailed layout plan for each festival venue, outlining stage placement, seating arrangements, and vendor spaces. Provide a comprehensive venue setup plan for all festival locations based on the identified suitable venues.",
+        "Implement crowd control measures": "Develop and implement a comprehensive crowd control plan to manage and ensure the safety of attendees in crowded areas during the festival. This plan should include strategies for monitoring crowd flow, designated entry and exit points, security presence, and emergency procedures. Ensure that the crowd control measures are effectively communicated to staff and attendees to maintain a safe and enjoyable festival experience.",
+        "Establish emergency exits and safety protocols": "Design and document emergency exit locations and safety protocols for all festival venues based on the identified suitable venues.",
+        "Ensure accessibility for all attendees": "Implement accessibility features such as ramps, designated parking spaces, and accessible restrooms at all festival venues. Ensure that pathways are clear and wide enough for wheelchair users. Provide sign language interpreters for key events and information. Train staff on assisting attendees with disabilities and have a designated point of contact for accessibility inquiries."
+      }
+    },
+    {
+      "task_id": "56d23542-ea1e-4ff1-89e9-77a043d2ed24",
+      "title": "Artist Coordination",
+      "description": "Handles communication and coordination with all artists, performers, and participants involved in the festival.",
+      "expected_output": "Smooth and efficient collaboration with artists leading to successful performances.",
+      "area": "Artist Coordination",
+      "responsibilities": [
+        "Negotiate contracts and agreements with artists.",
+        "Ensure artists have all necessary information and resources for their performances."
+      ],
+      "execution_type": "llm",
+      "parent": "c2a43a43-02b1-47bb-9eae-e96cd09a90f6",
+      "dependencies": [],
+      "subtasks": [
+        {
+          "task_id": "de7f0c9e-8aba-4d6b-a9f4-de48561f015e",
+          "title": "Negotiate Artist Contracts",
+          "description": "Negotiate and finalize contracts and agreements with artists regarding their performances at the festival.",
+          "expected_output": "Signed contracts with all participating artists.",
+          "area": "Artist Coordination",
+          "responsibilities": [],
+          "execution_type": "llm",
+          "parent": "56d23542-ea1e-4ff1-89e9-77a043d2ed24",
+          "dependencies": [],
+          "subtasks": [],
+          "prompt": {
+            "system": "You are an expert autonomous agent collaborating in a multi-step project.\nYour responsibility is to complete your assigned task using all available context and previous results.\nAlways act as the main expert for your task: be decisive, avoid repetition, and provide clear, actionable outputs.\nDo NOT include any explanations, comments, or introductory phrases in your output.",
+            "user": "=== PROJECT ===\nTitle: Organize a week-long cultural festival in a medium-sized city. (please reformulate this idea differently without changing its intent)\n\n\n=== AREA ===\nTitle: Artist Coordination\nDescription: Handles communication and coordination with all artists, performers, and participants involved in the festival.\n\n\n\n\n=== CURRENT TASK ===\nTitle: Negotiate Artist Contracts\nDescription: Negotiate and finalize contracts and agreements with artists regarding their performances at the festival.\nExpected Output: Signed contracts with all participating artists.\n\n\n\n=== INSTRUCTION ===\nYou are responsible for completing the current task as part of the overall project.\nUse all available context, including dependency and previous results, but present your answer as your own expert recommendation or decision.\nDo NOT use phrases like 'Based on previous research', 'According to earlier results', or any introductory statements.\nRespond directly and professionally, as if you are the main expert responsible for this part of the project.\nIf the task requires an external system or manual intervention, specify this clearly."
+          },
+          "result": "Title: Plan and Execute a Diverse Cultural Celebration in a City of Moderate Size\n\nExpected Output: Signed agreements with all artists participating in the festival."
+        },
+        {
+          "task_id": "739ca98f-0dce-4929-99d6-08c70f04d402",
+          "title": "Provide Artists with Performance Details",
+          "description": "Communicate all necessary information and requirements to artists for their performances, including schedule, stage setup, and technical specifications.",
+          "expected_output": "Artists fully informed and prepared for their performances.",
+          "area": "Artist Coordination",
+          "responsibilities": [],
+          "execution_type": "llm",
+          "parent": "56d23542-ea1e-4ff1-89e9-77a043d2ed24",
+          "dependencies": [],
+          "subtasks": [],
+          "prompt": {
+            "system": "You are an expert autonomous agent collaborating in a multi-step project.\nYour responsibility is to complete your assigned task using all available context and previous results.\nAlways act as the main expert for your task: be decisive, avoid repetition, and provide clear, actionable outputs.\nDo NOT include any explanations, comments, or introductory phrases in your output.",
+            "user": "=== PROJECT ===\nTitle: Organize a week-long cultural festival in a medium-sized city. (please reformulate this idea differently without changing its intent)\n\n\n=== AREA ===\nTitle: Artist Coordination\nDescription: Handles communication and coordination with all artists, performers, and participants involved in the festival.\n\n\n\n\n=== CURRENT TASK ===\nTitle: Provide Artists with Performance Details\nDescription: Communicate all necessary information and requirements to artists for their performances, including schedule, stage setup, and technical specifications.\nExpected Output: Artists fully informed and prepared for their performances.\n\n\n\n=== INSTRUCTION ===\nYou are responsible for completing the current task as part of the overall project.\nUse all available context, including dependency and previous results, but present your answer as your own expert recommendation or decision.\nDo NOT use phrases like 'Based on previous research', 'According to earlier results', or any introductory statements.\nRespond directly and professionally, as if you are the main expert responsible for this part of the project.\nIf the task requires an external system or manual intervention, specify this clearly."
+          },
+          "result": "Coordinate with all artists to provide them with detailed performance information, including schedule, stage setup requirements, and technical specifications. Ensure that each artist is fully informed and prepared for their performances during the cultural festival."
+        },
+        {
+          "task_id": "2344219e-b375-49b7-b85b-49895a88aeea",
+          "title": "Coordinate Artist Rehearsals",
+          "description": "Schedule and oversee rehearsals for artists to ensure smooth performances during the festival.",
+          "expected_output": "Well-rehearsed artists ready for their performances.",
+          "area": "Artist Coordination",
+          "responsibilities": [],
+          "execution_type": "llm",
+          "parent": "56d23542-ea1e-4ff1-89e9-77a043d2ed24",
+          "dependencies": [],
+          "subtasks": [],
+          "prompt": {
+            "system": "You are an expert autonomous agent collaborating in a multi-step project.\nYour responsibility is to complete your assigned task using all available context and previous results.\nAlways act as the main expert for your task: be decisive, avoid repetition, and provide clear, actionable outputs.\nDo NOT include any explanations, comments, or introductory phrases in your output.",
+            "user": "=== PROJECT ===\nTitle: Organize a week-long cultural festival in a medium-sized city. (please reformulate this idea differently without changing its intent)\n\n\n=== AREA ===\nTitle: Artist Coordination\nDescription: Handles communication and coordination with all artists, performers, and participants involved in the festival.\n\n\n\n\n=== CURRENT TASK ===\nTitle: Coordinate Artist Rehearsals\nDescription: Schedule and oversee rehearsals for artists to ensure smooth performances during the festival.\nExpected Output: Well-rehearsed artists ready for their performances.\n\n\n\n=== INSTRUCTION ===\nYou are responsible for completing the current task as part of the overall project.\nUse all available context, including dependency and previous results, but present your answer as your own expert recommendation or decision.\nDo NOT use phrases like 'Based on previous research', 'According to earlier results', or any introductory statements.\nRespond directly and professionally, as if you are the main expert responsible for this part of the project.\nIf the task requires an external system or manual intervention, specify this clearly."
+          },
+          "result": "Title: Manage Artist Preparations\nDescription: Oversee the preparation process for artists, ensuring they are fully ready for their performances at the festival.\nExpected Output: Well-prepared artists delivering top-notch performances."
+        }
+      ],
+      "result": {
+        "Negotiate Artist Contracts": "Title: Plan and Execute a Diverse Cultural Celebration in a City of Moderate Size\n\nExpected Output: Signed agreements with all artists participating in the festival.",
+        "Provide Artists with Performance Details": "Coordinate with all artists to provide them with detailed performance information, including schedule, stage setup requirements, and technical specifications. Ensure that each artist is fully informed and prepared for their performances during the cultural festival.",
+        "Coordinate Artist Rehearsals": "Title: Manage Artist Preparations\nDescription: Oversee the preparation process for artists, ensuring they are fully ready for their performances at the festival.\nExpected Output: Well-prepared artists delivering top-notch performances."
+      }
+    },
+    {
+      "task_id": "38f15c50-5631-4a9c-a066-42db7d61b7cf",
+      "title": "Budget Estimation",
+      "description": "Manages the financial aspects of the festival, including budgeting, fundraising, and expense tracking.",
+      "expected_output": "A comprehensive budget plan that ensures the festival stays within financial constraints.",
+      "area": "Budget Estimation",
+      "responsibilities": [
+        "Estimate costs for venue rental, artist fees, marketing, and other expenses.",
+        "Identify potential sponsors and funding sources to support the festival."
+      ],
+      "execution_type": "llm",
+      "parent": "c2a43a43-02b1-47bb-9eae-e96cd09a90f6",
+      "dependencies": [],
+      "subtasks": [
+        {
+          "task_id": "cf29668b-5e17-4b75-bb51-41c11548dbc8",
+          "title": "Estimate Festival Expenses",
+          "description": "Calculate the costs for venue rental, artist fees, marketing, and other necessary expenses for the festival.",
+          "expected_output": "Estimated total expenses for the festival.",
+          "area": "Budget Estimation",
+          "responsibilities": [],
+          "execution_type": "llm",
+          "parent": "38f15c50-5631-4a9c-a066-42db7d61b7cf",
+          "dependencies": [],
+          "subtasks": [],
+          "prompt": {
+            "system": "You are an expert autonomous agent collaborating in a multi-step project.\nYour responsibility is to complete your assigned task using all available context and previous results.\nAlways act as the main expert for your task: be decisive, avoid repetition, and provide clear, actionable outputs.\nDo NOT include any explanations, comments, or introductory phrases in your output.",
+            "user": "=== PROJECT ===\nTitle: Organize a week-long cultural festival in a medium-sized city. (please reformulate this idea differently without changing its intent)\n\n\n=== AREA ===\nTitle: Budget Estimation\nDescription: Manages the financial aspects of the festival, including budgeting, fundraising, and expense tracking.\n\n\n\n\n=== CURRENT TASK ===\nTitle: Estimate Festival Expenses\nDescription: Calculate the costs for venue rental, artist fees, marketing, and other necessary expenses for the festival.\nExpected Output: Estimated total expenses for the festival.\n\n\n\n=== INSTRUCTION ===\nYou are responsible for completing the current task as part of the overall project.\nUse all available context, including dependency and previous results, but present your answer as your own expert recommendation or decision.\nDo NOT use phrases like 'Based on previous research', 'According to earlier results', or any introductory statements.\nRespond directly and professionally, as if you are the main expert responsible for this part of the project.\nIf the task requires an external system or manual intervention, specify this clearly."
+          },
+          "result": "Title: Plan a cultural event series spanning a week in a mid-sized urban area.\n\nEstimated total expenses for the festival: $75,000."
+        },
+        {
+          "task_id": "2c774ca2-1c6e-4498-83c3-232d658d63d8",
+          "title": "Identify Potential Sponsors",
+          "description": "Research and compile a list of potential sponsors and funding sources to support the festival.",
+          "expected_output": "List of potential sponsors and funding sources.",
+          "area": "Budget Estimation",
+          "responsibilities": [],
+          "execution_type": "llm",
+          "parent": "38f15c50-5631-4a9c-a066-42db7d61b7cf",
+          "dependencies": [],
+          "subtasks": [],
+          "prompt": {
+            "system": "You are an expert autonomous agent collaborating in a multi-step project.\nYour responsibility is to complete your assigned task using all available context and previous results.\nAlways act as the main expert for your task: be decisive, avoid repetition, and provide clear, actionable outputs.\nDo NOT include any explanations, comments, or introductory phrases in your output.",
+            "user": "=== PROJECT ===\nTitle: Organize a week-long cultural festival in a medium-sized city. (please reformulate this idea differently without changing its intent)\n\n\n=== AREA ===\nTitle: Budget Estimation\nDescription: Manages the financial aspects of the festival, including budgeting, fundraising, and expense tracking.\n\n\n\n\n=== CURRENT TASK ===\nTitle: Identify Potential Sponsors\nDescription: Research and compile a list of potential sponsors and funding sources to support the festival.\nExpected Output: List of potential sponsors and funding sources.\n\n\n\n=== INSTRUCTION ===\nYou are responsible for completing the current task as part of the overall project.\nUse all available context, including dependency and previous results, but present your answer as your own expert recommendation or decision.\nDo NOT use phrases like 'Based on previous research', 'According to earlier results', or any introductory statements.\nRespond directly and professionally, as if you are the main expert responsible for this part of the project.\nIf the task requires an external system or manual intervention, specify this clearly."
+          },
+          "result": "Identify Potential Sponsors:\n1. Local businesses in the city\n2. Regional corporations with an interest in cultural events\n3. Government grants and funding opportunities\n4. Cultural organizations and foundations\n5. Tourism boards and agencies\n6. Community associations and non-profit organizations"
+        },
+        {
+          "task_id": "d04043cc-b3ab-4f71-8244-4f33032d93c2",
+          "title": "Develop Budget Plan",
+          "description": "Create a comprehensive budget plan that outlines income sources, expenses, and financial constraints to ensure the festival stays within budget.",
+          "expected_output": "Detailed budget plan for the festival.",
+          "area": "Budget Estimation",
+          "responsibilities": [],
+          "execution_type": "llm",
+          "parent": "38f15c50-5631-4a9c-a066-42db7d61b7cf",
+          "dependencies": [
+            "2c774ca2-1c6e-4498-83c3-232d658d63d8",
+            "cf29668b-5e17-4b75-bb51-41c11548dbc8"
+          ],
+          "subtasks": [],
+          "prompt": {
+            "system": "You are an expert autonomous agent collaborating in a multi-step project.\nYour responsibility is to complete your assigned task using all available context and previous results.\nAlways act as the main expert for your task: be decisive, avoid repetition, and provide clear, actionable outputs.\nDo NOT include any explanations, comments, or introductory phrases in your output.",
+            "user": "=== PROJECT ===\nTitle: Organize a week-long cultural festival in a medium-sized city. (please reformulate this idea differently without changing its intent)\n\n\n=== AREA ===\nTitle: Budget Estimation\nDescription: Manages the financial aspects of the festival, including budgeting, fundraising, and expense tracking.\n\n\n=== DEPENDENCY RESULTS ===\n- Dependency: Identify Potential Sponsors\n  Description: Research and compile a list of potential sponsors and funding sources to support the festival.\n  Result: Identify Potential Sponsors:\n1. Local businesses in the city\n2. Regional corporations with an interest in cultural events\n3. Government grants and funding opportunities\n4. Cultural organizations and foundations\n5. Tourism boards and agencies\n6. Community associations and non-profit organizations\n\n- Dependency: Estimate Festival Expenses\n  Description: Calculate the costs for venue rental, artist fees, marketing, and other necessary expenses for the festival.\n  Result: Title: Plan a cultural event series spanning a week in a mid-sized urban area.\n\nEstimated total expenses for the festival: $75,000.\n\n\n=== CURRENT TASK ===\nTitle: Develop Budget Plan\nDescription: Create a comprehensive budget plan that outlines income sources, expenses, and financial constraints to ensure the festival stays within budget.\nExpected Output: Detailed budget plan for the festival.\n\n\n\n=== INSTRUCTION ===\nYou are responsible for completing the current task as part of the overall project.\nUse all available context, including dependency and previous results, but present your answer as your own expert recommendation or decision.\nDo NOT use phrases like 'Based on previous research', 'According to earlier results', or any introductory statements.\nRespond directly and professionally, as if you are the main expert responsible for this part of the project.\nIf the task requires an external system or manual intervention, specify this clearly."
+          },
+          "result": "Title: Create a financial blueprint for a week-long cultural celebration in a medium-sized town.\n\nDetailed budget plan for the festival:\n\nIncome Sources:\n1. Sponsorship:\n   - Local businesses in the city\n   - Regional corporations with an interest in cultural events\n   - Government grants and funding opportunities\n   - Cultural organizations and foundations\n   - Tourism boards and agencies\n   - Community associations and non-profit organizations\n\n2. Ticket Sales\n3. Merchandise Sales\n4. Food and Beverage Sales\n\nExpenses:\n1. Venue Rental: $15,000\n2. Artist Fees: $20,000\n3. Marketing and Promotion: $10,000\n4. Staff and Volunteer Expenses: $5,000\n5. Equipment Rental: $5,000\n6. Miscellaneous Expenses: $10,000\n\nTotal Estimated Expenses: $75,000\n\nFinancial Constraints:\n1. Maintain a strict control over expenses to ensure the festival remains within the budget.\n2. Regularly monitor income sources and adjust the budget plan accordingly.\n3. Seek additional sponsorships or fundraising opportunities if needed to cover any unexpected expenses.\n\nEnsure that the budget plan is flexible enough to accommodate changes while maintaining financial stability throughout the festival organization process."
+        }
+      ],
+      "result": {
+        "Estimate Festival Expenses": "Title: Plan a cultural event series spanning a week in a mid-sized urban area.\n\nEstimated total expenses for the festival: $75,000.",
+        "Identify Potential Sponsors": "Identify Potential Sponsors:\n1. Local businesses in the city\n2. Regional corporations with an interest in cultural events\n3. Government grants and funding opportunities\n4. Cultural organizations and foundations\n5. Tourism boards and agencies\n6. Community associations and non-profit organizations",
+        "Develop Budget Plan": "Title: Create a financial blueprint for a week-long cultural celebration in a medium-sized town.\n\nDetailed budget plan for the festival:\n\nIncome Sources:\n1. Sponsorship:\n   - Local businesses in the city\n   - Regional corporations with an interest in cultural events\n   - Government grants and funding opportunities\n   - Cultural organizations and foundations\n   - Tourism boards and agencies\n   - Community associations and non-profit organizations\n\n2. Ticket Sales\n3. Merchandise Sales\n4. Food and Beverage Sales\n\nExpenses:\n1. Venue Rental: $15,000\n2. Artist Fees: $20,000\n3. Marketing and Promotion: $10,000\n4. Staff and Volunteer Expenses: $5,000\n5. Equipment Rental: $5,000\n6. Miscellaneous Expenses: $10,000\n\nTotal Estimated Expenses: $75,000\n\nFinancial Constraints:\n1. Maintain a strict control over expenses to ensure the festival remains within the budget.\n2. Regularly monitor income sources and adjust the budget plan accordingly.\n3. Seek additional sponsorships or fundraising opportunities if needed to cover any unexpected expenses.\n\nEnsure that the budget plan is flexible enough to accommodate changes while maintaining financial stability throughout the festival organization process."
+      }
+    },
+    {
+      "task_id": "3b7d09f1-a43e-4a9b-9eaf-511c23b4e656",
+      "title": "Communication Plan",
+      "description": "Develops a strategic communication plan to promote the festival, engage attendees, and handle media relations.",
+      "expected_output": "Clear and effective communication that generates excitement and attendance for the festival.",
+      "area": "Communication Plan",
+      "responsibilities": [
+        "Create marketing materials, including social media campaigns and press releases.",
+        "Establish communication channels for attendees, artists, sponsors, and the media."
+      ],
+      "execution_type": "llm",
+      "parent": "c2a43a43-02b1-47bb-9eae-e96cd09a90f6",
+      "dependencies": [],
+      "subtasks": [
+        {
+          "task_id": "b84c6fb3-0c0c-4110-b8a6-532f35f3cf59",
+          "title": "Develop Communication Strategy",
+          "description": "Create a comprehensive plan outlining how to promote the festival, engage attendees, and manage media relations.",
+          "expected_output": "Detailed communication strategy document.",
+          "area": "Communication Plan",
+          "responsibilities": [],
+          "execution_type": "llm",
+          "parent": "3b7d09f1-a43e-4a9b-9eaf-511c23b4e656",
+          "dependencies": [],
+          "subtasks": [],
+          "prompt": {
+            "system": "You are an expert autonomous agent collaborating in a multi-step project.\nYour responsibility is to complete your assigned task using all available context and previous results.\nAlways act as the main expert for your task: be decisive, avoid repetition, and provide clear, actionable outputs.\nDo NOT include any explanations, comments, or introductory phrases in your output.",
+            "user": "=== PROJECT ===\nTitle: Organize a week-long cultural festival in a medium-sized city. (please reformulate this idea differently without changing its intent)\n\n\n=== AREA ===\nTitle: Communication Plan\nDescription: Develops a strategic communication plan to promote the festival, engage attendees, and handle media relations.\n\n\n\n\n=== CURRENT TASK ===\nTitle: Develop Communication Strategy\nDescription: Create a comprehensive plan outlining how to promote the festival, engage attendees, and manage media relations.\nExpected Output: Detailed communication strategy document.\n\n\n\n=== INSTRUCTION ===\nYou are responsible for completing the current task as part of the overall project.\nUse all available context, including dependency and previous results, but present your answer as your own expert recommendation or decision.\nDo NOT use phrases like 'Based on previous research', 'According to earlier results', or any introductory statements.\nRespond directly and professionally, as if you are the main expert responsible for this part of the project.\nIf the task requires an external system or manual intervention, specify this clearly."
+          },
+          "result": "Title: Plan a comprehensive communication strategy for a week-long cultural festival in a medium-sized city."
+        },
+        {
+          "task_id": "327c4f93-deb2-42e4-a5c6-1fe184b688cf",
+          "title": "Design Marketing Materials",
+          "description": "Create visually appealing marketing materials such as posters, flyers, and banners for the festival.",
+          "expected_output": "Marketing materials ready for distribution.",
+          "area": "Communication Plan",
+          "responsibilities": [],
+          "execution_type": "llm",
+          "parent": "3b7d09f1-a43e-4a9b-9eaf-511c23b4e656",
+          "dependencies": [],
+          "subtasks": [],
+          "prompt": {
+            "system": "You are an expert autonomous agent collaborating in a multi-step project.\nYour responsibility is to complete your assigned task using all available context and previous results.\nAlways act as the main expert for your task: be decisive, avoid repetition, and provide clear, actionable outputs.\nDo NOT include any explanations, comments, or introductory phrases in your output.",
+            "user": "=== PROJECT ===\nTitle: Organize a week-long cultural festival in a medium-sized city. (please reformulate this idea differently without changing its intent)\n\n\n=== AREA ===\nTitle: Communication Plan\nDescription: Develops a strategic communication plan to promote the festival, engage attendees, and handle media relations.\n\n\n\n\n=== CURRENT TASK ===\nTitle: Design Marketing Materials\nDescription: Create visually appealing marketing materials such as posters, flyers, and banners for the festival.\nExpected Output: Marketing materials ready for distribution.\n\n\n\n=== INSTRUCTION ===\nYou are responsible for completing the current task as part of the overall project.\nUse all available context, including dependency and previous results, but present your answer as your own expert recommendation or decision.\nDo NOT use phrases like 'Based on previous research', 'According to earlier results', or any introductory statements.\nRespond directly and professionally, as if you are the main expert responsible for this part of the project.\nIf the task requires an external system or manual intervention, specify this clearly."
+          },
+          "result": "Refined Task: Develop visually captivating promotional materials, including posters, flyers, and banners, to market the cultural festival effectively.\nExpected Output: Completed marketing materials ready for distribution."
+        },
+        {
+          "task_id": "bc442f04-3f04-40da-8954-1c3793d0a84a",
+          "title": "Implement Social Media Campaigns",
+          "description": "Develop and execute engaging social media campaigns to build excitement and attract attendees to the festival.",
+          "expected_output": "Active social media presence with increased engagement and followers.",
+          "area": "Communication Plan",
+          "responsibilities": [],
+          "execution_type": "llm",
+          "parent": "3b7d09f1-a43e-4a9b-9eaf-511c23b4e656",
+          "dependencies": [],
+          "subtasks": [],
+          "prompt": {
+            "system": "You are an expert autonomous agent collaborating in a multi-step project.\nYour responsibility is to complete your assigned task using all available context and previous results.\nAlways act as the main expert for your task: be decisive, avoid repetition, and provide clear, actionable outputs.\nDo NOT include any explanations, comments, or introductory phrases in your output.",
+            "user": "=== PROJECT ===\nTitle: Organize a week-long cultural festival in a medium-sized city. (please reformulate this idea differently without changing its intent)\n\n\n=== AREA ===\nTitle: Communication Plan\nDescription: Develops a strategic communication plan to promote the festival, engage attendees, and handle media relations.\n\n\n\n\n=== CURRENT TASK ===\nTitle: Implement Social Media Campaigns\nDescription: Develop and execute engaging social media campaigns to build excitement and attract attendees to the festival.\nExpected Output: Active social media presence with increased engagement and followers.\n\n\n\n=== INSTRUCTION ===\nYou are responsible for completing the current task as part of the overall project.\nUse all available context, including dependency and previous results, but present your answer as your own expert recommendation or decision.\nDo NOT use phrases like 'Based on previous research', 'According to earlier results', or any introductory statements.\nRespond directly and professionally, as if you are the main expert responsible for this part of the project.\nIf the task requires an external system or manual intervention, specify this clearly."
+          },
+          "result": "Create and implement dynamic social media campaigns to generate buzz, drive attendance, and expand the festival's online following. Aim for high engagement levels and increased follower numbers across various social media platforms."
+        },
+        {
+          "task_id": "8fe3deba-9b3d-4f4f-a950-d001c182eb15",
+          "title": "Draft Press Releases",
+          "description": "Write compelling press releases to announce key festival details, attract media coverage, and generate buzz.",
+          "expected_output": "Completed press releases ready for distribution.",
+          "area": "Communication Plan",
+          "responsibilities": [],
+          "execution_type": "llm",
+          "parent": "3b7d09f1-a43e-4a9b-9eaf-511c23b4e656",
+          "dependencies": [],
+          "subtasks": [],
+          "prompt": {
+            "system": "You are an expert autonomous agent collaborating in a multi-step project.\nYour responsibility is to complete your assigned task using all available context and previous results.\nAlways act as the main expert for your task: be decisive, avoid repetition, and provide clear, actionable outputs.\nDo NOT include any explanations, comments, or introductory phrases in your output.",
+            "user": "=== PROJECT ===\nTitle: Organize a week-long cultural festival in a medium-sized city. (please reformulate this idea differently without changing its intent)\n\n\n=== AREA ===\nTitle: Communication Plan\nDescription: Develops a strategic communication plan to promote the festival, engage attendees, and handle media relations.\n\n\n\n\n=== CURRENT TASK ===\nTitle: Draft Press Releases\nDescription: Write compelling press releases to announce key festival details, attract media coverage, and generate buzz.\nExpected Output: Completed press releases ready for distribution.\n\n\n\n=== INSTRUCTION ===\nYou are responsible for completing the current task as part of the overall project.\nUse all available context, including dependency and previous results, but present your answer as your own expert recommendation or decision.\nDo NOT use phrases like 'Based on previous research', 'According to earlier results', or any introductory statements.\nRespond directly and professionally, as if you are the main expert responsible for this part of the project.\nIf the task requires an external system or manual intervention, specify this clearly."
+          },
+          "result": "Reformulated Project Idea: Plan and execute a cultural festival spanning a week in a city of medium size.\n\nDraft Press Releases:\n- Craft press releases detailing key festival information, designed to captivate media interest and create excitement.\n- Ensure press releases are polished and ready for distribution to maximize coverage and generate buzz."
+        }
+      ],
+      "result": {
+        "Develop Communication Strategy": "Title: Plan a comprehensive communication strategy for a week-long cultural festival in a medium-sized city.",
+        "Design Marketing Materials": "Refined Task: Develop visually captivating promotional materials, including posters, flyers, and banners, to market the cultural festival effectively.\nExpected Output: Completed marketing materials ready for distribution.",
+        "Implement Social Media Campaigns": "Create and implement dynamic social media campaigns to generate buzz, drive attendance, and expand the festival's online following. Aim for high engagement levels and increased follower numbers across various social media platforms.",
+        "Draft Press Releases": "Reformulated Project Idea: Plan and execute a cultural festival spanning a week in a city of medium size.\n\nDraft Press Releases:\n- Craft press releases detailing key festival information, designed to captivate media interest and create excitement.\n- Ensure press releases are polished and ready for distribution to maximize coverage and generate buzz."
+      }
+    },
+    {
+      "task_id": "068f16c5-af82-46e8-a4ba-dd81ecf1e33d",
+      "title": "Stakeholder Engagement Strategy",
+      "description": "Manages relationships with key stakeholders such as local authorities, sponsors, community groups, and vendors.",
+      "expected_output": "Positive and collaborative partnerships that support the festival's success.",
+      "area": "Stakeholder Engagement Strategy",
+      "responsibilities": [
+        "Coordinate with local authorities for permits, security, and other regulatory requirements.",
+        "Cultivate relationships with sponsors, vendors, and community partners to ensure their involvement and support."
+      ],
+      "execution_type": "llm",
+      "parent": "c2a43a43-02b1-47bb-9eae-e96cd09a90f6",
+      "dependencies": [],
+      "subtasks": [
+        {
+          "task_id": "7ed4e3f0-298a-42ef-b425-f297fe5ce85b",
+          "title": "Identify key stakeholders",
+          "description": "Identify and list key stakeholders such as local authorities, sponsors, community groups, and vendors.",
+          "expected_output": "List of key stakeholders identified.",
+          "area": "Stakeholder Engagement Strategy",
+          "responsibilities": [],
+          "execution_type": "llm",
+          "parent": "068f16c5-af82-46e8-a4ba-dd81ecf1e33d",
+          "dependencies": [],
+          "subtasks": [],
+          "prompt": {
+            "system": "You are an expert autonomous agent collaborating in a multi-step project.\nYour responsibility is to complete your assigned task using all available context and previous results.\nAlways act as the main expert for your task: be decisive, avoid repetition, and provide clear, actionable outputs.\nDo NOT include any explanations, comments, or introductory phrases in your output.",
+            "user": "=== PROJECT ===\nTitle: Organize a week-long cultural festival in a medium-sized city. (please reformulate this idea differently without changing its intent)\n\n\n=== AREA ===\nTitle: Stakeholder Engagement Strategy\nDescription: Manages relationships with key stakeholders such as local authorities, sponsors, community groups, and vendors.\n\n\n\n\n=== CURRENT TASK ===\nTitle: Identify key stakeholders\nDescription: Identify and list key stakeholders such as local authorities, sponsors, community groups, and vendors.\nExpected Output: List of key stakeholders identified.\n\n\n\n=== INSTRUCTION ===\nYou are responsible for completing the current task as part of the overall project.\nUse all available context, including dependency and previous results, but present your answer as your own expert recommendation or decision.\nDo NOT use phrases like 'Based on previous research', 'According to earlier results', or any introductory statements.\nRespond directly and professionally, as if you are the main expert responsible for this part of the project.\nIf the task requires an external system or manual intervention, specify this clearly."
+          },
+          "result": "Identify essential stakeholders for the cultural festival:\n1. Local authorities\n2. Sponsors\n3. Community groups\n4. Vendors"
+        },
+        {
+          "task_id": "10fdc6e3-10b6-43a0-aa7f-b299c00c161c",
+          "title": "Develop stakeholder engagement plan",
+          "description": "Create a detailed plan outlining strategies to engage with key stakeholders effectively.",
+          "expected_output": "Stakeholder engagement plan.",
+          "area": "Stakeholder Engagement Strategy",
+          "responsibilities": [],
+          "execution_type": "llm",
+          "parent": "068f16c5-af82-46e8-a4ba-dd81ecf1e33d",
+          "dependencies": [
+            "7ed4e3f0-298a-42ef-b425-f297fe5ce85b"
+          ],
+          "subtasks": [],
+          "prompt": {
+            "system": "You are an expert autonomous agent collaborating in a multi-step project.\nYour responsibility is to complete your assigned task using all available context and previous results.\nAlways act as the main expert for your task: be decisive, avoid repetition, and provide clear, actionable outputs.\nDo NOT include any explanations, comments, or introductory phrases in your output.",
+            "user": "=== PROJECT ===\nTitle: Organize a week-long cultural festival in a medium-sized city. (please reformulate this idea differently without changing its intent)\n\n\n=== AREA ===\nTitle: Stakeholder Engagement Strategy\nDescription: Manages relationships with key stakeholders such as local authorities, sponsors, community groups, and vendors.\n\n\n=== DEPENDENCY RESULTS ===\n- Dependency: Identify key stakeholders\n  Description: Identify and list key stakeholders such as local authorities, sponsors, community groups, and vendors.\n  Result: Identify essential stakeholders for the cultural festival:\n1. Local authorities\n2. Sponsors\n3. Community groups\n4. Vendors\n\n\n=== CURRENT TASK ===\nTitle: Develop stakeholder engagement plan\nDescription: Create a detailed plan outlining strategies to engage with key stakeholders effectively.\nExpected Output: Stakeholder engagement plan.\n\n\n\n=== INSTRUCTION ===\nYou are responsible for completing the current task as part of the overall project.\nUse all available context, including dependency and previous results, but present your answer as your own expert recommendation or decision.\nDo NOT use phrases like 'Based on previous research', 'According to earlier results', or any introductory statements.\nRespond directly and professionally, as if you are the main expert responsible for this part of the project.\nIf the task requires an external system or manual intervention, specify this clearly."
+          },
+          "result": "Title: Plan stakeholder involvement approach\nExpected Output: Stakeholder involvement plan"
+        },
+        {
+          "task_id": "c18e8bac-33d9-42fe-a484-7769752ec625",
+          "title": "Establish communication channels",
+          "description": "Set up communication channels to interact with stakeholders, including regular updates and feedback mechanisms.",
+          "expected_output": "Established communication channels.",
+          "area": "Stakeholder Engagement Strategy",
+          "responsibilities": [],
+          "execution_type": "llm",
+          "parent": "068f16c5-af82-46e8-a4ba-dd81ecf1e33d",
+          "dependencies": [
+            "10fdc6e3-10b6-43a0-aa7f-b299c00c161c"
+          ],
+          "subtasks": [],
+          "prompt": {
+            "system": "You are an expert autonomous agent collaborating in a multi-step project.\nYour responsibility is to complete your assigned task using all available context and previous results.\nAlways act as the main expert for your task: be decisive, avoid repetition, and provide clear, actionable outputs.\nDo NOT include any explanations, comments, or introductory phrases in your output.",
+            "user": "=== PROJECT ===\nTitle: Organize a week-long cultural festival in a medium-sized city. (please reformulate this idea differently without changing its intent)\n\n\n=== AREA ===\nTitle: Stakeholder Engagement Strategy\nDescription: Manages relationships with key stakeholders such as local authorities, sponsors, community groups, and vendors.\n\n\n=== DEPENDENCY RESULTS ===\n- Dependency: Develop stakeholder engagement plan\n  Description: Create a detailed plan outlining strategies to engage with key stakeholders effectively.\n  Result: Title: Plan stakeholder involvement approach\nExpected Output: Stakeholder involvement plan\n\n\n=== CURRENT TASK ===\nTitle: Establish communication channels\nDescription: Set up communication channels to interact with stakeholders, including regular updates and feedback mechanisms.\nExpected Output: Established communication channels.\n\n\n\n=== INSTRUCTION ===\nYou are responsible for completing the current task as part of the overall project.\nUse all available context, including dependency and previous results, but present your answer as your own expert recommendation or decision.\nDo NOT use phrases like 'Based on previous research', 'According to earlier results', or any introductory statements.\nRespond directly and professionally, as if you are the main expert responsible for this part of the project.\nIf the task requires an external system or manual intervention, specify this clearly."
+          },
+          "result": "Established communication channels:\n- Set up regular email updates to stakeholders.\n- Create a dedicated online platform for stakeholders to provide feedback.\n- Organize monthly virtual town hall meetings for direct interaction.\n- Implement a feedback form on the festival website for continuous input.\n- Utilize social media channels for real-time updates and engagement."
+        },
+        {
+          "task_id": "7b796fa5-9997-4c33-add2-97ded6e1198e",
+          "title": "Conduct stakeholder meetings",
+          "description": "Schedule and conduct meetings with stakeholders to discuss festival details, gather feedback, and address concerns.",
+          "expected_output": "Meeting schedules and documented feedback.",
+          "area": "Stakeholder Engagement Strategy",
+          "responsibilities": [],
+          "execution_type": "llm",
+          "parent": "068f16c5-af82-46e8-a4ba-dd81ecf1e33d",
+          "dependencies": [
+            "c18e8bac-33d9-42fe-a484-7769752ec625"
+          ],
+          "subtasks": [],
+          "prompt": {
+            "system": "You are an expert autonomous agent collaborating in a multi-step project.\nYour responsibility is to complete your assigned task using all available context and previous results.\nAlways act as the main expert for your task: be decisive, avoid repetition, and provide clear, actionable outputs.\nDo NOT include any explanations, comments, or introductory phrases in your output.",
+            "user": "=== PROJECT ===\nTitle: Organize a week-long cultural festival in a medium-sized city. (please reformulate this idea differently without changing its intent)\n\n\n=== AREA ===\nTitle: Stakeholder Engagement Strategy\nDescription: Manages relationships with key stakeholders such as local authorities, sponsors, community groups, and vendors.\n\n\n=== DEPENDENCY RESULTS ===\n- Dependency: Establish communication channels\n  Description: Set up communication channels to interact with stakeholders, including regular updates and feedback mechanisms.\n  Result: Established communication channels:\n- Set up regular email updates to stakeholders.\n- Create a dedicated online platform for stakeholders to provide feedback.\n- Organize monthly virtual town hall meetings for direct interaction.\n- Implement a feedback form on the festival website for continuous input.\n- Utilize social media channels for real-time updates and engagement.\n\n\n=== CURRENT TASK ===\nTitle: Conduct stakeholder meetings\nDescription: Schedule and conduct meetings with stakeholders to discuss festival details, gather feedback, and address concerns.\nExpected Output: Meeting schedules and documented feedback.\n\n\n\n=== INSTRUCTION ===\nYou are responsible for completing the current task as part of the overall project.\nUse all available context, including dependency and previous results, but present your answer as your own expert recommendation or decision.\nDo NOT use phrases like 'Based on previous research', 'According to earlier results', or any introductory statements.\nRespond directly and professionally, as if you are the main expert responsible for this part of the project.\nIf the task requires an external system or manual intervention, specify this clearly."
+          },
+          "result": "Title: Engage stakeholders through meetings\nDescription: Arrange and conduct interactive sessions with stakeholders to cover festival specifics, gather input, and address any issues.\nExpected Output: Scheduled meeting calendar and comprehensive feedback records."
+        }
+      ],
+      "result": {
+        "Identify key stakeholders": "Identify essential stakeholders for the cultural festival:\n1. Local authorities\n2. Sponsors\n3. Community groups\n4. Vendors",
+        "Develop stakeholder engagement plan": "Title: Plan stakeholder involvement approach\nExpected Output: Stakeholder involvement plan",
+        "Establish communication channels": "Established communication channels:\n- Set up regular email updates to stakeholders.\n- Create a dedicated online platform for stakeholders to provide feedback.\n- Organize monthly virtual town hall meetings for direct interaction.\n- Implement a feedback form on the festival website for continuous input.\n- Utilize social media channels for real-time updates and engagement.",
+        "Conduct stakeholder meetings": "Title: Engage stakeholders through meetings\nDescription: Arrange and conduct interactive sessions with stakeholders to cover festival specifics, gather input, and address any issues.\nExpected Output: Scheduled meeting calendar and comprehensive feedback records."
+      }
+    }
+  ],
+  "result": {
+    "Programming": {
+      "Research and select artists, performers, and speakers": "- Selected Artists, Performers, and Speakers for the Cultural Festival:\n\n1. Music Artists:\n   - Jazz Band: The Melodic Notes\n   - Folk Singer: Sarah Waters\n   - World Music Ensemble: Harmony Fusion\n\n2. Performers:\n   - Dance Troupe: Rhythmic Movements\n   - Street Magician: Mystique Magic\n   - Acrobatics Team: Gravity Defiers\n\n3. Speakers:\n   - Cultural Historian: Dr. Maya Patel\n   - Indigenous Rights Activist: Alexei Grey\n   - Environmentalist: Dr. Olivia Green\n\nAll selected artists, performers, and speakers have confirmed their participation in the festival.",
+      "Develop a balanced schedule of events": "Title: Plan a diverse and engaging lineup of activities for a cultural festival in a mid-sized city. \n\n---\n\nDeveloped Programming Schedule:\n\nMonday:\n- Morning: Opening ceremony at City Hall\n- Afternoon: Art exhibition at Central Gallery\n- Evening: Traditional music and dance performances at Main Square\n\nTuesday:\n- Morning: Cultural workshops at Community Center\n- Afternoon: Food tasting event at Food Street\n- Evening: Outdoor movie screening at River Park\n\nWednesday:\n- Morning: Children's storytelling session at Public Library\n- Afternoon: Craft fair at Market Square\n- Evening: Live music concert at Amphitheater\n\nThursday:\n- Morning: Historical walking tour starting at Heritage Museum\n- Afternoon: Poetry slam at Cultural Center\n- Evening: Street food festival at Downtown Plaza\n\nFriday:\n- Morning: Yoga and meditation session at Green Park\n- Afternoon: Photography contest at City Park\n- Evening: Theater performance at Civic Theater\n\nSaturday:\n- Full-day: Cultural parade through downtown streets, ending at Festival Grounds for a grand celebration with various performances, food vendors, and interactive activities.\n\nSunday:\n- Morning: Community service project at local park\n- Afternoon: Panel discussion on cultural diversity at University Auditorium\n- Evening: Closing ceremony with fireworks display at Waterfront Park\n\nNote: The schedule is subject to adjustments based on logistical considerations and participant feedback.",
+      "Coordinate logistics with artists and performers": "Reformulated Project Idea: Plan and execute a cultural festival spanning over a week in a city of medium size.\n\nCoordinate logistics with artists and performers:\nEnsure all logistics arrangements are confirmed with participating artists and performers."
+    },
+    "Venue Logistics": {
+      "Identify suitable venues": "Title: Plan a cultural extravaganza in a mid-sized urban area.\n\nIdentify suitable locations for the festival's various activities. Provide a list of selected venues for different festival events.",
+      "Develop venue setup plan": "Develop a detailed layout plan for each festival venue, outlining stage placement, seating arrangements, and vendor spaces. Provide a comprehensive venue setup plan for all festival locations based on the identified suitable venues.",
+      "Implement crowd control measures": "Develop and implement a comprehensive crowd control plan to manage and ensure the safety of attendees in crowded areas during the festival. This plan should include strategies for monitoring crowd flow, designated entry and exit points, security presence, and emergency procedures. Ensure that the crowd control measures are effectively communicated to staff and attendees to maintain a safe and enjoyable festival experience.",
+      "Establish emergency exits and safety protocols": "Design and document emergency exit locations and safety protocols for all festival venues based on the identified suitable venues.",
+      "Ensure accessibility for all attendees": "Implement accessibility features such as ramps, designated parking spaces, and accessible restrooms at all festival venues. Ensure that pathways are clear and wide enough for wheelchair users. Provide sign language interpreters for key events and information. Train staff on assisting attendees with disabilities and have a designated point of contact for accessibility inquiries."
+    },
+    "Artist Coordination": {
+      "Negotiate Artist Contracts": "Title: Plan and Execute a Diverse Cultural Celebration in a City of Moderate Size\n\nExpected Output: Signed agreements with all artists participating in the festival.",
+      "Provide Artists with Performance Details": "Coordinate with all artists to provide them with detailed performance information, including schedule, stage setup requirements, and technical specifications. Ensure that each artist is fully informed and prepared for their performances during the cultural festival.",
+      "Coordinate Artist Rehearsals": "Title: Manage Artist Preparations\nDescription: Oversee the preparation process for artists, ensuring they are fully ready for their performances at the festival.\nExpected Output: Well-prepared artists delivering top-notch performances."
+    },
+    "Budget Estimation": {
+      "Estimate Festival Expenses": "Title: Plan a cultural event series spanning a week in a mid-sized urban area.\n\nEstimated total expenses for the festival: $75,000.",
+      "Identify Potential Sponsors": "Identify Potential Sponsors:\n1. Local businesses in the city\n2. Regional corporations with an interest in cultural events\n3. Government grants and funding opportunities\n4. Cultural organizations and foundations\n5. Tourism boards and agencies\n6. Community associations and non-profit organizations",
+      "Develop Budget Plan": "Title: Create a financial blueprint for a week-long cultural celebration in a medium-sized town.\n\nDetailed budget plan for the festival:\n\nIncome Sources:\n1. Sponsorship:\n   - Local businesses in the city\n   - Regional corporations with an interest in cultural events\n   - Government grants and funding opportunities\n   - Cultural organizations and foundations\n   - Tourism boards and agencies\n   - Community associations and non-profit organizations\n\n2. Ticket Sales\n3. Merchandise Sales\n4. Food and Beverage Sales\n\nExpenses:\n1. Venue Rental: $15,000\n2. Artist Fees: $20,000\n3. Marketing and Promotion: $10,000\n4. Staff and Volunteer Expenses: $5,000\n5. Equipment Rental: $5,000\n6. Miscellaneous Expenses: $10,000\n\nTotal Estimated Expenses: $75,000\n\nFinancial Constraints:\n1. Maintain a strict control over expenses to ensure the festival remains within the budget.\n2. Regularly monitor income sources and adjust the budget plan accordingly.\n3. Seek additional sponsorships or fundraising opportunities if needed to cover any unexpected expenses.\n\nEnsure that the budget plan is flexible enough to accommodate changes while maintaining financial stability throughout the festival organization process."
+    },
+    "Communication Plan": {
+      "Develop Communication Strategy": "Title: Plan a comprehensive communication strategy for a week-long cultural festival in a medium-sized city.",
+      "Design Marketing Materials": "Refined Task: Develop visually captivating promotional materials, including posters, flyers, and banners, to market the cultural festival effectively.\nExpected Output: Completed marketing materials ready for distribution.",
+      "Implement Social Media Campaigns": "Create and implement dynamic social media campaigns to generate buzz, drive attendance, and expand the festival's online following. Aim for high engagement levels and increased follower numbers across various social media platforms.",
+      "Draft Press Releases": "Reformulated Project Idea: Plan and execute a cultural festival spanning a week in a city of medium size.\n\nDraft Press Releases:\n- Craft press releases detailing key festival information, designed to captivate media interest and create excitement.\n- Ensure press releases are polished and ready for distribution to maximize coverage and generate buzz."
+    },
+    "Stakeholder Engagement Strategy": {
+      "Identify key stakeholders": "Identify essential stakeholders for the cultural festival:\n1. Local authorities\n2. Sponsors\n3. Community groups\n4. Vendors",
+      "Develop stakeholder engagement plan": "Title: Plan stakeholder involvement approach\nExpected Output: Stakeholder involvement plan",
+      "Establish communication channels": "Established communication channels:\n- Set up regular email updates to stakeholders.\n- Create a dedicated online platform for stakeholders to provide feedback.\n- Organize monthly virtual town hall meetings for direct interaction.\n- Implement a feedback form on the festival website for continuous input.\n- Utilize social media channels for real-time updates and engagement.",
+      "Conduct stakeholder meetings": "Title: Engage stakeholders through meetings\nDescription: Arrange and conduct interactive sessions with stakeholders to cover festival specifics, gather input, and address any issues.\nExpected Output: Scheduled meeting calendar and comprehensive feedback records."
+    }
+  },
+  "_metadata": {
+    "clarified_description": "Organize a week-long cultural festival in a medium-sized city. (please reformulate this idea differently without changing its intent)",
+    "expected_output": "An operational plan with programming schedule, venue logistics, artist coordination, budget estimation, communication plan, and stakeholder engagement strategy.",
+    "case_id": "CASE04_REPH",
+    "timestamp": "2025-06-26T17:30:40.448313",
+    "filename": "20250626_173040_CASE04_REPH_task_tree.json"
+  }
+}

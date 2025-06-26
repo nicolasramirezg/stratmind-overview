@@ -1,0 +1,399 @@
+{
+  "task_id": "f8055dee-c335-440e-9190-479d17df940a",
+  "title": "Formulate a national strategy to reduce food waste across the entire supply chain.",
+  "description": "Formulate a national strategy to reduce food waste across the entire supply chain.",
+  "expected_output": "A multi-sector policy proposal that includes prevention strategies, incentives, stakeholder roles, measurement frameworks, and public awareness campaigns.",
+  "area": null,
+  "responsibilities": [],
+  "execution_type": "llm",
+  "parent": null,
+  "dependencies": [],
+  "subtasks": [
+    {
+      "task_id": "f7b90f4c-268b-4678-ac6e-c5fcf803908a",
+      "title": "Policy Formulation",
+      "description": "Responsible for designing the overarching policy framework to guide food waste reduction efforts.",
+      "expected_output": "A detailed policy document outlining regulations, guidelines, and targets.",
+      "area": "Policy Formulation",
+      "responsibilities": [
+        "Conduct research on best practices and existing policies.",
+        "Draft policy recommendations based on research findings."
+      ],
+      "execution_type": "llm",
+      "parent": "f8055dee-c335-440e-9190-479d17df940a",
+      "dependencies": [],
+      "subtasks": [
+        {
+          "task_id": "5f621e02-d77f-44a8-85c1-64e3a29a9539",
+          "title": "Research Existing Policies",
+          "description": "Conduct research on current policies related to food waste reduction to identify best practices.",
+          "expected_output": "Summary of existing policies and best practices.",
+          "area": "Policy Formulation",
+          "responsibilities": [],
+          "execution_type": "llm",
+          "parent": "f7b90f4c-268b-4678-ac6e-c5fcf803908a",
+          "dependencies": [],
+          "subtasks": [],
+          "prompt": {
+            "system": "You are an expert autonomous agent collaborating in a multi-step project.\nYour responsibility is to complete your assigned task using all available context and previous results.\nAlways act as the main expert for your task: be decisive, avoid repetition, and provide clear, actionable outputs.\nDo NOT include any explanations, comments, or introductory phrases in your output.",
+            "user": "=== PROJECT ===\nTitle: Formulate a national strategy to reduce food waste across the entire supply chain.\n\n\n=== AREA ===\nTitle: Policy Formulation\nDescription: Responsible for designing the overarching policy framework to guide food waste reduction efforts.\n\n\n\n\n=== CURRENT TASK ===\nTitle: Research Existing Policies\nDescription: Conduct research on current policies related to food waste reduction to identify best practices.\nExpected Output: Summary of existing policies and best practices.\n\n\n\n=== INSTRUCTION ===\nYou are responsible for completing the current task as part of the overall project.\nUse all available context, including dependency and previous results, but present your answer as your own expert recommendation or decision.\nDo NOT use phrases like 'Based on previous research', 'According to earlier results', or any introductory statements.\nRespond directly and professionally, as if you are the main expert responsible for this part of the project.\nIf the task requires an external system or manual intervention, specify this clearly."
+          },
+          "result": "I will research existing policies related to food waste reduction to identify best practices."
+        },
+        {
+          "task_id": "3fe07e71-c9c9-4a4e-8049-f5ba13a89343",
+          "title": "Draft Policy Recommendations",
+          "description": "Develop policy recommendations based on research findings to guide food waste reduction efforts.",
+          "expected_output": "Document outlining policy recommendations.",
+          "area": "Policy Formulation",
+          "responsibilities": [],
+          "execution_type": "llm",
+          "parent": "f7b90f4c-268b-4678-ac6e-c5fcf803908a",
+          "dependencies": [
+            "5f621e02-d77f-44a8-85c1-64e3a29a9539"
+          ],
+          "subtasks": [],
+          "prompt": {
+            "system": "You are an expert autonomous agent collaborating in a multi-step project.\nYour responsibility is to complete your assigned task using all available context and previous results.\nAlways act as the main expert for your task: be decisive, avoid repetition, and provide clear, actionable outputs.\nDo NOT include any explanations, comments, or introductory phrases in your output.",
+            "user": "=== PROJECT ===\nTitle: Formulate a national strategy to reduce food waste across the entire supply chain.\n\n\n=== AREA ===\nTitle: Policy Formulation\nDescription: Responsible for designing the overarching policy framework to guide food waste reduction efforts.\n\n\n=== DEPENDENCY RESULTS ===\n- Dependency: Research Existing Policies\n  Description: Conduct research on current policies related to food waste reduction to identify best practices.\n  Result: I will research existing policies related to food waste reduction to identify best practices.\n\n\n=== CURRENT TASK ===\nTitle: Draft Policy Recommendations\nDescription: Develop policy recommendations based on research findings to guide food waste reduction efforts.\nExpected Output: Document outlining policy recommendations.\n\n\n\n=== INSTRUCTION ===\nYou are responsible for completing the current task as part of the overall project.\nUse all available context, including dependency and previous results, but present your answer as your own expert recommendation or decision.\nDo NOT use phrases like 'Based on previous research', 'According to earlier results', or any introductory statements.\nRespond directly and professionally, as if you are the main expert responsible for this part of the project.\nIf the task requires an external system or manual intervention, specify this clearly."
+          },
+          "result": "Draft Policy Recommendations:\n\n1. Implement mandatory food waste reduction targets for businesses across the supply chain.\n2. Establish a national food waste monitoring system to track and analyze food waste data.\n3. Incentivize food donation by providing tax benefits and liability protections to food donors.\n4. Promote consumer awareness and education campaigns on reducing food waste at the household level.\n5. Encourage food retailers to adopt practices such as standardized date labeling and donation of surplus food.\n6. Develop partnerships with food industry stakeholders to support innovation in food waste reduction technologies and practices.\n7. Integrate food waste reduction principles into national food procurement policies for government institutions.\n8. Provide funding and grants for research and initiatives focused on food waste prevention and recovery.\n9. Strengthen collaboration between government agencies, NGOs, and private sector entities to enhance food waste reduction efforts.\n10. Regularly review and update the national food waste reduction strategy to ensure effectiveness and relevance."
+        }
+      ],
+      "result": {
+        "Research Existing Policies": "I will research existing policies related to food waste reduction to identify best practices.",
+        "Draft Policy Recommendations": "Draft Policy Recommendations:\n\n1. Implement mandatory food waste reduction targets for businesses across the supply chain.\n2. Establish a national food waste monitoring system to track and analyze food waste data.\n3. Incentivize food donation by providing tax benefits and liability protections to food donors.\n4. Promote consumer awareness and education campaigns on reducing food waste at the household level.\n5. Encourage food retailers to adopt practices such as standardized date labeling and donation of surplus food.\n6. Develop partnerships with food industry stakeholders to support innovation in food waste reduction technologies and practices.\n7. Integrate food waste reduction principles into national food procurement policies for government institutions.\n8. Provide funding and grants for research and initiatives focused on food waste prevention and recovery.\n9. Strengthen collaboration between government agencies, NGOs, and private sector entities to enhance food waste reduction efforts.\n10. Regularly review and update the national food waste reduction strategy to ensure effectiveness and relevance."
+      }
+    },
+    {
+      "task_id": "bd44a1c3-4331-464e-ac58-80414bc07521",
+      "title": "Stakeholder Engagement",
+      "description": "Responsible for involving relevant stakeholders in the strategy development process.",
+      "expected_output": "A network of engaged stakeholders committed to implementing the strategy.",
+      "area": "Stakeholder Engagement",
+      "responsibilities": [
+        "Identify key stakeholders across the supply chain.",
+        "Facilitate consultations and feedback sessions with stakeholders."
+      ],
+      "execution_type": "llm",
+      "parent": "f8055dee-c335-440e-9190-479d17df940a",
+      "dependencies": [],
+      "subtasks": [
+        {
+          "task_id": "ad0aa4a7-9cbf-42e1-b570-979d8687534b",
+          "title": "Identify key stakeholders",
+          "description": "Identify and list key stakeholders involved in the food supply chain.",
+          "expected_output": "List of key stakeholders across the supply chain.",
+          "area": "Stakeholder Engagement",
+          "responsibilities": [],
+          "execution_type": "llm",
+          "parent": "bd44a1c3-4331-464e-ac58-80414bc07521",
+          "dependencies": [],
+          "subtasks": [],
+          "prompt": {
+            "system": "You are an expert autonomous agent collaborating in a multi-step project.\nYour responsibility is to complete your assigned task using all available context and previous results.\nAlways act as the main expert for your task: be decisive, avoid repetition, and provide clear, actionable outputs.\nDo NOT include any explanations, comments, or introductory phrases in your output.",
+            "user": "=== PROJECT ===\nTitle: Formulate a national strategy to reduce food waste across the entire supply chain.\n\n\n=== AREA ===\nTitle: Stakeholder Engagement\nDescription: Responsible for involving relevant stakeholders in the strategy development process.\n\n\n\n\n=== CURRENT TASK ===\nTitle: Identify key stakeholders\nDescription: Identify and list key stakeholders involved in the food supply chain.\nExpected Output: List of key stakeholders across the supply chain.\n\n\n\n=== INSTRUCTION ===\nYou are responsible for completing the current task as part of the overall project.\nUse all available context, including dependency and previous results, but present your answer as your own expert recommendation or decision.\nDo NOT use phrases like 'Based on previous research', 'According to earlier results', or any introductory statements.\nRespond directly and professionally, as if you are the main expert responsible for this part of the project.\nIf the task requires an external system or manual intervention, specify this clearly."
+          },
+          "result": "1. Food producers\n2. Farmers\n3. Distributors\n4. Retailers\n5. Restaurants\n6. Food service providers\n7. Consumers\n8. Food banks and charities\n9. Government agencies\n10. Waste management companies"
+        },
+        {
+          "task_id": "a27d3dad-4e9d-4415-8118-fd20a55a0f4b",
+          "title": "Stakeholder consultation sessions",
+          "description": "Organize and facilitate consultation sessions with key stakeholders to gather feedback and input on the national strategy to reduce food waste.",
+          "expected_output": "Feedback and input from stakeholders on the strategy.",
+          "area": "Stakeholder Engagement",
+          "responsibilities": [],
+          "execution_type": "llm",
+          "parent": "bd44a1c3-4331-464e-ac58-80414bc07521",
+          "dependencies": [],
+          "subtasks": [],
+          "prompt": {
+            "system": "You are an expert autonomous agent collaborating in a multi-step project.\nYour responsibility is to complete your assigned task using all available context and previous results.\nAlways act as the main expert for your task: be decisive, avoid repetition, and provide clear, actionable outputs.\nDo NOT include any explanations, comments, or introductory phrases in your output.",
+            "user": "=== PROJECT ===\nTitle: Formulate a national strategy to reduce food waste across the entire supply chain.\n\n\n=== AREA ===\nTitle: Stakeholder Engagement\nDescription: Responsible for involving relevant stakeholders in the strategy development process.\n\n\n\n\n=== CURRENT TASK ===\nTitle: Stakeholder consultation sessions\nDescription: Organize and facilitate consultation sessions with key stakeholders to gather feedback and input on the national strategy to reduce food waste.\nExpected Output: Feedback and input from stakeholders on the strategy.\n\n\n\n=== INSTRUCTION ===\nYou are responsible for completing the current task as part of the overall project.\nUse all available context, including dependency and previous results, but present your answer as your own expert recommendation or decision.\nDo NOT use phrases like 'Based on previous research', 'According to earlier results', or any introductory statements.\nRespond directly and professionally, as if you are the main expert responsible for this part of the project.\nIf the task requires an external system or manual intervention, specify this clearly."
+          },
+          "result": "Organize and facilitate consultation sessions with key stakeholders to gather feedback and input on the national strategy to reduce food waste. Ensure to document all feedback and input received during the sessions for further analysis and integration into the strategy development process."
+        },
+        {
+          "task_id": "ed86edaa-a94f-4fca-adb4-2caf163dae77",
+          "title": "Stakeholder engagement plan",
+          "description": "Develop a comprehensive plan outlining how to engage and involve stakeholders throughout the strategy development and implementation process.",
+          "expected_output": "Stakeholder engagement plan document.",
+          "area": "Stakeholder Engagement",
+          "responsibilities": [],
+          "execution_type": "llm",
+          "parent": "bd44a1c3-4331-464e-ac58-80414bc07521",
+          "dependencies": [],
+          "subtasks": [],
+          "prompt": {
+            "system": "You are an expert autonomous agent collaborating in a multi-step project.\nYour responsibility is to complete your assigned task using all available context and previous results.\nAlways act as the main expert for your task: be decisive, avoid repetition, and provide clear, actionable outputs.\nDo NOT include any explanations, comments, or introductory phrases in your output.",
+            "user": "=== PROJECT ===\nTitle: Formulate a national strategy to reduce food waste across the entire supply chain.\n\n\n=== AREA ===\nTitle: Stakeholder Engagement\nDescription: Responsible for involving relevant stakeholders in the strategy development process.\n\n\n\n\n=== CURRENT TASK ===\nTitle: Stakeholder engagement plan\nDescription: Develop a comprehensive plan outlining how to engage and involve stakeholders throughout the strategy development and implementation process.\nExpected Output: Stakeholder engagement plan document.\n\n\n\n=== INSTRUCTION ===\nYou are responsible for completing the current task as part of the overall project.\nUse all available context, including dependency and previous results, but present your answer as your own expert recommendation or decision.\nDo NOT use phrases like 'Based on previous research', 'According to earlier results', or any introductory statements.\nRespond directly and professionally, as if you are the main expert responsible for this part of the project.\nIf the task requires an external system or manual intervention, specify this clearly."
+          },
+          "result": "**Stakeholder Engagement Plan**\n\n1. **Identify Stakeholders:**\n   - Government agencies\n   - Food producers and manufacturers\n   - Retailers and supermarkets\n   - Restaurants and food service providers\n   - Non-profit organizations\n   - Waste management companies\n   - Consumers\n\n2. **Engagement Strategies:**\n   - Conduct stakeholder mapping to understand interests and influence.\n   - Hold regular meetings and workshops to gather input and feedback.\n   - Utilize online surveys and feedback mechanisms for broader engagement.\n   - Establish a dedicated communication channel for ongoing updates.\n\n3. **Involvement in Strategy Development:**\n   - Invite stakeholders to participate in strategy formulation sessions.\n   - Encourage active involvement in setting goals and action plans.\n   - Provide opportunities for stakeholders to contribute expertise and resources.\n\n4. **Implementation Support:**\n   - Collaborate with stakeholders to implement specific initiatives.\n   - Facilitate partnerships between different stakeholders for joint projects.\n   - Monitor progress and provide regular updates on the strategy's implementation.\n\n5. **Communication and Transparency:**\n   - Communicate openly about decision-making processes and outcomes.\n   - Share progress reports and outcomes with stakeholders regularly.\n   - Acknowledge and celebrate stakeholder contributions to the strategy's success.\n\n6. **Evaluation and Feedback:**\n   - Establish mechanisms for stakeholders to provide feedback on the strategy's effectiveness.\n   - Conduct periodic evaluations to assess stakeholder satisfaction and engagement levels.\n   - Use feedback to make adjustments and improvements to the engagement process.\n\n7. **Conflict Resolution:**\n   - Develop a protocol for addressing conflicts or disagreements among stakeholders.\n   - Facilitate dialogue and mediation to resolve conflicts in a constructive manner.\n   - Prioritize the common goal of reducing food waste to guide conflict resolution efforts.\n\n8. **Resource Allocation:**\n   - Allocate resources to support stakeholder engagement activities effectively.\n   - Ensure that stakeholders have the necessary resources to participate meaningfully.\n   - Seek additional funding or support for stakeholder engagement efforts as needed.\n\n9. **Timeline and Milestones:**\n   - Establish a timeline for stakeholder engagement activities throughout the strategy development and implementation phases.\n   - Define clear milestones for stakeholder involvement and feedback points.\n   - Regularly review progress against the timeline and adjust as necessary.\n\n10. **Monitoring and Reporting:**\n    - Implement a system for monitoring stakeholder engagement activities and outcomes.\n    - Generate regular reports on stakeholder engagement metrics and progress.\n    - Use data and feedback to continuously improve stakeholder engagement strategies."
+        }
+      ],
+      "result": {
+        "Identify key stakeholders": "1. Food producers\n2. Farmers\n3. Distributors\n4. Retailers\n5. Restaurants\n6. Food service providers\n7. Consumers\n8. Food banks and charities\n9. Government agencies\n10. Waste management companies",
+        "Stakeholder consultation sessions": "Organize and facilitate consultation sessions with key stakeholders to gather feedback and input on the national strategy to reduce food waste. Ensure to document all feedback and input received during the sessions for further analysis and integration into the strategy development process.",
+        "Stakeholder engagement plan": "**Stakeholder Engagement Plan**\n\n1. **Identify Stakeholders:**\n   - Government agencies\n   - Food producers and manufacturers\n   - Retailers and supermarkets\n   - Restaurants and food service providers\n   - Non-profit organizations\n   - Waste management companies\n   - Consumers\n\n2. **Engagement Strategies:**\n   - Conduct stakeholder mapping to understand interests and influence.\n   - Hold regular meetings and workshops to gather input and feedback.\n   - Utilize online surveys and feedback mechanisms for broader engagement.\n   - Establish a dedicated communication channel for ongoing updates.\n\n3. **Involvement in Strategy Development:**\n   - Invite stakeholders to participate in strategy formulation sessions.\n   - Encourage active involvement in setting goals and action plans.\n   - Provide opportunities for stakeholders to contribute expertise and resources.\n\n4. **Implementation Support:**\n   - Collaborate with stakeholders to implement specific initiatives.\n   - Facilitate partnerships between different stakeholders for joint projects.\n   - Monitor progress and provide regular updates on the strategy's implementation.\n\n5. **Communication and Transparency:**\n   - Communicate openly about decision-making processes and outcomes.\n   - Share progress reports and outcomes with stakeholders regularly.\n   - Acknowledge and celebrate stakeholder contributions to the strategy's success.\n\n6. **Evaluation and Feedback:**\n   - Establish mechanisms for stakeholders to provide feedback on the strategy's effectiveness.\n   - Conduct periodic evaluations to assess stakeholder satisfaction and engagement levels.\n   - Use feedback to make adjustments and improvements to the engagement process.\n\n7. **Conflict Resolution:**\n   - Develop a protocol for addressing conflicts or disagreements among stakeholders.\n   - Facilitate dialogue and mediation to resolve conflicts in a constructive manner.\n   - Prioritize the common goal of reducing food waste to guide conflict resolution efforts.\n\n8. **Resource Allocation:**\n   - Allocate resources to support stakeholder engagement activities effectively.\n   - Ensure that stakeholders have the necessary resources to participate meaningfully.\n   - Seek additional funding or support for stakeholder engagement efforts as needed.\n\n9. **Timeline and Milestones:**\n   - Establish a timeline for stakeholder engagement activities throughout the strategy development and implementation phases.\n   - Define clear milestones for stakeholder involvement and feedback points.\n   - Regularly review progress against the timeline and adjust as necessary.\n\n10. **Monitoring and Reporting:**\n    - Implement a system for monitoring stakeholder engagement activities and outcomes.\n    - Generate regular reports on stakeholder engagement metrics and progress.\n    - Use data and feedback to continuously improve stakeholder engagement strategies."
+      }
+    },
+    {
+      "task_id": "0ae66e77-843d-4c95-9239-b37f513d5a2c",
+      "title": "Measurement Frameworks",
+      "description": "Responsible for establishing metrics and monitoring mechanisms to track progress.",
+      "expected_output": "A set of key performance indicators (KPIs) and data collection methods.",
+      "area": "Measurement Frameworks",
+      "responsibilities": [
+        "Define KPIs related to food waste reduction.",
+        "Develop a system for data collection and reporting."
+      ],
+      "execution_type": "llm",
+      "parent": "f8055dee-c335-440e-9190-479d17df940a",
+      "dependencies": [],
+      "subtasks": [
+        {
+          "task_id": "1c15cb9f-2b1b-4bc4-9647-e3e802981df9",
+          "title": "Define Key Performance Indicators (KPIs)",
+          "description": "Establish specific metrics that will be used to measure progress in reducing food waste across the supply chain.",
+          "expected_output": "List of KPIs relevant to food waste reduction.",
+          "area": "Measurement Frameworks",
+          "responsibilities": [],
+          "execution_type": "llm",
+          "parent": "0ae66e77-843d-4c95-9239-b37f513d5a2c",
+          "dependencies": [],
+          "subtasks": [],
+          "prompt": {
+            "system": "You are an expert autonomous agent collaborating in a multi-step project.\nYour responsibility is to complete your assigned task using all available context and previous results.\nAlways act as the main expert for your task: be decisive, avoid repetition, and provide clear, actionable outputs.\nDo NOT include any explanations, comments, or introductory phrases in your output.",
+            "user": "=== PROJECT ===\nTitle: Formulate a national strategy to reduce food waste across the entire supply chain.\n\n\n=== AREA ===\nTitle: Measurement Frameworks\nDescription: Responsible for establishing metrics and monitoring mechanisms to track progress.\n\n\n\n\n=== CURRENT TASK ===\nTitle: Define Key Performance Indicators (KPIs)\nDescription: Establish specific metrics that will be used to measure progress in reducing food waste across the supply chain.\nExpected Output: List of KPIs relevant to food waste reduction.\n\n\n\n=== INSTRUCTION ===\nYou are responsible for completing the current task as part of the overall project.\nUse all available context, including dependency and previous results, but present your answer as your own expert recommendation or decision.\nDo NOT use phrases like 'Based on previous research', 'According to earlier results', or any introductory statements.\nRespond directly and professionally, as if you are the main expert responsible for this part of the project.\nIf the task requires an external system or manual intervention, specify this clearly."
+          },
+          "result": "1. Percentage reduction in food waste at the production stage\n2. Percentage reduction in food waste during transportation and distribution\n3. Percentage reduction in food waste at retail and consumer levels\n4. Percentage increase in surplus food donations to food banks or charitable organizations\n5. Percentage increase in the use of food waste for composting or energy generation\n6. Reduction in greenhouse gas emissions associated with food waste\n7. Percentage increase in the adoption of food waste reduction technologies and practices across the supply chain\n8. Cost savings achieved through food waste reduction initiatives\n9. Number of partnerships established with stakeholders to address food waste\n10. Consumer awareness and behavior change towards reducing food waste"
+        },
+        {
+          "task_id": "7202e23d-a8d4-42c0-9486-0201e65772f7",
+          "title": "Develop Data Collection Methods",
+          "description": "Create a system for collecting data related to the identified KPIs to monitor and track progress effectively.",
+          "expected_output": "Data collection framework for KPIs.",
+          "area": "Measurement Frameworks",
+          "responsibilities": [],
+          "execution_type": "llm",
+          "parent": "0ae66e77-843d-4c95-9239-b37f513d5a2c",
+          "dependencies": [
+            "1c15cb9f-2b1b-4bc4-9647-e3e802981df9"
+          ],
+          "subtasks": [],
+          "prompt": {
+            "system": "You are an expert autonomous agent collaborating in a multi-step project.\nYour responsibility is to complete your assigned task using all available context and previous results.\nAlways act as the main expert for your task: be decisive, avoid repetition, and provide clear, actionable outputs.\nDo NOT include any explanations, comments, or introductory phrases in your output.",
+            "user": "=== PROJECT ===\nTitle: Formulate a national strategy to reduce food waste across the entire supply chain.\n\n\n=== AREA ===\nTitle: Measurement Frameworks\nDescription: Responsible for establishing metrics and monitoring mechanisms to track progress.\n\n\n=== DEPENDENCY RESULTS ===\n- Dependency: Define Key Performance Indicators (KPIs)\n  Description: Establish specific metrics that will be used to measure progress in reducing food waste across the supply chain.\n  Result: 1. Percentage reduction in food waste at the production stage\n2. Percentage reduction in food waste during transportation and distribution\n3. Percentage reduction in food waste at retail and consumer levels\n4. Percentage increase in surplus food donations to food banks or charitable organizations\n5. Percentage increase in the use of food waste for composting or energy generation\n6. Reduction in greenhouse gas emissions associated with food waste\n7. Percentage increase in the adoption of food waste reduction technologies and practices across the supply chain\n8. Cost savings achieved through food waste reduction initiatives\n9. Number of partnerships established with stakeholders to address food waste\n10. Consumer awareness and behavior change towards reducing food waste\n\n\n=== CURRENT TASK ===\nTitle: Develop Data Collection Methods\nDescription: Create a system for collecting data related to the identified KPIs to monitor and track progress effectively.\nExpected Output: Data collection framework for KPIs.\n\n\n\n=== INSTRUCTION ===\nYou are responsible for completing the current task as part of the overall project.\nUse all available context, including dependency and previous results, but present your answer as your own expert recommendation or decision.\nDo NOT use phrases like 'Based on previous research', 'According to earlier results', or any introductory statements.\nRespond directly and professionally, as if you are the main expert responsible for this part of the project.\nIf the task requires an external system or manual intervention, specify this clearly."
+          },
+          "result": "**Data Collection Framework for KPIs:**\n\n1. For KPI 1-3 (Percentage reduction in food waste at different stages):\n   - Implement regular data collection at production, transportation, distribution, retail, and consumer levels.\n   - Utilize weight measurements, waste logs, and tracking systems to quantify food waste reduction.\n\n2. For KPI 4-5 (Increase in surplus food donations and use of food waste):\n   - Collaborate with food banks and organizations to track surplus food donations.\n   - Record the amount of food waste diverted to composting or energy generation facilities.\n\n3. For KPI 6 (Reduction in greenhouse gas emissions):\n   - Calculate emissions reduction based on avoided methane production from food waste decomposition.\n   - Use emission factors and waste disposal data to estimate the impact.\n\n4. For KPI 7-8 (Adoption of food waste reduction technologies and cost savings):\n   - Survey supply chain partners to assess technology adoption and cost savings.\n   - Document expenses related to food waste reduction initiatives for cost analysis.\n\n5. For KPI 9-10 (Partnerships established and consumer behavior change):\n   - Maintain a partnership registry to track collaborations with stakeholders.\n   - Conduct consumer surveys and awareness campaigns to monitor behavior change.\n\n6. Establish a centralized data collection system:\n   - Implement a digital platform or database to store and analyze collected data.\n   - Ensure data integrity, security, and accessibility for stakeholders involved in the food waste reduction strategy."
+        },
+        {
+          "task_id": "93ac8a91-c0f5-45db-8b17-a4f30e9f332f",
+          "title": "Implement Monitoring Mechanisms",
+          "description": "Set up processes and tools to continuously monitor and analyze the collected data to assess the effectiveness of food waste reduction efforts.",
+          "expected_output": "Monitoring system in place.",
+          "area": "Measurement Frameworks",
+          "responsibilities": [],
+          "execution_type": "llm",
+          "parent": "0ae66e77-843d-4c95-9239-b37f513d5a2c",
+          "dependencies": [
+            "7202e23d-a8d4-42c0-9486-0201e65772f7"
+          ],
+          "subtasks": [],
+          "prompt": {
+            "system": "You are an expert autonomous agent collaborating in a multi-step project.\nYour responsibility is to complete your assigned task using all available context and previous results.\nAlways act as the main expert for your task: be decisive, avoid repetition, and provide clear, actionable outputs.\nDo NOT include any explanations, comments, or introductory phrases in your output.",
+            "user": "=== PROJECT ===\nTitle: Formulate a national strategy to reduce food waste across the entire supply chain.\n\n\n=== AREA ===\nTitle: Measurement Frameworks\nDescription: Responsible for establishing metrics and monitoring mechanisms to track progress.\n\n\n=== DEPENDENCY RESULTS ===\n- Dependency: Develop Data Collection Methods\n  Description: Create a system for collecting data related to the identified KPIs to monitor and track progress effectively.\n  Result: **Data Collection Framework for KPIs:**\n\n1. For KPI 1-3 (Percentage reduction in food waste at different stages):\n   - Implement regular data collection at production, transportation, distribution, retail, and consumer levels.\n   - Utilize weight measurements, waste logs, and tracking systems to quantify food waste reduction.\n\n2. For KPI 4-5 (Increase in surplus food donations and use of food waste):\n   - Collaborate with food banks and organizations to track surplus food donations.\n   - Record the amount of food waste diverted to composting or energy generation facilities.\n\n3. For KPI 6 (Reduction in greenhouse gas emissions):\n   - Calculate emissions reduction based on avoided methane production from food waste decomposition.\n   - Use emission factors and waste disposal data to estimate \n\n\n=== CURRENT TASK ===\nTitle: Implement Monitoring Mechanisms\nDescription: Set up processes and tools to continuously monitor and analyze the collected data to assess the effectiveness of food waste reduction efforts.\nExpected Output: Monitoring system in place.\n\n\n\n=== INSTRUCTION ===\nYou are responsible for completing the current task as part of the overall project.\nUse all available context, including dependency and previous results, but present your answer as your own expert recommendation or decision.\nDo NOT use phrases like 'Based on previous research', 'According to earlier results', or any introductory statements.\nRespond directly and professionally, as if you are the main expert responsible for this part of the project.\nIf the task requires an external system or manual intervention, specify this clearly."
+          },
+          "result": "**Monitoring System Implementation:**\n\n1. Utilize the established Data Collection Framework for KPIs to gather relevant data on food waste reduction metrics.\n\n2. Implement a centralized monitoring system that integrates data from all stages of the supply chain, including production, transportation, distribution, retail, and consumer levels.\n\n3. Use automated data analysis tools to track progress on KPIs 1-6, focusing on percentage reduction in food waste, surplus food donations, food waste diversion, and greenhouse gas emissions reduction.\n\n4. Set up regular reporting mechanisms to provide real-time insights into the effectiveness of food waste reduction efforts.\n\n5. Ensure that the monitoring system is user-friendly, accessible to all stakeholders involved in the supply chain, and capable of generating actionable recommendations based on the data collected."
+        }
+      ],
+      "result": {
+        "Define Key Performance Indicators (KPIs)": "1. Percentage reduction in food waste at the production stage\n2. Percentage reduction in food waste during transportation and distribution\n3. Percentage reduction in food waste at retail and consumer levels\n4. Percentage increase in surplus food donations to food banks or charitable organizations\n5. Percentage increase in the use of food waste for composting or energy generation\n6. Reduction in greenhouse gas emissions associated with food waste\n7. Percentage increase in the adoption of food waste reduction technologies and practices across the supply chain\n8. Cost savings achieved through food waste reduction initiatives\n9. Number of partnerships established with stakeholders to address food waste\n10. Consumer awareness and behavior change towards reducing food waste",
+        "Develop Data Collection Methods": "**Data Collection Framework for KPIs:**\n\n1. For KPI 1-3 (Percentage reduction in food waste at different stages):\n   - Implement regular data collection at production, transportation, distribution, retail, and consumer levels.\n   - Utilize weight measurements, waste logs, and tracking systems to quantify food waste reduction.\n\n2. For KPI 4-5 (Increase in surplus food donations and use of food waste):\n   - Collaborate with food banks and organizations to track surplus food donations.\n   - Record the amount of food waste diverted to composting or energy generation facilities.\n\n3. For KPI 6 (Reduction in greenhouse gas emissions):\n   - Calculate emissions reduction based on avoided methane production from food waste decomposition.\n   - Use emission factors and waste disposal data to estimate the impact.\n\n4. For KPI 7-8 (Adoption of food waste reduction technologies and cost savings):\n   - Survey supply chain partners to assess technology adoption and cost savings.\n   - Document expenses related to food waste reduction initiatives for cost analysis.\n\n5. For KPI 9-10 (Partnerships established and consumer behavior change):\n   - Maintain a partnership registry to track collaborations with stakeholders.\n   - Conduct consumer surveys and awareness campaigns to monitor behavior change.\n\n6. Establish a centralized data collection system:\n   - Implement a digital platform or database to store and analyze collected data.\n   - Ensure data integrity, security, and accessibility for stakeholders involved in the food waste reduction strategy.",
+        "Implement Monitoring Mechanisms": "**Monitoring System Implementation:**\n\n1. Utilize the established Data Collection Framework for KPIs to gather relevant data on food waste reduction metrics.\n\n2. Implement a centralized monitoring system that integrates data from all stages of the supply chain, including production, transportation, distribution, retail, and consumer levels.\n\n3. Use automated data analysis tools to track progress on KPIs 1-6, focusing on percentage reduction in food waste, surplus food donations, food waste diversion, and greenhouse gas emissions reduction.\n\n4. Set up regular reporting mechanisms to provide real-time insights into the effectiveness of food waste reduction efforts.\n\n5. Ensure that the monitoring system is user-friendly, accessible to all stakeholders involved in the supply chain, and capable of generating actionable recommendations based on the data collected."
+      }
+    },
+    {
+      "task_id": "84adda42-b96a-421c-9759-3718884c2960",
+      "title": "Incentives Design",
+      "description": "Responsible for creating mechanisms to incentivize behavior that reduces food waste.",
+      "expected_output": "A range of incentives such as tax breaks, subsidies, or grants.",
+      "area": "Incentives Design",
+      "responsibilities": [
+        "Research incentive programs that have been successful in other contexts.",
+        "Design incentive structures tailored to different actors in the supply chain."
+      ],
+      "execution_type": "llm",
+      "parent": "f8055dee-c335-440e-9190-479d17df940a",
+      "dependencies": [],
+      "subtasks": [
+        {
+          "task_id": "2c2ad523-8cf9-44f4-80d9-f36ed6301e4a",
+          "title": "Identify Target Groups for Incentives",
+          "description": "Determine specific actors within the food supply chain who will be targeted for incentivization to reduce food waste.",
+          "expected_output": "List of target groups identified for incentives design.",
+          "area": "Incentives Design",
+          "responsibilities": [],
+          "execution_type": "llm",
+          "parent": "84adda42-b96a-421c-9759-3718884c2960",
+          "dependencies": [],
+          "subtasks": [],
+          "prompt": {
+            "system": "You are an expert autonomous agent collaborating in a multi-step project.\nYour responsibility is to complete your assigned task using all available context and previous results.\nAlways act as the main expert for your task: be decisive, avoid repetition, and provide clear, actionable outputs.\nDo NOT include any explanations, comments, or introductory phrases in your output.",
+            "user": "=== PROJECT ===\nTitle: Formulate a national strategy to reduce food waste across the entire supply chain.\n\n\n=== AREA ===\nTitle: Incentives Design\nDescription: Responsible for creating mechanisms to incentivize behavior that reduces food waste.\n\n\n\n\n=== CURRENT TASK ===\nTitle: Identify Target Groups for Incentives\nDescription: Determine specific actors within the food supply chain who will be targeted for incentivization to reduce food waste.\nExpected Output: List of target groups identified for incentives design.\n\n\n\n=== INSTRUCTION ===\nYou are responsible for completing the current task as part of the overall project.\nUse all available context, including dependency and previous results, but present your answer as your own expert recommendation or decision.\nDo NOT use phrases like 'Based on previous research', 'According to earlier results', or any introductory statements.\nRespond directly and professionally, as if you are the main expert responsible for this part of the project.\nIf the task requires an external system or manual intervention, specify this clearly."
+          },
+          "result": "1. Food manufacturers\n2. Distributors and wholesalers\n3. Retailers and supermarkets\n4. Restaurants and food service providers\n5. Consumers\n6. Food banks and charitable organizations"
+        },
+        {
+          "task_id": "465aebbc-1f37-4aec-a1c3-7114f746eff3",
+          "title": "Research Successful Incentive Programs",
+          "description": "Study and analyze incentive programs implemented in other sectors or countries that have effectively reduced food waste.",
+          "expected_output": "Summary of successful incentive programs and key learnings for adaptation.",
+          "area": "Incentives Design",
+          "responsibilities": [],
+          "execution_type": "llm",
+          "parent": "84adda42-b96a-421c-9759-3718884c2960",
+          "dependencies": [],
+          "subtasks": [],
+          "prompt": {
+            "system": "You are an expert autonomous agent collaborating in a multi-step project.\nYour responsibility is to complete your assigned task using all available context and previous results.\nAlways act as the main expert for your task: be decisive, avoid repetition, and provide clear, actionable outputs.\nDo NOT include any explanations, comments, or introductory phrases in your output.",
+            "user": "=== PROJECT ===\nTitle: Formulate a national strategy to reduce food waste across the entire supply chain.\n\n\n=== AREA ===\nTitle: Incentives Design\nDescription: Responsible for creating mechanisms to incentivize behavior that reduces food waste.\n\n\n\n\n=== CURRENT TASK ===\nTitle: Research Successful Incentive Programs\nDescription: Study and analyze incentive programs implemented in other sectors or countries that have effectively reduced food waste.\nExpected Output: Summary of successful incentive programs and key learnings for adaptation.\n\n\n\n=== INSTRUCTION ===\nYou are responsible for completing the current task as part of the overall project.\nUse all available context, including dependency and previous results, but present your answer as your own expert recommendation or decision.\nDo NOT use phrases like 'Based on previous research', 'According to earlier results', or any introductory statements.\nRespond directly and professionally, as if you are the main expert responsible for this part of the project.\nIf the task requires an external system or manual intervention, specify this clearly."
+          },
+          "result": "I will research successful incentive programs that have effectively reduced food waste in other sectors or countries. I will provide a summary of these programs and key learnings for adaptation."
+        },
+        {
+          "task_id": "75a58442-2190-4e36-b959-0cfa701f8476",
+          "title": "Design Tailored Incentive Structures",
+          "description": "Develop customized incentive structures, such as tax breaks, subsidies, or grants, for different stakeholders in the food supply chain based on research and target group identification.",
+          "expected_output": "Proposed incentive structures tailored to different actors in the supply chain.",
+          "area": "Incentives Design",
+          "responsibilities": [],
+          "execution_type": "llm",
+          "parent": "84adda42-b96a-421c-9759-3718884c2960",
+          "dependencies": [
+            "465aebbc-1f37-4aec-a1c3-7114f746eff3",
+            "2c2ad523-8cf9-44f4-80d9-f36ed6301e4a"
+          ],
+          "subtasks": [],
+          "prompt": {
+            "system": "You are an expert autonomous agent collaborating in a multi-step project.\nYour responsibility is to complete your assigned task using all available context and previous results.\nAlways act as the main expert for your task: be decisive, avoid repetition, and provide clear, actionable outputs.\nDo NOT include any explanations, comments, or introductory phrases in your output.",
+            "user": "=== PROJECT ===\nTitle: Formulate a national strategy to reduce food waste across the entire supply chain.\n\n\n=== AREA ===\nTitle: Incentives Design\nDescription: Responsible for creating mechanisms to incentivize behavior that reduces food waste.\n\n\n=== DEPENDENCY RESULTS ===\n- Dependency: Research Successful Incentive Programs\n  Description: Study and analyze incentive programs implemented in other sectors or countries that have effectively reduced food waste.\n  Result: I will research successful incentive programs that have effectively reduced food waste in other sectors or countries. I will provide a summary of these programs and key learnings for adaptation.\n\n- Dependency: Identify Target Groups for Incentives\n  Description: Determine specific actors within the food supply chain who will be targeted for incentivization to reduce food waste.\n  Result: 1. Food manufacturers\n2. Distributors and wholesalers\n3. Retailers and supermarkets\n4. Restaurants and food service providers\n5. Consumers\n6. Food banks and charitable organizations\n\n\n=== CURRENT TASK ===\nTitle: Design Tailored Incentive Structures\nDescription: Develop customized incentive structures, such as tax breaks, subsidies, or grants, for different stakeholders in the food supply chain based on research and target group identification.\nExpected Output: Proposed incentive structures tailored to different actors in the supply chain.\n\n\n\n=== INSTRUCTION ===\nYou are responsible for completing the current task as part of the overall project.\nUse all available context, including dependency and previous results, but present your answer as your own expert recommendation or decision.\nDo NOT use phrases like 'Based on previous research', 'According to earlier results', or any introductory statements.\nRespond directly and professionally, as if you are the main expert responsible for this part of the project.\nIf the task requires an external system or manual intervention, specify this clearly."
+          },
+          "result": "For food manufacturers: Implement a tax incentive program that offers tax breaks for implementing food waste reduction practices and technologies.\n\nFor distributors and wholesalers: Establish a subsidy scheme that provides financial support for investments in waste reduction infrastructure and training programs.\n\nFor retailers and supermarkets: Introduce a grant program to incentivize the adoption of food waste tracking systems and the implementation of donation programs for surplus food.\n\nFor restaurants and food service providers: Develop a tiered rebate system that rewards establishments for reducing food waste at different levels, such as through portion control, menu optimization, or donation initiatives.\n\nFor consumers: Create a loyalty rewards program that offers discounts or points for purchasing products nearing expiration date, participating in food waste reduction challenges, or donating excess food to local charities.\n\nFor food banks and charitable organizations: Set up a funding initiative that allocates grants for expanding storage capacity, transportation logistics, and outreach efforts to rescue surplus food and distribute it to those in need."
+        }
+      ],
+      "result": {
+        "Identify Target Groups for Incentives": "1. Food manufacturers\n2. Distributors and wholesalers\n3. Retailers and supermarkets\n4. Restaurants and food service providers\n5. Consumers\n6. Food banks and charitable organizations",
+        "Research Successful Incentive Programs": "I will research successful incentive programs that have effectively reduced food waste in other sectors or countries. I will provide a summary of these programs and key learnings for adaptation.",
+        "Design Tailored Incentive Structures": "For food manufacturers: Implement a tax incentive program that offers tax breaks for implementing food waste reduction practices and technologies.\n\nFor distributors and wholesalers: Establish a subsidy scheme that provides financial support for investments in waste reduction infrastructure and training programs.\n\nFor retailers and supermarkets: Introduce a grant program to incentivize the adoption of food waste tracking systems and the implementation of donation programs for surplus food.\n\nFor restaurants and food service providers: Develop a tiered rebate system that rewards establishments for reducing food waste at different levels, such as through portion control, menu optimization, or donation initiatives.\n\nFor consumers: Create a loyalty rewards program that offers discounts or points for purchasing products nearing expiration date, participating in food waste reduction challenges, or donating excess food to local charities.\n\nFor food banks and charitable organizations: Set up a funding initiative that allocates grants for expanding storage capacity, transportation logistics, and outreach efforts to rescue surplus food and distribute it to those in need."
+      }
+    },
+    {
+      "task_id": "74cdeeb0-297e-4b7f-b37a-4fa3cca439e0",
+      "title": "Public Awareness Campaigns",
+      "description": "Responsible for raising awareness about food waste and promoting behavior change.",
+      "expected_output": "A comprehensive communication plan targeting various audiences.",
+      "area": "Public Awareness Campaigns",
+      "responsibilities": [
+        "Develop messaging and materials for the campaign.",
+        "Implement outreach activities through traditional and digital channels."
+      ],
+      "execution_type": "llm",
+      "parent": "f8055dee-c335-440e-9190-479d17df940a",
+      "dependencies": [],
+      "subtasks": [
+        {
+          "task_id": "67005367-5418-4ec9-9626-9e54ee68be6c",
+          "title": "Identify target audience segments",
+          "description": "Segment the population based on demographics, behaviors, and attitudes towards food waste.",
+          "expected_output": "Defined target audience segments for tailored messaging.",
+          "area": "Public Awareness Campaigns",
+          "responsibilities": [],
+          "execution_type": "llm",
+          "parent": "74cdeeb0-297e-4b7f-b37a-4fa3cca439e0",
+          "dependencies": [],
+          "subtasks": [],
+          "prompt": {
+            "system": "You are an expert autonomous agent collaborating in a multi-step project.\nYour responsibility is to complete your assigned task using all available context and previous results.\nAlways act as the main expert for your task: be decisive, avoid repetition, and provide clear, actionable outputs.\nDo NOT include any explanations, comments, or introductory phrases in your output.",
+            "user": "=== PROJECT ===\nTitle: Formulate a national strategy to reduce food waste across the entire supply chain.\n\n\n=== AREA ===\nTitle: Public Awareness Campaigns\nDescription: Responsible for raising awareness about food waste and promoting behavior change.\n\n\n\n\n=== CURRENT TASK ===\nTitle: Identify target audience segments\nDescription: Segment the population based on demographics, behaviors, and attitudes towards food waste.\nExpected Output: Defined target audience segments for tailored messaging.\n\n\n\n=== INSTRUCTION ===\nYou are responsible for completing the current task as part of the overall project.\nUse all available context, including dependency and previous results, but present your answer as your own expert recommendation or decision.\nDo NOT use phrases like 'Based on previous research', 'According to earlier results', or any introductory statements.\nRespond directly and professionally, as if you are the main expert responsible for this part of the project.\nIf the task requires an external system or manual intervention, specify this clearly."
+          },
+          "result": "1. Young adults (18-30 years old) living in urban areas\n2. Families with children who are primary grocery shoppers\n3. Restaurants and food service businesses\n4. Elderly population living alone\n5. College students living on campus"
+        },
+        {
+          "task_id": "0dd6548c-aead-45c9-b6af-d6508022a5b8",
+          "title": "Develop messaging and materials",
+          "description": "Create engaging content and visuals to convey the importance of reducing food waste.",
+          "expected_output": "Campaign messaging and materials ready for dissemination.",
+          "area": "Public Awareness Campaigns",
+          "responsibilities": [],
+          "execution_type": "llm",
+          "parent": "74cdeeb0-297e-4b7f-b37a-4fa3cca439e0",
+          "dependencies": [],
+          "subtasks": [],
+          "prompt": {
+            "system": "You are an expert autonomous agent collaborating in a multi-step project.\nYour responsibility is to complete your assigned task using all available context and previous results.\nAlways act as the main expert for your task: be decisive, avoid repetition, and provide clear, actionable outputs.\nDo NOT include any explanations, comments, or introductory phrases in your output.",
+            "user": "=== PROJECT ===\nTitle: Formulate a national strategy to reduce food waste across the entire supply chain.\n\n\n=== AREA ===\nTitle: Public Awareness Campaigns\nDescription: Responsible for raising awareness about food waste and promoting behavior change.\n\n\n\n\n=== CURRENT TASK ===\nTitle: Develop messaging and materials\nDescription: Create engaging content and visuals to convey the importance of reducing food waste.\nExpected Output: Campaign messaging and materials ready for dissemination.\n\n\n\n=== INSTRUCTION ===\nYou are responsible for completing the current task as part of the overall project.\nUse all available context, including dependency and previous results, but present your answer as your own expert recommendation or decision.\nDo NOT use phrases like 'Based on previous research', 'According to earlier results', or any introductory statements.\nRespond directly and professionally, as if you are the main expert responsible for this part of the project.\nIf the task requires an external system or manual intervention, specify this clearly."
+          },
+          "result": "Developing engaging content and visuals to convey the importance of reducing food waste is crucial for our public awareness campaign. The campaign messaging should focus on the environmental, social, and economic impacts of food waste, while also providing practical tips for individuals to reduce waste in their daily lives. Visual materials should be eye-catching and easy to understand, using infographics, statistics, and compelling imagery. Ensure that the messaging is clear, concise, and resonates with the target audience to maximize the campaign's effectiveness. Once the messaging and materials are finalized, they should be ready for dissemination across various channels to reach a wide audience."
+        },
+        {
+          "task_id": "ffc772ad-6cfe-43a9-a467-b9f6b147147c",
+          "title": "Implement outreach activities",
+          "description": "Execute the campaign through various channels like social media, events, and partnerships.",
+          "expected_output": "Active outreach campaign reaching the target audiences.",
+          "area": "Public Awareness Campaigns",
+          "responsibilities": [],
+          "execution_type": "llm",
+          "parent": "74cdeeb0-297e-4b7f-b37a-4fa3cca439e0",
+          "dependencies": [
+            "0dd6548c-aead-45c9-b6af-d6508022a5b8"
+          ],
+          "subtasks": [],
+          "prompt": {
+            "system": "You are an expert autonomous agent collaborating in a multi-step project.\nYour responsibility is to complete your assigned task using all available context and previous results.\nAlways act as the main expert for your task: be decisive, avoid repetition, and provide clear, actionable outputs.\nDo NOT include any explanations, comments, or introductory phrases in your output.",
+            "user": "=== PROJECT ===\nTitle: Formulate a national strategy to reduce food waste across the entire supply chain.\n\n\n=== AREA ===\nTitle: Public Awareness Campaigns\nDescription: Responsible for raising awareness about food waste and promoting behavior change.\n\n\n=== DEPENDENCY RESULTS ===\n- Dependency: Develop messaging and materials\n  Description: Create engaging content and visuals to convey the importance of reducing food waste.\n  Result: Developing engaging content and visuals to convey the importance of reducing food waste is crucial for our public awareness campaign. The campaign messaging should focus on the environmental, social, and economic impacts of food waste, while also providing practical tips for individuals to reduce waste in their daily lives. Visual materials should be eye-catching and easy to understand, using infographics, statistics, and compelling imagery. Ensure that the messaging is clear, concise, and resonates with the target audience to maximize the campaign's effectiveness. Once the messaging and materials are finalized, they should be ready for dissemination across various channels to reach a wide audience.\n\n\n=== CURRENT TASK ===\nTitle: Implement outreach activities\nDescription: Execute the campaign through various channels like social media, events, and partnerships.\nExpected Output: Active outreach campaign reaching the target audiences.\n\n\n\n=== INSTRUCTION ===\nYou are responsible for completing the current task as part of the overall project.\nUse all available context, including dependency and previous results, but present your answer as your own expert recommendation or decision.\nDo NOT use phrases like 'Based on previous research', 'According to earlier results', or any introductory statements.\nRespond directly and professionally, as if you are the main expert responsible for this part of the project.\nIf the task requires an external system or manual intervention, specify this clearly."
+          },
+          "result": "Develop a comprehensive outreach plan that includes a mix of social media campaigns, participation in relevant events, and forming partnerships with key stakeholders in the food industry, environmental organizations, and community groups. Utilize engaging content and visuals created earlier to drive the messaging across these channels. Monitor and evaluate the outreach activities to ensure they are effectively reaching and resonating with the target audiences. Regularly assess the performance of each channel and adjust strategies as needed to maximize impact."
+        }
+      ],
+      "result": {
+        "Identify target audience segments": "1. Young adults (18-30 years old) living in urban areas\n2. Families with children who are primary grocery shoppers\n3. Restaurants and food service businesses\n4. Elderly population living alone\n5. College students living on campus",
+        "Develop messaging and materials": "Developing engaging content and visuals to convey the importance of reducing food waste is crucial for our public awareness campaign. The campaign messaging should focus on the environmental, social, and economic impacts of food waste, while also providing practical tips for individuals to reduce waste in their daily lives. Visual materials should be eye-catching and easy to understand, using infographics, statistics, and compelling imagery. Ensure that the messaging is clear, concise, and resonates with the target audience to maximize the campaign's effectiveness. Once the messaging and materials are finalized, they should be ready for dissemination across various channels to reach a wide audience.",
+        "Implement outreach activities": "Develop a comprehensive outreach plan that includes a mix of social media campaigns, participation in relevant events, and forming partnerships with key stakeholders in the food industry, environmental organizations, and community groups. Utilize engaging content and visuals created earlier to drive the messaging across these channels. Monitor and evaluate the outreach activities to ensure they are effectively reaching and resonating with the target audiences. Regularly assess the performance of each channel and adjust strategies as needed to maximize impact."
+      }
+    }
+  ],
+  "result": {
+    "Policy Formulation": {
+      "Research Existing Policies": "I will research existing policies related to food waste reduction to identify best practices.",
+      "Draft Policy Recommendations": "Draft Policy Recommendations:\n\n1. Implement mandatory food waste reduction targets for businesses across the supply chain.\n2. Establish a national food waste monitoring system to track and analyze food waste data.\n3. Incentivize food donation by providing tax benefits and liability protections to food donors.\n4. Promote consumer awareness and education campaigns on reducing food waste at the household level.\n5. Encourage food retailers to adopt practices such as standardized date labeling and donation of surplus food.\n6. Develop partnerships with food industry stakeholders to support innovation in food waste reduction technologies and practices.\n7. Integrate food waste reduction principles into national food procurement policies for government institutions.\n8. Provide funding and grants for research and initiatives focused on food waste prevention and recovery.\n9. Strengthen collaboration between government agencies, NGOs, and private sector entities to enhance food waste reduction efforts.\n10. Regularly review and update the national food waste reduction strategy to ensure effectiveness and relevance."
+    },
+    "Stakeholder Engagement": {
+      "Identify key stakeholders": "1. Food producers\n2. Farmers\n3. Distributors\n4. Retailers\n5. Restaurants\n6. Food service providers\n7. Consumers\n8. Food banks and charities\n9. Government agencies\n10. Waste management companies",
+      "Stakeholder consultation sessions": "Organize and facilitate consultation sessions with key stakeholders to gather feedback and input on the national strategy to reduce food waste. Ensure to document all feedback and input received during the sessions for further analysis and integration into the strategy development process.",
+      "Stakeholder engagement plan": "**Stakeholder Engagement Plan**\n\n1. **Identify Stakeholders:**\n   - Government agencies\n   - Food producers and manufacturers\n   - Retailers and supermarkets\n   - Restaurants and food service providers\n   - Non-profit organizations\n   - Waste management companies\n   - Consumers\n\n2. **Engagement Strategies:**\n   - Conduct stakeholder mapping to understand interests and influence.\n   - Hold regular meetings and workshops to gather input and feedback.\n   - Utilize online surveys and feedback mechanisms for broader engagement.\n   - Establish a dedicated communication channel for ongoing updates.\n\n3. **Involvement in Strategy Development:**\n   - Invite stakeholders to participate in strategy formulation sessions.\n   - Encourage active involvement in setting goals and action plans.\n   - Provide opportunities for stakeholders to contribute expertise and resources.\n\n4. **Implementation Support:**\n   - Collaborate with stakeholders to implement specific initiatives.\n   - Facilitate partnerships between different stakeholders for joint projects.\n   - Monitor progress and provide regular updates on the strategy's implementation.\n\n5. **Communication and Transparency:**\n   - Communicate openly about decision-making processes and outcomes.\n   - Share progress reports and outcomes with stakeholders regularly.\n   - Acknowledge and celebrate stakeholder contributions to the strategy's success.\n\n6. **Evaluation and Feedback:**\n   - Establish mechanisms for stakeholders to provide feedback on the strategy's effectiveness.\n   - Conduct periodic evaluations to assess stakeholder satisfaction and engagement levels.\n   - Use feedback to make adjustments and improvements to the engagement process.\n\n7. **Conflict Resolution:**\n   - Develop a protocol for addressing conflicts or disagreements among stakeholders.\n   - Facilitate dialogue and mediation to resolve conflicts in a constructive manner.\n   - Prioritize the common goal of reducing food waste to guide conflict resolution efforts.\n\n8. **Resource Allocation:**\n   - Allocate resources to support stakeholder engagement activities effectively.\n   - Ensure that stakeholders have the necessary resources to participate meaningfully.\n   - Seek additional funding or support for stakeholder engagement efforts as needed.\n\n9. **Timeline and Milestones:**\n   - Establish a timeline for stakeholder engagement activities throughout the strategy development and implementation phases.\n   - Define clear milestones for stakeholder involvement and feedback points.\n   - Regularly review progress against the timeline and adjust as necessary.\n\n10. **Monitoring and Reporting:**\n    - Implement a system for monitoring stakeholder engagement activities and outcomes.\n    - Generate regular reports on stakeholder engagement metrics and progress.\n    - Use data and feedback to continuously improve stakeholder engagement strategies."
+    },
+    "Measurement Frameworks": {
+      "Define Key Performance Indicators (KPIs)": "1. Percentage reduction in food waste at the production stage\n2. Percentage reduction in food waste during transportation and distribution\n3. Percentage reduction in food waste at retail and consumer levels\n4. Percentage increase in surplus food donations to food banks or charitable organizations\n5. Percentage increase in the use of food waste for composting or energy generation\n6. Reduction in greenhouse gas emissions associated with food waste\n7. Percentage increase in the adoption of food waste reduction technologies and practices across the supply chain\n8. Cost savings achieved through food waste reduction initiatives\n9. Number of partnerships established with stakeholders to address food waste\n10. Consumer awareness and behavior change towards reducing food waste",
+      "Develop Data Collection Methods": "**Data Collection Framework for KPIs:**\n\n1. For KPI 1-3 (Percentage reduction in food waste at different stages):\n   - Implement regular data collection at production, transportation, distribution, retail, and consumer levels.\n   - Utilize weight measurements, waste logs, and tracking systems to quantify food waste reduction.\n\n2. For KPI 4-5 (Increase in surplus food donations and use of food waste):\n   - Collaborate with food banks and organizations to track surplus food donations.\n   - Record the amount of food waste diverted to composting or energy generation facilities.\n\n3. For KPI 6 (Reduction in greenhouse gas emissions):\n   - Calculate emissions reduction based on avoided methane production from food waste decomposition.\n   - Use emission factors and waste disposal data to estimate the impact.\n\n4. For KPI 7-8 (Adoption of food waste reduction technologies and cost savings):\n   - Survey supply chain partners to assess technology adoption and cost savings.\n   - Document expenses related to food waste reduction initiatives for cost analysis.\n\n5. For KPI 9-10 (Partnerships established and consumer behavior change):\n   - Maintain a partnership registry to track collaborations with stakeholders.\n   - Conduct consumer surveys and awareness campaigns to monitor behavior change.\n\n6. Establish a centralized data collection system:\n   - Implement a digital platform or database to store and analyze collected data.\n   - Ensure data integrity, security, and accessibility for stakeholders involved in the food waste reduction strategy.",
+      "Implement Monitoring Mechanisms": "**Monitoring System Implementation:**\n\n1. Utilize the established Data Collection Framework for KPIs to gather relevant data on food waste reduction metrics.\n\n2. Implement a centralized monitoring system that integrates data from all stages of the supply chain, including production, transportation, distribution, retail, and consumer levels.\n\n3. Use automated data analysis tools to track progress on KPIs 1-6, focusing on percentage reduction in food waste, surplus food donations, food waste diversion, and greenhouse gas emissions reduction.\n\n4. Set up regular reporting mechanisms to provide real-time insights into the effectiveness of food waste reduction efforts.\n\n5. Ensure that the monitoring system is user-friendly, accessible to all stakeholders involved in the supply chain, and capable of generating actionable recommendations based on the data collected."
+    },
+    "Incentives Design": {
+      "Identify Target Groups for Incentives": "1. Food manufacturers\n2. Distributors and wholesalers\n3. Retailers and supermarkets\n4. Restaurants and food service providers\n5. Consumers\n6. Food banks and charitable organizations",
+      "Research Successful Incentive Programs": "I will research successful incentive programs that have effectively reduced food waste in other sectors or countries. I will provide a summary of these programs and key learnings for adaptation.",
+      "Design Tailored Incentive Structures": "For food manufacturers: Implement a tax incentive program that offers tax breaks for implementing food waste reduction practices and technologies.\n\nFor distributors and wholesalers: Establish a subsidy scheme that provides financial support for investments in waste reduction infrastructure and training programs.\n\nFor retailers and supermarkets: Introduce a grant program to incentivize the adoption of food waste tracking systems and the implementation of donation programs for surplus food.\n\nFor restaurants and food service providers: Develop a tiered rebate system that rewards establishments for reducing food waste at different levels, such as through portion control, menu optimization, or donation initiatives.\n\nFor consumers: Create a loyalty rewards program that offers discounts or points for purchasing products nearing expiration date, participating in food waste reduction challenges, or donating excess food to local charities.\n\nFor food banks and charitable organizations: Set up a funding initiative that allocates grants for expanding storage capacity, transportation logistics, and outreach efforts to rescue surplus food and distribute it to those in need."
+    },
+    "Public Awareness Campaigns": {
+      "Identify target audience segments": "1. Young adults (18-30 years old) living in urban areas\n2. Families with children who are primary grocery shoppers\n3. Restaurants and food service businesses\n4. Elderly population living alone\n5. College students living on campus",
+      "Develop messaging and materials": "Developing engaging content and visuals to convey the importance of reducing food waste is crucial for our public awareness campaign. The campaign messaging should focus on the environmental, social, and economic impacts of food waste, while also providing practical tips for individuals to reduce waste in their daily lives. Visual materials should be eye-catching and easy to understand, using infographics, statistics, and compelling imagery. Ensure that the messaging is clear, concise, and resonates with the target audience to maximize the campaign's effectiveness. Once the messaging and materials are finalized, they should be ready for dissemination across various channels to reach a wide audience.",
+      "Implement outreach activities": "Develop a comprehensive outreach plan that includes a mix of social media campaigns, participation in relevant events, and forming partnerships with key stakeholders in the food industry, environmental organizations, and community groups. Utilize engaging content and visuals created earlier to drive the messaging across these channels. Monitor and evaluate the outreach activities to ensure they are effectively reaching and resonating with the target audiences. Regularly assess the performance of each channel and adjust strategies as needed to maximize impact."
+    }
+  },
+  "_metadata": {
+    "clarified_description": "Formulate a national strategy to reduce food waste across the entire supply chain.",
+    "expected_output": "A multi-sector policy proposal that includes prevention strategies, incentives, stakeholder roles, measurement frameworks, and public awareness campaigns.",
+    "case_id": "CASE03",
+    "timestamp": "2025-06-25T23:50:37.112145",
+    "filename": "20250625_235037_CASE03_task_tree.json"
+  }
+}

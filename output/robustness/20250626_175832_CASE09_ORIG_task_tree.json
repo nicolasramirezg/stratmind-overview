@@ -1,0 +1,275 @@
+{
+  "task_id": "2e3817ba-a80b-45a2-a114-7a9853c954ad",
+  "title": "Teach a child how to make toast safely.",
+  "description": "Teach a child how to make toast safely.",
+  "expected_output": "A simple step-by-step instruction list using safe language, including required items, actions, and safety warnings.",
+  "area": null,
+  "responsibilities": [],
+  "execution_type": "llm",
+  "parent": null,
+  "dependencies": [],
+  "subtasks": [
+    {
+      "task_id": "bd8cf75b-6b49-42ee-be1b-b677a14344bb",
+      "title": "Preparation",
+      "description": "Responsible for gathering all necessary items and setting up the workspace for making toast.",
+      "expected_output": "A well-organized and clean workspace with all required items within reach.",
+      "area": "Preparation",
+      "responsibilities": [
+        "Gather bread, toaster, butter, knife, and plate.",
+        "Ensure the workspace is clear of any obstacles or hazards."
+      ],
+      "execution_type": "llm",
+      "parent": "2e3817ba-a80b-45a2-a114-7a9853c954ad",
+      "dependencies": [],
+      "subtasks": [
+        {
+          "task_id": "6caf4a3e-3ba0-4722-be0b-7f9a29d53b2a",
+          "title": "Gather necessary items",
+          "description": "Collect bread, toaster, butter, knife, and plate for making toast.",
+          "expected_output": "All required items gathered and placed on the workspace.",
+          "area": "Preparation",
+          "responsibilities": [],
+          "execution_type": "llm",
+          "parent": "bd8cf75b-6b49-42ee-be1b-b677a14344bb",
+          "dependencies": [],
+          "subtasks": [],
+          "prompt": {
+            "system": "You are an expert autonomous agent collaborating in a multi-step project.\nYour responsibility is to complete your assigned task using all available context and previous results.\nAlways act as the main expert for your task: be decisive, avoid repetition, and provide clear, actionable outputs.\nDo NOT include any explanations, comments, or introductory phrases in your output.",
+            "user": "=== PROJECT ===\nTitle: Teach a child how to make toast safely.\n\n\n=== AREA ===\nTitle: Preparation\nDescription: Responsible for gathering all necessary items and setting up the workspace for making toast.\n\n\n\n\n=== CURRENT TASK ===\nTitle: Gather necessary items\nDescription: Collect bread, toaster, butter, knife, and plate for making toast.\nExpected Output: All required items gathered and placed on the workspace.\n\n\n\n=== INSTRUCTION ===\nYou are responsible for completing the current task as part of the overall project.\nUse all available context, including dependency and previous results, but present your answer as your own expert recommendation or decision.\nDo NOT use phrases like 'Based on previous research', 'According to earlier results', or any introductory statements.\nRespond directly and professionally, as if you are the main expert responsible for this part of the project.\nIf the task requires an external system or manual intervention, specify this clearly."
+          },
+          "result": "Collect bread, toaster, butter, knife, and plate for making toast and place them on the workspace."
+        },
+        {
+          "task_id": "e2bf253d-e8f4-4ae4-bffe-cc4fe260daa4",
+          "title": "Set up workspace",
+          "description": "Ensure the workspace is clear of obstacles or hazards and organize the gathered items for easy access.",
+          "expected_output": "A well-organized and clean workspace with all necessary items within reach.",
+          "area": "Preparation",
+          "responsibilities": [],
+          "execution_type": "llm",
+          "parent": "bd8cf75b-6b49-42ee-be1b-b677a14344bb",
+          "dependencies": [
+            "6caf4a3e-3ba0-4722-be0b-7f9a29d53b2a"
+          ],
+          "subtasks": [],
+          "prompt": {
+            "system": "You are an expert autonomous agent collaborating in a multi-step project.\nYour responsibility is to complete your assigned task using all available context and previous results.\nAlways act as the main expert for your task: be decisive, avoid repetition, and provide clear, actionable outputs.\nDo NOT include any explanations, comments, or introductory phrases in your output.",
+            "user": "=== PROJECT ===\nTitle: Teach a child how to make toast safely.\n\n\n=== AREA ===\nTitle: Preparation\nDescription: Responsible for gathering all necessary items and setting up the workspace for making toast.\n\n\n=== DEPENDENCY RESULTS ===\n- Dependency: Gather necessary items\n  Description: Collect bread, toaster, butter, knife, and plate for making toast.\n  Result: Collect bread, toaster, butter, knife, and plate for making toast and place them on the workspace.\n\n\n=== CURRENT TASK ===\nTitle: Set up workspace\nDescription: Ensure the workspace is clear of obstacles or hazards and organize the gathered items for easy access.\nExpected Output: A well-organized and clean workspace with all necessary items within reach.\n\n\n\n=== INSTRUCTION ===\nYou are responsible for completing the current task as part of the overall project.\nUse all available context, including dependency and previous results, but present your answer as your own expert recommendation or decision.\nDo NOT use phrases like 'Based on previous research', 'According to earlier results', or any introductory statements.\nRespond directly and professionally, as if you are the main expert responsible for this part of the project.\nIf the task requires an external system or manual intervention, specify this clearly."
+          },
+          "result": "Clear the workspace of any obstacles or hazards. Place the collected bread, toaster, butter, knife, and plate on the workspace in an organized manner for easy access. Ensure that everything is within reach and ready for the child to start making toast safely."
+        }
+      ],
+      "result": {
+        "Gather necessary items": "Collect bread, toaster, butter, knife, and plate for making toast and place them on the workspace.",
+        "Set up workspace": "Clear the workspace of any obstacles or hazards. Place the collected bread, toaster, butter, knife, and plate on the workspace in an organized manner for easy access. Ensure that everything is within reach and ready for the child to start making toast safely."
+      }
+    },
+    {
+      "task_id": "a417a2c3-e087-449d-8206-5811fd801058",
+      "title": "Safety",
+      "description": "Focuses on explaining safety precautions and potential hazards to the child.",
+      "expected_output": "The child understands safety measures and is aware of potential dangers during the process.",
+      "area": "Safety",
+      "responsibilities": [
+        "Explain the dangers of using a toaster and handling hot items.",
+        "Demonstrate how to safely plug in and operate the toaster."
+      ],
+      "execution_type": "llm",
+      "parent": "2e3817ba-a80b-45a2-a114-7a9853c954ad",
+      "dependencies": [],
+      "subtasks": [
+        {
+          "task_id": "3f016efb-d516-4ef9-bf82-49e0dbc9c0ea",
+          "title": "Explain toaster safety",
+          "description": "Explain the dangers of using a toaster and handling hot items to the child.",
+          "expected_output": "Child understands the potential hazards associated with using a toaster.",
+          "area": "Safety",
+          "responsibilities": [],
+          "execution_type": "llm",
+          "parent": "a417a2c3-e087-449d-8206-5811fd801058",
+          "dependencies": [],
+          "subtasks": [],
+          "prompt": {
+            "system": "You are an expert autonomous agent collaborating in a multi-step project.\nYour responsibility is to complete your assigned task using all available context and previous results.\nAlways act as the main expert for your task: be decisive, avoid repetition, and provide clear, actionable outputs.\nDo NOT include any explanations, comments, or introductory phrases in your output.",
+            "user": "=== PROJECT ===\nTitle: Teach a child how to make toast safely.\n\n\n=== AREA ===\nTitle: Safety\nDescription: Focuses on explaining safety precautions and potential hazards to the child.\n\n\n\n\n=== CURRENT TASK ===\nTitle: Explain toaster safety\nDescription: Explain the dangers of using a toaster and handling hot items to the child.\nExpected Output: Child understands the potential hazards associated with using a toaster.\n\n\n\n=== INSTRUCTION ===\nYou are responsible for completing the current task as part of the overall project.\nUse all available context, including dependency and previous results, but present your answer as your own expert recommendation or decision.\nDo NOT use phrases like 'Based on previous research', 'According to earlier results', or any introductory statements.\nRespond directly and professionally, as if you are the main expert responsible for this part of the project.\nIf the task requires an external system or manual intervention, specify this clearly."
+          },
+          "result": "Ensure the child understands the following toaster safety precautions:\n1. Never insert anything other than bread into the toaster.\n2. Always unplug the toaster before attempting to remove stuck items.\n3. Wait for the toaster to cool down before cleaning it.\n4. Never touch the toaster with wet hands.\n5. Use caution when handling hot toast or items that come out of the toaster."
+        },
+        {
+          "task_id": "38a308ec-8176-4ad3-8712-38ad55409f28",
+          "title": "Demonstrate safe toaster operation",
+          "description": "Demonstrate how to safely plug in and operate the toaster.",
+          "expected_output": "Child learns how to operate the toaster safely.",
+          "area": "Safety",
+          "responsibilities": [],
+          "execution_type": "llm",
+          "parent": "a417a2c3-e087-449d-8206-5811fd801058",
+          "dependencies": [],
+          "subtasks": [],
+          "prompt": {
+            "system": "You are an expert autonomous agent collaborating in a multi-step project.\nYour responsibility is to complete your assigned task using all available context and previous results.\nAlways act as the main expert for your task: be decisive, avoid repetition, and provide clear, actionable outputs.\nDo NOT include any explanations, comments, or introductory phrases in your output.",
+            "user": "=== PROJECT ===\nTitle: Teach a child how to make toast safely.\n\n\n=== AREA ===\nTitle: Safety\nDescription: Focuses on explaining safety precautions and potential hazards to the child.\n\n\n\n\n=== CURRENT TASK ===\nTitle: Demonstrate safe toaster operation\nDescription: Demonstrate how to safely plug in and operate the toaster.\nExpected Output: Child learns how to operate the toaster safely.\n\n\n\n=== INSTRUCTION ===\nYou are responsible for completing the current task as part of the overall project.\nUse all available context, including dependency and previous results, but present your answer as your own expert recommendation or decision.\nDo NOT use phrases like 'Based on previous research', 'According to earlier results', or any introductory statements.\nRespond directly and professionally, as if you are the main expert responsible for this part of the project.\nIf the task requires an external system or manual intervention, specify this clearly."
+          },
+          "result": "Demonstrate how to safely plug in the toaster by showing the child how to insert the plug into a nearby electrical outlet. Ensure the child understands the importance of plugging the toaster directly into the outlet and not using any extension cords or adapters. Demonstrate how to operate the toaster by setting the desired level of toasting and pressing the lever down to start the toasting process. Emphasize the importance of never inserting any objects other than bread into the toaster and always supervising the toasting process."
+        }
+      ],
+      "result": {
+        "Explain toaster safety": "Ensure the child understands the following toaster safety precautions:\n1. Never insert anything other than bread into the toaster.\n2. Always unplug the toaster before attempting to remove stuck items.\n3. Wait for the toaster to cool down before cleaning it.\n4. Never touch the toaster with wet hands.\n5. Use caution when handling hot toast or items that come out of the toaster.",
+        "Demonstrate safe toaster operation": "Demonstrate how to safely plug in the toaster by showing the child how to insert the plug into a nearby electrical outlet. Ensure the child understands the importance of plugging the toaster directly into the outlet and not using any extension cords or adapters. Demonstrate how to operate the toaster by setting the desired level of toasting and pressing the lever down to start the toasting process. Emphasize the importance of never inserting any objects other than bread into the toaster and always supervising the toasting process."
+      }
+    },
+    {
+      "task_id": "5061ac46-a2cb-425b-870d-648f10f464cd",
+      "title": "Guidance",
+      "description": "Provides step-by-step instructions on how to make toast, ensuring the child follows each step correctly.",
+      "expected_output": "The child successfully makes toast following the provided instructions.",
+      "area": "Guidance",
+      "responsibilities": [
+        "Instruct the child on how to insert bread into the toaster.",
+        "Guide the child on setting the toaster and pressing the toast button."
+      ],
+      "execution_type": "llm",
+      "parent": "2e3817ba-a80b-45a2-a114-7a9853c954ad",
+      "dependencies": [],
+      "subtasks": [
+        {
+          "task_id": "76443c7e-b5bd-41ef-88a3-829ad8d779dc",
+          "title": "Instruct on inserting bread",
+          "description": "Guide the child on how to properly insert bread slices into the toaster.",
+          "expected_output": "Child correctly inserts bread into the toaster.",
+          "area": "Guidance",
+          "responsibilities": [],
+          "execution_type": "llm",
+          "parent": "5061ac46-a2cb-425b-870d-648f10f464cd",
+          "dependencies": [],
+          "subtasks": [],
+          "prompt": {
+            "system": "You are an expert autonomous agent collaborating in a multi-step project.\nYour responsibility is to complete your assigned task using all available context and previous results.\nAlways act as the main expert for your task: be decisive, avoid repetition, and provide clear, actionable outputs.\nDo NOT include any explanations, comments, or introductory phrases in your output.",
+            "user": "=== PROJECT ===\nTitle: Teach a child how to make toast safely.\n\n\n=== AREA ===\nTitle: Guidance\nDescription: Provides step-by-step instructions on how to make toast, ensuring the child follows each step correctly.\n\n\n\n\n=== CURRENT TASK ===\nTitle: Instruct on inserting bread\nDescription: Guide the child on how to properly insert bread slices into the toaster.\nExpected Output: Child correctly inserts bread into the toaster.\n\n\n\n=== INSTRUCTION ===\nYou are responsible for completing the current task as part of the overall project.\nUse all available context, including dependency and previous results, but present your answer as your own expert recommendation or decision.\nDo NOT use phrases like 'Based on previous research', 'According to earlier results', or any introductory statements.\nRespond directly and professionally, as if you are the main expert responsible for this part of the project.\nIf the task requires an external system or manual intervention, specify this clearly."
+          },
+          "result": "Ensure the toaster is unplugged. Hold a bread slice by the edges and gently slide it into the toaster slot until it reaches the bottom. Repeat with the second slice if necessary. Be careful not to touch the inside of the toaster to avoid burns. Once both slices are inserted, plug in the toaster and proceed with toasting."
+        },
+        {
+          "task_id": "649458d2-d77b-4bc6-ba4c-c60560f5083b",
+          "title": "Set toaster settings",
+          "description": "Explain to the child how to select the desired toast shade and set the timer on the toaster.",
+          "expected_output": "Child sets the toaster to the desired settings.",
+          "area": "Guidance",
+          "responsibilities": [],
+          "execution_type": "llm",
+          "parent": "5061ac46-a2cb-425b-870d-648f10f464cd",
+          "dependencies": [],
+          "subtasks": [],
+          "prompt": {
+            "system": "You are an expert autonomous agent collaborating in a multi-step project.\nYour responsibility is to complete your assigned task using all available context and previous results.\nAlways act as the main expert for your task: be decisive, avoid repetition, and provide clear, actionable outputs.\nDo NOT include any explanations, comments, or introductory phrases in your output.",
+            "user": "=== PROJECT ===\nTitle: Teach a child how to make toast safely.\n\n\n=== AREA ===\nTitle: Guidance\nDescription: Provides step-by-step instructions on how to make toast, ensuring the child follows each step correctly.\n\n\n\n\n=== CURRENT TASK ===\nTitle: Set toaster settings\nDescription: Explain to the child how to select the desired toast shade and set the timer on the toaster.\nExpected Output: Child sets the toaster to the desired settings.\n\n\n\n=== INSTRUCTION ===\nYou are responsible for completing the current task as part of the overall project.\nUse all available context, including dependency and previous results, but present your answer as your own expert recommendation or decision.\nDo NOT use phrases like 'Based on previous research', 'According to earlier results', or any introductory statements.\nRespond directly and professionally, as if you are the main expert responsible for this part of the project.\nIf the task requires an external system or manual intervention, specify this clearly."
+          },
+          "result": "Explain to the child that to set the toaster settings, they need to turn the shade control dial to the desired level of toastiness. Then, instruct them to set the timer to the appropriate duration for the type of bread they are using. Encourage them to double-check the settings before starting the toaster."
+        },
+        {
+          "task_id": "166642fb-7b41-4e30-81bf-f86bd339e647",
+          "title": "Press toast button",
+          "description": "Instruct the child on pressing the toast button to start the toasting process.",
+          "expected_output": "Child successfully initiates the toasting cycle.",
+          "area": "Guidance",
+          "responsibilities": [],
+          "execution_type": "llm",
+          "parent": "5061ac46-a2cb-425b-870d-648f10f464cd",
+          "dependencies": [],
+          "subtasks": [],
+          "prompt": {
+            "system": "You are an expert autonomous agent collaborating in a multi-step project.\nYour responsibility is to complete your assigned task using all available context and previous results.\nAlways act as the main expert for your task: be decisive, avoid repetition, and provide clear, actionable outputs.\nDo NOT include any explanations, comments, or introductory phrases in your output.",
+            "user": "=== PROJECT ===\nTitle: Teach a child how to make toast safely.\n\n\n=== AREA ===\nTitle: Guidance\nDescription: Provides step-by-step instructions on how to make toast, ensuring the child follows each step correctly.\n\n\n\n\n=== CURRENT TASK ===\nTitle: Press toast button\nDescription: Instruct the child on pressing the toast button to start the toasting process.\nExpected Output: Child successfully initiates the toasting cycle.\n\n\n\n=== INSTRUCTION ===\nYou are responsible for completing the current task as part of the overall project.\nUse all available context, including dependency and previous results, but present your answer as your own expert recommendation or decision.\nDo NOT use phrases like 'Based on previous research', 'According to earlier results', or any introductory statements.\nRespond directly and professionally, as if you are the main expert responsible for this part of the project.\nIf the task requires an external system or manual intervention, specify this clearly."
+          },
+          "result": "Instruct the child to locate the \"toast\" button on the toaster and press it to initiate the toasting cycle. Remind them to be careful and not touch the toaster's hot surfaces during or after the toasting process."
+        }
+      ],
+      "result": {
+        "Instruct on inserting bread": "Ensure the toaster is unplugged. Hold a bread slice by the edges and gently slide it into the toaster slot until it reaches the bottom. Repeat with the second slice if necessary. Be careful not to touch the inside of the toaster to avoid burns. Once both slices are inserted, plug in the toaster and proceed with toasting.",
+        "Set toaster settings": "Explain to the child that to set the toaster settings, they need to turn the shade control dial to the desired level of toastiness. Then, instruct them to set the timer to the appropriate duration for the type of bread they are using. Encourage them to double-check the settings before starting the toaster.",
+        "Press toast button": "Instruct the child to locate the \"toast\" button on the toaster and press it to initiate the toasting cycle. Remind them to be careful and not touch the toaster's hot surfaces during or after the toasting process."
+      }
+    },
+    {
+      "task_id": "806f023d-0518-4f52-abdb-a0cc7a565eee",
+      "title": "Supervision",
+      "description": "Involves overseeing the child while they make toast, ready to intervene if needed.",
+      "expected_output": "The child completes the task safely under supervision.",
+      "area": "Supervision",
+      "responsibilities": [
+        "Monitor the child's actions during the toasting process.",
+        "Be prepared to assist or intervene in case of any issues."
+      ],
+      "execution_type": "llm",
+      "parent": "2e3817ba-a80b-45a2-a114-7a9853c954ad",
+      "dependencies": [],
+      "subtasks": [
+        {
+          "task_id": "4d4959c8-3ace-49d4-b563-9819fdbddc21",
+          "title": "Monitor toasting process",
+          "description": "Watch the child as they toast the bread, ensuring they follow the instructions correctly and operate the toaster safely.",
+          "expected_output": "Child follows the toasting process without any safety issues.",
+          "area": "Supervision",
+          "responsibilities": [],
+          "execution_type": "llm",
+          "parent": "806f023d-0518-4f52-abdb-a0cc7a565eee",
+          "dependencies": [],
+          "subtasks": [],
+          "prompt": {
+            "system": "You are an expert autonomous agent collaborating in a multi-step project.\nYour responsibility is to complete your assigned task using all available context and previous results.\nAlways act as the main expert for your task: be decisive, avoid repetition, and provide clear, actionable outputs.\nDo NOT include any explanations, comments, or introductory phrases in your output.",
+            "user": "=== PROJECT ===\nTitle: Teach a child how to make toast safely.\n\n\n=== AREA ===\nTitle: Supervision\nDescription: Involves overseeing the child while they make toast, ready to intervene if needed.\n\n\n\n\n=== CURRENT TASK ===\nTitle: Monitor toasting process\nDescription: Watch the child as they toast the bread, ensuring they follow the instructions correctly and operate the toaster safely.\nExpected Output: Child follows the toasting process without any safety issues.\n\n\n\n=== INSTRUCTION ===\nYou are responsible for completing the current task as part of the overall project.\nUse all available context, including dependency and previous results, but present your answer as your own expert recommendation or decision.\nDo NOT use phrases like 'Based on previous research', 'According to earlier results', or any introductory statements.\nRespond directly and professionally, as if you are the main expert responsible for this part of the project.\nIf the task requires an external system or manual intervention, specify this clearly."
+          },
+          "result": "Ensure the child places the bread slices in the toaster slots, selects the desired toasting level, and presses the toaster's start button. Monitor closely to ensure the child does not attempt to touch the toaster while it's in operation. Once the toasting is complete, supervise the child as they remove the toast using safe utensils and unplug the toaster. Verify that the child follows these steps without any safety issues."
+        },
+        {
+          "task_id": "2f82f75a-f40d-4bb6-8e51-e8dee3936f5f",
+          "title": "Be ready to intervene",
+          "description": "Stay close to the child while they toast the bread, ready to step in and assist if they face any difficulties or make a mistake.",
+          "expected_output": "Immediate intervention if needed to prevent accidents.",
+          "area": "Supervision",
+          "responsibilities": [],
+          "execution_type": "llm",
+          "parent": "806f023d-0518-4f52-abdb-a0cc7a565eee",
+          "dependencies": [],
+          "subtasks": [],
+          "prompt": {
+            "system": "You are an expert autonomous agent collaborating in a multi-step project.\nYour responsibility is to complete your assigned task using all available context and previous results.\nAlways act as the main expert for your task: be decisive, avoid repetition, and provide clear, actionable outputs.\nDo NOT include any explanations, comments, or introductory phrases in your output.",
+            "user": "=== PROJECT ===\nTitle: Teach a child how to make toast safely.\n\n\n=== AREA ===\nTitle: Supervision\nDescription: Involves overseeing the child while they make toast, ready to intervene if needed.\n\n\n\n\n=== CURRENT TASK ===\nTitle: Be ready to intervene\nDescription: Stay close to the child while they toast the bread, ready to step in and assist if they face any difficulties or make a mistake.\nExpected Output: Immediate intervention if needed to prevent accidents.\n\n\n\n=== INSTRUCTION ===\nYou are responsible for completing the current task as part of the overall project.\nUse all available context, including dependency and previous results, but present your answer as your own expert recommendation or decision.\nDo NOT use phrases like 'Based on previous research', 'According to earlier results', or any introductory statements.\nRespond directly and professionally, as if you are the main expert responsible for this part of the project.\nIf the task requires an external system or manual intervention, specify this clearly."
+          },
+          "result": "Immediate intervention if needed to prevent accidents."
+        }
+      ],
+      "result": {
+        "Monitor toasting process": "Ensure the child places the bread slices in the toaster slots, selects the desired toasting level, and presses the toaster's start button. Monitor closely to ensure the child does not attempt to touch the toaster while it's in operation. Once the toasting is complete, supervise the child as they remove the toast using safe utensils and unplug the toaster. Verify that the child follows these steps without any safety issues.",
+        "Be ready to intervene": "Immediate intervention if needed to prevent accidents."
+      }
+    }
+  ],
+  "result": {
+    "Preparation": {
+      "Gather necessary items": "Collect bread, toaster, butter, knife, and plate for making toast and place them on the workspace.",
+      "Set up workspace": "Clear the workspace of any obstacles or hazards. Place the collected bread, toaster, butter, knife, and plate on the workspace in an organized manner for easy access. Ensure that everything is within reach and ready for the child to start making toast safely."
+    },
+    "Safety": {
+      "Explain toaster safety": "Ensure the child understands the following toaster safety precautions:\n1. Never insert anything other than bread into the toaster.\n2. Always unplug the toaster before attempting to remove stuck items.\n3. Wait for the toaster to cool down before cleaning it.\n4. Never touch the toaster with wet hands.\n5. Use caution when handling hot toast or items that come out of the toaster.",
+      "Demonstrate safe toaster operation": "Demonstrate how to safely plug in the toaster by showing the child how to insert the plug into a nearby electrical outlet. Ensure the child understands the importance of plugging the toaster directly into the outlet and not using any extension cords or adapters. Demonstrate how to operate the toaster by setting the desired level of toasting and pressing the lever down to start the toasting process. Emphasize the importance of never inserting any objects other than bread into the toaster and always supervising the toasting process."
+    },
+    "Guidance": {
+      "Instruct on inserting bread": "Ensure the toaster is unplugged. Hold a bread slice by the edges and gently slide it into the toaster slot until it reaches the bottom. Repeat with the second slice if necessary. Be careful not to touch the inside of the toaster to avoid burns. Once both slices are inserted, plug in the toaster and proceed with toasting.",
+      "Set toaster settings": "Explain to the child that to set the toaster settings, they need to turn the shade control dial to the desired level of toastiness. Then, instruct them to set the timer to the appropriate duration for the type of bread they are using. Encourage them to double-check the settings before starting the toaster.",
+      "Press toast button": "Instruct the child to locate the \"toast\" button on the toaster and press it to initiate the toasting cycle. Remind them to be careful and not touch the toaster's hot surfaces during or after the toasting process."
+    },
+    "Supervision": {
+      "Monitor toasting process": "Ensure the child places the bread slices in the toaster slots, selects the desired toasting level, and presses the toaster's start button. Monitor closely to ensure the child does not attempt to touch the toaster while it's in operation. Once the toasting is complete, supervise the child as they remove the toast using safe utensils and unplug the toaster. Verify that the child follows these steps without any safety issues.",
+      "Be ready to intervene": "Immediate intervention if needed to prevent accidents."
+    }
+  },
+  "_metadata": {
+    "clarified_description": "Teach a child how to make toast safely.",
+    "expected_output": "A simple step-by-step instruction list using safe language, including required items, actions, and safety warnings.",
+    "case_id": "CASE09_ORIG",
+    "timestamp": "2025-06-26T17:58:32.685172",
+    "filename": "20250626_175832_CASE09_ORIG_task_tree.json"
+  }
+}

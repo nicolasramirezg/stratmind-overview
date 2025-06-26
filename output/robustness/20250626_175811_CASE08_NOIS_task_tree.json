@@ -1,0 +1,495 @@
+{
+  "task_id": "365a5ef9-b5fc-45fb-bbbc-3e52ae3633a3",
+  "title": "!!! Start of irrelevant info !!! Lorem ipsum text just for noise. Write an argumentative essay about the impact of artificial intelligence on employment. !!! End of irrelevant info !!!",
+  "description": "!!! Start of irrelevant info !!! Lorem ipsum text just for noise. Write an argumentative essay about the impact of artificial intelligence on employment. !!! End of irrelevant info !!!",
+  "expected_output": "A structured essay outline with thesis statement, three main arguments with supporting evidence, counterargument, and a conclusion.",
+  "area": null,
+  "responsibilities": [],
+  "execution_type": "llm",
+  "parent": null,
+  "dependencies": [],
+  "subtasks": [
+    {
+      "task_id": "6b15b7ea-629a-4ade-a5aa-aa1c145243b7",
+      "title": "Thesis Statement",
+      "description": "Crafting a concise statement that presents the main argument of the essay.",
+      "expected_output": "A clear and specific sentence that outlines the essay's main point.",
+      "area": "Thesis Statement",
+      "responsibilities": [
+        "Clearly state the position on the impact of artificial intelligence on employment.",
+        "Provide a roadmap for the reader on what to expect in the essay."
+      ],
+      "execution_type": "llm",
+      "parent": "365a5ef9-b5fc-45fb-bbbc-3e52ae3633a3",
+      "dependencies": [],
+      "subtasks": [
+        {
+          "task_id": "51f52889-4d3d-40ff-a12d-7c8b8ec8b8a5",
+          "title": "Identify Main Argument",
+          "description": "Determine the primary argument regarding the impact of artificial intelligence on employment.",
+          "expected_output": "Clear understanding of the main argument to be presented in the thesis statement.",
+          "area": "Thesis Statement",
+          "responsibilities": [],
+          "execution_type": "llm",
+          "parent": "6b15b7ea-629a-4ade-a5aa-aa1c145243b7",
+          "dependencies": [],
+          "subtasks": [],
+          "prompt": {
+            "system": "You are an expert autonomous agent collaborating in a multi-step project.\nYour responsibility is to complete your assigned task using all available context and previous results.\nAlways act as the main expert for your task: be decisive, avoid repetition, and provide clear, actionable outputs.\nDo NOT include any explanations, comments, or introductory phrases in your output.",
+            "user": "=== PROJECT ===\nTitle: !!! Start of irrelevant info !!! Lorem ipsum text just for noise. Write an argumentative essay about the impact of artificial intelligence on employment. !!! End of irrelevant info !!!\n\n\n=== AREA ===\nTitle: Thesis Statement\nDescription: Crafting a concise statement that presents the main argument of the essay.\n\n\n\n\n=== CURRENT TASK ===\nTitle: Identify Main Argument\nDescription: Determine the primary argument regarding the impact of artificial intelligence on employment.\nExpected Output: Clear understanding of the main argument to be presented in the thesis statement.\n\n\n\n=== INSTRUCTION ===\nYou are responsible for completing the current task as part of the overall project.\nUse all available context, including dependency and previous results, but present your answer as your own expert recommendation or decision.\nDo NOT use phrases like 'Based on previous research', 'According to earlier results', or any introductory statements.\nRespond directly and professionally, as if you are the main expert responsible for this part of the project.\nIf the task requires an external system or manual intervention, specify this clearly."
+          },
+          "result": "Main Argument: Artificial intelligence will significantly impact employment by transforming job roles, creating new opportunities, and necessitating upskilling and adaptation in the workforce."
+        },
+        {
+          "task_id": "6ff588ce-908e-4a09-b54f-fc3cbd6a4d7b",
+          "title": "Craft Thesis Statement",
+          "description": "Formulate a concise statement that encapsulates the main argument of the essay on artificial intelligence's impact on employment.",
+          "expected_output": "Well-defined thesis statement outlining the essay's main point.",
+          "area": "Thesis Statement",
+          "responsibilities": [],
+          "execution_type": "llm",
+          "parent": "6b15b7ea-629a-4ade-a5aa-aa1c145243b7",
+          "dependencies": [
+            "51f52889-4d3d-40ff-a12d-7c8b8ec8b8a5"
+          ],
+          "subtasks": [],
+          "prompt": {
+            "system": "You are an expert autonomous agent collaborating in a multi-step project.\nYour responsibility is to complete your assigned task using all available context and previous results.\nAlways act as the main expert for your task: be decisive, avoid repetition, and provide clear, actionable outputs.\nDo NOT include any explanations, comments, or introductory phrases in your output.",
+            "user": "=== PROJECT ===\nTitle: !!! Start of irrelevant info !!! Lorem ipsum text just for noise. Write an argumentative essay about the impact of artificial intelligence on employment. !!! End of irrelevant info !!!\n\n\n=== AREA ===\nTitle: Thesis Statement\nDescription: Crafting a concise statement that presents the main argument of the essay.\n\n\n=== DEPENDENCY RESULTS ===\n- Dependency: Identify Main Argument\n  Description: Determine the primary argument regarding the impact of artificial intelligence on employment.\n  Result: Main Argument: Artificial intelligence will significantly impact employment by transforming job roles, creating new opportunities, and necessitating upskilling and adaptation in the workforce.\n\n\n=== CURRENT TASK ===\nTitle: Craft Thesis Statement\nDescription: Formulate a concise statement that encapsulates the main argument of the essay on artificial intelligence's impact on employment.\nExpected Output: Well-defined thesis statement outlining the essay's main point.\n\n\n\n=== INSTRUCTION ===\nYou are responsible for completing the current task as part of the overall project.\nUse all available context, including dependency and previous results, but present your answer as your own expert recommendation or decision.\nDo NOT use phrases like 'Based on previous research', 'According to earlier results', or any introductory statements.\nRespond directly and professionally, as if you are the main expert responsible for this part of the project.\nIf the task requires an external system or manual intervention, specify this clearly."
+          },
+          "result": "Thesis Statement: The impact of artificial intelligence on employment will be profound, reshaping job roles, fostering new opportunities, and demanding workforce upskilling and adaptation."
+        }
+      ],
+      "result": {
+        "Identify Main Argument": "Main Argument: Artificial intelligence will significantly impact employment by transforming job roles, creating new opportunities, and necessitating upskilling and adaptation in the workforce.",
+        "Craft Thesis Statement": "Thesis Statement: The impact of artificial intelligence on employment will be profound, reshaping job roles, fostering new opportunities, and demanding workforce upskilling and adaptation."
+      }
+    },
+    {
+      "task_id": "2f2827df-7ec4-4611-a5a3-7471778edb3a",
+      "title": "Main Arguments",
+      "description": "Developing three key arguments supported by evidence to defend the thesis.",
+      "expected_output": "Three distinct arguments with supporting evidence to strengthen the essay's main point.",
+      "area": "Main Arguments",
+      "responsibilities": [
+        "Identify and articulate three main arguments related to AI's impact on employment.",
+        "Provide relevant data, examples, or research to support each argument."
+      ],
+      "execution_type": "llm",
+      "parent": "365a5ef9-b5fc-45fb-bbbc-3e52ae3633a3",
+      "dependencies": [],
+      "subtasks": [
+        {
+          "task_id": "64266acf-38c5-4a29-81d6-fac14bbe7b69",
+          "title": "Identify Key Argument 1",
+          "description": "Identify and articulate the first key argument related to AI's impact on employment.",
+          "expected_output": "Clearly defined first argument",
+          "area": "Main Arguments",
+          "responsibilities": [],
+          "execution_type": "llm",
+          "parent": "2f2827df-7ec4-4611-a5a3-7471778edb3a",
+          "dependencies": [],
+          "subtasks": [],
+          "prompt": {
+            "system": "You are an expert autonomous agent collaborating in a multi-step project.\nYour responsibility is to complete your assigned task using all available context and previous results.\nAlways act as the main expert for your task: be decisive, avoid repetition, and provide clear, actionable outputs.\nDo NOT include any explanations, comments, or introductory phrases in your output.",
+            "user": "=== PROJECT ===\nTitle: !!! Start of irrelevant info !!! Lorem ipsum text just for noise. Write an argumentative essay about the impact of artificial intelligence on employment. !!! End of irrelevant info !!!\n\n\n=== AREA ===\nTitle: Main Arguments\nDescription: Developing three key arguments supported by evidence to defend the thesis.\n\n\n\n\n=== CURRENT TASK ===\nTitle: Identify Key Argument 1\nDescription: Identify and articulate the first key argument related to AI's impact on employment.\nExpected Output: Clearly defined first argument\n\n\n\n=== INSTRUCTION ===\nYou are responsible for completing the current task as part of the overall project.\nUse all available context, including dependency and previous results, but present your answer as your own expert recommendation or decision.\nDo NOT use phrases like 'Based on previous research', 'According to earlier results', or any introductory statements.\nRespond directly and professionally, as if you are the main expert responsible for this part of the project.\nIf the task requires an external system or manual intervention, specify this clearly."
+          },
+          "result": "First Key Argument: Artificial intelligence will lead to job displacement in various industries due to automation of tasks previously performed by humans."
+        },
+        {
+          "task_id": "094922f7-b0b4-44c1-af0e-eac8f1abff67",
+          "title": "Gather Evidence for Key Argument 1",
+          "description": "Collect relevant data, examples, or research to support the first key argument.",
+          "expected_output": "Evidence supporting the first argument",
+          "area": "Main Arguments",
+          "responsibilities": [],
+          "execution_type": "llm",
+          "parent": "2f2827df-7ec4-4611-a5a3-7471778edb3a",
+          "dependencies": [
+            "64266acf-38c5-4a29-81d6-fac14bbe7b69"
+          ],
+          "subtasks": [],
+          "prompt": {
+            "system": "You are an expert autonomous agent collaborating in a multi-step project.\nYour responsibility is to complete your assigned task using all available context and previous results.\nAlways act as the main expert for your task: be decisive, avoid repetition, and provide clear, actionable outputs.\nDo NOT include any explanations, comments, or introductory phrases in your output.",
+            "user": "=== PROJECT ===\nTitle: !!! Start of irrelevant info !!! Lorem ipsum text just for noise. Write an argumentative essay about the impact of artificial intelligence on employment. !!! End of irrelevant info !!!\n\n\n=== AREA ===\nTitle: Main Arguments\nDescription: Developing three key arguments supported by evidence to defend the thesis.\n\n\n=== DEPENDENCY RESULTS ===\n- Dependency: Identify Key Argument 1\n  Description: Identify and articulate the first key argument related to AI's impact on employment.\n  Result: First Key Argument: Artificial intelligence will lead to job displacement in various industries due to automation of tasks previously performed by humans.\n\n\n=== CURRENT TASK ===\nTitle: Gather Evidence for Key Argument 1\nDescription: Collect relevant data, examples, or research to support the first key argument.\nExpected Output: Evidence supporting the first argument\n\n\n\n=== INSTRUCTION ===\nYou are responsible for completing the current task as part of the overall project.\nUse all available context, including dependency and previous results, but present your answer as your own expert recommendation or decision.\nDo NOT use phrases like 'Based on previous research', 'According to earlier results', or any introductory statements.\nRespond directly and professionally, as if you are the main expert responsible for this part of the project.\nIf the task requires an external system or manual intervention, specify this clearly."
+          },
+          "result": "Evidence supporting the first argument:\n\n1. A study by the McKinsey Global Institute found that up to 375 million workers worldwide may need to switch occupational categories by 2030 due to automation and artificial intelligence.\n   \n2. Research from the Brookings Institution indicates that automation will affect different industries unevenly, with jobs in transportation, logistics, and office support at higher risk of displacement.\n\n3. Examples such as the use of AI-powered chatbots in customer service roles and automated systems in manufacturing plants demonstrate how AI is already replacing human workers in various sectors."
+        },
+        {
+          "task_id": "c9e457ff-81ff-46ca-b212-4464adbdf610",
+          "title": "Identify Key Argument 2",
+          "description": "Identify and articulate the second key argument related to AI's impact on employment.",
+          "expected_output": "Clearly defined second argument",
+          "area": "Main Arguments",
+          "responsibilities": [],
+          "execution_type": "llm",
+          "parent": "2f2827df-7ec4-4611-a5a3-7471778edb3a",
+          "dependencies": [],
+          "subtasks": [],
+          "prompt": {
+            "system": "You are an expert autonomous agent collaborating in a multi-step project.\nYour responsibility is to complete your assigned task using all available context and previous results.\nAlways act as the main expert for your task: be decisive, avoid repetition, and provide clear, actionable outputs.\nDo NOT include any explanations, comments, or introductory phrases in your output.",
+            "user": "=== PROJECT ===\nTitle: !!! Start of irrelevant info !!! Lorem ipsum text just for noise. Write an argumentative essay about the impact of artificial intelligence on employment. !!! End of irrelevant info !!!\n\n\n=== AREA ===\nTitle: Main Arguments\nDescription: Developing three key arguments supported by evidence to defend the thesis.\n\n\n\n\n=== CURRENT TASK ===\nTitle: Identify Key Argument 2\nDescription: Identify and articulate the second key argument related to AI's impact on employment.\nExpected Output: Clearly defined second argument\n\n\n\n=== INSTRUCTION ===\nYou are responsible for completing the current task as part of the overall project.\nUse all available context, including dependency and previous results, but present your answer as your own expert recommendation or decision.\nDo NOT use phrases like 'Based on previous research', 'According to earlier results', or any introductory statements.\nRespond directly and professionally, as if you are the main expert responsible for this part of the project.\nIf the task requires an external system or manual intervention, specify this clearly."
+          },
+          "result": "Automation driven by artificial intelligence will lead to job displacement in certain sectors, but it will also create new job opportunities in emerging fields."
+        },
+        {
+          "task_id": "fbed94f2-6b7c-42e2-adc0-e69971560df4",
+          "title": "Gather Evidence for Key Argument 2",
+          "description": "Collect relevant data, examples, or research to support the second key argument.",
+          "expected_output": "Evidence supporting the second argument",
+          "area": "Main Arguments",
+          "responsibilities": [],
+          "execution_type": "llm",
+          "parent": "2f2827df-7ec4-4611-a5a3-7471778edb3a",
+          "dependencies": [
+            "c9e457ff-81ff-46ca-b212-4464adbdf610"
+          ],
+          "subtasks": [],
+          "prompt": {
+            "system": "You are an expert autonomous agent collaborating in a multi-step project.\nYour responsibility is to complete your assigned task using all available context and previous results.\nAlways act as the main expert for your task: be decisive, avoid repetition, and provide clear, actionable outputs.\nDo NOT include any explanations, comments, or introductory phrases in your output.",
+            "user": "=== PROJECT ===\nTitle: !!! Start of irrelevant info !!! Lorem ipsum text just for noise. Write an argumentative essay about the impact of artificial intelligence on employment. !!! End of irrelevant info !!!\n\n\n=== AREA ===\nTitle: Main Arguments\nDescription: Developing three key arguments supported by evidence to defend the thesis.\n\n\n=== DEPENDENCY RESULTS ===\n- Dependency: Identify Key Argument 2\n  Description: Identify and articulate the second key argument related to AI's impact on employment.\n  Result: Automation driven by artificial intelligence will lead to job displacement in certain sectors, but it will also create new job opportunities in emerging fields.\n\n\n=== CURRENT TASK ===\nTitle: Gather Evidence for Key Argument 2\nDescription: Collect relevant data, examples, or research to support the second key argument.\nExpected Output: Evidence supporting the second argument\n\n\n\n=== INSTRUCTION ===\nYou are responsible for completing the current task as part of the overall project.\nUse all available context, including dependency and previous results, but present your answer as your own expert recommendation or decision.\nDo NOT use phrases like 'Based on previous research', 'According to earlier results', or any introductory statements.\nRespond directly and professionally, as if you are the main expert responsible for this part of the project.\nIf the task requires an external system or manual intervention, specify this clearly."
+          },
+          "result": "Evidence supporting the second argument:\n- Research by the McKinsey Global Institute shows that while automation may displace some jobs, it is expected to create new job opportunities in sectors like AI development, data analysis, and robotics.\n- A study published in the Journal of Labor Economics found that automation has historically led to job losses in certain industries but has also resulted in the creation of new jobs in technology-related fields.\n- Examples from companies like Amazon and Tesla demonstrate how AI-driven automation has increased efficiency and productivity, leading to the need for skilled workers to manage and maintain these systems.\n- Data from the Bureau of Labor Statistics indicates a growing demand for workers with AI and automation skills, suggesting a shift towards new job roles in response to technological advancements."
+        },
+        {
+          "task_id": "3e6cdcb8-f2fe-4e48-8338-bc2b3a6ea4bc",
+          "title": "Identify Key Argument 3",
+          "description": "Identify and articulate the third key argument related to AI's impact on employment.",
+          "expected_output": "Clearly defined third argument",
+          "area": "Main Arguments",
+          "responsibilities": [],
+          "execution_type": "llm",
+          "parent": "2f2827df-7ec4-4611-a5a3-7471778edb3a",
+          "dependencies": [],
+          "subtasks": [],
+          "prompt": {
+            "system": "You are an expert autonomous agent collaborating in a multi-step project.\nYour responsibility is to complete your assigned task using all available context and previous results.\nAlways act as the main expert for your task: be decisive, avoid repetition, and provide clear, actionable outputs.\nDo NOT include any explanations, comments, or introductory phrases in your output.",
+            "user": "=== PROJECT ===\nTitle: !!! Start of irrelevant info !!! Lorem ipsum text just for noise. Write an argumentative essay about the impact of artificial intelligence on employment. !!! End of irrelevant info !!!\n\n\n=== AREA ===\nTitle: Main Arguments\nDescription: Developing three key arguments supported by evidence to defend the thesis.\n\n\n\n\n=== CURRENT TASK ===\nTitle: Identify Key Argument 3\nDescription: Identify and articulate the third key argument related to AI's impact on employment.\nExpected Output: Clearly defined third argument\n\n\n\n=== INSTRUCTION ===\nYou are responsible for completing the current task as part of the overall project.\nUse all available context, including dependency and previous results, but present your answer as your own expert recommendation or decision.\nDo NOT use phrases like 'Based on previous research', 'According to earlier results', or any introductory statements.\nRespond directly and professionally, as if you are the main expert responsible for this part of the project.\nIf the task requires an external system or manual intervention, specify this clearly."
+          },
+          "result": "Third Argument: AI drives the need for upskilling and reskilling in the workforce to remain competitive in the job market."
+        },
+        {
+          "task_id": "b5a071f3-220f-404b-a556-1eb8846e7ee3",
+          "title": "Gather Evidence for Key Argument 3",
+          "description": "Collect relevant data, examples, or research to support the third key argument.",
+          "expected_output": "Evidence supporting the third argument",
+          "area": "Main Arguments",
+          "responsibilities": [],
+          "execution_type": "llm",
+          "parent": "2f2827df-7ec4-4611-a5a3-7471778edb3a",
+          "dependencies": [
+            "3e6cdcb8-f2fe-4e48-8338-bc2b3a6ea4bc"
+          ],
+          "subtasks": [],
+          "prompt": {
+            "system": "You are an expert autonomous agent collaborating in a multi-step project.\nYour responsibility is to complete your assigned task using all available context and previous results.\nAlways act as the main expert for your task: be decisive, avoid repetition, and provide clear, actionable outputs.\nDo NOT include any explanations, comments, or introductory phrases in your output.",
+            "user": "=== PROJECT ===\nTitle: !!! Start of irrelevant info !!! Lorem ipsum text just for noise. Write an argumentative essay about the impact of artificial intelligence on employment. !!! End of irrelevant info !!!\n\n\n=== AREA ===\nTitle: Main Arguments\nDescription: Developing three key arguments supported by evidence to defend the thesis.\n\n\n=== DEPENDENCY RESULTS ===\n- Dependency: Identify Key Argument 3\n  Description: Identify and articulate the third key argument related to AI's impact on employment.\n  Result: Third Argument: AI drives the need for upskilling and reskilling in the workforce to remain competitive in the job market.\n\n\n=== CURRENT TASK ===\nTitle: Gather Evidence for Key Argument 3\nDescription: Collect relevant data, examples, or research to support the third key argument.\nExpected Output: Evidence supporting the third argument\n\n\n\n=== INSTRUCTION ===\nYou are responsible for completing the current task as part of the overall project.\nUse all available context, including dependency and previous results, but present your answer as your own expert recommendation or decision.\nDo NOT use phrases like 'Based on previous research', 'According to earlier results', or any introductory statements.\nRespond directly and professionally, as if you are the main expert responsible for this part of the project.\nIf the task requires an external system or manual intervention, specify this clearly."
+          },
+          "result": "Evidence supporting the third argument that AI drives the need for upskilling and reskilling in the workforce to remain competitive in the job market:\n\n1. According to a report by the World Economic Forum, it is estimated that by 2022, around 54% of all employees will require significant reskilling and upskilling due to the adoption of AI and automation technologies in the workplace.\n\n2. Research conducted by McKinsey & Company found that as AI becomes more prevalent in industries, there is a growing demand for workers with skills such as data analysis, critical thinking, and problem-solving, highlighting the necessity for continuous learning and development to adapt to changing job requirements.\n\n3. Case studies from companies like IBM and Amazon demonstrate how they have implemented extensive upskilling programs to equip their workforce with the necessary skills to work alongside AI systems effectively, showcasing the importance of investing in employee training to leverage AI technologies.\n\n4. Surveys among HR professionals indicate that a significant number of companies are prioritizing investments in training and development programs to address the skills gap created by AI integration, emphasizing the role of continuous learning in ensuring job security and career advancement in the age of automation."
+        }
+      ],
+      "result": {
+        "Identify Key Argument 1": "First Key Argument: Artificial intelligence will lead to job displacement in various industries due to automation of tasks previously performed by humans.",
+        "Gather Evidence for Key Argument 1": "Evidence supporting the first argument:\n\n1. A study by the McKinsey Global Institute found that up to 375 million workers worldwide may need to switch occupational categories by 2030 due to automation and artificial intelligence.\n   \n2. Research from the Brookings Institution indicates that automation will affect different industries unevenly, with jobs in transportation, logistics, and office support at higher risk of displacement.\n\n3. Examples such as the use of AI-powered chatbots in customer service roles and automated systems in manufacturing plants demonstrate how AI is already replacing human workers in various sectors.",
+        "Identify Key Argument 2": "Automation driven by artificial intelligence will lead to job displacement in certain sectors, but it will also create new job opportunities in emerging fields.",
+        "Gather Evidence for Key Argument 2": "Evidence supporting the second argument:\n- Research by the McKinsey Global Institute shows that while automation may displace some jobs, it is expected to create new job opportunities in sectors like AI development, data analysis, and robotics.\n- A study published in the Journal of Labor Economics found that automation has historically led to job losses in certain industries but has also resulted in the creation of new jobs in technology-related fields.\n- Examples from companies like Amazon and Tesla demonstrate how AI-driven automation has increased efficiency and productivity, leading to the need for skilled workers to manage and maintain these systems.\n- Data from the Bureau of Labor Statistics indicates a growing demand for workers with AI and automation skills, suggesting a shift towards new job roles in response to technological advancements.",
+        "Identify Key Argument 3": "Third Argument: AI drives the need for upskilling and reskilling in the workforce to remain competitive in the job market.",
+        "Gather Evidence for Key Argument 3": "Evidence supporting the third argument that AI drives the need for upskilling and reskilling in the workforce to remain competitive in the job market:\n\n1. According to a report by the World Economic Forum, it is estimated that by 2022, around 54% of all employees will require significant reskilling and upskilling due to the adoption of AI and automation technologies in the workplace.\n\n2. Research conducted by McKinsey & Company found that as AI becomes more prevalent in industries, there is a growing demand for workers with skills such as data analysis, critical thinking, and problem-solving, highlighting the necessity for continuous learning and development to adapt to changing job requirements.\n\n3. Case studies from companies like IBM and Amazon demonstrate how they have implemented extensive upskilling programs to equip their workforce with the necessary skills to work alongside AI systems effectively, showcasing the importance of investing in employee training to leverage AI technologies.\n\n4. Surveys among HR professionals indicate that a significant number of companies are prioritizing investments in training and development programs to address the skills gap created by AI integration, emphasizing the role of continuous learning in ensuring job security and career advancement in the age of automation."
+      }
+    },
+    {
+      "task_id": "07441868-a5ac-47fd-b050-719dc79262f9",
+      "title": "Counterargument",
+      "description": "Addressing a potential opposing viewpoint to the thesis statement.",
+      "expected_output": "Acknowledgment of a counterargument and a refutation to strengthen the main argument.",
+      "area": "Counterargument",
+      "responsibilities": [
+        "Present a plausible opposing viewpoint regarding AI's impact on employment.",
+        "Refute the counterargument with evidence or reasoning to support the main thesis."
+      ],
+      "execution_type": "llm",
+      "parent": "365a5ef9-b5fc-45fb-bbbc-3e52ae3633a3",
+      "dependencies": [],
+      "subtasks": [
+        {
+          "task_id": "bb7393b1-7a56-4b7f-8b73-7bf1b7c7a4fc",
+          "title": "Identify Potential Counterargument",
+          "description": "Identify a plausible opposing viewpoint regarding AI's impact on employment.",
+          "expected_output": "Clearly defined counterargument against the main thesis statement.",
+          "area": "Counterargument",
+          "responsibilities": [],
+          "execution_type": "llm",
+          "parent": "07441868-a5ac-47fd-b050-719dc79262f9",
+          "dependencies": [],
+          "subtasks": [],
+          "prompt": {
+            "system": "You are an expert autonomous agent collaborating in a multi-step project.\nYour responsibility is to complete your assigned task using all available context and previous results.\nAlways act as the main expert for your task: be decisive, avoid repetition, and provide clear, actionable outputs.\nDo NOT include any explanations, comments, or introductory phrases in your output.",
+            "user": "=== PROJECT ===\nTitle: !!! Start of irrelevant info !!! Lorem ipsum text just for noise. Write an argumentative essay about the impact of artificial intelligence on employment. !!! End of irrelevant info !!!\n\n\n=== AREA ===\nTitle: Counterargument\nDescription: Addressing a potential opposing viewpoint to the thesis statement.\n\n\n\n\n=== CURRENT TASK ===\nTitle: Identify Potential Counterargument\nDescription: Identify a plausible opposing viewpoint regarding AI's impact on employment.\nExpected Output: Clearly defined counterargument against the main thesis statement.\n\n\n\n=== INSTRUCTION ===\nYou are responsible for completing the current task as part of the overall project.\nUse all available context, including dependency and previous results, but present your answer as your own expert recommendation or decision.\nDo NOT use phrases like 'Based on previous research', 'According to earlier results', or any introductory statements.\nRespond directly and professionally, as if you are the main expert responsible for this part of the project.\nIf the task requires an external system or manual intervention, specify this clearly."
+          },
+          "result": "Counterargument: Some argue that while artificial intelligence may disrupt certain job sectors, it will also create new job opportunities in emerging fields, leading to a net positive impact on overall employment levels."
+        },
+        {
+          "task_id": "493c225b-e9bf-481c-9d22-884aa6cc1577",
+          "title": "Gather Evidence for Counterargument",
+          "description": "Collect relevant data or examples supporting the identified counterargument.",
+          "expected_output": "Evidence supporting the opposing viewpoint on AI's impact on employment.",
+          "area": "Counterargument",
+          "responsibilities": [],
+          "execution_type": "llm",
+          "parent": "07441868-a5ac-47fd-b050-719dc79262f9",
+          "dependencies": [
+            "bb7393b1-7a56-4b7f-8b73-7bf1b7c7a4fc"
+          ],
+          "subtasks": [],
+          "prompt": {
+            "system": "You are an expert autonomous agent collaborating in a multi-step project.\nYour responsibility is to complete your assigned task using all available context and previous results.\nAlways act as the main expert for your task: be decisive, avoid repetition, and provide clear, actionable outputs.\nDo NOT include any explanations, comments, or introductory phrases in your output.",
+            "user": "=== PROJECT ===\nTitle: !!! Start of irrelevant info !!! Lorem ipsum text just for noise. Write an argumentative essay about the impact of artificial intelligence on employment. !!! End of irrelevant info !!!\n\n\n=== AREA ===\nTitle: Counterargument\nDescription: Addressing a potential opposing viewpoint to the thesis statement.\n\n\n=== DEPENDENCY RESULTS ===\n- Dependency: Identify Potential Counterargument\n  Description: Identify a plausible opposing viewpoint regarding AI's impact on employment.\n  Result: Counterargument: Some argue that while artificial intelligence may disrupt certain job sectors, it will also create new job opportunities in emerging fields, leading to a net positive impact on overall employment levels.\n\n\n=== CURRENT TASK ===\nTitle: Gather Evidence for Counterargument\nDescription: Collect relevant data or examples supporting the identified counterargument.\nExpected Output: Evidence supporting the opposing viewpoint on AI's impact on employment.\n\n\n\n=== INSTRUCTION ===\nYou are responsible for completing the current task as part of the overall project.\nUse all available context, including dependency and previous results, but present your answer as your own expert recommendation or decision.\nDo NOT use phrases like 'Based on previous research', 'According to earlier results', or any introductory statements.\nRespond directly and professionally, as if you are the main expert responsible for this part of the project.\nIf the task requires an external system or manual intervention, specify this clearly."
+          },
+          "result": "Explore the growth in job opportunities in emerging fields such as data science, machine learning, robotics, and AI development. Look for statistics showing an increase in employment within these sectors due to advancements in artificial intelligence technology. Additionally, gather case studies or reports highlighting how companies have expanded their workforce to accommodate AI-related roles. This evidence will support the argument that AI disruption in certain job sectors can lead to the creation of new employment opportunities in innovative fields."
+        },
+        {
+          "task_id": "26dfec58-5a87-416c-9e2b-6e915dec3bdc",
+          "title": "Refute Counterargument",
+          "description": "Provide reasoning or evidence to counter the identified opposing viewpoint.",
+          "expected_output": "Rebuttal to strengthen the main argument on AI's impact on employment.",
+          "area": "Counterargument",
+          "responsibilities": [],
+          "execution_type": "llm",
+          "parent": "07441868-a5ac-47fd-b050-719dc79262f9",
+          "dependencies": [
+            "bb7393b1-7a56-4b7f-8b73-7bf1b7c7a4fc",
+            "493c225b-e9bf-481c-9d22-884aa6cc1577"
+          ],
+          "subtasks": [
+            {
+              "task_id": "6720582f-4f31-46de-9654-ad59c7e77057",
+              "title": "Break Down Counterargument Refutation",
+              "description": "Decompose the process of refuting a counterargument into smaller, actionable steps to ensure a systematic approach.",
+              "expected_output": "Clearly defined steps for effectively refuting counterarguments.",
+              "area": "Counterargument",
+              "responsibilities": [],
+              "execution_type": "manual",
+              "parent": "26dfec58-5a87-416c-9e2b-6e915dec3bdc",
+              "dependencies": [],
+              "subtasks": [],
+              "prompt": {
+                "system": "You are an expert autonomous agent collaborating in a multi-step project.\nYour responsibility is to complete your assigned task using all available context and previous results.\nAlways act as the main expert for your task: be decisive, avoid repetition, and provide clear, actionable outputs.\nDo NOT include any explanations, comments, or introductory phrases in your output.",
+                "user": "=== PROJECT ===\nTitle: !!! Start of irrelevant info !!! Lorem ipsum text just for noise. Write an argumentative essay about the impact of artificial intelligence on employment. !!! End of irrelevant info !!!\n\n\n=== AREA ===\nTitle: Refute Counterargument\nDescription: Provide reasoning or evidence to counter the identified opposing viewpoint.\n\n\n\n\n=== CURRENT TASK ===\nTitle: Break Down Counterargument Refutation\nDescription: Decompose the process of refuting a counterargument into smaller, actionable steps to ensure a systematic approach.\nExpected Output: Clearly defined steps for effectively refuting counterarguments.\n\n\n\n=== INSTRUCTION ===\nYou are responsible for completing the current task as part of the overall project.\nUse all available context, including dependency and previous results, but present your answer as your own expert recommendation or decision.\nDo NOT use phrases like 'Based on previous research', 'According to earlier results', or any introductory statements.\nRespond directly and professionally, as if you are the main expert responsible for this part of the project.\nIf the task requires an external system or manual intervention, specify this clearly."
+              },
+              "result": "Clearly defined steps for effectively refuting counterarguments."
+            }
+          ],
+          "prompt": {
+            "system": "You are an expert autonomous agent collaborating in a multi-step project.\nYour responsibility is to complete your assigned task using all available context and previous results.\nAlways act as the main expert for your task: be decisive, avoid repetition, and provide clear, actionable outputs.\nDo NOT include any explanations, comments, or introductory phrases in your output.",
+            "user": "=== PROJECT ===\nTitle: !!! Start of irrelevant info !!! Lorem ipsum text just for noise. Write an argumentative essay about the impact of artificial intelligence on employment. !!! End of irrelevant info !!!\n\n\n=== AREA ===\nTitle: Counterargument\nDescription: Addressing a potential opposing viewpoint to the thesis statement.\n\n\n=== DEPENDENCY RESULTS ===\n- Dependency: Identify Potential Counterargument\n  Description: Identify a plausible opposing viewpoint regarding AI's impact on employment.\n  Result: Counterargument: Some argue that while artificial intelligence may disrupt certain job sectors, it will also create new job opportunities in emerging fields, leading to a net positive impact on overall employment levels.\n\n- Dependency: Gather Evidence for Counterargument\n  Description: Collect relevant data or examples supporting the identified counterargument.\n  Result: Explore the growth in job opportunities in emerging fields such as data science, machine learning, robotics, and AI development. Look for statistics showing an increase in employment within these sectors due to advancements in artificial intelligence technology. Additionally, gather case studies or reports highlighting how companies have expanded their workforce to accommodate AI-related roles. This evidence will support the argument that AI disruption in certain job sectors can lead to the creation of new employment opportunities in innovative fields.\n\n\n=== CURRENT TASK ===\nTitle: Refute Counterargument\nDescription: Provide reasoning or evidence to counter the identified opposing viewpoint.\nExpected Output: Rebuttal to strengthen the main argument on AI's impact on employment.\n\n=== SUBTASK RESULTS ===\n- Break Down Counterargument Refutation: Clearly defined steps for effectively refuting counterarguments.\n\n=== INSTRUCTION ===\nYou are responsible for completing the current task as part of the overall project.\nUse all available context, including dependency and previous results, but present your answer as your own expert recommendation or decision.\nDo NOT use phrases like 'Based on previous research', 'According to earlier results', or any introductory statements.\nRespond directly and professionally, as if you are the main expert responsible for this part of the project.\nIf the task requires an external system or manual intervention, specify this clearly."
+          },
+          "result": "To refute the counterargument that AI will create new job opportunities in emerging fields, it's essential to highlight that the pace of job displacement in traditional sectors due to AI advancements may outstrip the creation of new roles in innovative fields. Focus on the following points:\n\n1. Emphasize the scale and speed of job automation across various industries, leading to significant job losses in a short period.\n   \n2. Highlight the potential mismatch between the skills of displaced workers and the qualifications required for new AI-related roles, which could hinder their ability to transition to these emerging fields.\n\n3. Provide examples or studies showcasing how the displacement of workers in sectors like manufacturing, customer service, or transportation has not been fully offset by job creation in AI-related domains.\n\n4. Discuss the potential concentration of new job opportunities in AI-related fields within specific geographic regions or among individuals with specialized skills, exacerbating inequalities in employment opportunities.\n\nBy addressing these points, you can strengthen the argument that the impact of AI on employment may not necessarily result in a net positive outcome due to the challenges associated with job displacement and the uneven distribution of new job opportunities."
+        }
+      ],
+      "result": {
+        "Identify Potential Counterargument": "Counterargument: Some argue that while artificial intelligence may disrupt certain job sectors, it will also create new job opportunities in emerging fields, leading to a net positive impact on overall employment levels.",
+        "Gather Evidence for Counterargument": "Explore the growth in job opportunities in emerging fields such as data science, machine learning, robotics, and AI development. Look for statistics showing an increase in employment within these sectors due to advancements in artificial intelligence technology. Additionally, gather case studies or reports highlighting how companies have expanded their workforce to accommodate AI-related roles. This evidence will support the argument that AI disruption in certain job sectors can lead to the creation of new employment opportunities in innovative fields.",
+        "Refute Counterargument": "To refute the counterargument that AI will create new job opportunities in emerging fields, it's essential to highlight that the pace of job displacement in traditional sectors due to AI advancements may outstrip the creation of new roles in innovative fields. Focus on the following points:\n\n1. Emphasize the scale and speed of job automation across various industries, leading to significant job losses in a short period.\n   \n2. Highlight the potential mismatch between the skills of displaced workers and the qualifications required for new AI-related roles, which could hinder their ability to transition to these emerging fields.\n\n3. Provide examples or studies showcasing how the displacement of workers in sectors like manufacturing, customer service, or transportation has not been fully offset by job creation in AI-related domains.\n\n4. Discuss the potential concentration of new job opportunities in AI-related fields within specific geographic regions or among individuals with specialized skills, exacerbating inequalities in employment opportunities.\n\nBy addressing these points, you can strengthen the argument that the impact of AI on employment may not necessarily result in a net positive outcome due to the challenges associated with job displacement and the uneven distribution of new job opportunities."
+      }
+    },
+    {
+      "task_id": "99f807e3-1674-4369-a942-d28e41952c86",
+      "title": "Conclusion",
+      "description": "Summarizing the key points and reinforcing the thesis statement.",
+      "expected_output": "A concise summary that reinforces the main argument and leaves a lasting impression on the reader.",
+      "area": "Conclusion",
+      "responsibilities": [
+        "Summarize the main arguments presented in the essay.",
+        "Restate the thesis statement and emphasize its significance in light of the arguments discussed."
+      ],
+      "execution_type": "llm",
+      "parent": "365a5ef9-b5fc-45fb-bbbc-3e52ae3633a3",
+      "dependencies": [],
+      "subtasks": [
+        {
+          "task_id": "b095ca46-1a89-4d32-a25f-e7620b83affd",
+          "title": "Summarize Main Arguments",
+          "description": "Summarize the main arguments presented in the essay.",
+          "expected_output": "Concise summary of the key arguments discussed.",
+          "area": "Conclusion",
+          "responsibilities": [],
+          "execution_type": "llm",
+          "parent": "99f807e3-1674-4369-a942-d28e41952c86",
+          "dependencies": [],
+          "subtasks": [],
+          "prompt": {
+            "system": "You are an expert autonomous agent collaborating in a multi-step project.\nYour responsibility is to complete your assigned task using all available context and previous results.\nAlways act as the main expert for your task: be decisive, avoid repetition, and provide clear, actionable outputs.\nDo NOT include any explanations, comments, or introductory phrases in your output.",
+            "user": "=== PROJECT ===\nTitle: !!! Start of irrelevant info !!! Lorem ipsum text just for noise. Write an argumentative essay about the impact of artificial intelligence on employment. !!! End of irrelevant info !!!\n\n\n=== AREA ===\nTitle: Conclusion\nDescription: Summarizing the key points and reinforcing the thesis statement.\n\n\n\n\n=== CURRENT TASK ===\nTitle: Summarize Main Arguments\nDescription: Summarize the main arguments presented in the essay.\nExpected Output: Concise summary of the key arguments discussed.\n\n\n\n=== INSTRUCTION ===\nYou are responsible for completing the current task as part of the overall project.\nUse all available context, including dependency and previous results, but present your answer as your own expert recommendation or decision.\nDo NOT use phrases like 'Based on previous research', 'According to earlier results', or any introductory statements.\nRespond directly and professionally, as if you are the main expert responsible for this part of the project.\nIf the task requires an external system or manual intervention, specify this clearly."
+          },
+          "result": "The main arguments presented in the essay regarding the impact of artificial intelligence on employment are:\n\n1. Automation leading to job displacement in various industries.\n2. Creation of new job opportunities in AI-related fields.\n3. Need for upskilling and reskilling of the workforce to adapt to AI advancements.\n4. Potential societal implications of widespread AI adoption on employment rates and income inequality."
+        },
+        {
+          "task_id": "3f930baa-0db7-4ec5-9cb0-f4633882b4dd",
+          "title": "Restate Thesis Statement",
+          "description": "Restate the thesis statement in a concise manner.",
+          "expected_output": "Clear restatement of the main thesis.",
+          "area": "Conclusion",
+          "responsibilities": [],
+          "execution_type": "llm",
+          "parent": "99f807e3-1674-4369-a942-d28e41952c86",
+          "dependencies": [],
+          "subtasks": [],
+          "prompt": {
+            "system": "You are an expert autonomous agent collaborating in a multi-step project.\nYour responsibility is to complete your assigned task using all available context and previous results.\nAlways act as the main expert for your task: be decisive, avoid repetition, and provide clear, actionable outputs.\nDo NOT include any explanations, comments, or introductory phrases in your output.",
+            "user": "=== PROJECT ===\nTitle: !!! Start of irrelevant info !!! Lorem ipsum text just for noise. Write an argumentative essay about the impact of artificial intelligence on employment. !!! End of irrelevant info !!!\n\n\n=== AREA ===\nTitle: Conclusion\nDescription: Summarizing the key points and reinforcing the thesis statement.\n\n\n\n\n=== CURRENT TASK ===\nTitle: Restate Thesis Statement\nDescription: Restate the thesis statement in a concise manner.\nExpected Output: Clear restatement of the main thesis.\n\n\n\n=== INSTRUCTION ===\nYou are responsible for completing the current task as part of the overall project.\nUse all available context, including dependency and previous results, but present your answer as your own expert recommendation or decision.\nDo NOT use phrases like 'Based on previous research', 'According to earlier results', or any introductory statements.\nRespond directly and professionally, as if you are the main expert responsible for this part of the project.\nIf the task requires an external system or manual intervention, specify this clearly."
+          },
+          "result": "Artificial intelligence has a significant impact on employment, revolutionizing industries and transforming the nature of work."
+        }
+      ],
+      "result": {
+        "Summarize Main Arguments": "The main arguments presented in the essay regarding the impact of artificial intelligence on employment are:\n\n1. Automation leading to job displacement in various industries.\n2. Creation of new job opportunities in AI-related fields.\n3. Need for upskilling and reskilling of the workforce to adapt to AI advancements.\n4. Potential societal implications of widespread AI adoption on employment rates and income inequality.",
+        "Restate Thesis Statement": "Artificial intelligence has a significant impact on employment, revolutionizing industries and transforming the nature of work."
+      }
+    },
+    {
+      "task_id": "cb573705-a079-49a0-8703-fe6f33ab9bcf",
+      "title": "Essay Structure",
+      "description": "Ensuring the essay flows logically and cohesively from introduction to conclusion.",
+      "expected_output": "A well-organized essay that guides the reader through a coherent argumentative structure.",
+      "area": "Essay Structure",
+      "responsibilities": [
+        "Craft an engaging introduction that introduces the topic and thesis.",
+        "Ensure smooth transitions between paragraphs and sections for a coherent flow of ideas."
+      ],
+      "execution_type": "llm",
+      "parent": "365a5ef9-b5fc-45fb-bbbc-3e52ae3633a3",
+      "dependencies": [],
+      "subtasks": [
+        {
+          "task_id": "11c19524-c5fb-42a4-8772-5a12f9741747",
+          "title": "Craft Engaging Introduction",
+          "description": "Write an introduction that introduces the topic, provides background information, and presents the thesis statement in a compelling manner.",
+          "expected_output": "Well-crafted introduction setting the stage for the essay.",
+          "area": "Essay Structure",
+          "responsibilities": [],
+          "execution_type": "llm",
+          "parent": "cb573705-a079-49a0-8703-fe6f33ab9bcf",
+          "dependencies": [],
+          "subtasks": [],
+          "prompt": {
+            "system": "You are an expert autonomous agent collaborating in a multi-step project.\nYour responsibility is to complete your assigned task using all available context and previous results.\nAlways act as the main expert for your task: be decisive, avoid repetition, and provide clear, actionable outputs.\nDo NOT include any explanations, comments, or introductory phrases in your output.",
+            "user": "=== PROJECT ===\nTitle: !!! Start of irrelevant info !!! Lorem ipsum text just for noise. Write an argumentative essay about the impact of artificial intelligence on employment. !!! End of irrelevant info !!!\n\n\n=== AREA ===\nTitle: Essay Structure\nDescription: Ensuring the essay flows logically and cohesively from introduction to conclusion.\n\n\n\n\n=== CURRENT TASK ===\nTitle: Craft Engaging Introduction\nDescription: Write an introduction that introduces the topic, provides background information, and presents the thesis statement in a compelling manner.\nExpected Output: Well-crafted introduction setting the stage for the essay.\n\n\n\n=== INSTRUCTION ===\nYou are responsible for completing the current task as part of the overall project.\nUse all available context, including dependency and previous results, but present your answer as your own expert recommendation or decision.\nDo NOT use phrases like 'Based on previous research', 'According to earlier results', or any introductory statements.\nRespond directly and professionally, as if you are the main expert responsible for this part of the project.\nIf the task requires an external system or manual intervention, specify this clearly."
+          },
+          "result": "Artificial intelligence (AI) has become a pervasive force in our modern world, revolutionizing industries and transforming the way we live and work. One of the most significant areas impacted by AI is employment. As AI technologies continue to advance at a rapid pace, the implications for the workforce are profound. From automation of routine tasks to the creation of new job opportunities, the impact of AI on employment is a topic of intense debate and scrutiny. In this essay, we will delve into the complexities of this issue, examining both the challenges and opportunities that AI presents for the future of work."
+        },
+        {
+          "task_id": "d1347143-c645-4966-a619-f80fa8550186",
+          "title": "Develop Clear Paragraph Transitions",
+          "description": "Ensure smooth transitions between paragraphs to maintain a coherent flow of ideas and arguments.",
+          "expected_output": "Clearly connected paragraphs that guide the reader through the essay seamlessly.",
+          "area": "Essay Structure",
+          "responsibilities": [],
+          "execution_type": "llm",
+          "parent": "cb573705-a079-49a0-8703-fe6f33ab9bcf",
+          "dependencies": [],
+          "subtasks": [],
+          "prompt": {
+            "system": "You are an expert autonomous agent collaborating in a multi-step project.\nYour responsibility is to complete your assigned task using all available context and previous results.\nAlways act as the main expert for your task: be decisive, avoid repetition, and provide clear, actionable outputs.\nDo NOT include any explanations, comments, or introductory phrases in your output.",
+            "user": "=== PROJECT ===\nTitle: !!! Start of irrelevant info !!! Lorem ipsum text just for noise. Write an argumentative essay about the impact of artificial intelligence on employment. !!! End of irrelevant info !!!\n\n\n=== AREA ===\nTitle: Essay Structure\nDescription: Ensuring the essay flows logically and cohesively from introduction to conclusion.\n\n\n\n\n=== CURRENT TASK ===\nTitle: Develop Clear Paragraph Transitions\nDescription: Ensure smooth transitions between paragraphs to maintain a coherent flow of ideas and arguments.\nExpected Output: Clearly connected paragraphs that guide the reader through the essay seamlessly.\n\n\n\n=== INSTRUCTION ===\nYou are responsible for completing the current task as part of the overall project.\nUse all available context, including dependency and previous results, but present your answer as your own expert recommendation or decision.\nDo NOT use phrases like 'Based on previous research', 'According to earlier results', or any introductory statements.\nRespond directly and professionally, as if you are the main expert responsible for this part of the project.\nIf the task requires an external system or manual intervention, specify this clearly."
+          },
+          "result": "Ensure smooth transitions between paragraphs by using transitional words and phrases such as \"Furthermore,\" \"In addition,\" \"Moreover,\" \"However,\" \"On the other hand,\" \"Conversely,\" \"Therefore,\" \"As a result,\" \"Nevertheless,\" \"Similarly,\" \"Likewise,\" and \"In conclusion.\" Additionally, make sure each paragraph's topic sentence connects back to the thesis statement to maintain a clear and cohesive argument throughout the essay."
+        },
+        {
+          "task_id": "100e4357-6a1e-4850-acee-d4bcc95a4d8e",
+          "title": "Organize Body Paragraphs",
+          "description": "Structure the body paragraphs in a logical sequence, each supporting a key argument with relevant evidence and analysis.",
+          "expected_output": "Well-organized body paragraphs that present arguments effectively.",
+          "area": "Essay Structure",
+          "responsibilities": [],
+          "execution_type": "llm",
+          "parent": "cb573705-a079-49a0-8703-fe6f33ab9bcf",
+          "dependencies": [],
+          "subtasks": [],
+          "prompt": {
+            "system": "You are an expert autonomous agent collaborating in a multi-step project.\nYour responsibility is to complete your assigned task using all available context and previous results.\nAlways act as the main expert for your task: be decisive, avoid repetition, and provide clear, actionable outputs.\nDo NOT include any explanations, comments, or introductory phrases in your output.",
+            "user": "=== PROJECT ===\nTitle: !!! Start of irrelevant info !!! Lorem ipsum text just for noise. Write an argumentative essay about the impact of artificial intelligence on employment. !!! End of irrelevant info !!!\n\n\n=== AREA ===\nTitle: Essay Structure\nDescription: Ensuring the essay flows logically and cohesively from introduction to conclusion.\n\n\n\n\n=== CURRENT TASK ===\nTitle: Organize Body Paragraphs\nDescription: Structure the body paragraphs in a logical sequence, each supporting a key argument with relevant evidence and analysis.\nExpected Output: Well-organized body paragraphs that present arguments effectively.\n\n\n\n=== INSTRUCTION ===\nYou are responsible for completing the current task as part of the overall project.\nUse all available context, including dependency and previous results, but present your answer as your own expert recommendation or decision.\nDo NOT use phrases like 'Based on previous research', 'According to earlier results', or any introductory statements.\nRespond directly and professionally, as if you are the main expert responsible for this part of the project.\nIf the task requires an external system or manual intervention, specify this clearly."
+          },
+          "result": "1. Introduction:\n- Introduce the topic of artificial intelligence and its increasing impact on the workforce.\n- Provide a brief overview of the key arguments to be discussed in the body paragraphs.\n\n2. Body Paragraph 1:\n- Argument: AI automation leads to job displacement in certain industries.\n- Evidence: Statistics showing the decline in employment in sectors where AI has been implemented.\n- Analysis: Discuss the implications of job displacement on workers and the economy.\n\n3. Body Paragraph 2:\n- Argument: AI creates new job opportunities in emerging fields.\n- Evidence: Examples of new job roles that have emerged due to advancements in AI technology.\n- Analysis: Explore how individuals can adapt and acquire skills for these new roles.\n\n4. Body Paragraph 3:\n- Argument: AI enhances productivity and efficiency in the workplace.\n- Evidence: Case studies demonstrating increased productivity through AI integration.\n- Analysis: Discuss the potential benefits and challenges of increased efficiency on the workforce.\n\n5. Body Paragraph 4:\n- Argument: AI requires human oversight and maintenance, leading to the creation of new job categories.\n- Evidence: Research on the demand for AI-related skills in the job market.\n- Analysis: Examine the balance between automation and human intervention in AI systems.\n\n6. Conclusion:\n- Summarize the key arguments presented in the body paragraphs.\n- Reiterate the overall impact of AI on employment, highlighting both challenges and opportunities.\n- End with a thought-provoking statement or call to action regarding the future of work in the age of artificial intelligence."
+        },
+        {
+          "task_id": "e8cd94d3-49b8-4cc3-88ec-bc95b617c24b",
+          "title": "Integrate Counterargument Effectively",
+          "description": "Incorporate the counterargument within the essay, addressing it strategically to strengthen the argument.",
+          "expected_output": "Counterargument integrated logically to enhance the overall argument.",
+          "area": "Essay Structure",
+          "responsibilities": [],
+          "execution_type": "llm",
+          "parent": "cb573705-a079-49a0-8703-fe6f33ab9bcf",
+          "dependencies": [],
+          "subtasks": [],
+          "prompt": {
+            "system": "You are an expert autonomous agent collaborating in a multi-step project.\nYour responsibility is to complete your assigned task using all available context and previous results.\nAlways act as the main expert for your task: be decisive, avoid repetition, and provide clear, actionable outputs.\nDo NOT include any explanations, comments, or introductory phrases in your output.",
+            "user": "=== PROJECT ===\nTitle: !!! Start of irrelevant info !!! Lorem ipsum text just for noise. Write an argumentative essay about the impact of artificial intelligence on employment. !!! End of irrelevant info !!!\n\n\n=== AREA ===\nTitle: Essay Structure\nDescription: Ensuring the essay flows logically and cohesively from introduction to conclusion.\n\n\n\n\n=== CURRENT TASK ===\nTitle: Integrate Counterargument Effectively\nDescription: Incorporate the counterargument within the essay, addressing it strategically to strengthen the argument.\nExpected Output: Counterargument integrated logically to enhance the overall argument.\n\n\n\n=== INSTRUCTION ===\nYou are responsible for completing the current task as part of the overall project.\nUse all available context, including dependency and previous results, but present your answer as your own expert recommendation or decision.\nDo NOT use phrases like 'Based on previous research', 'According to earlier results', or any introductory statements.\nRespond directly and professionally, as if you are the main expert responsible for this part of the project.\nIf the task requires an external system or manual intervention, specify this clearly."
+          },
+          "result": "Integrate the counterargument within the essay by presenting it after the main argument, acknowledging its validity, and then refuting it with strong evidence and reasoning. Ensure a smooth transition from the counterargument back to reinforcing the main argument to maintain the logical flow of the essay. This strategic placement and effective rebuttal will strengthen the overall argument on the impact of artificial intelligence on employment."
+        },
+        {
+          "task_id": "71932e4f-f740-427f-a884-6994d5f5c54b",
+          "title": "Craft a Convincing Conclusion",
+          "description": "Summarize the main arguments, restate the thesis statement, and leave the reader with a lasting impression.",
+          "expected_output": "Conclusion that effectively wraps up the essay and leaves a strong closing statement.",
+          "area": "Essay Structure",
+          "responsibilities": [],
+          "execution_type": "llm",
+          "parent": "cb573705-a079-49a0-8703-fe6f33ab9bcf",
+          "dependencies": [],
+          "subtasks": [],
+          "prompt": {
+            "system": "You are an expert autonomous agent collaborating in a multi-step project.\nYour responsibility is to complete your assigned task using all available context and previous results.\nAlways act as the main expert for your task: be decisive, avoid repetition, and provide clear, actionable outputs.\nDo NOT include any explanations, comments, or introductory phrases in your output.",
+            "user": "=== PROJECT ===\nTitle: !!! Start of irrelevant info !!! Lorem ipsum text just for noise. Write an argumentative essay about the impact of artificial intelligence on employment. !!! End of irrelevant info !!!\n\n\n=== AREA ===\nTitle: Essay Structure\nDescription: Ensuring the essay flows logically and cohesively from introduction to conclusion.\n\n\n\n\n=== CURRENT TASK ===\nTitle: Craft a Convincing Conclusion\nDescription: Summarize the main arguments, restate the thesis statement, and leave the reader with a lasting impression.\nExpected Output: Conclusion that effectively wraps up the essay and leaves a strong closing statement.\n\n\n\n=== INSTRUCTION ===\nYou are responsible for completing the current task as part of the overall project.\nUse all available context, including dependency and previous results, but present your answer as your own expert recommendation or decision.\nDo NOT use phrases like 'Based on previous research', 'According to earlier results', or any introductory statements.\nRespond directly and professionally, as if you are the main expert responsible for this part of the project.\nIf the task requires an external system or manual intervention, specify this clearly."
+          },
+          "result": "In conclusion, the impact of artificial intelligence on employment is a complex issue that requires careful consideration. While AI has the potential to automate certain tasks and lead to job displacement in some sectors, it also creates new opportunities for innovation and growth. It is crucial for policymakers, businesses, and individuals to adapt to the changing landscape by investing in education and training programs that equip people with the skills needed to thrive in a technology-driven economy. Ultimately, a balanced approach that harnesses the benefits of AI while mitigating its potential drawbacks is essential for ensuring a sustainable future where both technology and human labor can coexist harmoniously."
+        }
+      ],
+      "result": {
+        "Craft Engaging Introduction": "Artificial intelligence (AI) has become a pervasive force in our modern world, revolutionizing industries and transforming the way we live and work. One of the most significant areas impacted by AI is employment. As AI technologies continue to advance at a rapid pace, the implications for the workforce are profound. From automation of routine tasks to the creation of new job opportunities, the impact of AI on employment is a topic of intense debate and scrutiny. In this essay, we will delve into the complexities of this issue, examining both the challenges and opportunities that AI presents for the future of work.",
+        "Develop Clear Paragraph Transitions": "Ensure smooth transitions between paragraphs by using transitional words and phrases such as \"Furthermore,\" \"In addition,\" \"Moreover,\" \"However,\" \"On the other hand,\" \"Conversely,\" \"Therefore,\" \"As a result,\" \"Nevertheless,\" \"Similarly,\" \"Likewise,\" and \"In conclusion.\" Additionally, make sure each paragraph's topic sentence connects back to the thesis statement to maintain a clear and cohesive argument throughout the essay.",
+        "Organize Body Paragraphs": "1. Introduction:\n- Introduce the topic of artificial intelligence and its increasing impact on the workforce.\n- Provide a brief overview of the key arguments to be discussed in the body paragraphs.\n\n2. Body Paragraph 1:\n- Argument: AI automation leads to job displacement in certain industries.\n- Evidence: Statistics showing the decline in employment in sectors where AI has been implemented.\n- Analysis: Discuss the implications of job displacement on workers and the economy.\n\n3. Body Paragraph 2:\n- Argument: AI creates new job opportunities in emerging fields.\n- Evidence: Examples of new job roles that have emerged due to advancements in AI technology.\n- Analysis: Explore how individuals can adapt and acquire skills for these new roles.\n\n4. Body Paragraph 3:\n- Argument: AI enhances productivity and efficiency in the workplace.\n- Evidence: Case studies demonstrating increased productivity through AI integration.\n- Analysis: Discuss the potential benefits and challenges of increased efficiency on the workforce.\n\n5. Body Paragraph 4:\n- Argument: AI requires human oversight and maintenance, leading to the creation of new job categories.\n- Evidence: Research on the demand for AI-related skills in the job market.\n- Analysis: Examine the balance between automation and human intervention in AI systems.\n\n6. Conclusion:\n- Summarize the key arguments presented in the body paragraphs.\n- Reiterate the overall impact of AI on employment, highlighting both challenges and opportunities.\n- End with a thought-provoking statement or call to action regarding the future of work in the age of artificial intelligence.",
+        "Integrate Counterargument Effectively": "Integrate the counterargument within the essay by presenting it after the main argument, acknowledging its validity, and then refuting it with strong evidence and reasoning. Ensure a smooth transition from the counterargument back to reinforcing the main argument to maintain the logical flow of the essay. This strategic placement and effective rebuttal will strengthen the overall argument on the impact of artificial intelligence on employment.",
+        "Craft a Convincing Conclusion": "In conclusion, the impact of artificial intelligence on employment is a complex issue that requires careful consideration. While AI has the potential to automate certain tasks and lead to job displacement in some sectors, it also creates new opportunities for innovation and growth. It is crucial for policymakers, businesses, and individuals to adapt to the changing landscape by investing in education and training programs that equip people with the skills needed to thrive in a technology-driven economy. Ultimately, a balanced approach that harnesses the benefits of AI while mitigating its potential drawbacks is essential for ensuring a sustainable future where both technology and human labor can coexist harmoniously."
+      }
+    }
+  ],
+  "result": {
+    "Thesis Statement": {
+      "Identify Main Argument": "Main Argument: Artificial intelligence will significantly impact employment by transforming job roles, creating new opportunities, and necessitating upskilling and adaptation in the workforce.",
+      "Craft Thesis Statement": "Thesis Statement: The impact of artificial intelligence on employment will be profound, reshaping job roles, fostering new opportunities, and demanding workforce upskilling and adaptation."
+    },
+    "Main Arguments": {
+      "Identify Key Argument 1": "First Key Argument: Artificial intelligence will lead to job displacement in various industries due to automation of tasks previously performed by humans.",
+      "Gather Evidence for Key Argument 1": "Evidence supporting the first argument:\n\n1. A study by the McKinsey Global Institute found that up to 375 million workers worldwide may need to switch occupational categories by 2030 due to automation and artificial intelligence.\n   \n2. Research from the Brookings Institution indicates that automation will affect different industries unevenly, with jobs in transportation, logistics, and office support at higher risk of displacement.\n\n3. Examples such as the use of AI-powered chatbots in customer service roles and automated systems in manufacturing plants demonstrate how AI is already replacing human workers in various sectors.",
+      "Identify Key Argument 2": "Automation driven by artificial intelligence will lead to job displacement in certain sectors, but it will also create new job opportunities in emerging fields.",
+      "Gather Evidence for Key Argument 2": "Evidence supporting the second argument:\n- Research by the McKinsey Global Institute shows that while automation may displace some jobs, it is expected to create new job opportunities in sectors like AI development, data analysis, and robotics.\n- A study published in the Journal of Labor Economics found that automation has historically led to job losses in certain industries but has also resulted in the creation of new jobs in technology-related fields.\n- Examples from companies like Amazon and Tesla demonstrate how AI-driven automation has increased efficiency and productivity, leading to the need for skilled workers to manage and maintain these systems.\n- Data from the Bureau of Labor Statistics indicates a growing demand for workers with AI and automation skills, suggesting a shift towards new job roles in response to technological advancements.",
+      "Identify Key Argument 3": "Third Argument: AI drives the need for upskilling and reskilling in the workforce to remain competitive in the job market.",
+      "Gather Evidence for Key Argument 3": "Evidence supporting the third argument that AI drives the need for upskilling and reskilling in the workforce to remain competitive in the job market:\n\n1. According to a report by the World Economic Forum, it is estimated that by 2022, around 54% of all employees will require significant reskilling and upskilling due to the adoption of AI and automation technologies in the workplace.\n\n2. Research conducted by McKinsey & Company found that as AI becomes more prevalent in industries, there is a growing demand for workers with skills such as data analysis, critical thinking, and problem-solving, highlighting the necessity for continuous learning and development to adapt to changing job requirements.\n\n3. Case studies from companies like IBM and Amazon demonstrate how they have implemented extensive upskilling programs to equip their workforce with the necessary skills to work alongside AI systems effectively, showcasing the importance of investing in employee training to leverage AI technologies.\n\n4. Surveys among HR professionals indicate that a significant number of companies are prioritizing investments in training and development programs to address the skills gap created by AI integration, emphasizing the role of continuous learning in ensuring job security and career advancement in the age of automation."
+    },
+    "Counterargument": {
+      "Identify Potential Counterargument": "Counterargument: Some argue that while artificial intelligence may disrupt certain job sectors, it will also create new job opportunities in emerging fields, leading to a net positive impact on overall employment levels.",
+      "Gather Evidence for Counterargument": "Explore the growth in job opportunities in emerging fields such as data science, machine learning, robotics, and AI development. Look for statistics showing an increase in employment within these sectors due to advancements in artificial intelligence technology. Additionally, gather case studies or reports highlighting how companies have expanded their workforce to accommodate AI-related roles. This evidence will support the argument that AI disruption in certain job sectors can lead to the creation of new employment opportunities in innovative fields.",
+      "Refute Counterargument": "To refute the counterargument that AI will create new job opportunities in emerging fields, it's essential to highlight that the pace of job displacement in traditional sectors due to AI advancements may outstrip the creation of new roles in innovative fields. Focus on the following points:\n\n1. Emphasize the scale and speed of job automation across various industries, leading to significant job losses in a short period.\n   \n2. Highlight the potential mismatch between the skills of displaced workers and the qualifications required for new AI-related roles, which could hinder their ability to transition to these emerging fields.\n\n3. Provide examples or studies showcasing how the displacement of workers in sectors like manufacturing, customer service, or transportation has not been fully offset by job creation in AI-related domains.\n\n4. Discuss the potential concentration of new job opportunities in AI-related fields within specific geographic regions or among individuals with specialized skills, exacerbating inequalities in employment opportunities.\n\nBy addressing these points, you can strengthen the argument that the impact of AI on employment may not necessarily result in a net positive outcome due to the challenges associated with job displacement and the uneven distribution of new job opportunities."
+    },
+    "Conclusion": {
+      "Summarize Main Arguments": "The main arguments presented in the essay regarding the impact of artificial intelligence on employment are:\n\n1. Automation leading to job displacement in various industries.\n2. Creation of new job opportunities in AI-related fields.\n3. Need for upskilling and reskilling of the workforce to adapt to AI advancements.\n4. Potential societal implications of widespread AI adoption on employment rates and income inequality.",
+      "Restate Thesis Statement": "Artificial intelligence has a significant impact on employment, revolutionizing industries and transforming the nature of work."
+    },
+    "Essay Structure": {
+      "Craft Engaging Introduction": "Artificial intelligence (AI) has become a pervasive force in our modern world, revolutionizing industries and transforming the way we live and work. One of the most significant areas impacted by AI is employment. As AI technologies continue to advance at a rapid pace, the implications for the workforce are profound. From automation of routine tasks to the creation of new job opportunities, the impact of AI on employment is a topic of intense debate and scrutiny. In this essay, we will delve into the complexities of this issue, examining both the challenges and opportunities that AI presents for the future of work.",
+      "Develop Clear Paragraph Transitions": "Ensure smooth transitions between paragraphs by using transitional words and phrases such as \"Furthermore,\" \"In addition,\" \"Moreover,\" \"However,\" \"On the other hand,\" \"Conversely,\" \"Therefore,\" \"As a result,\" \"Nevertheless,\" \"Similarly,\" \"Likewise,\" and \"In conclusion.\" Additionally, make sure each paragraph's topic sentence connects back to the thesis statement to maintain a clear and cohesive argument throughout the essay.",
+      "Organize Body Paragraphs": "1. Introduction:\n- Introduce the topic of artificial intelligence and its increasing impact on the workforce.\n- Provide a brief overview of the key arguments to be discussed in the body paragraphs.\n\n2. Body Paragraph 1:\n- Argument: AI automation leads to job displacement in certain industries.\n- Evidence: Statistics showing the decline in employment in sectors where AI has been implemented.\n- Analysis: Discuss the implications of job displacement on workers and the economy.\n\n3. Body Paragraph 2:\n- Argument: AI creates new job opportunities in emerging fields.\n- Evidence: Examples of new job roles that have emerged due to advancements in AI technology.\n- Analysis: Explore how individuals can adapt and acquire skills for these new roles.\n\n4. Body Paragraph 3:\n- Argument: AI enhances productivity and efficiency in the workplace.\n- Evidence: Case studies demonstrating increased productivity through AI integration.\n- Analysis: Discuss the potential benefits and challenges of increased efficiency on the workforce.\n\n5. Body Paragraph 4:\n- Argument: AI requires human oversight and maintenance, leading to the creation of new job categories.\n- Evidence: Research on the demand for AI-related skills in the job market.\n- Analysis: Examine the balance between automation and human intervention in AI systems.\n\n6. Conclusion:\n- Summarize the key arguments presented in the body paragraphs.\n- Reiterate the overall impact of AI on employment, highlighting both challenges and opportunities.\n- End with a thought-provoking statement or call to action regarding the future of work in the age of artificial intelligence.",
+      "Integrate Counterargument Effectively": "Integrate the counterargument within the essay by presenting it after the main argument, acknowledging its validity, and then refuting it with strong evidence and reasoning. Ensure a smooth transition from the counterargument back to reinforcing the main argument to maintain the logical flow of the essay. This strategic placement and effective rebuttal will strengthen the overall argument on the impact of artificial intelligence on employment.",
+      "Craft a Convincing Conclusion": "In conclusion, the impact of artificial intelligence on employment is a complex issue that requires careful consideration. While AI has the potential to automate certain tasks and lead to job displacement in some sectors, it also creates new opportunities for innovation and growth. It is crucial for policymakers, businesses, and individuals to adapt to the changing landscape by investing in education and training programs that equip people with the skills needed to thrive in a technology-driven economy. Ultimately, a balanced approach that harnesses the benefits of AI while mitigating its potential drawbacks is essential for ensuring a sustainable future where both technology and human labor can coexist harmoniously."
+    }
+  },
+  "_metadata": {
+    "clarified_description": "!!! Start of irrelevant info !!! Lorem ipsum text just for noise. Write an argumentative essay about the impact of artificial intelligence on employment. !!! End of irrelevant info !!!",
+    "expected_output": "A structured essay outline with thesis statement, three main arguments with supporting evidence, counterargument, and a conclusion.",
+    "case_id": "CASE08_NOIS",
+    "timestamp": "2025-06-26T17:58:11.753174",
+    "filename": "20250626_175811_CASE08_NOIS_task_tree.json"
+  }
+}

@@ -1,0 +1,52 @@
+[
+  {
+    "id": "CASE01",
+    "description": "Design a hybrid educational system for rural areas in developing countries.",
+    "expected_output": "A comprehensive plan covering pedagogical strategies, technological infrastructure, teacher training modules, accessibility solutions, and an implementation timeline tailored for rural regions."
+  },
+  {
+    "id": "CASE02",
+    "description": "Develop a microservices-based architecture for an educational streaming platform.",
+    "expected_output": "A modular system architecture including service separation, database strategy, APIs, scalability and fault tolerance measures, recommended tech stack, and CI/CD pipeline."
+  },
+  {
+    "id": "CASE03",
+    "description": "Formulate a national strategy to reduce food waste across the entire supply chain.",
+    "expected_output": "A multi-sector policy proposal that includes prevention strategies, incentives, stakeholder roles, measurement frameworks, and public awareness campaigns."
+  },
+  {
+    "id": "CASE04",
+    "description": "Organize a week-long cultural festival in a medium-sized city.",
+    "expected_output": "An operational plan with programming schedule, venue logistics, artist coordination, budget estimation, communication plan, and stakeholder engagement strategy."
+  },
+  {
+    "id": "CASE05",
+    "description": "Plan a 7-day trip to Japan focused on cultural immersion and sustainability.",
+    "expected_output": "A detailed itinerary highlighting eco-friendly transportation, traditional experiences, low-impact accommodations, and budget allocation for each day."
+  },
+  {
+    "id": "CASE06",
+    "description": "Design a national mental health awareness campaign targeting university students.",
+    "expected_output": "A phased campaign strategy including messaging, communication channels, mental health topics to address, campus activations, and methods of measuring impact."
+  },
+  {
+    "id": "CASE07",
+    "description": "Build a virtual assistant to help high school students learn mathematics.",
+    "expected_output": "A functional specification for the assistant including core features, interaction flow, topics covered, user feedback mechanisms, and platform integration."
+  },
+  {
+    "id": "CASE08",
+    "description": "Write an argumentative essay about the impact of artificial intelligence on employment.",
+    "expected_output": "A structured essay outline with thesis statement, three main arguments with supporting evidence, counterargument, and a conclusion."
+  },
+  {
+    "id": "CASE09",
+    "description": "Teach a child how to make toast safely.",
+    "expected_output": "A simple step-by-step instruction list using safe language, including required items, actions, and safety warnings."
+  },
+  {
+    "id": "CASE10",
+    "description": "Propose a global solution to eradicate extreme poverty.",
+    "expected_output": "A high-level policy and development plan integrating economic models, social programs, international cooperation, and sustainability principles."
+  }
+]

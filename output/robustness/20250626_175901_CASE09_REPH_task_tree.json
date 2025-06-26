@@ -1,0 +1,399 @@
+{
+  "task_id": "7c4fa730-2719-4dc0-bdd6-0403d60d4cee",
+  "title": "Teach a child how to make toast safely. (please reformulate this idea differently without changing its intent)",
+  "description": "Teach a child how to make toast safely. (please reformulate this idea differently without changing its intent)",
+  "expected_output": "A simple step-by-step instruction list using safe language, including required items, actions, and safety warnings.",
+  "area": null,
+  "responsibilities": [],
+  "execution_type": "llm",
+  "parent": null,
+  "dependencies": [],
+  "subtasks": [
+    {
+      "task_id": "8d5e9aa7-2e84-4fa9-99e0-c3bcee03109b",
+      "title": "Preparation",
+      "description": "Responsible for gathering all necessary items and preparing the workspace.",
+      "expected_output": "A list of required items and a cleared workspace.",
+      "area": "Preparation",
+      "responsibilities": [
+        "Ensure bread, toaster, butter, and knife are available.",
+        "Clear the workspace of any obstacles."
+      ],
+      "execution_type": "llm",
+      "parent": "7c4fa730-2719-4dc0-bdd6-0403d60d4cee",
+      "dependencies": [],
+      "subtasks": [
+        {
+          "task_id": "ae5da656-8192-460f-80aa-2024352731d3",
+          "title": "Gather necessary items",
+          "description": "Ensure bread, toaster, butter, and knife are available for making toast.",
+          "expected_output": "All required items are gathered.",
+          "area": "Preparation",
+          "responsibilities": [],
+          "execution_type": "llm",
+          "parent": "8d5e9aa7-2e84-4fa9-99e0-c3bcee03109b",
+          "dependencies": [],
+          "subtasks": [],
+          "prompt": {
+            "system": "You are an expert autonomous agent collaborating in a multi-step project.\nYour responsibility is to complete your assigned task using all available context and previous results.\nAlways act as the main expert for your task: be decisive, avoid repetition, and provide clear, actionable outputs.\nDo NOT include any explanations, comments, or introductory phrases in your output.",
+            "user": "=== PROJECT ===\nTitle: Teach a child how to make toast safely. (please reformulate this idea differently without changing its intent)\n\n\n=== AREA ===\nTitle: Preparation\nDescription: Responsible for gathering all necessary items and preparing the workspace.\n\n\n\n\n=== CURRENT TASK ===\nTitle: Gather necessary items\nDescription: Ensure bread, toaster, butter, and knife are available for making toast.\nExpected Output: All required items are gathered.\n\n\n\n=== INSTRUCTION ===\nYou are responsible for completing the current task as part of the overall project.\nUse all available context, including dependency and previous results, but present your answer as your own expert recommendation or decision.\nDo NOT use phrases like 'Based on previous research', 'According to earlier results', or any introductory statements.\nRespond directly and professionally, as if you are the main expert responsible for this part of the project.\nIf the task requires an external system or manual intervention, specify this clearly."
+          },
+          "result": "Title: Facilitate a child-friendly toast-making session while emphasizing safety. \n\nExpected Output: Ensure all necessary items for making toast are gathered, including bread, toaster, butter, and a child-safe knife."
+        },
+        {
+          "task_id": "af2d4b52-8c67-497d-ab13-884f6054bc12",
+          "title": "Clear workspace",
+          "description": "Remove any obstacles or clutter from the workspace to create a safe area for making toast.",
+          "expected_output": "Workspace is cleared of obstacles.",
+          "area": "Preparation",
+          "responsibilities": [],
+          "execution_type": "llm",
+          "parent": "8d5e9aa7-2e84-4fa9-99e0-c3bcee03109b",
+          "dependencies": [],
+          "subtasks": [],
+          "prompt": {
+            "system": "You are an expert autonomous agent collaborating in a multi-step project.\nYour responsibility is to complete your assigned task using all available context and previous results.\nAlways act as the main expert for your task: be decisive, avoid repetition, and provide clear, actionable outputs.\nDo NOT include any explanations, comments, or introductory phrases in your output.",
+            "user": "=== PROJECT ===\nTitle: Teach a child how to make toast safely. (please reformulate this idea differently without changing its intent)\n\n\n=== AREA ===\nTitle: Preparation\nDescription: Responsible for gathering all necessary items and preparing the workspace.\n\n\n\n\n=== CURRENT TASK ===\nTitle: Clear workspace\nDescription: Remove any obstacles or clutter from the workspace to create a safe area for making toast.\nExpected Output: Workspace is cleared of obstacles.\n\n\n\n=== INSTRUCTION ===\nYou are responsible for completing the current task as part of the overall project.\nUse all available context, including dependency and previous results, but present your answer as your own expert recommendation or decision.\nDo NOT use phrases like 'Based on previous research', 'According to earlier results', or any introductory statements.\nRespond directly and professionally, as if you are the main expert responsible for this part of the project.\nIf the task requires an external system or manual intervention, specify this clearly."
+          },
+          "result": "Revised Project Idea: Instruct a child on the safe process of toasting bread.\n\nClear workspace: Ensure the workspace is free of any obstacles or clutter to establish a safe environment for making toast.\nExpected Output: Workspace is cleared of obstacles."
+        }
+      ],
+      "result": {
+        "Gather necessary items": "Title: Facilitate a child-friendly toast-making session while emphasizing safety. \n\nExpected Output: Ensure all necessary items for making toast are gathered, including bread, toaster, butter, and a child-safe knife.",
+        "Clear workspace": "Revised Project Idea: Instruct a child on the safe process of toasting bread.\n\nClear workspace: Ensure the workspace is free of any obstacles or clutter to establish a safe environment for making toast.\nExpected Output: Workspace is cleared of obstacles."
+      }
+    },
+    {
+      "task_id": "e4ed2c52-03ae-4c25-8fef-09eb98c409d2",
+      "title": "Safety",
+      "description": "Focuses on teaching safety measures and precautions to the child.",
+      "expected_output": "Understanding of potential hazards and how to avoid them.",
+      "area": "Safety",
+      "responsibilities": [
+        "Explain the dangers of handling hot appliances.",
+        "Emphasize the importance of adult supervision."
+      ],
+      "execution_type": "llm",
+      "parent": "7c4fa730-2719-4dc0-bdd6-0403d60d4cee",
+      "dependencies": [],
+      "subtasks": [
+        {
+          "task_id": "4b3e42b3-f3c1-4fb3-9d4b-07797e92599b",
+          "title": "Identify potential hazards",
+          "description": "Identify and list all potential hazards related to making toast.",
+          "expected_output": "List of potential hazards",
+          "area": "Safety",
+          "responsibilities": [],
+          "execution_type": "llm",
+          "parent": "e4ed2c52-03ae-4c25-8fef-09eb98c409d2",
+          "dependencies": [],
+          "subtasks": [],
+          "prompt": {
+            "system": "You are an expert autonomous agent collaborating in a multi-step project.\nYour responsibility is to complete your assigned task using all available context and previous results.\nAlways act as the main expert for your task: be decisive, avoid repetition, and provide clear, actionable outputs.\nDo NOT include any explanations, comments, or introductory phrases in your output.",
+            "user": "=== PROJECT ===\nTitle: Teach a child how to make toast safely. (please reformulate this idea differently without changing its intent)\n\n\n=== AREA ===\nTitle: Safety\nDescription: Focuses on teaching safety measures and precautions to the child.\n\n\n\n\n=== CURRENT TASK ===\nTitle: Identify potential hazards\nDescription: Identify and list all potential hazards related to making toast.\nExpected Output: List of potential hazards\n\n\n\n=== INSTRUCTION ===\nYou are responsible for completing the current task as part of the overall project.\nUse all available context, including dependency and previous results, but present your answer as your own expert recommendation or decision.\nDo NOT use phrases like 'Based on previous research', 'According to earlier results', or any introductory statements.\nRespond directly and professionally, as if you are the main expert responsible for this part of the project.\nIf the task requires an external system or manual intervention, specify this clearly."
+          },
+          "result": "Title: Educate a child on the safe preparation of toast.\n\nIdentify and list all potential hazards associated with making toast.\n\nList of potential hazards:\n1. Risk of burns from touching hot surfaces like the toaster or toaster oven.\n2. Possibility of electric shock if the child tries to insert objects into the toaster.\n3. Potential for fire hazard if the toaster is placed near flammable materials.\n4. Risk of cuts from handling sharp knives to spread butter or jam on the toast.\n5. Chance of choking if the child tries to eat too quickly without properly chewing the toast."
+        },
+        {
+          "task_id": "fc4d8a43-e231-4a70-8237-c6cfcf3edf70",
+          "title": "Explain safety measures",
+          "description": "Explain safety measures to the child to avoid the identified hazards.",
+          "expected_output": "Clear explanation of safety measures",
+          "area": "Safety",
+          "responsibilities": [],
+          "execution_type": "llm",
+          "parent": "e4ed2c52-03ae-4c25-8fef-09eb98c409d2",
+          "dependencies": [
+            "4b3e42b3-f3c1-4fb3-9d4b-07797e92599b"
+          ],
+          "subtasks": [],
+          "prompt": {
+            "system": "You are an expert autonomous agent collaborating in a multi-step project.\nYour responsibility is to complete your assigned task using all available context and previous results.\nAlways act as the main expert for your task: be decisive, avoid repetition, and provide clear, actionable outputs.\nDo NOT include any explanations, comments, or introductory phrases in your output.",
+            "user": "=== PROJECT ===\nTitle: Teach a child how to make toast safely. (please reformulate this idea differently without changing its intent)\n\n\n=== AREA ===\nTitle: Safety\nDescription: Focuses on teaching safety measures and precautions to the child.\n\n\n=== DEPENDENCY RESULTS ===\n- Dependency: Identify potential hazards\n  Description: Identify and list all potential hazards related to making toast.\n  Result: Title: Educate a child on the safe preparation of toast.\n\nIdentify and list all potential hazards associated with making toast.\n\nList of potential hazards:\n1. Risk of burns from touching hot surfaces like the toaster or toaster oven.\n2. Possibility of electric shock if the child tries to insert objects into the toaster.\n3. Potential for fire hazard if the toaster is placed near flammable materials.\n4. Risk of cuts from handling sharp knives to spread butter or jam on the toast.\n5. Chance of choking if the child tries to eat too quickly without properly chewing the toast.\n\n\n=== CURRENT TASK ===\nTitle: Explain safety measures\nDescription: Explain safety measures to the child to avoid the identified hazards.\nExpected Output: Clear explanation of safety measures\n\n\n\n=== INSTRUCTION ===\nYou are responsible for completing the current task as part of the overall project.\nUse all available context, including dependency and previous results, but present your answer as your own expert recommendation or decision.\nDo NOT use phrases like 'Based on previous research', 'According to earlier results', or any introductory statements.\nRespond directly and professionally, as if you are the main expert responsible for this part of the project.\nIf the task requires an external system or manual intervention, specify this clearly."
+          },
+          "result": "Title: Teach a child how to safely prepare toast."
+        },
+        {
+          "task_id": "a4a628c1-efd1-40d3-b2fc-43c99e625b9b",
+          "title": "Demonstrate safe toast-making practices",
+          "description": "Demonstrate how to make toast safely, emphasizing the safety measures explained.",
+          "expected_output": "Successful demonstration of safe toast-making",
+          "area": "Safety",
+          "responsibilities": [],
+          "execution_type": "llm",
+          "parent": "e4ed2c52-03ae-4c25-8fef-09eb98c409d2",
+          "dependencies": [
+            "fc4d8a43-e231-4a70-8237-c6cfcf3edf70"
+          ],
+          "subtasks": [],
+          "prompt": {
+            "system": "You are an expert autonomous agent collaborating in a multi-step project.\nYour responsibility is to complete your assigned task using all available context and previous results.\nAlways act as the main expert for your task: be decisive, avoid repetition, and provide clear, actionable outputs.\nDo NOT include any explanations, comments, or introductory phrases in your output.",
+            "user": "=== PROJECT ===\nTitle: Teach a child how to make toast safely. (please reformulate this idea differently without changing its intent)\n\n\n=== AREA ===\nTitle: Safety\nDescription: Focuses on teaching safety measures and precautions to the child.\n\n\n=== DEPENDENCY RESULTS ===\n- Dependency: Explain safety measures\n  Description: Explain safety measures to the child to avoid the identified hazards.\n  Result: Title: Teach a child how to safely prepare toast.\n\n\n=== CURRENT TASK ===\nTitle: Demonstrate safe toast-making practices\nDescription: Demonstrate how to make toast safely, emphasizing the safety measures explained.\nExpected Output: Successful demonstration of safe toast-making\n\n\n\n=== INSTRUCTION ===\nYou are responsible for completing the current task as part of the overall project.\nUse all available context, including dependency and previous results, but present your answer as your own expert recommendation or decision.\nDo NOT use phrases like 'Based on previous research', 'According to earlier results', or any introductory statements.\nRespond directly and professionally, as if you are the main expert responsible for this part of the project.\nIf the task requires an external system or manual intervention, specify this clearly."
+          },
+          "result": "Title: Safely guide a child through the process of making toast."
+        }
+      ],
+      "result": {
+        "Identify potential hazards": "Title: Educate a child on the safe preparation of toast.\n\nIdentify and list all potential hazards associated with making toast.\n\nList of potential hazards:\n1. Risk of burns from touching hot surfaces like the toaster or toaster oven.\n2. Possibility of electric shock if the child tries to insert objects into the toaster.\n3. Potential for fire hazard if the toaster is placed near flammable materials.\n4. Risk of cuts from handling sharp knives to spread butter or jam on the toast.\n5. Chance of choking if the child tries to eat too quickly without properly chewing the toast.",
+        "Explain safety measures": "Title: Teach a child how to safely prepare toast.",
+        "Demonstrate safe toast-making practices": "Title: Safely guide a child through the process of making toast."
+      }
+    },
+    {
+      "task_id": "b6104663-c2be-44f3-9f27-8b96e37f4946",
+      "title": "Instructions",
+      "description": "Provides clear, step-by-step guidance on how to make toast.",
+      "expected_output": "A simple and easy-to-follow set of instructions.",
+      "area": "Instructions",
+      "responsibilities": [
+        "Explain how to insert bread into the toaster.",
+        "Describe how to adjust the settings and start the toaster."
+      ],
+      "execution_type": "llm",
+      "parent": "7c4fa730-2719-4dc0-bdd6-0403d60d4cee",
+      "dependencies": [],
+      "subtasks": [
+        {
+          "task_id": "053cb6a7-a1ba-4109-a208-6a8abb229dd5",
+          "title": "Prepare the bread",
+          "description": "Ensure the bread is ready to be placed in the toaster.",
+          "expected_output": "Bread ready to be inserted into the toaster.",
+          "area": "Instructions",
+          "responsibilities": [],
+          "execution_type": "llm",
+          "parent": "b6104663-c2be-44f3-9f27-8b96e37f4946",
+          "dependencies": [],
+          "subtasks": [],
+          "prompt": {
+            "system": "You are an expert autonomous agent collaborating in a multi-step project.\nYour responsibility is to complete your assigned task using all available context and previous results.\nAlways act as the main expert for your task: be decisive, avoid repetition, and provide clear, actionable outputs.\nDo NOT include any explanations, comments, or introductory phrases in your output.",
+            "user": "=== PROJECT ===\nTitle: Teach a child how to make toast safely. (please reformulate this idea differently without changing its intent)\n\n\n=== AREA ===\nTitle: Instructions\nDescription: Provides clear, step-by-step guidance on how to make toast.\n\n\n\n\n=== CURRENT TASK ===\nTitle: Prepare the bread\nDescription: Ensure the bread is ready to be placed in the toaster.\nExpected Output: Bread ready to be inserted into the toaster.\n\n\n\n=== INSTRUCTION ===\nYou are responsible for completing the current task as part of the overall project.\nUse all available context, including dependency and previous results, but present your answer as your own expert recommendation or decision.\nDo NOT use phrases like 'Based on previous research', 'According to earlier results', or any introductory statements.\nRespond directly and professionally, as if you are the main expert responsible for this part of the project.\nIf the task requires an external system or manual intervention, specify this clearly."
+          },
+          "result": "Prepare the bread by slicing it to the desired thickness and ensuring it is at room temperature before inserting it into the toaster."
+        },
+        {
+          "task_id": "580fb76d-3c1c-4976-8297-d51c7e4af065",
+          "title": "Insert bread into the toaster",
+          "description": "Place the bread slices into the toaster slots.",
+          "expected_output": "Bread inserted into the toaster.",
+          "area": "Instructions",
+          "responsibilities": [],
+          "execution_type": "llm",
+          "parent": "b6104663-c2be-44f3-9f27-8b96e37f4946",
+          "dependencies": [
+            "053cb6a7-a1ba-4109-a208-6a8abb229dd5"
+          ],
+          "subtasks": [],
+          "prompt": {
+            "system": "You are an expert autonomous agent collaborating in a multi-step project.\nYour responsibility is to complete your assigned task using all available context and previous results.\nAlways act as the main expert for your task: be decisive, avoid repetition, and provide clear, actionable outputs.\nDo NOT include any explanations, comments, or introductory phrases in your output.",
+            "user": "=== PROJECT ===\nTitle: Teach a child how to make toast safely. (please reformulate this idea differently without changing its intent)\n\n\n=== AREA ===\nTitle: Instructions\nDescription: Provides clear, step-by-step guidance on how to make toast.\n\n\n=== DEPENDENCY RESULTS ===\n- Dependency: Prepare the bread\n  Description: Ensure the bread is ready to be placed in the toaster.\n  Result: Prepare the bread by slicing it to the desired thickness and ensuring it is at room temperature before inserting it into the toaster.\n\n\n=== CURRENT TASK ===\nTitle: Insert bread into the toaster\nDescription: Place the bread slices into the toaster slots.\nExpected Output: Bread inserted into the toaster.\n\n\n\n=== INSTRUCTION ===\nYou are responsible for completing the current task as part of the overall project.\nUse all available context, including dependency and previous results, but present your answer as your own expert recommendation or decision.\nDo NOT use phrases like 'Based on previous research', 'According to earlier results', or any introductory statements.\nRespond directly and professionally, as if you are the main expert responsible for this part of the project.\nIf the task requires an external system or manual intervention, specify this clearly."
+          },
+          "result": "Title: Load the toaster with bread slices\nExpected Output: Bread slices loaded into the toaster slots."
+        },
+        {
+          "task_id": "1d1684b0-c301-4834-8155-1f79d678de74",
+          "title": "Adjust toaster settings",
+          "description": "Set the desired level of toasting on the toaster.",
+          "expected_output": "Toaster settings adjusted.",
+          "area": "Instructions",
+          "responsibilities": [],
+          "execution_type": "llm",
+          "parent": "b6104663-c2be-44f3-9f27-8b96e37f4946",
+          "dependencies": [],
+          "subtasks": [],
+          "prompt": {
+            "system": "You are an expert autonomous agent collaborating in a multi-step project.\nYour responsibility is to complete your assigned task using all available context and previous results.\nAlways act as the main expert for your task: be decisive, avoid repetition, and provide clear, actionable outputs.\nDo NOT include any explanations, comments, or introductory phrases in your output.",
+            "user": "=== PROJECT ===\nTitle: Teach a child how to make toast safely. (please reformulate this idea differently without changing its intent)\n\n\n=== AREA ===\nTitle: Instructions\nDescription: Provides clear, step-by-step guidance on how to make toast.\n\n\n\n\n=== CURRENT TASK ===\nTitle: Adjust toaster settings\nDescription: Set the desired level of toasting on the toaster.\nExpected Output: Toaster settings adjusted.\n\n\n\n=== INSTRUCTION ===\nYou are responsible for completing the current task as part of the overall project.\nUse all available context, including dependency and previous results, but present your answer as your own expert recommendation or decision.\nDo NOT use phrases like 'Based on previous research', 'According to earlier results', or any introductory statements.\nRespond directly and professionally, as if you are the main expert responsible for this part of the project.\nIf the task requires an external system or manual intervention, specify this clearly."
+          },
+          "result": "Adjust the toaster settings to the desired level of toasting."
+        },
+        {
+          "task_id": "8f791664-6272-4088-a76b-2cf17ec3ef06",
+          "title": "Start the toaster",
+          "description": "Initiate the toasting process by pressing the toaster's start button.",
+          "expected_output": "Toaster begins toasting the bread.",
+          "area": "Instructions",
+          "responsibilities": [],
+          "execution_type": "llm",
+          "parent": "b6104663-c2be-44f3-9f27-8b96e37f4946",
+          "dependencies": [
+            "1d1684b0-c301-4834-8155-1f79d678de74",
+            "580fb76d-3c1c-4976-8297-d51c7e4af065"
+          ],
+          "subtasks": [],
+          "prompt": {
+            "system": "You are an expert autonomous agent collaborating in a multi-step project.\nYour responsibility is to complete your assigned task using all available context and previous results.\nAlways act as the main expert for your task: be decisive, avoid repetition, and provide clear, actionable outputs.\nDo NOT include any explanations, comments, or introductory phrases in your output.",
+            "user": "=== PROJECT ===\nTitle: Teach a child how to make toast safely. (please reformulate this idea differently without changing its intent)\n\n\n=== AREA ===\nTitle: Instructions\nDescription: Provides clear, step-by-step guidance on how to make toast.\n\n\n=== DEPENDENCY RESULTS ===\n- Dependency: Adjust toaster settings\n  Description: Set the desired level of toasting on the toaster.\n  Result: Adjust the toaster settings to the desired level of toasting.\n\n- Dependency: Insert bread into the toaster\n  Description: Place the bread slices into the toaster slots.\n  Result: Title: Load the toaster with bread slices\nExpected Output: Bread slices loaded into the toaster slots.\n\n\n=== CURRENT TASK ===\nTitle: Start the toaster\nDescription: Initiate the toasting process by pressing the toaster's start button.\nExpected Output: Toaster begins toasting the bread.\n\n\n\n=== INSTRUCTION ===\nYou are responsible for completing the current task as part of the overall project.\nUse all available context, including dependency and previous results, but present your answer as your own expert recommendation or decision.\nDo NOT use phrases like 'Based on previous research', 'According to earlier results', or any introductory statements.\nRespond directly and professionally, as if you are the main expert responsible for this part of the project.\nIf the task requires an external system or manual intervention, specify this clearly."
+          },
+          "result": "Press the toaster's start button to initiate the toasting process."
+        }
+      ],
+      "result": {
+        "Prepare the bread": "Prepare the bread by slicing it to the desired thickness and ensuring it is at room temperature before inserting it into the toaster.",
+        "Insert bread into the toaster": "Title: Load the toaster with bread slices\nExpected Output: Bread slices loaded into the toaster slots.",
+        "Adjust toaster settings": "Adjust the toaster settings to the desired level of toasting.",
+        "Start the toaster": "Press the toaster's start button to initiate the toasting process."
+      }
+    },
+    {
+      "task_id": "4e6e5269-1f2e-4028-9c8b-b560cd44b2e5",
+      "title": "Supervision",
+      "description": "Involves overseeing the child during the toast-making process.",
+      "expected_output": "Ensuring the child follows instructions and stays safe.",
+      "area": "Supervision",
+      "responsibilities": [
+        "Monitor the child's actions closely.",
+        "Intervene if any unsafe behavior is observed."
+      ],
+      "execution_type": "llm",
+      "parent": "7c4fa730-2719-4dc0-bdd6-0403d60d4cee",
+      "dependencies": [],
+      "subtasks": [
+        {
+          "task_id": "40652000-3ad2-4e29-a543-2e83ea26ea31",
+          "title": "Monitor child's actions",
+          "description": "Watch the child closely as they make toast to ensure they follow instructions and stay safe.",
+          "expected_output": "Child's actions are observed and monitored for safety.",
+          "area": "Supervision",
+          "responsibilities": [],
+          "execution_type": "llm",
+          "parent": "4e6e5269-1f2e-4028-9c8b-b560cd44b2e5",
+          "dependencies": [],
+          "subtasks": [],
+          "prompt": {
+            "system": "You are an expert autonomous agent collaborating in a multi-step project.\nYour responsibility is to complete your assigned task using all available context and previous results.\nAlways act as the main expert for your task: be decisive, avoid repetition, and provide clear, actionable outputs.\nDo NOT include any explanations, comments, or introductory phrases in your output.",
+            "user": "=== PROJECT ===\nTitle: Teach a child how to make toast safely. (please reformulate this idea differently without changing its intent)\n\n\n=== AREA ===\nTitle: Supervision\nDescription: Involves overseeing the child during the toast-making process.\n\n\n\n\n=== CURRENT TASK ===\nTitle: Monitor child's actions\nDescription: Watch the child closely as they make toast to ensure they follow instructions and stay safe.\nExpected Output: Child's actions are observed and monitored for safety.\n\n\n\n=== INSTRUCTION ===\nYou are responsible for completing the current task as part of the overall project.\nUse all available context, including dependency and previous results, but present your answer as your own expert recommendation or decision.\nDo NOT use phrases like 'Based on previous research', 'According to earlier results', or any introductory statements.\nRespond directly and professionally, as if you are the main expert responsible for this part of the project.\nIf the task requires an external system or manual intervention, specify this clearly."
+          },
+          "result": "Title: Supervise the child's toast-making process\nExpected Output: Ensure the child is closely monitored while making toast to guarantee adherence to safety guidelines and instructions."
+        },
+        {
+          "task_id": "cf588a5c-3a82-4ffe-bd66-4690e28ca7ef",
+          "title": "Intervene if unsafe behavior is observed",
+          "description": "Act promptly if the child engages in any unsafe actions while making toast.",
+          "expected_output": "Unsafe behavior is addressed and corrected to maintain a safe environment.",
+          "area": "Supervision",
+          "responsibilities": [],
+          "execution_type": "llm",
+          "parent": "4e6e5269-1f2e-4028-9c8b-b560cd44b2e5",
+          "dependencies": [
+            "40652000-3ad2-4e29-a543-2e83ea26ea31"
+          ],
+          "subtasks": [],
+          "prompt": {
+            "system": "You are an expert autonomous agent collaborating in a multi-step project.\nYour responsibility is to complete your assigned task using all available context and previous results.\nAlways act as the main expert for your task: be decisive, avoid repetition, and provide clear, actionable outputs.\nDo NOT include any explanations, comments, or introductory phrases in your output.",
+            "user": "=== PROJECT ===\nTitle: Teach a child how to make toast safely. (please reformulate this idea differently without changing its intent)\n\n\n=== AREA ===\nTitle: Supervision\nDescription: Involves overseeing the child during the toast-making process.\n\n\n=== DEPENDENCY RESULTS ===\n- Dependency: Monitor child's actions\n  Description: Watch the child closely as they make toast to ensure they follow instructions and stay safe.\n  Result: Title: Supervise the child's toast-making process\nExpected Output: Ensure the child is closely monitored while making toast to guarantee adherence to safety guidelines and instructions.\n\n\n=== CURRENT TASK ===\nTitle: Intervene if unsafe behavior is observed\nDescription: Act promptly if the child engages in any unsafe actions while making toast.\nExpected Output: Unsafe behavior is addressed and corrected to maintain a safe environment.\n\n\n\n=== INSTRUCTION ===\nYou are responsible for completing the current task as part of the overall project.\nUse all available context, including dependency and previous results, but present your answer as your own expert recommendation or decision.\nDo NOT use phrases like 'Based on previous research', 'According to earlier results', or any introductory statements.\nRespond directly and professionally, as if you are the main expert responsible for this part of the project.\nIf the task requires an external system or manual intervention, specify this clearly."
+          },
+          "result": "Address and correct any unsafe behavior observed during the child's toast-making process to ensure a safe environment is maintained."
+        }
+      ],
+      "result": {
+        "Monitor child's actions": "Title: Supervise the child's toast-making process\nExpected Output: Ensure the child is closely monitored while making toast to guarantee adherence to safety guidelines and instructions.",
+        "Intervene if unsafe behavior is observed": "Address and correct any unsafe behavior observed during the child's toast-making process to ensure a safe environment is maintained."
+      }
+    },
+    {
+      "task_id": "470ae588-676e-47ca-a7c2-d7f6db783ed9",
+      "title": "Troubleshooting",
+      "description": "Addresses potential issues that may arise during the process.",
+      "expected_output": "Ability to handle common problems effectively.",
+      "area": "Troubleshooting",
+      "responsibilities": [
+        "Teach the child how to unplug the toaster in case of a malfunction.",
+        "Instruct on how to safely remove stuck bread without touching hot surfaces."
+      ],
+      "execution_type": "llm",
+      "parent": "7c4fa730-2719-4dc0-bdd6-0403d60d4cee",
+      "dependencies": [],
+      "subtasks": [
+        {
+          "task_id": "7940fca6-3628-4a61-90a8-2b999242b674",
+          "title": "Identify toaster malfunction",
+          "description": "Determine if the toaster is not working properly.",
+          "expected_output": "Recognition of toaster malfunction.",
+          "area": "Troubleshooting",
+          "responsibilities": [],
+          "execution_type": "llm",
+          "parent": "470ae588-676e-47ca-a7c2-d7f6db783ed9",
+          "dependencies": [],
+          "subtasks": [],
+          "prompt": {
+            "system": "You are an expert autonomous agent collaborating in a multi-step project.\nYour responsibility is to complete your assigned task using all available context and previous results.\nAlways act as the main expert for your task: be decisive, avoid repetition, and provide clear, actionable outputs.\nDo NOT include any explanations, comments, or introductory phrases in your output.",
+            "user": "=== PROJECT ===\nTitle: Teach a child how to make toast safely. (please reformulate this idea differently without changing its intent)\n\n\n=== AREA ===\nTitle: Troubleshooting\nDescription: Addresses potential issues that may arise during the process.\n\n\n\n\n=== CURRENT TASK ===\nTitle: Identify toaster malfunction\nDescription: Determine if the toaster is not working properly.\nExpected Output: Recognition of toaster malfunction.\n\n\n\n=== INSTRUCTION ===\nYou are responsible for completing the current task as part of the overall project.\nUse all available context, including dependency and previous results, but present your answer as your own expert recommendation or decision.\nDo NOT use phrases like 'Based on previous research', 'According to earlier results', or any introductory statements.\nRespond directly and professionally, as if you are the main expert responsible for this part of the project.\nIf the task requires an external system or manual intervention, specify this clearly."
+          },
+          "result": "Title: Educate a child on safe toast-making practices.\n\nRecognition of toaster malfunction: Check for signs such as the toaster not heating up, uneven toasting, or unusual sounds during operation."
+        },
+        {
+          "task_id": "add26102-3b56-442d-ae97-9cd1a4dabee4",
+          "title": "Safely unplug the toaster",
+          "description": "Instruct on how to disconnect the toaster from the power source in case of malfunction.",
+          "expected_output": "Toaster safely unplugged.",
+          "area": "Troubleshooting",
+          "responsibilities": [],
+          "execution_type": "llm",
+          "parent": "470ae588-676e-47ca-a7c2-d7f6db783ed9",
+          "dependencies": [],
+          "subtasks": [],
+          "prompt": {
+            "system": "You are an expert autonomous agent collaborating in a multi-step project.\nYour responsibility is to complete your assigned task using all available context and previous results.\nAlways act as the main expert for your task: be decisive, avoid repetition, and provide clear, actionable outputs.\nDo NOT include any explanations, comments, or introductory phrases in your output.",
+            "user": "=== PROJECT ===\nTitle: Teach a child how to make toast safely. (please reformulate this idea differently without changing its intent)\n\n\n=== AREA ===\nTitle: Troubleshooting\nDescription: Addresses potential issues that may arise during the process.\n\n\n\n\n=== CURRENT TASK ===\nTitle: Safely unplug the toaster\nDescription: Instruct on how to disconnect the toaster from the power source in case of malfunction.\nExpected Output: Toaster safely unplugged.\n\n\n\n=== INSTRUCTION ===\nYou are responsible for completing the current task as part of the overall project.\nUse all available context, including dependency and previous results, but present your answer as your own expert recommendation or decision.\nDo NOT use phrases like 'Based on previous research', 'According to earlier results', or any introductory statements.\nRespond directly and professionally, as if you are the main expert responsible for this part of the project.\nIf the task requires an external system or manual intervention, specify this clearly."
+          },
+          "result": "Title: Educate a child on the safe procedure for disconnecting a toaster from the power source.\nExpected Output: Child knows how to safely unplug the toaster."
+        },
+        {
+          "task_id": "e822f94b-d14b-49dd-92cc-2440568b8164",
+          "title": "Remove stuck bread safely",
+          "description": "Teach how to safely remove jammed bread from the toaster without touching hot surfaces.",
+          "expected_output": "Bread successfully removed without injuries.",
+          "area": "Troubleshooting",
+          "responsibilities": [],
+          "execution_type": "llm",
+          "parent": "470ae588-676e-47ca-a7c2-d7f6db783ed9",
+          "dependencies": [],
+          "subtasks": [],
+          "prompt": {
+            "system": "You are an expert autonomous agent collaborating in a multi-step project.\nYour responsibility is to complete your assigned task using all available context and previous results.\nAlways act as the main expert for your task: be decisive, avoid repetition, and provide clear, actionable outputs.\nDo NOT include any explanations, comments, or introductory phrases in your output.",
+            "user": "=== PROJECT ===\nTitle: Teach a child how to make toast safely. (please reformulate this idea differently without changing its intent)\n\n\n=== AREA ===\nTitle: Troubleshooting\nDescription: Addresses potential issues that may arise during the process.\n\n\n\n\n=== CURRENT TASK ===\nTitle: Remove stuck bread safely\nDescription: Teach how to safely remove jammed bread from the toaster without touching hot surfaces.\nExpected Output: Bread successfully removed without injuries.\n\n\n\n=== INSTRUCTION ===\nYou are responsible for completing the current task as part of the overall project.\nUse all available context, including dependency and previous results, but present your answer as your own expert recommendation or decision.\nDo NOT use phrases like 'Based on previous research', 'According to earlier results', or any introductory statements.\nRespond directly and professionally, as if you are the main expert responsible for this part of the project.\nIf the task requires an external system or manual intervention, specify this clearly."
+          },
+          "result": "Title: Teach a child how to safely handle toast."
+        }
+      ],
+      "result": {
+        "Identify toaster malfunction": "Title: Educate a child on safe toast-making practices.\n\nRecognition of toaster malfunction: Check for signs such as the toaster not heating up, uneven toasting, or unusual sounds during operation.",
+        "Safely unplug the toaster": "Title: Educate a child on the safe procedure for disconnecting a toaster from the power source.\nExpected Output: Child knows how to safely unplug the toaster.",
+        "Remove stuck bread safely": "Title: Teach a child how to safely handle toast."
+      }
+    }
+  ],
+  "result": {
+    "Preparation": {
+      "Gather necessary items": "Title: Facilitate a child-friendly toast-making session while emphasizing safety. \n\nExpected Output: Ensure all necessary items for making toast are gathered, including bread, toaster, butter, and a child-safe knife.",
+      "Clear workspace": "Revised Project Idea: Instruct a child on the safe process of toasting bread.\n\nClear workspace: Ensure the workspace is free of any obstacles or clutter to establish a safe environment for making toast.\nExpected Output: Workspace is cleared of obstacles."
+    },
+    "Safety": {
+      "Identify potential hazards": "Title: Educate a child on the safe preparation of toast.\n\nIdentify and list all potential hazards associated with making toast.\n\nList of potential hazards:\n1. Risk of burns from touching hot surfaces like the toaster or toaster oven.\n2. Possibility of electric shock if the child tries to insert objects into the toaster.\n3. Potential for fire hazard if the toaster is placed near flammable materials.\n4. Risk of cuts from handling sharp knives to spread butter or jam on the toast.\n5. Chance of choking if the child tries to eat too quickly without properly chewing the toast.",
+      "Explain safety measures": "Title: Teach a child how to safely prepare toast.",
+      "Demonstrate safe toast-making practices": "Title: Safely guide a child through the process of making toast."
+    },
+    "Instructions": {
+      "Prepare the bread": "Prepare the bread by slicing it to the desired thickness and ensuring it is at room temperature before inserting it into the toaster.",
+      "Insert bread into the toaster": "Title: Load the toaster with bread slices\nExpected Output: Bread slices loaded into the toaster slots.",
+      "Adjust toaster settings": "Adjust the toaster settings to the desired level of toasting.",
+      "Start the toaster": "Press the toaster's start button to initiate the toasting process."
+    },
+    "Supervision": {
+      "Monitor child's actions": "Title: Supervise the child's toast-making process\nExpected Output: Ensure the child is closely monitored while making toast to guarantee adherence to safety guidelines and instructions.",
+      "Intervene if unsafe behavior is observed": "Address and correct any unsafe behavior observed during the child's toast-making process to ensure a safe environment is maintained."
+    },
+    "Troubleshooting": {
+      "Identify toaster malfunction": "Title: Educate a child on safe toast-making practices.\n\nRecognition of toaster malfunction: Check for signs such as the toaster not heating up, uneven toasting, or unusual sounds during operation.",
+      "Safely unplug the toaster": "Title: Educate a child on the safe procedure for disconnecting a toaster from the power source.\nExpected Output: Child knows how to safely unplug the toaster.",
+      "Remove stuck bread safely": "Title: Teach a child how to safely handle toast."
+    }
+  },
+  "_metadata": {
+    "clarified_description": "Teach a child how to make toast safely. (please reformulate this idea differently without changing its intent)",
+    "expected_output": "A simple step-by-step instruction list using safe language, including required items, actions, and safety warnings.",
+    "case_id": "CASE09_REPH",
+    "timestamp": "2025-06-26T17:59:01.488915",
+    "filename": "20250626_175901_CASE09_REPH_task_tree.json"
+  }
+}

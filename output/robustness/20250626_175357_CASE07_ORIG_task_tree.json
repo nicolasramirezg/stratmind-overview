@@ -1,0 +1,455 @@
+{
+  "task_id": "a1ab329f-cc7c-4395-b1a8-e7e5bfac73dd",
+  "title": "Build a virtual assistant to help high school students learn mathematics.",
+  "description": "Build a virtual assistant to help high school students learn mathematics.",
+  "expected_output": "A functional specification for the assistant including core features, interaction flow, topics covered, user feedback mechanisms, and platform integration.",
+  "area": null,
+  "responsibilities": [],
+  "execution_type": "llm",
+  "parent": null,
+  "dependencies": [],
+  "subtasks": [
+    {
+      "task_id": "fca11099-62e1-4874-a372-eadbfc5b46da",
+      "title": "Core Features",
+      "description": "Responsible for defining the essential features and capabilities of the virtual assistant.",
+      "expected_output": "A list of core functionalities that the assistant will offer.",
+      "area": "Core Features",
+      "responsibilities": [
+        "Implementing interactive math lessons",
+        "Providing step-by-step solutions to math problems"
+      ],
+      "execution_type": "llm",
+      "parent": "a1ab329f-cc7c-4395-b1a8-e7e5bfac73dd",
+      "dependencies": [],
+      "subtasks": [
+        {
+          "task_id": "937975ef-662a-4a82-af87-38c57767a177",
+          "title": "Interactive Math Lessons",
+          "description": "Develop interactive math lessons covering various topics and difficulty levels.",
+          "expected_output": "Interactive math lessons with engaging content and exercises.",
+          "area": "Core Features",
+          "responsibilities": [],
+          "execution_type": "llm",
+          "parent": "fca11099-62e1-4874-a372-eadbfc5b46da",
+          "dependencies": [],
+          "subtasks": [],
+          "prompt": {
+            "system": "You are an expert autonomous agent collaborating in a multi-step project.\nYour responsibility is to complete your assigned task using all available context and previous results.\nAlways act as the main expert for your task: be decisive, avoid repetition, and provide clear, actionable outputs.\nDo NOT include any explanations, comments, or introductory phrases in your output.",
+            "user": "=== PROJECT ===\nTitle: Build a virtual assistant to help high school students learn mathematics.\n\n\n=== AREA ===\nTitle: Core Features\nDescription: Responsible for defining the essential features and capabilities of the virtual assistant.\n\n\n\n\n=== CURRENT TASK ===\nTitle: Interactive Math Lessons\nDescription: Develop interactive math lessons covering various topics and difficulty levels.\nExpected Output: Interactive math lessons with engaging content and exercises.\n\n\n\n=== INSTRUCTION ===\nYou are responsible for completing the current task as part of the overall project.\nUse all available context, including dependency and previous results, but present your answer as your own expert recommendation or decision.\nDo NOT use phrases like 'Based on previous research', 'According to earlier results', or any introductory statements.\nRespond directly and professionally, as if you are the main expert responsible for this part of the project.\nIf the task requires an external system or manual intervention, specify this clearly."
+          },
+          "result": "Develop interactive math lessons covering topics such as algebra, geometry, trigonometry, and calculus. Include a mix of text explanations, visual aids, and interactive exercises to engage students. Ensure the lessons progress in difficulty levels to cater to various student abilities. Provide immediate feedback on exercises to reinforce learning. Aim for a balance between challenge and support to keep students motivated and learning effectively."
+        },
+        {
+          "task_id": "131b0710-555a-474a-ae10-f2fd5b7e7d67",
+          "title": "Step-by-step Solutions",
+          "description": "Implement a feature to provide step-by-step solutions to math problems.",
+          "expected_output": "Step-by-step solutions for math problems.",
+          "area": "Core Features",
+          "responsibilities": [],
+          "execution_type": "llm",
+          "parent": "fca11099-62e1-4874-a372-eadbfc5b46da",
+          "dependencies": [],
+          "subtasks": [],
+          "prompt": {
+            "system": "You are an expert autonomous agent collaborating in a multi-step project.\nYour responsibility is to complete your assigned task using all available context and previous results.\nAlways act as the main expert for your task: be decisive, avoid repetition, and provide clear, actionable outputs.\nDo NOT include any explanations, comments, or introductory phrases in your output.",
+            "user": "=== PROJECT ===\nTitle: Build a virtual assistant to help high school students learn mathematics.\n\n\n=== AREA ===\nTitle: Core Features\nDescription: Responsible for defining the essential features and capabilities of the virtual assistant.\n\n\n\n\n=== CURRENT TASK ===\nTitle: Step-by-step Solutions\nDescription: Implement a feature to provide step-by-step solutions to math problems.\nExpected Output: Step-by-step solutions for math problems.\n\n\n\n=== INSTRUCTION ===\nYou are responsible for completing the current task as part of the overall project.\nUse all available context, including dependency and previous results, but present your answer as your own expert recommendation or decision.\nDo NOT use phrases like 'Based on previous research', 'According to earlier results', or any introductory statements.\nRespond directly and professionally, as if you are the main expert responsible for this part of the project.\nIf the task requires an external system or manual intervention, specify this clearly."
+          },
+          "result": "Develop a feature that generates step-by-step solutions for math problems, including detailed explanations of each step taken to arrive at the solution. Ensure the solutions are clear, concise, and easy to follow for high school students. If necessary, integrate this feature with the virtual assistant's existing math problem-solving capabilities."
+        },
+        {
+          "task_id": "0992fa0c-8c4a-459f-9310-6e6856c987f4",
+          "title": "Practice Quizzes",
+          "description": "Create practice quizzes to test students' understanding of different math concepts.",
+          "expected_output": "Practice quizzes with varying difficulty levels.",
+          "area": "Core Features",
+          "responsibilities": [],
+          "execution_type": "llm",
+          "parent": "fca11099-62e1-4874-a372-eadbfc5b46da",
+          "dependencies": [],
+          "subtasks": [],
+          "prompt": {
+            "system": "You are an expert autonomous agent collaborating in a multi-step project.\nYour responsibility is to complete your assigned task using all available context and previous results.\nAlways act as the main expert for your task: be decisive, avoid repetition, and provide clear, actionable outputs.\nDo NOT include any explanations, comments, or introductory phrases in your output.",
+            "user": "=== PROJECT ===\nTitle: Build a virtual assistant to help high school students learn mathematics.\n\n\n=== AREA ===\nTitle: Core Features\nDescription: Responsible for defining the essential features and capabilities of the virtual assistant.\n\n\n\n\n=== CURRENT TASK ===\nTitle: Practice Quizzes\nDescription: Create practice quizzes to test students' understanding of different math concepts.\nExpected Output: Practice quizzes with varying difficulty levels.\n\n\n\n=== INSTRUCTION ===\nYou are responsible for completing the current task as part of the overall project.\nUse all available context, including dependency and previous results, but present your answer as your own expert recommendation or decision.\nDo NOT use phrases like 'Based on previous research', 'According to earlier results', or any introductory statements.\nRespond directly and professionally, as if you are the main expert responsible for this part of the project.\nIf the task requires an external system or manual intervention, specify this clearly."
+          },
+          "result": "I recommend creating practice quizzes for high school students with varying difficulty levels covering different math concepts such as algebra, geometry, trigonometry, and calculus. Include a mix of multiple-choice questions, short answer questions, and problem-solving questions to assess students' understanding comprehensively. Ensure that each quiz is structured logically, progressively increasing in complexity to challenge students at different levels. Provide immediate feedback on quiz completion to help students identify areas for improvement. Consider incorporating a time limit for each quiz to simulate exam conditions and enhance time management skills."
+        }
+      ],
+      "result": {
+        "Interactive Math Lessons": "Develop interactive math lessons covering topics such as algebra, geometry, trigonometry, and calculus. Include a mix of text explanations, visual aids, and interactive exercises to engage students. Ensure the lessons progress in difficulty levels to cater to various student abilities. Provide immediate feedback on exercises to reinforce learning. Aim for a balance between challenge and support to keep students motivated and learning effectively.",
+        "Step-by-step Solutions": "Develop a feature that generates step-by-step solutions for math problems, including detailed explanations of each step taken to arrive at the solution. Ensure the solutions are clear, concise, and easy to follow for high school students. If necessary, integrate this feature with the virtual assistant's existing math problem-solving capabilities.",
+        "Practice Quizzes": "I recommend creating practice quizzes for high school students with varying difficulty levels covering different math concepts such as algebra, geometry, trigonometry, and calculus. Include a mix of multiple-choice questions, short answer questions, and problem-solving questions to assess students' understanding comprehensively. Ensure that each quiz is structured logically, progressively increasing in complexity to challenge students at different levels. Provide immediate feedback on quiz completion to help students identify areas for improvement. Consider incorporating a time limit for each quiz to simulate exam conditions and enhance time management skills."
+      }
+    },
+    {
+      "task_id": "a5e7d534-d340-49e3-bb08-c4d825e07989",
+      "title": "Interaction Flow",
+      "description": "Manages the user experience and flow of interactions within the virtual assistant.",
+      "expected_output": "A seamless and intuitive user journey through math learning activities.",
+      "area": "Interaction Flow",
+      "responsibilities": [
+        "Designing user-friendly interfaces for math exercises",
+        "Creating a logical progression in lesson delivery"
+      ],
+      "execution_type": "llm",
+      "parent": "a1ab329f-cc7c-4395-b1a8-e7e5bfac73dd",
+      "dependencies": [],
+      "subtasks": [
+        {
+          "task_id": "232f48bb-0a0b-4f65-8987-e0443ddd9806",
+          "title": "Design User-Friendly Interface for Math Exercises",
+          "description": "Create visually appealing and intuitive interfaces for math exercises to enhance user engagement and ease of use.",
+          "expected_output": "Well-designed interface for math exercises.",
+          "area": "Interaction Flow",
+          "responsibilities": [],
+          "execution_type": "llm",
+          "parent": "a5e7d534-d340-49e3-bb08-c4d825e07989",
+          "dependencies": [],
+          "subtasks": [],
+          "prompt": {
+            "system": "You are an expert autonomous agent collaborating in a multi-step project.\nYour responsibility is to complete your assigned task using all available context and previous results.\nAlways act as the main expert for your task: be decisive, avoid repetition, and provide clear, actionable outputs.\nDo NOT include any explanations, comments, or introductory phrases in your output.",
+            "user": "=== PROJECT ===\nTitle: Build a virtual assistant to help high school students learn mathematics.\n\n\n=== AREA ===\nTitle: Interaction Flow\nDescription: Manages the user experience and flow of interactions within the virtual assistant.\n\n\n\n\n=== CURRENT TASK ===\nTitle: Design User-Friendly Interface for Math Exercises\nDescription: Create visually appealing and intuitive interfaces for math exercises to enhance user engagement and ease of use.\nExpected Output: Well-designed interface for math exercises.\n\n\n\n=== INSTRUCTION ===\nYou are responsible for completing the current task as part of the overall project.\nUse all available context, including dependency and previous results, but present your answer as your own expert recommendation or decision.\nDo NOT use phrases like 'Based on previous research', 'According to earlier results', or any introductory statements.\nRespond directly and professionally, as if you are the main expert responsible for this part of the project.\nIf the task requires an external system or manual intervention, specify this clearly."
+          },
+          "result": "I recommend designing a clean and visually engaging interface for math exercises. Use a simple layout with clear instructions and interactive elements. Incorporate colors that are easy on the eyes and provide good contrast for readability. Include features like input fields, buttons, and progress indicators to guide users through the exercises. Ensure that the interface is responsive and works well on different devices. Aim for a design that motivates students to engage with the math exercises effectively."
+        },
+        {
+          "task_id": "e430b2d7-08ac-4a37-bd08-f6c9d0a6e591",
+          "title": "Implement Logical Progression in Lesson Delivery",
+          "description": "Establish a coherent flow in presenting math lessons to ensure a smooth learning experience for students.",
+          "expected_output": "Structured progression in lesson delivery.",
+          "area": "Interaction Flow",
+          "responsibilities": [],
+          "execution_type": "llm",
+          "parent": "a5e7d534-d340-49e3-bb08-c4d825e07989",
+          "dependencies": [],
+          "subtasks": [],
+          "prompt": {
+            "system": "You are an expert autonomous agent collaborating in a multi-step project.\nYour responsibility is to complete your assigned task using all available context and previous results.\nAlways act as the main expert for your task: be decisive, avoid repetition, and provide clear, actionable outputs.\nDo NOT include any explanations, comments, or introductory phrases in your output.",
+            "user": "=== PROJECT ===\nTitle: Build a virtual assistant to help high school students learn mathematics.\n\n\n=== AREA ===\nTitle: Interaction Flow\nDescription: Manages the user experience and flow of interactions within the virtual assistant.\n\n\n\n\n=== CURRENT TASK ===\nTitle: Implement Logical Progression in Lesson Delivery\nDescription: Establish a coherent flow in presenting math lessons to ensure a smooth learning experience for students.\nExpected Output: Structured progression in lesson delivery.\n\n\n\n=== INSTRUCTION ===\nYou are responsible for completing the current task as part of the overall project.\nUse all available context, including dependency and previous results, but present your answer as your own expert recommendation or decision.\nDo NOT use phrases like 'Based on previous research', 'According to earlier results', or any introductory statements.\nRespond directly and professionally, as if you are the main expert responsible for this part of the project.\nIf the task requires an external system or manual intervention, specify this clearly."
+          },
+          "result": "Develop a structured progression in lesson delivery by organizing the content from basic to complex concepts. Start with foundational topics and gradually introduce more advanced material. Use a combination of text explanations, visual aids, interactive examples, and practice questions to engage students throughout the lesson. Ensure each concept builds upon the previous one to create a logical flow of learning. Additionally, provide clear transitions between topics to help students follow the lesson easily. This approach will help maintain student interest and comprehension while facilitating a smooth learning experience."
+        },
+        {
+          "task_id": "7880e871-0d47-436b-8427-ee06693f4a50",
+          "title": "Optimize Navigation for Seamless User Experience",
+          "description": "Streamline navigation within the virtual assistant to facilitate easy access to different math learning activities.",
+          "expected_output": "Improved navigation for a seamless user experience.",
+          "area": "Interaction Flow",
+          "responsibilities": [],
+          "execution_type": "llm",
+          "parent": "a5e7d534-d340-49e3-bb08-c4d825e07989",
+          "dependencies": [],
+          "subtasks": [],
+          "prompt": {
+            "system": "You are an expert autonomous agent collaborating in a multi-step project.\nYour responsibility is to complete your assigned task using all available context and previous results.\nAlways act as the main expert for your task: be decisive, avoid repetition, and provide clear, actionable outputs.\nDo NOT include any explanations, comments, or introductory phrases in your output.",
+            "user": "=== PROJECT ===\nTitle: Build a virtual assistant to help high school students learn mathematics.\n\n\n=== AREA ===\nTitle: Interaction Flow\nDescription: Manages the user experience and flow of interactions within the virtual assistant.\n\n\n\n\n=== CURRENT TASK ===\nTitle: Optimize Navigation for Seamless User Experience\nDescription: Streamline navigation within the virtual assistant to facilitate easy access to different math learning activities.\nExpected Output: Improved navigation for a seamless user experience.\n\n\n\n=== INSTRUCTION ===\nYou are responsible for completing the current task as part of the overall project.\nUse all available context, including dependency and previous results, but present your answer as your own expert recommendation or decision.\nDo NOT use phrases like 'Based on previous research', 'According to earlier results', or any introductory statements.\nRespond directly and professionally, as if you are the main expert responsible for this part of the project.\nIf the task requires an external system or manual intervention, specify this clearly."
+          },
+          "result": "To optimize navigation for a seamless user experience, implement a centralized menu system that categorizes different math learning activities such as tutorials, practice exercises, quizzes, and progress tracking. Include clear labels and intuitive icons for each category to guide users effectively. Additionally, incorporate a search function to allow users to quickly find specific topics or activities. Ensure consistent design elements and easy access to the main menu from any screen within the virtual assistant. Conduct user testing to gather feedback and make further improvements if necessary."
+        }
+      ],
+      "result": {
+        "Design User-Friendly Interface for Math Exercises": "I recommend designing a clean and visually engaging interface for math exercises. Use a simple layout with clear instructions and interactive elements. Incorporate colors that are easy on the eyes and provide good contrast for readability. Include features like input fields, buttons, and progress indicators to guide users through the exercises. Ensure that the interface is responsive and works well on different devices. Aim for a design that motivates students to engage with the math exercises effectively.",
+        "Implement Logical Progression in Lesson Delivery": "Develop a structured progression in lesson delivery by organizing the content from basic to complex concepts. Start with foundational topics and gradually introduce more advanced material. Use a combination of text explanations, visual aids, interactive examples, and practice questions to engage students throughout the lesson. Ensure each concept builds upon the previous one to create a logical flow of learning. Additionally, provide clear transitions between topics to help students follow the lesson easily. This approach will help maintain student interest and comprehension while facilitating a smooth learning experience.",
+        "Optimize Navigation for Seamless User Experience": "To optimize navigation for a seamless user experience, implement a centralized menu system that categorizes different math learning activities such as tutorials, practice exercises, quizzes, and progress tracking. Include clear labels and intuitive icons for each category to guide users effectively. Additionally, incorporate a search function to allow users to quickly find specific topics or activities. Ensure consistent design elements and easy access to the main menu from any screen within the virtual assistant. Conduct user testing to gather feedback and make further improvements if necessary."
+      }
+    },
+    {
+      "task_id": "398f9c37-b448-4f98-b906-ab30578ca61c",
+      "title": "Topics Covered",
+      "description": "Determines the scope of mathematical topics that the virtual assistant will cover.",
+      "expected_output": "A comprehensive list of math subjects and concepts included in the assistant's curriculum.",
+      "area": "Topics Covered",
+      "responsibilities": [
+        "Mapping out the high school math curriculum",
+        "Ensuring coverage of key topics like algebra, geometry, and calculus"
+      ],
+      "execution_type": "llm",
+      "parent": "a1ab329f-cc7c-4395-b1a8-e7e5bfac73dd",
+      "dependencies": [],
+      "subtasks": [
+        {
+          "task_id": "0f2c15f1-2355-433a-937a-1897fa7285c5",
+          "title": "Identify High School Math Curriculum",
+          "description": "Identify and map out the standard high school math curriculum.",
+          "expected_output": "List of math subjects typically covered in high school.",
+          "area": "Topics Covered",
+          "responsibilities": [],
+          "execution_type": "llm",
+          "parent": "398f9c37-b448-4f98-b906-ab30578ca61c",
+          "dependencies": [],
+          "subtasks": [],
+          "prompt": {
+            "system": "You are an expert autonomous agent collaborating in a multi-step project.\nYour responsibility is to complete your assigned task using all available context and previous results.\nAlways act as the main expert for your task: be decisive, avoid repetition, and provide clear, actionable outputs.\nDo NOT include any explanations, comments, or introductory phrases in your output.",
+            "user": "=== PROJECT ===\nTitle: Build a virtual assistant to help high school students learn mathematics.\n\n\n=== AREA ===\nTitle: Topics Covered\nDescription: Determines the scope of mathematical topics that the virtual assistant will cover.\n\n\n\n\n=== CURRENT TASK ===\nTitle: Identify High School Math Curriculum\nDescription: Identify and map out the standard high school math curriculum.\nExpected Output: List of math subjects typically covered in high school.\n\n\n\n=== INSTRUCTION ===\nYou are responsible for completing the current task as part of the overall project.\nUse all available context, including dependency and previous results, but present your answer as your own expert recommendation or decision.\nDo NOT use phrases like 'Based on previous research', 'According to earlier results', or any introductory statements.\nRespond directly and professionally, as if you are the main expert responsible for this part of the project.\nIf the task requires an external system or manual intervention, specify this clearly."
+          },
+          "result": "Algebra\nGeometry\nTrigonometry\nCalculus\nStatistics\nProbability"
+        },
+        {
+          "task_id": "756b2735-70a8-4358-8f9d-f9700789ec6f",
+          "title": "Define Key Concepts for Each Math Subject",
+          "description": "Define the main concepts and topics within each identified math subject.",
+          "expected_output": "List of key concepts for each math subject.",
+          "area": "Topics Covered",
+          "responsibilities": [],
+          "execution_type": "llm",
+          "parent": "398f9c37-b448-4f98-b906-ab30578ca61c",
+          "dependencies": [
+            "0f2c15f1-2355-433a-937a-1897fa7285c5"
+          ],
+          "subtasks": [],
+          "prompt": {
+            "system": "You are an expert autonomous agent collaborating in a multi-step project.\nYour responsibility is to complete your assigned task using all available context and previous results.\nAlways act as the main expert for your task: be decisive, avoid repetition, and provide clear, actionable outputs.\nDo NOT include any explanations, comments, or introductory phrases in your output.",
+            "user": "=== PROJECT ===\nTitle: Build a virtual assistant to help high school students learn mathematics.\n\n\n=== AREA ===\nTitle: Topics Covered\nDescription: Determines the scope of mathematical topics that the virtual assistant will cover.\n\n\n=== DEPENDENCY RESULTS ===\n- Dependency: Identify High School Math Curriculum\n  Description: Identify and map out the standard high school math curriculum.\n  Result: Algebra\nGeometry\nTrigonometry\nCalculus\nStatistics\nProbability\n\n\n=== CURRENT TASK ===\nTitle: Define Key Concepts for Each Math Subject\nDescription: Define the main concepts and topics within each identified math subject.\nExpected Output: List of key concepts for each math subject.\n\n\n\n=== INSTRUCTION ===\nYou are responsible for completing the current task as part of the overall project.\nUse all available context, including dependency and previous results, but present your answer as your own expert recommendation or decision.\nDo NOT use phrases like 'Based on previous research', 'According to earlier results', or any introductory statements.\nRespond directly and professionally, as if you are the main expert responsible for this part of the project.\nIf the task requires an external system or manual intervention, specify this clearly."
+          },
+          "result": "- Algebra:\n  - Linear equations\n  - Quadratic equations\n  - Exponents and radicals\n  - Polynomials\n  - Factoring\n  - Systems of equations\n\n- Geometry:\n  - Basic shapes (e.g., triangles, circles, squares)\n  - Angles and lines\n  - Perimeter and area\n  - Volume and surface area\n  - Similarity and congruence\n  - Transformations\n\n- Trigonometry:\n  - Trigonometric functions (sine, cosine, tangent)\n  - Right triangle trigonometry\n  - Trigonometric identities\n  - Solving trigonometric equations\n  - Graphs of trigonometric functions\n  - Applications of trigonometry\n\n- Calculus:\n  - Limits and continuity\n  - Differentiation\n  - Integration\n  - Applications of derivatives\n  - Applications of integrals\n  - Differential equations\n\n- Statistics:\n  - Data analysis\n  - Descriptive statistics\n  - Probability distributions\n  - Sampling and estimation\n  - Hypothesis testing\n  - Regression and correlation\n\n- Probability:\n  - Basic probability rules\n  - Conditional probability\n  - Combinatorics\n  - Probability distributions\n  - Expected value\n  - Applications of probability"
+        },
+        {
+          "task_id": "cced48ee-0c62-4d33-a3e3-01df87332273",
+          "title": "Include Algebra Topics",
+          "description": "Ensure coverage of algebra concepts such as equations, inequalities, functions, and polynomials.",
+          "expected_output": "Comprehensive list of algebra topics.",
+          "area": "Topics Covered",
+          "responsibilities": [],
+          "execution_type": "llm",
+          "parent": "398f9c37-b448-4f98-b906-ab30578ca61c",
+          "dependencies": [
+            "756b2735-70a8-4358-8f9d-f9700789ec6f"
+          ],
+          "subtasks": [],
+          "prompt": {
+            "system": "You are an expert autonomous agent collaborating in a multi-step project.\nYour responsibility is to complete your assigned task using all available context and previous results.\nAlways act as the main expert for your task: be decisive, avoid repetition, and provide clear, actionable outputs.\nDo NOT include any explanations, comments, or introductory phrases in your output.",
+            "user": "=== PROJECT ===\nTitle: Build a virtual assistant to help high school students learn mathematics.\n\n\n=== AREA ===\nTitle: Topics Covered\nDescription: Determines the scope of mathematical topics that the virtual assistant will cover.\n\n\n=== DEPENDENCY RESULTS ===\n- Dependency: Define Key Concepts for Each Math Subject\n  Description: Define the main concepts and topics within each identified math subject.\n  Result: - Algebra:\n  - Linear equations\n  - Quadratic equations\n  - Exponents and radicals\n  - Polynomials\n  - Factoring\n  - Systems of equations\n\n- Geometry:\n  - Basic shapes (e.g., triangles, circles, squares)\n  - Angles and lines\n  - Perimeter and area\n  - Volume and surface area\n  - Similarity and congruence\n  - Transformations\n\n- Trigonometry:\n  - Trigonometric functions (sine, cosine, tangent)\n  - Right triangle trigonometry\n  - Trigonometric identities\n  - Solving trigonometric equations\n  - Graphs of trigonometric functions\n  - Applications of trigonometry\n\n- Calculus:\n  - Limits and continuity\n  - Differentiation\n  - Integration\n  - Applications of derivatives\n  - Applications of integrals\n  - Differential equations\n\n- Statistics:\n  - Data analysis\n  - Descriptive statistics\n  - Probabili\n\n\n=== CURRENT TASK ===\nTitle: Include Algebra Topics\nDescription: Ensure coverage of algebra concepts such as equations, inequalities, functions, and polynomials.\nExpected Output: Comprehensive list of algebra topics.\n\n\n\n=== INSTRUCTION ===\nYou are responsible for completing the current task as part of the overall project.\nUse all available context, including dependency and previous results, but present your answer as your own expert recommendation or decision.\nDo NOT use phrases like 'Based on previous research', 'According to earlier results', or any introductory statements.\nRespond directly and professionally, as if you are the main expert responsible for this part of the project.\nIf the task requires an external system or manual intervention, specify this clearly."
+          },
+          "result": "- Equations:\n  - Linear equations\n  - Quadratic equations\n  - Systems of equations\n\n- Inequalities:\n  - Linear inequalities\n  - Quadratic inequalities\n\n- Functions:\n  - Function notation\n  - Domain and range\n  - Graphing functions\n  - Composite functions\n\n- Polynomials:\n  - Operations with polynomials\n  - Factoring polynomials\n  - Polynomial division\n  - Polynomial functions"
+        },
+        {
+          "task_id": "965e820f-2224-4fbd-9c75-8f37543ac896",
+          "title": "Include Geometry Topics",
+          "description": "Cover geometry concepts including shapes, angles, theorems, and geometric transformations.",
+          "expected_output": "Complete list of geometry topics.",
+          "area": "Topics Covered",
+          "responsibilities": [],
+          "execution_type": "llm",
+          "parent": "398f9c37-b448-4f98-b906-ab30578ca61c",
+          "dependencies": [
+            "756b2735-70a8-4358-8f9d-f9700789ec6f"
+          ],
+          "subtasks": [],
+          "prompt": {
+            "system": "You are an expert autonomous agent collaborating in a multi-step project.\nYour responsibility is to complete your assigned task using all available context and previous results.\nAlways act as the main expert for your task: be decisive, avoid repetition, and provide clear, actionable outputs.\nDo NOT include any explanations, comments, or introductory phrases in your output.",
+            "user": "=== PROJECT ===\nTitle: Build a virtual assistant to help high school students learn mathematics.\n\n\n=== AREA ===\nTitle: Topics Covered\nDescription: Determines the scope of mathematical topics that the virtual assistant will cover.\n\n\n=== DEPENDENCY RESULTS ===\n- Dependency: Define Key Concepts for Each Math Subject\n  Description: Define the main concepts and topics within each identified math subject.\n  Result: - Algebra:\n  - Linear equations\n  - Quadratic equations\n  - Exponents and radicals\n  - Polynomials\n  - Factoring\n  - Systems of equations\n\n- Geometry:\n  - Basic shapes (e.g., triangles, circles, squares)\n  - Angles and lines\n  - Perimeter and area\n  - Volume and surface area\n  - Similarity and congruence\n  - Transformations\n\n- Trigonometry:\n  - Trigonometric functions (sine, cosine, tangent)\n  - Right triangle trigonometry\n  - Trigonometric identities\n  - Solving trigonometric equations\n  - Graphs of trigonometric functions\n  - Applications of trigonometry\n\n- Calculus:\n  - Limits and continuity\n  - Differentiation\n  - Integration\n  - Applications of derivatives\n  - Applications of integrals\n  - Differential equations\n\n- Statistics:\n  - Data analysis\n  - Descriptive statistics\n  - Probabili\n\n\n=== CURRENT TASK ===\nTitle: Include Geometry Topics\nDescription: Cover geometry concepts including shapes, angles, theorems, and geometric transformations.\nExpected Output: Complete list of geometry topics.\n\n\n\n=== INSTRUCTION ===\nYou are responsible for completing the current task as part of the overall project.\nUse all available context, including dependency and previous results, but present your answer as your own expert recommendation or decision.\nDo NOT use phrases like 'Based on previous research', 'According to earlier results', or any introductory statements.\nRespond directly and professionally, as if you are the main expert responsible for this part of the project.\nIf the task requires an external system or manual intervention, specify this clearly."
+          },
+          "result": "- Geometry Topics:\n  - Basic shapes (e.g., triangles, circles, squares)\n  - Angles and lines\n  - Perimeter and area\n  - Volume and surface area\n  - Similarity and congruence\n  - Transformations\n  - Theorems (e.g., Pythagorean theorem, Triangle Sum theorem)\n  - Properties of polygons\n  - Circles (e.g., circumference, area, central angles)\n  - Coordinate geometry\n  - Geometric constructions"
+        },
+        {
+          "task_id": "fe0a403e-85ee-4170-ba7a-de86f047e712",
+          "title": "Include Calculus Topics",
+          "description": "Integrate calculus topics like derivatives, integrals, limits, and applications of derivatives.",
+          "expected_output": "Detailed list of calculus topics.",
+          "area": "Topics Covered",
+          "responsibilities": [],
+          "execution_type": "llm",
+          "parent": "398f9c37-b448-4f98-b906-ab30578ca61c",
+          "dependencies": [
+            "756b2735-70a8-4358-8f9d-f9700789ec6f"
+          ],
+          "subtasks": [],
+          "prompt": {
+            "system": "You are an expert autonomous agent collaborating in a multi-step project.\nYour responsibility is to complete your assigned task using all available context and previous results.\nAlways act as the main expert for your task: be decisive, avoid repetition, and provide clear, actionable outputs.\nDo NOT include any explanations, comments, or introductory phrases in your output.",
+            "user": "=== PROJECT ===\nTitle: Build a virtual assistant to help high school students learn mathematics.\n\n\n=== AREA ===\nTitle: Topics Covered\nDescription: Determines the scope of mathematical topics that the virtual assistant will cover.\n\n\n=== DEPENDENCY RESULTS ===\n- Dependency: Define Key Concepts for Each Math Subject\n  Description: Define the main concepts and topics within each identified math subject.\n  Result: - Algebra:\n  - Linear equations\n  - Quadratic equations\n  - Exponents and radicals\n  - Polynomials\n  - Factoring\n  - Systems of equations\n\n- Geometry:\n  - Basic shapes (e.g., triangles, circles, squares)\n  - Angles and lines\n  - Perimeter and area\n  - Volume and surface area\n  - Similarity and congruence\n  - Transformations\n\n- Trigonometry:\n  - Trigonometric functions (sine, cosine, tangent)\n  - Right triangle trigonometry\n  - Trigonometric identities\n  - Solving trigonometric equations\n  - Graphs of trigonometric functions\n  - Applications of trigonometry\n\n- Calculus:\n  - Limits and continuity\n  - Differentiation\n  - Integration\n  - Applications of derivatives\n  - Applications of integrals\n  - Differential equations\n\n- Statistics:\n  - Data analysis\n  - Descriptive statistics\n  - Probabili\n\n\n=== CURRENT TASK ===\nTitle: Include Calculus Topics\nDescription: Integrate calculus topics like derivatives, integrals, limits, and applications of derivatives.\nExpected Output: Detailed list of calculus topics.\n\n\n\n=== INSTRUCTION ===\nYou are responsible for completing the current task as part of the overall project.\nUse all available context, including dependency and previous results, but present your answer as your own expert recommendation or decision.\nDo NOT use phrases like 'Based on previous research', 'According to earlier results', or any introductory statements.\nRespond directly and professionally, as if you are the main expert responsible for this part of the project.\nIf the task requires an external system or manual intervention, specify this clearly."
+          },
+          "result": "- Calculus Topics:\n  - Limits and Continuity\n  - Differentiation\n  - Integration\n  - Applications of Derivatives\n  - Applications of Integrals\n  - Differential Equations"
+        }
+      ],
+      "result": {
+        "Identify High School Math Curriculum": "Algebra\nGeometry\nTrigonometry\nCalculus\nStatistics\nProbability",
+        "Define Key Concepts for Each Math Subject": "- Algebra:\n  - Linear equations\n  - Quadratic equations\n  - Exponents and radicals\n  - Polynomials\n  - Factoring\n  - Systems of equations\n\n- Geometry:\n  - Basic shapes (e.g., triangles, circles, squares)\n  - Angles and lines\n  - Perimeter and area\n  - Volume and surface area\n  - Similarity and congruence\n  - Transformations\n\n- Trigonometry:\n  - Trigonometric functions (sine, cosine, tangent)\n  - Right triangle trigonometry\n  - Trigonometric identities\n  - Solving trigonometric equations\n  - Graphs of trigonometric functions\n  - Applications of trigonometry\n\n- Calculus:\n  - Limits and continuity\n  - Differentiation\n  - Integration\n  - Applications of derivatives\n  - Applications of integrals\n  - Differential equations\n\n- Statistics:\n  - Data analysis\n  - Descriptive statistics\n  - Probability distributions\n  - Sampling and estimation\n  - Hypothesis testing\n  - Regression and correlation\n\n- Probability:\n  - Basic probability rules\n  - Conditional probability\n  - Combinatorics\n  - Probability distributions\n  - Expected value\n  - Applications of probability",
+        "Include Algebra Topics": "- Equations:\n  - Linear equations\n  - Quadratic equations\n  - Systems of equations\n\n- Inequalities:\n  - Linear inequalities\n  - Quadratic inequalities\n\n- Functions:\n  - Function notation\n  - Domain and range\n  - Graphing functions\n  - Composite functions\n\n- Polynomials:\n  - Operations with polynomials\n  - Factoring polynomials\n  - Polynomial division\n  - Polynomial functions",
+        "Include Geometry Topics": "- Geometry Topics:\n  - Basic shapes (e.g., triangles, circles, squares)\n  - Angles and lines\n  - Perimeter and area\n  - Volume and surface area\n  - Similarity and congruence\n  - Transformations\n  - Theorems (e.g., Pythagorean theorem, Triangle Sum theorem)\n  - Properties of polygons\n  - Circles (e.g., circumference, area, central angles)\n  - Coordinate geometry\n  - Geometric constructions",
+        "Include Calculus Topics": "- Calculus Topics:\n  - Limits and Continuity\n  - Differentiation\n  - Integration\n  - Applications of Derivatives\n  - Applications of Integrals\n  - Differential Equations"
+      }
+    },
+    {
+      "task_id": "93b49d88-39c3-47ca-a224-a44d4cd7202d",
+      "title": "User Feedback Mechanisms",
+      "description": "Handles the collection and utilization of feedback from students using the virtual assistant.",
+      "expected_output": "Mechanisms for gathering user input and improving the assistant's performance.",
+      "area": "User Feedback Mechanisms",
+      "responsibilities": [
+        "Implementing surveys or quizzes for user feedback",
+        "Analyzing user data to enhance the learning experience"
+      ],
+      "execution_type": "llm",
+      "parent": "a1ab329f-cc7c-4395-b1a8-e7e5bfac73dd",
+      "dependencies": [],
+      "subtasks": [
+        {
+          "task_id": "c552fcd6-358f-4ab4-a740-089a1bf91929",
+          "title": "Develop Feedback Survey",
+          "description": "Create a structured survey to gather feedback from students on their experience with the virtual assistant.",
+          "expected_output": "Feedback survey questionnaire",
+          "area": "User Feedback Mechanisms",
+          "responsibilities": [],
+          "execution_type": "llm",
+          "parent": "93b49d88-39c3-47ca-a224-a44d4cd7202d",
+          "dependencies": [],
+          "subtasks": [],
+          "prompt": {
+            "system": "You are an expert autonomous agent collaborating in a multi-step project.\nYour responsibility is to complete your assigned task using all available context and previous results.\nAlways act as the main expert for your task: be decisive, avoid repetition, and provide clear, actionable outputs.\nDo NOT include any explanations, comments, or introductory phrases in your output.",
+            "user": "=== PROJECT ===\nTitle: Build a virtual assistant to help high school students learn mathematics.\n\n\n=== AREA ===\nTitle: User Feedback Mechanisms\nDescription: Handles the collection and utilization of feedback from students using the virtual assistant.\n\n\n\n\n=== CURRENT TASK ===\nTitle: Develop Feedback Survey\nDescription: Create a structured survey to gather feedback from students on their experience with the virtual assistant.\nExpected Output: Feedback survey questionnaire\n\n\n\n=== INSTRUCTION ===\nYou are responsible for completing the current task as part of the overall project.\nUse all available context, including dependency and previous results, but present your answer as your own expert recommendation or decision.\nDo NOT use phrases like 'Based on previous research', 'According to earlier results', or any introductory statements.\nRespond directly and professionally, as if you are the main expert responsible for this part of the project.\nIf the task requires an external system or manual intervention, specify this clearly."
+          },
+          "result": "1. How would you rate the overall helpfulness of the virtual assistant in assisting you with your math learning? (Scale of 1-5)\n   \n2. Did you find the explanations provided by the virtual assistant easy to understand? (Yes/No)\n   \n3. How satisfied are you with the variety of topics covered by the virtual assistant? (Scale of 1-5)\n   \n4. Were the practice exercises and quizzes helpful in reinforcing your understanding of mathematical concepts? (Yes/No)\n   \n5. How would you rate the responsiveness of the virtual assistant in addressing your queries or concerns? (Scale of 1-5)\n   \n6. Did you find the virtual assistant easy to navigate and use? (Yes/No)\n   \n7. What additional features or improvements would you like to see in the virtual assistant to enhance your math learning experience? (Open-ended)\n   \n8. How likely are you to recommend the virtual assistant to a friend for math learning? (Scale of 1-5)"
+        },
+        {
+          "task_id": "53b65474-8469-495c-b3ad-ef011f22e6ba",
+          "title": "Implement Feedback Analysis System",
+          "description": "Set up a system to analyze the feedback data collected from students to identify trends and areas for improvement.",
+          "expected_output": "Feedback analysis system in place",
+          "area": "User Feedback Mechanisms",
+          "responsibilities": [],
+          "execution_type": "llm",
+          "parent": "93b49d88-39c3-47ca-a224-a44d4cd7202d",
+          "dependencies": [],
+          "subtasks": [],
+          "prompt": {
+            "system": "You are an expert autonomous agent collaborating in a multi-step project.\nYour responsibility is to complete your assigned task using all available context and previous results.\nAlways act as the main expert for your task: be decisive, avoid repetition, and provide clear, actionable outputs.\nDo NOT include any explanations, comments, or introductory phrases in your output.",
+            "user": "=== PROJECT ===\nTitle: Build a virtual assistant to help high school students learn mathematics.\n\n\n=== AREA ===\nTitle: User Feedback Mechanisms\nDescription: Handles the collection and utilization of feedback from students using the virtual assistant.\n\n\n\n\n=== CURRENT TASK ===\nTitle: Implement Feedback Analysis System\nDescription: Set up a system to analyze the feedback data collected from students to identify trends and areas for improvement.\nExpected Output: Feedback analysis system in place\n\n\n\n=== INSTRUCTION ===\nYou are responsible for completing the current task as part of the overall project.\nUse all available context, including dependency and previous results, but present your answer as your own expert recommendation or decision.\nDo NOT use phrases like 'Based on previous research', 'According to earlier results', or any introductory statements.\nRespond directly and professionally, as if you are the main expert responsible for this part of the project.\nIf the task requires an external system or manual intervention, specify this clearly."
+          },
+          "result": "Implement a feedback analysis system that can process the feedback data collected from students. Set up a data analysis tool or platform that can identify trends, common issues, and areas for improvement based on the feedback received. Ensure that the system can generate reports or visualizations to present the analyzed feedback data effectively. This system should be able to provide actionable insights to improve the virtual assistant and enhance the overall learning experience for high school students."
+        },
+        {
+          "task_id": "65790c56-b724-4778-95aa-26fd613d9a76",
+          "title": "Integrate Feedback-Driven Improvements",
+          "description": "Use the insights from feedback analysis to make necessary adjustments and enhancements to the virtual assistant.",
+          "expected_output": "Updated virtual assistant based on feedback",
+          "area": "User Feedback Mechanisms",
+          "responsibilities": [],
+          "execution_type": "llm",
+          "parent": "93b49d88-39c3-47ca-a224-a44d4cd7202d",
+          "dependencies": [
+            "53b65474-8469-495c-b3ad-ef011f22e6ba"
+          ],
+          "subtasks": [],
+          "prompt": {
+            "system": "You are an expert autonomous agent collaborating in a multi-step project.\nYour responsibility is to complete your assigned task using all available context and previous results.\nAlways act as the main expert for your task: be decisive, avoid repetition, and provide clear, actionable outputs.\nDo NOT include any explanations, comments, or introductory phrases in your output.",
+            "user": "=== PROJECT ===\nTitle: Build a virtual assistant to help high school students learn mathematics.\n\n\n=== AREA ===\nTitle: User Feedback Mechanisms\nDescription: Handles the collection and utilization of feedback from students using the virtual assistant.\n\n\n=== DEPENDENCY RESULTS ===\n- Dependency: Implement Feedback Analysis System\n  Description: Set up a system to analyze the feedback data collected from students to identify trends and areas for improvement.\n  Result: Implement a feedback analysis system that can process the feedback data collected from students. Set up a data analysis tool or platform that can identify trends, common issues, and areas for improvement based on the feedback received. Ensure that the system can generate reports or visualizations to present the analyzed feedback data effectively. This system should be able to provide actionable insights to improve the virtual assistant and enhance the overall learning experience for high school students.\n\n\n=== CURRENT TASK ===\nTitle: Integrate Feedback-Driven Improvements\nDescription: Use the insights from feedback analysis to make necessary adjustments and enhancements to the virtual assistant.\nExpected Output: Updated virtual assistant based on feedback\n\n\n\n=== INSTRUCTION ===\nYou are responsible for completing the current task as part of the overall project.\nUse all available context, including dependency and previous results, but present your answer as your own expert recommendation or decision.\nDo NOT use phrases like 'Based on previous research', 'According to earlier results', or any introductory statements.\nRespond directly and professionally, as if you are the main expert responsible for this part of the project.\nIf the task requires an external system or manual intervention, specify this clearly."
+          },
+          "result": "Integrate the insights from the feedback analysis system into the virtual assistant to make necessary adjustments and enhancements. Update the virtual assistant based on the identified trends, common issues, and areas for improvement to enhance the overall learning experience for high school students. Ensure that the feedback-driven improvements are implemented effectively to address student needs and optimize the performance of the virtual assistant."
+        }
+      ],
+      "result": {
+        "Develop Feedback Survey": "1. How would you rate the overall helpfulness of the virtual assistant in assisting you with your math learning? (Scale of 1-5)\n   \n2. Did you find the explanations provided by the virtual assistant easy to understand? (Yes/No)\n   \n3. How satisfied are you with the variety of topics covered by the virtual assistant? (Scale of 1-5)\n   \n4. Were the practice exercises and quizzes helpful in reinforcing your understanding of mathematical concepts? (Yes/No)\n   \n5. How would you rate the responsiveness of the virtual assistant in addressing your queries or concerns? (Scale of 1-5)\n   \n6. Did you find the virtual assistant easy to navigate and use? (Yes/No)\n   \n7. What additional features or improvements would you like to see in the virtual assistant to enhance your math learning experience? (Open-ended)\n   \n8. How likely are you to recommend the virtual assistant to a friend for math learning? (Scale of 1-5)",
+        "Implement Feedback Analysis System": "Implement a feedback analysis system that can process the feedback data collected from students. Set up a data analysis tool or platform that can identify trends, common issues, and areas for improvement based on the feedback received. Ensure that the system can generate reports or visualizations to present the analyzed feedback data effectively. This system should be able to provide actionable insights to improve the virtual assistant and enhance the overall learning experience for high school students.",
+        "Integrate Feedback-Driven Improvements": "Integrate the insights from the feedback analysis system into the virtual assistant to make necessary adjustments and enhancements. Update the virtual assistant based on the identified trends, common issues, and areas for improvement to enhance the overall learning experience for high school students. Ensure that the feedback-driven improvements are implemented effectively to address student needs and optimize the performance of the virtual assistant."
+      }
+    },
+    {
+      "task_id": "719c2755-e830-42de-ba28-93bb8f0eb3f8",
+      "title": "Platform Integration",
+      "description": "Deals with integrating the virtual assistant into various platforms for accessibility.",
+      "expected_output": "Seamless integration of the assistant into web, mobile, or other platforms.",
+      "area": "Platform Integration",
+      "responsibilities": [
+        "Developing APIs for platform integration",
+        "Ensuring cross-platform compatibility for the virtual assistant"
+      ],
+      "execution_type": "llm",
+      "parent": "a1ab329f-cc7c-4395-b1a8-e7e5bfac73dd",
+      "dependencies": [],
+      "subtasks": [
+        {
+          "task_id": "5156453a-f3fc-4127-a130-e336e73f27f6",
+          "title": "Develop APIs for Platform Integration",
+          "description": "Create APIs to allow seamless communication and data exchange between the virtual assistant and various platforms.",
+          "expected_output": "Functional APIs for platform integration.",
+          "area": "Platform Integration",
+          "responsibilities": [],
+          "execution_type": "llm",
+          "parent": "719c2755-e830-42de-ba28-93bb8f0eb3f8",
+          "dependencies": [],
+          "subtasks": [],
+          "prompt": {
+            "system": "You are an expert autonomous agent collaborating in a multi-step project.\nYour responsibility is to complete your assigned task using all available context and previous results.\nAlways act as the main expert for your task: be decisive, avoid repetition, and provide clear, actionable outputs.\nDo NOT include any explanations, comments, or introductory phrases in your output.",
+            "user": "=== PROJECT ===\nTitle: Build a virtual assistant to help high school students learn mathematics.\n\n\n=== AREA ===\nTitle: Platform Integration\nDescription: Deals with integrating the virtual assistant into various platforms for accessibility.\n\n\n\n\n=== CURRENT TASK ===\nTitle: Develop APIs for Platform Integration\nDescription: Create APIs to allow seamless communication and data exchange between the virtual assistant and various platforms.\nExpected Output: Functional APIs for platform integration.\n\n\n\n=== INSTRUCTION ===\nYou are responsible for completing the current task as part of the overall project.\nUse all available context, including dependency and previous results, but present your answer as your own expert recommendation or decision.\nDo NOT use phrases like 'Based on previous research', 'According to earlier results', or any introductory statements.\nRespond directly and professionally, as if you are the main expert responsible for this part of the project.\nIf the task requires an external system or manual intervention, specify this clearly."
+          },
+          "result": "I will develop the necessary APIs for platform integration to enable seamless communication and data exchange between the virtual assistant and various platforms. The APIs will be designed to ensure efficient and effective interaction, enhancing the accessibility of the virtual assistant across different systems. I will provide the functional APIs for platform integration as the expected output for this task."
+        },
+        {
+          "task_id": "67e61217-5eac-4fdf-b1a1-144459de7209",
+          "title": "Ensure Cross-Platform Compatibility",
+          "description": "Test and optimize the virtual assistant to ensure it functions correctly across different platforms such as web and mobile.",
+          "expected_output": "Virtual assistant working seamlessly on various platforms.",
+          "area": "Platform Integration",
+          "responsibilities": [],
+          "execution_type": "llm",
+          "parent": "719c2755-e830-42de-ba28-93bb8f0eb3f8",
+          "dependencies": [],
+          "subtasks": [],
+          "prompt": {
+            "system": "You are an expert autonomous agent collaborating in a multi-step project.\nYour responsibility is to complete your assigned task using all available context and previous results.\nAlways act as the main expert for your task: be decisive, avoid repetition, and provide clear, actionable outputs.\nDo NOT include any explanations, comments, or introductory phrases in your output.",
+            "user": "=== PROJECT ===\nTitle: Build a virtual assistant to help high school students learn mathematics.\n\n\n=== AREA ===\nTitle: Platform Integration\nDescription: Deals with integrating the virtual assistant into various platforms for accessibility.\n\n\n\n\n=== CURRENT TASK ===\nTitle: Ensure Cross-Platform Compatibility\nDescription: Test and optimize the virtual assistant to ensure it functions correctly across different platforms such as web and mobile.\nExpected Output: Virtual assistant working seamlessly on various platforms.\n\n\n\n=== INSTRUCTION ===\nYou are responsible for completing the current task as part of the overall project.\nUse all available context, including dependency and previous results, but present your answer as your own expert recommendation or decision.\nDo NOT use phrases like 'Based on previous research', 'According to earlier results', or any introductory statements.\nRespond directly and professionally, as if you are the main expert responsible for this part of the project.\nIf the task requires an external system or manual intervention, specify this clearly."
+          },
+          "result": "To ensure cross-platform compatibility, conduct thorough testing of the virtual assistant on different platforms such as web browsers (Chrome, Firefox, Safari) and mobile devices (iOS, Android). Identify and address any functionality or display issues that arise on each platform. Optimize the user interface and experience to ensure seamless operation across all platforms. Make necessary adjustments to the codebase to enhance compatibility where needed. Once testing and optimization are complete, verify that the virtual assistant works smoothly on various platforms before final implementation."
+        },
+        {
+          "task_id": "4060bcb4-3580-4499-a27a-b12d58617542",
+          "title": "Implement OAuth for Platform Authentication",
+          "description": "Integrate OAuth protocols to securely authenticate users and provide access to the virtual assistant on different platforms.",
+          "expected_output": "Secure user authentication mechanism through OAuth.",
+          "area": "Platform Integration",
+          "responsibilities": [],
+          "execution_type": "llm",
+          "parent": "719c2755-e830-42de-ba28-93bb8f0eb3f8",
+          "dependencies": [],
+          "subtasks": [],
+          "prompt": {
+            "system": "You are an expert autonomous agent collaborating in a multi-step project.\nYour responsibility is to complete your assigned task using all available context and previous results.\nAlways act as the main expert for your task: be decisive, avoid repetition, and provide clear, actionable outputs.\nDo NOT include any explanations, comments, or introductory phrases in your output.",
+            "user": "=== PROJECT ===\nTitle: Build a virtual assistant to help high school students learn mathematics.\n\n\n=== AREA ===\nTitle: Platform Integration\nDescription: Deals with integrating the virtual assistant into various platforms for accessibility.\n\n\n\n\n=== CURRENT TASK ===\nTitle: Implement OAuth for Platform Authentication\nDescription: Integrate OAuth protocols to securely authenticate users and provide access to the virtual assistant on different platforms.\nExpected Output: Secure user authentication mechanism through OAuth.\n\n\n\n=== INSTRUCTION ===\nYou are responsible for completing the current task as part of the overall project.\nUse all available context, including dependency and previous results, but present your answer as your own expert recommendation or decision.\nDo NOT use phrases like 'Based on previous research', 'According to earlier results', or any introductory statements.\nRespond directly and professionally, as if you are the main expert responsible for this part of the project.\nIf the task requires an external system or manual intervention, specify this clearly."
+          },
+          "result": "Implement OAuth 2.0 for secure user authentication mechanism through OAuth to provide access to the virtual assistant on different platforms. Ensure proper integration and configuration to enable seamless and safe authentication for high school students using the virtual assistant."
+        }
+      ],
+      "result": {
+        "Develop APIs for Platform Integration": "I will develop the necessary APIs for platform integration to enable seamless communication and data exchange between the virtual assistant and various platforms. The APIs will be designed to ensure efficient and effective interaction, enhancing the accessibility of the virtual assistant across different systems. I will provide the functional APIs for platform integration as the expected output for this task.",
+        "Ensure Cross-Platform Compatibility": "To ensure cross-platform compatibility, conduct thorough testing of the virtual assistant on different platforms such as web browsers (Chrome, Firefox, Safari) and mobile devices (iOS, Android). Identify and address any functionality or display issues that arise on each platform. Optimize the user interface and experience to ensure seamless operation across all platforms. Make necessary adjustments to the codebase to enhance compatibility where needed. Once testing and optimization are complete, verify that the virtual assistant works smoothly on various platforms before final implementation.",
+        "Implement OAuth for Platform Authentication": "Implement OAuth 2.0 for secure user authentication mechanism through OAuth to provide access to the virtual assistant on different platforms. Ensure proper integration and configuration to enable seamless and safe authentication for high school students using the virtual assistant."
+      }
+    }
+  ],
+  "result": {
+    "Core Features": {
+      "Interactive Math Lessons": "Develop interactive math lessons covering topics such as algebra, geometry, trigonometry, and calculus. Include a mix of text explanations, visual aids, and interactive exercises to engage students. Ensure the lessons progress in difficulty levels to cater to various student abilities. Provide immediate feedback on exercises to reinforce learning. Aim for a balance between challenge and support to keep students motivated and learning effectively.",
+      "Step-by-step Solutions": "Develop a feature that generates step-by-step solutions for math problems, including detailed explanations of each step taken to arrive at the solution. Ensure the solutions are clear, concise, and easy to follow for high school students. If necessary, integrate this feature with the virtual assistant's existing math problem-solving capabilities.",
+      "Practice Quizzes": "I recommend creating practice quizzes for high school students with varying difficulty levels covering different math concepts such as algebra, geometry, trigonometry, and calculus. Include a mix of multiple-choice questions, short answer questions, and problem-solving questions to assess students' understanding comprehensively. Ensure that each quiz is structured logically, progressively increasing in complexity to challenge students at different levels. Provide immediate feedback on quiz completion to help students identify areas for improvement. Consider incorporating a time limit for each quiz to simulate exam conditions and enhance time management skills."
+    },
+    "Interaction Flow": {
+      "Design User-Friendly Interface for Math Exercises": "I recommend designing a clean and visually engaging interface for math exercises. Use a simple layout with clear instructions and interactive elements. Incorporate colors that are easy on the eyes and provide good contrast for readability. Include features like input fields, buttons, and progress indicators to guide users through the exercises. Ensure that the interface is responsive and works well on different devices. Aim for a design that motivates students to engage with the math exercises effectively.",
+      "Implement Logical Progression in Lesson Delivery": "Develop a structured progression in lesson delivery by organizing the content from basic to complex concepts. Start with foundational topics and gradually introduce more advanced material. Use a combination of text explanations, visual aids, interactive examples, and practice questions to engage students throughout the lesson. Ensure each concept builds upon the previous one to create a logical flow of learning. Additionally, provide clear transitions between topics to help students follow the lesson easily. This approach will help maintain student interest and comprehension while facilitating a smooth learning experience.",
+      "Optimize Navigation for Seamless User Experience": "To optimize navigation for a seamless user experience, implement a centralized menu system that categorizes different math learning activities such as tutorials, practice exercises, quizzes, and progress tracking. Include clear labels and intuitive icons for each category to guide users effectively. Additionally, incorporate a search function to allow users to quickly find specific topics or activities. Ensure consistent design elements and easy access to the main menu from any screen within the virtual assistant. Conduct user testing to gather feedback and make further improvements if necessary."
+    },
+    "Topics Covered": {
+      "Identify High School Math Curriculum": "Algebra\nGeometry\nTrigonometry\nCalculus\nStatistics\nProbability",
+      "Define Key Concepts for Each Math Subject": "- Algebra:\n  - Linear equations\n  - Quadratic equations\n  - Exponents and radicals\n  - Polynomials\n  - Factoring\n  - Systems of equations\n\n- Geometry:\n  - Basic shapes (e.g., triangles, circles, squares)\n  - Angles and lines\n  - Perimeter and area\n  - Volume and surface area\n  - Similarity and congruence\n  - Transformations\n\n- Trigonometry:\n  - Trigonometric functions (sine, cosine, tangent)\n  - Right triangle trigonometry\n  - Trigonometric identities\n  - Solving trigonometric equations\n  - Graphs of trigonometric functions\n  - Applications of trigonometry\n\n- Calculus:\n  - Limits and continuity\n  - Differentiation\n  - Integration\n  - Applications of derivatives\n  - Applications of integrals\n  - Differential equations\n\n- Statistics:\n  - Data analysis\n  - Descriptive statistics\n  - Probability distributions\n  - Sampling and estimation\n  - Hypothesis testing\n  - Regression and correlation\n\n- Probability:\n  - Basic probability rules\n  - Conditional probability\n  - Combinatorics\n  - Probability distributions\n  - Expected value\n  - Applications of probability",
+      "Include Algebra Topics": "- Equations:\n  - Linear equations\n  - Quadratic equations\n  - Systems of equations\n\n- Inequalities:\n  - Linear inequalities\n  - Quadratic inequalities\n\n- Functions:\n  - Function notation\n  - Domain and range\n  - Graphing functions\n  - Composite functions\n\n- Polynomials:\n  - Operations with polynomials\n  - Factoring polynomials\n  - Polynomial division\n  - Polynomial functions",
+      "Include Geometry Topics": "- Geometry Topics:\n  - Basic shapes (e.g., triangles, circles, squares)\n  - Angles and lines\n  - Perimeter and area\n  - Volume and surface area\n  - Similarity and congruence\n  - Transformations\n  - Theorems (e.g., Pythagorean theorem, Triangle Sum theorem)\n  - Properties of polygons\n  - Circles (e.g., circumference, area, central angles)\n  - Coordinate geometry\n  - Geometric constructions",
+      "Include Calculus Topics": "- Calculus Topics:\n  - Limits and Continuity\n  - Differentiation\n  - Integration\n  - Applications of Derivatives\n  - Applications of Integrals\n  - Differential Equations"
+    },
+    "User Feedback Mechanisms": {
+      "Develop Feedback Survey": "1. How would you rate the overall helpfulness of the virtual assistant in assisting you with your math learning? (Scale of 1-5)\n   \n2. Did you find the explanations provided by the virtual assistant easy to understand? (Yes/No)\n   \n3. How satisfied are you with the variety of topics covered by the virtual assistant? (Scale of 1-5)\n   \n4. Were the practice exercises and quizzes helpful in reinforcing your understanding of mathematical concepts? (Yes/No)\n   \n5. How would you rate the responsiveness of the virtual assistant in addressing your queries or concerns? (Scale of 1-5)\n   \n6. Did you find the virtual assistant easy to navigate and use? (Yes/No)\n   \n7. What additional features or improvements would you like to see in the virtual assistant to enhance your math learning experience? (Open-ended)\n   \n8. How likely are you to recommend the virtual assistant to a friend for math learning? (Scale of 1-5)",
+      "Implement Feedback Analysis System": "Implement a feedback analysis system that can process the feedback data collected from students. Set up a data analysis tool or platform that can identify trends, common issues, and areas for improvement based on the feedback received. Ensure that the system can generate reports or visualizations to present the analyzed feedback data effectively. This system should be able to provide actionable insights to improve the virtual assistant and enhance the overall learning experience for high school students.",
+      "Integrate Feedback-Driven Improvements": "Integrate the insights from the feedback analysis system into the virtual assistant to make necessary adjustments and enhancements. Update the virtual assistant based on the identified trends, common issues, and areas for improvement to enhance the overall learning experience for high school students. Ensure that the feedback-driven improvements are implemented effectively to address student needs and optimize the performance of the virtual assistant."
+    },
+    "Platform Integration": {
+      "Develop APIs for Platform Integration": "I will develop the necessary APIs for platform integration to enable seamless communication and data exchange between the virtual assistant and various platforms. The APIs will be designed to ensure efficient and effective interaction, enhancing the accessibility of the virtual assistant across different systems. I will provide the functional APIs for platform integration as the expected output for this task.",
+      "Ensure Cross-Platform Compatibility": "To ensure cross-platform compatibility, conduct thorough testing of the virtual assistant on different platforms such as web browsers (Chrome, Firefox, Safari) and mobile devices (iOS, Android). Identify and address any functionality or display issues that arise on each platform. Optimize the user interface and experience to ensure seamless operation across all platforms. Make necessary adjustments to the codebase to enhance compatibility where needed. Once testing and optimization are complete, verify that the virtual assistant works smoothly on various platforms before final implementation.",
+      "Implement OAuth for Platform Authentication": "Implement OAuth 2.0 for secure user authentication mechanism through OAuth to provide access to the virtual assistant on different platforms. Ensure proper integration and configuration to enable seamless and safe authentication for high school students using the virtual assistant."
+    }
+  },
+  "_metadata": {
+    "clarified_description": "Build a virtual assistant to help high school students learn mathematics.",
+    "expected_output": "A functional specification for the assistant including core features, interaction flow, topics covered, user feedback mechanisms, and platform integration.",
+    "case_id": "CASE07_ORIG",
+    "timestamp": "2025-06-26T17:53:57.674569",
+    "filename": "20250626_175357_CASE07_ORIG_task_tree.json"
+  }
+}

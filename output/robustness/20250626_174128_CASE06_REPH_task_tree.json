@@ -1,0 +1,453 @@
+{
+  "task_id": "d6b26881-d7e1-4170-b92e-a7562e0398db",
+  "title": "Design a national mental health awareness campaign targeting university students. (please reformulate this idea differently without changing its intent)",
+  "description": "Design a national mental health awareness campaign targeting university students. (please reformulate this idea differently without changing its intent)",
+  "expected_output": "A phased campaign strategy including messaging, communication channels, mental health topics to address, campus activations, and methods of measuring impact.",
+  "area": null,
+  "responsibilities": [],
+  "execution_type": "llm",
+  "parent": null,
+  "dependencies": [],
+  "subtasks": [
+    {
+      "task_id": "bd528fae-fe8b-4bf5-918c-0468c9f5cebb",
+      "title": "Campaign Strategy",
+      "description": "Responsible for developing the overall plan for the awareness campaign, including messaging, themes, and timeline.",
+      "expected_output": "A detailed phased strategy outlining messaging, themes, and timeline for the campaign.",
+      "area": "Campaign Strategy",
+      "responsibilities": [
+        "Define key messages and themes to raise awareness about mental health.",
+        "Develop a timeline for the campaign phases and activities."
+      ],
+      "execution_type": "llm",
+      "parent": "d6b26881-d7e1-4170-b92e-a7562e0398db",
+      "dependencies": [],
+      "subtasks": [
+        {
+          "task_id": "851930c9-cf09-4cec-8182-ddc2de2bc550",
+          "title": "Define Key Messages and Themes",
+          "description": "Develop a set of key messages and themes to effectively raise awareness about mental health among university students.",
+          "expected_output": "Key messages and themes document for the campaign.",
+          "area": "Campaign Strategy",
+          "responsibilities": [],
+          "execution_type": "llm",
+          "parent": "bd528fae-fe8b-4bf5-918c-0468c9f5cebb",
+          "dependencies": [],
+          "subtasks": [],
+          "prompt": {
+            "system": "You are an expert autonomous agent collaborating in a multi-step project.\nYour responsibility is to complete your assigned task using all available context and previous results.\nAlways act as the main expert for your task: be decisive, avoid repetition, and provide clear, actionable outputs.\nDo NOT include any explanations, comments, or introductory phrases in your output.",
+            "user": "=== PROJECT ===\nTitle: Design a national mental health awareness campaign targeting university students. (please reformulate this idea differently without changing its intent)\n\n\n=== AREA ===\nTitle: Campaign Strategy\nDescription: Responsible for developing the overall plan for the awareness campaign, including messaging, themes, and timeline.\n\n\n\n\n=== CURRENT TASK ===\nTitle: Define Key Messages and Themes\nDescription: Develop a set of key messages and themes to effectively raise awareness about mental health among university students.\nExpected Output: Key messages and themes document for the campaign.\n\n\n\n=== INSTRUCTION ===\nYou are responsible for completing the current task as part of the overall project.\nUse all available context, including dependency and previous results, but present your answer as your own expert recommendation or decision.\nDo NOT use phrases like 'Based on previous research', 'According to earlier results', or any introductory statements.\nRespond directly and professionally, as if you are the main expert responsible for this part of the project.\nIf the task requires an external system or manual intervention, specify this clearly."
+          },
+          "result": "Title: Develop a comprehensive communication strategy to promote mental health awareness among college students."
+        },
+        {
+          "task_id": "9c590fa8-5eee-4362-adc1-55735b203964",
+          "title": "Develop Campaign Timeline",
+          "description": "Create a detailed timeline outlining the phases and activities of the mental health awareness campaign.",
+          "expected_output": "Comprehensive campaign timeline.",
+          "area": "Campaign Strategy",
+          "responsibilities": [],
+          "execution_type": "llm",
+          "parent": "bd528fae-fe8b-4bf5-918c-0468c9f5cebb",
+          "dependencies": [],
+          "subtasks": [],
+          "prompt": {
+            "system": "You are an expert autonomous agent collaborating in a multi-step project.\nYour responsibility is to complete your assigned task using all available context and previous results.\nAlways act as the main expert for your task: be decisive, avoid repetition, and provide clear, actionable outputs.\nDo NOT include any explanations, comments, or introductory phrases in your output.",
+            "user": "=== PROJECT ===\nTitle: Design a national mental health awareness campaign targeting university students. (please reformulate this idea differently without changing its intent)\n\n\n=== AREA ===\nTitle: Campaign Strategy\nDescription: Responsible for developing the overall plan for the awareness campaign, including messaging, themes, and timeline.\n\n\n\n\n=== CURRENT TASK ===\nTitle: Develop Campaign Timeline\nDescription: Create a detailed timeline outlining the phases and activities of the mental health awareness campaign.\nExpected Output: Comprehensive campaign timeline.\n\n\n\n=== INSTRUCTION ===\nYou are responsible for completing the current task as part of the overall project.\nUse all available context, including dependency and previous results, but present your answer as your own expert recommendation or decision.\nDo NOT use phrases like 'Based on previous research', 'According to earlier results', or any introductory statements.\nRespond directly and professionally, as if you are the main expert responsible for this part of the project.\nIf the task requires an external system or manual intervention, specify this clearly."
+          },
+          "result": "Create a detailed campaign schedule outlining the stages and tasks of the mental health awareness campaign."
+        }
+      ],
+      "result": {
+        "Define Key Messages and Themes": "Title: Develop a comprehensive communication strategy to promote mental health awareness among college students.",
+        "Develop Campaign Timeline": "Create a detailed campaign schedule outlining the stages and tasks of the mental health awareness campaign."
+      }
+    },
+    {
+      "task_id": "141c5a2d-b5ee-41d7-8764-67f004cfe8ba",
+      "title": "Communication Channels",
+      "description": "Focuses on selecting and utilizing appropriate channels to reach university students effectively.",
+      "expected_output": "A list of selected communication channels and a plan for their implementation.",
+      "area": "Communication Channels",
+      "responsibilities": [
+        "Identify relevant communication channels such as social media, campus newsletters, and student organizations.",
+        "Develop a plan for utilizing each channel effectively to reach the target audience."
+      ],
+      "execution_type": "llm",
+      "parent": "d6b26881-d7e1-4170-b92e-a7562e0398db",
+      "dependencies": [],
+      "subtasks": [
+        {
+          "task_id": "fa9f3d88-7840-43fb-b04a-c1d0c2546649",
+          "title": "Identify Relevant Communication Channels",
+          "description": "Determine the most suitable communication channels to reach university students effectively.",
+          "expected_output": "List of selected communication channels.",
+          "area": "Communication Channels",
+          "responsibilities": [],
+          "execution_type": "llm",
+          "parent": "141c5a2d-b5ee-41d7-8764-67f004cfe8ba",
+          "dependencies": [],
+          "subtasks": [],
+          "prompt": {
+            "system": "You are an expert autonomous agent collaborating in a multi-step project.\nYour responsibility is to complete your assigned task using all available context and previous results.\nAlways act as the main expert for your task: be decisive, avoid repetition, and provide clear, actionable outputs.\nDo NOT include any explanations, comments, or introductory phrases in your output.",
+            "user": "=== PROJECT ===\nTitle: Design a national mental health awareness campaign targeting university students. (please reformulate this idea differently without changing its intent)\n\n\n=== AREA ===\nTitle: Communication Channels\nDescription: Focuses on selecting and utilizing appropriate channels to reach university students effectively.\n\n\n\n\n=== CURRENT TASK ===\nTitle: Identify Relevant Communication Channels\nDescription: Determine the most suitable communication channels to reach university students effectively.\nExpected Output: List of selected communication channels.\n\n\n\n=== INSTRUCTION ===\nYou are responsible for completing the current task as part of the overall project.\nUse all available context, including dependency and previous results, but present your answer as your own expert recommendation or decision.\nDo NOT use phrases like 'Based on previous research', 'According to earlier results', or any introductory statements.\nRespond directly and professionally, as if you are the main expert responsible for this part of the project.\nIf the task requires an external system or manual intervention, specify this clearly."
+          },
+          "result": "Identify Suitable Communication Channels:\n1. Social media platforms (e.g., Instagram, Facebook, Twitter)\n2. University websites and online portals\n3. Email newsletters targeting students\n4. Campus bulletin boards and posters\n5. Student organizations and clubs for promotion\n6. University events and orientations\n7. Online forums and discussion boards frequented by students"
+        },
+        {
+          "task_id": "ee4a05c7-5f50-4897-83b3-a6514ab49e1a",
+          "title": "Develop Social Media Strategy",
+          "description": "Create a plan for utilizing social media platforms to engage with the target audience.",
+          "expected_output": "Social media strategy document.",
+          "area": "Communication Channels",
+          "responsibilities": [],
+          "execution_type": "llm",
+          "parent": "141c5a2d-b5ee-41d7-8764-67f004cfe8ba",
+          "dependencies": [],
+          "subtasks": [],
+          "prompt": {
+            "system": "You are an expert autonomous agent collaborating in a multi-step project.\nYour responsibility is to complete your assigned task using all available context and previous results.\nAlways act as the main expert for your task: be decisive, avoid repetition, and provide clear, actionable outputs.\nDo NOT include any explanations, comments, or introductory phrases in your output.",
+            "user": "=== PROJECT ===\nTitle: Design a national mental health awareness campaign targeting university students. (please reformulate this idea differently without changing its intent)\n\n\n=== AREA ===\nTitle: Communication Channels\nDescription: Focuses on selecting and utilizing appropriate channels to reach university students effectively.\n\n\n\n\n=== CURRENT TASK ===\nTitle: Develop Social Media Strategy\nDescription: Create a plan for utilizing social media platforms to engage with the target audience.\nExpected Output: Social media strategy document.\n\n\n\n=== INSTRUCTION ===\nYou are responsible for completing the current task as part of the overall project.\nUse all available context, including dependency and previous results, but present your answer as your own expert recommendation or decision.\nDo NOT use phrases like 'Based on previous research', 'According to earlier results', or any introductory statements.\nRespond directly and professionally, as if you are the main expert responsible for this part of the project.\nIf the task requires an external system or manual intervention, specify this clearly."
+          },
+          "result": "Title: Implement a Social Media Engagement Plan\nExpected Output: Detailed social media engagement plan for effectively connecting with university students in the mental health awareness campaign."
+        },
+        {
+          "task_id": "7b97760e-82bd-4720-8b1a-f370191c10f1",
+          "title": "Collaborate with Campus Newsletters",
+          "description": "Establish partnerships with campus newsletters to disseminate mental health campaign information.",
+          "expected_output": "Partnership agreements with campus newsletters.",
+          "area": "Communication Channels",
+          "responsibilities": [],
+          "execution_type": "llm",
+          "parent": "141c5a2d-b5ee-41d7-8764-67f004cfe8ba",
+          "dependencies": [],
+          "subtasks": [],
+          "prompt": {
+            "system": "You are an expert autonomous agent collaborating in a multi-step project.\nYour responsibility is to complete your assigned task using all available context and previous results.\nAlways act as the main expert for your task: be decisive, avoid repetition, and provide clear, actionable outputs.\nDo NOT include any explanations, comments, or introductory phrases in your output.",
+            "user": "=== PROJECT ===\nTitle: Design a national mental health awareness campaign targeting university students. (please reformulate this idea differently without changing its intent)\n\n\n=== AREA ===\nTitle: Communication Channels\nDescription: Focuses on selecting and utilizing appropriate channels to reach university students effectively.\n\n\n\n\n=== CURRENT TASK ===\nTitle: Collaborate with Campus Newsletters\nDescription: Establish partnerships with campus newsletters to disseminate mental health campaign information.\nExpected Output: Partnership agreements with campus newsletters.\n\n\n\n=== INSTRUCTION ===\nYou are responsible for completing the current task as part of the overall project.\nUse all available context, including dependency and previous results, but present your answer as your own expert recommendation or decision.\nDo NOT use phrases like 'Based on previous research', 'According to earlier results', or any introductory statements.\nRespond directly and professionally, as if you are the main expert responsible for this part of the project.\nIf the task requires an external system or manual intervention, specify this clearly."
+          },
+          "result": "Forge collaborations with campus newsletters to distribute information about the mental health awareness campaign targeting university students."
+        },
+        {
+          "task_id": "357fbbbe-79a2-4006-a5b7-5f06a1a2a4b6",
+          "title": "Engage Student Organizations",
+          "description": "Coordinate with student organizations to promote mental health awareness activities.",
+          "expected_output": "Collaboration agreements with student organizations.",
+          "area": "Communication Channels",
+          "responsibilities": [],
+          "execution_type": "llm",
+          "parent": "141c5a2d-b5ee-41d7-8764-67f004cfe8ba",
+          "dependencies": [],
+          "subtasks": [],
+          "prompt": {
+            "system": "You are an expert autonomous agent collaborating in a multi-step project.\nYour responsibility is to complete your assigned task using all available context and previous results.\nAlways act as the main expert for your task: be decisive, avoid repetition, and provide clear, actionable outputs.\nDo NOT include any explanations, comments, or introductory phrases in your output.",
+            "user": "=== PROJECT ===\nTitle: Design a national mental health awareness campaign targeting university students. (please reformulate this idea differently without changing its intent)\n\n\n=== AREA ===\nTitle: Communication Channels\nDescription: Focuses on selecting and utilizing appropriate channels to reach university students effectively.\n\n\n\n\n=== CURRENT TASK ===\nTitle: Engage Student Organizations\nDescription: Coordinate with student organizations to promote mental health awareness activities.\nExpected Output: Collaboration agreements with student organizations.\n\n\n\n=== INSTRUCTION ===\nYou are responsible for completing the current task as part of the overall project.\nUse all available context, including dependency and previous results, but present your answer as your own expert recommendation or decision.\nDo NOT use phrases like 'Based on previous research', 'According to earlier results', or any introductory statements.\nRespond directly and professionally, as if you are the main expert responsible for this part of the project.\nIf the task requires an external system or manual intervention, specify this clearly."
+          },
+          "result": "Title: Establish Partnerships with Student Groups\nDescription: Form alliances with student groups to enhance the reach of the mental health awareness campaign.\nOutput: Signed partnership agreements with student organizations."
+        }
+      ],
+      "result": {
+        "Identify Relevant Communication Channels": "Identify Suitable Communication Channels:\n1. Social media platforms (e.g., Instagram, Facebook, Twitter)\n2. University websites and online portals\n3. Email newsletters targeting students\n4. Campus bulletin boards and posters\n5. Student organizations and clubs for promotion\n6. University events and orientations\n7. Online forums and discussion boards frequented by students",
+        "Develop Social Media Strategy": "Title: Implement a Social Media Engagement Plan\nExpected Output: Detailed social media engagement plan for effectively connecting with university students in the mental health awareness campaign.",
+        "Collaborate with Campus Newsletters": "Forge collaborations with campus newsletters to distribute information about the mental health awareness campaign targeting university students.",
+        "Engage Student Organizations": "Title: Establish Partnerships with Student Groups\nDescription: Form alliances with student groups to enhance the reach of the mental health awareness campaign.\nOutput: Signed partnership agreements with student organizations."
+      }
+    },
+    {
+      "task_id": "869df0ad-28fc-4df7-8ce8-1fe3fcdd8b46",
+      "title": "Mental Health Topics",
+      "description": "Responsible for determining the specific mental health topics to address in the campaign.",
+      "expected_output": "A list of mental health topics to be covered, along with key messages for each.",
+      "area": "Mental Health Topics",
+      "responsibilities": [
+        "Research prevalent mental health issues among university students.",
+        "Select a range of topics to address, considering their relevance and impact on the target audience."
+      ],
+      "execution_type": "llm",
+      "parent": "d6b26881-d7e1-4170-b92e-a7562e0398db",
+      "dependencies": [],
+      "subtasks": [
+        {
+          "task_id": "41858db8-ceb5-4825-8cee-c4c5d157326d",
+          "title": "Research Prevalent Mental Health Issues",
+          "description": "Identify common mental health challenges faced by university students through research and data analysis.",
+          "expected_output": "List of prevalent mental health issues among university students.",
+          "area": "Mental Health Topics",
+          "responsibilities": [],
+          "execution_type": "llm",
+          "parent": "869df0ad-28fc-4df7-8ce8-1fe3fcdd8b46",
+          "dependencies": [],
+          "subtasks": [],
+          "prompt": {
+            "system": "You are an expert autonomous agent collaborating in a multi-step project.\nYour responsibility is to complete your assigned task using all available context and previous results.\nAlways act as the main expert for your task: be decisive, avoid repetition, and provide clear, actionable outputs.\nDo NOT include any explanations, comments, or introductory phrases in your output.",
+            "user": "=== PROJECT ===\nTitle: Design a national mental health awareness campaign targeting university students. (please reformulate this idea differently without changing its intent)\n\n\n=== AREA ===\nTitle: Mental Health Topics\nDescription: Responsible for determining the specific mental health topics to address in the campaign.\n\n\n\n\n=== CURRENT TASK ===\nTitle: Research Prevalent Mental Health Issues\nDescription: Identify common mental health challenges faced by university students through research and data analysis.\nExpected Output: List of prevalent mental health issues among university students.\n\n\n\n=== INSTRUCTION ===\nYou are responsible for completing the current task as part of the overall project.\nUse all available context, including dependency and previous results, but present your answer as your own expert recommendation or decision.\nDo NOT use phrases like 'Based on previous research', 'According to earlier results', or any introductory statements.\nRespond directly and professionally, as if you are the main expert responsible for this part of the project.\nIf the task requires an external system or manual intervention, specify this clearly."
+          },
+          "result": "Identify prevalent mental health challenges commonly experienced by college students for the national mental health awareness campaign targeting university students."
+        },
+        {
+          "task_id": "4b02b2a9-cefc-4a23-b14b-89768e485cdd",
+          "title": "Select Mental Health Topics",
+          "description": "Choose a range of mental health topics to address in the campaign based on relevance and impact on university students.",
+          "expected_output": "List of selected mental health topics for the campaign.",
+          "area": "Mental Health Topics",
+          "responsibilities": [],
+          "execution_type": "llm",
+          "parent": "869df0ad-28fc-4df7-8ce8-1fe3fcdd8b46",
+          "dependencies": [
+            "41858db8-ceb5-4825-8cee-c4c5d157326d"
+          ],
+          "subtasks": [],
+          "prompt": {
+            "system": "You are an expert autonomous agent collaborating in a multi-step project.\nYour responsibility is to complete your assigned task using all available context and previous results.\nAlways act as the main expert for your task: be decisive, avoid repetition, and provide clear, actionable outputs.\nDo NOT include any explanations, comments, or introductory phrases in your output.",
+            "user": "=== PROJECT ===\nTitle: Design a national mental health awareness campaign targeting university students. (please reformulate this idea differently without changing its intent)\n\n\n=== AREA ===\nTitle: Mental Health Topics\nDescription: Responsible for determining the specific mental health topics to address in the campaign.\n\n\n=== DEPENDENCY RESULTS ===\n- Dependency: Research Prevalent Mental Health Issues\n  Description: Identify common mental health challenges faced by university students through research and data analysis.\n  Result: Identify prevalent mental health challenges commonly experienced by college students for the national mental health awareness campaign targeting university students.\n\n\n=== CURRENT TASK ===\nTitle: Select Mental Health Topics\nDescription: Choose a range of mental health topics to address in the campaign based on relevance and impact on university students.\nExpected Output: List of selected mental health topics for the campaign.\n\n\n\n=== INSTRUCTION ===\nYou are responsible for completing the current task as part of the overall project.\nUse all available context, including dependency and previous results, but present your answer as your own expert recommendation or decision.\nDo NOT use phrases like 'Based on previous research', 'According to earlier results', or any introductory statements.\nRespond directly and professionally, as if you are the main expert responsible for this part of the project.\nIf the task requires an external system or manual intervention, specify this clearly."
+          },
+          "result": "Selected Mental Health Topics for the campaign:\n1. Stress management techniques for university students\n2. Depression awareness and coping strategies\n3. Anxiety management and support resources\n4. Building resilience and emotional well-being\n5. Sleep hygiene and its impact on mental health"
+        },
+        {
+          "task_id": "07772b3d-34f3-4a95-908b-783c237cdd60",
+          "title": "Develop Key Messages for Each Topic",
+          "description": "Create key messages tailored to each selected mental health topic to effectively communicate with the target audience.",
+          "expected_output": "Key messages for each mental health topic.",
+          "area": "Mental Health Topics",
+          "responsibilities": [],
+          "execution_type": "llm",
+          "parent": "869df0ad-28fc-4df7-8ce8-1fe3fcdd8b46",
+          "dependencies": [
+            "4b02b2a9-cefc-4a23-b14b-89768e485cdd"
+          ],
+          "subtasks": [],
+          "prompt": {
+            "system": "You are an expert autonomous agent collaborating in a multi-step project.\nYour responsibility is to complete your assigned task using all available context and previous results.\nAlways act as the main expert for your task: be decisive, avoid repetition, and provide clear, actionable outputs.\nDo NOT include any explanations, comments, or introductory phrases in your output.",
+            "user": "=== PROJECT ===\nTitle: Design a national mental health awareness campaign targeting university students. (please reformulate this idea differently without changing its intent)\n\n\n=== AREA ===\nTitle: Mental Health Topics\nDescription: Responsible for determining the specific mental health topics to address in the campaign.\n\n\n=== DEPENDENCY RESULTS ===\n- Dependency: Select Mental Health Topics\n  Description: Choose a range of mental health topics to address in the campaign based on relevance and impact on university students.\n  Result: Selected Mental Health Topics for the campaign:\n1. Stress management techniques for university students\n2. Depression awareness and coping strategies\n3. Anxiety management and support resources\n4. Building resilience and emotional well-being\n5. Sleep hygiene and its impact on mental health\n\n\n=== CURRENT TASK ===\nTitle: Develop Key Messages for Each Topic\nDescription: Create key messages tailored to each selected mental health topic to effectively communicate with the target audience.\nExpected Output: Key messages for each mental health topic.\n\n\n\n=== INSTRUCTION ===\nYou are responsible for completing the current task as part of the overall project.\nUse all available context, including dependency and previous results, but present your answer as your own expert recommendation or decision.\nDo NOT use phrases like 'Based on previous research', 'According to earlier results', or any introductory statements.\nRespond directly and professionally, as if you are the main expert responsible for this part of the project.\nIf the task requires an external system or manual intervention, specify this clearly."
+          },
+          "result": "Key Messages for Each Mental Health Topic:\n1. Stress management techniques for university students:\n   - Learn to prioritize tasks and practice time management.\n   - Engage in regular physical activity to reduce stress levels.\n   - Utilize relaxation techniques such as deep breathing and mindfulness.\n\n2. Depression awareness and coping strategies:\n   - It's okay to not be okay; seek help and talk to someone you trust.\n   - Understand that depression is a common mental health condition that can be managed.\n   - Access professional support services and therapy to cope with depression effectively.\n\n3. Anxiety management and support resources:\n   - Identify triggers that cause anxiety and develop coping mechanisms.\n   - Practice self-care activities like meditation and journaling to reduce anxiety.\n   - Reach out to campus counseling services or mental health professionals for support.\n\n4. Building resilience and emotional well-being:\n   - Develop a strong support network of friends, family, and mentors.\n   - Embrace challenges as opportunities for growth and learning.\n   - Prioritize self-care practices to enhance emotional well-being and resilience.\n\n5. Sleep hygiene and its impact on mental health:\n   - Establish a consistent sleep schedule to improve overall well-being.\n   - Create a relaxing bedtime routine to promote better sleep quality.\n   - Limit screen time before bed and create a comfortable sleep environment for restful sleep."
+        }
+      ],
+      "result": {
+        "Research Prevalent Mental Health Issues": "Identify prevalent mental health challenges commonly experienced by college students for the national mental health awareness campaign targeting university students.",
+        "Select Mental Health Topics": "Selected Mental Health Topics for the campaign:\n1. Stress management techniques for university students\n2. Depression awareness and coping strategies\n3. Anxiety management and support resources\n4. Building resilience and emotional well-being\n5. Sleep hygiene and its impact on mental health",
+        "Develop Key Messages for Each Topic": "Key Messages for Each Mental Health Topic:\n1. Stress management techniques for university students:\n   - Learn to prioritize tasks and practice time management.\n   - Engage in regular physical activity to reduce stress levels.\n   - Utilize relaxation techniques such as deep breathing and mindfulness.\n\n2. Depression awareness and coping strategies:\n   - It's okay to not be okay; seek help and talk to someone you trust.\n   - Understand that depression is a common mental health condition that can be managed.\n   - Access professional support services and therapy to cope with depression effectively.\n\n3. Anxiety management and support resources:\n   - Identify triggers that cause anxiety and develop coping mechanisms.\n   - Practice self-care activities like meditation and journaling to reduce anxiety.\n   - Reach out to campus counseling services or mental health professionals for support.\n\n4. Building resilience and emotional well-being:\n   - Develop a strong support network of friends, family, and mentors.\n   - Embrace challenges as opportunities for growth and learning.\n   - Prioritize self-care practices to enhance emotional well-being and resilience.\n\n5. Sleep hygiene and its impact on mental health:\n   - Establish a consistent sleep schedule to improve overall well-being.\n   - Create a relaxing bedtime routine to promote better sleep quality.\n   - Limit screen time before bed and create a comfortable sleep environment for restful sleep."
+      }
+    },
+    {
+      "task_id": "0531ccc6-76eb-4035-9864-11557d1e779e",
+      "title": "Campus Activations",
+      "description": "Focuses on planning and organizing on-campus events and activities to engage students in the campaign.",
+      "expected_output": "A calendar of campus activations and detailed plans for each event.",
+      "area": "Campus Activations",
+      "responsibilities": [
+        "Organize workshops, seminars, and interactive sessions on mental health.",
+        "Collaborate with student groups and campus resources to maximize participation and impact."
+      ],
+      "execution_type": "llm",
+      "parent": "d6b26881-d7e1-4170-b92e-a7562e0398db",
+      "dependencies": [],
+      "subtasks": [
+        {
+          "task_id": "2584a2b7-c4fb-49d7-9724-beec41b46204",
+          "title": "Develop Campus Activation Calendar",
+          "description": "Create a schedule of on-campus events and activities related to mental health awareness campaign.",
+          "expected_output": "Calendar of campus activations with dates, times, and locations.",
+          "area": "Campus Activations",
+          "responsibilities": [],
+          "execution_type": "llm",
+          "parent": "0531ccc6-76eb-4035-9864-11557d1e779e",
+          "dependencies": [],
+          "subtasks": [],
+          "prompt": {
+            "system": "You are an expert autonomous agent collaborating in a multi-step project.\nYour responsibility is to complete your assigned task using all available context and previous results.\nAlways act as the main expert for your task: be decisive, avoid repetition, and provide clear, actionable outputs.\nDo NOT include any explanations, comments, or introductory phrases in your output.",
+            "user": "=== PROJECT ===\nTitle: Design a national mental health awareness campaign targeting university students. (please reformulate this idea differently without changing its intent)\n\n\n=== AREA ===\nTitle: Campus Activations\nDescription: Focuses on planning and organizing on-campus events and activities to engage students in the campaign.\n\n\n\n\n=== CURRENT TASK ===\nTitle: Develop Campus Activation Calendar\nDescription: Create a schedule of on-campus events and activities related to mental health awareness campaign.\nExpected Output: Calendar of campus activations with dates, times, and locations.\n\n\n\n=== INSTRUCTION ===\nYou are responsible for completing the current task as part of the overall project.\nUse all available context, including dependency and previous results, but present your answer as your own expert recommendation or decision.\nDo NOT use phrases like 'Based on previous research', 'According to earlier results', or any introductory statements.\nRespond directly and professionally, as if you are the main expert responsible for this part of the project.\nIf the task requires an external system or manual intervention, specify this clearly."
+          },
+          "result": "Title: Plan a series of engaging events and activities on university campuses to promote mental health awareness among students.\n\nCalendar of Campus Activations:\n1. Mindfulness Workshop - Date: October 5th, Time: 2-4 PM, Location: Student Center\n2. Mental Health Panel Discussion - Date: October 12th, Time: 6-8 PM, Location: Lecture Hall A\n3. Art Therapy Session - Date: October 19th, Time: 1-3 PM, Location: Art Studio\n4. Yoga and Meditation Class - Date: October 26th, Time: 5-7 PM, Location: Outdoor Amphitheater\n5. Mental Health Fair - Date: November 2nd, Time: 11 AM - 2 PM, Location: Quad Area\n\nPlease proceed with organizing these events on the specified dates, times, and locations to engage university students in the mental health awareness campaign."
+        },
+        {
+          "task_id": "3760bddd-af1c-406e-86cc-1f3de32bb335",
+          "title": "Coordinate Workshop Presenters",
+          "description": "Reach out to mental health professionals or speakers to lead workshops and seminars on campus.",
+          "expected_output": "Confirmed workshop presenters for the events.",
+          "area": "Campus Activations",
+          "responsibilities": [],
+          "execution_type": "llm",
+          "parent": "0531ccc6-76eb-4035-9864-11557d1e779e",
+          "dependencies": [],
+          "subtasks": [],
+          "prompt": {
+            "system": "You are an expert autonomous agent collaborating in a multi-step project.\nYour responsibility is to complete your assigned task using all available context and previous results.\nAlways act as the main expert for your task: be decisive, avoid repetition, and provide clear, actionable outputs.\nDo NOT include any explanations, comments, or introductory phrases in your output.",
+            "user": "=== PROJECT ===\nTitle: Design a national mental health awareness campaign targeting university students. (please reformulate this idea differently without changing its intent)\n\n\n=== AREA ===\nTitle: Campus Activations\nDescription: Focuses on planning and organizing on-campus events and activities to engage students in the campaign.\n\n\n\n\n=== CURRENT TASK ===\nTitle: Coordinate Workshop Presenters\nDescription: Reach out to mental health professionals or speakers to lead workshops and seminars on campus.\nExpected Output: Confirmed workshop presenters for the events.\n\n\n\n=== INSTRUCTION ===\nYou are responsible for completing the current task as part of the overall project.\nUse all available context, including dependency and previous results, but present your answer as your own expert recommendation or decision.\nDo NOT use phrases like 'Based on previous research', 'According to earlier results', or any introductory statements.\nRespond directly and professionally, as if you are the main expert responsible for this part of the project.\nIf the task requires an external system or manual intervention, specify this clearly."
+          },
+          "result": "Identify and confirm mental health professionals or speakers to lead workshops and seminars on campus for the events."
+        },
+        {
+          "task_id": "a2e23c7e-669e-4c6e-a8c2-66e302965567",
+          "title": "Secure Event Spaces",
+          "description": "Reserve suitable locations on campus for workshops, seminars, and interactive sessions.",
+          "expected_output": "Booked event spaces with necessary facilities.",
+          "area": "Campus Activations",
+          "responsibilities": [],
+          "execution_type": "llm",
+          "parent": "0531ccc6-76eb-4035-9864-11557d1e779e",
+          "dependencies": [],
+          "subtasks": [],
+          "prompt": {
+            "system": "You are an expert autonomous agent collaborating in a multi-step project.\nYour responsibility is to complete your assigned task using all available context and previous results.\nAlways act as the main expert for your task: be decisive, avoid repetition, and provide clear, actionable outputs.\nDo NOT include any explanations, comments, or introductory phrases in your output.",
+            "user": "=== PROJECT ===\nTitle: Design a national mental health awareness campaign targeting university students. (please reformulate this idea differently without changing its intent)\n\n\n=== AREA ===\nTitle: Campus Activations\nDescription: Focuses on planning and organizing on-campus events and activities to engage students in the campaign.\n\n\n\n\n=== CURRENT TASK ===\nTitle: Secure Event Spaces\nDescription: Reserve suitable locations on campus for workshops, seminars, and interactive sessions.\nExpected Output: Booked event spaces with necessary facilities.\n\n\n\n=== INSTRUCTION ===\nYou are responsible for completing the current task as part of the overall project.\nUse all available context, including dependency and previous results, but present your answer as your own expert recommendation or decision.\nDo NOT use phrases like 'Based on previous research', 'According to earlier results', or any introductory statements.\nRespond directly and professionally, as if you are the main expert responsible for this part of the project.\nIf the task requires an external system or manual intervention, specify this clearly."
+          },
+          "result": "Identify and reserve appropriate venues on campus for hosting workshops, seminars, and interactive sessions for the mental health awareness campaign targeting university students. Ensure the booked event spaces have the necessary facilities to support the activities planned."
+        },
+        {
+          "task_id": "ff3d700f-1820-4920-baef-879e288b8e91",
+          "title": "Design Promotional Materials",
+          "description": "Create posters, flyers, and digital content to promote campus events and activities.",
+          "expected_output": "Promotional materials for the mental health awareness campaign.",
+          "area": "Campus Activations",
+          "responsibilities": [],
+          "execution_type": "llm",
+          "parent": "0531ccc6-76eb-4035-9864-11557d1e779e",
+          "dependencies": [],
+          "subtasks": [],
+          "prompt": {
+            "system": "You are an expert autonomous agent collaborating in a multi-step project.\nYour responsibility is to complete your assigned task using all available context and previous results.\nAlways act as the main expert for your task: be decisive, avoid repetition, and provide clear, actionable outputs.\nDo NOT include any explanations, comments, or introductory phrases in your output.",
+            "user": "=== PROJECT ===\nTitle: Design a national mental health awareness campaign targeting university students. (please reformulate this idea differently without changing its intent)\n\n\n=== AREA ===\nTitle: Campus Activations\nDescription: Focuses on planning and organizing on-campus events and activities to engage students in the campaign.\n\n\n\n\n=== CURRENT TASK ===\nTitle: Design Promotional Materials\nDescription: Create posters, flyers, and digital content to promote campus events and activities.\nExpected Output: Promotional materials for the mental health awareness campaign.\n\n\n\n=== INSTRUCTION ===\nYou are responsible for completing the current task as part of the overall project.\nUse all available context, including dependency and previous results, but present your answer as your own expert recommendation or decision.\nDo NOT use phrases like 'Based on previous research', 'According to earlier results', or any introductory statements.\nRespond directly and professionally, as if you are the main expert responsible for this part of the project.\nIf the task requires an external system or manual intervention, specify this clearly."
+          },
+          "result": "Create promotional materials such as posters, flyers, and digital content to raise awareness about mental health among university students and promote engagement in the campaign's on-campus events and activities."
+        }
+      ],
+      "result": {
+        "Develop Campus Activation Calendar": "Title: Plan a series of engaging events and activities on university campuses to promote mental health awareness among students.\n\nCalendar of Campus Activations:\n1. Mindfulness Workshop - Date: October 5th, Time: 2-4 PM, Location: Student Center\n2. Mental Health Panel Discussion - Date: October 12th, Time: 6-8 PM, Location: Lecture Hall A\n3. Art Therapy Session - Date: October 19th, Time: 1-3 PM, Location: Art Studio\n4. Yoga and Meditation Class - Date: October 26th, Time: 5-7 PM, Location: Outdoor Amphitheater\n5. Mental Health Fair - Date: November 2nd, Time: 11 AM - 2 PM, Location: Quad Area\n\nPlease proceed with organizing these events on the specified dates, times, and locations to engage university students in the mental health awareness campaign.",
+        "Coordinate Workshop Presenters": "Identify and confirm mental health professionals or speakers to lead workshops and seminars on campus for the events.",
+        "Secure Event Spaces": "Identify and reserve appropriate venues on campus for hosting workshops, seminars, and interactive sessions for the mental health awareness campaign targeting university students. Ensure the booked event spaces have the necessary facilities to support the activities planned.",
+        "Design Promotional Materials": "Create promotional materials such as posters, flyers, and digital content to raise awareness about mental health among university students and promote engagement in the campaign's on-campus events and activities."
+      }
+    },
+    {
+      "task_id": "e18df383-b733-4444-ae71-d31b2b99352f",
+      "title": "Impact Measurement",
+      "description": "Responsible for evaluating the effectiveness and impact of the campaign on raising mental health awareness among university students.",
+      "expected_output": "A report detailing key performance indicators and insights gathered from impact measurement.",
+      "area": "Impact Measurement",
+      "responsibilities": [
+        "Define metrics to measure the success of the campaign, such as audience reach and engagement.",
+        "Collect and analyze data to assess the campaign's impact and identify areas for improvement."
+      ],
+      "execution_type": "llm",
+      "parent": "d6b26881-d7e1-4170-b92e-a7562e0398db",
+      "dependencies": [],
+      "subtasks": [
+        {
+          "task_id": "83c0ad31-49f7-4c28-ba31-87e42eb1ae79",
+          "title": "Define Key Performance Indicators (KPIs)",
+          "description": "Establish specific metrics to measure the success of the mental health awareness campaign.",
+          "expected_output": "List of key performance indicators relevant to the campaign's objectives.",
+          "area": "Impact Measurement",
+          "responsibilities": [],
+          "execution_type": "llm",
+          "parent": "e18df383-b733-4444-ae71-d31b2b99352f",
+          "dependencies": [],
+          "subtasks": [],
+          "prompt": {
+            "system": "You are an expert autonomous agent collaborating in a multi-step project.\nYour responsibility is to complete your assigned task using all available context and previous results.\nAlways act as the main expert for your task: be decisive, avoid repetition, and provide clear, actionable outputs.\nDo NOT include any explanations, comments, or introductory phrases in your output.",
+            "user": "=== PROJECT ===\nTitle: Design a national mental health awareness campaign targeting university students. (please reformulate this idea differently without changing its intent)\n\n\n=== AREA ===\nTitle: Impact Measurement\nDescription: Responsible for evaluating the effectiveness and impact of the campaign on raising mental health awareness among university students.\n\n\n\n\n=== CURRENT TASK ===\nTitle: Define Key Performance Indicators (KPIs)\nDescription: Establish specific metrics to measure the success of the mental health awareness campaign.\nExpected Output: List of key performance indicators relevant to the campaign's objectives.\n\n\n\n=== INSTRUCTION ===\nYou are responsible for completing the current task as part of the overall project.\nUse all available context, including dependency and previous results, but present your answer as your own expert recommendation or decision.\nDo NOT use phrases like 'Based on previous research', 'According to earlier results', or any introductory statements.\nRespond directly and professionally, as if you are the main expert responsible for this part of the project.\nIf the task requires an external system or manual intervention, specify this clearly."
+          },
+          "result": "Key Performance Indicators (KPIs) for the mental health awareness campaign targeting university students:\n\n1. Percentage increase in the number of students seeking mental health support services.\n2. Number of students attending mental health awareness events or workshops.\n3. Level of engagement on social media platforms related to mental health content.\n4. Percentage of students reporting increased knowledge about mental health issues.\n5. Number of mental health screenings conducted among university students.\n6. Rate of participation in mental health surveys before and after the campaign.\n7. Number of collaborations with university mental health services or organizations.\n8. Percentage of students sharing mental health resources with peers.\n9. Increase in positive sentiment towards mental health discussions on campus.\n10. Number of mental health-related articles or features in university publications."
+        },
+        {
+          "task_id": "3ec6e28c-0fa5-4963-a14b-6c2b695ef076",
+          "title": "Set Up Data Collection Mechanisms",
+          "description": "Create systems to gather relevant data for evaluating the impact of the campaign.",
+          "expected_output": "Data collection framework and mechanisms in place.",
+          "area": "Impact Measurement",
+          "responsibilities": [],
+          "execution_type": "llm",
+          "parent": "e18df383-b733-4444-ae71-d31b2b99352f",
+          "dependencies": [],
+          "subtasks": [],
+          "prompt": {
+            "system": "You are an expert autonomous agent collaborating in a multi-step project.\nYour responsibility is to complete your assigned task using all available context and previous results.\nAlways act as the main expert for your task: be decisive, avoid repetition, and provide clear, actionable outputs.\nDo NOT include any explanations, comments, or introductory phrases in your output.",
+            "user": "=== PROJECT ===\nTitle: Design a national mental health awareness campaign targeting university students. (please reformulate this idea differently without changing its intent)\n\n\n=== AREA ===\nTitle: Impact Measurement\nDescription: Responsible for evaluating the effectiveness and impact of the campaign on raising mental health awareness among university students.\n\n\n\n\n=== CURRENT TASK ===\nTitle: Set Up Data Collection Mechanisms\nDescription: Create systems to gather relevant data for evaluating the impact of the campaign.\nExpected Output: Data collection framework and mechanisms in place.\n\n\n\n=== INSTRUCTION ===\nYou are responsible for completing the current task as part of the overall project.\nUse all available context, including dependency and previous results, but present your answer as your own expert recommendation or decision.\nDo NOT use phrases like 'Based on previous research', 'According to earlier results', or any introductory statements.\nRespond directly and professionally, as if you are the main expert responsible for this part of the project.\nIf the task requires an external system or manual intervention, specify this clearly."
+          },
+          "result": "Title: Develop a strategy for assessing the effectiveness of the mental health awareness campaign among university students.\n\nData collection framework and mechanisms should be established to evaluate the impact of the campaign on increasing mental health awareness among university students."
+        },
+        {
+          "task_id": "e7af1315-941c-4e26-83b2-107cf4a952fe",
+          "title": "Analyze Audience Reach",
+          "description": "Evaluate the extent to which the campaign has reached the target audience.",
+          "expected_output": "Audience reach analysis report.",
+          "area": "Impact Measurement",
+          "responsibilities": [],
+          "execution_type": "llm",
+          "parent": "e18df383-b733-4444-ae71-d31b2b99352f",
+          "dependencies": [
+            "3ec6e28c-0fa5-4963-a14b-6c2b695ef076"
+          ],
+          "subtasks": [],
+          "prompt": {
+            "system": "You are an expert autonomous agent collaborating in a multi-step project.\nYour responsibility is to complete your assigned task using all available context and previous results.\nAlways act as the main expert for your task: be decisive, avoid repetition, and provide clear, actionable outputs.\nDo NOT include any explanations, comments, or introductory phrases in your output.",
+            "user": "=== PROJECT ===\nTitle: Design a national mental health awareness campaign targeting university students. (please reformulate this idea differently without changing its intent)\n\n\n=== AREA ===\nTitle: Impact Measurement\nDescription: Responsible for evaluating the effectiveness and impact of the campaign on raising mental health awareness among university students.\n\n\n=== DEPENDENCY RESULTS ===\n- Dependency: Set Up Data Collection Mechanisms\n  Description: Create systems to gather relevant data for evaluating the impact of the campaign.\n  Result: Title: Develop a strategy for assessing the effectiveness of the mental health awareness campaign among university students.\n\nData collection framework and mechanisms should be established to evaluate the impact of the campaign on increasing mental health awareness among university students.\n\n\n=== CURRENT TASK ===\nTitle: Analyze Audience Reach\nDescription: Evaluate the extent to which the campaign has reached the target audience.\nExpected Output: Audience reach analysis report.\n\n\n\n=== INSTRUCTION ===\nYou are responsible for completing the current task as part of the overall project.\nUse all available context, including dependency and previous results, but present your answer as your own expert recommendation or decision.\nDo NOT use phrases like 'Based on previous research', 'According to earlier results', or any introductory statements.\nRespond directly and professionally, as if you are the main expert responsible for this part of the project.\nIf the task requires an external system or manual intervention, specify this clearly."
+          },
+          "result": "Title: Assessing the Reach of the Mental Health Awareness Campaign Among University Students\nExpected Output: Audience reach assessment report."
+        },
+        {
+          "task_id": "a38162c7-46ee-4744-9790-ec10954ed4f4",
+          "title": "Assess Engagement Levels",
+          "description": "Measure the level of engagement generated by the campaign among university students.",
+          "expected_output": "Engagement assessment report.",
+          "area": "Impact Measurement",
+          "responsibilities": [],
+          "execution_type": "llm",
+          "parent": "e18df383-b733-4444-ae71-d31b2b99352f",
+          "dependencies": [
+            "3ec6e28c-0fa5-4963-a14b-6c2b695ef076"
+          ],
+          "subtasks": [],
+          "prompt": {
+            "system": "You are an expert autonomous agent collaborating in a multi-step project.\nYour responsibility is to complete your assigned task using all available context and previous results.\nAlways act as the main expert for your task: be decisive, avoid repetition, and provide clear, actionable outputs.\nDo NOT include any explanations, comments, or introductory phrases in your output.",
+            "user": "=== PROJECT ===\nTitle: Design a national mental health awareness campaign targeting university students. (please reformulate this idea differently without changing its intent)\n\n\n=== AREA ===\nTitle: Impact Measurement\nDescription: Responsible for evaluating the effectiveness and impact of the campaign on raising mental health awareness among university students.\n\n\n=== DEPENDENCY RESULTS ===\n- Dependency: Set Up Data Collection Mechanisms\n  Description: Create systems to gather relevant data for evaluating the impact of the campaign.\n  Result: Title: Develop a strategy for assessing the effectiveness of the mental health awareness campaign among university students.\n\nData collection framework and mechanisms should be established to evaluate the impact of the campaign on increasing mental health awareness among university students.\n\n\n=== CURRENT TASK ===\nTitle: Assess Engagement Levels\nDescription: Measure the level of engagement generated by the campaign among university students.\nExpected Output: Engagement assessment report.\n\n\n\n=== INSTRUCTION ===\nYou are responsible for completing the current task as part of the overall project.\nUse all available context, including dependency and previous results, but present your answer as your own expert recommendation or decision.\nDo NOT use phrases like 'Based on previous research', 'According to earlier results', or any introductory statements.\nRespond directly and professionally, as if you are the main expert responsible for this part of the project.\nIf the task requires an external system or manual intervention, specify this clearly."
+          },
+          "result": "Title: Evaluate Student Participation Levels\nExpected Output: Student participation evaluation report."
+        }
+      ],
+      "result": {
+        "Define Key Performance Indicators (KPIs)": "Key Performance Indicators (KPIs) for the mental health awareness campaign targeting university students:\n\n1. Percentage increase in the number of students seeking mental health support services.\n2. Number of students attending mental health awareness events or workshops.\n3. Level of engagement on social media platforms related to mental health content.\n4. Percentage of students reporting increased knowledge about mental health issues.\n5. Number of mental health screenings conducted among university students.\n6. Rate of participation in mental health surveys before and after the campaign.\n7. Number of collaborations with university mental health services or organizations.\n8. Percentage of students sharing mental health resources with peers.\n9. Increase in positive sentiment towards mental health discussions on campus.\n10. Number of mental health-related articles or features in university publications.",
+        "Set Up Data Collection Mechanisms": "Title: Develop a strategy for assessing the effectiveness of the mental health awareness campaign among university students.\n\nData collection framework and mechanisms should be established to evaluate the impact of the campaign on increasing mental health awareness among university students.",
+        "Analyze Audience Reach": "Title: Assessing the Reach of the Mental Health Awareness Campaign Among University Students\nExpected Output: Audience reach assessment report.",
+        "Assess Engagement Levels": "Title: Evaluate Student Participation Levels\nExpected Output: Student participation evaluation report."
+      }
+    }
+  ],
+  "result": {
+    "Campaign Strategy": {
+      "Define Key Messages and Themes": "Title: Develop a comprehensive communication strategy to promote mental health awareness among college students.",
+      "Develop Campaign Timeline": "Create a detailed campaign schedule outlining the stages and tasks of the mental health awareness campaign."
+    },
+    "Communication Channels": {
+      "Identify Relevant Communication Channels": "Identify Suitable Communication Channels:\n1. Social media platforms (e.g., Instagram, Facebook, Twitter)\n2. University websites and online portals\n3. Email newsletters targeting students\n4. Campus bulletin boards and posters\n5. Student organizations and clubs for promotion\n6. University events and orientations\n7. Online forums and discussion boards frequented by students",
+      "Develop Social Media Strategy": "Title: Implement a Social Media Engagement Plan\nExpected Output: Detailed social media engagement plan for effectively connecting with university students in the mental health awareness campaign.",
+      "Collaborate with Campus Newsletters": "Forge collaborations with campus newsletters to distribute information about the mental health awareness campaign targeting university students.",
+      "Engage Student Organizations": "Title: Establish Partnerships with Student Groups\nDescription: Form alliances with student groups to enhance the reach of the mental health awareness campaign.\nOutput: Signed partnership agreements with student organizations."
+    },
+    "Mental Health Topics": {
+      "Research Prevalent Mental Health Issues": "Identify prevalent mental health challenges commonly experienced by college students for the national mental health awareness campaign targeting university students.",
+      "Select Mental Health Topics": "Selected Mental Health Topics for the campaign:\n1. Stress management techniques for university students\n2. Depression awareness and coping strategies\n3. Anxiety management and support resources\n4. Building resilience and emotional well-being\n5. Sleep hygiene and its impact on mental health",
+      "Develop Key Messages for Each Topic": "Key Messages for Each Mental Health Topic:\n1. Stress management techniques for university students:\n   - Learn to prioritize tasks and practice time management.\n   - Engage in regular physical activity to reduce stress levels.\n   - Utilize relaxation techniques such as deep breathing and mindfulness.\n\n2. Depression awareness and coping strategies:\n   - It's okay to not be okay; seek help and talk to someone you trust.\n   - Understand that depression is a common mental health condition that can be managed.\n   - Access professional support services and therapy to cope with depression effectively.\n\n3. Anxiety management and support resources:\n   - Identify triggers that cause anxiety and develop coping mechanisms.\n   - Practice self-care activities like meditation and journaling to reduce anxiety.\n   - Reach out to campus counseling services or mental health professionals for support.\n\n4. Building resilience and emotional well-being:\n   - Develop a strong support network of friends, family, and mentors.\n   - Embrace challenges as opportunities for growth and learning.\n   - Prioritize self-care practices to enhance emotional well-being and resilience.\n\n5. Sleep hygiene and its impact on mental health:\n   - Establish a consistent sleep schedule to improve overall well-being.\n   - Create a relaxing bedtime routine to promote better sleep quality.\n   - Limit screen time before bed and create a comfortable sleep environment for restful sleep."
+    },
+    "Campus Activations": {
+      "Develop Campus Activation Calendar": "Title: Plan a series of engaging events and activities on university campuses to promote mental health awareness among students.\n\nCalendar of Campus Activations:\n1. Mindfulness Workshop - Date: October 5th, Time: 2-4 PM, Location: Student Center\n2. Mental Health Panel Discussion - Date: October 12th, Time: 6-8 PM, Location: Lecture Hall A\n3. Art Therapy Session - Date: October 19th, Time: 1-3 PM, Location: Art Studio\n4. Yoga and Meditation Class - Date: October 26th, Time: 5-7 PM, Location: Outdoor Amphitheater\n5. Mental Health Fair - Date: November 2nd, Time: 11 AM - 2 PM, Location: Quad Area\n\nPlease proceed with organizing these events on the specified dates, times, and locations to engage university students in the mental health awareness campaign.",
+      "Coordinate Workshop Presenters": "Identify and confirm mental health professionals or speakers to lead workshops and seminars on campus for the events.",
+      "Secure Event Spaces": "Identify and reserve appropriate venues on campus for hosting workshops, seminars, and interactive sessions for the mental health awareness campaign targeting university students. Ensure the booked event spaces have the necessary facilities to support the activities planned.",
+      "Design Promotional Materials": "Create promotional materials such as posters, flyers, and digital content to raise awareness about mental health among university students and promote engagement in the campaign's on-campus events and activities."
+    },
+    "Impact Measurement": {
+      "Define Key Performance Indicators (KPIs)": "Key Performance Indicators (KPIs) for the mental health awareness campaign targeting university students:\n\n1. Percentage increase in the number of students seeking mental health support services.\n2. Number of students attending mental health awareness events or workshops.\n3. Level of engagement on social media platforms related to mental health content.\n4. Percentage of students reporting increased knowledge about mental health issues.\n5. Number of mental health screenings conducted among university students.\n6. Rate of participation in mental health surveys before and after the campaign.\n7. Number of collaborations with university mental health services or organizations.\n8. Percentage of students sharing mental health resources with peers.\n9. Increase in positive sentiment towards mental health discussions on campus.\n10. Number of mental health-related articles or features in university publications.",
+      "Set Up Data Collection Mechanisms": "Title: Develop a strategy for assessing the effectiveness of the mental health awareness campaign among university students.\n\nData collection framework and mechanisms should be established to evaluate the impact of the campaign on increasing mental health awareness among university students.",
+      "Analyze Audience Reach": "Title: Assessing the Reach of the Mental Health Awareness Campaign Among University Students\nExpected Output: Audience reach assessment report.",
+      "Assess Engagement Levels": "Title: Evaluate Student Participation Levels\nExpected Output: Student participation evaluation report."
+    }
+  },
+  "_metadata": {
+    "clarified_description": "Design a national mental health awareness campaign targeting university students. (please reformulate this idea differently without changing its intent)",
+    "expected_output": "A phased campaign strategy including messaging, communication channels, mental health topics to address, campus activations, and methods of measuring impact.",
+    "case_id": "CASE06_REPH",
+    "timestamp": "2025-06-26T17:41:28.625677",
+    "filename": "20250626_174128_CASE06_REPH_task_tree.json"
+  }
+}
