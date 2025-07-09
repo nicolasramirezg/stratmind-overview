@@ -196,10 +196,15 @@ def main():
     print("Executing all tasks with LLM or simulation as needed...")
     execute_tasks_postorder(root_task)
 
-    export_task_tree(root_task, task_manager, out_name="task_tree")
-
-    print("\n=== TASK TREE IN MEMORY BEFORE EXPORT ===")
-    print_task_tree(root_task)
+    export_task_tree(
+        root_task,
+        task_manager,
+        out_name="task_tree",
+        metadata={
+            "clarified_description": task_description,
+            "expected_output": expected_output
+        }
+    )
 
 if __name__ == "__main__":
     main()
