@@ -97,22 +97,12 @@ uvicorn back:app --reload
 
 ---
 
-## Customization
-
-- **Prompts:**  
-  Modify prompts in `src/prompts/` to adapt agent behavior for your use case.
-- **Agents:**  
-  Extend or customize agents in `src/agents/` for new logic or integrations.
-- **Exporters:**  
-  Export the tree in JSON (`task_exporter.py`) or TXT (`task_exporter_txt.py`).
-- **Execution:**  
-  Add new execution types or integrate with external APIs in `src/agents/executor_agent.py`.
-
----
-
 ## Credits
 
 Developed by Nicolás Ramírez & Jorge Martin  
 Universidad de Navarra  
 Master in Big Data Science & AI
+
+All rights reserved
+No reuse or redistribution is permitted without explicit consent from the author.
 
