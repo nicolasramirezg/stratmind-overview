@@ -58,6 +58,18 @@ A global objective is decomposed into functional areas and concrete subtasks in 
 The system tracks parent-child relationships and also captures cross-subtask dependencies, ensuring execution order and data flow integrity.
 
 
+## Evaluation & Analysis
+
+StratMind includes a suite of evaluation tools to assess performance, robustness, and consistency across generated task trees and agent behaviors.
+
+### Notebooks
+
+| File | Purpose |
+|------|---------|
+| `evaluation/analysis/quality_analysis.ipynb` | Analyzes output task trees for structure, depth, and quality metrics. |
+| `evaluation/analysis/robustness_analysis.ipynb` | Evaluates system consistency across input variations to assess robustness. |
+
+
 ## Project Structure
 
 ```
